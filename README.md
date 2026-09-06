@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-306-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-311-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 306 | 6 | 6 | 45 |
+| 311 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,7 +70,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (34)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (41)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (76)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (59)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (27)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (69)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (34)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (41)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (78)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (60)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (70)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
@@ -457,7 +457,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (76)
+### Decision-Making & Agent Trajectories (78)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -719,6 +719,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `Maps` · `Trajectories` · `GPS / IMU`
   [Homepage](https://www.nuscenes.org/nuplan) · [Paper](https://arxiv.org/abs/2106.11810) · [Code](https://github.com/motional/nuplan-devkit) · Access: Registration required
 
+- **PettingZoo** · 2021
+  A standardized collection of multi-agent environments.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Homepage](https://pettingzoo.farama.org/) · [Code](https://github.com/Farama-Foundation/PettingZoo) · [Paper](https://arxiv.org/abs/2009.14471) · Access: Open-source library
+
 - **robomimic Datasets** · 2021
   Robot manipulation demonstration datasets and benchmarks for imitation learning across tasks, sources, and visual states.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
@@ -738,6 +743,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A video dataset of 48 fine-grained diving actions emphasizing temporal phase differences.
   `Egocentric / Human` · `RGB Video` · `Action Labels`
   [Paper](https://arxiv.org/abs/1903.11204) · Access: Official project and annotations
+
+- **NetHack Learning Environment** · 2020
+  A long-horizon NetHack interaction environment.
+  `Games / Virtual Environments` · `Game State` · `Action` · `Text` · `Reward`
+  [Code](https://github.com/facebookresearch/nle) · [Paper](https://arxiv.org/abs/2006.13760) · Access: Open-source environment
 
 - **Ravens** · 2020
   A tabletop robot manipulation benchmark with procedural tasks and demonstration trajectories.
@@ -841,7 +851,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (59)
+### Spatial & Spatiotemporal World Modeling (60)
 
 - **AudioWorldSim** · 2026
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1038,6 +1048,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `Urban / 3D Scene` · `RGB Video` · `3D Boxes` · `Trajectories` · `Maps` · `Semantic Labels`
   [Paper](https://arxiv.org/abs/1903.06405) · [Code](https://github.com/VCCIV/BLVD) · Access: Official repository available
 
+- **Habitat-Lab** · 2019
+  An embodied navigation and manipulation simulator.
+  `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Agent Pose` · `Action`
+  [Homepage](https://aihabitat.org/) · [Code](https://github.com/facebookresearch/habitat-lab) · [Paper](https://arxiv.org/abs/1904.01201) · Access: Open-source simulator
+
 - **iGibson** · 2019
   An indoor embodied-AI simulation platform providing visual, tactile, action, and physical-state trajectories.
   `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Simulation State` · `Action`
@@ -1140,7 +1155,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="physical-causal-reasoning"></a>
 
-### Physical & Causal Reasoning (27)
+### Physical & Causal Reasoning (28)
 
 - **CG-World** · 2026
   A large computer-graphics world-state dataset explicitly recording states, events, relations, and counterfactual branches.
@@ -1202,6 +1217,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `3D Mesh` · `Action` · `Robot State` · `Multi-view RGB Video`
   [Homepage](https://pokeflex-dataset.github.io/) · [Paper](https://arxiv.org/abs/2409.17124) · [Code](https://github.com/pokeflex-dataset/reconstruction) · Access: Official project page and reconstruction code available
 
+- **Melting Pot** · 2022
+  A suite of multi-agent social interaction environments.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/google-deepmind/meltingpot) · [Paper](https://arxiv.org/abs/2211.13746) · Access: Open-source benchmark
+
 - **Physion** · 2021
   A synthetic intuitive-physics dataset covering collisions, support, containment, and deformation, designed to test whether models can predict object contact and dynamics.
   `Physics / Science` · `Synthetic Video` · `Depth` · `Segmentation` · `Object State`
@@ -1260,7 +1280,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **TextWorld** · 2018
   A text-based interactive-world generator with language observations, actions, and hidden-state transitions.
   `Games / Virtual Environments` · `Text` · `Game State` · `Action` · `Reward`
-  [Code](https://github.com/microsoft/ TextWorld) · [Paper](https://arxiv.org/abs/1806.11532) · Access: Open-source generator and games
+  [Code](https://github.com/microsoft/TextWorld) · [Paper](https://arxiv.org/abs/1806.11532) · Access: Open-source generator and games
 
 - **MIT Planar Pushing Dataset** · 2016
   A high-fidelity planar pushing dataset recording actions and object motion across shapes, contacts, pushing directions, and friction conditions.
@@ -1279,7 +1299,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (69)
+### World Model Evaluation & Diagnostics (70)
 
 - **4DSynth** · 2026
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
@@ -1595,6 +1615,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A procedurally generated robot-manipulation benchmark driven by multimodal prompts.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Language` · `Object Metadata`
   [Homepage](https://vimalabs.github.io/) · [Paper](https://arxiv.org/abs/2210.03094) · [Code](https://github.com/vimalabs/VIMA) · Access: Official benchmark code
+
+- **Crafter** · 2021
+  An open-world survival environment.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/danijar/crafter) · [Paper](https://arxiv.org/abs/2109.06780) · Access: Open-source environment
 
 - **MiniHack** · 2021
   Composable NetHack-based environments for planning, memory, and long-horizon state evolution.

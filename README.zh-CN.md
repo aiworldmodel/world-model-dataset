@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-306-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-311-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 306 | 6 | 6 | 45 |
+| 311 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,7 +70,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (34)](#predictive-generative-dynamics) · [动作条件动力学 (41)](#action-conditioned-dynamics) · [决策与智能体轨迹 (76)](#decision-making-agent-trajectories) · [空间与时空世界建模 (59)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (27)](#physical-causal-reasoning) · [世界模型评测与诊断 (69)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (34)](#predictive-generative-dynamics) · [动作条件动力学 (41)](#action-conditioned-dynamics) · [决策与智能体轨迹 (78)](#decision-making-agent-trajectories) · [空间与时空世界建模 (60)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (70)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
@@ -457,7 +457,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（76）
+### 决策与智能体轨迹（78）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -719,6 +719,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `轨迹` · `GPS / 惯性测量单元`
   [主页](https://www.nuscenes.org/nuplan) · [论文](https://arxiv.org/abs/2106.11810) · [代码](https://github.com/motional/nuplan-devkit) · 访问方式：需要注册
 
+- **PettingZoo** · 2021
+  标准化多智能体环境集合。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [主页](https://pettingzoo.farama.org/) · [代码](https://github.com/Farama-Foundation/PettingZoo) · [论文](https://arxiv.org/abs/2009.14471) · 访问方式：开源环境库
+
 - **robomimic Datasets** · 2021
   面向模仿学习的机器人操作演示数据集与基准，包含多种任务、示范来源和视觉状态。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
@@ -738,6 +743,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   包含 48 类细粒度跳水动作的视频数据集，强调动作阶段和时序差异。
   `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
   [论文](https://arxiv.org/abs/1903.11204) · 访问方式：官方项目和标注
+
+- **NetHack Learning Environment** · 2020
+  NetHack 长期交互环境。
+  `游戏 / 虚拟环境` · `游戏状态` · `动作` · `文本` · `奖励`
+  [代码](https://github.com/facebookresearch/nle) · [论文](https://arxiv.org/abs/2006.13760) · 访问方式：开源环境
 
 - **Ravens** · 2020
   具有程序化任务和演示轨迹的桌面机器人操作基准。
@@ -841,7 +851,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（59）
+### 空间与时空世界建模（60）
 
 - **AudioWorldSim** · 2026
   用于生成双耳音频世界模型轨迹的开放仿真平台。
@@ -1038,6 +1048,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `三维框` · `轨迹` · `地图` · `语义标签`
   [论文](https://arxiv.org/abs/1903.06405) · [代码](https://github.com/VCCIV/BLVD) · 访问方式：提供官方代码仓库
 
+- **Habitat-Lab** · 2019
+  具身导航与操作仿真平台。
+  `机器人 / 具身智能` · `RGB 视频` · `深度` · `智能体位姿` · `动作`
+  [主页](https://aihabitat.org/) · [代码](https://github.com/facebookresearch/habitat-lab) · [论文](https://arxiv.org/abs/1904.01201) · 访问方式：开源模拟器
+
 - **iGibson** · 2019
   室内具身智能仿真平台，提供视觉、触觉、动作和物理状态轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `仿真状态` · `动作`
@@ -1140,7 +1155,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="physical-causal-reasoning"></a>
 
-### 物理与因果推理（27）
+### 物理与因果推理（28）
 
 - **CG-World** · 2026
   显式记录状态、事件、关系和反事实分支的大规模计算机图形世界状态数据集。
@@ -1202,6 +1217,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `三维网格` · `动作` · `机器人状态` · `多视角 RGB 视频`
   [主页](https://pokeflex-dataset.github.io/) · [论文](https://arxiv.org/abs/2409.17124) · [代码](https://github.com/pokeflex-dataset/reconstruction) · 访问方式：提供官方项目页和重建代码
 
+- **Melting Pot** · 2022
+  多智能体社会交互环境套件。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [代码](https://github.com/google-deepmind/meltingpot) · [论文](https://arxiv.org/abs/2211.13746) · 访问方式：开源基准
+
 - **Physion** · 2021
   用于直觉物理学习和评测的合成视频数据集，通过碰撞、支撑、包含和形变等场景测试模型能否预测物体间接触及后续动态。
   `物理 / 科学` · `合成视频` · `深度` · `分割标注` · `物体状态`
@@ -1260,7 +1280,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 - **TextWorld** · 2018
   文本交互式世界生成器，提供语言观测、动作和隐藏状态转移。
   `游戏 / 虚拟环境` · `文本` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/microsoft/ TextWorld) · [论文](https://arxiv.org/abs/1806.11532) · 访问方式：开源生成器与游戏
+  [代码](https://github.com/microsoft/TextWorld) · [论文](https://arxiv.org/abs/1806.11532) · 访问方式：开源生成器与游戏
 
 - **MIT Planar Pushing Dataset** · 2016
   高精度平面推动实验数据集，系统记录不同物体、接触位置、推动方向和摩擦条件下的动作与物体运动，用于学习接触动力学。
@@ -1279,7 +1299,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### 世界模型评测与诊断（69）
+### 世界模型评测与诊断（70）
 
 - **4DSynth** · 2026
   面向动态具身仿真的可控程序化四维世界合成资源。
@@ -1595,6 +1615,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   多模态提示驱动的机器人操作任务与程序化评测基准。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `语言` · `物体元数据`
   [主页](https://vimalabs.github.io/) · [论文](https://arxiv.org/abs/2210.03094) · [代码](https://github.com/vimalabs/VIMA) · 访问方式：官方基准代码
+
+- **Crafter** · 2021
+  开放世界生存环境。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [代码](https://github.com/danijar/crafter) · [论文](https://arxiv.org/abs/2109.06780) · 访问方式：开源环境
 
 - **MiniHack** · 2021
   基于 NetHack 的可组合环境，用于研究规划、记忆和长期状态演化。
