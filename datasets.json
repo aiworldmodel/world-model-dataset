@@ -10176,6 +10176,51 @@
     }
   },
   {
+    "id": "griddly",
+    "name": "Griddly",
+    "shortName": "Griddly",
+    "year": 2020,
+    "summary": "可配置二维游戏与物理环境生成器。",
+    "summaryEn": "A configurable generator of 2D games and physics environments.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Game State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Environment / Benchmark"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "User-defined grid-world game mechanics",
+    "scaleZh": "用户定义网格世界游戏机制",
+    "organizations": "University of York",
+    "organizationsZh": "约克大学",
+    "license": "MIT",
+    "licenseZh": "MIT",
+    "access": "Open-source engine",
+    "accessZh": "开源引擎",
+    "rating": 4,
+    "verdict": "可配置游戏动力学环境",
+    "verdictEn": "Configurable game-dynamics environments",
+    "wmNote": "可控规则和状态转移便于世界模型泛化评测。",
+    "wmNoteEn": "Controllable rules and transitions enable world-model generalization tests.",
+    "links": {
+      "code": "https://github.com/Bam4d/Griddly",
+      "paper": "https://arxiv.org/abs/2011.04683"
+    }
+  },
+  {
     "id": "hope-object-pose",
     "name": "HOPE Object Pose Dataset",
     "shortName": "HOPE",
@@ -11673,6 +11718,97 @@
     "links": {
       "paper": "https://arxiv.org/abs/1910.00618",
       "code": "https://github.com/MIT-Omnipush/video-prediction"
+    }
+  },
+  {
+    "id": "open-spiel",
+    "name": "OpenSpiel",
+    "shortName": "OpenSpiel",
+    "year": 2019,
+    "summary": "博弈与多智能体决策环境集合。",
+    "summaryEn": "A collection of game and multi-agent decision environments.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "Game State",
+      "Action",
+      "Reward",
+      "Trajectories"
+    ],
+    "structure": [
+      "Environment / Benchmark"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Dozens of sequential and simultaneous-move games",
+    "scaleZh": "数十个序贯与同时行动博弈",
+    "organizations": "DeepMind",
+    "organizationsZh": "DeepMind",
+    "license": "Apache-2.0",
+    "licenseZh": "Apache-2.0",
+    "access": "Open-source framework",
+    "accessZh": "开源框架",
+    "rating": 4,
+    "verdict": "多智能体决策轨迹框架",
+    "verdictEn": "Multi-agent decision trajectory framework",
+    "wmNote": "博弈状态转移支持策略和反事实预测。",
+    "wmNoteEn": "Game-state transitions support policy and counterfactual prediction.",
+    "links": {
+      "code": "https://github.com/google-deepmind/open_spiel",
+      "paper": "https://arxiv.org/abs/1908.09453"
+    }
+  },
+  {
+    "id": "overcooked-ai",
+    "name": "Overcooked-AI",
+    "shortName": "Overcooked-AI",
+    "year": 2019,
+    "summary": "合作烹饪多智能体环境。",
+    "summaryEn": "A cooperative cooking multi-agent environment.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Game State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Environment / Benchmark",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Cooperative kitchen layouts and task scenarios",
+    "scaleZh": "合作厨房布局与任务场景",
+    "organizations": "University of California Berkeley",
+    "organizationsZh": "加州大学伯克利分校",
+    "license": "MIT",
+    "licenseZh": "MIT",
+    "access": "Open-source environment",
+    "accessZh": "开源环境",
+    "rating": 4,
+    "verdict": "协作行为轨迹基准",
+    "verdictEn": "Cooperative behavior trajectory benchmark",
+    "wmNote": "联合动作与环境状态支持协作世界模型。",
+    "wmNoteEn": "Joint actions and environment states support cooperative world models.",
+    "links": {
+      "code": "https://github.com/HumanCompatibleAI/overcooked_ai",
+      "paper": "https://arxiv.org/abs/1910.05789"
     }
   },
   {
@@ -13403,6 +13539,53 @@
     }
   },
   {
+    "id": "pybullet",
+    "name": "PyBullet",
+    "shortName": "PyBullet",
+    "year": 2017,
+    "summary": "开源刚体物理仿真环境。",
+    "summaryEn": "An open-source rigid-body physics simulation environment.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Simulation State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Environment / Benchmark",
+      "Motion Trajectories"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Robotics and manipulation simulation tasks",
+    "scaleZh": "机器人和操作仿真任务",
+    "organizations": "Erwin Coumans and collaborators",
+    "organizationsZh": "Erwin Coumans 及合作团队",
+    "license": "zlib",
+    "licenseZh": "zlib",
+    "access": "Open-source simulator",
+    "accessZh": "开源模拟器",
+    "rating": 4,
+    "verdict": "刚体物理动作轨迹环境",
+    "verdictEn": "Rigid-body physics trajectory environment",
+    "wmNote": "状态、动作和渲染观测支持动力学学习。",
+    "wmNoteEn": "States, actions, and rendered observations support dynamics learning.",
+    "links": {
+      "code": "https://github.com/bulletphysics/bullet3",
+      "paper": "https://arxiv.org/abs/1705.04895"
+    }
+  },
+  {
     "id": "scannet",
     "name": "ScanNet",
     "shortName": "ScanNet",
@@ -13628,6 +13811,51 @@
     "links": {
       "code": "https://github.com/google-deepmind/lab",
       "paper": "https://arxiv.org/abs/1612.03801"
+    }
+  },
+  {
+    "id": "minigrid",
+    "name": "MiniGrid",
+    "shortName": "MiniGrid",
+    "year": 2016,
+    "summary": "可组合的二维部分可观测导航环境。",
+    "summaryEn": "Composable partially observable 2D navigation environments.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Game State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Environment / Benchmark"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Configurable grid-world tasks",
+    "scaleZh": "可配置网格世界任务",
+    "organizations": "Farama Foundation",
+    "organizationsZh": "Farama 基金会",
+    "license": "BSD-3-Clause",
+    "licenseZh": "BSD-3-Clause",
+    "access": "Open-source environment",
+    "accessZh": "开源环境",
+    "rating": 4,
+    "verdict": "部分可观测导航环境",
+    "verdictEn": "Partially observable navigation environments",
+    "wmNote": "观测和动作序列适合状态记忆与预测。",
+    "wmNoteEn": "Observation-action sequences support state memory and prediction.",
+    "links": {
+      "code": "https://github.com/Farama-Foundation/Minigrid",
+      "paper": "https://arxiv.org/abs/2010.02567"
     }
   },
   {

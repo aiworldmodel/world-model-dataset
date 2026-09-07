@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-311-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-316-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 311 | 6 | 6 | 45 |
+| 316 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (34)](#predictive-generative-dynamics) · [动作条件动力学 (41)](#action-conditioned-dynamics) · [决策与智能体轨迹 (78)](#decision-making-agent-trajectories) · [空间与时空世界建模 (60)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (70)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (35)](#predictive-generative-dynamics) · [动作条件动力学 (42)](#action-conditioned-dynamics) · [决策与智能体轨迹 (80)](#decision-making-agent-trajectories) · [空间与时空世界建模 (61)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (70)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（34）
+### 预测与生成式动力学（35）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -140,6 +140,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   覆盖多城市、天气与时段的大规模驾驶视频数据集，提供目标检测、车道线、可行驶区域、跟踪等多任务标注，适合研究视觉动态表示和复杂道路分布泛化。
   `自动驾驶` · `RGB 视频` · `二维框` · `分割标注` · `车道线`
   [主页](https://bdd-data.berkeley.edu/) · [论文](https://arxiv.org/abs/1805.04687) · [代码](https://github.com/bdd100k/bdd100k) · 访问方式：需注册
+
+- **Griddly** · 2020
+  可配置二维游戏与物理环境生成器。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [代码](https://github.com/Bam4d/Griddly) · [论文](https://arxiv.org/abs/2011.04683) · 访问方式：开源引擎
 
 - **Procgen Benchmark** · 2020
   程序生成的视觉强化学习环境集合，提供可控动作、观测和关卡状态轨迹。
@@ -248,7 +253,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（41）
+### 动作条件动力学（42）
 
 - **AgiBot World 2026** · 2026
   真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
@@ -450,6 +455,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `游戏 / 虚拟环境` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `动作` · `仿真状态`
   [主页](https://carla.org/) · [论文](https://arxiv.org/abs/1711.03938) · [代码](https://github.com/carla-simulator/carla) · 访问方式：官方仿真器
 
+- **PyBullet** · 2017
+  开源刚体物理仿真环境。
+  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
+  [代码](https://github.com/bulletphysics/bullet3) · [论文](https://arxiv.org/abs/1705.04895) · 访问方式：开源模拟器
+
 - **BAIR Robot Pushing** · 2016
   经典机器人推物视频数据集，记录机械臂在桌面环境中执行随机推动动作的连续图像与控制信号，长期作为动作条件视频预测和随机未来建模的基础基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作`
@@ -457,7 +467,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（78）
+### 决策与智能体轨迹（80）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -799,6 +809,16 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `奖励`
   [论文](https://arxiv.org/abs/1910.08639) · [代码](https://github.com/offworld-projects/offworld-gym) · 访问方式：提供官方代码仓库
 
+- **OpenSpiel** · 2019
+  博弈与多智能体决策环境集合。
+  `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励` · `轨迹`
+  [代码](https://github.com/google-deepmind/open_spiel) · [论文](https://arxiv.org/abs/1908.09453) · 访问方式：开源框架
+
+- **Overcooked-AI** · 2019
+  合作烹饪多智能体环境。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [代码](https://github.com/HumanCompatibleAI/overcooked_ai) · [论文](https://arxiv.org/abs/1910.05789) · 访问方式：开源环境
+
 - **SocNav1** · 2019
   用于学习和评测社交导航约定的数据集，包含人类在共享空间中的位置、朝向、群组和障碍物关系，支持人机交互轨迹预测。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `地图` · `物体状态`
@@ -851,7 +871,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（60）
+### 空间与时空世界建模（61）
 
 - **AudioWorldSim** · 2026
   用于生成双耳音频世界模型轨迹的开放仿真平台。
@@ -1127,6 +1147,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   第一人称 3D 导航与交互环境，提供视觉观测、动作和游戏状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/google-deepmind/lab) · [论文](https://arxiv.org/abs/1612.03801) · 访问方式：开源环境
+
+- **MiniGrid** · 2016
+  可组合的二维部分可观测导航环境。
+  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
+  [代码](https://github.com/Farama-Foundation/Minigrid) · [论文](https://arxiv.org/abs/2010.02567) · 访问方式：开源环境
 
 - **Oxford RobotCar** · 2016
   同一路线跨越一年多次重复采集的自动驾驶数据集，包含相机、激光雷达、雷达和定位信号，特别适合长期环境变化和世界状态鲁棒性研究。

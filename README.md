@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-311-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-316-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 311 | 6 | 6 | 45 |
+| 316 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (34)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (41)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (78)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (60)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (70)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (35)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (42)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (80)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (70)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (34)
+### Predictive & Generative Dynamics (35)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -140,6 +140,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A large driving-video dataset spanning cities, weather, and time of day, with annotations for detection, lanes, drivable areas, and tracking.
   `Autonomous Driving` · `RGB Video` · `2D Boxes` · `Segmentation` · `Lane Markings`
   [Homepage](https://bdd-data.berkeley.edu/) · [Paper](https://arxiv.org/abs/1805.04687) · [Code](https://github.com/bdd100k/bdd100k) · Access: Registration required
+
+- **Griddly** · 2020
+  A configurable generator of 2D games and physics environments.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/Bam4d/Griddly) · [Paper](https://arxiv.org/abs/2011.04683) · Access: Open-source engine
 
 - **Procgen Benchmark** · 2020
   Procedurally generated visual RL environments with controllable actions, observations, and level-state trajectories.
@@ -248,7 +253,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (41)
+### Action-Conditioned Dynamics (42)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -450,6 +455,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `Games / Virtual Environments` · `RGB Video` · `LiDAR` · `RADAR` · `Action` · `Simulation State`
   [Homepage](https://carla.org/) · [Paper](https://arxiv.org/abs/1711.03938) · [Code](https://github.com/carla-simulator/carla) · Access: Official simulator
 
+- **PyBullet** · 2017
+  An open-source rigid-body physics simulation environment.
+  `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
+  [Code](https://github.com/bulletphysics/bullet3) · [Paper](https://arxiv.org/abs/1705.04895) · Access: Open-source simulator
+
 - **BAIR Robot Pushing** · 2016
   A classic action-conditioned video dataset of a robot pushing objects on a tabletop, widely used for stochastic future prediction and visual dynamics baselines.
   `Robotics / Embodied AI` · `RGB Video` · `Action`
@@ -457,7 +467,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (78)
+### Decision-Making & Agent Trajectories (80)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -799,6 +809,16 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Reward`
   [Paper](https://arxiv.org/abs/1910.08639) · [Code](https://github.com/offworld-projects/offworld-gym) · Access: Official repository available
 
+- **OpenSpiel** · 2019
+  A collection of game and multi-agent decision environments.
+  `Games / Virtual Environments` · `Game State` · `Action` · `Reward` · `Trajectories`
+  [Code](https://github.com/google-deepmind/open_spiel) · [Paper](https://arxiv.org/abs/1908.09453) · Access: Open-source framework
+
+- **Overcooked-AI** · 2019
+  A cooperative cooking multi-agent environment.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/HumanCompatibleAI/overcooked_ai) · [Paper](https://arxiv.org/abs/1910.05789) · Access: Open-source environment
+
 - **SocNav1** · 2019
   A dataset for learning and benchmarking social-navigation conventions with human positions, orientations, groups, and obstacle relations in shared spaces.
   `Robotics / Embodied AI` · `Egocentric / Human` · `Agent Pose` · `Trajectories` · `Maps` · `Object State`
@@ -851,7 +871,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (60)
+### Spatial & Spatiotemporal World Modeling (61)
 
 - **AudioWorldSim** · 2026
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1127,6 +1147,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   First-person 3D navigation and interaction environments with visual observations, actions, and game-state trajectories.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/google-deepmind/lab) · [Paper](https://arxiv.org/abs/1612.03801) · Access: Open-source environment
+
+- **MiniGrid** · 2016
+  Composable partially observable 2D navigation environments.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/Farama-Foundation/Minigrid) · [Paper](https://arxiv.org/abs/2010.02567) · Access: Open-source environment
 
 - **Oxford RobotCar** · 2016
   An autonomous-driving dataset repeatedly collected along the same route for over a year, with cameras, LiDAR, radar, and localization for long-term environmental change.
