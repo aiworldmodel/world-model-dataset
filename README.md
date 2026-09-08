@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-316-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-321-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 316 | 6 | 6 | 45 |
+| 321 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,7 +70,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (35)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (42)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (80)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (70)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (35)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (44)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (82)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (71)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
@@ -253,7 +253,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (42)
+### Action-Conditioned Dynamics (44)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -309,6 +309,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Underwater robot dynamics data with training scripts and learned and physics-based models.
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Robot State` · `Trajectories`
   [Code](https://github.com/ViktorNfa/bluerov2_dynamics) · Access: Official datasets and training code available
+
+- **MuJoCo Playground** · 2025
+  An open-source MuJoCo MJX robot-learning suite for large-scale generation of contact-rich states, actions, and sensor trajectories.
+  `Robotics / Embodied AI` · `Physics / Science` · `Simulation State` · `Action` · `Reward` · `RGB Video`
+  [Code](https://github.com/google-deepmind/mujoco_playground) · [Paper](https://arxiv.org/abs/2502.08844) · Access: Open-source environments and training code
 
 - **Open-H-Embodiment** · 2025
   A community-driven open dataset initiative for generalist vision-language-action models in healthcare robotics.
@@ -395,6 +400,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language` · `Robot State`
   [Paper](https://arxiv.org/abs/2212.06817) · [Code](https://github.com/google-research/robotics_transformer) · Access: Paper and project entry; access may be restricted
 
+- **Brax** · 2021
+  A JAX-based differentiable rigid-body physics engine and RL environment for parallel state-action-reward trajectory generation.
+  `Robotics / Embodied AI` · `Physics / Science` · `Simulation State` · `Action` · `Reward` · `RGB Video`
+  [Code](https://github.com/google/brax) · [Paper](https://arxiv.org/abs/2106.13281) · Access: Open-source engine and environments
+
 - **DexYCB** · 2021
   An RGB-D video dataset of hand-YCB object interactions with 3D hand and object poses.
   `Egocentric / Human` · `Robotics / Embodied AI` · `RGB-D` · `3D Mesh` · `Agent Pose` · `Object State`
@@ -467,7 +477,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (80)
+### Decision-Making & Agent Trajectories (82)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -639,6 +649,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Object State`
   [Homepage](https://clvrai.github.io/furniture-bench/) · [Paper](https://arxiv.org/abs/2305.12821) · [Code](https://github.com/clvrai/furniture-bench) · Access: Official benchmark and code
 
+- **Jumanji** · 2023
+  A JAX-based suite of combinatorial optimization and RL environments with batchable state-action-reward trajectories.
+  `Games / Virtual Environments` · `Game State` · `Action` · `Reward` · `Trajectories`
+  [Code](https://github.com/instadeepai/jumanji) · [Paper](https://arxiv.org/abs/2306.09884) · Access: Open-source benchmark suite
+
 - **LIBERO** · 2023
   A benchmark for lifelong and language-conditioned robot manipulation with multi-task demonstrations, visual observations, actions, and task descriptions.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
@@ -803,6 +818,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A suite of web-interaction environments providing actions, page states, and task trajectories for agent modeling.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Text` · `Reward`
   [Code](https://github.com/Farama-Foundation/miniwob-plusplus) · [Paper](https://arxiv.org/abs/1905.04362) · Access: Open-source benchmark
+
+- **Neural MMO** · 2019
+  A procedurally generated massively multi-agent environment recording actions, local observations, and population-state evolution.
+  `Games / Virtual Environments` · `Game State` · `Action` · `Reward` · `RGB Video`
+  [Homepage](https://neuralmmo.github.io/) · [Code](https://github.com/NeuralMMO/neural-mmo) · [Paper](https://arxiv.org/abs/1903.00784) · Access: Open-source environment
 
 - **OffWorld Gym** · 2019
   An open physical robotics environment and benchmark for real-world reinforcement learning with sensor observations, actions, rewards, and interaction episodes.
@@ -1324,7 +1344,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (70)
+### World Model Evaluation & Diagnostics (71)
 
 - **4DSynth** · 2026
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
@@ -1625,6 +1645,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A standardized benchmark for replicating real-world robot pick-and-place experiments, with YCB scenes, RGB-D metadata, grasp data, and sim-to-real setup tools.
   `Robotics / Embodied AI` · `RGB-D` · `3D Metadata` · `Object State` · `Action`
   [Homepage](https://irvlutd.github.io/SceneReplica/) · [Paper](https://arxiv.org/abs/2306.15620) · [Code](https://github.com/IRVLUTD/SceneReplica) · Access: Official repository links scene, grasp, and model files
+
+- **XLand-MiniGrid** · 2023
+  A scalable procedurally generated grid-world and task-rule system producing diverse state-action and goal-conditioned trajectories.
+  `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
+  [Code](https://github.com/corl-team/xland-minigrid) · [Paper](https://arxiv.org/abs/2107.12808) · Access: Open-source environment and task generator
 
 - **SHIFT** · 2022
   A synthetic driving dataset for discrete and continuous domain shifts across weather, time, and traffic.
