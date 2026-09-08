@@ -7341,6 +7341,54 @@
     }
   },
   {
+    "id": "minari",
+    "name": "Minari Offline RL Datasets",
+    "shortName": "Minari",
+    "year": 2023,
+    "summary": "标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。",
+    "summaryEn": "A standardized offline-RL dataset library providing complete episodes with observations, actions, rewards, and termination signals.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "Simulation State",
+      "Action",
+      "Reward",
+      "Trajectories"
+    ],
+    "structure": [
+      "Dataset / Benchmark",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Simulation",
+      "Real-world"
+    ],
+    "scale": "Versioned datasets across Gymnasium-compatible environments",
+    "scaleZh": "覆盖多种 Gymnasium 兼容环境的版本化数据集",
+    "organizations": "Farama Foundation",
+    "organizationsZh": "Farama 基金会",
+    "license": "Dataset-specific terms",
+    "licenseZh": "各数据集适用独立条款",
+    "access": "Open dataset registry and loaders",
+    "accessZh": "开放数据注册表与加载器",
+    "rating": 5,
+    "verdict": "标准化离线状态动作回合",
+    "verdictEn": "Standardized offline state-action episodes",
+    "wmNote": "统一回合格式可直接用于学习动作条件转移。",
+    "wmNoteEn": "The unified episode format directly supports action-conditioned transition learning.",
+    "links": {
+      "homepage": "https://minari.farama.org/",
+      "code": "https://github.com/Farama-Foundation/Minari"
+    }
+  },
+  {
     "id": "mini-behavior",
     "name": "Mini-BEHAVIOR",
     "shortName": "Mini-BEHAVIOR",
@@ -8334,6 +8382,52 @@
     "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件"
   },
   {
+    "id": "exorl",
+    "name": "ExORL",
+    "shortName": "ExORL",
+    "year": 2022,
+    "summary": "通过无监督探索收集的 DeepMind Control Suite 离线状态动作轨迹。",
+    "summaryEn": "Offline state-action trajectories collected by unsupervised exploration in the DeepMind Control Suite.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Simulation State",
+      "Action",
+      "Reward",
+      "Trajectories"
+    ],
+    "structure": [
+      "Dataset / Benchmark",
+      "Motion Trajectories"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Exploratory replay datasets across continuous-control domains",
+    "scaleZh": "覆盖多个连续控制域的探索回放数据",
+    "organizations": "New York University and collaborators",
+    "organizationsZh": "纽约大学及合作团队",
+    "license": "MIT; component terms apply",
+    "licenseZh": "MIT；组成部分适用独立条款",
+    "access": "Download script and open-source loaders",
+    "accessZh": "下载脚本与开源加载器",
+    "rating": 5,
+    "verdict": "探索型连续控制离线轨迹",
+    "verdictEn": "Exploratory offline continuous-control trajectories",
+    "wmNote": "多样的状态动作覆盖支持离策略动力学建模。",
+    "wmNoteEn": "Diverse state-action coverage supports off-policy dynamics modeling.",
+    "links": {
+      "code": "https://github.com/denisyarats/exorl",
+      "paper": "https://arxiv.org/abs/2201.13425"
+    }
+  },
+  {
     "id": "h2o",
     "name": "H2O",
     "shortName": "H2O",
@@ -9049,6 +9143,52 @@
     }
   },
   {
+    "id": "v-d4rl",
+    "name": "V-D4RL",
+    "shortName": "V-D4RL",
+    "year": 2022,
+    "summary": "面向视觉离线强化学习的像素轨迹数据与评测基准。",
+    "summaryEn": "A pixel-trajectory dataset and benchmark for visual offline reinforcement learning.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Reward",
+      "Simulation State"
+    ],
+    "structure": [
+      "Dataset / Benchmark",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Pixel-based analogues of D4RL continuous-control tasks",
+    "scaleZh": "D4RL 连续控制任务的像素版本",
+    "organizations": "University of Oxford and collaborators",
+    "organizationsZh": "牛津大学及合作团队",
+    "license": "Component dataset terms apply",
+    "licenseZh": "适用组成数据条款",
+    "access": "Public Google Drive data and open-source loaders",
+    "accessZh": "公开 Google Drive 数据与开源加载器",
+    "rating": 5,
+    "verdict": "视觉离线动力学轨迹基准",
+    "verdictEn": "Visual offline-dynamics trajectory benchmark",
+    "wmNote": "像素帧与动作对齐，适合动作条件视频预测。",
+    "wmNoteEn": "Action-aligned pixel frames support action-conditioned video prediction.",
+    "links": {
+      "code": "https://github.com/conglu1997/v-d4rl",
+      "paper": "https://arxiv.org/abs/2206.04779"
+    }
+  },
+  {
     "id": "vima-bench",
     "name": "VIMA-Bench",
     "shortName": "VIMA-Bench",
@@ -9325,6 +9465,52 @@
       "homepage": "https://dex-ycb.github.io/",
       "paper": "https://arxiv.org/abs/2104.04631",
       "code": "https://github.com/NVlabs/dex-ycb-toolkit"
+    }
+  },
+  {
+    "id": "distracting-control-suite",
+    "name": "Distracting Control Suite",
+    "shortName": "DCS",
+    "year": 2021,
+    "summary": "在连续控制视频中加入背景、颜色和相机变化的视觉动力学鲁棒性基准。",
+    "summaryEn": "A visual-dynamics robustness benchmark adding background, color, and camera changes to continuous-control videos.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Simulation State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Environment / Benchmark",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Configurable visual distractions across control tasks",
+    "scaleZh": "覆盖多种控制任务的可配置视觉干扰",
+    "organizations": "Google Research",
+    "organizationsZh": "Google Research",
+    "license": "Apache-2.0",
+    "licenseZh": "Apache-2.0",
+    "access": "Open-source benchmark generator",
+    "accessZh": "开源基准生成器",
+    "rating": 4,
+    "verdict": "视觉动力学抗干扰诊断",
+    "verdictEn": "Visual-dynamics distraction diagnostic",
+    "wmNote": "保持潜在动力学不变而改变视觉因素，可检验因果状态建模。",
+    "wmNoteEn": "Varying appearance while preserving latent dynamics tests causal-state modeling.",
+    "links": {
+      "code": "https://github.com/google-research/google-research/tree/master/distracting_control",
+      "paper": "https://arxiv.org/abs/2101.02722"
     }
   },
   {
@@ -9892,6 +10078,52 @@
     "wmNoteEn": "Frame, action, and reward sequences directly support model-based RL world models.",
     "links": {
       "code": "https://github.com/mila-iqia/atari-dqn"
+    }
+  },
+  {
+    "id": "atari-replay-dataset",
+    "name": "Atari Replay Dataset",
+    "shortName": "Atari Replay",
+    "year": 2020,
+    "summary": "DQN 训练过程保存的大规模 Atari 回放，包含帧、动作、奖励和终止信号。",
+    "summaryEn": "Large-scale Atari replay saved during DQN training, containing frames, actions, rewards, and terminal signals.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Reward",
+      "Game State"
+    ],
+    "structure": [
+      "Dataset / Benchmark",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Replay logs across 60 Atari games and training checkpoints",
+    "scaleZh": "覆盖 60 款 Atari 游戏和多个训练阶段",
+    "organizations": "Google Research",
+    "organizationsZh": "Google Research",
+    "license": "Code under Apache-2.0; data and ROM terms apply",
+    "licenseZh": "代码为 Apache-2.0；数据和 ROM 适用独立条款",
+    "access": "Public replay data through Dopamine tooling",
+    "accessZh": "通过 Dopamine 工具访问公开回放数据",
+    "rating": 5,
+    "verdict": "大规模 Atari 状态动作回放",
+    "verdictEn": "Large-scale Atari state-action replay",
+    "wmNote": "不同策略质量和训练阶段适合离线世界模型训练。",
+    "wmNoteEn": "Multiple policy qualities and training stages support offline world-model training.",
+    "links": {
+      "code": "https://github.com/google/dopamine/tree/master/dopamine/labs/offline_rl",
+      "paper": "https://arxiv.org/abs/1907.04543"
     }
   },
   {

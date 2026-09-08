@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-321-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-326-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 321 | 6 | 6 | 45 |
+| 326 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (35)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (44)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (82)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (71)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (36)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (82)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (35)
+### Predictive & Generative Dynamics (36)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -130,6 +130,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A pipeline for generating videos with exact 3D, optical-flow, depth, and segmentation annotations.
   `Physics / Science` · `Games / Virtual Environments` · `Synthetic Video` · `Depth` · `Optical Flow` · `Segmentation` · `3D State`
   [Homepage](https://kubric.readthedocs.io/) · [Paper](https://arxiv.org/abs/2203.03570) · [Code](https://github.com/google-research/kubric) · Access: Official generation toolkit
+
+- **V-D4RL** · 2022
+  A pixel-trajectory dataset and benchmark for visual offline reinforcement learning.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Reward` · `Simulation State`
+  [Code](https://github.com/conglu1997/v-d4rl) · [Paper](https://arxiv.org/abs/2206.04779) · Access: Public Google Drive data and open-source loaders
 
 - **Atari 100K Dataset** · 2020
   Frames, actions, rewards, and terminal signals from Atari games under a limited interaction budget for model-based RL.
@@ -253,7 +258,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (44)
+### Action-Conditioned Dynamics (47)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -360,6 +365,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Segmentation` · `Object Metadata` · `Action Labels`
   [Homepage](http://armbench.com) · [Paper](https://arxiv.org/abs/2303.16382) · [Code](https://github.com/amzn/armbench) · Access: Official dataset website and loading code available
 
+- **Minari Offline RL Datasets** · 2023
+  A standardized offline-RL dataset library providing complete episodes with observations, actions, rewards, and termination signals.
+  `Robotics / Embodied AI` · `Games / Virtual Environments` · `Simulation State` · `Action` · `Reward` · `Trajectories`
+  [Homepage](https://minari.farama.org/) · [Code](https://github.com/Farama-Foundation/Minari) · Access: Open dataset registry and loaders
+
 - **RH20T** · 2023
   A real-world bimanual manipulation dataset with multiview RGB-D, force sensing, and robot state.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
@@ -369,6 +379,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   An offline-RL dataset of real TriFinger Push/Lift tasks with states, actions, rewards, and behavior of varying quality.
   `Robotics / Embodied AI` · `Robot State` · `Action` · `Reward` · `RGB Video` · `Trajectories`
   [Homepage](https://doi.org/10.17617/3.DXZ7TL) · [Code](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · Access: Official DOI and dataset documentation available
+
+- **ExORL** · 2022
+  Offline state-action trajectories collected by unsupervised exploration in the DeepMind Control Suite.
+  `Robotics / Embodied AI` · `Simulation State` · `Action` · `Reward` · `Trajectories`
+  [Code](https://github.com/denisyarats/exorl) · [Paper](https://arxiv.org/abs/2201.13425) · Access: Download script and open-source loaders
 
 - **H2O** · 2022
   An egocentric hand-object interaction dataset with 3D poses of both hands and objects.
@@ -414,6 +429,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   GPU-accelerated physics environments that generate robot states, actions, and visual trajectories.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacGymEnvs) · [Paper](https://arxiv.org/abs/2108.10470) · Access: Official repository and release
+
+- **Atari Replay Dataset** · 2020
+  Large-scale Atari replay saved during DQN training, containing frames, actions, rewards, and terminal signals.
+  `Games / Virtual Environments` · `RGB Video` · `Action` · `Reward` · `Game State`
+  [Code](https://github.com/google/dopamine/tree/master/dopamine/labs/offline_rl) · [Paper](https://arxiv.org/abs/1907.04543) · Access: Public replay data through Dopamine tooling
 
 - **D4RL** · 2020
   A standardized offline-RL dataset suite with states, actions, rewards, and termination signals.
@@ -1344,7 +1364,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (71)
+### World Model Evaluation & Diagnostics (72)
 
 - **4DSynth** · 2026
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
@@ -1670,6 +1690,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   An open-world survival environment.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/danijar/crafter) · [Paper](https://arxiv.org/abs/2109.06780) · Access: Open-source environment
+
+- **Distracting Control Suite** · 2021
+  A visual-dynamics robustness benchmark adding background, color, and camera changes to continuous-control videos.
+  `Robotics / Embodied AI` · `RGB Video` · `Simulation State` · `Action` · `Reward`
+  [Code](https://github.com/google-research/google-research/tree/master/distracting_control) · [Paper](https://arxiv.org/abs/2101.02722) · Access: Open-source benchmark generator
 
 - **MiniHack** · 2021
   Composable NetHack-based environments for planning, memory, and long-horizon state evolution.

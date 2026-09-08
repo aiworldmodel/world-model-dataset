@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-321-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-326-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 321 | 6 | 6 | 45 |
+| 326 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (35)](#predictive-generative-dynamics) · [动作条件动力学 (44)](#action-conditioned-dynamics) · [决策与智能体轨迹 (82)](#decision-making-agent-trajectories) · [空间与时空世界建模 (61)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (71)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (36)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (82)](#decision-making-agent-trajectories) · [空间与时空世界建模 (61)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（35）
+### 预测与生成式动力学（36）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -130,6 +130,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   用于生成带精确三维、光流、深度和分割标注的视频数据管线。
   `物理 / 科学` · `游戏 / 虚拟环境` · `合成视频` · `深度` · `光流` · `分割标注` · `三维状态`
   [主页](https://kubric.readthedocs.io/) · [论文](https://arxiv.org/abs/2203.03570) · [代码](https://github.com/google-research/kubric) · 访问方式：官方生成工具
+
+- **V-D4RL** · 2022
+  面向视觉离线强化学习的像素轨迹数据与评测基准。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `奖励` · `仿真状态`
+  [代码](https://github.com/conglu1997/v-d4rl) · [论文](https://arxiv.org/abs/2206.04779) · 访问方式：公开 Google Drive 数据与开源加载器
 
 - **Atari 100K Dataset** · 2020
   在 Atari 游戏中记录有限交互预算下的帧、动作、奖励和终止信号，用于模型式强化学习。
@@ -253,7 +258,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（44）
+### 动作条件动力学（47）
 
 - **AgiBot World 2026** · 2026
   真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
@@ -360,6 +365,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB 视频` · `分割标注` · `物体元数据` · `动作标签`
   [主页](http://armbench.com) · [论文](https://arxiv.org/abs/2303.16382) · [代码](https://github.com/amzn/armbench) · 访问方式：提供官方数据网站和加载代码
 
+- **Minari Offline RL Datasets** · 2023
+  标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。
+  `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
+  [主页](https://minari.farama.org/) · [代码](https://github.com/Farama-Foundation/Minari) · 访问方式：开放数据注册表与加载器
+
 - **RH20T** · 2023
   真实机器人双臂操作数据集，包含多视角 RGB-D、力觉和机器人状态。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
@@ -369,6 +379,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   TriFinger 真实机器人 Push/Lift 离线强化学习数据，包含多质量策略的状态、动作和奖励。
   `机器人 / 具身智能` · `机器人状态` · `动作` · `奖励` · `RGB 视频` · `轨迹`
   [主页](https://doi.org/10.17617/3.DXZ7TL) · [代码](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 访问方式：官方 DOI 和数据文档可用
+
+- **ExORL** · 2022
+  通过无监督探索收集的 DeepMind Control Suite 离线状态动作轨迹。
+  `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
+  [代码](https://github.com/denisyarats/exorl) · [论文](https://arxiv.org/abs/2201.13425) · 访问方式：下载脚本与开源加载器
 
 - **H2O** · 2022
   第一人称手-物交互数据集，提供双手和物体的三维姿态。
@@ -414,6 +429,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   GPU 加速物理仿真环境，可生成机器人状态、动作和视觉轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacGymEnvs) · [论文](https://arxiv.org/abs/2108.10470) · 访问方式：官方仓库和发行版
+
+- **Atari Replay Dataset** · 2020
+  DQN 训练过程保存的大规模 Atari 回放，包含帧、动作、奖励和终止信号。
+  `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `游戏状态`
+  [代码](https://github.com/google/dopamine/tree/master/dopamine/labs/offline_rl) · [论文](https://arxiv.org/abs/1907.04543) · 访问方式：通过 Dopamine 工具访问公开回放数据
 
 - **D4RL** · 2020
   用于离线强化学习的标准化环境数据集，包含状态、动作、奖励和终止信号。
@@ -1344,7 +1364,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### 世界模型评测与诊断（71）
+### 世界模型评测与诊断（72）
 
 - **4DSynth** · 2026
   面向动态具身仿真的可控程序化四维世界合成资源。
@@ -1670,6 +1690,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   开放世界生存环境。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/danijar/crafter) · [论文](https://arxiv.org/abs/2109.06780) · 访问方式：开源环境
+
+- **Distracting Control Suite** · 2021
+  在连续控制视频中加入背景、颜色和相机变化的视觉动力学鲁棒性基准。
+  `机器人 / 具身智能` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
+  [代码](https://github.com/google-research/google-research/tree/master/distracting_control) · [论文](https://arxiv.org/abs/2101.02722) · 访问方式：开源基准生成器
 
 - **MiniHack** · 2021
   基于 NetHack 的可组合环境，用于研究规划、记忆和长期状态演化。
