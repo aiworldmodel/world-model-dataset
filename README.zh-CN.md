@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-326-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-331-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 326 | 6 | 6 | 45 |
+| 331 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (36)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (82)](#decision-making-agent-trajectories) · [空间与时空世界建模 (61)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (38)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (84)](#decision-making-agent-trajectories) · [空间与时空世界建模 (62)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（36）
+### 预测与生成式动力学（38）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -110,6 +110,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   主体到视频生成的五百万规模训练集与细粒度评测集。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2505.20292) · 访问方式：论文入口；发布状态待核验
+
+- **TACO** · 2024
+  面向双手工具-动作-物体理解的真实人手-物体交互数据集，包含第三人称与第一人称视角、精确手物体 3D 网格和动作标签，用于动作识别、运动预测与协同抓取合成。
+  `第一人称 / 人类活动` · `机器人 / 具身智能` · `多视角 RGB 视频` · `三维网格` · `动作标签` · `智能体位姿` · `物体元数据`
+  [主页](https://taco2024.github.io/) · [论文](https://arxiv.org/abs/2401.08399) · [代码](https://github.com/leolyliu/TACO-Instructions) · 访问方式：官方项目页提供 Dataset V1、预发布数据、论文和代码链接
 
 - **Ego4D** · 2022
   由 Meta AI 联合全球高校采集的大规模第一人称真实生活视频数据集，其短期物体交互预判与长期动作预测任务，为人类行为、手物交互和具身未来预测提供了重要基准。
@@ -185,6 +190,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   大规模人类动作视频分类数据集，覆盖 700 类日常和体育动作。
   `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
   [论文](https://arxiv.org/abs/1907.06987) · 访问方式：官方标注和下载脚本
+
+- **PREVENTION Dataset** · 2019
+  面向周围车辆意图与轨迹预测的真实自动驾驶数据集，包含前后彩色视频、LiDAR、长短距雷达、RTK DGNSS、IMU、车道变化标注、检测和车辆轨迹。
+  `自动驾驶` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `GPS / 惯性测量单元` · `轨迹`
+  [主页](https://prevention-dataset.uah.es/) · [论文](https://doi.org/10.1109/ITSC.2019.8917433) · 访问方式：官方网站提供原始数据、处理后数据、工具和标注
 
 - **3DPW** · 2018
   真实环境中采集的三维人体姿态与运动视频数据集，包含 SMPL 参数和相机信息。
@@ -497,7 +507,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（82）
+### 决策与智能体轨迹（84）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -699,6 +709,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `仿真状态`
   [主页](https://sites.google.com/view/robohive) · [论文](https://arxiv.org/abs/2310.06828) · [代码](https://github.com/vikashplus/robohive) · 访问方式：官方框架
 
+- **RoboSet** · 2023
+  真实家庭桌面操作数据集，覆盖厨房等日常活动中的多技能、多任务演示，包含四视角图像、语言定义任务、遥操作和动觉回放轨迹。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `语言` · `轨迹`
+  [主页](https://robopen.github.io/roboset/) · [论文](https://arxiv.org/abs/2309.01918) · [代码](https://github.com/robopen/roboagent) · 访问方式：官方 RoboSet 页面提供可下载轨迹；代码仓库引用了备用 Hugging Face 镜像
+
 - **UMI** · 2023
   通用移动操作接口与数据集，记录手持相机、末端动作和跨机器人操作轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
@@ -743,6 +758,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   大规模多智能体网格世界环境，提供并行动作、观测和群体状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/Farama-Foundation/MAgent2) · [论文](https://arxiv.org/abs/2109.07807) · 访问方式：开源环境
+
+- **MoCapAct** · 2022
+  面向仿真人形控制的动作捕捉到动作数据集，发布可跟踪 CMU MoCap 片段的专家策略及其带噪声 rollout，包含本体观测、动作和奖励。
+  `机器人 / 具身智能` · `物理 / 科学` · `三维状态` · `动作` · `奖励` · `仿真状态` · `轨迹`
+  [主页](https://microsoft.github.io/MoCapAct/) · [论文](https://arxiv.org/abs/2208.07363) · [代码](https://github.com/microsoft/MoCapAct) · 访问方式：官方项目页、GitHub 代码和 Hugging Face 数据集合可用
 
 - **ProcTHOR** · 2022
   用于具身智能训练与评测的程序化交互环境框架，可生成任意规模、多样且可定制的虚拟室内场景，官方样本包含 1 万套房屋。
@@ -911,7 +931,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（61）
+### 空间与时空世界建模（62）
 
 - **AudioWorldSim** · 2026
   用于生成双耳音频世界模型轨迹的开放仿真平台。
@@ -1152,6 +1172,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   面向自动驾驶的多任务数据集，提供街景视频、立体图像、深度、三维车辆和高精地图等信息，支持城市时空场景建模。
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `深度` · `地图` · `三维框` · `语义标签`
   [主页](https://apolloscape.auto/) · [论文](https://arxiv.org/abs/1803.06184) · [代码](https://github.com/ApolloScapeAuto/dataset-api) · 访问方式：需要注册
+
+- **comma2k19** · 2018
+  comma.ai 发布的真实高速通勤驾驶数据集，包含道路前视视频、GPS/GNSS、IMU、CAN 总线、车辆速度、转向角和全局相机位姿，适合研究低成本传感器下的驾驶状态估计与时序地图构建。
+  `自动驾驶` · `RGB 视频` · `GPS / 惯性测量单元` · `动作` · `相机位姿` · `轨迹`
+  [主页](https://github.com/commaai/comma2k19) · [论文](https://arxiv.org/abs/1812.05752) · 访问方式：公开 GitHub 仓库提供数据下载说明和示例片段
 
 - **Gibson Environment Dataset** · 2018
   由真实空间扫描构建的可导航三维环境集合，配合 Gibson 模拟器生成 RGB、深度、语义和智能体轨迹，面向具身感知与导航。

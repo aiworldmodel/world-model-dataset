@@ -1,0 +1,51 @@
+{
+  "id": "taco",
+  "name": "TACO",
+  "shortName": "TACO",
+  "year": 2024,
+  "summary": "面向双手工具-动作-物体理解的真实人手-物体交互数据集，包含第三人称与第一人称视角、精确手物体 3D 网格和动作标签，用于动作识别、运动预测与协同抓取合成。",
+  "summaryEn": "A real bimanual tool-action-object interaction dataset with third-person and egocentric views, precise hand-object 3D meshes, and action labels for action recognition, motion forecasting, and cooperative grasp synthesis.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Spatial & Spatiotemporal World Modeling",
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "3D Mesh",
+    "Action Labels",
+    "Agent Pose",
+    "Object Metadata"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Human-Object Interaction Episodes"
+  ],
+  "source": [
+    "Real-world",
+    "Motion Capture"
+  ],
+  "scale": "2.5K motion sequences with third-person and egocentric views plus hand-object mesh annotations",
+  "scaleZh": "2,500 条运动序列，包含第三人称与第一人称视角以及手-物体网格标注",
+  "organizations": "Tsinghua University, Shanghai AI Laboratory, Shanghai Qi Zhi Institute, BUPT, and BIT",
+  "organizationsZh": "清华大学、上海人工智能实验室、上海期智研究院、北京邮电大学和北京理工大学",
+  "license": "Dataset terms require verification; project website uses CC BY-SA 4.0",
+  "licenseZh": "数据集条款需进一步核查；项目网站采用 CC BY-SA 4.0",
+  "access": "Official project page provides dataset V1, pre-release data, paper, and code links",
+  "accessZh": "官方项目页提供 Dataset V1、预发布数据、论文和代码链接",
+  "rating": 4,
+  "verdict": "双手工具交互的 4D 人手-物体序列",
+  "verdictEn": "4D bimanual hand-object sequences for tool interaction",
+  "wmNote": "动作标签、第一人称/第三人称视频和精确 3D 网格让它适合研究人手-物体未来运动预测和操作可泛化性；它不是机器人执行动作数据。",
+  "wmNoteEn": "Action labels, egocentric/third-person videos, and precise 3D meshes support hand-object motion forecasting and manipulation generalization, but it is not robot-executed action data.",
+  "links": {
+    "homepage": "https://taco2024.github.io/",
+    "paper": "https://arxiv.org/abs/2401.08399",
+    "code": "https://github.com/leolyliu/TACO-Instructions"
+  }
+}

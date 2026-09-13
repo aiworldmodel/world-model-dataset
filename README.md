@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-326-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-331-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 326 | 6 | 6 | 45 |
+| 331 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (36)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (82)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (61)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (38)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (84)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (36)
+### Predictive & Generative Dynamics (38)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -110,6 +110,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A five-million-scale subject-to-video training dataset and fine-grained benchmark.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Scene Metadata`
   [Paper](https://arxiv.org/abs/2505.20292) · Access: Paper entry; release status requires verification
+
+- **TACO** · 2024
+  A real bimanual tool-action-object interaction dataset with third-person and egocentric views, precise hand-object 3D meshes, and action labels for action recognition, motion forecasting, and cooperative grasp synthesis.
+  `Egocentric / Human` · `Robotics / Embodied AI` · `Multi-view RGB Video` · `3D Mesh` · `Action Labels` · `Agent Pose` · `Object Metadata`
+  [Homepage](https://taco2024.github.io/) · [Paper](https://arxiv.org/abs/2401.08399) · [Code](https://github.com/leolyliu/TACO-Instructions) · Access: Official project page provides dataset V1, pre-release data, paper, and code links
 
 - **Ego4D** · 2022
   A large first-person video dataset of real human activities collected by Meta AI and an international academic consortium, with benchmarks for object interaction anticipation and long-term action forecasting.
@@ -185,6 +190,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A large human-action video dataset covering 700 daily and sports action classes.
   `Egocentric / Human` · `RGB Video` · `Action Labels`
   [Paper](https://arxiv.org/abs/1907.06987) · Access: Official annotations and download scripts
+
+- **PREVENTION Dataset** · 2019
+  A real autonomous-driving dataset for surrounding-vehicle intention and trajectory prediction, with front/back video, LiDAR, long- and short-range radar, RTK DGNSS, IMU, lane-change labels, detections, and trajectories.
+  `Autonomous Driving` · `RGB Video` · `LiDAR` · `RADAR` · `GPS / IMU` · `Trajectories`
+  [Homepage](https://prevention-dataset.uah.es/) · [Paper](https://doi.org/10.1109/ITSC.2019.8917433) · Access: Official website provides raw data, processed data, tools, and annotations
 
 - **3DPW** · 2018
   A real-world 3D human pose and motion video dataset with SMPL parameters and camera information.
@@ -497,7 +507,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (82)
+### Decision-Making & Agent Trajectories (84)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -699,6 +709,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Simulation State`
   [Homepage](https://sites.google.com/view/robohive) · [Paper](https://arxiv.org/abs/2310.06828) · [Code](https://github.com/vikashplus/robohive) · Access: Official framework
 
+- **RoboSet** · 2023
+  A real household tabletop manipulation dataset with multi-skill, multi-task demonstrations across everyday activities, four camera views, language-defined tasks, teleoperation, and kinesthetic playback trajectories.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State` · `Language` · `Trajectories`
+  [Homepage](https://robopen.github.io/roboset/) · [Paper](https://arxiv.org/abs/2309.01918) · [Code](https://github.com/robopen/roboagent) · Access: Official RoboSet pages provide downloadable trajectories; alternate Hugging Face mirror is referenced by the code repository
+
 - **UMI** · 2023
   A universal mobile-manipulation interface and dataset recording handheld vision, end-effector actions, and cross-robot trajectories.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
@@ -743,6 +758,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Large-scale multi-agent grid-world environments with parallel actions, observations, and population-state trajectories.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/Farama-Foundation/MAgent2) · [Paper](https://arxiv.org/abs/2109.07807) · Access: Open-source environment
+
+- **MoCapAct** · 2022
+  A simulated humanoid-control dataset that releases expert policies tracking CMU MoCap clips and noisy rollouts with proprioceptive observations, actions, and rewards.
+  `Robotics / Embodied AI` · `Physics / Science` · `3D State` · `Action` · `Reward` · `Simulation State` · `Trajectories`
+  [Homepage](https://microsoft.github.io/MoCapAct/) · [Paper](https://arxiv.org/abs/2208.07363) · [Code](https://github.com/microsoft/MoCapAct) · Access: Official project page, GitHub code, and Hugging Face dataset collection available
 
 - **ProcTHOR** · 2022
   A procedural framework for generating arbitrarily large, diverse, customizable interactive environments for embodied-agent training and evaluation, with an official 10,000-house sample.
@@ -911,7 +931,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (61)
+### Spatial & Spatiotemporal World Modeling (62)
 
 - **AudioWorldSim** · 2026
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1152,6 +1172,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A multi-task autonomous-driving dataset with street-view video, stereo images, depth, 3D vehicles, and high-definition maps for urban spatiotemporal modeling.
   `Autonomous Driving` · `Urban / 3D Scene` · `RGB Video` · `Depth` · `Maps` · `3D Boxes` · `Semantic Labels`
   [Homepage](https://apolloscape.auto/) · [Paper](https://arxiv.org/abs/1803.06184) · [Code](https://github.com/ApolloScapeAuto/dataset-api) · Access: Registration required
+
+- **comma2k19** · 2018
+  A real highway commute driving dataset from comma.ai with road-facing video, GPS/GNSS, IMU, CAN bus data, vehicle speed, steering angle, and global camera poses.
+  `Autonomous Driving` · `RGB Video` · `GPS / IMU` · `Action` · `Camera Pose` · `Trajectories`
+  [Homepage](https://github.com/commaai/comma2k19) · [Paper](https://arxiv.org/abs/1812.05752) · Access: Public GitHub repository with dataset download instructions and examples
 
 - **Gibson Environment Dataset** · 2018
   A collection of navigable 3D environments reconstructed from real scans, used with Gibson to generate RGB, depth, semantics, and agent trajectories.

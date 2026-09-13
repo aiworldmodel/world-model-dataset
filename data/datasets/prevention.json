@@ -1,0 +1,47 @@
+{
+  "id": "prevention",
+  "name": "PREVENTION Dataset",
+  "shortName": "PREVENTION",
+  "year": 2019,
+  "summary": "面向周围车辆意图与轨迹预测的真实自动驾驶数据集，包含前后彩色视频、LiDAR、长短距雷达、RTK DGNSS、IMU、车道变化标注、检测和车辆轨迹。",
+  "summaryEn": "A real autonomous-driving dataset for surrounding-vehicle intention and trajectory prediction, with front/back video, LiDAR, long- and short-range radar, RTK DGNSS, IMU, lane-change labels, detections, and trajectories.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Spatial & Spatiotemporal World Modeling"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "RADAR",
+    "GPS / IMU",
+    "Trajectories"
+  ],
+  "structure": [
+    "Driving Logs",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "More than six hours of driving across five recording dates with raw and processed sensor data",
+  "scaleZh": "跨 5 个采集日期的 6 小时以上驾驶数据，包含原始与处理后的多传感器数据",
+  "organizations": "INVETT Research Group, Universidad de Alcala",
+  "organizationsZh": "阿尔卡拉大学 INVETT Research Group",
+  "license": "CC BY-NC-SA 4.0",
+  "licenseZh": "CC BY-NC-SA 4.0",
+  "access": "Official website provides raw data, processed data, tools, and annotations",
+  "accessZh": "官方网站提供原始数据、处理后数据、工具和标注",
+  "rating": 4,
+  "verdict": "车辆意图预测的多传感器时序基准",
+  "verdictEn": "Multisensor temporal benchmark for vehicle-intention prediction",
+  "wmNote": "车道变化阶段、车辆轨迹和多传感器时序记录使其适合研究交通参与者未来状态预测；规模小于大型自动驾驶数据集。",
+  "wmNoteEn": "Lane-change stages, vehicle trajectories, and multisensor temporal logs make it useful for forecasting traffic-agent futures, though it is smaller than large industrial driving datasets.",
+  "links": {
+    "homepage": "https://prevention-dataset.uah.es/",
+    "paper": "https://doi.org/10.1109/ITSC.2019.8917433"
+  }
+}

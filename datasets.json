@@ -6956,6 +6956,57 @@
     }
   },
   {
+    "id": "taco",
+    "name": "TACO",
+    "shortName": "TACO",
+    "year": 2024,
+    "summary": "面向双手工具-动作-物体理解的真实人手-物体交互数据集，包含第三人称与第一人称视角、精确手物体 3D 网格和动作标签，用于动作识别、运动预测与协同抓取合成。",
+    "summaryEn": "A real bimanual tool-action-object interaction dataset with third-person and egocentric views, precise hand-object 3D meshes, and action labels for action recognition, motion forecasting, and cooperative grasp synthesis.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Spatial & Spatiotemporal World Modeling",
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Egocentric / Human",
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "3D Mesh",
+      "Action Labels",
+      "Agent Pose",
+      "Object Metadata"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Human-Object Interaction Episodes"
+    ],
+    "source": [
+      "Real-world",
+      "Motion Capture"
+    ],
+    "scale": "2.5K motion sequences with third-person and egocentric views plus hand-object mesh annotations",
+    "scaleZh": "2,500 条运动序列，包含第三人称与第一人称视角以及手-物体网格标注",
+    "organizations": "Tsinghua University, Shanghai AI Laboratory, Shanghai Qi Zhi Institute, BUPT, and BIT",
+    "organizationsZh": "清华大学、上海人工智能实验室、上海期智研究院、北京邮电大学和北京理工大学",
+    "license": "Dataset terms require verification; project website uses CC BY-SA 4.0",
+    "licenseZh": "数据集条款需进一步核查；项目网站采用 CC BY-SA 4.0",
+    "access": "Official project page provides dataset V1, pre-release data, paper, and code links",
+    "accessZh": "官方项目页提供 Dataset V1、预发布数据、论文和代码链接",
+    "rating": 4,
+    "verdict": "双手工具交互的 4D 人手-物体序列",
+    "verdictEn": "4D bimanual hand-object sequences for tool interaction",
+    "wmNote": "动作标签、第一人称/第三人称视频和精确 3D 网格让它适合研究人手-物体未来运动预测和操作可泛化性；它不是机器人执行动作数据。",
+    "wmNoteEn": "Action labels, egocentric/third-person videos, and precise 3D meshes support hand-object motion forecasting and manipulation generalization, but it is not robot-executed action data.",
+    "links": {
+      "homepage": "https://taco2024.github.io/",
+      "paper": "https://arxiv.org/abs/2401.08399",
+      "code": "https://github.com/leolyliu/TACO-Instructions"
+    }
+  },
+  {
     "id": "argoverse-2",
     "name": "Argoverse 2",
     "shortName": "Argoverse 2",
@@ -7722,6 +7773,56 @@
       "homepage": "https://sites.google.com/view/robohive",
       "paper": "https://arxiv.org/abs/2310.06828",
       "code": "https://github.com/vikashplus/robohive"
+    }
+  },
+  {
+    "id": "roboset",
+    "name": "RoboSet",
+    "shortName": "RoboSet",
+    "year": 2023,
+    "summary": "真实家庭桌面操作数据集，覆盖厨房等日常活动中的多技能、多任务演示，包含四视角图像、语言定义任务、遥操作和动觉回放轨迹。",
+    "summaryEn": "A real household tabletop manipulation dataset with multi-skill, multi-task demonstrations across everyday activities, four camera views, language-defined tasks, teleoperation, and kinesthetic playback trajectories.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Action",
+      "Robot State",
+      "Language",
+      "Trajectories"
+    ],
+    "structure": [
+      "Demonstration Trajectories",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Real-world",
+      "Teleoperation",
+      "Human Demonstration"
+    ],
+    "scale": "100,050 released trajectories overall; RoboAgent MT-ACT subset uses 7,500 trajectories across 12 skills and 38 tasks",
+    "scaleZh": "整体发布 100,050 条轨迹；RoboAgent MT-ACT 子集包含 12 类技能、38 项任务的 7,500 条轨迹",
+    "organizations": "Carnegie Mellon University, Meta AI, and collaborators",
+    "organizationsZh": "卡内基梅隆大学、Meta AI 及合作者",
+    "license": "MIT License for RoboAgent code and RoboSet datasets",
+    "licenseZh": "RoboAgent 代码和 RoboSet 数据集采用 MIT License",
+    "access": "Official RoboSet pages provide downloadable trajectories; alternate Hugging Face mirror is referenced by the code repository",
+    "accessZh": "官方 RoboSet 页面提供可下载轨迹；代码仓库引用了备用 Hugging Face 镜像",
+    "rating": 5,
+    "verdict": "真实多技能桌面操作轨迹",
+    "verdictEn": "Real multi-skill tabletop manipulation trajectories",
+    "wmNote": "多视角、语言任务和动作轨迹使其适合训练可泛化的操作世界模型；不同子集规模和来源需要在实验中明确说明。",
+    "wmNoteEn": "Multiview observations, language tasks, and action trajectories support generalizable manipulation world models; experiments should state which subset and collection source are used.",
+    "links": {
+      "homepage": "https://robopen.github.io/roboset/",
+      "paper": "https://arxiv.org/abs/2309.01918",
+      "code": "https://github.com/robopen/roboagent"
     }
   },
   {
@@ -8806,6 +8907,58 @@
     "organizationsZh": "斯坦福大学、NVIDIA、加州理工学院、麻省理工学院",
     "accessZh": "开放获取，具体取决于数据来源",
     "licenseZh": "代码采用 MIT 许可；源媒体与 Minecraft 资产另有条款"
+  },
+  {
+    "id": "mocapact",
+    "name": "MoCapAct",
+    "shortName": "MoCapAct",
+    "year": 2022,
+    "summary": "面向仿真人形控制的动作捕捉到动作数据集，发布可跟踪 CMU MoCap 片段的专家策略及其带噪声 rollout，包含本体观测、动作和奖励。",
+    "summaryEn": "A simulated humanoid-control dataset that releases expert policies tracking CMU MoCap clips and noisy rollouts with proprioceptive observations, actions, and rewards.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics",
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Physics / Science"
+    ],
+    "modalities": [
+      "3D State",
+      "Action",
+      "Reward",
+      "Simulation State",
+      "Trajectories"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Rollouts"
+    ],
+    "source": [
+      "Simulation",
+      "Motion Capture",
+      "Generated"
+    ],
+    "scale": "Small 46 GB and large 559 GB HDF5 rollout datasets over 2,589 MoCap snippets",
+    "scaleZh": "覆盖 2,589 个动作捕捉片段，提供 46 GB 小版和 559 GB 大版 HDF5 rollout 数据",
+    "organizations": "Microsoft Research and Georgia Institute of Technology",
+    "organizationsZh": "Microsoft Research 与佐治亚理工学院",
+    "license": "Dataset terms require verification; code is available from the official repository",
+    "licenseZh": "数据使用条款需进一步核查；官方仓库提供代码",
+    "access": "Official project page, GitHub code, and Hugging Face dataset collection available",
+    "accessZh": "官方项目页、GitHub 代码和 Hugging Face 数据集合可用",
+    "rating": 5,
+    "verdict": "带动作的仿真人形动作捕捉 rollout",
+    "verdictEn": "Humanoid motion-capture rollouts with executable actions",
+    "wmNote": "它把纯运动捕捉转化为可执行的观测-动作-奖励序列，直接支持人形动力学建模、动作补全和层级策略学习。",
+    "wmNoteEn": "It turns kinematic MoCap clips into executable observation-action-reward sequences, directly supporting humanoid dynamics modeling, motion completion, and hierarchical policy learning.",
+    "links": {
+      "homepage": "https://microsoft.github.io/MoCapAct/",
+      "paper": "https://arxiv.org/abs/2208.07363",
+      "code": "https://github.com/microsoft/MoCapAct"
+    }
   },
   {
     "id": "movi",
@@ -12370,6 +12523,53 @@
     "licenseZh": "代码采用 Apache-2.0；数据由随附模拟器生成"
   },
   {
+    "id": "prevention",
+    "name": "PREVENTION Dataset",
+    "shortName": "PREVENTION",
+    "year": 2019,
+    "summary": "面向周围车辆意图与轨迹预测的真实自动驾驶数据集，包含前后彩色视频、LiDAR、长短距雷达、RTK DGNSS、IMU、车道变化标注、检测和车辆轨迹。",
+    "summaryEn": "A real autonomous-driving dataset for surrounding-vehicle intention and trajectory prediction, with front/back video, LiDAR, long- and short-range radar, RTK DGNSS, IMU, lane-change labels, detections, and trajectories.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Spatial & Spatiotemporal World Modeling"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "LiDAR",
+      "RADAR",
+      "GPS / IMU",
+      "Trajectories"
+    ],
+    "structure": [
+      "Driving Logs",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "More than six hours of driving across five recording dates with raw and processed sensor data",
+    "scaleZh": "跨 5 个采集日期的 6 小时以上驾驶数据，包含原始与处理后的多传感器数据",
+    "organizations": "INVETT Research Group, Universidad de Alcala",
+    "organizationsZh": "阿尔卡拉大学 INVETT Research Group",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseZh": "CC BY-NC-SA 4.0",
+    "access": "Official website provides raw data, processed data, tools, and annotations",
+    "accessZh": "官方网站提供原始数据、处理后数据、工具和标注",
+    "rating": 4,
+    "verdict": "车辆意图预测的多传感器时序基准",
+    "verdictEn": "Multisensor temporal benchmark for vehicle-intention prediction",
+    "wmNote": "车道变化阶段、车辆轨迹和多传感器时序记录使其适合研究交通参与者未来状态预测；规模小于大型自动驾驶数据集。",
+    "wmNoteEn": "Lane-change stages, vehicle trajectories, and multisensor temporal logs make it useful for forecasting traffic-agent futures, though it is smaller than large industrial driving datasets.",
+    "links": {
+      "homepage": "https://prevention-dataset.uah.es/",
+      "paper": "https://doi.org/10.1109/ITSC.2019.8917433"
+    }
+  },
+  {
     "id": "replica",
     "name": "Replica",
     "shortName": "Replica",
@@ -12933,6 +13133,53 @@
     "links": {
       "homepage": "https://prior.allenai.org/projects/charades-ego",
       "paper": "https://arxiv.org/abs/1804.09626"
+    }
+  },
+  {
+    "id": "comma2k19",
+    "name": "comma2k19",
+    "shortName": "comma2k19",
+    "year": 2018,
+    "summary": "comma.ai 发布的真实高速通勤驾驶数据集，包含道路前视视频、GPS/GNSS、IMU、CAN 总线、车辆速度、转向角和全局相机位姿，适合研究低成本传感器下的驾驶状态估计与时序地图构建。",
+    "summaryEn": "A real highway commute driving dataset from comma.ai with road-facing video, GPS/GNSS, IMU, CAN bus data, vehicle speed, steering angle, and global camera poses.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "GPS / IMU",
+      "Action",
+      "Camera Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Driving Logs"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "2,019 one-minute highway segments totaling over 33 hours and about 100 GB",
+    "scaleZh": "2,019 个 1 分钟高速驾驶片段，总计 33 小时以上，约 100 GB",
+    "organizations": "comma.ai",
+    "organizationsZh": "comma.ai",
+    "license": "MIT license for the repository; verify dataset redistribution conditions",
+    "licenseZh": "代码仓库为 MIT 许可；数据再分发条件需进一步核查",
+    "access": "Public GitHub repository with dataset download instructions and examples",
+    "accessZh": "公开 GitHub 仓库提供数据下载说明和示例片段",
+    "rating": 4,
+    "verdict": "低成本车载传感器的真实时序驾驶日志",
+    "verdictEn": "Real sequential driving logs from commodity vehicle sensors",
+    "wmNote": "视频、CAN、GNSS/IMU 和相机位姿形成了可对齐的时空状态序列，适合地图、定位和驾驶状态演化建模；任务覆盖较集中在高速通勤场景。",
+    "wmNoteEn": "Aligned video, CAN, GNSS/IMU, and camera-pose streams support mapping, localization, and driving-state evolution modeling, with a scenario focus on highway commuting.",
+    "links": {
+      "homepage": "https://github.com/commaai/comma2k19",
+      "paper": "https://arxiv.org/abs/1812.05752"
     }
   },
   {

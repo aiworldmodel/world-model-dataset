@@ -1,0 +1,47 @@
+{
+  "id": "comma2k19",
+  "name": "comma2k19",
+  "shortName": "comma2k19",
+  "year": 2018,
+  "summary": "comma.ai 发布的真实高速通勤驾驶数据集，包含道路前视视频、GPS/GNSS、IMU、CAN 总线、车辆速度、转向角和全局相机位姿，适合研究低成本传感器下的驾驶状态估计与时序地图构建。",
+  "summaryEn": "A real highway commute driving dataset from comma.ai with road-facing video, GPS/GNSS, IMU, CAN bus data, vehicle speed, steering angle, and global camera poses.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "GPS / IMU",
+    "Action",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Driving Logs"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "2,019 one-minute highway segments totaling over 33 hours and about 100 GB",
+  "scaleZh": "2,019 个 1 分钟高速驾驶片段，总计 33 小时以上，约 100 GB",
+  "organizations": "comma.ai",
+  "organizationsZh": "comma.ai",
+  "license": "MIT license for the repository; verify dataset redistribution conditions",
+  "licenseZh": "代码仓库为 MIT 许可；数据再分发条件需进一步核查",
+  "access": "Public GitHub repository with dataset download instructions and examples",
+  "accessZh": "公开 GitHub 仓库提供数据下载说明和示例片段",
+  "rating": 4,
+  "verdict": "低成本车载传感器的真实时序驾驶日志",
+  "verdictEn": "Real sequential driving logs from commodity vehicle sensors",
+  "wmNote": "视频、CAN、GNSS/IMU 和相机位姿形成了可对齐的时空状态序列，适合地图、定位和驾驶状态演化建模；任务覆盖较集中在高速通勤场景。",
+  "wmNoteEn": "Aligned video, CAN, GNSS/IMU, and camera-pose streams support mapping, localization, and driving-state evolution modeling, with a scenario focus on highway commuting.",
+  "links": {
+    "homepage": "https://github.com/commaai/comma2k19",
+    "paper": "https://arxiv.org/abs/1812.05752"
+  }
+}
