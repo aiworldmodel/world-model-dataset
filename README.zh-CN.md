@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-331-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-333-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 331 | 6 | 6 | 45 |
+| 333 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (38)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (84)](#decision-making-agent-trajectories) · [空间与时空世界建模 (62)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (39)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (85)](#decision-making-agent-trajectories) · [空间与时空世界建模 (62)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（38）
+### 预测与生成式动力学（39）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -235,6 +235,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   高质量视频目标分割与跟踪数据集，提供密集逐帧像素标注。
   `第一人称 / 人类活动` · `RGB 视频` · `分割标注`
   [主页](https://davischallenge.org/) · [论文](https://arxiv.org/abs/1604.00675) · 访问方式：官方数据网站
+
+- **Stanford Drone Dataset** · 2016
+  从斯坦福校园上空采集的多智能体鸟瞰视频数据集，标注行人、自行车、滑板、车辆、公交车和高尔夫车轨迹，用于目标跟踪、社会导航和未来轨迹预测。
+  `第一人称 / 人类活动` · `城市 / 三维场景` · `RGB 视频` · `轨迹` · `二维框` · `动作标签` · `物体元数据`
+  [主页](https://cvgl.stanford.edu/projects/uav_data/) · [论文](https://arxiv.org/abs/1601.00998) · 访问方式：官方项目页提供 Stanford Campus Dataset 下载入口
 
 - **ViZDoom** · 2016
   基于 Doom 的第一人称视觉强化学习环境，提供可控动作和帧序列。
@@ -507,7 +512,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（84）
+### 决策与智能体轨迹（85）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -918,6 +923,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   将家庭活动表示为可执行程序并在三维室内环境中模拟，连接自然语言、动作序列、物体状态和视频，可用于长时任务与因果状态转移研究。
   `游戏 / 虚拟环境` · `机器人 / 具身智能` · `文本` · `动作` · `仿真状态` · `合成视频`
   [主页](http://virtual-home.org/) · [论文](https://arxiv.org/abs/1806.07011) · [代码](https://github.com/xavierpuigf/virtualhome) · 访问方式：开放生成工具
+
+- **JAAD** · 2017
+  面向自动驾驶中行人与驾驶员联合注意和过街行为预测的视频数据集，包含短视频片段、逐帧行人框、遮挡标签、行为标签、交通上下文和车辆行为标注。
+  `自动驾驶` · `第一人称 / 人类活动` · `RGB 视频` · `二维框` · `动作标签` · `语义标签` · `轨迹`
+  [主页](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) · [论文](https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html) · [代码](https://github.com/ykotseruba/JAAD) · 访问方式：官方数据集页面和 GitHub 标注公开可用
 
 - **PoseTrack** · 2017
   视频中的多人姿态估计与跟踪基准，提供连续人体关键点和轨迹标注。

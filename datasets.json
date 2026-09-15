@@ -14111,6 +14111,57 @@
     }
   },
   {
+    "id": "jaad",
+    "name": "JAAD",
+    "shortName": "JAAD",
+    "year": 2017,
+    "summary": "面向自动驾驶中行人与驾驶员联合注意和过街行为预测的视频数据集，包含短视频片段、逐帧行人框、遮挡标签、行为标签、交通上下文和车辆行为标注。",
+    "summaryEn": "A video dataset for joint attention and pedestrian crossing behavior in autonomous driving, with short clips, frame-level pedestrian boxes, occlusion tags, behavior labels, traffic context, and vehicle-action annotations.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "2D Boxes",
+      "Action Labels",
+      "Semantic Labels",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Agent Trajectories"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "346 HD clips, 82,032 annotated frames, 2,786 pedestrians, and 378,643 pedestrian boxes",
+    "scaleZh": "346 个高清视频片段、82,032 个标注帧、2,786 名行人和 378,643 个行人框",
+    "organizations": "York University",
+    "organizationsZh": "约克大学",
+    "license": "MIT License for released videos and annotations",
+    "licenseZh": "发布的视频和标注采用 MIT License",
+    "access": "Official dataset page and GitHub annotations are publicly available",
+    "accessZh": "官方数据集页面和 GitHub 标注公开可用",
+    "rating": 4,
+    "verdict": "行人-车辆交互和过街意图序列",
+    "verdictEn": "Pedestrian-vehicle interaction and crossing-intention sequences",
+    "wmNote": "逐帧行为、轨迹和车辆动作标注能支持行人意图预测与交互式驾驶决策建模；规模偏向过街交互场景。",
+    "wmNoteEn": "Frame-level behavior, trajectories, and vehicle-action labels support pedestrian intention prediction and interactive driving-decision modeling, with a focus on crossing interactions.",
+    "links": {
+      "homepage": "https://data.nvision2.eecs.yorku.ca/JAAD_dataset/",
+      "paper": "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html",
+      "code": "https://github.com/ykotseruba/JAAD"
+    }
+  },
+  {
     "id": "matterport3d",
     "name": "Matterport3D",
     "shortName": "Matterport3D",
@@ -14751,6 +14802,55 @@
     "links": {
       "homepage": "https://phys101.csail.mit.edu/",
       "paper": "https://arxiv.org/abs/1511.07439"
+    }
+  },
+  {
+    "id": "stanford-drone-dataset",
+    "name": "Stanford Drone Dataset",
+    "shortName": "SDD",
+    "year": 2016,
+    "summary": "从斯坦福校园上空采集的多智能体鸟瞰视频数据集，标注行人、自行车、滑板、车辆、公交车和高尔夫车轨迹，用于目标跟踪、社会导航和未来轨迹预测。",
+    "summaryEn": "A multi-agent bird's-eye-view video dataset recorded over the Stanford campus, annotating pedestrians, bicyclists, skateboarders, cars, buses, and golf carts for tracking, social navigation, and trajectory forecasting.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Egocentric / Human",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Trajectories",
+      "2D Boxes",
+      "Action Labels",
+      "Object Metadata"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Agent Trajectories"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "60 videos across eight scenes; Stanford Campus Dataset download is about 69 GB",
+    "scaleZh": "覆盖 8 个场景的 60 段视频；Stanford Campus Dataset 下载约 69 GB",
+    "organizations": "Stanford Computational Vision and Geometry Lab",
+    "organizationsZh": "斯坦福 Computational Vision and Geometry Lab",
+    "license": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+    "licenseZh": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+    "access": "Official project page provides the Stanford Campus Dataset download",
+    "accessZh": "官方项目页提供 Stanford Campus Dataset 下载入口",
+    "rating": 4,
+    "verdict": "经典鸟瞰多智能体轨迹预测数据",
+    "verdictEn": "Classic bird's-eye multi-agent trajectory forecasting data",
+    "wmNote": "多类别智能体在真实开放空间中的连续轨迹非常适合建模社会导航和多未来预测；缺少车载或机器人动作控制信号。",
+    "wmNoteEn": "Continuous trajectories of multiple agent classes in real open spaces are valuable for social navigation and multi-future forecasting, though the dataset lacks ego-vehicle or robot action controls.",
+    "links": {
+      "homepage": "https://cvgl.stanford.edu/projects/uav_data/",
+      "paper": "https://arxiv.org/abs/1601.00998"
     }
   },
   {

@@ -1,0 +1,49 @@
+{
+  "id": "stanford-drone-dataset",
+  "name": "Stanford Drone Dataset",
+  "shortName": "SDD",
+  "year": 2016,
+  "summary": "从斯坦福校园上空采集的多智能体鸟瞰视频数据集，标注行人、自行车、滑板、车辆、公交车和高尔夫车轨迹，用于目标跟踪、社会导航和未来轨迹预测。",
+  "summaryEn": "A multi-agent bird's-eye-view video dataset recorded over the Stanford campus, annotating pedestrians, bicyclists, skateboarders, cars, buses, and golf carts for tracking, social navigation, and trajectory forecasting.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Trajectories",
+    "2D Boxes",
+    "Action Labels",
+    "Object Metadata"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Agent Trajectories"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "60 videos across eight scenes; Stanford Campus Dataset download is about 69 GB",
+  "scaleZh": "覆盖 8 个场景的 60 段视频；Stanford Campus Dataset 下载约 69 GB",
+  "organizations": "Stanford Computational Vision and Geometry Lab",
+  "organizationsZh": "斯坦福 Computational Vision and Geometry Lab",
+  "license": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+  "licenseZh": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
+  "access": "Official project page provides the Stanford Campus Dataset download",
+  "accessZh": "官方项目页提供 Stanford Campus Dataset 下载入口",
+  "rating": 4,
+  "verdict": "经典鸟瞰多智能体轨迹预测数据",
+  "verdictEn": "Classic bird's-eye multi-agent trajectory forecasting data",
+  "wmNote": "多类别智能体在真实开放空间中的连续轨迹非常适合建模社会导航和多未来预测；缺少车载或机器人动作控制信号。",
+  "wmNoteEn": "Continuous trajectories of multiple agent classes in real open spaces are valuable for social navigation and multi-future forecasting, though the dataset lacks ego-vehicle or robot action controls.",
+  "links": {
+    "homepage": "https://cvgl.stanford.edu/projects/uav_data/",
+    "paper": "https://arxiv.org/abs/1601.00998"
+  }
+}

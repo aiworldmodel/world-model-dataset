@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-331-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-333-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 331 | 6 | 6 | 45 |
+| 333 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (38)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (84)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (39)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (85)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (38)
+### Predictive & Generative Dynamics (39)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -235,6 +235,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A high-quality video object-segmentation and tracking dataset with dense frame-level masks.
   `Egocentric / Human` · `RGB Video` · `Segmentation`
   [Homepage](https://davischallenge.org/) · [Paper](https://arxiv.org/abs/1604.00675) · Access: Official dataset website
+
+- **Stanford Drone Dataset** · 2016
+  A multi-agent bird's-eye-view video dataset recorded over the Stanford campus, annotating pedestrians, bicyclists, skateboarders, cars, buses, and golf carts for tracking, social navigation, and trajectory forecasting.
+  `Egocentric / Human` · `Urban / 3D Scene` · `RGB Video` · `Trajectories` · `2D Boxes` · `Action Labels` · `Object Metadata`
+  [Homepage](https://cvgl.stanford.edu/projects/uav_data/) · [Paper](https://arxiv.org/abs/1601.00998) · Access: Official project page provides the Stanford Campus Dataset download
 
 - **ViZDoom** · 2016
   A Doom-based first-person visual RL environment with controllable actions and frame sequences.
@@ -507,7 +512,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (84)
+### Decision-Making & Agent Trajectories (85)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -918,6 +923,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Represents household activities as executable programs in 3D homes, linking language, action sequences, object states, and rendered video.
   `Games / Virtual Environments` · `Robotics / Embodied AI` · `Text` · `Action` · `Simulation State` · `Synthetic Video`
   [Homepage](http://virtual-home.org/) · [Paper](https://arxiv.org/abs/1806.07011) · [Code](https://github.com/xavierpuigf/virtualhome) · Access: Open generation toolkit
+
+- **JAAD** · 2017
+  A video dataset for joint attention and pedestrian crossing behavior in autonomous driving, with short clips, frame-level pedestrian boxes, occlusion tags, behavior labels, traffic context, and vehicle-action annotations.
+  `Autonomous Driving` · `Egocentric / Human` · `RGB Video` · `2D Boxes` · `Action Labels` · `Semantic Labels` · `Trajectories`
+  [Homepage](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) · [Paper](https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html) · [Code](https://github.com/ykotseruba/JAAD) · Access: Official dataset page and GitHub annotations are publicly available
 
 - **PoseTrack** · 2017
   A multi-person pose estimation and tracking benchmark with temporally consistent keypoints and tracks in video.
