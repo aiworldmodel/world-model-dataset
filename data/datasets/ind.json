@@ -1,0 +1,48 @@
+{
+  "id": "ind",
+  "name": "inD",
+  "shortName": "inD",
+  "year": 2019,
+  "summary": "使用无人机在德国城市路口采集的自然道路参与者轨迹数据集，覆盖车辆、自行车和行人，面向城市交互行为预测和场景化安全验证。",
+  "summaryEn": "A naturalistic road-user trajectory dataset recorded by drones at German urban intersections, covering vehicles, bicyclists, and pedestrians for urban interaction prediction and scenario-based safety validation.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Object Metadata",
+    "Agent Pose",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Traffic Scenarios"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "10 hours from four German intersections with more than 11,500 road users including vehicles, bicyclists, and pedestrians",
+  "scaleZh": "来自德国 4 个路口的 10 小时数据，包含超过 11,500 名车辆、自行车和行人等道路参与者",
+  "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+  "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+  "license": "Free for non-commercial research under leveLXData/inD terms; redistribution is restricted",
+  "licenseZh": "按 leveLXData/inD 条款可免费用于非商业研究；再分发受限",
+  "access": "Official leveLXData/inD request page; access requires agreeing to dataset terms",
+  "accessZh": "官方 leveLXData/inD 申请页面；访问需同意数据集条款",
+  "rating": 5,
+  "verdict": "城市路口多类别道路参与者轨迹",
+  "verdictEn": "Urban-intersection trajectories for multiple road-user classes",
+  "wmNote": "它补足 highD 的高速场景局限，提供路口中车辆、骑行者和行人的交互轨迹，适合多智能体未来预测和安全场景生成。",
+  "wmNoteEn": "It complements highD's highway focus with intersection interactions among vehicles, cyclists, and pedestrians, supporting multi-agent forecasting and safety-scenario generation.",
+  "links": {
+    "homepage": "https://levelxdata.com/ind-dataset/",
+    "paper": "https://arxiv.org/abs/1911.07602"
+  }
+}

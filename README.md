@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-333-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-336-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 333 | 6 | 6 | 45 |
+| 336 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (39)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (85)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (41)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (86)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (39)
+### Predictive & Generative Dynamics (41)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -181,6 +181,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `Urban / 3D Scene` · `RGB Video` · `Semantic Labels` · `Trajectories`
   [Paper](https://arxiv.org/abs/1904.01975) · Access: Paper entry; official access requires verification
 
+- **inD** · 2019
+  A naturalistic road-user trajectory dataset recorded by drones at German urban intersections, covering vehicles, bicyclists, and pedestrians for urban interaction prediction and scenario-based safety validation.
+  `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
+  [Homepage](https://levelxdata.com/ind-dataset/) · [Paper](https://arxiv.org/abs/1911.07602) · Access: Official leveLXData/inD request page; access requires agreeing to dataset terms
+
 - **INTERACTION Dataset** · 2019
   A trajectory dataset focused on highly interactive driving scenarios such as intersections, roundabouts, and merging across multiple countries.
   `Autonomous Driving` · `Trajectories` · `Maps` · `Agent Pose`
@@ -210,6 +215,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   The first large EPIC-KITCHENS release, capturing continuous first-person activities in participants' own kitchens with action, verb, noun, and narration labels.
   `Egocentric / Human` · `RGB Video` · `Audio` · `Action Labels` · `Language`
   [Homepage](https://epic-kitchens.github.io/2018) · [Paper](https://arxiv.org/abs/1804.02748) · [Code](https://github.com/epic-kitchens/epic-kitchens-55-annotations) · Access: Application / agreement required
+
+- **highD** · 2018
+  A naturalistic highway vehicle-trajectory dataset recorded by drones over German highways, with high-precision vehicle position, speed, acceleration, lane, class, size, and maneuver information.
+  `Autonomous Driving` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
+  [Homepage](https://levelxdata.com/highd-dataset/) · [Paper](https://arxiv.org/abs/1810.05642) · Access: Official leveLXData/highD request page; access requires agreeing to dataset terms
 
 - **Kinetics-600** · 2018
   A large-scale video dataset covering 600 human action classes.
@@ -512,7 +522,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (85)
+### Decision-Making & Agent Trajectories (86)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -833,6 +843,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   An indoor robot environment and trajectory benchmark for sim-to-real navigation.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Agent Pose` · `Maps`
   [Homepage](https://ai2thor.allenai.org/robothor/) · [Paper](https://arxiv.org/abs/2004.06799) · Access: Official challenge and simulator
+
+- **rounD** · 2020
+  A naturalistic road-user trajectory dataset recorded by drones at German roundabouts, targeting behavior modeling in unsignalized, highly interactive traffic scenes with vehicles, pedestrians, and cyclists.
+  `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
+  [Homepage](https://levelxdata.com/round-dataset/) · [Paper](https://ieeexplore.ieee.org/document/9294728) · Access: Official leveLXData/rounD request page; access requires agreeing to dataset terms
 
 - **BabyAI** · 2019
   An embodied-learning platform generating language instructions, grid environments, and expert trajectories.

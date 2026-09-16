@@ -1,0 +1,48 @@
+{
+  "id": "highd",
+  "name": "highD",
+  "shortName": "highD",
+  "year": 2018,
+  "summary": "使用无人机在德国高速公路上采集的自然驾驶车辆轨迹数据集，提供车辆位置、速度、加速度、车道、车型、尺寸和机动行为等高精度轨迹信息。",
+  "summaryEn": "A naturalistic highway vehicle-trajectory dataset recorded by drones over German highways, with high-precision vehicle position, speed, acceleration, lane, class, size, and maneuver information.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Object Metadata",
+    "Agent Pose",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Traffic Scenarios"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "16.5 hours from six highway locations, more than 110,000 vehicles, 45,000 km driven distance, and 5,600 complete lane changes",
+  "scaleZh": "来自 6 个高速公路地点的 16.5 小时数据，超过 11 万辆车、4.5 万公里行驶距离和 5,600 次完整变道",
+  "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+  "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+  "license": "Free for non-commercial research under leveLXData/highD terms; redistribution is restricted",
+  "licenseZh": "按 leveLXData/highD 条款可免费用于非商业研究；再分发受限",
+  "access": "Official leveLXData/highD request page; access requires agreeing to dataset terms",
+  "accessZh": "官方 leveLXData/highD 申请页面；访问需同意数据集条款",
+  "rating": 5,
+  "verdict": "高速公路场景的经典自然车辆轨迹数据",
+  "verdictEn": "Classic naturalistic vehicle-trajectory data for highway scenarios",
+  "wmNote": "高精度连续轨迹、变道事件和交通流上下文适合训练与评测高速驾驶世界模型；它提供轨迹而非原始车载传感器流。",
+  "wmNoteEn": "High-precision trajectories, lane-change events, and traffic-flow context are valuable for highway-driving world models, but the dataset provides trajectories rather than raw ego-sensor streams.",
+  "links": {
+    "homepage": "https://levelxdata.com/highd-dataset/",
+    "paper": "https://arxiv.org/abs/1810.05642"
+  }
+}

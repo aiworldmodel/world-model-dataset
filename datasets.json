@@ -11350,6 +11350,55 @@
     }
   },
   {
+    "id": "round",
+    "name": "rounD",
+    "shortName": "rounD",
+    "year": 2020,
+    "summary": "使用无人机在德国环岛采集的自然道路参与者轨迹数据集，面向无信号、高交互交通场景中的车辆、行人和骑行者行为建模。",
+    "summaryEn": "A naturalistic road-user trajectory dataset recorded by drones at German roundabouts, targeting behavior modeling in unsignalized, highly interactive traffic scenes with vehicles, pedestrians, and cyclists.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Object Metadata",
+      "Agent Pose",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "Naturalistic road-user trajectories recorded at three German roundabouts",
+    "scaleZh": "在德国 3 个环岛采集的自然道路参与者轨迹",
+    "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+    "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+    "license": "Free for non-commercial research under leveLXData/rounD terms; redistribution is restricted",
+    "licenseZh": "按 leveLXData/rounD 条款可免费用于非商业研究；再分发受限",
+    "access": "Official leveLXData/rounD request page; access requires agreeing to dataset terms",
+    "accessZh": "官方 leveLXData/rounD 申请页面；访问需同意数据集条款",
+    "rating": 4,
+    "verdict": "环岛场景的高交互道路参与者轨迹",
+    "verdictEn": "Highly interactive road-user trajectories at roundabouts",
+    "wmNote": "环岛合流、让行和绕行行为为多智能体交互世界模型提供了紧凑但困难的评测场景；规模小于 openDD 等后续环岛数据集。",
+    "wmNoteEn": "Merging, yielding, and circulating behavior at roundabouts create compact but difficult benchmarks for interactive world models, though the scale is smaller than later roundabout datasets such as openDD.",
+    "links": {
+      "homepage": "https://levelxdata.com/round-dataset/",
+      "paper": "https://ieeexplore.ieee.org/document/9294728"
+    }
+  },
+  {
     "id": "virtual-kitti-2",
     "name": "Virtual KITTI 2",
     "shortName": "Virtual KITTI 2",
@@ -11868,6 +11917,54 @@
       "homepage": "https://svl.stanford.edu/igibson/",
       "code": "https://github.com/StanfordVL/iGibson",
       "paper": "https://arxiv.org/abs/1810.03993"
+    }
+  },
+  {
+    "id": "ind",
+    "name": "inD",
+    "shortName": "inD",
+    "year": 2019,
+    "summary": "使用无人机在德国城市路口采集的自然道路参与者轨迹数据集，覆盖车辆、自行车和行人，面向城市交互行为预测和场景化安全验证。",
+    "summaryEn": "A naturalistic road-user trajectory dataset recorded by drones at German urban intersections, covering vehicles, bicyclists, and pedestrians for urban interaction prediction and scenario-based safety validation.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Object Metadata",
+      "Agent Pose",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "10 hours from four German intersections with more than 11,500 road users including vehicles, bicyclists, and pedestrians",
+    "scaleZh": "来自德国 4 个路口的 10 小时数据，包含超过 11,500 名车辆、自行车和行人等道路参与者",
+    "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+    "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+    "license": "Free for non-commercial research under leveLXData/inD terms; redistribution is restricted",
+    "licenseZh": "按 leveLXData/inD 条款可免费用于非商业研究；再分发受限",
+    "access": "Official leveLXData/inD request page; access requires agreeing to dataset terms",
+    "accessZh": "官方 leveLXData/inD 申请页面；访问需同意数据集条款",
+    "rating": 5,
+    "verdict": "城市路口多类别道路参与者轨迹",
+    "verdictEn": "Urban-intersection trajectories for multiple road-user classes",
+    "wmNote": "它补足 highD 的高速场景局限，提供路口中车辆、骑行者和行人的交互轨迹，适合多智能体未来预测和安全场景生成。",
+    "wmNoteEn": "It complements highD's highway focus with intersection interactions among vehicles, cyclists, and pedestrians, supporting multi-agent forecasting and safety-scenario generation.",
+    "links": {
+      "homepage": "https://levelxdata.com/ind-dataset/",
+      "paper": "https://arxiv.org/abs/1911.07602"
     }
   },
   {
@@ -13413,6 +13510,54 @@
     "links": {
       "code": "https://github.com/openai/retro",
       "paper": "https://arxiv.org/abs/1710.02298"
+    }
+  },
+  {
+    "id": "highd",
+    "name": "highD",
+    "shortName": "highD",
+    "year": 2018,
+    "summary": "使用无人机在德国高速公路上采集的自然驾驶车辆轨迹数据集，提供车辆位置、速度、加速度、车道、车型、尺寸和机动行为等高精度轨迹信息。",
+    "summaryEn": "A naturalistic highway vehicle-trajectory dataset recorded by drones over German highways, with high-precision vehicle position, speed, acceleration, lane, class, size, and maneuver information.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Object Metadata",
+      "Agent Pose",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "16.5 hours from six highway locations, more than 110,000 vehicles, 45,000 km driven distance, and 5,600 complete lane changes",
+    "scaleZh": "来自 6 个高速公路地点的 16.5 小时数据，超过 11 万辆车、4.5 万公里行驶距离和 5,600 次完整变道",
+    "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+    "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+    "license": "Free for non-commercial research under leveLXData/highD terms; redistribution is restricted",
+    "licenseZh": "按 leveLXData/highD 条款可免费用于非商业研究；再分发受限",
+    "access": "Official leveLXData/highD request page; access requires agreeing to dataset terms",
+    "accessZh": "官方 leveLXData/highD 申请页面；访问需同意数据集条款",
+    "rating": 5,
+    "verdict": "高速公路场景的经典自然车辆轨迹数据",
+    "verdictEn": "Classic naturalistic vehicle-trajectory data for highway scenarios",
+    "wmNote": "高精度连续轨迹、变道事件和交通流上下文适合训练与评测高速驾驶世界模型；它提供轨迹而非原始车载传感器流。",
+    "wmNoteEn": "High-precision trajectories, lane-change events, and traffic-flow context are valuable for highway-driving world models, but the dataset provides trajectories rather than raw ego-sensor streams.",
+    "links": {
+      "homepage": "https://levelxdata.com/highd-dataset/",
+      "paper": "https://arxiv.org/abs/1810.05642"
     }
   },
   {

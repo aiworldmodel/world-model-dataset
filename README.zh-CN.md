@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-333-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-336-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 333 | 6 | 6 | 45 |
+| 336 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (39)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (85)](#decision-making-agent-trajectories) · [空间与时空世界建模 (62)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (41)](#predictive-generative-dynamics) · [动作条件动力学 (47)](#action-conditioned-dynamics) · [决策与智能体轨迹 (86)](#decision-making-agent-trajectories) · [空间与时空世界建模 (62)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (72)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（39）
+### 预测与生成式动力学（41）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -181,6 +181,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `语义标签` · `轨迹`
   [论文](https://arxiv.org/abs/1904.01975) · 访问方式：论文入口；官方访问方式需核验
 
+- **inD** · 2019
+  使用无人机在德国城市路口采集的自然道路参与者轨迹数据集，覆盖车辆、自行车和行人，面向城市交互行为预测和场景化安全验证。
+  `自动驾驶` · `城市 / 三维场景` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
+  [主页](https://levelxdata.com/ind-dataset/) · [论文](https://arxiv.org/abs/1911.07602) · 访问方式：官方 leveLXData/inD 申请页面；访问需同意数据集条款
+
 - **INTERACTION Dataset** · 2019
   聚焦路口、环岛和汇入等高交互驾驶场景的轨迹数据集，包含多国道路中的车辆与行人运动，适合多智能体预测和交互建模。
   `自动驾驶` · `轨迹` · `地图` · `智能体位姿`
@@ -210,6 +215,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   EPIC-KITCHENS 的首个大规模版本，记录参与者在自家厨房中的连续第一人称活动，包含动作分段、动词、名词和叙述标注。
   `第一人称 / 人类活动` · `RGB 视频` · `音频` · `动作标签` · `语言`
   [主页](https://epic-kitchens.github.io/2018) · [论文](https://arxiv.org/abs/1804.02748) · [代码](https://github.com/epic-kitchens/epic-kitchens-55-annotations) · 访问方式：需申请并同意协议
+
+- **highD** · 2018
+  使用无人机在德国高速公路上采集的自然驾驶车辆轨迹数据集，提供车辆位置、速度、加速度、车道、车型、尺寸和机动行为等高精度轨迹信息。
+  `自动驾驶` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
+  [主页](https://levelxdata.com/highd-dataset/) · [论文](https://arxiv.org/abs/1810.05642) · 访问方式：官方 leveLXData/highD 申请页面；访问需同意数据集条款
 
 - **Kinetics-600** · 2018
   覆盖 600 类人类动作的大规模视频数据集。
@@ -512,7 +522,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（85）
+### 决策与智能体轨迹（86）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -833,6 +843,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   面向仿真到真实导航的室内机器人环境和轨迹基准。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `智能体位姿` · `地图`
   [主页](https://ai2thor.allenai.org/robothor/) · [论文](https://arxiv.org/abs/2004.06799) · 访问方式：官方挑战赛和仿真器
+
+- **rounD** · 2020
+  使用无人机在德国环岛采集的自然道路参与者轨迹数据集，面向无信号、高交互交通场景中的车辆、行人和骑行者行为建模。
+  `自动驾驶` · `城市 / 三维场景` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
+  [主页](https://levelxdata.com/round-dataset/) · [论文](https://ieeexplore.ieee.org/document/9294728) · 访问方式：官方 leveLXData/rounD 申请页面；访问需同意数据集条款
 
 - **BabyAI** · 2019
   可生成语言指令、网格环境和专家轨迹的具身学习平台。
