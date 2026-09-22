@@ -1,0 +1,45 @@
+{
+  "id": "dota-traffic-anomaly",
+  "name": "DoTA",
+  "shortName": "DoTA",
+  "year": 2020,
+  "summary": "面向交通异常检测的驾驶视频数据集，标注道路异常、事故和相关时序片段，用于评测模型对罕见危险状态演化的识别能力。",
+  "summaryEn": "A driving-video dataset for traffic-anomaly detection, annotating road anomalies, crashes, and related temporal segments to evaluate recognition of rare hazardous state evolution.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action Labels",
+    "2D Boxes",
+    "Semantic Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Annotated Events"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Traffic anomaly video clips with temporal anomaly annotations",
+  "scaleZh": "带时序异常标注的交通异常视频片段",
+  "organizations": "DoTA project authors",
+  "organizationsZh": "DoTA 项目作者",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Official GitHub repository provides dataset and benchmark resources",
+  "accessZh": "官方 GitHub 仓库提供数据集和基准资源",
+  "rating": 4,
+  "verdict": "交通异常和事故时序诊断数据",
+  "verdictEn": "Temporal diagnostics for traffic anomalies and accidents",
+  "wmNote": "罕见异常片段适合检验世界模型是否能识别危险状态转折，但不适合作为常规驾驶动力学主训练集。",
+  "wmNoteEn": "Rare anomaly clips are useful for testing whether world models identify hazardous state transitions, but are not ideal as a primary normal-driving dynamics corpus.",
+  "links": {
+    "homepage": "https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly"
+  }
+}

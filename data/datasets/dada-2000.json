@@ -1,0 +1,44 @@
+{
+  "id": "dada-2000",
+  "name": "DADA-2000",
+  "shortName": "DADA-2000",
+  "year": 2019,
+  "summary": "面向驾驶事故预测与驾驶员注意分析的行车视频数据集，包含事故发生前后的连续片段和注意/显著性相关标注。",
+  "summaryEn": "A dashcam-video dataset for driving accident prediction and driver-attention analysis, containing continuous clips around accidents with attention and saliency-related annotations.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action Labels",
+    "Semantic Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Annotated Events"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "2,000 dashcam accident videos",
+  "scaleZh": "2,000 段行车事故视频",
+  "organizations": "DADA-2000 project authors",
+  "organizationsZh": "DADA-2000 项目作者",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Official GitHub repository provides DADA resources and benchmark code",
+  "accessZh": "官方 GitHub 仓库提供 DADA 资源和基准代码",
+  "rating": 4,
+  "verdict": "事故发生前状态演化和注意线索",
+  "verdictEn": "Pre-accident state evolution and attention cues",
+  "wmNote": "事故发生前的视频上下文可用于测试未来危险状态预测；类别偏向事故场景，正常驾驶覆盖有限。",
+  "wmNoteEn": "Pre-accident video context supports future hazard prediction tests, while the distribution is accident-heavy and has limited normal-driving coverage.",
+  "links": {
+    "homepage": "https://github.com/JWFangit/LOTVS-DADA"
+  }
+}

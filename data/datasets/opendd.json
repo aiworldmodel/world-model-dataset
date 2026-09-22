@@ -1,0 +1,47 @@
+{
+  "id": "opendd",
+  "name": "openDD",
+  "shortName": "openDD",
+  "year": 2020,
+  "summary": "面向自动驾驶研究的无人机交通轨迹数据集，覆盖德国环岛和交叉路口中车辆、骑行者与行人的自然交互行为。",
+  "summaryEn": "A drone-based traffic trajectory dataset for autonomous-driving research, covering natural interactions among vehicles, cyclists, and pedestrians at German roundabouts and intersections.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Object Metadata",
+    "Agent Pose",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Traffic Scenarios"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "Drone-recorded road-user trajectories for complex urban traffic interactions",
+  "scaleZh": "面向复杂城市交通交互的无人机道路参与者轨迹",
+  "organizations": "L3Pilot and research partners",
+  "organizationsZh": "L3Pilot 及研究合作方",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Paper and project resources document the dataset; data access requires verification",
+  "accessZh": "论文和项目资源描述该数据集；数据访问方式需进一步核查",
+  "rating": 4,
+  "verdict": "开放城市交互交通轨迹",
+  "verdictEn": "Open urban interactive traffic trajectories",
+  "wmNote": "环岛、交叉口和多类别道路参与者让它适合评测交互式预测、让行和合流行为。",
+  "wmNoteEn": "Roundabouts, intersections, and multiple road-user classes make it useful for evaluating interaction prediction, yielding, and merging behavior.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2007.08463"
+  }
+}

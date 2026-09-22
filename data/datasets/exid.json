@@ -1,0 +1,47 @@
+{
+  "id": "exid",
+  "name": "exiD",
+  "shortName": "exiD",
+  "year": 2022,
+  "summary": "使用无人机在德国高速公路入口、出口和交织区采集的自然车辆轨迹数据集，补充了 highD 缺少的匝道并线、驶出和复杂交织行为。",
+  "summaryEn": "A naturalistic vehicle-trajectory dataset recorded by drones at German highway entries, exits, and weaving sections, complementing highD with merging, exiting, and complex weaving behavior.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Object Metadata",
+    "Agent Pose",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Traffic Scenarios"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "Drone-recorded vehicle trajectories at seven highway entry and exit locations",
+  "scaleZh": "在 7 个高速公路入口和出口地点采集的无人机车辆轨迹",
+  "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+  "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+  "license": "Free for non-commercial research under leveLXData/exiD terms; redistribution is restricted",
+  "licenseZh": "按 leveLXData/exiD 条款可免费用于非商业研究；再分发受限",
+  "access": "Official leveLXData/exiD request page; access requires agreeing to dataset terms",
+  "accessZh": "官方 leveLXData/exiD 申请页面；访问需同意数据集条款",
+  "rating": 4,
+  "verdict": "高速匝道并线与交织区轨迹",
+  "verdictEn": "Highway ramp, merge, and weaving trajectories",
+  "wmNote": "并线和驶出行为为多智能体驾驶世界模型提供比普通车道保持更强的交互压力测试。",
+  "wmNoteEn": "Merge and exit behavior provides a stronger interaction stress test for driving world models than ordinary lane-following data.",
+  "links": {
+    "homepage": "https://levelxdata.com/exid-dataset/"
+  }
+}

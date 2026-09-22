@@ -1,0 +1,46 @@
+{
+  "id": "trajnet-plus-plus",
+  "name": "TrajNet++",
+  "shortName": "TrajNet++",
+  "year": 2020,
+  "summary": "面向行人轨迹预测的统一基准和数据格式，整合多个人群轨迹数据源，用于比较社会交互建模和多未来预测方法。",
+  "summaryEn": "A unified benchmark and data format for pedestrian trajectory forecasting, integrating multiple crowd-trajectory sources to compare social-interaction modeling and multi-future prediction methods.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Agent Pose",
+    "Object Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Benchmark Splits"
+  ],
+  "source": [
+    "Real-world",
+    "Curated Benchmark"
+  ],
+  "scale": "Benchmark splits over multiple pedestrian trajectory datasets",
+  "scaleZh": "覆盖多个人群轨迹数据集的基准划分",
+  "organizations": "VITA, EPFL and collaborators",
+  "organizationsZh": "EPFL VITA 及合作者",
+  "license": "Component dataset licenses vary; verify each downstream split",
+  "licenseZh": "组成数据集许可各不相同；需逐一核查下游划分",
+  "access": "Official GitHub resources provide benchmark tooling and dataset preparation",
+  "accessZh": "官方 GitHub 资源提供基准工具和数据准备流程",
+  "rating": 4,
+  "verdict": "行人多智能体未来轨迹预测基准",
+  "verdictEn": "Pedestrian multi-agent trajectory forecasting benchmark",
+  "wmNote": "统一格式和评测协议降低了比较社会导航世界模型的摩擦，但底层数据源异质性需要在实验中说明。",
+  "wmNoteEn": "A unified format and protocol reduce friction when comparing social-navigation world models, but experiments should document the heterogeneous underlying sources.",
+  "links": {
+    "homepage": "https://github.com/vita-epfl/trajnetplusplusbaselines"
+  }
+}

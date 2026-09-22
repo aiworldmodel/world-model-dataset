@@ -1,0 +1,47 @@
+{
+  "id": "road",
+  "name": "ROAD",
+  "shortName": "ROAD",
+  "year": 2021,
+  "summary": "面向自动驾驶事件理解的道路视频数据集，提供道路智能体、位置、动作和事件级标注，支持从连续驾驶视频中推理交通参与者状态变化。",
+  "summaryEn": "A road-video dataset for autonomous-driving event awareness, with agent, location, action, and event-level annotations for reasoning about traffic-participant state changes in continuous driving videos.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics",
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "2D Boxes",
+    "Action Labels",
+    "Semantic Labels",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Annotated Events"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Annotated road-event videos for agent, action, location, and event detection",
+  "scaleZh": "带智能体、动作、位置和事件检测标注的道路事件视频",
+  "organizations": "ROAD dataset authors",
+  "organizationsZh": "ROAD 数据集作者",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Official GitHub repository provides dataset resources and code",
+  "accessZh": "官方 GitHub 仓库提供数据资源和代码",
+  "rating": 4,
+  "verdict": "驾驶事件和道路参与者状态标注",
+  "verdictEn": "Driving-event and road-agent state annotations",
+  "wmNote": "ROAD 更适合评测模型是否能理解连续视频中的事件结构，而不仅是预测像素或框位置。",
+  "wmNoteEn": "ROAD is useful for evaluating whether models understand event structure in continuous video, beyond predicting pixels or box locations.",
+  "links": {
+    "homepage": "https://github.com/gurkirt/road-dataset"
+  }
+}

@@ -8483,6 +8483,53 @@
     "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件"
   },
   {
+    "id": "exid",
+    "name": "exiD",
+    "shortName": "exiD",
+    "year": 2022,
+    "summary": "使用无人机在德国高速公路入口、出口和交织区采集的自然车辆轨迹数据集，补充了 highD 缺少的匝道并线、驶出和复杂交织行为。",
+    "summaryEn": "A naturalistic vehicle-trajectory dataset recorded by drones at German highway entries, exits, and weaving sections, complementing highD with merging, exiting, and complex weaving behavior.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Object Metadata",
+      "Agent Pose",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "Drone-recorded vehicle trajectories at seven highway entry and exit locations",
+    "scaleZh": "在 7 个高速公路入口和出口地点采集的无人机车辆轨迹",
+    "organizations": "Institute for Automotive Engineering, RWTH Aachen University, and fka GmbH",
+    "organizationsZh": "RWTH Aachen University 汽车工程研究所与 fka GmbH",
+    "license": "Free for non-commercial research under leveLXData/exiD terms; redistribution is restricted",
+    "licenseZh": "按 leveLXData/exiD 条款可免费用于非商业研究；再分发受限",
+    "access": "Official leveLXData/exiD request page; access requires agreeing to dataset terms",
+    "accessZh": "官方 leveLXData/exiD 申请页面；访问需同意数据集条款",
+    "rating": 4,
+    "verdict": "高速匝道并线与交织区轨迹",
+    "verdictEn": "Highway ramp, merge, and weaving trajectories",
+    "wmNote": "并线和驶出行为为多智能体驾驶世界模型提供比普通车道保持更强的交互压力测试。",
+    "wmNoteEn": "Merge and exit behavior provides a stronger interaction stress test for driving world models than ordinary lane-following data.",
+    "links": {
+      "homepage": "https://levelxdata.com/exid-dataset/"
+    }
+  },
+  {
     "id": "exorl",
     "name": "ExORL",
     "shortName": "ExORL",
@@ -9148,6 +9195,55 @@
     "links": {
       "paper": "https://arxiv.org/abs/2212.06817",
       "code": "https://github.com/google-research/robotics_transformer"
+    }
+  },
+  {
+    "id": "scand",
+    "name": "SCAND",
+    "shortName": "SCAND",
+    "year": 2022,
+    "summary": "面向社交合规导航的真实机器人数据集，在多种人群密度和环境中记录机器人运动、控制、激光、视觉和人群上下文。",
+    "summaryEn": "A real-robot dataset for socially compliant navigation, recording robot motion, controls, laser, vision, and crowd context across environments with varying pedestrian density.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "LiDAR",
+      "Action",
+      "Robot State",
+      "Trajectories"
+    ],
+    "structure": [
+      "Robot Trajectories",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "Real-world robot navigation demonstrations in socially dense environments",
+    "scaleZh": "真实社交密集环境中的机器人导航示范数据",
+    "organizations": "George Mason University and collaborators",
+    "organizationsZh": "乔治梅森大学及合作者",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official project page provides dataset resources",
+    "accessZh": "官方项目页提供数据集资源",
+    "rating": 4,
+    "verdict": "真实机器人社交导航轨迹",
+    "verdictEn": "Real robot trajectories for social navigation",
+    "wmNote": "机器人动作、状态和人群上下文让 SCAND 适合研究社会合规的动作条件世界模型。",
+    "wmNoteEn": "Robot actions, state, and crowd context make SCAND useful for socially compliant action-conditioned world models.",
+    "links": {
+      "homepage": "https://people.cs.gmu.edu/~xiao/Research/SCAND/SCAND.html"
     }
   },
   {
@@ -10044,6 +10140,53 @@
     }
   },
   {
+    "id": "road",
+    "name": "ROAD",
+    "shortName": "ROAD",
+    "year": 2021,
+    "summary": "面向自动驾驶事件理解的道路视频数据集，提供道路智能体、位置、动作和事件级标注，支持从连续驾驶视频中推理交通参与者状态变化。",
+    "summaryEn": "A road-video dataset for autonomous-driving event awareness, with agent, location, action, and event-level annotations for reasoning about traffic-participant state changes in continuous driving videos.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics",
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "2D Boxes",
+      "Action Labels",
+      "Semantic Labels",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Annotated Events"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Annotated road-event videos for agent, action, location, and event detection",
+    "scaleZh": "带智能体、动作、位置和事件检测标注的道路事件视频",
+    "organizations": "ROAD dataset authors",
+    "organizationsZh": "ROAD 数据集作者",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official GitHub repository provides dataset resources and code",
+    "accessZh": "官方 GitHub 仓库提供数据资源和代码",
+    "rating": 4,
+    "verdict": "驾驶事件和道路参与者状态标注",
+    "verdictEn": "Driving-event and road-agent state annotations",
+    "wmNote": "ROAD 更适合评测模型是否能理解连续视频中的事件结构，而不仅是预测像素或框位置。",
+    "wmNoteEn": "ROAD is useful for evaluating whether models understand event structure in continuous video, beyond predicting pixels or box locations.",
+    "links": {
+      "homepage": "https://github.com/gurkirt/road-dataset"
+    }
+  },
+  {
     "id": "robomimic",
     "name": "robomimic Datasets",
     "shortName": "robomimic",
@@ -10561,6 +10704,54 @@
     "licenseZh": "适用研究数据集条款；需分别核查资产和代码许可"
   },
   {
+    "id": "crowdbot",
+    "name": "CrowdBot Dataset",
+    "shortName": "CrowdBot",
+    "year": 2020,
+    "summary": "面向机器人在人群中导航的真实数据集，记录移动机器人在人类密集环境中的传感器观测、轨迹和交互行为。",
+    "summaryEn": "A real-world dataset for robot navigation in crowds, recording mobile-robot sensor observations, trajectories, and interaction behavior in dense human environments.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics",
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB-D",
+      "LiDAR",
+      "Robot State",
+      "Trajectories",
+      "Action"
+    ],
+    "structure": [
+      "Robot Trajectories",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Robot-crowd interaction recordings from CrowdBot project experiments",
+    "scaleZh": "CrowdBot 项目实验中的机器人-人群交互记录",
+    "organizations": "CrowdBot project consortium",
+    "organizationsZh": "CrowdBot 项目联盟",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Project dataset page and paper resources available; download availability may vary",
+    "accessZh": "项目数据页和论文资源可用；下载可用性可能变化",
+    "rating": 3,
+    "verdict": "机器人在人群中的交互导航数据",
+    "verdictEn": "Robot navigation interaction data in crowds",
+    "wmNote": "该数据集补充了纯行人轨迹数据，提供具身机器人在真实人群中的观测和运动上下文；官方页面访问稳定性需留意。",
+    "wmNoteEn": "It complements pure pedestrian-trajectory data with embodied robot observations and motion context in real crowds; official page availability should be monitored.",
+    "links": {
+      "paper": "https://arxiv.org/abs/2003.07433"
+    }
+  },
+  {
     "id": "d4rl",
     "name": "D4RL",
     "shortName": "D4RL",
@@ -10648,6 +10839,51 @@
     "wmNoteEn": "Useful for action-phase prediction.",
     "links": {
       "paper": "https://arxiv.org/abs/1903.11204"
+    }
+  },
+  {
+    "id": "dota-traffic-anomaly",
+    "name": "DoTA",
+    "shortName": "DoTA",
+    "year": 2020,
+    "summary": "面向交通异常检测的驾驶视频数据集，标注道路异常、事故和相关时序片段，用于评测模型对罕见危险状态演化的识别能力。",
+    "summaryEn": "A driving-video dataset for traffic-anomaly detection, annotating road anomalies, crashes, and related temporal segments to evaluate recognition of rare hazardous state evolution.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action Labels",
+      "2D Boxes",
+      "Semantic Labels"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Annotated Events"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Traffic anomaly video clips with temporal anomaly annotations",
+    "scaleZh": "带时序异常标注的交通异常视频片段",
+    "organizations": "DoTA project authors",
+    "organizationsZh": "DoTA 项目作者",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official GitHub repository provides dataset and benchmark resources",
+    "accessZh": "官方 GitHub 仓库提供数据集和基准资源",
+    "rating": 4,
+    "verdict": "交通异常和事故时序诊断数据",
+    "verdictEn": "Temporal diagnostics for traffic anomalies and accidents",
+    "wmNote": "罕见异常片段适合检验世界模型是否能识别危险状态转折，但不适合作为常规驾驶动力学主训练集。",
+    "wmNoteEn": "Rare anomaly clips are useful for testing whether world models identify hazardous state transitions, but are not ideal as a primary normal-driving dynamics corpus.",
+    "links": {
+      "homepage": "https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly"
     }
   },
   {
@@ -10976,6 +11212,53 @@
     }
   },
   {
+    "id": "opendd",
+    "name": "openDD",
+    "shortName": "openDD",
+    "year": 2020,
+    "summary": "面向自动驾驶研究的无人机交通轨迹数据集，覆盖德国环岛和交叉路口中车辆、骑行者与行人的自然交互行为。",
+    "summaryEn": "A drone-based traffic trajectory dataset for autonomous-driving research, covering natural interactions among vehicles, cyclists, and pedestrians at German roundabouts and intersections.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Object Metadata",
+      "Agent Pose",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "Drone-recorded road-user trajectories for complex urban traffic interactions",
+    "scaleZh": "面向复杂城市交通交互的无人机道路参与者轨迹",
+    "organizations": "L3Pilot and research partners",
+    "organizationsZh": "L3Pilot 及研究合作方",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Paper and project resources document the dataset; data access requires verification",
+    "accessZh": "论文和项目资源描述该数据集；数据访问方式需进一步核查",
+    "rating": 4,
+    "verdict": "开放城市交互交通轨迹",
+    "verdictEn": "Open urban interactive traffic trajectories",
+    "wmNote": "环岛、交叉口和多类别道路参与者让它适合评测交互式预测、让行和合流行为。",
+    "wmNoteEn": "Roundabouts, intersections, and multiple road-user classes make it useful for evaluating interaction prediction, yielding, and merging behavior.",
+    "links": {
+      "paper": "https://arxiv.org/abs/2007.08463"
+    }
+  },
+  {
     "id": "pandaset",
     "name": "PandaSet",
     "shortName": "PandaSet",
@@ -11020,6 +11303,54 @@
     "links": {
       "paper": "https://arxiv.org/abs/2102.02684",
       "code": "https://github.com/scaleapi/pandaset-devkit"
+    }
+  },
+  {
+    "id": "pneuma",
+    "name": "pNEUMA",
+    "shortName": "pNEUMA",
+    "year": 2020,
+    "summary": "使用多架无人机在雅典市中心采集的大规模城市交通轨迹数据集，提供车辆、行人和其他道路参与者在拥挤城市路网中的连续运动。",
+    "summaryEn": "A large-scale urban traffic trajectory dataset captured by multiple drones over central Athens, providing continuous movements of vehicles, pedestrians, and other road users in a dense city network.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics",
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Agent Pose",
+      "Object Metadata",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Traffic Scenarios"
+    ],
+    "source": [
+      "Real-world",
+      "Aerial Video"
+    ],
+    "scale": "Large-scale drone recordings over an urban area in Athens",
+    "scaleZh": "在雅典城市区域采集的大规模无人机交通记录",
+    "organizations": "EPFL Open Traffic platform",
+    "organizationsZh": "EPFL Open Traffic 平台",
+    "license": "Open Traffic dataset terms require verification",
+    "licenseZh": "Open Traffic 数据条款需进一步核查",
+    "access": "Official Open Traffic platform provides dataset access",
+    "accessZh": "官方 Open Traffic 平台提供数据访问入口",
+    "rating": 4,
+    "verdict": "城市尺度无人机交通流轨迹",
+    "verdictEn": "City-scale drone traffic-flow trajectories",
+    "wmNote": "相比单一路口数据，pNEUMA 更适合研究城市路网级的多智能体时空演化和交通状态预测。",
+    "wmNoteEn": "Compared with single-intersection datasets, pNEUMA is better suited to urban-network multi-agent evolution and traffic-state forecasting.",
+    "links": {
+      "homepage": "https://open-traffic.epfl.ch/"
     }
   },
   {
@@ -11399,6 +11730,52 @@
     }
   },
   {
+    "id": "trajnet-plus-plus",
+    "name": "TrajNet++",
+    "shortName": "TrajNet++",
+    "year": 2020,
+    "summary": "面向行人轨迹预测的统一基准和数据格式，整合多个人群轨迹数据源，用于比较社会交互建模和多未来预测方法。",
+    "summaryEn": "A unified benchmark and data format for pedestrian trajectory forecasting, integrating multiple crowd-trajectory sources to compare social-interaction modeling and multi-future prediction methods.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Egocentric / Human",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Agent Pose",
+      "Object Metadata"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Benchmark Splits"
+    ],
+    "source": [
+      "Real-world",
+      "Curated Benchmark"
+    ],
+    "scale": "Benchmark splits over multiple pedestrian trajectory datasets",
+    "scaleZh": "覆盖多个人群轨迹数据集的基准划分",
+    "organizations": "VITA, EPFL and collaborators",
+    "organizationsZh": "EPFL VITA 及合作者",
+    "license": "Component dataset licenses vary; verify each downstream split",
+    "licenseZh": "组成数据集许可各不相同；需逐一核查下游划分",
+    "access": "Official GitHub resources provide benchmark tooling and dataset preparation",
+    "accessZh": "官方 GitHub 资源提供基准工具和数据准备流程",
+    "rating": 4,
+    "verdict": "行人多智能体未来轨迹预测基准",
+    "verdictEn": "Pedestrian multi-agent trajectory forecasting benchmark",
+    "wmNote": "统一格式和评测协议降低了比较社会导航世界模型的摩擦，但底层数据源异质性需要在实验中说明。",
+    "wmNoteEn": "A unified format and protocol reduce friction when comparing social-navigation world models, but experiments should document the heterogeneous underlying sources.",
+    "links": {
+      "homepage": "https://github.com/vita-epfl/trajnetplusplusbaselines"
+    }
+  },
+  {
     "id": "virtual-kitti-2",
     "name": "Virtual KITTI 2",
     "shortName": "Virtual KITTI 2",
@@ -11728,6 +12105,50 @@
     "wmNoteEn": "Long driving videos and environmental diversity support future-observation prediction and robustness studies, while action and 3D-state signals are limited.",
     "links": {
       "paper": "https://arxiv.org/abs/1904.01975"
+    }
+  },
+  {
+    "id": "dada-2000",
+    "name": "DADA-2000",
+    "shortName": "DADA-2000",
+    "year": 2019,
+    "summary": "面向驾驶事故预测与驾驶员注意分析的行车视频数据集，包含事故发生前后的连续片段和注意/显著性相关标注。",
+    "summaryEn": "A dashcam-video dataset for driving accident prediction and driver-attention analysis, containing continuous clips around accidents with attention and saliency-related annotations.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action Labels",
+      "Semantic Labels"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Annotated Events"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "2,000 dashcam accident videos",
+    "scaleZh": "2,000 段行车事故视频",
+    "organizations": "DADA-2000 project authors",
+    "organizationsZh": "DADA-2000 项目作者",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official GitHub repository provides DADA resources and benchmark code",
+    "accessZh": "官方 GitHub 仓库提供 DADA 资源和基准代码",
+    "rating": 4,
+    "verdict": "事故发生前状态演化和注意线索",
+    "verdictEn": "Pre-accident state evolution and attention cues",
+    "wmNote": "事故发生前的视频上下文可用于测试未来危险状态预测；类别偏向事故场景，正常驾驶覆盖有限。",
+    "wmNoteEn": "Pre-accident video context supports future hazard prediction tests, while the distribution is accident-heavy and has limited normal-driving coverage.",
+    "links": {
+      "homepage": "https://github.com/JWFangit/LOTVS-DADA"
     }
   },
   {
@@ -15274,6 +15695,51 @@
     "links": {
       "homepage": "http://vision.imar.ro/human3.6m/description.php",
       "paper": "https://ieeexplore.ieee.org/document/6682899"
+    }
+  },
+  {
+    "id": "atc-pedestrian",
+    "name": "ATC Pedestrian Tracking Dataset",
+    "shortName": "ATC",
+    "year": 2013,
+    "summary": "在大阪 ATC 购物中心采集的大规模行人轨迹数据集，通过环境传感器长期跟踪真实人群移动，适合研究室内社会导航和人群流演化。",
+    "summaryEn": "A large pedestrian-tracking dataset collected in Osaka's ATC shopping mall, using environmental sensors to track real crowd movement over long periods for indoor social navigation and crowd-flow evolution.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Egocentric / Human",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Agent Pose"
+    ],
+    "structure": [
+      "Agent Trajectories",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Fixed Sensors"
+    ],
+    "scale": "Long-term pedestrian tracking data from a shopping mall environment",
+    "scaleZh": "来自购物中心环境的长期行人跟踪数据",
+    "organizations": "ATR Intelligent Robotics and Communication Laboratories",
+    "organizationsZh": "ATR Intelligent Robotics and Communication Laboratories",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official ATC dataset page provides data access information",
+    "accessZh": "官方 ATC 数据集页面提供数据访问说明",
+    "rating": 3,
+    "verdict": "真实室内人群长期轨迹",
+    "verdictEn": "Long-term real indoor crowd trajectories",
+    "wmNote": "ATC 可用于人群流和室内社会导航建模；传感器视角和场景较固定，视觉模态有限。",
+    "wmNoteEn": "ATC supports crowd-flow and indoor social-navigation modeling, but has fixed sensing geometry and limited visual modalities.",
+    "links": {
+      "homepage": "https://dil.atr.jp/crest2010_HRI/ATC_dataset/"
     }
   },
   {

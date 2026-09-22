@@ -1,0 +1,48 @@
+{
+  "id": "crowdbot",
+  "name": "CrowdBot Dataset",
+  "shortName": "CrowdBot",
+  "year": 2020,
+  "summary": "面向机器人在人群中导航的真实数据集，记录移动机器人在人类密集环境中的传感器观测、轨迹和交互行为。",
+  "summaryEn": "A real-world dataset for robot navigation in crowds, recording mobile-robot sensor observations, trajectories, and interaction behavior in dense human environments.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB-D",
+    "LiDAR",
+    "Robot State",
+    "Trajectories",
+    "Action"
+  ],
+  "structure": [
+    "Robot Trajectories",
+    "Interaction Episodes"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Robot-crowd interaction recordings from CrowdBot project experiments",
+  "scaleZh": "CrowdBot 项目实验中的机器人-人群交互记录",
+  "organizations": "CrowdBot project consortium",
+  "organizationsZh": "CrowdBot 项目联盟",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Project dataset page and paper resources available; download availability may vary",
+  "accessZh": "项目数据页和论文资源可用；下载可用性可能变化",
+  "rating": 3,
+  "verdict": "机器人在人群中的交互导航数据",
+  "verdictEn": "Robot navigation interaction data in crowds",
+  "wmNote": "该数据集补充了纯行人轨迹数据，提供具身机器人在真实人群中的观测和运动上下文；官方页面访问稳定性需留意。",
+  "wmNoteEn": "It complements pure pedestrian-trajectory data with embodied robot observations and motion context in real crowds; official page availability should be monitored.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2003.07433"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "atc-pedestrian",
+  "name": "ATC Pedestrian Tracking Dataset",
+  "shortName": "ATC",
+  "year": 2013,
+  "summary": "在大阪 ATC 购物中心采集的大规模行人轨迹数据集，通过环境传感器长期跟踪真实人群移动，适合研究室内社会导航和人群流演化。",
+  "summaryEn": "A large pedestrian-tracking dataset collected in Osaka's ATC shopping mall, using environmental sensors to track real crowd movement over long periods for indoor social navigation and crowd-flow evolution.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Agent Pose"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Fixed Sensors"
+  ],
+  "scale": "Long-term pedestrian tracking data from a shopping mall environment",
+  "scaleZh": "来自购物中心环境的长期行人跟踪数据",
+  "organizations": "ATR Intelligent Robotics and Communication Laboratories",
+  "organizationsZh": "ATR Intelligent Robotics and Communication Laboratories",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Official ATC dataset page provides data access information",
+  "accessZh": "官方 ATC 数据集页面提供数据访问说明",
+  "rating": 3,
+  "verdict": "真实室内人群长期轨迹",
+  "verdictEn": "Long-term real indoor crowd trajectories",
+  "wmNote": "ATC 可用于人群流和室内社会导航建模；传感器视角和场景较固定，视觉模态有限。",
+  "wmNoteEn": "ATC supports crowd-flow and indoor social-navigation modeling, but has fixed sensing geometry and limited visual modalities.",
+  "links": {
+    "homepage": "https://dil.atr.jp/crest2010_HRI/ATC_dataset/"
+  }
+}

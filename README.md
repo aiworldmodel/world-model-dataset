@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-336-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-346-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 336 | 6 | 6 | 45 |
+| 346 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (41)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (86)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (62)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (72)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (43)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (91)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (63)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (41)
+### Predictive & Generative Dynamics (43)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -161,6 +161,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/openai/procgen) · [Paper](https://arxiv.org/abs/1912.01588) · Access: Open-source environments
 
+- **TrajNet++** · 2020
+  A unified benchmark and data format for pedestrian trajectory forecasting, integrating multiple crowd-trajectory sources to compare social-interaction modeling and multi-future prediction methods.
+  `Egocentric / Human` · `Urban / 3D Scene` · `Trajectories` · `Agent Pose` · `Object Metadata`
+  [Homepage](https://github.com/vita-epfl/trajnetplusplusbaselines) · Access: Official GitHub resources provide benchmark tooling and dataset preparation
+
 - **Virtual KITTI 2** · 2020
   A photorealistic synthetic driving-video dataset with depth, optical flow, scene flow, and 3D annotations.
   `Autonomous Driving` · `Games / Virtual Environments` · `Synthetic Video` · `Depth` · `Optical Flow` · `3D Boxes` · `Segmentation`
@@ -180,6 +185,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A large-scale dashcam video dataset spanning diverse weather, roads, and traffic conditions for urban driving dynamics and distribution generalization.
   `Autonomous Driving` · `Urban / 3D Scene` · `RGB Video` · `Semantic Labels` · `Trajectories`
   [Paper](https://arxiv.org/abs/1904.01975) · Access: Paper entry; official access requires verification
+
+- **DADA-2000** · 2019
+  A dashcam-video dataset for driving accident prediction and driver-attention analysis, containing continuous clips around accidents with attention and saliency-related annotations.
+  `Autonomous Driving` · `RGB Video` · `Action Labels` · `Semantic Labels`
+  [Homepage](https://github.com/JWFangit/LOTVS-DADA) · Access: Official GitHub repository provides DADA resources and benchmark code
 
 - **inD** · 2019
   A naturalistic road-user trajectory dataset recorded by drones at German urban intersections, covering vehicles, bicyclists, and pedestrians for urban interaction prediction and scenario-based safety validation.
@@ -522,7 +532,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (86)
+### Decision-Making & Agent Trajectories (91)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -764,6 +774,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Egocentric / Human` · `RGB Video` · `Language` · `Action Labels` · `Object Metadata`
   [Homepage](https://ego4d-data.org/) · [Paper](https://arxiv.org/abs/2110.07058) · Access: Official challenge portal
 
+- **exiD** · 2022
+  A naturalistic vehicle-trajectory dataset recorded by drones at German highway entries, exits, and weaving sections, complementing highD with merging, exiting, and complex weaving behavior.
+  `Autonomous Driving` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
+  [Homepage](https://levelxdata.com/exid-dataset/) · Access: Official leveLXData/exiD request page; access requires agreeing to dataset terms
+
 - **Language-Table** · 2022
   A language-conditioned tabletop robot dataset and environment with long-horizon free-form instructions.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language` · `Robot State`
@@ -783,6 +798,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A procedural framework for generating arbitrarily large, diverse, customizable interactive environments for embodied-agent training and evaluation, with an official 10,000-house sample.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `RGB Video` · `Action` · `Simulation State` · `Scene Metadata`
   [Paper](https://arxiv.org/abs/2206.06994) · [Code](https://github.com/allenai/procthor) · Access: Official generator and ProcTHOR-10K sample available
+
+- **SCAND** · 2022
+  A real-robot dataset for socially compliant navigation, recording robot motion, controls, laser, vision, and crowd context across environments with varying pedestrian density.
+  `Robotics / Embodied AI` · `Egocentric / Human` · `RGB Video` · `LiDAR` · `Action` · `Robot State` · `Trajectories`
+  [Homepage](https://people.cs.gmu.edu/~xiao/Research/SCAND/SCAND.html) · Access: Official project page provides dataset resources
 
 - **TEACh** · 2022
   A dialogue-driven embodied-task dataset with language and action trajectories from human commander-follower interactions.
@@ -819,6 +839,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language` · `Object State`
   [Homepage](https://askforalfred.com/) · [Paper](https://arxiv.org/abs/1912.01734) · [Code](https://github.com/askforalfred/alfred) · Access: Official dataset and benchmark
 
+- **CrowdBot Dataset** · 2020
+  A real-world dataset for robot navigation in crowds, recording mobile-robot sensor observations, trajectories, and interaction behavior in dense human environments.
+  `Robotics / Embodied AI` · `Egocentric / Human` · `RGB-D` · `LiDAR` · `Robot State` · `Trajectories` · `Action`
+  [Paper](https://arxiv.org/abs/2003.07433) · Access: Project dataset page and paper resources available; download availability may vary
+
 - **Diving48** · 2020
   A video dataset of 48 fine-grained diving actions emphasizing temporal phase differences.
   `Egocentric / Human` · `RGB Video` · `Action Labels`
@@ -828,6 +853,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A long-horizon NetHack interaction environment.
   `Games / Virtual Environments` · `Game State` · `Action` · `Text` · `Reward`
   [Code](https://github.com/facebookresearch/nle) · [Paper](https://arxiv.org/abs/2006.13760) · Access: Open-source environment
+
+- **openDD** · 2020
+  A drone-based traffic trajectory dataset for autonomous-driving research, covering natural interactions among vehicles, cyclists, and pedestrians at German roundabouts and intersections.
+  `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
+  [Paper](https://arxiv.org/abs/2007.08463) · Access: Paper and project resources document the dataset; data access requires verification
 
 - **Ravens** · 2020
   A tabletop robot manipulation benchmark with procedural tasks and demonstration trajectories.
@@ -949,6 +979,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Egocentric / Human` · `RGB Video` · `Agent Pose` · `Action Labels`
   [Homepage](https://posetrack.net/) · [Paper](https://arxiv.org/abs/1611.07727) · Access: Official challenge portal
 
+- **ATC Pedestrian Tracking Dataset** · 2013
+  A large pedestrian-tracking dataset collected in Osaka's ATC shopping mall, using environmental sensors to track real crowd movement over long periods for indoor social navigation and crowd-flow evolution.
+  `Egocentric / Human` · `Urban / 3D Scene` · `Trajectories` · `Agent Pose`
+  [Homepage](https://dil.atr.jp/crest2010_HRI/ATC_dataset/) · Access: Official ATC dataset page provides data access information
+
 - **NGSIM** · 2006
   A public naturalistic driving trajectory collection with continuous vehicle positions, speeds, and lane information on highways and urban roads for behavior forecasting.
   `Autonomous Driving` · `Trajectories` · `Maps` · `Agent Pose`
@@ -956,7 +991,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (62)
+### Spatial & Spatiotemporal World Modeling (63)
 
 - **AudioWorldSim** · 2026
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1147,6 +1182,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A multi-sensor autonomous-driving dataset with cameras, LiDAR, GPS/IMU, and 3D annotations across urban traffic scenes.
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `GPS / IMU` · `3D Boxes` · `Maps`
   [Paper](https://arxiv.org/abs/2102.02684) · [Code](https://github.com/scaleapi/pandaset-devkit) · Access: Open download
+
+- **pNEUMA** · 2020
+  A large-scale urban traffic trajectory dataset captured by multiple drones over central Athens, providing continuous movements of vehicles, pedestrians, and other road users in a dense city network.
+  `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Agent Pose` · `Object Metadata` · `Scene Metadata`
+  [Homepage](https://open-traffic.epfl.ch/) · Access: Official Open Traffic platform provides dataset access
 
 - **BLVD** · 2019
   A large-scale 5D semantic autonomous-driving benchmark combining video, 3D objects, trajectories, maps, and time for dynamic traffic-scene modeling.
@@ -1414,7 +1454,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (72)
+### World Model Evaluation & Diagnostics (74)
 
 - **4DSynth** · 2026
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
@@ -1751,6 +1791,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Games / Virtual Environments` · `Game State` · `Action` · `Text` · `Reward`
   [Code](https://github.com/facebookresearch/minihack) · [Paper](https://arxiv.org/abs/2109.13202) · Access: Open-source benchmark
 
+- **ROAD** · 2021
+  A road-video dataset for autonomous-driving event awareness, with agent, location, action, and event-level annotations for reasoning about traffic-participant state changes in continuous driving videos.
+  `Autonomous Driving` · `RGB Video` · `2D Boxes` · `Action Labels` · `Semantic Labels` · `Trajectories`
+  [Homepage](https://github.com/gurkirt/road-dataset) · Access: Official GitHub repository provides dataset resources and code
+
 - **bsuite** · 2020
   A reproducible suite of reinforcement-learning environments and trajectory benchmarks for core capabilities.
   `Games / Virtual Environments` · `Game State` · `Action` · `Reward` · `Trajectories`
@@ -1760,6 +1805,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A synthetic benchmark for video-based physical and causal reasoning. Collision scenarios test descriptive, explanatory, predictive, and counterfactual reasoning with structured annotations.
   `Physics / Science` · `Synthetic Video` · `Object Metadata` · `Trajectory` · `Logic Program` · `QA`
   [Homepage](https://clevrer.csail.mit.edu/) · [Paper](https://arxiv.org/abs/1910.01442) · Access: Open download
+
+- **DoTA** · 2020
+  A driving-video dataset for traffic-anomaly detection, annotating road anomalies, crashes, and related temporal segments to evaluate recognition of rare hazardous state evolution.
+  `Autonomous Driving` · `RGB Video` · `Action Labels` · `2D Boxes` · `Semantic Labels`
+  [Homepage](https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly) · Access: Official GitHub repository provides dataset and benchmark resources
 
 - **BOP Benchmark** · 2018
   A unified 6D object-pose benchmark integrating multiple industrial and household-object datasets.

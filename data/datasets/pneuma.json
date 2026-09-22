@@ -1,0 +1,48 @@
+{
+  "id": "pneuma",
+  "name": "pNEUMA",
+  "shortName": "pNEUMA",
+  "year": 2020,
+  "summary": "使用多架无人机在雅典市中心采集的大规模城市交通轨迹数据集，提供车辆、行人和其他道路参与者在拥挤城市路网中的连续运动。",
+  "summaryEn": "A large-scale urban traffic trajectory dataset captured by multiple drones over central Athens, providing continuous movements of vehicles, pedestrians, and other road users in a dense city network.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics",
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Agent Pose",
+    "Object Metadata",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Traffic Scenarios"
+  ],
+  "source": [
+    "Real-world",
+    "Aerial Video"
+  ],
+  "scale": "Large-scale drone recordings over an urban area in Athens",
+  "scaleZh": "在雅典城市区域采集的大规模无人机交通记录",
+  "organizations": "EPFL Open Traffic platform",
+  "organizationsZh": "EPFL Open Traffic 平台",
+  "license": "Open Traffic dataset terms require verification",
+  "licenseZh": "Open Traffic 数据条款需进一步核查",
+  "access": "Official Open Traffic platform provides dataset access",
+  "accessZh": "官方 Open Traffic 平台提供数据访问入口",
+  "rating": 4,
+  "verdict": "城市尺度无人机交通流轨迹",
+  "verdictEn": "City-scale drone traffic-flow trajectories",
+  "wmNote": "相比单一路口数据，pNEUMA 更适合研究城市路网级的多智能体时空演化和交通状态预测。",
+  "wmNoteEn": "Compared with single-intersection datasets, pNEUMA is better suited to urban-network multi-agent evolution and traffic-state forecasting.",
+  "links": {
+    "homepage": "https://open-traffic.epfl.ch/"
+  }
+}
