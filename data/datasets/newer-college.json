@@ -1,0 +1,46 @@
+{
+  "id": "newer-college",
+  "name": "Newer College Dataset",
+  "shortName": "Newer College Dataset",
+  "year": 2020,
+  "summary": "牛津学院区域的手持多传感器序列，结合 LiDAR、视觉、IMU 与厘米级轨迹真值。",
+  "summaryEn": "Handheld Oxford sequences combining LiDAR, vision, IMU, and centimeter-accurate trajectory ground truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Stereo RGB",
+    "LiDAR",
+    "IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Nearly 6.7 km of recordings; stereo and multi-camera releases",
+  "scaleZh": "录制路线近 6.7 公里；包含双目及多相机版本",
+  "organizations": "University of Oxford Dynamic Robot Systems Group",
+  "organizationsZh": "牛津大学动态机器人系统研究组",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集许可条款需进一步核查",
+  "access": "Official project links to sequence downloads",
+  "accessZh": "官方项目提供序列下载入口",
+  "rating": 3,
+  "verdict": "真实多传感器运动序列",
+  "verdictEn": "Real multisensor motion sequences",
+  "wmNote": "对齐传感器与真值轨迹支持运动条件观测预测和长距离空间一致性检查。",
+  "wmNoteEn": "Aligned sensors and trajectories support motion-conditioned observations and long-range spatial consistency checks.",
+  "links": {
+    "homepage": "https://ori-drs.github.io/newer-college-dataset/"
+  }
+}

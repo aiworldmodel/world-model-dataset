@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-346-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-361-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 346 | 6 | 6 | 45 |
+| 361 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (43)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (47)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (91)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (63)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (47)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (50)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (92)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (70)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (43)
+### Predictive & Generative Dynamics (47)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -116,6 +116,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Egocentric / Human` · `Robotics / Embodied AI` · `Multi-view RGB Video` · `3D Mesh` · `Action Labels` · `Agent Pose` · `Object Metadata`
   [Homepage](https://taco2024.github.io/) · [Paper](https://arxiv.org/abs/2401.08399) · [Code](https://github.com/leolyliu/TACO-Instructions) · Access: Official project page provides dataset V1, pre-release data, paper, and code links
 
+- **The Well** · 2024
+  Diverse spatiotemporal physics simulations with a common format and temporal-window interface for surrogate models.
+  `Physics / Science` · `Simulation State`
+  [Homepage](https://polymathic-ai.org/the_well/) · [Code](https://github.com/PolymathicAI/the_well) · Access: Official downloader and Hugging Face streaming
+
 - **Ego4D** · 2022
   A large first-person video dataset of real human activities collected by Meta AI and an international academic consortium, with benchmarks for object interaction anticipation and long-term action forecasting.
   `Egocentric / Human` · `RGB Video` · `Audio` · `3D Mesh` · `Gaze` · `IMU`
@@ -136,10 +141,25 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Physics / Science` · `Games / Virtual Environments` · `Synthetic Video` · `Depth` · `Optical Flow` · `Segmentation` · `3D State`
   [Homepage](https://kubric.readthedocs.io/) · [Paper](https://arxiv.org/abs/2203.03570) · [Code](https://github.com/google-research/kubric) · Access: Official generation toolkit
 
+- **PDEArena** · 2022
+  Temporal PDE datasets and generators for surrogate modeling, including Navier-Stokes and shallow-water trajectories.
+  `Physics / Science` · `Simulation State`
+  [Homepage](https://pdearena.github.io/pdearena/data/) · [Code](https://github.com/pdearena/pdearena) · Access: Official dataset generation documentation and loaders
+
+- **PDEBench** · 2022
+  Time-dependent PDE solutions with varying initial conditions, boundaries, and physical parameters.
+  `Physics / Science` · `Simulation State`
+  [Code](https://github.com/pdebench/PDEBench) · [Paper](https://arxiv.org/abs/2210.07182) · Access: Official DaRUS datasets and generation/download scripts
+
 - **V-D4RL** · 2022
   A pixel-trajectory dataset and benchmark for visual offline reinforcement learning.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Reward` · `Simulation State`
   [Code](https://github.com/conglu1997/v-d4rl) · [Paper](https://arxiv.org/abs/2206.04779) · Access: Public Google Drive data and open-source loaders
+
+- **AIST++** · 2021
+  3D dance motion sequences paired with music and multiview video, providing joint rotations, root trajectories, and framewise keypoints.
+  `Egocentric / Human` · `Multi-view RGB Video` · `Agent Pose` · `Trajectories` · `Audio`
+  [Homepage](https://google.github.io/aistplusplus_dataset/) · Access: Official annotations and video download script
 
 - **Atari 100K Dataset** · 2020
   Frames, actions, rewards, and terminal signals from Atari games under a limited interaction budget for model-based RL.
@@ -293,7 +313,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (47)
+### Action-Conditioned Dynamics (50)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -400,6 +420,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Segmentation` · `Object Metadata` · `Action Labels`
   [Homepage](http://armbench.com) · [Paper](https://arxiv.org/abs/2303.16382) · [Code](https://github.com/amzn/armbench) · Access: Official dataset website and loading code available
 
+- **FluidLab** · 2023
+  Differentiable fluid manipulation benchmarks supporting interaction recording, saved control trajectories, and multi-material dynamics replay.
+  `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Simulation State` · `RGB Video`
+  [Homepage](https://fluidlab2023.github.io/) · [Code](https://github.com/zhouxian/FluidLab) · Access: Official generation, trajectory saving and replay commands
+
 - **Minari Offline RL Datasets** · 2023
   A standardized offline-RL dataset library providing complete episodes with observations, actions, rewards, and termination signals.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `Simulation State` · `Action` · `Reward` · `Trajectories`
@@ -414,6 +439,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   An offline-RL dataset of real TriFinger Push/Lift tasks with states, actions, rewards, and behavior of varying quality.
   `Robotics / Embodied AI` · `Robot State` · `Action` · `Reward` · `RGB Video` · `Trajectories`
   [Homepage](https://doi.org/10.17617/3.DXZ7TL) · [Code](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · Access: Official DOI and dataset documentation available
+
+- **DiffSkill Environments** · 2022
+  Three tool-mediated plastic-object tasks with downloadable initial/target configurations and random-interaction scripts for generating transitions.
+  `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Simulation State` · `Object State`
+  [Code](https://github.com/Xingyu-Lin/DiffSkill) · [Paper](https://arxiv.org/abs/2203.17275) · Access: Official configuration archive and environment rollout scripts
 
 - **ExORL** · 2022
   Offline state-action trajectories collected by unsupervised exploration in the DeepMind Control Suite.
@@ -495,6 +525,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `RGB-D` · `Action` · `Simulation State` · `Robot State`
   [Homepage](https://robosuite.ai/) · [Paper](https://arxiv.org/abs/2009.08993) · [Code](https://github.com/ARISE-Initiative/robosuite) · Access: Official simulator and datasets
 
+- **SoftGym** · 2020
+  Deformable manipulation benchmarks with Gym interfaces and random-action examples for generating observation and state transitions.
+  `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Depth` · `Action` · `Simulation State`
+  [Code](https://github.com/Xingyu-Lin/softgym) · [Paper](https://arxiv.org/abs/2011.07215) · Access: Official simulator and rollout examples; data generated locally
+
 - **OmniPush** · 2019
   A real-robot pushing-dynamics dataset with RGB-D video and state changes across objects, surfaces, and pushing actions for transferable visual dynamics learning.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Object State` · `Trajectory`
@@ -532,7 +567,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (91)
+### Decision-Making & Agent Trajectories (92)
 
 - **AbstainEQA** · 2026
   An embodied question-answering benchmark testing whether agents abstain appropriately when trajectory evidence is insufficient.
@@ -703,6 +738,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A real-and-simulated long-horizon furniture assembly robot benchmark with trajectories.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Object State`
   [Homepage](https://clvrai.github.io/furniture-bench/) · [Paper](https://arxiv.org/abs/2305.12821) · [Code](https://github.com/clvrai/furniture-bench) · Access: Official benchmark and code
+
+- **JRDB-Traj** · 2023
+  JRDB-based egocentric crowd forecasting benchmark predicting future pedestrian positions relative to the robot from images and point clouds.
+  `Robotics / Embodied AI` · `Egocentric / Human` · `RGB Video` · `LiDAR` · `Trajectories`
+  [Homepage](https://jrdb.erc.monash.edu/benchmark/) · [Paper](https://arxiv.org/abs/2311.02736) · Access: JRDB portal requires an account for downloads; forecasting development kit provided
 
 - **Jumanji** · 2023
   A JAX-based suite of combinatorial optimization and RL environments with batchable state-action-reward trajectories.
@@ -991,7 +1031,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (63)
+### Spatial & Spatiotemporal World Modeling (70)
 
 - **AudioWorldSim** · 2026
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1083,6 +1123,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `RGB Video` · `3D Metadata` · `QA` · `Language`
   [Code](https://github.com/EmbodiedCity/Open3D-VQA.code) · Access: Official code and benchmark resources available
 
+- **Oxford Spires Dataset** · 2025
+  Multisite Oxford sensor sequences with cameras, LiDAR, IMU, reference maps, and core-sequence trajectory truth.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Multi-view RGB Video` · `LiDAR` · `IMU` · `Camera Pose`
+  [Homepage](https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/) · Access: Official Google Drive and Hugging Face resources
+
 - **RadarRGBD** · 2025
   An indoor-outdoor perception dataset with RGB-D, mmWave point clouds, and raw radar matrices.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Scene Metadata`
@@ -1163,6 +1208,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `3D Mesh` · `RGB Video` · `Maps`
   [Homepage](https://aihabitat.org/datasets/hm3d/) · [Paper](https://arxiv.org/abs/2109.08238) · Access: Official Habitat download
 
+- **Hilti SLAM Challenge Dataset** · 2021
+  Handheld construction and office sequences with synchronized vision, LiDAR, IMU, and sparse high-accuracy pose ground truth.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `RGB Video` · `LiDAR` · `IMU` · `Camera Pose`
+  [Code](https://github.com/Hilti-Research/hilti-slam-challenge-2021) · [Paper](https://arxiv.org/abs/2109.11316) · Access: Official repository links to datasets and ground truth
+
 - **Audi Autonomous Driving Dataset** · 2020
   Audi's open autonomous-driving multisensor dataset with cameras, LiDAR, semantic labels, and vehicle state.
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `Semantic Labels` · `GPS / IMU`
@@ -1178,6 +1228,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `Urban / 3D Scene` · `LiDAR` · `RGB Video` · `3D Boxes` · `Maps` · `GPS / IMU`
   [Homepage](https://www.cvlibs.net/datasets/kitti-360/) · [Paper](https://arxiv.org/abs/2012.06268) · Access: Official benchmark download
 
+- **Newer College Dataset** · 2020
+  Handheld Oxford sequences combining LiDAR, vision, IMU, and centimeter-accurate trajectory ground truth.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo RGB` · `LiDAR` · `IMU` · `Camera Pose`
+  [Homepage](https://ori-drs.github.io/newer-college-dataset/) · Access: Official project links to sequence downloads
+
 - **PandaSet** · 2020
   A multi-sensor autonomous-driving dataset with cameras, LiDAR, GPS/IMU, and 3D annotations across urban traffic scenes.
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `GPS / IMU` · `3D Boxes` · `Maps`
@@ -1187,6 +1242,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A large-scale urban traffic trajectory dataset captured by multiple drones over central Athens, providing continuous movements of vehicles, pedestrians, and other road users in a dense city network.
   `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Agent Pose` · `Object Metadata` · `Scene Metadata`
   [Homepage](https://open-traffic.epfl.ch/) · Access: Official Open Traffic platform provides dataset access
+
+- **TartanAir** · 2020
+  Continuous simulated camera trajectories with aligned images, depth, optical flow, and pose ground truth.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo RGB` · `Depth` · `Optical Flow` · `Camera Pose` · `LiDAR`
+  [Homepage](https://theairlab.org/tartanair-dataset/) · [Paper](https://arxiv.org/abs/2003.14338) · Access: Official project provides dataset access instructions
 
 - **BLVD** · 2019
   A large-scale 5D semantic autonomous-driving benchmark combining video, 3D objects, trajectories, maps, and time for dynamic traffic-scene modeling.
@@ -1248,6 +1308,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `3D Mesh` · `RGB-D` · `Agent Pose` · `Semantic Labels`
   [Homepage](http://gibsonenv.stanford.edu/database/) · [Paper](https://arxiv.org/abs/1808.10654) · [Code](https://github.com/StanfordVL/GibsonEnv) · Access: Request / agreement required
 
+- **TUM VI** · 2018
+  Indoor and outdoor visual-inertial sequences with calibrated stereo images, IMU, and partial or full motion-capture trajectories.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo RGB` · `IMU` · `Camera Pose` · `Trajectories`
+  [Homepage](https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset) · [Paper](https://arxiv.org/abs/1804.06120) · Access: Official raw and calibrated sequence downloads
+
 - **DDD17** · 2017
   An event-camera driving dataset for end-to-end driving research, recording asynchronous visual events and driving-state signals on real roads.
   `Autonomous Driving` · `Event Camera` · `GPS / IMU` · `Action` · `Trajectories`
@@ -1278,6 +1343,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/google-deepmind/lab) · [Paper](https://arxiv.org/abs/1612.03801) · Access: Open-source environment
 
+- **EuRoC MAV** · 2016
+  Micro-aerial-vehicle sequences with stereo grayscale imagery, synchronized IMU, and motion ground truth.
+  `Robotics / Embodied AI` · `Stereo RGB` · `IMU` · `Camera Pose` · `Trajectories`
+  [Homepage](https://projects.asl.ethz.ch/datasets/euroc-mav/) · Access: Official ETH Research Collection download portal
+
 - **MiniGrid** · 2016
   Composable partially observable 2D navigation environments.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
@@ -1307,6 +1377,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   A foundational autonomous-driving dataset with stereo cameras, LiDAR, GPS/IMU, and established benchmarks for depth, scene flow, odometry, and 3D perception.
   `Autonomous Driving` · `Stereo RGB` · `LiDAR` · `GPS / IMU` · `3D Boxes`
   [Homepage](https://www.cvlibs.net/datasets/kitti/) · [Paper](https://www.cvlibs.net/publications/Geiger2013IJRR.pdf) · [Code](https://github.com/utiasSTARS/pykitti) · Access: Open download
+
+- **TUM RGB-D** · 2012
+  Handheld and robot RGB-D sequences with motion-capture trajectories, including dynamic people and continuous camera motion.
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `RGB-D` · `Camera Pose` · `Trajectories`
+  [Homepage](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · Access: Official sequence downloads and trajectory evaluation tools
 
 <a id="physical-causal-reasoning"></a>
 

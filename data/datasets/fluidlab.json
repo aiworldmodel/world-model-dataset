@@ -1,0 +1,45 @@
+{
+  "id": "fluidlab",
+  "name": "FluidLab",
+  "shortName": "FluidLab",
+  "year": 2023,
+  "summary": "复杂流体操作的可微仿真基准，支持记录交互目标、保存优化控制轨迹并回放多材料动力学。",
+  "summaryEn": "Differentiable fluid manipulation benchmarks supporting interaction recording, saved control trajectories, and multi-material dynamics replay.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Action",
+    "Simulation State",
+    "RGB Video"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Fluid manipulation tasks including pouring, mixing and gathering",
+  "scaleZh": "包含倾倒、混合和聚集等流体操作任务",
+  "organizations": "Carnegie Mellon University, MIT, Dartmouth, Columbia and collaborators",
+  "organizationsZh": "卡内基梅隆大学、麻省理工学院、达特茅斯学院、哥伦比亚大学及合作者",
+  "license": "Verify repository and bundled dependency terms",
+  "licenseZh": "需核查仓库及附带依赖条款",
+  "access": "Official generation, trajectory saving and replay commands",
+  "accessZh": "官方生成、轨迹保存和回放命令",
+  "rating": 4,
+  "verdict": "复杂流体控制 rollout",
+  "verdictEn": "Complex-fluid control rollouts",
+  "wmNote": "收录为 rollout 生成工具；控制轨迹结合仿真状态可用于动作条件预测。",
+  "wmNoteEn": "Cataloged as a rollout generator; pair control trajectories with simulation states for action-conditioned prediction.",
+  "links": {
+    "homepage": "https://fluidlab2023.github.io/",
+    "code": "https://github.com/zhouxian/FluidLab"
+  }
+}

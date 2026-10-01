@@ -1,0 +1,45 @@
+{
+  "id": "euroc-mav",
+  "name": "EuRoC MAV",
+  "shortName": "EuRoC MAV",
+  "year": 2016,
+  "summary": "微型飞行器采集的视觉惯性序列，包含双目灰度图、同步 IMU 和运动真值。",
+  "summaryEn": "Micro-aerial-vehicle sequences with stereo grayscale imagery, synchronized IMU, and motion ground truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Stereo RGB",
+    "IMU",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Stereo images at 20 FPS and IMU at 200 Hz",
+  "scaleZh": "双目图像 20 FPS，IMU 200 Hz",
+  "organizations": "ETH Zurich Autonomous Systems Lab",
+  "organizationsZh": "苏黎世联邦理工学院自主系统实验室",
+  "license": "Consult ETH Research Collection terms",
+  "licenseZh": "许可条款见 ETH Research Collection",
+  "access": "Official ETH Research Collection download portal",
+  "accessZh": "官方 ETH Research Collection 下载入口",
+  "rating": 3,
+  "verdict": "飞行器视觉惯性轨迹",
+  "verdictEn": "Aerial visual-inertial trajectories",
+  "wmNote": "用于连续观测与位姿演化建模；运动真值存在同步和动态运动精度限制。",
+  "wmNoteEn": "Supports observation and pose evolution; ground truth has synchronization and dynamic-motion limitations.",
+  "links": {
+    "homepage": "https://projects.asl.ethz.ch/datasets/euroc-mav/"
+  }
+}

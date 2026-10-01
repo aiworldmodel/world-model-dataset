@@ -5529,6 +5529,52 @@
     }
   },
   {
+    "id": "oxford-spires",
+    "name": "Oxford Spires Dataset",
+    "shortName": "Oxford Spires Dataset",
+    "year": 2025,
+    "summary": "牛津多地点的连续多传感器扫描，提供相机、LiDAR、IMU、参考地图与核心序列的轨迹真值。",
+    "summaryEn": "Multisite Oxford sensor sequences with cameras, LiDAR, IMU, reference maps, and core-sequence trajectory truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "LiDAR",
+      "IMU",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "24 sequences with three cameras, LiDAR and IMU",
+    "scaleZh": "24 个序列，包含三相机、LiDAR 和 IMU",
+    "organizations": "University of Oxford Dynamic Robot Systems Group",
+    "organizationsZh": "牛津大学动态机器人系统研究组",
+    "license": "CC BY-NC-SA 4.0; non-commercial academic use",
+    "licenseZh": "CC BY-NC-SA 4.0；面向非商业学术用途",
+    "access": "Official Google Drive and Hugging Face resources",
+    "accessZh": "官方 Google Drive 与 Hugging Face 资源",
+    "rating": 3,
+    "verdict": "多地点传感器轨迹与地图",
+    "verdictEn": "Multisite sensor trajectories and maps",
+    "wmNote": "连续观测和核心序列真值轨迹支持时空建模；不是所有序列都有轨迹真值。",
+    "wmNoteEn": "Continuous observations and core-sequence truth support spatiotemporal modeling; pose truth is not available for every sequence.",
+    "links": {
+      "homepage": "https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/"
+    }
+  },
+  {
     "id": "partinstruct",
     "name": "PartInstruct",
     "shortName": "PartInstruct",
@@ -7007,6 +7053,48 @@
     }
   },
   {
+    "id": "the-well",
+    "name": "The Well",
+    "shortName": "The Well",
+    "year": 2024,
+    "summary": "来自多种科学领域的时空物理仿真集合，提供统一格式和用于代理模型训练的时间窗口接口。",
+    "summaryEn": "Diverse spatiotemporal physics simulations with a common format and temporal-window interface for surrogate models.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Original release: 15 TB across 16 datasets",
+    "scaleZh": "原始发布约 15 TB，包含 16 个数据集",
+    "organizations": "Polymathic AI and collaborating scientific institutions",
+    "organizationsZh": "Polymathic AI 及合作科研机构",
+    "license": "Code: BSD-3-Clause; consult individual dataset terms",
+    "licenseZh": "代码为 BSD-3-Clause；数据条款以各子集为准",
+    "access": "Official downloader and Hugging Face streaming",
+    "accessZh": "官方下载工具及 Hugging Face 流式访问",
+    "rating": 4,
+    "verdict": "多领域物理时空演化",
+    "verdictEn": "Cross-domain spatiotemporal physics",
+    "wmNote": "使用具有时间轴的子集研究跨领域动力学；静态场不作为未来状态监督。",
+    "wmNoteEn": "Use time-dependent subsets for cross-domain dynamics; static fields do not supply future-state supervision.",
+    "links": {
+      "homepage": "https://polymathic-ai.org/the_well/",
+      "code": "https://github.com/PolymathicAI/the_well"
+    }
+  },
+  {
     "id": "argoverse-2",
     "name": "Argoverse 2",
     "shortName": "Argoverse 2",
@@ -7200,6 +7288,51 @@
     }
   },
   {
+    "id": "fluidlab",
+    "name": "FluidLab",
+    "shortName": "FluidLab",
+    "year": 2023,
+    "summary": "复杂流体操作的可微仿真基准，支持记录交互目标、保存优化控制轨迹并回放多材料动力学。",
+    "summaryEn": "Differentiable fluid manipulation benchmarks supporting interaction recording, saved control trajectories, and multi-material dynamics replay.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Action",
+      "Simulation State",
+      "RGB Video"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Fluid manipulation tasks including pouring, mixing and gathering",
+    "scaleZh": "包含倾倒、混合和聚集等流体操作任务",
+    "organizations": "Carnegie Mellon University, MIT, Dartmouth, Columbia and collaborators",
+    "organizationsZh": "卡内基梅隆大学、麻省理工学院、达特茅斯学院、哥伦比亚大学及合作者",
+    "license": "Verify repository and bundled dependency terms",
+    "licenseZh": "需核查仓库及附带依赖条款",
+    "access": "Official generation, trajectory saving and replay commands",
+    "accessZh": "官方生成、轨迹保存和回放命令",
+    "rating": 4,
+    "verdict": "复杂流体控制 rollout",
+    "verdictEn": "Complex-fluid control rollouts",
+    "wmNote": "收录为 rollout 生成工具；控制轨迹结合仿真状态可用于动作条件预测。",
+    "wmNoteEn": "Cataloged as a rollout generator; pair control trajectories with simulation states for action-conditioned prediction.",
+    "links": {
+      "homepage": "https://fluidlab2023.github.io/",
+      "code": "https://github.com/zhouxian/FluidLab"
+    }
+  },
+  {
     "id": "furniturebench",
     "name": "FurnitureBench",
     "shortName": "FurnitureBench",
@@ -7246,6 +7379,52 @@
       "homepage": "https://clvrai.github.io/furniture-bench/",
       "paper": "https://arxiv.org/abs/2305.12821",
       "code": "https://github.com/clvrai/furniture-bench"
+    }
+  },
+  {
+    "id": "jrdb-traj",
+    "name": "JRDB-Traj",
+    "shortName": "JRDB-Traj",
+    "year": 2023,
+    "summary": "基于 JRDB 的机器人视角人群轨迹预测基准，从原始图像和点云预测相对机器人的未来行人位置。",
+    "summaryEn": "JRDB-based egocentric crowd forecasting benchmark predicting future pedestrian positions relative to the robot from images and point clouds.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "LiDAR",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "JRDB-derived robot-view crowd sequences",
+    "scaleZh": "基于 JRDB 的机器人视角人群序列",
+    "organizations": "EPFL and Monash University",
+    "organizationsZh": "洛桑联邦理工学院与蒙纳士大学",
+    "license": "Consult JRDB dataset terms",
+    "licenseZh": "许可条款以 JRDB 数据集为准",
+    "access": "JRDB portal requires an account for downloads; forecasting development kit provided",
+    "accessZh": "JRDB 下载需登录账号；提供轨迹预测开发工具",
+    "rating": 4,
+    "verdict": "机器人视角未来人群轨迹",
+    "verdictEn": "Robot-view future crowd trajectories",
+    "wmNote": "评测感知、跟踪误差下的端到端未来轨迹预测；与纯检测数据明确区分。",
+    "wmNoteEn": "Evaluates end-to-end forecasting under perception and tracking errors rather than detection alone.",
+    "links": {
+      "homepage": "https://jrdb.erc.monash.edu/benchmark/",
+      "paper": "https://arxiv.org/abs/2311.02736"
     }
   },
   {
@@ -8294,6 +8473,51 @@
     "licenseZh": "代码与数据条款见项目说明；使用前需核查适用范围"
   },
   {
+    "id": "diffskill",
+    "name": "DiffSkill Environments",
+    "shortName": "DiffSkill Environments",
+    "year": 2022,
+    "summary": "工具操作可塑物体的三个仿真任务，提供初始和目标配置下载及随机交互脚本以生成转换轨迹。",
+    "summaryEn": "Three tool-mediated plastic-object tasks with downloadable initial/target configurations and random-interaction scripts for generating transitions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Action",
+      "Simulation State",
+      "Object State"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "LiftSpread, GatherMove and CutRearrange; 2 GB configuration archive",
+    "scaleZh": "LiftSpread、GatherMove 和 CutRearrange；配置包约 2 GB",
+    "organizations": "Carnegie Mellon University, MIT and collaborators",
+    "organizationsZh": "卡内基梅隆大学、麻省理工学院及合作者",
+    "license": "Dataset and simulator terms require verification",
+    "licenseZh": "配置数据和仿真器条款需进一步核查",
+    "access": "Official configuration archive and environment rollout scripts",
+    "accessZh": "官方配置包和环境 rollout 脚本",
+    "rating": 4,
+    "verdict": "工具与可塑材料的交互轨迹",
+    "verdictEn": "Tool and plastic-material interactions",
+    "wmNote": "配置包本身不是完整轨迹；需运行官方环境记录动作与粒子状态转换。",
+    "wmNoteEn": "Configurations are not complete trajectories; run the official environments to record actions and particle transitions.",
+    "links": {
+      "code": "https://github.com/Xingyu-Lin/DiffSkill",
+      "paper": "https://arxiv.org/abs/2203.17275"
+    }
+  },
+  {
     "id": "ego4d",
     "name": "Ego4D",
     "shortName": "Ego4D",
@@ -9102,6 +9326,90 @@
     }
   },
   {
+    "id": "pdearena",
+    "name": "PDEArena",
+    "shortName": "PDEArena",
+    "year": 2022,
+    "summary": "面向 PDE 代理建模的时序数据与生成工具，包含 Navier-Stokes 和浅水方程的演化轨迹。",
+    "summaryEn": "Temporal PDE datasets and generators for surrogate modeling, including Navier-Stokes and shallow-water trajectories.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Navier-Stokes and shallow-water trajectory datasets; additional Maxwell resources",
+    "scaleZh": "Navier-Stokes、浅水方程轨迹及额外 Maxwell 资源",
+    "organizations": "Microsoft Research and collaborators",
+    "organizationsZh": "微软研究院及合作者",
+    "license": "Code: MIT; verify data-specific terms",
+    "licenseZh": "代码为 MIT；数据条款需逐项核查",
+    "access": "Official dataset generation documentation and loaders",
+    "accessZh": "官方数据生成文档和加载器",
+    "rating": 4,
+    "verdict": "多尺度 PDE 时序建模",
+    "verdictEn": "Multiscale PDE trajectory modeling",
+    "wmNote": "按初始状态和物理参数预测未来场，可评测多步误差积累。",
+    "wmNoteEn": "Predict future fields from initial states and parameters and assess multi-step error accumulation.",
+    "links": {
+      "homepage": "https://pdearena.github.io/pdearena/data/",
+      "code": "https://github.com/pdearena/pdearena"
+    }
+  },
+  {
+    "id": "pdebench",
+    "name": "PDEBench",
+    "shortName": "PDEBench",
+    "year": 2022,
+    "summary": "多种偏微分方程的时序数值解，提供初始条件、边界条件和参数变化下的物理场演化数据。",
+    "summaryEn": "Time-dependent PDE solutions with varying initial conditions, boundaries, and physical parameters.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Multiple PDE families in 1D, 2D and 3D",
+    "scaleZh": "覆盖一维、二维和三维的多类偏微分方程",
+    "organizations": "NEC Laboratories Europe, University of Stuttgart and collaborators",
+    "organizationsZh": "NEC 欧洲研究院、斯图加特大学及合作者",
+    "license": "Data terms: consult DaRUS; code: MIT except noted components",
+    "licenseZh": "数据条款见 DaRUS；代码为 MIT，注明的组件除外",
+    "access": "Official DaRUS datasets and generation/download scripts",
+    "accessZh": "官方 DaRUS 数据集及生成、下载脚本",
+    "rating": 4,
+    "verdict": "物理场多步预测",
+    "verdictEn": "Multi-step physical-field prediction",
+    "wmNote": "时序物理场可用于前向动力学预测；不将稳态子任务视为时序 rollout。",
+    "wmNoteEn": "Use time-dependent fields for forward dynamics; steady-state subsets are not temporal rollouts.",
+    "links": {
+      "code": "https://github.com/pdebench/PDEBench",
+      "paper": "https://arxiv.org/abs/2210.07182"
+    }
+  },
+  {
     "id": "procthor",
     "name": "ProcTHOR",
     "shortName": "ProcTHOR",
@@ -9486,6 +9794,51 @@
     }
   },
   {
+    "id": "aist-plus-plus",
+    "name": "AIST++",
+    "shortName": "AIST++",
+    "year": 2021,
+    "summary": "带音乐和多视角视频的三维舞蹈运动序列，提供关节旋转、根节点轨迹和逐帧关键点。",
+    "summaryEn": "3D dance motion sequences paired with music and multiview video, providing joint rotations, root trajectories, and framewise keypoints.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Agent Pose",
+      "Trajectories",
+      "Audio"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "1,408 motion sequences, 10 dance genres and 9 camera views",
+    "scaleZh": "1,408 段运动序列、10 类舞蹈、9 个相机视角",
+    "organizations": "Google Research and University of California, Berkeley",
+    "organizationsZh": "谷歌研究院与加州大学伯克利分校",
+    "license": "Videos/music: AIST terms; annotations and SMPL use require separate review",
+    "licenseZh": "视频和音乐遵循 AIST 条款；标注及 SMPL 使用需分别核查",
+    "access": "Official annotations and video download script",
+    "accessZh": "官方标注下载及视频下载脚本",
+    "rating": 4,
+    "verdict": "音乐条件人体运动预测",
+    "verdictEn": "Music-conditioned human motion prediction",
+    "wmNote": "时间对齐的关节与根轨迹适合运动生成和预测；音乐不是物理控制动作。",
+    "wmNoteEn": "Aligned joints and root trajectories support motion generation and prediction; music is not a physical control action.",
+    "links": {
+      "homepage": "https://google.github.io/aistplusplus_dataset/"
+    }
+  },
+  {
     "id": "alfworld",
     "name": "ALFWorld",
     "shortName": "ALFWorld",
@@ -9855,6 +10208,53 @@
     "links": {
       "homepage": "https://aihabitat.org/datasets/hm3d/",
       "paper": "https://arxiv.org/abs/2109.08238"
+    }
+  },
+  {
+    "id": "hilti-slam",
+    "name": "Hilti SLAM Challenge Dataset",
+    "shortName": "Hilti SLAM Challenge Dataset",
+    "year": 2021,
+    "summary": "建筑及办公环境的手持多传感器序列，提供时间同步的视觉、LiDAR、IMU 与稀疏高精度位姿真值。",
+    "summaryEn": "Handheld construction and office sequences with synchronized vision, LiDAR, IMU, and sparse high-accuracy pose ground truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Video",
+      "LiDAR",
+      "IMU",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Indoor and outdoor construction-oriented sensor sequences",
+    "scaleZh": "面向室内外建筑环境的传感器序列",
+    "organizations": "Hilti AG and University of Zurich",
+    "organizationsZh": "喜利得与苏黎世大学",
+    "license": "CC BY-NC-SA 3.0",
+    "licenseZh": "CC BY-NC-SA 3.0",
+    "access": "Official repository links to datasets and ground truth",
+    "accessZh": "官方仓库提供数据和真值下载入口",
+    "rating": 3,
+    "verdict": "建筑场景多传感器时序",
+    "verdictEn": "Construction multisensor sequences",
+    "wmNote": "连续传感器流提供观测演化；稀疏真值不应视为每帧都有完整位姿标注。",
+    "wmNoteEn": "Continuous streams expose observation evolution; sparse truth must not be treated as full per-frame pose annotations.",
+    "links": {
+      "code": "https://github.com/Hilti-Research/hilti-slam-challenge-2021",
+      "paper": "https://arxiv.org/abs/2109.11316"
     }
   },
   {
@@ -11212,6 +11612,52 @@
     }
   },
   {
+    "id": "newer-college",
+    "name": "Newer College Dataset",
+    "shortName": "Newer College Dataset",
+    "year": 2020,
+    "summary": "牛津学院区域的手持多传感器序列，结合 LiDAR、视觉、IMU 与厘米级轨迹真值。",
+    "summaryEn": "Handheld Oxford sequences combining LiDAR, vision, IMU, and centimeter-accurate trajectory ground truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Stereo RGB",
+      "LiDAR",
+      "IMU",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Nearly 6.7 km of recordings; stereo and multi-camera releases",
+    "scaleZh": "录制路线近 6.7 公里；包含双目及多相机版本",
+    "organizations": "University of Oxford Dynamic Robot Systems Group",
+    "organizationsZh": "牛津大学动态机器人系统研究组",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集许可条款需进一步核查",
+    "access": "Official project links to sequence downloads",
+    "accessZh": "官方项目提供序列下载入口",
+    "rating": 3,
+    "verdict": "真实多传感器运动序列",
+    "verdictEn": "Real multisensor motion sequences",
+    "wmNote": "对齐传感器与真值轨迹支持运动条件观测预测和长距离空间一致性检查。",
+    "wmNoteEn": "Aligned sensors and trajectories support motion-conditioned observations and long-range spatial consistency checks.",
+    "links": {
+      "homepage": "https://ori-drs.github.io/newer-college-dataset/"
+    }
+  },
+  {
     "id": "opendd",
     "name": "openDD",
     "shortName": "openDD",
@@ -11727,6 +12173,99 @@
     "links": {
       "homepage": "https://levelxdata.com/round-dataset/",
       "paper": "https://ieeexplore.ieee.org/document/9294728"
+    }
+  },
+  {
+    "id": "softgym",
+    "name": "SoftGym",
+    "shortName": "SoftGym",
+    "year": 2020,
+    "summary": "布料、绳索和液体操作的仿真基准，通过 Gym 接口和随机动作示例生成动作条件观测与状态转换。",
+    "summaryEn": "Deformable manipulation benchmarks with Gym interfaces and random-action examples for generating observation and state transitions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Depth",
+      "Action",
+      "Simulation State"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Ten documented cloth, rope and fluid task variants",
+    "scaleZh": "文档列出十种布料、绳索和液体任务变体",
+    "organizations": "Carnegie Mellon University",
+    "organizationsZh": "卡内基梅隆大学",
+    "license": "Verify repository and NVIDIA FleX dependency terms",
+    "licenseZh": "需核查仓库及 NVIDIA FleX 依赖条款",
+    "access": "Official simulator and rollout examples; data generated locally",
+    "accessZh": "官方仿真器和 rollout 示例；需本地生成数据",
+    "rating": 4,
+    "verdict": "可变形物体 rollout 生成",
+    "verdictEn": "Deformable-object rollout generation",
+    "wmNote": "收录为生成工具；记录动作及相邻粒子状态或图像可构造动力学训练数据。",
+    "wmNoteEn": "Cataloged as a generator; record actions and adjacent particle states or images for dynamics training.",
+    "links": {
+      "code": "https://github.com/Xingyu-Lin/softgym",
+      "paper": "https://arxiv.org/abs/2011.07215"
+    }
+  },
+  {
+    "id": "tartanair",
+    "name": "TartanAir",
+    "shortName": "TartanAir",
+    "year": 2020,
+    "summary": "多种仿真场景中的连续相机轨迹，提供同步图像、深度、光流和位姿真值。",
+    "summaryEn": "Continuous simulated camera trajectories with aligned images, depth, optical flow, and pose ground truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Stereo RGB",
+      "Depth",
+      "Optical Flow",
+      "Camera Pose",
+      "LiDAR"
+    ],
+    "structure": [
+      "Simulation Rollouts"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Original project documents 30 simulation environments",
+    "scaleZh": "原始项目记录 30 个仿真环境",
+    "organizations": "Carnegie Mellon University AirLab and Microsoft",
+    "organizationsZh": "卡内基梅隆大学 AirLab 与微软",
+    "license": "CC BY 4.0",
+    "licenseZh": "CC BY 4.0",
+    "access": "Official project provides dataset access instructions",
+    "accessZh": "官方项目提供数据访问说明",
+    "rating": 3,
+    "verdict": "多模态相机轨迹预测",
+    "verdictEn": "Multimodal camera trajectory modeling",
+    "wmNote": "位姿与连续观测可支持运动条件未来观测建模；不默认包含执行器动作。",
+    "wmNoteEn": "Poses and observations support motion-conditioned future views; actuator actions are not assumed.",
+    "links": {
+      "homepage": "https://theairlab.org/tartanair-dataset/",
+      "paper": "https://arxiv.org/abs/2003.14338"
     }
   },
   {
@@ -14349,6 +14888,53 @@
     }
   },
   {
+    "id": "tum-vi",
+    "name": "TUM VI",
+    "shortName": "TUM VI",
+    "year": 2018,
+    "summary": "室内外视觉惯性序列，提供校准后的双目图像、IMU 与部分或完整运动捕捉轨迹。",
+    "summaryEn": "Indoor and outdoor visual-inertial sequences with calibrated stereo images, IMU, and partial or full motion-capture trajectories.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "Stereo RGB",
+      "IMU",
+      "Camera Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Room, corridor, hall, outdoor and slide sequences",
+    "scaleZh": "涵盖房间、走廊、大厅、室外和滑道序列",
+    "organizations": "Technical University of Munich",
+    "organizationsZh": "慕尼黑工业大学",
+    "license": "Data: CC BY 4.0; code: BSD-2-Clause",
+    "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
+    "access": "Official raw and calibrated sequence downloads",
+    "accessZh": "官方原始及校准序列下载",
+    "rating": 3,
+    "verdict": "视觉惯性长轨迹",
+    "verdictEn": "Long visual-inertial trajectories",
+    "wmNote": "房间序列提供完整位姿真值；其他主要序列仅起止段有真值，评测需遵守该覆盖范围。",
+    "wmNoteEn": "Room sequences have full pose truth; other main sequences only have start/end truth, limiting pose evaluation coverage.",
+    "links": {
+      "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset",
+      "paper": "https://arxiv.org/abs/1804.06120"
+    }
+  },
+  {
     "id": "ucf-crime",
     "name": "UCF-Crime",
     "shortName": "UCF-Crime",
@@ -15142,6 +15728,51 @@
     }
   },
   {
+    "id": "euroc-mav",
+    "name": "EuRoC MAV",
+    "shortName": "EuRoC MAV",
+    "year": 2016,
+    "summary": "微型飞行器采集的视觉惯性序列，包含双目灰度图、同步 IMU 和运动真值。",
+    "summaryEn": "Micro-aerial-vehicle sequences with stereo grayscale imagery, synchronized IMU, and motion ground truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Stereo RGB",
+      "IMU",
+      "Camera Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Stereo images at 20 FPS and IMU at 200 Hz",
+    "scaleZh": "双目图像 20 FPS，IMU 200 Hz",
+    "organizations": "ETH Zurich Autonomous Systems Lab",
+    "organizationsZh": "苏黎世联邦理工学院自主系统实验室",
+    "license": "Consult ETH Research Collection terms",
+    "licenseZh": "许可条款见 ETH Research Collection",
+    "access": "Official ETH Research Collection download portal",
+    "accessZh": "官方 ETH Research Collection 下载入口",
+    "rating": 3,
+    "verdict": "飞行器视觉惯性轨迹",
+    "verdictEn": "Aerial visual-inertial trajectories",
+    "wmNote": "用于连续观测与位姿演化建模；运动真值存在同步和动态运动精度限制。",
+    "wmNoteEn": "Supports observation and pose evolution; ground truth has synchronization and dynamic-motion limitations.",
+    "links": {
+      "homepage": "https://projects.asl.ethz.ch/datasets/euroc-mav/"
+    }
+  },
+  {
     "id": "minigrid",
     "name": "MiniGrid",
     "shortName": "MiniGrid",
@@ -15787,6 +16418,51 @@
     "organizationsZh": "卡尔斯鲁厄理工学院、丰田工业大学",
     "accessZh": "开放下载",
     "licenseZh": "数据集采用 CC BY-NC-SA 3.0；同时适用各基准条款"
+  },
+  {
+    "id": "tum-rgbd",
+    "name": "TUM RGB-D",
+    "shortName": "TUM RGB-D",
+    "year": 2012,
+    "summary": "手持和机器人 RGB-D 序列配有运动捕捉轨迹，包含动态人群场景和连续相机运动。",
+    "summaryEn": "Handheld and robot RGB-D sequences with motion-capture trajectories, including dynamic people and continuous camera motion.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB-D",
+      "Camera Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "RGB-D at 30 Hz, 640 x 480; motion capture at 100 Hz",
+    "scaleZh": "RGB-D 为 30 Hz、640 x 480；运动捕捉为 100 Hz",
+    "organizations": "Technical University of Munich and University of Freiburg",
+    "organizationsZh": "慕尼黑工业大学与弗赖堡大学",
+    "license": "Data: CC BY 4.0 unless stated otherwise; code: BSD-2-Clause",
+    "licenseZh": "数据默认 CC BY 4.0；代码为 BSD-2-Clause",
+    "access": "Official sequence downloads and trajectory evaluation tools",
+    "accessZh": "官方序列下载和轨迹评估工具",
+    "rating": 3,
+    "verdict": "RGB-D 连续观测与位姿",
+    "verdictEn": "RGB-D observation and pose sequences",
+    "wmNote": "连续 RGB-D 和真值位姿可支持未来观测与时空一致性分析；验证序列无公开真值。",
+    "wmNoteEn": "RGB-D and pose sequences support future-view consistency analysis; validation sequences lack public ground truth.",
+    "links": {
+      "homepage": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset"
+    }
   },
   {
     "id": "ucf101",

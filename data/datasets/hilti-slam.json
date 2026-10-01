@@ -1,0 +1,47 @@
+{
+  "id": "hilti-slam",
+  "name": "Hilti SLAM Challenge Dataset",
+  "shortName": "Hilti SLAM Challenge Dataset",
+  "year": 2021,
+  "summary": "建筑及办公环境的手持多传感器序列，提供时间同步的视觉、LiDAR、IMU 与稀疏高精度位姿真值。",
+  "summaryEn": "Handheld construction and office sequences with synchronized vision, LiDAR, IMU, and sparse high-accuracy pose ground truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Indoor and outdoor construction-oriented sensor sequences",
+  "scaleZh": "面向室内外建筑环境的传感器序列",
+  "organizations": "Hilti AG and University of Zurich",
+  "organizationsZh": "喜利得与苏黎世大学",
+  "license": "CC BY-NC-SA 3.0",
+  "licenseZh": "CC BY-NC-SA 3.0",
+  "access": "Official repository links to datasets and ground truth",
+  "accessZh": "官方仓库提供数据和真值下载入口",
+  "rating": 3,
+  "verdict": "建筑场景多传感器时序",
+  "verdictEn": "Construction multisensor sequences",
+  "wmNote": "连续传感器流提供观测演化；稀疏真值不应视为每帧都有完整位姿标注。",
+  "wmNoteEn": "Continuous streams expose observation evolution; sparse truth must not be treated as full per-frame pose annotations.",
+  "links": {
+    "code": "https://github.com/Hilti-Research/hilti-slam-challenge-2021",
+    "paper": "https://arxiv.org/abs/2109.11316"
+  }
+}

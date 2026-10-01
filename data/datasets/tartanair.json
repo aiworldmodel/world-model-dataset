@@ -1,0 +1,47 @@
+{
+  "id": "tartanair",
+  "name": "TartanAir",
+  "shortName": "TartanAir",
+  "year": 2020,
+  "summary": "多种仿真场景中的连续相机轨迹，提供同步图像、深度、光流和位姿真值。",
+  "summaryEn": "Continuous simulated camera trajectories with aligned images, depth, optical flow, and pose ground truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Stereo RGB",
+    "Depth",
+    "Optical Flow",
+    "Camera Pose",
+    "LiDAR"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Original project documents 30 simulation environments",
+  "scaleZh": "原始项目记录 30 个仿真环境",
+  "organizations": "Carnegie Mellon University AirLab and Microsoft",
+  "organizationsZh": "卡内基梅隆大学 AirLab 与微软",
+  "license": "CC BY 4.0",
+  "licenseZh": "CC BY 4.0",
+  "access": "Official project provides dataset access instructions",
+  "accessZh": "官方项目提供数据访问说明",
+  "rating": 3,
+  "verdict": "多模态相机轨迹预测",
+  "verdictEn": "Multimodal camera trajectory modeling",
+  "wmNote": "位姿与连续观测可支持运动条件未来观测建模；不默认包含执行器动作。",
+  "wmNoteEn": "Poses and observations support motion-conditioned future views; actuator actions are not assumed.",
+  "links": {
+    "homepage": "https://theairlab.org/tartanair-dataset/",
+    "paper": "https://arxiv.org/abs/2003.14338"
+  }
+}

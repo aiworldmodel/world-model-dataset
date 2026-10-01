@@ -1,0 +1,46 @@
+{
+  "id": "softgym",
+  "name": "SoftGym",
+  "shortName": "SoftGym",
+  "year": 2020,
+  "summary": "布料、绳索和液体操作的仿真基准，通过 Gym 接口和随机动作示例生成动作条件观测与状态转换。",
+  "summaryEn": "Deformable manipulation benchmarks with Gym interfaces and random-action examples for generating observation and state transitions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Depth",
+    "Action",
+    "Simulation State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Ten documented cloth, rope and fluid task variants",
+  "scaleZh": "文档列出十种布料、绳索和液体任务变体",
+  "organizations": "Carnegie Mellon University",
+  "organizationsZh": "卡内基梅隆大学",
+  "license": "Verify repository and NVIDIA FleX dependency terms",
+  "licenseZh": "需核查仓库及 NVIDIA FleX 依赖条款",
+  "access": "Official simulator and rollout examples; data generated locally",
+  "accessZh": "官方仿真器和 rollout 示例；需本地生成数据",
+  "rating": 4,
+  "verdict": "可变形物体 rollout 生成",
+  "verdictEn": "Deformable-object rollout generation",
+  "wmNote": "收录为生成工具；记录动作及相邻粒子状态或图像可构造动力学训练数据。",
+  "wmNoteEn": "Cataloged as a generator; record actions and adjacent particle states or images for dynamics training.",
+  "links": {
+    "code": "https://github.com/Xingyu-Lin/softgym",
+    "paper": "https://arxiv.org/abs/2011.07215"
+  }
+}

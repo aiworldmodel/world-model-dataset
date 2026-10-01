@@ -1,0 +1,45 @@
+{
+  "id": "tum-rgbd",
+  "name": "TUM RGB-D",
+  "shortName": "TUM RGB-D",
+  "year": 2012,
+  "summary": "手持和机器人 RGB-D 序列配有运动捕捉轨迹，包含动态人群场景和连续相机运动。",
+  "summaryEn": "Handheld and robot RGB-D sequences with motion-capture trajectories, including dynamic people and continuous camera motion.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "RGB-D at 30 Hz, 640 x 480; motion capture at 100 Hz",
+  "scaleZh": "RGB-D 为 30 Hz、640 x 480；运动捕捉为 100 Hz",
+  "organizations": "Technical University of Munich and University of Freiburg",
+  "organizationsZh": "慕尼黑工业大学与弗赖堡大学",
+  "license": "Data: CC BY 4.0 unless stated otherwise; code: BSD-2-Clause",
+  "licenseZh": "数据默认 CC BY 4.0；代码为 BSD-2-Clause",
+  "access": "Official sequence downloads and trajectory evaluation tools",
+  "accessZh": "官方序列下载和轨迹评估工具",
+  "rating": 3,
+  "verdict": "RGB-D 连续观测与位姿",
+  "verdictEn": "RGB-D observation and pose sequences",
+  "wmNote": "连续 RGB-D 和真值位姿可支持未来观测与时空一致性分析；验证序列无公开真值。",
+  "wmNoteEn": "RGB-D and pose sequences support future-view consistency analysis; validation sequences lack public ground truth.",
+  "links": {
+    "homepage": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset"
+  }
+}

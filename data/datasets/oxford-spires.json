@@ -1,0 +1,46 @@
+{
+  "id": "oxford-spires",
+  "name": "Oxford Spires Dataset",
+  "shortName": "Oxford Spires Dataset",
+  "year": 2025,
+  "summary": "牛津多地点的连续多传感器扫描，提供相机、LiDAR、IMU、参考地图与核心序列的轨迹真值。",
+  "summaryEn": "Multisite Oxford sensor sequences with cameras, LiDAR, IMU, reference maps, and core-sequence trajectory truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "LiDAR",
+    "IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "24 sequences with three cameras, LiDAR and IMU",
+  "scaleZh": "24 个序列，包含三相机、LiDAR 和 IMU",
+  "organizations": "University of Oxford Dynamic Robot Systems Group",
+  "organizationsZh": "牛津大学动态机器人系统研究组",
+  "license": "CC BY-NC-SA 4.0; non-commercial academic use",
+  "licenseZh": "CC BY-NC-SA 4.0；面向非商业学术用途",
+  "access": "Official Google Drive and Hugging Face resources",
+  "accessZh": "官方 Google Drive 与 Hugging Face 资源",
+  "rating": 3,
+  "verdict": "多地点传感器轨迹与地图",
+  "verdictEn": "Multisite sensor trajectories and maps",
+  "wmNote": "连续观测和核心序列真值轨迹支持时空建模；不是所有序列都有轨迹真值。",
+  "wmNoteEn": "Continuous observations and core-sequence truth support spatiotemporal modeling; pose truth is not available for every sequence.",
+  "links": {
+    "homepage": "https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/"
+  }
+}

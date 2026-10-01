@@ -1,0 +1,45 @@
+{
+  "id": "aist-plus-plus",
+  "name": "AIST++",
+  "shortName": "AIST++",
+  "year": 2021,
+  "summary": "带音乐和多视角视频的三维舞蹈运动序列，提供关节旋转、根节点轨迹和逐帧关键点。",
+  "summaryEn": "3D dance motion sequences paired with music and multiview video, providing joint rotations, root trajectories, and framewise keypoints.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Agent Pose",
+    "Trajectories",
+    "Audio"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "1,408 motion sequences, 10 dance genres and 9 camera views",
+  "scaleZh": "1,408 段运动序列、10 类舞蹈、9 个相机视角",
+  "organizations": "Google Research and University of California, Berkeley",
+  "organizationsZh": "谷歌研究院与加州大学伯克利分校",
+  "license": "Videos/music: AIST terms; annotations and SMPL use require separate review",
+  "licenseZh": "视频和音乐遵循 AIST 条款；标注及 SMPL 使用需分别核查",
+  "access": "Official annotations and video download script",
+  "accessZh": "官方标注下载及视频下载脚本",
+  "rating": 4,
+  "verdict": "音乐条件人体运动预测",
+  "verdictEn": "Music-conditioned human motion prediction",
+  "wmNote": "时间对齐的关节与根轨迹适合运动生成和预测；音乐不是物理控制动作。",
+  "wmNoteEn": "Aligned joints and root trajectories support motion generation and prediction; music is not a physical control action.",
+  "links": {
+    "homepage": "https://google.github.io/aistplusplus_dataset/"
+  }
+}

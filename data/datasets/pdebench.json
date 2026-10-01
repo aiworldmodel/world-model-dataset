@@ -1,0 +1,42 @@
+{
+  "id": "pdebench",
+  "name": "PDEBench",
+  "shortName": "PDEBench",
+  "year": 2022,
+  "summary": "多种偏微分方程的时序数值解，提供初始条件、边界条件和参数变化下的物理场演化数据。",
+  "summaryEn": "Time-dependent PDE solutions with varying initial conditions, boundaries, and physical parameters.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Multiple PDE families in 1D, 2D and 3D",
+  "scaleZh": "覆盖一维、二维和三维的多类偏微分方程",
+  "organizations": "NEC Laboratories Europe, University of Stuttgart and collaborators",
+  "organizationsZh": "NEC 欧洲研究院、斯图加特大学及合作者",
+  "license": "Data terms: consult DaRUS; code: MIT except noted components",
+  "licenseZh": "数据条款见 DaRUS；代码为 MIT，注明的组件除外",
+  "access": "Official DaRUS datasets and generation/download scripts",
+  "accessZh": "官方 DaRUS 数据集及生成、下载脚本",
+  "rating": 4,
+  "verdict": "物理场多步预测",
+  "verdictEn": "Multi-step physical-field prediction",
+  "wmNote": "时序物理场可用于前向动力学预测；不将稳态子任务视为时序 rollout。",
+  "wmNoteEn": "Use time-dependent fields for forward dynamics; steady-state subsets are not temporal rollouts.",
+  "links": {
+    "code": "https://github.com/pdebench/PDEBench",
+    "paper": "https://arxiv.org/abs/2210.07182"
+  }
+}

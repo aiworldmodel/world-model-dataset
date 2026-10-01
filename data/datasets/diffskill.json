@@ -1,0 +1,45 @@
+{
+  "id": "diffskill",
+  "name": "DiffSkill Environments",
+  "shortName": "DiffSkill Environments",
+  "year": 2022,
+  "summary": "工具操作可塑物体的三个仿真任务，提供初始和目标配置下载及随机交互脚本以生成转换轨迹。",
+  "summaryEn": "Three tool-mediated plastic-object tasks with downloadable initial/target configurations and random-interaction scripts for generating transitions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Action",
+    "Simulation State",
+    "Object State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "LiftSpread, GatherMove and CutRearrange; 2 GB configuration archive",
+  "scaleZh": "LiftSpread、GatherMove 和 CutRearrange；配置包约 2 GB",
+  "organizations": "Carnegie Mellon University, MIT and collaborators",
+  "organizationsZh": "卡内基梅隆大学、麻省理工学院及合作者",
+  "license": "Dataset and simulator terms require verification",
+  "licenseZh": "配置数据和仿真器条款需进一步核查",
+  "access": "Official configuration archive and environment rollout scripts",
+  "accessZh": "官方配置包和环境 rollout 脚本",
+  "rating": 4,
+  "verdict": "工具与可塑材料的交互轨迹",
+  "verdictEn": "Tool and plastic-material interactions",
+  "wmNote": "配置包本身不是完整轨迹；需运行官方环境记录动作与粒子状态转换。",
+  "wmNoteEn": "Configurations are not complete trajectories; run the official environments to record actions and particle transitions.",
+  "links": {
+    "code": "https://github.com/Xingyu-Lin/DiffSkill",
+    "paper": "https://arxiv.org/abs/2203.17275"
+  }
+}

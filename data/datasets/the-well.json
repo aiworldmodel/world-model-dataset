@@ -1,0 +1,42 @@
+{
+  "id": "the-well",
+  "name": "The Well",
+  "shortName": "The Well",
+  "year": 2024,
+  "summary": "来自多种科学领域的时空物理仿真集合，提供统一格式和用于代理模型训练的时间窗口接口。",
+  "summaryEn": "Diverse spatiotemporal physics simulations with a common format and temporal-window interface for surrogate models.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Original release: 15 TB across 16 datasets",
+  "scaleZh": "原始发布约 15 TB，包含 16 个数据集",
+  "organizations": "Polymathic AI and collaborating scientific institutions",
+  "organizationsZh": "Polymathic AI 及合作科研机构",
+  "license": "Code: BSD-3-Clause; consult individual dataset terms",
+  "licenseZh": "代码为 BSD-3-Clause；数据条款以各子集为准",
+  "access": "Official downloader and Hugging Face streaming",
+  "accessZh": "官方下载工具及 Hugging Face 流式访问",
+  "rating": 4,
+  "verdict": "多领域物理时空演化",
+  "verdictEn": "Cross-domain spatiotemporal physics",
+  "wmNote": "使用具有时间轴的子集研究跨领域动力学；静态场不作为未来状态监督。",
+  "wmNoteEn": "Use time-dependent subsets for cross-domain dynamics; static fields do not supply future-state supervision.",
+  "links": {
+    "homepage": "https://polymathic-ai.org/the_well/",
+    "code": "https://github.com/PolymathicAI/the_well"
+  }
+}

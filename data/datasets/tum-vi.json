@@ -1,0 +1,47 @@
+{
+  "id": "tum-vi",
+  "name": "TUM VI",
+  "shortName": "TUM VI",
+  "year": 2018,
+  "summary": "室内外视觉惯性序列，提供校准后的双目图像、IMU 与部分或完整运动捕捉轨迹。",
+  "summaryEn": "Indoor and outdoor visual-inertial sequences with calibrated stereo images, IMU, and partial or full motion-capture trajectories.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "Stereo RGB",
+    "IMU",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Room, corridor, hall, outdoor and slide sequences",
+  "scaleZh": "涵盖房间、走廊、大厅、室外和滑道序列",
+  "organizations": "Technical University of Munich",
+  "organizationsZh": "慕尼黑工业大学",
+  "license": "Data: CC BY 4.0; code: BSD-2-Clause",
+  "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
+  "access": "Official raw and calibrated sequence downloads",
+  "accessZh": "官方原始及校准序列下载",
+  "rating": 3,
+  "verdict": "视觉惯性长轨迹",
+  "verdictEn": "Long visual-inertial trajectories",
+  "wmNote": "房间序列提供完整位姿真值；其他主要序列仅起止段有真值，评测需遵守该覆盖范围。",
+  "wmNoteEn": "Room sequences have full pose truth; other main sequences only have start/end truth, limiting pose evaluation coverage.",
+  "links": {
+    "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset",
+    "paper": "https://arxiv.org/abs/1804.06120"
+  }
+}

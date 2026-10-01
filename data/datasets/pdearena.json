@@ -1,0 +1,42 @@
+{
+  "id": "pdearena",
+  "name": "PDEArena",
+  "shortName": "PDEArena",
+  "year": 2022,
+  "summary": "面向 PDE 代理建模的时序数据与生成工具，包含 Navier-Stokes 和浅水方程的演化轨迹。",
+  "summaryEn": "Temporal PDE datasets and generators for surrogate modeling, including Navier-Stokes and shallow-water trajectories.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Navier-Stokes and shallow-water trajectory datasets; additional Maxwell resources",
+  "scaleZh": "Navier-Stokes、浅水方程轨迹及额外 Maxwell 资源",
+  "organizations": "Microsoft Research and collaborators",
+  "organizationsZh": "微软研究院及合作者",
+  "license": "Code: MIT; verify data-specific terms",
+  "licenseZh": "代码为 MIT；数据条款需逐项核查",
+  "access": "Official dataset generation documentation and loaders",
+  "accessZh": "官方数据生成文档和加载器",
+  "rating": 4,
+  "verdict": "多尺度 PDE 时序建模",
+  "verdictEn": "Multiscale PDE trajectory modeling",
+  "wmNote": "按初始状态和物理参数预测未来场，可评测多步误差积累。",
+  "wmNoteEn": "Predict future fields from initial states and parameters and assess multi-step error accumulation.",
+  "links": {
+    "homepage": "https://pdearena.github.io/pdearena/data/",
+    "code": "https://github.com/pdearena/pdearena"
+  }
+}
