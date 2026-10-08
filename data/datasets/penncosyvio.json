@@ -1,0 +1,46 @@
+{
+  "id": "penncosyvio",
+  "name": "PennCOSYVIO",
+  "shortName": "PennCOSYVIO",
+  "year": 2017,
+  "summary": "室外到室内的手持视觉惯性轨迹，使用标记定位提供传感器位置参考。",
+  "summaryEn": "Handheld visual-inertial trajectories crossing outdoor and indoor spaces with fiducial-marker localization references.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Stereo RGB",
+    "IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Approximately 150 m route; seven cameras and three IMUs",
+  "scaleZh": "路线约 150 米；七个相机和三个 IMU",
+  "organizations": "University of Pennsylvania and collaborators",
+  "organizationsZh": "宾夕法尼亚大学及合作者",
+  "license": "Dataset terms require verification",
+  "licenseZh": "数据集条款需进一步核查",
+  "access": "Official downloads, calibration and benchmark documentation",
+  "accessZh": "官方下载、校准和基准文档",
+  "rating": 3,
+  "verdict": "室内外跨场景连续运动",
+  "verdictEn": "Continuous indoor-outdoor motion",
+  "wmNote": "连续传感器流与参考轨迹可用于空间演化建模；部分测试真值由基准保留。",
+  "wmNoteEn": "Sensor streams and reference trajectories support spatial evolution; some test truth is held out.",
+  "links": {
+    "homepage": "https://daniilidis-group.github.io/penncosyvio/"
+  }
+}

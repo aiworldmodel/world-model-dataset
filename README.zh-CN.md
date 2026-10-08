@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-361-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-376-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 361 | 6 | 6 | 45 |
+| 376 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (47)](#predictive-generative-dynamics) · [动作条件动力学 (50)](#action-conditioned-dynamics) · [决策与智能体轨迹 (92)](#decision-making-agent-trajectories) · [空间与时空世界建模 (70)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (53)](#predictive-generative-dynamics) · [动作条件动力学 (51)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（47）
+### 预测与生成式动力学（53）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -121,6 +121,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `物理 / 科学` · `仿真状态`
   [主页](https://polymathic-ai.org/the_well/) · [代码](https://github.com/PolymathicAI/the_well) · 访问方式：官方下载工具及 Hugging Face 流式访问
 
+- **BEAT** · 2022
+  语音和文本对齐的三维身体、手势与面部表情序列，包含情绪和语义相关性标注。
+  `第一人称 / 人类活动` · `智能体位姿` · `音频` · `文本` · `动作标签`
+  [主页](https://pantomatrix.github.io/BEAT/) · [论文](https://arxiv.org/abs/2203.05297) · 访问方式：官方项目及数据发布仓库
+
 - **Ego4D** · 2022
   由 Meta AI 联合全球高校采集的大规模第一人称真实生活视频数据集，其短期物体交互预判与长期动作预测任务，为人类行为、手物交互和具身未来预测提供了重要基准。
   `第一人称 / 人类活动` · `RGB 视频` · `音频` · `三维网格` · `视线` · `惯性测量单元`
@@ -135,6 +140,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   大规模第一人称厨房活动数据集，提供连续视频、动作分段、名词与动词标注及多项预测任务，适合研究人类手物交互和下一动作预测。
   `第一人称 / 人类活动` · `RGB 视频` · `音频` · `动作标签` · `语言`
   [主页](https://epic-kitchens.github.io/2021) · [论文](https://arxiv.org/abs/2006.13256) · [代码](https://github.com/epic-kitchens/epic-kitchens-100-annotations) · 访问方式：需申请并同意协议
+
+- **HumanML3D** · 2022
+  基于 AMASS 与 HumanAct12 的三维人体运动和文本描述数据，提供标准预处理与运动表示。
+  `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言`
+  [代码](https://github.com/EricGuo5513/HumanML3D) · 访问方式：官方重建脚本；需另行获取原始数据和人体模型
 
 - **Kubric** · 2022
   用于生成带精确三维、光流、深度和分割标注的视频数据管线。
@@ -161,6 +171,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `第一人称 / 人类活动` · `多视角 RGB 视频` · `智能体位姿` · `轨迹` · `音频`
   [主页](https://google.github.io/aistplusplus_dataset/) · 访问方式：官方标注下载及视频下载脚本
 
+- **BABEL** · 2021
+  为 AMASS 连续运动捕捉序列增加动作语义和起止时间标注，描述动作之间的时间结构。
+  `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言` · `动作标签`
+  [主页](https://babel.is.tue.mpg.de/data.html) · 访问方式：官方标注下载；运动数据需另从 AMASS 获取
+
 - **Atari 100K Dataset** · 2020
   在 Atari 游戏中记录有限交互预算下的帧、动作、奖励和终止信号，用于模型式强化学习。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `游戏状态`
@@ -171,10 +186,20 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `二维框` · `分割标注` · `车道线`
   [主页](https://bdd-data.berkeley.edu/) · [论文](https://arxiv.org/abs/1805.04687) · [代码](https://github.com/bdd100k/bdd100k) · 访问方式：需注册
 
+- **GRAB** · 2020
+  全身与日常物体交互的连续三维运动数据，包含身体、手部、面部、物体位姿及逐时刻接触信息。
+  `第一人称 / 人类活动` · `机器人 / 具身智能` · `智能体位姿` · `物体状态` · `三维网格` · `轨迹`
+  [主页](https://grab.is.tue.mpg.de/) · 访问方式：官方下载需注册并接受许可协议
+
 - **Griddly** · 2020
   可配置二维游戏与物理环境生成器。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/Bam4d/Griddly) · [论文](https://arxiv.org/abs/2011.04683) · 访问方式：开源引擎
+
+- **LAFAN1** · 2020
+  高质量 BVH 人体运动捕捉序列，用于运动过渡、插帧和长时运动生成。
+  `第一人称 / 人类活动` · `智能体位姿` · `轨迹`
+  [代码](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) · 访问方式：官方 Git LFS 数据包及运动过渡评估代码
 
 - **Procgen Benchmark** · 2020
   程序生成的视觉强化学习环境集合，提供可控动作、观测和关卡状态轨迹。
@@ -276,6 +301,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `第一人称 / 人类活动` · `RGB 视频` · `分割标注`
   [主页](https://davischallenge.org/) · [论文](https://arxiv.org/abs/1604.00675) · 访问方式：官方数据网站
 
+- **KIT Motion-Language** · 2016
+  提供连续关节运动与自然语言描述的多模态集合，保留原始动作来源元数据。
+  `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言`
+  [主页](https://motion-annotation.humanoids.kit.edu/dataset/) · [论文](https://arxiv.org/abs/1607.03827) · 访问方式：官方数据包及 MMM/C3D 解析示例
+
 - **Stanford Drone Dataset** · 2016
   从斯坦福校园上空采集的多智能体鸟瞰视频数据集，标注行人、自行车、滑板、车辆、公交车和高尔夫车轨迹，用于目标跟踪、社会导航和未来轨迹预测。
   `第一人称 / 人类活动` · `城市 / 三维场景` · `RGB 视频` · `轨迹` · `二维框` · `动作标签` · `物体元数据`
@@ -313,7 +343,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（50）
+### 动作条件动力学（51）
 
 - **AgiBot World 2026** · 2026
   真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
@@ -429,6 +459,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [主页](https://minari.farama.org/) · [代码](https://github.com/Farama-Foundation/Minari) · 访问方式：开放数据注册表与加载器
+
+- **Race Against the Machine** · 2023
+  自主和人类驾驶竞速飞行数据，记录控制输入、惯性测量、图像和运动捕捉状态。
+  `机器人 / 具身智能` · `RGB 视频` · `惯性测量单元` · `动作` · `机器人状态` · `轨迹`
+  [代码](https://github.com/tii-racing/drone-racing-dataset) · [论文](https://arxiv.org/abs/2311.02667) · 访问方式：官方下载脚本及飞行数据格式文档
 
 - **RH20T** · 2023
   真实机器人双臂操作数据集，包含多视角 RGB-D、力觉和机器人状态。
@@ -567,7 +602,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（92）
+### 决策与智能体轨迹（94）
 
 - **AbstainEQA** · 2026
   评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
@@ -844,6 +879,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `激光雷达` · `动作` · `机器人状态` · `轨迹`
   [主页](https://people.cs.gmu.edu/~xiao/Research/SCAND/SCAND.html) · 访问方式：官方项目页提供数据集资源
 
+- **SinD** · 2022
+  信号交叉口无人机轨迹数据，包含异构交通参与者的连续位置、运动学、地图和信号灯信息。
+  `自动驾驶` · `轨迹` · `智能体位姿` · `地图` · `场景元数据`
+  [代码](https://github.com/SOTIF-AVLab/SinD) · [论文](https://arxiv.org/abs/2209.02297) · 访问方式：公开示例；完整数据需用教育邮箱申请
+
 - **TEACh** · 2022
   对话驱动的具身任务数据集，包含人类指挥者与执行者的语言和动作轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `物体状态`
@@ -1014,6 +1054,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `第一人称 / 人类活动` · `RGB 视频` · `二维框` · `动作标签` · `语义标签` · `轨迹`
   [主页](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) · [论文](https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html) · [代码](https://github.com/ykotseruba/JAAD) · 访问方式：官方数据集页面和 GitHub 标注公开可用
 
+- **L-CAS 3DOF Pedestrian Trajectories** · 2017
+  由机器人搭载 LiDAR 在室内公共空间提取的行人三自由度轨迹，提供位置与朝向预测评测。
+  `机器人 / 具身智能` · `第一人称 / 人类活动` · `轨迹` · `智能体位姿` · `激光雷达`
+  [主页](https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/) · 访问方式：官方轨迹及原始 LiDAR 下载链接
+
 - **PoseTrack** · 2017
   视频中的多人姿态估计与跟踪基准，提供连续人体关键点和轨迹标注。
   `第一人称 / 人类活动` · `RGB 视频` · `智能体位姿` · `动作标签`
@@ -1031,7 +1076,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（70）
+### 空间与时空世界建模（76）
 
 - **AudioWorldSim** · 2026
   用于生成双耳音频世界模型轨迹的开放仿真平台。
@@ -1193,10 +1238,20 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `物理 / 科学` · `合成视频` · `深度` · `光流` · `分割标注` · `三维状态`
   [论文](https://arxiv.org/abs/2203.12602) · [代码](https://github.com/google-research/kubric) · 访问方式：开放下载
 
+- **NTU VIRAL** · 2022
+  无人机视觉、惯性、LiDAR 和 UWB 测距序列，配有地面跟踪位置真值。
+  `机器人 / 具身智能` · `双目 RGB` · `激光雷达` · `惯性测量单元` · `轨迹`
+  [主页](https://ntu-aris.github.io/ntu_viral_dataset/) · 访问方式：官方数据下载及 CSV 真值
+
 - **ARKitScenes** · 2021
   室内移动设备 RGB-D 扫描与三维重建数据集。
   `城市 / 三维场景` · `RGB-D` · `三维网格` · `相机位姿`
   [主页](https://github.com/apple/ARKitScenes) · [论文](https://arxiv.org/abs/2111.08853) · 访问方式：官方下载
+
+- **DSEC** · 2021
+  真实驾驶的双目事件与彩色图像序列，提供同步传感器数据、视差及后续发布的光流真值。
+  `自动驾驶` · `Event Camera` · `双目 RGB` · `激光雷达` · `GPS / 惯性测量单元` · `光流`
+  [主页](https://dsec.ifi.uzh.ch/) · [论文](https://arxiv.org/abs/2103.06011) · 访问方式：官方传感器数据下载及光流、视差基准
 
 - **Habitat-Matterport 3D** · 2021
   面向具身导航与室内模拟的高质量三维场景数据，结合 Habitat 平台可生成视觉、深度、语义和智能体轨迹，用于空间记忆、导航规划与交互式世界建模。
@@ -1212,6 +1267,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   建筑及办公环境的手持多传感器序列，提供时间同步的视觉、LiDAR、IMU 与稀疏高精度位姿真值。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `激光雷达` · `惯性测量单元` · `相机位姿`
   [代码](https://github.com/Hilti-Research/hilti-slam-challenge-2021) · [论文](https://arxiv.org/abs/2109.11316) · 访问方式：官方仓库提供数据和真值下载入口
+
+- **TUM-VIE** · 2021
+  同步双目事件、灰度图像和惯性数据的手持及头戴序列，配有起止段运动捕捉真值。
+  `机器人 / 具身智能` · `Event Camera` · `双目 RGB` · `惯性测量单元` · `相机位姿`
+  [主页](https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset) · [论文](https://arxiv.org/abs/2108.07329) · 访问方式：官方序列下载及可视化脚本
 
 - **Audi Autonomous Driving Dataset** · 2020
   奥迪公开的自动驾驶多传感器数据集，包含相机、激光雷达、语义标注和车辆状态。
@@ -1288,6 +1348,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `音频` · `动作` · `仿真状态` · `地图`
   [论文](https://arxiv.org/abs/1912.11474) · [代码](https://github.com/facebookresearch/sound-spaces) · 访问方式：官方项目访问；可能需要注册
 
+- **UZH-FPV Drone Racing Dataset** · 2019
+  专家操控竞速无人机的激烈运动序列，提供相机、事件、IMU 和激光跟踪运动真值。
+  `机器人 / 具身智能` · `RGB 视频` · `Event Camera` · `惯性测量单元` · `相机位姿` · `轨迹`
+  [主页](https://fpv.ifi.uzh.ch/) · 访问方式：官方序列下载；基准测试真值不公开
+
 - **Waymo Open Dataset** · 2019
   高质量自动驾驶多传感器数据集，覆盖摄像头、LiDAR、地图、三维检测和运动预测场景，能够支持动态占用、未来轨迹以及闭环驾驶世界表示研究。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `三维框` · `轨迹`
@@ -1308,6 +1373,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `RGB-D` · `智能体位姿` · `语义标签`
   [主页](http://gibsonenv.stanford.edu/database/) · [论文](https://arxiv.org/abs/1808.10654) · [代码](https://github.com/StanfordVL/GibsonEnv) · 访问方式：需申请并同意协议
 
+- **MVSEC** · 2018
+  在多种运动平台上采集的双目事件序列，结合图像、IMU 与多数序列的位姿和深度真值。
+  `机器人 / 具身智能` · `自动驾驶` · `Event Camera` · `双目 RGB` · `惯性测量单元` · `深度` · `相机位姿`
+  [主页](https://daniilidis-group.github.io/mvsec/) · 访问方式：官方序列下载、校准信息及示例代码
+
 - **TUM VI** · 2018
   室内外视觉惯性序列，提供校准后的双目图像、IMU 与部分或完整运动捕捉轨迹。
   `机器人 / 具身智能` · `城市 / 三维场景` · `双目 RGB` · `惯性测量单元` · `相机位姿` · `轨迹`
@@ -1327,6 +1397,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   室内外三维人体姿态视频数据集，包含多视角和绿幕合成序列。
   `第一人称 / 人类活动` · `RGB 视频` · `智能体位姿` · `相机位姿`
   [主页](https://vcai.mpi-inf.mpg.de/3dhp-dataset/) · [论文](https://arxiv.org/abs/1611.09813) · 访问方式：官方项目页
+
+- **PennCOSYVIO** · 2017
+  室外到室内的手持视觉惯性轨迹，使用标记定位提供传感器位置参考。
+  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `双目 RGB` · `惯性测量单元` · `相机位姿`
+  [主页](https://daniilidis-group.github.io/penncosyvio/) · 访问方式：官方下载、校准和基准文档
 
 - **ScanNet** · 2017
   由手持 RGB-D 设备采集的大规模室内扫描序列，提供相机位姿、重建网格、语义和实例标注，是室内三维世界表示与导航的重要数据源。

@@ -1,0 +1,46 @@
+{
+  "id": "tum-vie",
+  "name": "TUM-VIE",
+  "shortName": "TUM-VIE",
+  "year": 2021,
+  "summary": "同步双目事件、灰度图像和惯性数据的手持及头戴序列，配有起止段运动捕捉真值。",
+  "summaryEn": "Handheld and head-mounted sequences with synchronized stereo events, grayscale frames, IMU, and start/end motion-capture ground truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Event Camera",
+    "Stereo RGB",
+    "IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Stereo frames at 20 Hz, IMU at 200 Hz, motion capture at 120 Hz",
+  "scaleZh": "双目图像 20 Hz、IMU 200 Hz、运动捕捉 120 Hz",
+  "organizations": "Technical University of Munich",
+  "organizationsZh": "慕尼黑工业大学",
+  "license": "Data: CC BY 4.0; code: BSD-2-Clause",
+  "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
+  "access": "Official sequence downloads and visualization script",
+  "accessZh": "官方序列下载及可视化脚本",
+  "rating": 3,
+  "verdict": "高时间分辨率观测演化",
+  "verdictEn": "High-temporal-resolution observation evolution",
+  "wmNote": "事件流与连续观测支持动态预测；运动捕捉真值主要覆盖序列起止段。",
+  "wmNoteEn": "Event streams support temporal prediction; motion-capture truth mainly covers sequence beginnings and ends.",
+  "links": {
+    "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset",
+    "paper": "https://arxiv.org/abs/2108.07329"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "mvsec",
+  "name": "MVSEC",
+  "shortName": "MVSEC",
+  "year": 2018,
+  "summary": "在多种运动平台上采集的双目事件序列，结合图像、IMU 与多数序列的位姿和深度真值。",
+  "summaryEn": "Stereo event sequences from multiple moving platforms with images, IMU, and pose/depth truth for most sequences.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Event Camera",
+    "Stereo RGB",
+    "IMU",
+    "Depth",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Indoor and outdoor event-camera recordings on multiple platforms",
+  "scaleZh": "多种平台上的室内外事件相机录制",
+  "organizations": "University of Pennsylvania",
+  "organizationsZh": "宾夕法尼亚大学",
+  "license": "CC BY-SA 4.0",
+  "licenseZh": "CC BY-SA 4.0",
+  "access": "Official sequence downloads, calibration and sample code",
+  "accessZh": "官方序列下载、校准信息及示例代码",
+  "rating": 3,
+  "verdict": "多平台事件时空观测",
+  "verdictEn": "Multiplatform event observations",
+  "wmNote": "事件、位姿和光流可支持连续时间状态演化建模；真值覆盖需按序列核查。",
+  "wmNoteEn": "Events, poses, and flow support continuous-time evolution modeling; verify truth coverage per sequence.",
+  "links": {
+    "homepage": "https://daniilidis-group.github.io/mvsec/"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "dsec",
+  "name": "DSEC",
+  "shortName": "DSEC",
+  "year": 2021,
+  "summary": "真实驾驶的双目事件与彩色图像序列，提供同步传感器数据、视差及后续发布的光流真值。",
+  "summaryEn": "Real driving sequences with stereo events and color images, aligned sensors, disparity, and subsequently released optical-flow truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Event Camera",
+    "Stereo RGB",
+    "LiDAR",
+    "GPS / IMU",
+    "Optical Flow"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "53 driving sequences with VGA event cameras",
+  "scaleZh": "53 段驾驶序列，使用 VGA 事件相机",
+  "organizations": "University of Zurich Robotics and Perception Group",
+  "organizationsZh": "苏黎世大学机器人与感知研究组",
+  "license": "CC BY-SA 4.0",
+  "licenseZh": "CC BY-SA 4.0",
+  "access": "Official sensor downloads and flow/disparity benchmarks",
+  "accessZh": "官方传感器数据下载及光流、视差基准",
+  "rating": 3,
+  "verdict": "事件视觉驾驶时序",
+  "verdictEn": "Event-vision driving sequences",
+  "wmNote": "收录依据是连续驾驶观测及跨时刻光流；静态检测或语义子集不单独作为动力学证据。",
+  "wmNoteEn": "Continuous observations and temporal flow provide dynamics evidence; static detection or semantic subsets alone do not.",
+  "links": {
+    "homepage": "https://dsec.ifi.uzh.ch/",
+    "paper": "https://arxiv.org/abs/2103.06011"
+  }
+}

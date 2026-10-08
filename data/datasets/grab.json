@@ -1,0 +1,47 @@
+{
+  "id": "grab",
+  "name": "GRAB",
+  "shortName": "GRAB",
+  "year": 2020,
+  "summary": "全身与日常物体交互的连续三维运动数据，包含身体、手部、面部、物体位姿及逐时刻接触信息。",
+  "summaryEn": "Continuous 3D whole-body object interactions with body, hand, face, object-pose sequences and temporal contact information.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Object State",
+    "3D Mesh",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Interaction Episodes"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "10 subjects interacting with 51 everyday objects",
+  "scaleZh": "10 名参与者与 51 种日常物体交互",
+  "organizations": "Max Planck Institute for Intelligent Systems",
+  "organizationsZh": "马克斯普朗克智能系统研究所",
+  "license": "Research agreement with subject-specific restrictions; object/model terms also apply",
+  "licenseZh": "研究使用协议及参与者特定限制；另适用物体和人体模型条款",
+  "access": "Registration and license acceptance required for official downloads",
+  "accessZh": "官方下载需注册并接受许可协议",
+  "rating": 4,
+  "verdict": "人体与物体接触状态演化",
+  "verdictEn": "Human-object contact evolution",
+  "wmNote": "连续人体和物体状态及接触变化支持交互动力学预测；区别于静态抓取姿态和 GrabNet 模型资源。",
+  "wmNoteEn": "Body/object states and changing contacts support interaction dynamics; distinguish temporal GRAB data from static grasps and GrabNet models.",
+  "links": {
+    "homepage": "https://grab.is.tue.mpg.de/"
+  }
+}

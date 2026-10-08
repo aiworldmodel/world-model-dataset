@@ -1,0 +1,47 @@
+{
+  "id": "race-against-the-machine",
+  "name": "Race Against the Machine",
+  "shortName": "Race Against the Machine",
+  "year": 2023,
+  "summary": "自主和人类驾驶竞速飞行数据，记录控制输入、惯性测量、图像和运动捕捉状态。",
+  "summaryEn": "Autonomous and piloted racing flights with control inputs, inertial measurements, images, and motion-capture states.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "IMU",
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Piloted/autonomous flights; synchronized camera-time and 500 Hz CSVs",
+  "scaleZh": "人类及自主飞行；按相机时刻及 500 Hz 同步的 CSV",
+  "organizations": "Technology Innovation Institute Racing team",
+  "organizationsZh": "技术创新研究院竞速团队",
+  "license": "Dataset: CC BY 4.0; repository code: MIT",
+  "licenseZh": "数据为 CC BY 4.0；仓库代码为 MIT",
+  "access": "Official downloader scripts and flight format documentation",
+  "accessZh": "官方下载脚本及飞行数据格式文档",
+  "rating": 4,
+  "verdict": "控制对齐的无人机状态转换",
+  "verdictEn": "Control-aligned aerial state transitions",
+  "wmNote": "油门、控制通道和状态时间对齐，可学习动作条件飞行动力学；人类与自主飞行需区分。",
+  "wmNoteEn": "Aligned thrust, controls, and states support action-conditioned flight dynamics; distinguish piloted and autonomous runs.",
+  "links": {
+    "code": "https://github.com/tii-racing/drone-racing-dataset",
+    "paper": "https://arxiv.org/abs/2311.02667"
+  }
+}

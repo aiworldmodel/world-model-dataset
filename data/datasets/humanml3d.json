@@ -1,0 +1,44 @@
+{
+  "id": "humanml3d",
+  "name": "HumanML3D",
+  "shortName": "HumanML3D",
+  "year": 2022,
+  "summary": "基于 AMASS 与 HumanAct12 的三维人体运动和文本描述数据，提供标准预处理与运动表示。",
+  "summaryEn": "Text-paired 3D human motion derived from AMASS and HumanAct12 with standard preprocessing and motion representations.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Trajectories",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "14,616 motions, 44,970 descriptions; 20 FPS",
+  "scaleZh": "14,616 段运动、44,970 条描述；20 FPS",
+  "organizations": "University of Alberta and collaborators",
+  "organizationsZh": "阿尔伯塔大学及合作者",
+  "license": "Code: MIT; AMASS, HumanAct12 and body-model terms also apply",
+  "licenseZh": "代码为 MIT；另适用 AMASS、HumanAct12 和人体模型条款",
+  "access": "Official reconstruction scripts; obtain source data and body models separately",
+  "accessZh": "官方重建脚本；需另行获取原始数据和人体模型",
+  "rating": 4,
+  "verdict": "文本条件三维运动序列",
+  "verdictEn": "Text-conditioned 3D motion sequences",
+  "wmNote": "连续关节和根运动支持生成与预测；源数据与 AMASS 重叠，不能视为独立采集样本。",
+  "wmNoteEn": "Joint and root sequences support generation and prediction; AMASS overlap means this is not independently captured data.",
+  "links": {
+    "code": "https://github.com/EricGuo5513/HumanML3D"
+  }
+}

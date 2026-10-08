@@ -1,0 +1,46 @@
+{
+  "id": "uzh-fpv",
+  "name": "UZH-FPV Drone Racing Dataset",
+  "shortName": "UZH-FPV Drone Racing Dataset",
+  "year": 2019,
+  "summary": "专家操控竞速无人机的激烈运动序列，提供相机、事件、IMU 和激光跟踪运动真值。",
+  "summaryEn": "Aggressive expert-piloted drone sequences with cameras, events, IMU, and laser-tracked motion truth.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Event Camera",
+    "IMU",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Indoor and outdoor racing and obstacle-flight sequences",
+  "scaleZh": "室内外竞速及障碍飞行序列",
+  "organizations": "University of Zurich Robotics and Perception Group",
+  "organizationsZh": "苏黎世大学机器人与感知研究组",
+  "license": "CC BY-NC-SA 3.0",
+  "licenseZh": "CC BY-NC-SA 3.0",
+  "access": "Official sequence downloads; benchmark test truth withheld",
+  "accessZh": "官方序列下载；基准测试真值不公开",
+  "rating": 3,
+  "verdict": "激烈飞行下的未来观测",
+  "verdictEn": "Future observations under aggressive flight",
+  "wmNote": "可研究高速自运动下的时序观测和轨迹预测；不将 IMU 信号当作执行器控制。",
+  "wmNoteEn": "Supports fast egomotion and trajectory prediction; IMU signals are not actuator controls.",
+  "links": {
+    "homepage": "https://fpv.ifi.uzh.ch/"
+  }
+}

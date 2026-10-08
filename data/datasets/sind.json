@@ -1,0 +1,46 @@
+{
+  "id": "sind",
+  "name": "SinD",
+  "shortName": "SinD",
+  "year": 2022,
+  "summary": "信号交叉口无人机轨迹数据，包含异构交通参与者的连续位置、运动学、地图和信号灯信息。",
+  "summaryEn": "Drone-observed signalized-intersection trajectories with heterogeneous road users, kinematics, maps, and traffic-light context.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Agent Pose",
+    "Maps",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Original Tianjin subset: 7 hours and over 13,000 participants",
+  "scaleZh": "原始天津子集约 7 小时，超过 13,000 名交通参与者",
+  "organizations": "Tsinghua University and collaborators",
+  "organizationsZh": "清华大学及合作者",
+  "license": "Custom non-commercial terms; LICENSE modifies CC0 language",
+  "licenseZh": "自定义非商业条款；LICENSE 修改了 CC0 文本",
+  "access": "Public samples; full data requested with educational email",
+  "accessZh": "公开示例；完整数据需用教育邮箱申请",
+  "rating": 4,
+  "verdict": "交通信号条件多智能体轨迹",
+  "verdictEn": "Signal-conditioned multiagent trajectories",
+  "wmNote": "轨迹、运动学和信号可用于未来交互预测；原始版与后续多城市版需按发布范围区分。",
+  "wmNoteEn": "Trajectories, kinematics, and signals support interaction forecasting; distinguish original and later multicity release scopes.",
+  "links": {
+    "code": "https://github.com/SOTIF-AVLab/SinD",
+    "paper": "https://arxiv.org/abs/2209.02297"
+  }
+}

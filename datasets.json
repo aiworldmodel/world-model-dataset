@@ -7811,6 +7811,53 @@
     }
   },
   {
+    "id": "race-against-the-machine",
+    "name": "Race Against the Machine",
+    "shortName": "Race Against the Machine",
+    "year": 2023,
+    "summary": "自主和人类驾驶竞速飞行数据，记录控制输入、惯性测量、图像和运动捕捉状态。",
+    "summaryEn": "Autonomous and piloted racing flights with control inputs, inertial measurements, images, and motion-capture states.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "IMU",
+      "Action",
+      "Robot State",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Piloted/autonomous flights; synchronized camera-time and 500 Hz CSVs",
+    "scaleZh": "人类及自主飞行；按相机时刻及 500 Hz 同步的 CSV",
+    "organizations": "Technology Innovation Institute Racing team",
+    "organizationsZh": "技术创新研究院竞速团队",
+    "license": "Dataset: CC BY 4.0; repository code: MIT",
+    "licenseZh": "数据为 CC BY 4.0；仓库代码为 MIT",
+    "access": "Official downloader scripts and flight format documentation",
+    "accessZh": "官方下载脚本及飞行数据格式文档",
+    "rating": 4,
+    "verdict": "控制对齐的无人机状态转换",
+    "verdictEn": "Control-aligned aerial state transitions",
+    "wmNote": "油门、控制通道和状态时间对齐，可学习动作条件飞行动力学；人类与自主飞行需区分。",
+    "wmNoteEn": "Aligned thrust, controls, and states support action-conditioned flight dynamics; distinguish piloted and autonomous runs.",
+    "links": {
+      "code": "https://github.com/tii-racing/drone-racing-dataset",
+      "paper": "https://arxiv.org/abs/2311.02667"
+    }
+  },
+  {
     "id": "rh20t",
     "name": "RH20T",
     "shortName": "RH20T",
@@ -8328,6 +8375,52 @@
     "links": {
       "homepage": "https://assembly101.github.io/",
       "paper": "https://arxiv.org/abs/2206.01063"
+    }
+  },
+  {
+    "id": "beat",
+    "name": "BEAT",
+    "shortName": "BEAT",
+    "year": 2022,
+    "summary": "语音和文本对齐的三维身体、手势与面部表情序列，包含情绪和语义相关性标注。",
+    "summaryEn": "Speech/text-aligned 3D body, gesture, and facial-expression sequences with emotion and semantic-relevance annotations.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Audio",
+      "Text",
+      "Action Labels"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "76 hours from 30 speakers; body and facial motion",
+    "scaleZh": "30 名说话者、76 小时身体及面部运动",
+    "organizations": "University of Tokyo, Keio University, Huawei and JAIST",
+    "organizationsZh": "东京大学、庆应义塾大学、华为及北陆先端科学技术大学院大学",
+    "license": "Non-commercial terms; verify release-specific agreement",
+    "licenseZh": "非商业条款；需核查所用版本协议",
+    "access": "Official project and dataset release repository",
+    "accessZh": "官方项目及数据发布仓库",
+    "rating": 4,
+    "verdict": "语音条件身体与表情演化",
+    "verdictEn": "Speech-conditioned body and face evolution",
+    "wmNote": "同步动作与音频可训练条件姿态生成；语音是上下文条件，不是物理控制输入。",
+    "wmNoteEn": "Aligned motion/audio support conditional pose generation; speech is contextual conditioning, not physical control.",
+    "links": {
+      "homepage": "https://pantomatrix.github.io/BEAT/",
+      "paper": "https://arxiv.org/abs/2203.05297"
     }
   },
   {
@@ -8894,6 +8987,50 @@
     }
   },
   {
+    "id": "humanml3d",
+    "name": "HumanML3D",
+    "shortName": "HumanML3D",
+    "year": 2022,
+    "summary": "基于 AMASS 与 HumanAct12 的三维人体运动和文本描述数据，提供标准预处理与运动表示。",
+    "summaryEn": "Text-paired 3D human motion derived from AMASS and HumanAct12 with standard preprocessing and motion representations.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Trajectories",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "14,616 motions, 44,970 descriptions; 20 FPS",
+    "scaleZh": "14,616 段运动、44,970 条描述；20 FPS",
+    "organizations": "University of Alberta and collaborators",
+    "organizationsZh": "阿尔伯塔大学及合作者",
+    "license": "Code: MIT; AMASS, HumanAct12 and body-model terms also apply",
+    "licenseZh": "代码为 MIT；另适用 AMASS、HumanAct12 和人体模型条款",
+    "access": "Official reconstruction scripts; obtain source data and body models separately",
+    "accessZh": "官方重建脚本；需另行获取原始数据和人体模型",
+    "rating": 4,
+    "verdict": "文本条件三维运动序列",
+    "verdictEn": "Text-conditioned 3D motion sequences",
+    "wmNote": "连续关节和根运动支持生成与预测；源数据与 AMASS 重叠，不能视为独立采集样本。",
+    "wmNoteEn": "Joint and root sequences support generation and prediction; AMASS overlap means this is not independently captured data.",
+    "links": {
+      "code": "https://github.com/EricGuo5513/HumanML3D"
+    }
+  },
+  {
     "id": "kubric",
     "name": "Kubric",
     "shortName": "Kubric",
@@ -9326,6 +9463,51 @@
     }
   },
   {
+    "id": "ntu-viral",
+    "name": "NTU VIRAL",
+    "shortName": "NTU VIRAL",
+    "year": 2022,
+    "summary": "无人机视觉、惯性、LiDAR 和 UWB 测距序列，配有地面跟踪位置真值。",
+    "summaryEn": "Aerial visual, inertial, LiDAR, and UWB ranging sequences paired with ground-tracked position truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Stereo RGB",
+      "LiDAR",
+      "IMU",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Two LiDARs, two cameras, multiple IMUs and four onboard UWB nodes",
+    "scaleZh": "双 LiDAR、双相机、多 IMU 及四个机载 UWB 节点",
+    "organizations": "Nanyang Technological University",
+    "organizationsZh": "南洋理工大学",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseZh": "CC BY-NC-SA 4.0",
+    "access": "Official repository downloads and CSV ground truth",
+    "accessZh": "官方数据下载及 CSV 真值",
+    "rating": 3,
+    "verdict": "多传感器飞行状态序列",
+    "verdictEn": "Multisensor flight-state sequences",
+    "wmNote": "可进行观测融合与位置演化预测；评测须处理 IMU 到真值棱镜的 0.4 米偏移。",
+    "wmNoteEn": "Supports fused observations and position evolution; evaluation must account for the 0.4 m IMU-to-prism offset.",
+    "links": {
+      "homepage": "https://ntu-aris.github.io/ntu_viral_dataset/"
+    }
+  },
+  {
     "id": "pdearena",
     "name": "PDEArena",
     "shortName": "PDEArena",
@@ -9601,6 +9783,52 @@
       "homepage": "https://www.vis.xyz/shift/",
       "paper": "https://arxiv.org/abs/2206.08367",
       "code": "https://github.com/SysCV/shift-dev"
+    }
+  },
+  {
+    "id": "sind",
+    "name": "SinD",
+    "shortName": "SinD",
+    "year": 2022,
+    "summary": "信号交叉口无人机轨迹数据，包含异构交通参与者的连续位置、运动学、地图和信号灯信息。",
+    "summaryEn": "Drone-observed signalized-intersection trajectories with heterogeneous road users, kinematics, maps, and traffic-light context.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Agent Pose",
+      "Maps",
+      "Scene Metadata"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Original Tianjin subset: 7 hours and over 13,000 participants",
+    "scaleZh": "原始天津子集约 7 小时，超过 13,000 名交通参与者",
+    "organizations": "Tsinghua University and collaborators",
+    "organizationsZh": "清华大学及合作者",
+    "license": "Custom non-commercial terms; LICENSE modifies CC0 language",
+    "licenseZh": "自定义非商业条款；LICENSE 修改了 CC0 文本",
+    "access": "Public samples; full data requested with educational email",
+    "accessZh": "公开示例；完整数据需用教育邮箱申请",
+    "rating": 4,
+    "verdict": "交通信号条件多智能体轨迹",
+    "verdictEn": "Signal-conditioned multiagent trajectories",
+    "wmNote": "轨迹、运动学和信号可用于未来交互预测；原始版与后续多城市版需按发布范围区分。",
+    "wmNoteEn": "Trajectories, kinematics, and signals support interaction forecasting; distinguish original and later multicity release scopes.",
+    "links": {
+      "code": "https://github.com/SOTIF-AVLab/SinD",
+      "paper": "https://arxiv.org/abs/2209.02297"
     }
   },
   {
@@ -9930,6 +10158,51 @@
     }
   },
   {
+    "id": "babel",
+    "name": "BABEL",
+    "shortName": "BABEL",
+    "year": 2021,
+    "summary": "为 AMASS 连续运动捕捉序列增加动作语义和起止时间标注，描述动作之间的时间结构。",
+    "summaryEn": "Action semantics and start/end annotations for continuous AMASS motion, exposing temporal structure between actions.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Trajectories",
+      "Language",
+      "Action Labels"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "About 43 hours annotated; dense release covers about 37.5 hours",
+    "scaleZh": "约 43 小时标注；稠密发布部分约 37.5 小时",
+    "organizations": "Max Planck Institute for Intelligent Systems and University of Konstanz",
+    "organizationsZh": "马克斯普朗克智能系统研究所与康斯坦茨大学",
+    "license": "Non-commercial research license; no redistribution; AMASS terms also apply",
+    "licenseZh": "非商业研究许可，禁止再分发；另适用 AMASS 条款",
+    "access": "Official annotation download; motion data obtained separately from AMASS",
+    "accessZh": "官方标注下载；运动数据需另从 AMASS 获取",
+    "rating": 4,
+    "verdict": "带时间语义的连续人体运动",
+    "verdictEn": "Temporally labeled continuous motion",
+    "wmNote": "标注结合原始运动可研究语义条件状态演化；标注文件本身不包含完整运动，且与 AMASS 重叠。",
+    "wmNoteEn": "Pair annotations with source motion for semantic state evolution; annotations alone lack full motion and overlap AMASS.",
+    "links": {
+      "homepage": "https://babel.is.tue.mpg.de/data.html"
+    }
+  },
+  {
     "id": "brax",
     "name": "Brax",
     "shortName": "Brax",
@@ -10113,6 +10386,53 @@
     "links": {
       "code": "https://github.com/google-research/google-research/tree/master/distracting_control",
       "paper": "https://arxiv.org/abs/2101.02722"
+    }
+  },
+  {
+    "id": "dsec",
+    "name": "DSEC",
+    "shortName": "DSEC",
+    "year": 2021,
+    "summary": "真实驾驶的双目事件与彩色图像序列，提供同步传感器数据、视差及后续发布的光流真值。",
+    "summaryEn": "Real driving sequences with stereo events and color images, aligned sensors, disparity, and subsequently released optical-flow truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Event Camera",
+      "Stereo RGB",
+      "LiDAR",
+      "GPS / IMU",
+      "Optical Flow"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "53 driving sequences with VGA event cameras",
+    "scaleZh": "53 段驾驶序列，使用 VGA 事件相机",
+    "organizations": "University of Zurich Robotics and Perception Group",
+    "organizationsZh": "苏黎世大学机器人与感知研究组",
+    "license": "CC BY-SA 4.0",
+    "licenseZh": "CC BY-SA 4.0",
+    "access": "Official sensor downloads and flow/disparity benchmarks",
+    "accessZh": "官方传感器数据下载及光流、视差基准",
+    "rating": 3,
+    "verdict": "事件视觉驾驶时序",
+    "verdictEn": "Event-vision driving sequences",
+    "wmNote": "收录依据是连续驾驶观测及跨时刻光流；静态检测或语义子集不单独作为动力学证据。",
+    "wmNoteEn": "Continuous observations and temporal flow provide dynamics evidence; static detection or semantic subsets alone do not.",
+    "links": {
+      "homepage": "https://dsec.ifi.uzh.ch/",
+      "paper": "https://arxiv.org/abs/2103.06011"
     }
   },
   {
@@ -10681,6 +11001,52 @@
     "links": {
       "paper": "https://arxiv.org/abs/2103.14025",
       "code": "https://github.com/chuangg/tdw-transport-challenge-starter-code"
+    }
+  },
+  {
+    "id": "tum-vie",
+    "name": "TUM-VIE",
+    "shortName": "TUM-VIE",
+    "year": 2021,
+    "summary": "同步双目事件、灰度图像和惯性数据的手持及头戴序列，配有起止段运动捕捉真值。",
+    "summaryEn": "Handheld and head-mounted sequences with synchronized stereo events, grayscale frames, IMU, and start/end motion-capture ground truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Event Camera",
+      "Stereo RGB",
+      "IMU",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Stereo frames at 20 Hz, IMU at 200 Hz, motion capture at 120 Hz",
+    "scaleZh": "双目图像 20 Hz、IMU 200 Hz、运动捕捉 120 Hz",
+    "organizations": "Technical University of Munich",
+    "organizationsZh": "慕尼黑工业大学",
+    "license": "Data: CC BY 4.0; code: BSD-2-Clause",
+    "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
+    "access": "Official sequence downloads and visualization script",
+    "accessZh": "官方序列下载及可视化脚本",
+    "rating": 3,
+    "verdict": "高时间分辨率观测演化",
+    "verdictEn": "High-temporal-resolution observation evolution",
+    "wmNote": "事件流与连续观测支持动态预测；运动捕捉真值主要覆盖序列起止段。",
+    "wmNoteEn": "Event streams support temporal prediction; motion-capture truth mainly covers sequence beginnings and ends.",
+    "links": {
+      "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset",
+      "paper": "https://arxiv.org/abs/2108.07329"
     }
   },
   {
@@ -11335,6 +11701,53 @@
     }
   },
   {
+    "id": "grab",
+    "name": "GRAB",
+    "shortName": "GRAB",
+    "year": 2020,
+    "summary": "全身与日常物体交互的连续三维运动数据，包含身体、手部、面部、物体位姿及逐时刻接触信息。",
+    "summaryEn": "Continuous 3D whole-body object interactions with body, hand, face, object-pose sequences and temporal contact information.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "Physical & Causal Reasoning"
+    ],
+    "domain": [
+      "Egocentric / Human",
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Object State",
+      "3D Mesh",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Interaction Episodes"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "10 subjects interacting with 51 everyday objects",
+    "scaleZh": "10 名参与者与 51 种日常物体交互",
+    "organizations": "Max Planck Institute for Intelligent Systems",
+    "organizationsZh": "马克斯普朗克智能系统研究所",
+    "license": "Research agreement with subject-specific restrictions; object/model terms also apply",
+    "licenseZh": "研究使用协议及参与者特定限制；另适用物体和人体模型条款",
+    "access": "Registration and license acceptance required for official downloads",
+    "accessZh": "官方下载需注册并接受许可协议",
+    "rating": 4,
+    "verdict": "人体与物体接触状态演化",
+    "verdictEn": "Human-object contact evolution",
+    "wmNote": "连续人体和物体状态及接触变化支持交互动力学预测；区别于静态抓取姿态和 GrabNet 模型资源。",
+    "wmNoteEn": "Body/object states and changing contacts support interaction dynamics; distinguish temporal GRAB data from static grasps and GrabNet models.",
+    "links": {
+      "homepage": "https://grab.is.tue.mpg.de/"
+    }
+  },
+  {
     "id": "graspnet-1billion",
     "name": "GraspNet-1Billion",
     "shortName": "GraspNet-1Billion",
@@ -11564,6 +11977,49 @@
     "links": {
       "homepage": "https://www.cvlibs.net/datasets/kitti-360/",
       "paper": "https://arxiv.org/abs/2012.06268"
+    }
+  },
+  {
+    "id": "lafan1",
+    "name": "LAFAN1",
+    "shortName": "LAFAN1",
+    "year": 2020,
+    "summary": "高质量 BVH 人体运动捕捉序列，用于运动过渡、插帧和长时运动生成。",
+    "summaryEn": "High-quality BVH motion-capture sequences for transitions, in-betweening, and longer-horizon motion generation.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "77 sequences, 5 subjects, 496,672 frames at 30 FPS",
+    "scaleZh": "77 个序列、5 名参与者、496,672 帧，30 FPS",
+    "organizations": "Ubisoft La Forge and collaborators",
+    "organizationsZh": "育碧 La Forge 及合作者",
+    "license": "CC BY-NC-ND 4.0",
+    "licenseZh": "CC BY-NC-ND 4.0",
+    "access": "Official Git LFS archive and transition evaluation code",
+    "accessZh": "官方 Git LFS 数据包及运动过渡评估代码",
+    "rating": 4,
+    "verdict": "人体运动过渡建模",
+    "verdictEn": "Human motion-transition modeling",
+    "wmNote": "连续骨架与位移轨迹支持未来姿态建模；插帧评测可使用终点条件，不能与无终点预测混用。",
+    "wmNoteEn": "Skeleton trajectories support future-pose modeling; endpoint-conditioned in-betweening differs from unconditional forecasting.",
+    "links": {
+      "code": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset"
     }
   },
   {
@@ -13821,6 +14277,52 @@
     }
   },
   {
+    "id": "uzh-fpv",
+    "name": "UZH-FPV Drone Racing Dataset",
+    "shortName": "UZH-FPV Drone Racing Dataset",
+    "year": 2019,
+    "summary": "专家操控竞速无人机的激烈运动序列，提供相机、事件、IMU 和激光跟踪运动真值。",
+    "summaryEn": "Aggressive expert-piloted drone sequences with cameras, events, IMU, and laser-tracked motion truth.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Event Camera",
+      "IMU",
+      "Camera Pose",
+      "Trajectories"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Indoor and outdoor racing and obstacle-flight sequences",
+    "scaleZh": "室内外竞速及障碍飞行序列",
+    "organizations": "University of Zurich Robotics and Perception Group",
+    "organizationsZh": "苏黎世大学机器人与感知研究组",
+    "license": "CC BY-NC-SA 3.0",
+    "licenseZh": "CC BY-NC-SA 3.0",
+    "access": "Official sequence downloads; benchmark test truth withheld",
+    "accessZh": "官方序列下载；基准测试真值不公开",
+    "rating": 3,
+    "verdict": "激烈飞行下的未来观测",
+    "verdictEn": "Future observations under aggressive flight",
+    "wmNote": "可研究高速自运动下的时序观测和轨迹预测；不将 IMU 信号当作执行器控制。",
+    "wmNoteEn": "Supports fast egomotion and trajectory prediction; IMU signals are not actuator controls.",
+    "links": {
+      "homepage": "https://fpv.ifi.uzh.ch/"
+    }
+  },
+  {
     "id": "waymo-open-dataset",
     "name": "Waymo Open Dataset",
     "shortName": "Waymo Open Dataset",
@@ -14659,6 +15161,53 @@
     }
   },
   {
+    "id": "mvsec",
+    "name": "MVSEC",
+    "shortName": "MVSEC",
+    "year": 2018,
+    "summary": "在多种运动平台上采集的双目事件序列，结合图像、IMU 与多数序列的位姿和深度真值。",
+    "summaryEn": "Stereo event sequences from multiple moving platforms with images, IMU, and pose/depth truth for most sequences.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Event Camera",
+      "Stereo RGB",
+      "IMU",
+      "Depth",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Indoor and outdoor event-camera recordings on multiple platforms",
+    "scaleZh": "多种平台上的室内外事件相机录制",
+    "organizations": "University of Pennsylvania",
+    "organizationsZh": "宾夕法尼亚大学",
+    "license": "CC BY-SA 4.0",
+    "licenseZh": "CC BY-SA 4.0",
+    "access": "Official sequence downloads, calibration and sample code",
+    "accessZh": "官方序列下载、校准信息及示例代码",
+    "rating": 3,
+    "verdict": "多平台事件时空观测",
+    "verdictEn": "Multiplatform event observations",
+    "wmNote": "事件、位姿和光流可支持连续时间状态演化建模；真值覆盖需按序列核查。",
+    "wmNoteEn": "Events, poses, and flow support continuous-time evolution modeling; verify truth coverage per sequence.",
+    "links": {
+      "homepage": "https://daniilidis-group.github.io/mvsec/"
+    }
+  },
+  {
     "id": "roboturk",
     "name": "RoboTurk",
     "shortName": "RoboTurk",
@@ -15314,6 +15863,51 @@
     }
   },
   {
+    "id": "lcas-3dof",
+    "name": "L-CAS 3DOF Pedestrian Trajectories",
+    "shortName": "L-CAS 3DOF Pedestrian Trajectories",
+    "year": 2017,
+    "summary": "由机器人搭载 LiDAR 在室内公共空间提取的行人三自由度轨迹，提供位置与朝向预测评测。",
+    "summaryEn": "Robot-mounted LiDAR pedestrian trajectories in an indoor public space, with 3DOF position/orientation prediction evaluation.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Trajectories",
+      "Agent Pose",
+      "LiDAR"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "935 trajectories extracted from the first 19 minutes",
+    "scaleZh": "前 19 分钟数据提取 935 条轨迹",
+    "organizations": "University of Lincoln",
+    "organizationsZh": "林肯大学",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集许可条款需进一步核查",
+    "access": "Official trajectory and raw LiDAR download links",
+    "accessZh": "官方轨迹及原始 LiDAR 下载链接",
+    "rating": 4,
+    "verdict": "室内行人位置与朝向预测",
+    "verdictEn": "Indoor pedestrian position and heading prediction",
+    "wmNote": "世界坐标轨迹支持未来位置与朝向建模；提取跟踪结果需考虑传感器噪声。",
+    "wmNoteEn": "World-frame tracks support future position/heading modeling; extracted tracks retain sensor uncertainty.",
+    "links": {
+      "homepage": "https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/"
+    }
+  },
+  {
     "id": "matterport3d",
     "name": "Matterport3D",
     "shortName": "Matterport3D",
@@ -15405,6 +15999,52 @@
     "links": {
       "homepage": "https://vcai.mpi-inf.mpg.de/3dhp-dataset/",
       "paper": "https://arxiv.org/abs/1611.09813"
+    }
+  },
+  {
+    "id": "penncosyvio",
+    "name": "PennCOSYVIO",
+    "shortName": "PennCOSYVIO",
+    "year": 2017,
+    "summary": "室外到室内的手持视觉惯性轨迹，使用标记定位提供传感器位置参考。",
+    "summaryEn": "Handheld visual-inertial trajectories crossing outdoor and indoor spaces with fiducial-marker localization references.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Stereo RGB",
+      "IMU",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Approximately 150 m route; seven cameras and three IMUs",
+    "scaleZh": "路线约 150 米；七个相机和三个 IMU",
+    "organizations": "University of Pennsylvania and collaborators",
+    "organizationsZh": "宾夕法尼亚大学及合作者",
+    "license": "Dataset terms require verification",
+    "licenseZh": "数据集条款需进一步核查",
+    "access": "Official downloads, calibration and benchmark documentation",
+    "accessZh": "官方下载、校准和基准文档",
+    "rating": 3,
+    "verdict": "室内外跨场景连续运动",
+    "verdictEn": "Continuous indoor-outdoor motion",
+    "wmNote": "连续传感器流与参考轨迹可用于空间演化建模；部分测试真值由基准保留。",
+    "wmNoteEn": "Sensor streams and reference trajectories support spatial evolution; some test truth is held out.",
+    "links": {
+      "homepage": "https://daniilidis-group.github.io/penncosyvio/"
     }
   },
   {
@@ -15770,6 +16410,51 @@
     "wmNoteEn": "Supports observation and pose evolution; ground truth has synchronization and dynamic-motion limitations.",
     "links": {
       "homepage": "https://projects.asl.ethz.ch/datasets/euroc-mav/"
+    }
+  },
+  {
+    "id": "kit-motion-language",
+    "name": "KIT Motion-Language",
+    "shortName": "KIT Motion-Language",
+    "year": 2016,
+    "summary": "提供连续关节运动与自然语言描述的多模态集合，保留原始动作来源元数据。",
+    "summaryEn": "Continuous joint motions paired with natural-language descriptions and original motion-source metadata.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Trajectories",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences",
+      "Trajectories"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "2017 release: 3,911 motions and 6,353 annotations",
+    "scaleZh": "2017 年发布版本：3,911 段运动、6,353 条标注",
+    "organizations": "Karlsruhe Institute of Technology",
+    "organizationsZh": "卡尔斯鲁厄理工学院",
+    "license": "Verify release and original motion-source terms",
+    "licenseZh": "需核查发布版本及原始运动来源条款",
+    "access": "Official archive downloads and MMM/C3D parsing example",
+    "accessZh": "官方数据包及 MMM/C3D 解析示例",
+    "rating": 4,
+    "verdict": "语言条件人体轨迹生成",
+    "verdictEn": "Language-conditioned motion trajectories",
+    "wmNote": "语言与连续关节序列支持条件运动生成；与原始 mocap 来源有重叠，跨库划分需去重。",
+    "wmNoteEn": "Language and joint sequences support motion generation; deduplicate overlapping source mocap when splitting across datasets.",
+    "links": {
+      "homepage": "https://motion-annotation.humanoids.kit.edu/dataset/",
+      "paper": "https://arxiv.org/abs/1607.03827"
     }
   },
   {

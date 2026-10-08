@@ -1,0 +1,46 @@
+{
+  "id": "beat",
+  "name": "BEAT",
+  "shortName": "BEAT",
+  "year": 2022,
+  "summary": "语音和文本对齐的三维身体、手势与面部表情序列，包含情绪和语义相关性标注。",
+  "summaryEn": "Speech/text-aligned 3D body, gesture, and facial-expression sequences with emotion and semantic-relevance annotations.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Audio",
+    "Text",
+    "Action Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "76 hours from 30 speakers; body and facial motion",
+  "scaleZh": "30 名说话者、76 小时身体及面部运动",
+  "organizations": "University of Tokyo, Keio University, Huawei and JAIST",
+  "organizationsZh": "东京大学、庆应义塾大学、华为及北陆先端科学技术大学院大学",
+  "license": "Non-commercial terms; verify release-specific agreement",
+  "licenseZh": "非商业条款；需核查所用版本协议",
+  "access": "Official project and dataset release repository",
+  "accessZh": "官方项目及数据发布仓库",
+  "rating": 4,
+  "verdict": "语音条件身体与表情演化",
+  "verdictEn": "Speech-conditioned body and face evolution",
+  "wmNote": "同步动作与音频可训练条件姿态生成；语音是上下文条件，不是物理控制输入。",
+  "wmNoteEn": "Aligned motion/audio support conditional pose generation; speech is contextual conditioning, not physical control.",
+  "links": {
+    "homepage": "https://pantomatrix.github.io/BEAT/",
+    "paper": "https://arxiv.org/abs/2203.05297"
+  }
+}

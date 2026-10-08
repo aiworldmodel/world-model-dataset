@@ -1,0 +1,45 @@
+{
+  "id": "babel",
+  "name": "BABEL",
+  "shortName": "BABEL",
+  "year": 2021,
+  "summary": "为 AMASS 连续运动捕捉序列增加动作语义和起止时间标注，描述动作之间的时间结构。",
+  "summaryEn": "Action semantics and start/end annotations for continuous AMASS motion, exposing temporal structure between actions.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Trajectories",
+    "Language",
+    "Action Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "About 43 hours annotated; dense release covers about 37.5 hours",
+  "scaleZh": "约 43 小时标注；稠密发布部分约 37.5 小时",
+  "organizations": "Max Planck Institute for Intelligent Systems and University of Konstanz",
+  "organizationsZh": "马克斯普朗克智能系统研究所与康斯坦茨大学",
+  "license": "Non-commercial research license; no redistribution; AMASS terms also apply",
+  "licenseZh": "非商业研究许可，禁止再分发；另适用 AMASS 条款",
+  "access": "Official annotation download; motion data obtained separately from AMASS",
+  "accessZh": "官方标注下载；运动数据需另从 AMASS 获取",
+  "rating": 4,
+  "verdict": "带时间语义的连续人体运动",
+  "verdictEn": "Temporally labeled continuous motion",
+  "wmNote": "标注结合原始运动可研究语义条件状态演化；标注文件本身不包含完整运动，且与 AMASS 重叠。",
+  "wmNoteEn": "Pair annotations with source motion for semantic state evolution; annotations alone lack full motion and overlap AMASS.",
+  "links": {
+    "homepage": "https://babel.is.tue.mpg.de/data.html"
+  }
+}

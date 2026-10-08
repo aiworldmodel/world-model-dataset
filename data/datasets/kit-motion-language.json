@@ -1,0 +1,45 @@
+{
+  "id": "kit-motion-language",
+  "name": "KIT Motion-Language",
+  "shortName": "KIT Motion-Language",
+  "year": 2016,
+  "summary": "提供连续关节运动与自然语言描述的多模态集合，保留原始动作来源元数据。",
+  "summaryEn": "Continuous joint motions paired with natural-language descriptions and original motion-source metadata.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Trajectories",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Trajectories"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "2017 release: 3,911 motions and 6,353 annotations",
+  "scaleZh": "2017 年发布版本：3,911 段运动、6,353 条标注",
+  "organizations": "Karlsruhe Institute of Technology",
+  "organizationsZh": "卡尔斯鲁厄理工学院",
+  "license": "Verify release and original motion-source terms",
+  "licenseZh": "需核查发布版本及原始运动来源条款",
+  "access": "Official archive downloads and MMM/C3D parsing example",
+  "accessZh": "官方数据包及 MMM/C3D 解析示例",
+  "rating": 4,
+  "verdict": "语言条件人体轨迹生成",
+  "verdictEn": "Language-conditioned motion trajectories",
+  "wmNote": "语言与连续关节序列支持条件运动生成；与原始 mocap 来源有重叠，跨库划分需去重。",
+  "wmNoteEn": "Language and joint sequences support motion generation; deduplicate overlapping source mocap when splitting across datasets.",
+  "links": {
+    "homepage": "https://motion-annotation.humanoids.kit.edu/dataset/",
+    "paper": "https://arxiv.org/abs/1607.03827"
+  }
+}
