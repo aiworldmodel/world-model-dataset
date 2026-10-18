@@ -1,0 +1,46 @@
+{
+  "id": "aloha-act-sim",
+  "name": "ALOHA / ACT Simulation Demonstrations",
+  "shortName": "ALOHA / ACT Simulation Demonstrations",
+  "year": 2023,
+  "summary": "ACT 官方公开的双臂仿真示范，涵盖方块转移和双臂插入，提供脚本及人类演示和录制工具。",
+  "summaryEn": "Official ACT bimanual simulation demonstrations for cube transfer and insertion, with scripted/human demos and recording tools.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation",
+    "Human Demonstration"
+  ],
+  "scale": "Two bimanual simulation tasks; configurable scripted episode generation",
+  "scaleZh": "两类双臂仿真任务；可配置脚本生成轨迹数量",
+  "organizations": "Stanford University, UC Berkeley and Meta",
+  "organizationsZh": "斯坦福大学、加州大学伯克利分校及 Meta",
+  "license": "Code: MIT; verify demonstration archive terms",
+  "licenseZh": "代码为 MIT；示范数据包条款需核查",
+  "access": "Official simulated-demo archive and record_sim_episodes.py",
+  "accessZh": "官方仿真示范包及 record_sim_episodes.py",
+  "rating": 4,
+  "verdict": "双臂观测与控制序列",
+  "verdictEn": "Bimanual observation/control sequences",
+  "wmNote": "仅收录已确认公开的仿真数据；图像、关节状态与动作可支持转换预测，不宣称所有真机示范公开。",
+  "wmNoteEn": "Only confirmed public simulation data are included; images, joints, and actions support transitions, without claiming all real demos are public.",
+  "links": {
+    "code": "https://github.com/tonyzhaozh/act",
+    "homepage": "https://tonyzhaozh.github.io/aloha/"
+  }
+}

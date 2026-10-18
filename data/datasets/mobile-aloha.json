@@ -1,0 +1,47 @@
+{
+  "id": "mobile-aloha",
+  "name": "Mobile ALOHA Demonstrations",
+  "shortName": "Mobile ALOHA Demonstrations",
+  "year": 2024,
+  "summary": "全身遥操作采集的移动双臂操作示范，联合记录视觉、机械臂和移动底盘相关状态与动作。",
+  "summaryEn": "Whole-body teleoperated mobile bimanual demonstrations with vision, arm, and mobile-base states/actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "Paper reports 50 demonstrations per task",
+  "scaleZh": "论文报告每项任务 50 条示范",
+  "organizations": "Stanford University",
+  "organizationsZh": "斯坦福大学",
+  "license": "Code: MIT; verify dataset release terms separately",
+  "licenseZh": "代码为 MIT；数据发布条款需另行核查",
+  "access": "Official project links to demonstration datasets and replay tools",
+  "accessZh": "官方项目提供示范数据集入口及回放工具",
+  "rating": 4,
+  "verdict": "移动底盘与双臂协同转换",
+  "verdictEn": "Mobile-base and bimanual transitions",
+  "wmNote": "结合底盘和双臂动作预测观测变化；共训练使用的静态 ALOHA 数据与移动数据需分开识别。",
+  "wmNoteEn": "Predict observations from base/arm actions; distinguish mobile data from static ALOHA data reused for co-training.",
+  "links": {
+    "homepage": "https://mobile-aloha.github.io/",
+    "code": "https://github.com/MarkFzp/mobile-aloha"
+  }
+}

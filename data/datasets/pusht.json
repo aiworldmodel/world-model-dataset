@@ -1,0 +1,45 @@
+{
+  "id": "pusht",
+  "name": "Push-T Demonstrations",
+  "shortName": "Push-T Demonstrations",
+  "year": 2023,
+  "summary": "Diffusion Policy 发布的平面 T 形物体推送示范，包含连续观测、状态和推动动作。",
+  "summaryEn": "Planar T-block pushing demonstrations released with Diffusion Policy, containing sequential observations, states, and pushing actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Object State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Official pusht.zip replay archive; image and low-dimensional loaders",
+  "scaleZh": "官方 pusht.zip 回放数据包；提供图像及低维数据加载器",
+  "organizations": "Columbia University, Toyota Research Institute and MIT",
+  "organizationsZh": "哥伦比亚大学、丰田研究院及麻省理工学院",
+  "license": "Code: MIT; verify data-specific terms",
+  "licenseZh": "代码为 MIT；数据专属条款需核查",
+  "access": "Official training archive and replay-buffer loaders",
+  "accessZh": "官方训练数据包和回放缓冲区加载器",
+  "rating": 4,
+  "verdict": "接触推送的动作条件转换",
+  "verdictEn": "Action-conditioned contact pushing",
+  "wmNote": "本条限定官方平面仿真示范，可用于动作条件状态或图像预测；不混同真实 UR5 推送录制。",
+  "wmNoteEn": "Scoped to the official planar simulated demonstrations for state/image prediction; distinct from real UR5 pushing recordings.",
+  "links": {
+    "code": "https://github.com/real-stanford/diffusion_policy",
+    "paper": "https://arxiv.org/abs/2303.04137"
+  }
+}

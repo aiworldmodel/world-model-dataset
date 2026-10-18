@@ -1,0 +1,48 @@
+{
+  "id": "homes-of-new-york",
+  "name": "Homes of New York (Dobb-E)",
+  "shortName": "Homes of New York (Dobb-E)",
+  "year": 2023,
+  "summary": "使用手持 Stick 采集的家庭操作示范，包含 RGB-D 视频、六维夹爪位姿及开合角度标注。",
+  "summaryEn": "Household demonstrations collected with a handheld Stick, with RGB-D video, 6D gripper poses, and opening-angle annotations.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Agent Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "5,620 trajectories, 13 hours, 22 homes and 216 environments",
+  "scaleZh": "5,620 条轨迹、13 小时、22 个家庭和 216 个环境",
+  "organizations": "New York University and Meta",
+  "organizationsZh": "纽约大学与 Meta",
+  "license": "Dataset release terms require verification",
+  "licenseZh": "数据发布许可条款需进一步核查",
+  "access": "Official RGB/actions and RGB-D/actions archives",
+  "accessZh": "官方 RGB/动作及 RGB-D/动作数据包",
+  "rating": 4,
+  "verdict": "家庭夹爪动作与观测对齐",
+  "verdictEn": "Household gripper-motion observations",
+  "wmNote": "人类手持工具而非机器人本体采集；位姿及开合轨迹可用于动作条件预测，迁移到机器人需处理具身差异。",
+  "wmNoteEn": "Human handheld-tool data, not robot-body collection; pose/opening trajectories support prediction, with embodiment differences on transfer.",
+  "links": {
+    "homepage": "https://dobb-e.com/",
+    "paper": "https://arxiv.org/abs/2311.16098"
+  }
+}

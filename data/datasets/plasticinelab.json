@@ -1,0 +1,45 @@
+{
+  "id": "plasticinelab",
+  "name": "PlasticineLab",
+  "shortName": "PlasticineLab",
+  "year": 2021,
+  "summary": "可微软体操作基准，通过操纵器动作改变弹塑性材料，并提供控制序列优化和结果保存接口。",
+  "summaryEn": "Differentiable soft-body manipulation tasks with actions deforming elastoplastic material and control-optimization/output interfaces.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Physics / Science",
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Action",
+    "Simulation State",
+    "Object State"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Ten documented manipulation tasks",
+  "scaleZh": "官方展示十类操作任务",
+  "organizations": "MIT, UC San Diego and collaborators",
+  "organizationsZh": "麻省理工学院、加州大学圣迭戈分校及合作者",
+  "license": "Repository and simulation dependency terms require verification",
+  "licenseZh": "仓库及仿真依赖条款需进一步核查",
+  "access": "Official simulator and action-sequence optimization commands; generate rollouts locally",
+  "accessZh": "官方仿真器及动作序列优化命令；需本地生成 rollout",
+  "rating": 4,
+  "verdict": "弹塑性操作 rollout 生成",
+  "verdictEn": "Elastoplastic manipulation rollout generation",
+  "wmNote": "收录为生成工具；记录动作与粒子状态构造转换数据，参考图像和目标配置本身不是轨迹。",
+  "wmNoteEn": "Cataloged as a generator; record actions and particle states, since reference images and goal configurations alone are not trajectories.",
+  "links": {
+    "homepage": "https://plasticinelab.csail.mit.edu/",
+    "code": "https://github.com/hzaskywalker/PlasticineLab"
+  }
+}

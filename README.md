@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-376-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-386-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 376 | 6 | 6 | 45 |
+| 386 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,11 +70,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (53)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (51)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (94)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (76)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (56)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (58)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (94)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (76)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (53)
+### Predictive & Generative Dynamics (56)
 
 - **DenseReward Dataset** · 2026
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -120,6 +120,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Diverse spatiotemporal physics simulations with a common format and temporal-window interface for surrogate models.
   `Physics / Science` · `Simulation State`
   [Homepage](https://polymathic-ai.org/the_well/) · [Code](https://github.com/PolymathicAI/the_well) · Access: Official downloader and Hugging Face streaming
+
+- **LagrangeBench** · 2023
+  Particle trajectories for Lagrangian fluid dynamics spanning 2D/3D flows, vortices, cavities, and dam breaks.
+  `Physics / Science` · `Simulation State` · `Trajectories`
+  [Code](https://github.com/tumaer/lagrangebench) · [Paper](https://arxiv.org/abs/2309.16342) · Access: Official Zenodo archives and automatic download/loaders
 
 - **BEAT** · 2022
   Speech/text-aligned 3D body, gesture, and facial-expression sequences with emotion and semantic-relevance annotations.
@@ -200,6 +205,16 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   High-quality BVH motion-capture sequences for transitions, in-betweening, and longer-horizon motion generation.
   `Egocentric / Human` · `Agent Pose` · `Trajectories`
   [Code](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) · Access: Official Git LFS archive and transition evaluation code
+
+- **Learning to Simulate / GNS Datasets** · 2020
+  Multimaterial particle simulation trajectories with particle types, positions, and global context for next-step and rollout prediction.
+  `Physics / Science` · `Simulation State` · `Trajectories`
+  [Code](https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate) · [Paper](https://arxiv.org/abs/2002.09405) · Access: Official Google Cloud TFRecords and download script
+
+- **MeshGraphNets Simulation Datasets** · 2020
+  Mesh simulation data for cloth, deforming solids, and fluids with node states, mesh structure, and train/validation/test splits.
+  `Physics / Science` · `Simulation State` · `3D Mesh` · `Trajectories`
+  [Homepage](https://sites.google.com/view/meshgraphnets/home) · [Code](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets) · [Paper](https://arxiv.org/abs/2010.03409) · Access: Official dataset downloader and metadata in DeepMind Research
 
 - **Procgen Benchmark** · 2020
   Procedurally generated visual RL environments with controllable actions, observations, and level-state trajectories.
@@ -343,7 +358,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (51)
+### Action-Conditioned Dynamics (58)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -430,10 +445,20 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `Action` · `Language` · `Scene Metadata`
   [Paper](https://arxiv.org/abs/2410.10738) · [Code](https://github.com/Robertwyq/Drivingdojo) · Access: Paper and official project repository available; dataset access terms require verification
 
+- **Functional Manipulation Benchmark (FMB)** · 2024
+  Multistage grasping, reorientation, and assembly demonstrations with four-view RGB-D, robot state, end-effector force/torque, and Cartesian actions.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Trajectories`
+  [Homepage](https://functional-manipulation-benchmark.github.io/) · [Paper](https://arxiv.org/abs/2401.08553) · Access: Official NumPy trajectory archives and detailed data format
+
 - **Isaac Lab** · 2024
   A GPU physics-simulation framework for robot learning that generates large-scale state-action trajectories.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacLab) · [Paper](https://arxiv.org/abs/2309.07137) · Access: Open-source repository
+
+- **Mobile ALOHA Demonstrations** · 2024
+  Whole-body teleoperated mobile bimanual demonstrations with vision, arm, and mobile-base states/actions.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State` · `Trajectories`
+  [Homepage](https://mobile-aloha.github.io/) · [Code](https://github.com/MarkFzp/mobile-aloha) · Access: Official project links to demonstration datasets and replay tools
 
 - **RetroAct** · 2024
   An annotated retro-game environment dataset for generative interactive environments and action-conditioned world models, with behavior, camera, motion-axis, and control metadata.
@@ -445,6 +470,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Action` · `Robot State` · `Language`
   [Homepage](https://robocasa.ai/) · [Paper](https://arxiv.org/abs/2406.02523) · [Code](https://github.com/robocasa/robocasa) · Access: Open generation toolkit
 
+- **ALOHA / ACT Simulation Demonstrations** · 2023
+  Official ACT bimanual simulation demonstrations for cube transfer and insertion, with scripted/human demos and recording tools.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Trajectories`
+  [Code](https://github.com/tonyzhaozh/act) · [Homepage](https://tonyzhaozh.github.io/aloha/) · Access: Official simulated-demo archive and record_sim_episodes.py
+
 - **ARMBench** · 2023
   A large object-centric benchmark captured during warehouse robotic pick-and-place, with images, videos, and metadata before picking, during transfer, and after placement.
   `Robotics / Embodied AI` · `RGB Video` · `Segmentation` · `Object Metadata` · `Action Labels`
@@ -455,10 +485,20 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Simulation State` · `RGB Video`
   [Homepage](https://fluidlab2023.github.io/) · [Code](https://github.com/zhouxian/FluidLab) · Access: Official generation, trajectory saving and replay commands
 
+- **Homes of New York (Dobb-E)** · 2023
+  Household demonstrations collected with a handheld Stick, with RGB-D video, 6D gripper poses, and opening-angle annotations.
+  `Robotics / Embodied AI` · `Egocentric / Human` · `RGB-D` · `Action` · `Agent Pose` · `Trajectories`
+  [Homepage](https://dobb-e.com/) · [Paper](https://arxiv.org/abs/2311.16098) · Access: Official RGB/actions and RGB-D/actions archives
+
 - **Minari Offline RL Datasets** · 2023
   A standardized offline-RL dataset library providing complete episodes with observations, actions, rewards, and termination signals.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `Simulation State` · `Action` · `Reward` · `Trajectories`
   [Homepage](https://minari.farama.org/) · [Code](https://github.com/Farama-Foundation/Minari) · Access: Open dataset registry and loaders
+
+- **Push-T Demonstrations** · 2023
+  Planar T-block pushing demonstrations released with Diffusion Policy, containing sequential observations, states, and pushing actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Object State` · `Trajectories`
+  [Code](https://github.com/real-stanford/diffusion_policy) · [Paper](https://arxiv.org/abs/2303.04137) · Access: Official training archive and replay-buffer loaders
 
 - **Race Against the Machine** · 2023
   Autonomous and piloted racing flights with control inputs, inertial measurements, images, and motion-capture states.
@@ -530,6 +570,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacGymEnvs) · [Paper](https://arxiv.org/abs/2108.10470) · Access: Official repository and release
 
+- **PlasticineLab** · 2021
+  Differentiable soft-body manipulation tasks with actions deforming elastoplastic material and control-optimization/output interfaces.
+  `Physics / Science` · `Robotics / Embodied AI` · `Action` · `Simulation State` · `Object State`
+  [Homepage](https://plasticinelab.csail.mit.edu/) · [Code](https://github.com/hzaskywalker/PlasticineLab) · Access: Official simulator and action-sequence optimization commands; generate rollouts locally
+
 - **Atari Replay Dataset** · 2020
   Large-scale Atari replay saved during DQN training, containing frames, actions, rewards, and terminal signals.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Reward` · `Game State`
@@ -564,6 +609,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Deformable manipulation benchmarks with Gym interfaces and random-action examples for generating observation and state transitions.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Depth` · `Action` · `Simulation State`
   [Code](https://github.com/Xingyu-Lin/softgym) · [Paper](https://arxiv.org/abs/2011.07215) · Access: Official simulator and rollout examples; data generated locally
+
+- **DPI-Net Particle Rollouts** · 2019
+  Particle-interaction generators for rigid, deformable, and fluid systems with adjacent positions, velocities, and manipulator-shape states.
+  `Physics / Science` · `Robotics / Embodied AI` · `Simulation State` · `Object State` · `Action` · `Trajectories`
+  [Code](https://github.com/YunzhuLi/DPI-Net) · Access: Official training scripts generate simulation train/validation rollouts locally
 
 - **OmniPush** · 2019
   A real-robot pushing-dynamics dataset with RGB-D video and state changes across objects, surfaces, and pushing actions for transferable visual dynamics learning.

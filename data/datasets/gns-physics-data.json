@@ -1,0 +1,43 @@
+{
+  "id": "gns-physics-data",
+  "name": "Learning to Simulate / GNS Datasets",
+  "shortName": "Learning to Simulate / GNS Datasets",
+  "year": 2020,
+  "summary": "多材料粒子物理仿真轨迹，提供粒子类型、连续位置和全局上下文，用于下一步及长时 rollout 预测。",
+  "summaryEn": "Multimaterial particle simulation trajectories with particle types, positions, and global context for next-step and rollout prediction.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Water, sand, goop and mixed-material scenarios in 2D/3D",
+  "scaleZh": "二维及三维的水、沙、黏性及混合材料场景",
+  "organizations": "DeepMind and Stanford University",
+  "organizationsZh": "DeepMind 与斯坦福大学",
+  "license": "Dataset terms require verification separately from code",
+  "licenseZh": "数据集条款需与代码许可分别核查",
+  "access": "Official Google Cloud TFRecords and download script",
+  "accessZh": "官方 Google Cloud TFRecord 数据和下载脚本",
+  "rating": 4,
+  "verdict": "多材料粒子动力学",
+  "verdictEn": "Multimaterial particle dynamics",
+  "wmNote": "粒子位置历史和材料属性支持动力学预测；调试样本 WaterDropSample 不作为独立数据集。",
+  "wmNoteEn": "Position histories and material properties support dynamics; WaterDropSample is a debug subset, not a separate dataset.",
+  "links": {
+    "code": "https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate",
+    "paper": "https://arxiv.org/abs/2002.09405"
+  }
+}

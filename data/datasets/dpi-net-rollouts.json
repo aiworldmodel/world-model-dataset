@@ -1,0 +1,45 @@
+{
+  "id": "dpi-net-rollouts",
+  "name": "DPI-Net Particle Rollouts",
+  "shortName": "DPI-Net Particle Rollouts",
+  "year": 2019,
+  "summary": "刚体、可变形材料和液体的粒子交互生成工具，提供相邻时刻位置、速度及操纵形状状态。",
+  "summaryEn": "Particle-interaction generators for rigid, deformable, and fluid systems with adjacent positions, velocities, and manipulator-shape states.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Physics / Science",
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Object State",
+    "Action",
+    "Trajectories"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "FluidFall, BoxBath, FluidShake and RiceGrip",
+  "scaleZh": "FluidFall、BoxBath、FluidShake 和 RiceGrip 四个场景",
+  "organizations": "Massachusetts Institute of Technology",
+  "organizationsZh": "麻省理工学院",
+  "license": "Repository and PyFleX dependency terms require verification",
+  "licenseZh": "仓库及 PyFleX 依赖条款需核查",
+  "access": "Official training scripts generate simulation train/validation rollouts locally",
+  "accessZh": "官方训练脚本可在本地生成训练和验证仿真轨迹",
+  "rating": 4,
+  "verdict": "受操纵粒子系统的转换",
+  "verdictEn": "Manipulated particle-state transitions",
+  "wmNote": "收录为 rollout 生成工具；受控场景可配对操纵状态与粒子转换，自由落体场景不默认有控制输入。",
+  "wmNoteEn": "Cataloged as a generator; controlled cases pair manipulator states with particle transitions, while free fall need not include controls.",
+  "links": {
+    "code": "https://github.com/YunzhuLi/DPI-Net"
+  }
+}

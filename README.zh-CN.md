@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-376-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-386-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 376 | 6 | 6 | 45 |
+| 386 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,11 +70,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (53)](#predictive-generative-dynamics) · [动作条件动力学 (51)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (56)](#predictive-generative-dynamics) · [动作条件动力学 (58)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（53）
+### 预测与生成式动力学（56）
 
 - **DenseReward Dataset** · 2026
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -120,6 +120,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   来自多种科学领域的时空物理仿真集合，提供统一格式和用于代理模型训练的时间窗口接口。
   `物理 / 科学` · `仿真状态`
   [主页](https://polymathic-ai.org/the_well/) · [代码](https://github.com/PolymathicAI/the_well) · 访问方式：官方下载工具及 Hugging Face 流式访问
+
+- **LagrangeBench** · 2023
+  面向拉格朗日流体动力学的粒子轨迹集合，覆盖二维和三维流动、涡旋、腔体及溃坝场景。
+  `物理 / 科学` · `仿真状态` · `轨迹`
+  [代码](https://github.com/tumaer/lagrangebench) · [论文](https://arxiv.org/abs/2309.16342) · 访问方式：官方 Zenodo 数据包及自动下载、加载器
 
 - **BEAT** · 2022
   语音和文本对齐的三维身体、手势与面部表情序列，包含情绪和语义相关性标注。
@@ -200,6 +205,16 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   高质量 BVH 人体运动捕捉序列，用于运动过渡、插帧和长时运动生成。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹`
   [代码](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) · 访问方式：官方 Git LFS 数据包及运动过渡评估代码
+
+- **Learning to Simulate / GNS Datasets** · 2020
+  多材料粒子物理仿真轨迹，提供粒子类型、连续位置和全局上下文，用于下一步及长时 rollout 预测。
+  `物理 / 科学` · `仿真状态` · `轨迹`
+  [代码](https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate) · [论文](https://arxiv.org/abs/2002.09405) · 访问方式：官方 Google Cloud TFRecord 数据和下载脚本
+
+- **MeshGraphNets Simulation Datasets** · 2020
+  包含布料、变形固体和流体的网格仿真数据，提供节点状态、网格结构及训练验证测试划分。
+  `物理 / 科学` · `仿真状态` · `三维网格` · `轨迹`
+  [主页](https://sites.google.com/view/meshgraphnets/home) · [代码](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets) · [论文](https://arxiv.org/abs/2010.03409) · 访问方式：DeepMind Research 官方数据下载器和元数据
 
 - **Procgen Benchmark** · 2020
   程序生成的视觉强化学习环境集合，提供可控动作、观测和关卡状态轨迹。
@@ -343,7 +358,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（51）
+### 动作条件动力学（58）
 
 - **AgiBot World 2026** · 2026
   真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
@@ -430,10 +445,20 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `动作` · `语言` · `场景元数据`
   [论文](https://arxiv.org/abs/2410.10738) · [代码](https://github.com/Robertwyq/Drivingdojo) · 访问方式：提供论文和官方项目仓库；数据访问条款待核验
 
+- **Functional Manipulation Benchmark (FMB)** · 2024
+  多阶段抓取、重定向与装配示范，提供四视角 RGB-D、机械臂状态、末端力矩和笛卡尔控制动作。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `轨迹`
+  [主页](https://functional-manipulation-benchmark.github.io/) · [论文](https://arxiv.org/abs/2401.08553) · 访问方式：官方 NumPy 轨迹包及详细数据格式
+
 - **Isaac Lab** · 2024
   面向机器人学习的 GPU 物理仿真框架，可生成大规模状态—动作轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacLab) · [论文](https://arxiv.org/abs/2309.07137) · 访问方式：开源仓库
+
+- **Mobile ALOHA Demonstrations** · 2024
+  全身遥操作采集的移动双臂操作示范，联合记录视觉、机械臂和移动底盘相关状态与动作。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `轨迹`
+  [主页](https://mobile-aloha.github.io/) · [代码](https://github.com/MarkFzp/mobile-aloha) · 访问方式：官方项目提供示范数据集入口及回放工具
 
 - **RetroAct** · 2024
   为生成式交互环境和动作条件世界模型标注的复古游戏环境数据集，含行为、视角、运动轴和控制信息。
@@ -445,6 +470,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `动作` · `机器人状态` · `语言`
   [主页](https://robocasa.ai/) · [论文](https://arxiv.org/abs/2406.02523) · [代码](https://github.com/robocasa/robocasa) · 访问方式：开放生成工具
 
+- **ALOHA / ACT Simulation Demonstrations** · 2023
+  ACT 官方公开的双臂仿真示范，涵盖方块转移和双臂插入，提供脚本及人类演示和录制工具。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `轨迹`
+  [代码](https://github.com/tonyzhaozh/act) · [主页](https://tonyzhaozh.github.io/aloha/) · 访问方式：官方仿真示范包及 record_sim_episodes.py
+
 - **ARMBench** · 2023
   在亚马逊仓库机器人拣放流程中采集的大规模物体中心基准，覆盖操作前、转运中和放置后的图像、视频与元数据，并提供分割、识别和缺陷检测标注。
   `机器人 / 具身智能` · `RGB 视频` · `分割标注` · `物体元数据` · `动作标签`
@@ -455,10 +485,20 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `仿真状态` · `RGB 视频`
   [主页](https://fluidlab2023.github.io/) · [代码](https://github.com/zhouxian/FluidLab) · 访问方式：官方生成、轨迹保存和回放命令
 
+- **Homes of New York (Dobb-E)** · 2023
+  使用手持 Stick 采集的家庭操作示范，包含 RGB-D 视频、六维夹爪位姿及开合角度标注。
+  `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB-D` · `动作` · `智能体位姿` · `轨迹`
+  [主页](https://dobb-e.com/) · [论文](https://arxiv.org/abs/2311.16098) · 访问方式：官方 RGB/动作及 RGB-D/动作数据包
+
 - **Minari Offline RL Datasets** · 2023
   标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [主页](https://minari.farama.org/) · [代码](https://github.com/Farama-Foundation/Minari) · 访问方式：开放数据注册表与加载器
+
+- **Push-T Demonstrations** · 2023
+  Diffusion Policy 发布的平面 T 形物体推送示范，包含连续观测、状态和推动动作。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `物体状态` · `轨迹`
+  [代码](https://github.com/real-stanford/diffusion_policy) · [论文](https://arxiv.org/abs/2303.04137) · 访问方式：官方训练数据包和回放缓冲区加载器
 
 - **Race Against the Machine** · 2023
   自主和人类驾驶竞速飞行数据，记录控制输入、惯性测量、图像和运动捕捉状态。
@@ -530,6 +570,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacGymEnvs) · [论文](https://arxiv.org/abs/2108.10470) · 访问方式：官方仓库和发行版
 
+- **PlasticineLab** · 2021
+  可微软体操作基准，通过操纵器动作改变弹塑性材料，并提供控制序列优化和结果保存接口。
+  `物理 / 科学` · `机器人 / 具身智能` · `动作` · `仿真状态` · `物体状态`
+  [主页](https://plasticinelab.csail.mit.edu/) · [代码](https://github.com/hzaskywalker/PlasticineLab) · 访问方式：官方仿真器及动作序列优化命令；需本地生成 rollout
+
 - **Atari Replay Dataset** · 2020
   DQN 训练过程保存的大规模 Atari 回放，包含帧、动作、奖励和终止信号。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `游戏状态`
@@ -564,6 +609,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   布料、绳索和液体操作的仿真基准，通过 Gym 接口和随机动作示例生成动作条件观测与状态转换。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `深度` · `动作` · `仿真状态`
   [代码](https://github.com/Xingyu-Lin/softgym) · [论文](https://arxiv.org/abs/2011.07215) · 访问方式：官方仿真器和 rollout 示例；需本地生成数据
+
+- **DPI-Net Particle Rollouts** · 2019
+  刚体、可变形材料和液体的粒子交互生成工具，提供相邻时刻位置、速度及操纵形状状态。
+  `物理 / 科学` · `机器人 / 具身智能` · `仿真状态` · `物体状态` · `动作` · `轨迹`
+  [代码](https://github.com/YunzhuLi/DPI-Net) · 访问方式：官方训练脚本可在本地生成训练和验证仿真轨迹
 
 - **OmniPush** · 2019
   真实机器人推动动力学数据集，记录不同物体、桌面环境和推动动作下的 RGB-D 视频及状态变化，用于学习可迁移的视觉动力学。

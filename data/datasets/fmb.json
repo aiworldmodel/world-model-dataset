@@ -1,0 +1,47 @@
+{
+  "id": "fmb",
+  "name": "Functional Manipulation Benchmark (FMB)",
+  "shortName": "Functional Manipulation Benchmark (FMB)",
+  "year": 2024,
+  "summary": "多阶段抓取、重定向与装配示范，提供四视角 RGB-D、机械臂状态、末端力矩和笛卡尔控制动作。",
+  "summaryEn": "Multistage grasping, reorientation, and assembly demonstrations with four-view RGB-D, robot state, end-effector force/torque, and Cartesian actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "22,550 trajectories across single/multi-object tasks",
+  "scaleZh": "单物体及多物体任务共 22,550 条轨迹",
+  "organizations": "University of California, Berkeley",
+  "organizationsZh": "加州大学伯克利分校",
+  "license": "CC BY 4.0",
+  "licenseZh": "CC BY 4.0",
+  "access": "Official NumPy trajectory archives and detailed data format",
+  "accessZh": "官方 NumPy 轨迹包及详细数据格式",
+  "rating": 4,
+  "verdict": "多阶段接触操作动力学",
+  "verdictEn": "Multistage contact manipulation dynamics",
+  "wmNote": "动作、末端状态与力矩对齐，可研究接触条件预测和长期状态变化；技能标签是注释而非额外控制信号。",
+  "wmNoteEn": "Aligned actions, end-effector states, and forces support contact/long-term prediction; skill labels are annotations, not extra controls.",
+  "links": {
+    "homepage": "https://functional-manipulation-benchmark.github.io/",
+    "paper": "https://arxiv.org/abs/2401.08553"
+  }
+}

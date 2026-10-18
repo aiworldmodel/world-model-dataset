@@ -1,0 +1,43 @@
+{
+  "id": "lagrangebench",
+  "name": "LagrangeBench",
+  "shortName": "LagrangeBench",
+  "year": 2023,
+  "summary": "面向拉格朗日流体动力学的粒子轨迹集合，覆盖二维和三维流动、涡旋、腔体及溃坝场景。",
+  "summaryEn": "Particle trajectories for Lagrangian fluid dynamics spanning 2D/3D flows, vortices, cavities, and dam breaks.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Seven original particle-fluid datasets",
+  "scaleZh": "七个原始粒子流体数据集",
+  "organizations": "Technical University of Munich",
+  "organizationsZh": "慕尼黑工业大学",
+  "license": "Consult Zenodo release terms; code terms are separate",
+  "licenseZh": "数据许可见 Zenodo 发布条款；代码条款另行适用",
+  "access": "Official Zenodo archives and automatic download/loaders",
+  "accessZh": "官方 Zenodo 数据包及自动下载、加载器",
+  "rating": 4,
+  "verdict": "多步流体粒子预测",
+  "verdictEn": "Multi-step fluid particle prediction",
+  "wmNote": "使用连续位置与外力信息预测粒子演化；工具支持导入的 GNS 数据不作为新增独立样本重复计算。",
+  "wmNoteEn": "Use positions and external forces for particle evolution; imported GNS data are not additional independent samples.",
+  "links": {
+    "code": "https://github.com/tumaer/lagrangebench",
+    "paper": "https://arxiv.org/abs/2309.16342"
+  }
+}
