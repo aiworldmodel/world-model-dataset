@@ -1,0 +1,53 @@
+{
+  "id": "arkitscenes",
+  "name": "ARKitScenes (Raw Sequences)",
+  "shortName": "ARKitScenes (Raw Sequences)",
+  "year": 2021,
+  "summary": "原始 RGB-D 采集包含带时间戳的相机旋转和平移轨迹。",
+  "summaryEn": "Raw RGB-D captures include timestamped camera rotation and translation trajectories.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "5,047 captures of 1,661 scenes",
+  "scaleZh": "1,661 个场景的 5,047 次采集",
+  "organizations": "Apple and collaborators",
+  "organizationsZh": "Apple 及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "收录范围是原始观测与相机运动序列，不表示场景内物体具有动态交互标注。",
+  "wmNoteEn": "Raw captures include RGB-D/video and camera trajectories whose rows contain timestamp, rotation and translation. Inclusion covers egomotion and observation sequences, not moving-object dynamics.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md",
+    "sourceTitle": "ARKitScenes data format",
+    "locator": "Raw assets and .traj specification",
+    "statement": "Raw captures include RGB-D/video and camera trajectories whose rows contain timestamp, rotation and translation. Inclusion covers egomotion and observation sequences, not moving-object dynamics.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

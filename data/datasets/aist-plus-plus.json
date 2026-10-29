@@ -1,0 +1,54 @@
+{
+  "id": "aist-plus-plus",
+  "name": "AIST++",
+  "shortName": "AIST++",
+  "year": 2021,
+  "summary": "配乐舞蹈序列，包含逐帧三维关键点和已标定的多视角图像。",
+  "summaryEn": "Music-aligned dance sequences with per-frame 3D keypoints and calibrated multi-view images.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "3D State",
+    "Audio",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "1,408 motion sequences; 10,108,015 multi-view frames",
+  "scaleZh": "1,408 条动作序列；10,108,015 帧多视角图像",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "可以研究人体运动预测；需要自行定义历史/未来划分。",
+  "wmNoteEn": "The release documents 1,408 dance motion sequences, per-frame 3D keypoints, music and calibrated camera views. Forecasting needs a history/future split.",
+  "links": {
+    "homepage": "https://google.github.io/aistplusplus_dataset/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://google.github.io/aistplusplus_dataset/",
+    "sourceTitle": "AIST++ Dance Motion Dataset",
+    "locator": "Dataset statistics",
+    "statement": "The release documents 1,408 dance motion sequences, per-frame 3D keypoints, music and calibrated camera views. Forecasting needs a history/future split.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

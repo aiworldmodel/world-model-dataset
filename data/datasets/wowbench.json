@@ -1,0 +1,54 @@
+{
+  "id": "wowbench",
+  "name": "WoWBench (Released Samples)",
+  "shortName": "WoWBench (Released Samples)",
+  "year": 2025,
+  "summary": "初始图像和指令配有参考视频与跟踪关键点，用于物理一致性及未来轨迹评测。",
+  "summaryEn": "Initial images/instructions pair with reference videos and tracked keypoints for physical-consistency and future-trajectory evaluation.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "WoW project team",
+  "organizationsZh": "WoW 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Released benchmark sample package; full evaluation-code release unconfirmed",
+  "accessZh": "已发布基准样例包；未确认完整评测代码发布",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "仅确认基准样例包；未确认完整评测代码发布，不把训练混合数据量当作基准规模。",
+  "wmNoteEn": "WoWBench pairs initial images/instructions with reference videos and tracking keypoints, evaluating future physical consistency and trajectories. The repository releases benchmark samples; a complete evaluation-code release is not confirmed.",
+  "links": {
+    "paper": "https://arxiv.org/html/2509.22642v1",
+    "homepage": "https://huggingface.co/datasets/WoW-world-model/WoW-1-Benchmark-Samples"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://arxiv.org/html/2509.22642v1",
+    "sourceTitle": "WoW: Towards a World-omniscient World-model",
+    "locator": "Sections 5.1-5.3",
+    "statement": "WoWBench pairs initial images/instructions with reference videos and tracking keypoints, evaluating future physical consistency and trajectories. The repository releases benchmark samples; a complete evaluation-code release is not confirmed.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

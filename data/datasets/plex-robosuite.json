@@ -1,0 +1,64 @@
+{
+  "id": "plex-robosuite",
+  "name": "PLEX Robosuite Demonstrations",
+  "shortName": "PLEX Robosuite Demonstrations",
+  "year": 2023,
+  "summary": "六类操作任务的仿真示范提供七维动作、双视角渲染图像及 32 维状态。",
+  "summaryEn": "Simulation demonstrations expose seven-dimensional actions, two rendered views and 32-dimensional state for six manipulation tasks.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "Action",
+    "Simulation State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "450 demonstrations (75 for each of 6 tasks)",
+  "scaleZh": "450 条示范 (6 类任务各 75 条)",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作坐标和采样约定以该版本为准；跨机器人合并前须核查。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Action coordinates and sampling conventions follow this release; check them before combining embodiments. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/plex_robosuite"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/plex_robosuite",
+    "sourceTitle": "PLEX Robosuite Demonstrations / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Simulation demonstrations expose seven-dimensional actions, two rendered views and 32-dimensional state for six manipulation tasks. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "plex_robosuite"
+  ],
+  "relatedResources": [
+    "open-x-embodiment",
+    "robosuite"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/plex_robosuite"
+  }
+}

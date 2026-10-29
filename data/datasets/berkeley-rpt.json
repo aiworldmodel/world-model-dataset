@@ -1,0 +1,63 @@
+{
+  "id": "berkeley-rpt",
+  "name": "Berkeley RPT Demonstrations",
+  "shortName": "Berkeley RPT Demonstrations",
+  "year": 2023,
+  "summary": "抓放回合提供七个关节增量指令与夹爪指令、腕部图像和关节位置。",
+  "summaryEn": "Pick/place episodes expose seven joint-delta commands plus a gripper command, wrist images and joint positions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "908 episodes",
+  "scaleZh": "908 个回合",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "概述与关节字段对机器人型号的命名不一致；本条只采用已核实的数值结构。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Robot naming differs between the overview and joint-field description; the displayed scope follows the numeric schema. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds",
+    "sourceTitle": "Berkeley RPT Demonstrations / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Pick/place episodes expose seven joint-delta commands plus a gripper command, wrist images and joint positions. Steps are organized into episodes. Robot naming differs between the overview and joint-field description; the displayed scope follows the numeric schema.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "berkeley_rpt_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds"
+  }
+}

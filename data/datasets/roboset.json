@@ -58,5 +58,10 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [
+    "robo_set"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

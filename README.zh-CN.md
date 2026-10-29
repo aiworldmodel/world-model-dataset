@@ -5,7 +5,7 @@
 _一个以证据为先的世界模型数据资源目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![资源](https://img.shields.io/badge/资源-266-16a34a)](#数据集目录)
+[![资源](https://img.shields.io/badge/资源-361-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -37,7 +37,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 ## 入选证据
 
-每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[391 条全量审查报告](audit/evidence-review-2026-10-29.md)。
+每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[最新目录审查报告](audit/pre2026-review-2026-10-30.md)。
 
 来源审查不代表已完成数据下载、样本完整性或许可权限验证。仅论文证据单独标注。访问条件各异，不宣称全部开放下载；聚合集合和派生数据可能重叠。逐条详细审查理由保留英文，便于对照原始来源。
 
@@ -45,9 +45,9 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 已审查资源 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 266 | 6 | 6 | 43 |
+| 361 | 6 | 6 | 43 |
 
-数据集: 122 · 评测集: 44 · 生成环境 / 工具: 81 · 聚合集合 / 注册表: 13 · 派生数据 / 子集: 6
+数据集: 204 · 评测集: 48 · 生成环境 / 工具: 86 · 聚合集合 / 注册表: 13 · 派生数据 / 子集: 10
 
 上述为资源条目数，不代表独立采集的数据集数量。生成环境需自行生成数据，评测集与聚合集合不能直接相加为总数据规模。
 
@@ -80,11 +80,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (38)](#predictive-generative-dynamics) · [动作条件动力学 (45)](#action-conditioned-dynamics) · [决策与智能体轨迹 (76)](#decision-making-agent-trajectories) · [空间与时空世界建模 (46)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (22)](#physical-causal-reasoning) · [世界模型评测与诊断 (39)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (43)](#predictive-generative-dynamics) · [动作条件动力学 (104)](#action-conditioned-dynamics) · [决策与智能体轨迹 (76)](#decision-making-agent-trajectories) · [空间与时空世界建模 (70)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (40)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（38）
+### 预测与生成式动力学（43）
 
 - **DenseReward Dataset** · 2026 · 数据集
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
@@ -290,6 +290,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://levelxdata.com/highd-dataset/) · [论文](https://arxiv.org/abs/1810.05642) · 访问方式：官方 leveLXData/highD 申请页面；访问需同意数据集条款
   入选依据 C3（英文审查说明）：Drone-recorded naturalistic highway vehicle trajectories explicitly support scenario reconstruction and motion modeling. [审查来源](https://arxiv.org/abs/1810.05642) · 2026-10-29
 
+- **Kinetics-600 (Video Prediction Use)** · 2018 · 数据集
+  动作视频在 Video Diffusion Models 中用于以 5 帧为条件预测后续 11 帧。
+  `第一人称 / 人类活动` · `RGB 视频`
+  [论文](https://arxiv.org/pdf/2204.03458) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C1（英文审查说明）：A published forward-prediction protocol conditions on five frames and predicts the next eleven. This justifies the prediction use of the video corpus, not treating action-category labels as motor commands. [审查来源](https://arxiv.org/pdf/2204.03458) · 2026-10-30
+
 - **KIT Motion-Language** · 2016 · 聚合集合 / 注册表
   提供连续关节运动与自然语言描述的多模态集合，保留原始动作来源元数据。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言`
@@ -302,11 +308,23 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://cvgl.stanford.edu/projects/uav_data/) · [论文](https://arxiv.org/abs/1601.00998) · 访问方式：官方项目页提供 Stanford Campus Dataset 下载入口
   入选依据 C3（英文审查说明）：Drone-observed road users and pedestrians are explicitly evaluated through future-trajectory prediction in crowded scenes. [审查来源](https://arxiv.org/abs/1601.00998) · 2026-10-29
 
+- **SYNTHIA-Seqs** · 2016 · 数据集
+  多视角合成驾驶序列包含运动行人/骑行者与对齐深度，面向时空建模。
+  `自动驾驶` · `合成视频` · `深度` · `轨迹`
+  [论文](https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C1（英文审查说明）：SYNTHIA-Seqs provides four approximately 50,000-frame sequences with moving pedestrians/cyclists, aligned views and depth, explicitly intended for spatiotemporal modeling. The independent random-image subset is outside this entry's scope. [审查来源](https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf) · 2026-10-30
+
 - **ViZDoom** · 2016 · 生成环境 / 工具
   基于 Doom 的第一人称视觉强化学习环境，提供可控动作和帧序列。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [主页](https://vizdoom.cs.put.poznan.pl/) · [代码](https://github.com/Farama-Foundation/ViZDoom) · [论文](https://arxiv.org/abs/1605.02097) · 访问方式：开源引擎与场景
   入选依据 C2（英文审查说明）：Customizable first-person Doom scenarios expose visual observations to bots executing actions; environment generator, not a fixed corpus. [审查来源](https://arxiv.org/abs/1605.02097) · 2026-10-29
+
+- **Moving MNIST** · 2015 · 数据集
+  移动数字未来帧预测数据，公开测试序列各含 20 帧。
+  `物理 / 科学` · `合成视频`
+  [主页](https://www.tensorflow.org/datasets/catalog/moving_mnist) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C1（英文审查说明）：The released test split contains 10,000 ordered 20-frame digit-motion videos. Official documentation identifies the video-representation/prediction paper and distinguishes generated training sequences. [审查来源](https://www.tensorflow.org/datasets/catalog/moving_mnist) · 2026-10-30
 
 - **Human3.6M** · 2014 · 数据集
   面向人体姿态与运动建模的大规模多视角数据集，提供同步视频、三维关节、相机参数和动作类别，是人类未来姿态预测的重要历史基准。
@@ -314,9 +332,21 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](http://vision.imar.ro/human3.6m/description.php) · [论文](https://ieeexplore.ieee.org/document/6682899) · 访问方式：需注册并同意协议
   入选依据 C3（英文审查说明）：Synchronized 50Hz multiview video and accurate 3D joint positions/angles expose human motion trajectories. [审查来源](http://vision.imar.ro/human3.6m/description.php) · 2026-10-29
 
+- **UCF101 (Video Prediction Use)** · 2012 · 数据集
+  原始动作视频在后续连续视频流模型论文中被明确用于未来视频预测。
+  `第一人称 / 人类活动` · `RGB 视频`
+  [论文](https://arxiv.org/abs/2412.05633) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C1（英文审查说明）：The paper explicitly evaluates future-video prediction on UCF101. This later predictive protocol supplies evidence absent from the original classification paper; no action/state-control labels are claimed. [审查来源](https://arxiv.org/abs/2412.05633) · 2026-10-30
+
+- **KTH (Video Prediction Use)** · 2004 · 数据集
+  人物动作视频具有 PredRNN 官方未来帧预测训练与评测路径。
+  `第一人称 / 人类活动` · `RGB 视频`
+  [代码](https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C1（英文审查说明）：The prediction authors release KTH data-loading/training scripts and evaluate generated future frames. Inclusion is restricted to the video-prediction use, not the original action-classification task. [审查来源](https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md) · 2026-10-30
+
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（45）
+### 动作条件动力学（104）
 
 - **kine2go** · 2026 · 数据集
   将动物与四足动作捕捉重定向为 Unitree Go2 可执行参考轨迹并生成策略回放的数据集。
@@ -342,11 +372,23 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://alaya-studio.github.io/wildworld-project/) · [论文](https://arxiv.org/abs/2603.23497) · [代码](https://github.com/AlayaLab/WildWorld) · 访问方式：第一部分已在 Hugging Face 提供，后续部分计划发布
   入选依据 C2（英文审查说明）：Game rollouts expose explicit state with synchronized action labels across more than 108 million frames. [审查来源](https://arxiv.org/abs/2603.23497) · 2026-10-29
 
+- **AiMDoom / NextBestPath Benchmark** · 2025 · 评测集
+  主动建图发布包含 AiMDoom 场景、仿真器和可执行规划评测。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `智能体位姿` · `地图`
+  [代码](https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The release includes an active-mapping simulator, AiMDoom scenes and executable planning/evaluation. The resource is the AiMDoom benchmark and simulator, not the NextBestPath method alone. [审查来源](https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md) · 2026-10-30
+
 - **BlueROV2 Dynamics Dataset** · 2025 · 数据集
   包含水下机器人动力学数据、训练脚本和学习与物理模型的资源。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `机器人状态` · `轨迹`
   [代码](https://github.com/ViktorNfa/bluerov2_dynamics) · 访问方式：官方数据和训练代码可用
   入选依据 C2（英文审查说明）：Repository provides recorded/simulated underwater dynamics data and one-step and multi-step prediction evaluation with control-aware models. [审查来源](https://github.com/ViktorNfa/bluerov2_dynamics) · 2026-10-29
+
+- **EMMOE-100 Interactive Benchmark** · 2025 · 评测集
+  EMMOE-100 提供任务、高层规划与 Habitat 低层执行流程和成功率评测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `智能体位姿` · `语言`
+  [代码](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The release documents EMMOE-100 tasks and runnable high-level planning/low-level Habitat execution with saved results and success metrics. Inclusion covers the interactive benchmark. [审查来源](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · 2026-10-30
 
 - **MuJoCo Playground** · 2025 · 生成环境 / 工具
   基于 MuJoCo MJX 的开源机器人学习环境集合，可大规模生成接触丰富的状态、动作和传感器轨迹。
@@ -366,11 +408,35 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://davian-robotics.github.io/PHUMA/) · [论文](https://arxiv.org/abs/2510.26236) · [代码](https://github.com/DAVIAN-Robotics/PHUMA) · 访问方式：可通过官方下载脚本和 Hugging Face 获取预构建数据
   入选依据 C3（英文审查说明）：Physics-curated and retargeted mocap/video motion produces a 73-hour humanoid trajectory corpus; overlaps source motion collections. [审查来源](https://arxiv.org/abs/2510.26236) · 2026-10-29
 
+- **RoboAI UR5e Demonstrations** · 2025 · 数据集
+  程序控制的真实机器人示范包含七维动作、动作归一化/绝对值掩码、RGB 和 15 维机器人状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/robo_ai_u_r5e) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Scripted real-robot demonstrations provide seven-dimensional actions, action-normalization/absolute masks, RGB and 15-dimensional robot state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/robo_ai_u_r5e) · 2026-10-30
+
+- **RoboGround Demonstration Data** · 2025 · 派生数据 / 子集
+  基于 RoboCasa 的示范配有图像、机器人状态、逐时动作及语言指令。
+  `机器人 / 具身智能` · `合成视频` · `动作` · `机器人状态` · `语言`
+  [论文](https://arxiv.org/html/2504.21530v1) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C2（英文审查说明）：The paper reports 24K RoboCasa-based demonstrations with images, robot state and time-indexed action supervision, paired with 112K instructions. This scope is the demonstration data, not standalone grounding masks. [审查来源](https://arxiv.org/html/2504.21530v1) · 2026-10-30
+
 - **RoboVerse** · 2025 · 生成环境 / 工具
   统一机器人学习仿真平台、任务数据和评测协议的可扩展具身资源。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `机器人状态` · `物体状态` · `轨迹`
   [主页](https://roboverse.wiki/) · [论文](https://arxiv.org/abs/2504.18904) · [代码](https://github.com/RoboVerseOrg/RoboVerse) · 访问方式：平台、任务和基准代码已公开
   入选依据 C2（英文审查说明）：MetaSim exposes simulator initialization, physical stepping and shared interfaces; generated data is evaluated for world-model learning and policy learning. [审查来源](https://arxiv.org/abs/2504.18904) · 2026-10-29
+
+- **BRMData** · 2024 · 数据集
+  双臂移动操作 HDF5 数据对齐动作、多视角图像、关节位置/速度/力矩与底座速度。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态`
+  [代码](https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py) · [主页](https://embodiedrobot.github.io/BRMData.html) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The HDF5 writer pairs timesteps with actions and stores multi-view images, 14-joint position/velocity/effort and base velocity. This establishes the action-aligned bimanual trajectory schema. [审查来源](https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py) · 2026-10-30
+
+- **Conq Hose Manipulation** · 2024 · 数据集
+  移动软管操作提供七维动作、三个机载相机视角及 66 维状态。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Mobile hose manipulation exposes seven-dimensional actions, three onboard camera views and 66-dimensional state. Steps are organized into episodes. The schema gives action/state dimensions without defining every component; do not infer their units. [审查来源](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · 2026-10-30
 
 - **DrivingDojo** · 2024 · 数据集
   专为交互式驾驶世界模型构建的视频数据集，覆盖完整驾驶操作、多智能体交互和开放世界驾驶知识，并提供动作指令跟随评测。
@@ -384,11 +450,23 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://functional-manipulation-benchmark.github.io/) · [论文](https://arxiv.org/abs/2401.08553) · 访问方式：官方 NumPy 轨迹包及详细数据格式
   入选依据 C2（英文审查说明）：Official dataset page identifies 22,550 robot trajectories recorded from global and wrist cameras for multi-stage manipulation. [审查来源](https://functional-manipulation-benchmark.github.io/) · 2026-10-29
 
+- **IO-AI RLDS Robot Data** · 2024 · 数据集
+  该 RLDS 版本包含七维动作、八维状态、多视角 RGB、深度及相机标定。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/io_ai_tech) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：The RLDS release has seven-dimensional actions, eight-dimensional state, multiple RGB views, depth and camera calibration. Steps are organized into episodes. This entry describes the TFDS RLDS schema; the upstream IO Ultra conversion README describes a different, richer layout. [审查来源](https://www.tensorflow.org/datasets/catalog/io_ai_tech) · 2026-10-30
+
 - **Isaac Lab** · 2024 · 生成环境 / 工具
   面向机器人学习的 GPU 物理仿真框架，可生成大规模状态—动作轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacLab) · 访问方式：开源仓库
   入选依据 C2（英文审查说明）：Official framework provides robot sensors and ready-to-train simulated control environments. [审查来源](https://github.com/isaac-sim/IsaacLab) · 2026-10-29
+
+- **Microsoft Bridge-Compatible Trajectories** · 2024 · 数据集
+  微软采集的 WidowX 轨迹提供七维动作/状态、多路相机流及每回合模态存在标记。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/bridge_data_msr) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Microsoft-collected WidowX trajectories provide seven-dimensional actions/state, multiple camera streams and per-episode modality-presence flags. Steps are organized into episodes. Collected at Microsoft in a Bridge-compatible format; this is not simply a renamed Berkeley BridgeData download. [审查来源](https://www.tensorflow.org/datasets/catalog/bridge_data_msr) · 2026-10-30
 
 - **Mobile ALOHA Demonstrations** · 2024 · 数据集
   全身遥操作采集的移动双臂操作示范，联合记录视觉、机械臂和移动底盘相关状态与动作。
@@ -414,6 +492,96 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/tonyzhaozh/act) · [主页](https://tonyzhaozh.github.io/aloha/) · 访问方式：官方仿真示范包及 record_sim_episodes.py
   入选依据 C2（英文审查说明）：README links scripted/human demonstrations for two controlled simulated tasks and identifies episode training and joint/EE-control environments. [审查来源](https://github.com/tonyzhaozh/act) · 2026-10-29
 
+- **ASU Tabletop Manipulation** · 2023 · 数据集
+  桌面操作提供七维 action/action_delta 数组、RGB、关节状态及末端/物体位姿。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `物体状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Tabletop manipulation contains seven-dimensional action/action_delta arrays, RGB, joint states and end-effector/object poses. Steps are organized into episodes. The official seven-dimensional action description lists inconsistent components; verify the mapping before use. [审查来源](https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds) · 2026-10-30
+
+- **Berkeley AUTOLAB UR5** · 2023 · 数据集
+  UR5 操作回合包含逐步平移/旋转/夹爪动作、外部及手部图像、深度和 15 维状态。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_autolab_ur5) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：UR5 manipulation episodes provide stepwise translation/rotation/gripper actions, external and hand images, depth and 15-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_autolab_ur5) · 2026-10-30
+
+- **Berkeley Cable Routing** · 2023 · 数据集
+  线缆布线回合，包含平移/旋转动作、四路相机和七维机器人状态。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_cable_routing) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Cable-routing episodes align translation/rotation actions, four camera views and seven-dimensional robot state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_cable_routing) · 2026-10-30
+
+- **Berkeley Fanuc Manipulation** · 2023 · 数据集
+  操作回合包含六维位姿增量动作、外部/腕部图像、末端位姿及关节状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Manipulation episodes contain six-dimensional pose-delta actions, external/wrist images, end-effector pose and joint states. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation) · 2026-10-30
+
+- **Berkeley RPT Demonstrations** · 2023 · 数据集
+  抓放回合提供七个关节增量指令与夹爪指令、腕部图像和关节位置。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Pick/place episodes expose seven joint-delta commands plus a gripper command, wrist images and joint positions. Steps are organized into episodes. Robot naming differs between the overview and joint-field description; the displayed scope follows the numeric schema. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds) · 2026-10-30
+
+- **CLVR Jaco Play** · 2023 · 数据集
+  桌面抓放回合，将平移和夹爪动作与相机图像、末端位姿/速度及关节状态对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/jaco_play) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Tabletop pick/place episodes align translation/gripper actions with camera images, end-effector pose/velocity and joint state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/jaco_play) · 2026-10-30
+
+- **CMU Franka Exploration** · 2023 · 数据集
+  厨房探索回合提供 RGB、八维动作及额外的结构化可供性/控制动作。
+  `机器人 / 具身智能` · `RGB 视频` · `动作`
+  [主页](https://www.tensorflow.org/datasets/catalog/cmu_franka_exploration_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Kitchen exploration episodes contain RGB, eight-dimensional actions and an additional structured affordance/control action. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/cmu_franka_exploration_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **CMU IAMLab Pickup and Insert** · 2023 · 数据集
+  抓取与插入回合包含八维位姿/夹爪动作、双相机及 20 维关节/力状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/iamlab_cmu_pickup_insert_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Picking/insertion episodes contain eight-dimensional pose/gripper actions, two cameras and a 20-dimensional joint/force state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/iamlab_cmu_pickup_insert_converted_externally_to_rlds) · 2026-10-30
+
+- **CMU PlayFusion Demonstrations** · 2023 · 数据集
+  厨房交互回合包含九维动作、RGB 及八维关节/夹爪状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/cmu_play_fusion) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Kitchen play episodes contain nine-dimensional actions, RGB and eight-dimensional joint/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/cmu_play_fusion) · 2026-10-30
+
+- **CMU Stretch Kitchen** · 2023 · 数据集
+  厨房交互回合提供八维末端/夹爪/终止动作、RGB 及四维状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/cmu_stretch) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Kitchen interaction episodes provide eight-dimensional end-effector/gripper/termination actions, RGB and four-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/cmu_stretch) · 2026-10-30
+
+- **Columbia Push-T Real** · 2023 · 数据集
+  真实 UR5 推送回合将末端平移/旋转/夹爪动作与外部/腕部图像及平面末端位置对应。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Real UR5 pushing episodes pair end-effector translation/rotation/gripper actions with external/wrist images and planar end-effector position. Steps are organized into episodes. Real UR5 recordings are distinct from the separately cataloged simulated Push-T archive. [审查来源](https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real) · 2026-10-30
+
+- **D3Fields Robot Demonstrations** · 2023 · 数据集
+  桌面与餐具操作提供三维位移动作、四视角 RGB-D 及 4×4 末端变换矩阵。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/uiuc_d3field) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Desk/utensil manipulation provides 3D displacement actions, four RGB-D camera views and 4-by-4 end-effector transforms. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/uiuc_d3field) · 2026-10-30
+
+- **DLR SARA Grid Clamp** · 2023 · 数据集
+  网格夹具放置回合提供七维动作、RGB 和 12 维位姿/力旋量观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Grid-clamp placement episodes provide seven-dimensional actions, RGB and 12-dimensional pose/wrench observations. Steps are organized into episodes. The seven-dimensional action description documents only six pose components; verify the last component. [审查来源](https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds) · 2026-10-30
+
+- **DLR SARA Pouring** · 2023 · 数据集
+  瓶向杯中倾倒的回合包含七维动作、RGB 与六维末端状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/dlr_sara_pour_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Bottle-to-mug pouring episodes contain seven-dimensional actions, RGB and six-dimensional end-effector state. Steps are organized into episodes. The action array has seven components but only six are described; the remaining component is unverified. [审查来源](https://www.tensorflow.org/datasets/catalog/dlr_sara_pour_converted_externally_to_rlds) · 2026-10-30
+
+- **ETH Agent Affordances** · 2023 · 数据集
+  烤箱开启轨迹包含六维末端速度、物体点云及带门开启角的状态。
+  `机器人 / 具身智能` · `三维状态` · `动作` · `机器人状态` · `物体状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/eth_agent_affordances) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Oven-opening trajectories contain six-dimensional end-effector velocities, object point clouds and state including the door angle. Steps are organized into episodes. The image field is explicitly zero-filled; the object point cloud describes the episode initial state. [审查来源](https://www.tensorflow.org/datasets/catalog/eth_agent_affordances) · 2026-10-30
+
 - **FluidLab** · 2023 · 生成环境 / 工具
   复杂流体操作的可微仿真基准，支持记录交互目标、保存优化控制轨迹并回放多材料动力学。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `仿真状态` · `RGB 视频`
@@ -426,11 +594,53 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://dobb-e.com/) · [论文](https://arxiv.org/abs/2311.16098) · 访问方式：官方 RGB/动作及 RGB-D/动作数据包
   入选依据 C2（英文审查说明）：The Stick records household manipulation demonstrations in 22 homes for policy transfer. Human handheld demonstrations, not robot-collected motor controls. [审查来源](https://arxiv.org/abs/2311.16098) · 2026-10-29
 
+- **Imperial Sawyer Wrist Camera** · 2023 · 数据集
+  桌面任务回合将八维运动/夹爪/终止动作与腕部图像及二值夹爪状态对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Tabletop episodes align eight-dimensional motion/gripper/termination actions with wrist images and binary gripper state. Steps are organized into episodes. The main-image and wrist-image fields represent the same view. [审查来源](https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam) · 2026-10-30
+
+- **KAIST Nonprehensile Manipulation** · 2023 · 数据集
+  非抓取操作回合提供 20 维位姿/刚度/阻尼动作、RGB、局部点云和 21 维状态。
+  `机器人 / 具身智能` · `RGB 视频` · `三维状态` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/kaist_nonprehensile_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Nonprehensile episodes expose 20-dimensional pose/stiffness/damping actions, RGB, partial point clouds and 21-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/kaist_nonprehensile_converted_externally_to_rlds) · 2026-10-30
+
+- **MimicPlay Robot Demonstrations** · 2023 · 数据集
+  机器人部分包含七维动作、两路前方视角与一路腕部视角、末端位姿及关节位置/速度。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/mimic_play) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：The robot portion contains seven-dimensional actions, two front views and a wrist view, end-effector pose and joint positions/velocities. Steps are organized into episodes. Scope is the action-bearing robot portion; human-play videos are not automatically robot motor-command trajectories. [审查来源](https://www.tensorflow.org/datasets/catalog/mimic_play) · 2026-10-30
+
 - **Minari Offline RL Datasets** · 2023 · 聚合集合 / 注册表
   标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [主页](https://minari.farama.org/) · [代码](https://github.com/Farama-Foundation/Minari) · 访问方式：开放数据注册表与加载器
   入选依据 C2（英文审查说明）：Offline-RL dataset registry provides episode sampling, trajectory filtering and generation; it includes migrated D4RL components and is not an independent corpus. [审查来源](https://minari.farama.org/) · 2026-10-29
+
+- **Minigrid** · 2023 · 生成环境 / 工具
+  网格环境提供离散动作、任务条件观测以及导航和物体状态变化。
+  `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励`
+  [代码](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data. [审查来源](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · 2026-10-30
+
+- **MUTEX Robot Demonstrations** · 2023 · 数据集
+  带多模态任务描述的操作回合，包含逐步动作、双视角图像及机器人状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：1,500 episodes expose step-level actions, RGB/wrist images and 24-dimensional robot state. Modal task descriptions are not motor commands. [审查来源](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · 2026-10-30
+
+- **NYU ROT Demonstrations** · 2023 · 数据集
+  短时桌面任务回合包含七维末端/夹爪动作、RGB 和七维状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/nyu_rot_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Short-horizon tabletop episodes provide seven-dimensional end-effector/gripper actions, RGB and seven-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/nyu_rot_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **PLEX Robosuite Demonstrations** · 2023 · 数据集
+  六类操作任务的仿真示范提供七维动作、双视角渲染图像及 32 维状态。
+  `机器人 / 具身智能` · `合成视频` · `动作` · `仿真状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/plex_robosuite) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Simulation demonstrations expose seven-dimensional actions, two rendered views and 32-dimensional state for six manipulation tasks. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/plex_robosuite) · 2026-10-30
 
 - **Push-T Demonstrations** · 2023 · 数据集
   Diffusion Policy 发布的平面 T 形物体推送示范，包含连续观测、状态和推动动作。
@@ -456,11 +666,89 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/hshi74/robocook) · [论文](https://arxiv.org/abs/2306.14447) · 访问方式：官方仓库提供数据和轨迹处理说明
   入选依据 C2（英文审查说明）：Official release provides tool-specific dynamics trajectories as per-frame HDF5 files and before/after object point clouds; distinguish real dynamics data from model-synthesized planning data. [审查来源](https://github.com/hshi74/robocook) · 2026-10-29
 
+- **SayTap Locomotion Rollouts** · 2023 · 数据集
+  A1 运动回合包含 12 个关节位置指令、30 维本体状态、期望速度及足部接触模式。
+  `机器人 / 具身智能` · `动作` · `机器人状态` · `轨迹`
+  [主页](https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：A1 locomotion episodes contain 12 joint-position commands, 30-dimensional proprioception, desired velocity and foot-contact patterns. Steps are organized into episodes. RGB fields are dummy placeholders, not recorded images. [审查来源](https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds) · 2026-10-30
+
+- **SPOC Simulation Trajectories** · 2023 · 数据集
+  导航/操作回合包含动作、双相机视角、智能体位置、物体状态标记及任务成功元数据。
+  `机器人 / 具身智能` · `合成视频` · `动作` · `智能体位姿` · `物体状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/spoc_robot) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Navigation/manipulation episodes provide actions, two camera views, agent location, object state indicators and task-success metadata. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/spoc_robot) · 2026-10-30
+
+- **Stanford HYDRA Demonstrations** · 2023 · 数据集
+  长时操作回合提供七维动作、双视角图像、27 维状态及航点/密集控制标记。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/stanford_hydra_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Long-horizon episodes provide seven-dimensional actions, two camera views, 27-dimensional state and waypoint/dense-mode indicators. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/stanford_hydra_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **TOTO Scooping and Pouring** · 2023 · 数据集
+  舀取与倾倒回合包含末端和夹爪动作、RGB 观测及七个关节的位置。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/toto) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Scooping/pouring episodes contain end-effector and gripper actions, RGB observations and seven joint positions. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/toto) · 2026-10-30
+
 - **TriFinger RL Dataset** · 2023 · 数据集
   TriFinger 真实机器人 Push/Lift 离线强化学习数据，包含多质量策略的状态、动作和奖励。
   `机器人 / 具身智能` · `机器人状态` · `动作` · `奖励` · `RGB 视频` · `轨迹`
   [主页](https://doi.org/10.17617/3.DXZ7TL) · [代码](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 访问方式：官方 DOI 和数据文档可用
   入选依据 C2（英文审查说明）：Official documentation explicitly provides real/simulated robot transitions for Push and Lift, with varying behavior policies and optional camera images, for dynamics learning and offline RL. [审查来源](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 2026-10-29
+
+- **UCSD Kitchen Demonstrations** · 2023 · 数据集
+  厨房操作将八维动作与 RGB 及 21 维关节位置/速度/力矩状态对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Kitchen manipulation aligns eight-dimensional actions with RGB and 21-dimensional joint position/velocity/torque state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UCSD Pick and Place** · 2023 · 数据集
+  含干扰物的抓放回合提供夹爪速度/力矩动作、RGB、七维状态及回合成功元数据。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/ucsd_pick_and_place_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Distractor-rich pick/place episodes expose gripper velocity/torque actions, RGB, seven-dimensional state and episode-success metadata. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/ucsd_pick_and_place_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UT Austin SIRIUS** · 2023 · 数据集
+  操作回合将七维动作与图像、关节/位姿状态以及示范、人工干预、自主执行标签对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/austin_sirius_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Manipulation episodes align seven-dimensional actions with images, joint/pose states and labels for demonstrations, interventions and autonomous execution. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/austin_sirius_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo PR2 Fridge Opening** · 2023 · 数据集
+  冰箱门开启回合将八维动作与 RGB 和七维末端/夹爪状态对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_opening_fridge_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Fridge-door opening episodes pair eight-dimensional actions with RGB and seven-dimensional end-effector/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_opening_fridge_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo PR2 Tabletop** · 2023 · 数据集
+  桌面操作将八维末端/夹爪/终止动作与 RGB 和七维状态对齐。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Tabletop manipulation pairs eight-dimensional end-effector/gripper/termination actions with RGB and seven-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo xArm Bimanual** · 2023 · 数据集
+  双臂折毛巾回合包含 14 维动作、RGB 和左右末端各六维位姿。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_bimanual_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Bimanual towel-folding episodes contain 14-dimensional actions, RGB and separate six-dimensional left/right end-effector poses. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_bimanual_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo xArm Pick and Place** · 2023 · 数据集
+  抓放回合将七维指令与三路相机、末端位姿及关节位置/速度/加速度对应。
+  `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_pick_and_place_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Pick/place episodes pair seven-dimensional commands with three camera views, end-effector pose and joint position/velocity/acceleration. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_pick_and_place_converted_externally_to_rlds) · 2026-10-30
+
+- **Berkeley MVP Demonstrations** · 2022 · 数据集
+  六类操作任务提供八维关节/夹爪动作、腕部图像以及关节与末端观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_mvp_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Six manipulation tasks expose eight-dimensional joint/gripper actions, wrist images and joint/end-effector observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_mvp_converted_externally_to_rlds) · 2026-10-30
+
+- **BUDS Robot Demonstrations** · 2022 · 数据集
+  分层机器人操作示范，逐步提供末端/夹爪动作、相机图像与机器人状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：50 episodes contain step-aligned end-effector delta/gripper actions, RGB and wrist images, and robot state. [审查来源](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · 2026-10-30
 
 - **DiffSkill Environments** · 2022 · 生成环境 / 工具
   工具操作可塑物体的三个仿真任务，提供初始和目标配置下载及随机交互脚本以生成转换轨迹。
@@ -486,6 +774,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://maniskill.ai/) · [代码](https://github.com/haosulab/ManiSkill) · 访问方式：官方仿真器和基准
   入选依据 C2（英文审查说明）：Official SAPIEN robot simulator and manipulation-learning task framework generates controlled observations and state changes. [审查来源](https://github.com/haosulab/ManiSkill) · 2026-10-29
 
+- **MaskViT Sawyer Rollouts** · 2022 · 数据集
+  推送与抓取回合提供五维动作、图像、末端位姿及关节/速度/夹爪状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/stanford_mask_vit_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Pushing/picking episodes provide five-dimensional actions, images, end-effector pose and joint/velocity/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/stanford_mask_vit_converted_externally_to_rlds) · 2026-10-30
+
 - **MineDojo** · 2022 · 生成环境 / 工具
   围绕 Minecraft 开放世界构建的大规模多模态知识与交互平台，结合玩家视频、文本知识、社区讨论及可实时交互的仿真环境，适合长期探索和开放域智能体研究。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `音频` · `文本` · `游戏状态`
@@ -498,6 +792,60 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/facebookresearch/myosuite) · 访问方式：开源基准
   入选依据 C2（英文审查说明）：Official MuJoCo environment documents step(action), per-step observations and muscle-control tasks. [审查来源](https://github.com/facebookresearch/myosuite) · 2026-10-29
 
+- **NYU Franka Play** · 2022 · 数据集
+  厨房交互数据包含 15 维速度/位姿/夹爪/终止动作、双视角 RGB-D 和 13 维状态。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/nyu_franka_play_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Kitchen play contains 15-dimensional velocity/pose/gripper/termination actions, two RGB-D views and 13-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/nyu_franka_play_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **RT-1 Public RLDS (fractal20220817_data)** · 2022 · 数据集
+  RT-1 公开回合包含图像、末端/底座控制以及回合边界。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/fractal20220817_data) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The public RLDS release contains 87,212 episodes with image observations, end-effector/base commands and episode boundaries. This is not the paper's entire training-data total. [审查来源](https://www.tensorflow.org/datasets/catalog/fractal20220817_data) · 2026-10-30
+
+- **SAILOR Robot Demonstrations** · 2022 · 数据集
+  机器人桌面示范，包含七维动作、图像以及末端和夹爪状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：240 episodes align seven-dimensional actions with camera observations and end-effector/gripper states. [审查来源](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **SCAND** · 2022 · 数据集
+  Spot 和 Jackal 遥操作导航轨迹配有摇杆指令、里程计及视觉/惯性/激光雷达观测。
+  `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `动作` · `机器人状态` · `轨迹`
+  [论文](https://arxiv.org/abs/2203.15041) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C2（英文审查说明）：The paper reports 138 teleoperated navigation trajectories with joystick commands, odometry, visual/inertial observations and 3D LiDAR on Spot and Jackal. [审查来源](https://arxiv.org/abs/2203.15041) · 2026-10-30
+
+- **TACO Play** · 2022 · 数据集
+  Franka 厨房交互回合，包含七维绝对/相对动作、双视角 RGB-D 和 15 维机器人观测。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/taco_play) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Franka kitchen play with seven-dimensional absolute/relative actions, two RGB-D views and 15-dimensional robot observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/taco_play) · 2026-10-30
+
+- **Tokyo U LSMO Trajectories** · 2022 · 数据集
+  抓放运动规划轨迹包含七维末端/夹爪指令、RGB 与 13 维状态。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/tokyo_u_lsmo_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Pick/place motion-planning trajectories contain seven-dimensional end-effector/gripper commands, RGB and 13-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/tokyo_u_lsmo_converted_externally_to_rlds) · 2026-10-30
+
+- **USC Cloth Simulation Demonstrations** · 2022 · 数据集
+  布料仿真回合将夹取器位置/启用指令与图像、折叠奖励对齐。
+  `机器人 / 具身智能` · `合成视频` · `动作` · `奖励`
+  [主页](https://www.tensorflow.org/datasets/catalog/usc_cloth_sim_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Simulated cloth episodes align picker position/activation commands with images and cloth-folding rewards. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/usc_cloth_sim_converted_externally_to_rlds) · 2026-10-30
+
+- **VIOLA Robot Demonstrations** · 2022 · 数据集
+  厨房任务的操作示范，包含平移、旋转、夹爪动作以及双视角观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/viola) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：135 training and 15 test episodes align translation, rotation and gripper actions with two camera streams and robot state. [审查来源](https://www.tensorflow.org/datasets/catalog/viola) · 2026-10-30
+
+- **BC-Z Robot Demonstrations** · 2021 · 数据集
+  遥操作数据提供未来末端/夹爪残差目标、当前位姿与图像观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/bc_z) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Teleoperated manipulation exposes residual future end-effector/gripper targets, current pose and image observations. Steps are organized into episodes. Future action targets require a causal history/target split; do not feed future supervision into model inputs. [审查来源](https://www.tensorflow.org/datasets/catalog/bc_z) · 2026-10-30
+
 - **Brax** · 2021 · 生成环境 / 工具
   基于 JAX 的可微分刚体物理引擎和强化学习环境，可并行生成状态、动作与奖励轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `仿真状态` · `动作` · `奖励` · `RGB 视频`
@@ -509,6 +857,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacGymEnvs) · [论文](https://arxiv.org/abs/2108.10470) · 访问方式：官方仓库和发行版
   入选依据 C2（英文审查说明）：GPU physics buffers directly exchange state/control tensors with robot policies; downloadable simulation platform. [审查来源](https://arxiv.org/abs/2108.10470) · 2026-10-29
+
+- **NYU Door Opening (VINN)** · 2021 · 数据集
+  门与柜体开启回合，包含末端平移/旋转、夹爪动作及对应 RGB 观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作`
+  [主页](https://www.tensorflow.org/datasets/catalog/nyu_door_opening_surprising_effectiveness) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Door/cabinet opening episodes contain end-effector translation/rotation and gripper actions paired with RGB observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/nyu_door_opening_surprising_effectiveness) · 2026-10-30
 
 - **PlasticineLab** · 2021 · 生成环境 / 工具
   可微软体操作基准，通过操纵器动作改变弹塑性材料，并提供控制序列优化和结果保存接口。
@@ -528,6 +882,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/Farama-Foundation/D4RL) · 访问方式：官方仓库和环境加载器可用
   入选依据 C2（英文审查说明）：Offline-RL benchmark aggregates standardized trajectory datasets; current releases migrated to Minari and include Kitchen/Adroit subsets. [审查来源](https://github.com/Farama-Foundation/D4RL) · 2026-10-29
 
+- **DLR EDAN Shared Control** · 2020 · 数据集
+  辅助货架抓取回合提供七维动作/状态数组以及 RGB 观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/dlr_edan_shared_control_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Assistive shelf-picking episodes provide seven-dimensional action/state arrays and RGB observations. Steps are organized into episodes. The documented action/state shapes have seven components but the description names only six pose coordinates. [审查来源](https://www.tensorflow.org/datasets/catalog/dlr_edan_shared_control_converted_externally_to_rlds) · 2026-10-30
+
 - **RL Unplugged** · 2020 · 聚合集合 / 注册表
   覆盖 Atari、DeepMind Control 和机器人等环境的离线强化学习轨迹集合。
   `游戏 / 虚拟环境` · `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
@@ -546,6 +906,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://robosuite.ai/) · [代码](https://github.com/ARISE-Initiative/robosuite) · 访问方式：官方仿真器和数据
   入选依据 C2（英文审查说明）：Official simulator supports robot controllers, demonstration collection and replay utilities in standardized physical manipulation environments. [审查来源](https://github.com/ARISE-Initiative/robosuite) · 2026-10-29
 
+- **RoboTHOR** · 2020 · 生成环境 / 工具
+  LoCoBot 仿真接口提供移动/转向动作、RGB/深度观测及智能体位姿。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `智能体位姿`
+  [主页](https://ai2thor.allenai.org/robothor/documentation/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The LoCoBot controller exposes move/rotate actions, RGB/depth observations and agent poses in named environments. It is part of AI2-THOR, so counts do not imply independent corpora. [审查来源](https://ai2thor.allenai.org/robothor/documentation/) · 2026-10-30
+
 - **SoftGym** · 2020 · 生成环境 / 工具
   布料、绳索和液体操作的仿真基准，通过 Gym 接口和随机动作示例生成动作条件观测与状态转换。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `深度` · `动作` · `仿真状态`
@@ -558,6 +924,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [论文](https://arxiv.org/abs/1910.00618) · [代码](https://github.com/MIT-Omnipush/video-prediction) · 访问方式：开放项目访问
   入选依据 C2（英文审查说明）：Controlled planar pushes are recorded with RGB-D and precise object tracking across systematically varied objects. [审查来源](https://arxiv.org/abs/1910.00618) · 2026-10-29
 
+- **Stanford Kuka Vision and Touch** · 2019 · 数据集
+  插销任务提供四维位置/夹爪动作、RGB-D、关节/位姿观测及末端力历史。
+  `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/stanford_kuka_multimodal_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Peg insertion provides four-dimensional position/gripper actions, RGB-D, joint/pose observations and end-effector force histories. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/stanford_kuka_multimodal_dataset_converted_externally_to_rlds) · 2026-10-30
+
 - **Adroit Arm Environments** · 2018 · 生成环境 / 工具
   Gymnasium-Robotics 提供的灵巧手与手臂交互环境，可生成状态、动作及后续观测。
   `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
@@ -569,6 +941,18 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/google-deepmind/dm_control) · 访问方式：开源环境，可复现生成轨迹
   入选依据 C2（英文审查说明）：Official MuJoCo-based control environments expose physics simulation and reusable task construction for action-conditioned rollouts. [审查来源](https://github.com/google-deepmind/dm_control) · 2026-10-29
+
+- **QT-Opt Kuka RLDS** · 2018 · 数据集
+  抓取回合将底座、末端及夹爪动作与 RGB、末端位姿和夹爪观测对应。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
+  [主页](https://www.tensorflow.org/datasets/catalog/kuka) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：Grasping episodes pair base/end-effector/gripper actions with RGB, end-effector pose and gripper observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [审查来源](https://www.tensorflow.org/datasets/catalog/kuka) · 2026-10-30
+
+- **World Models CarRacing Rollout Generator (ctallec)** · 2018 · 生成环境 / 工具
+  PyTorch 实现提供随机 CarRacing 回合生成及动作条件下一潜变量预测流程。
+  `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `仿真状态`
+  [代码](https://raw.githubusercontent.com/ctallec/world-models/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C2（英文审查说明）：The implementation documents random CarRacing rollout generation and next-latent prediction from past observations/actions. These are implementation-generated rollouts, not an official fixed corpus from the original paper. [审查来源](https://raw.githubusercontent.com/ctallec/world-models/master/README.md) · 2026-10-30
 
 - **AI2-THOR** · 2017 · 生成环境 / 工具
   可交互室内场景仿真环境，可生成导航、操作和状态变化轨迹。
@@ -988,6 +1372,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/HumanCompatibleAI/overcooked_ai) · [论文](https://arxiv.org/abs/1910.05789) · 访问方式：开源环境
   入选依据 C2（英文审查说明）：The released cooperative game environment exposes multi-agent interaction and long-horizon task state; simulator rather than a fixed corpus. [审查来源](https://arxiv.org/abs/1910.05789) · 2026-10-29
 
+- **RoboTurk Real-Robot Demonstrations** · 2019 · 数据集
+  真实机器人折布与叠碗回合，包含逐步平移、旋转、夹爪动作和正面 RGB 观测。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/roboturk) · 访问方式：官方 RLDS 结构及存储入口；完整下载未测试
+  入选依据 C2（英文审查说明）：The public RLDS version aligns translation/rotation/gripper actions with front RGB in 1,995 episodes. The cited 2019 real-robot release is distinct from the 2018 platform paper. [审查来源](https://www.tensorflow.org/datasets/catalog/roboturk) · 2026-10-30
+
 - **THÖR** · 2019 · 数据集
   面向人机共享室内空间的人类运动数据集，提供高精度位置、头部朝向、视线、社交群组、障碍物地图和移动机器人传感器数据。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `轨迹` · `视线` · `智能体位姿` · `激光雷达` · `地图`
@@ -1005,12 +1395,6 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/openai/retro) · 访问方式：Gym 环境代码；多数游戏 ROM 需另行获取
   入选依据 C2（英文审查说明）：Official Gym game environments expose emulator state, rewards, episode conditions and saved initial states. Most game ROMs must be obtained separately; remove the Rainbow citation. [审查来源](https://github.com/openai/retro) · 2026-10-29
-
-- **RoboTurk** · 2018 · 数据集
-  通过众包远程操作收集的真实机器人示范数据，展示低成本扩展人类操作轨迹的方式，并提供视觉、动作和机器人状态。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
-  [主页](https://roboturk.stanford.edu/) · [论文](https://arxiv.org/abs/1811.02790) · 访问方式：开放项目访问
-  入选依据 C2（英文审查说明）：Crowdsourced 6DoF teleoperation produces temporally extended robot manipulation demonstrations. [审查来源](https://arxiv.org/abs/1811.02790) · 2026-10-29
 
 - **TrajNet** · 2018 · 聚合集合 / 注册表
   面向行人和多智能体轨迹预测的基准，汇集多个真实场景轨迹并统一评测未来位置预测、社会交互和多模态不确定性。
@@ -1050,7 +1434,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（46）
+### 空间与时空世界建模（70）
 
 - **AudioWorldSim** · 2026 · 生成环境 / 工具
   用于生成双耳音频世界模型轨迹的开放仿真平台。
@@ -1100,6 +1484,18 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/sjtuyinjie/M3DGR) · 访问方式：官方数据仓库和基准代码可用
   入选依据 C3（英文审查说明）：Official multi-sensor SLAM release documents TUM-format trajectories, recording time and trajectory tracking metrics; retain ordered sensor/pose data. [审查来源](https://github.com/sjtuyinjie/M3DGR) · 2026-10-29
 
+- **MineInsight (Robot Sequences)** · 2025 · 数据集
+  机器人 ROS2 录制包含传感器观测和动态 /tf 变换。
+  `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `相机位姿` · `轨迹`
+  [代码](https://raw.githubusercontent.com/mariomlz99/MineInsight/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The release documents ROS2 sequences and dynamic /tf transforms in addition to sensor observations. First release was June 2025; current documentation also covers a 2026 update. Inclusion concerns robot/sensor motion, not moving landmine dynamics. [审查来源](https://raw.githubusercontent.com/mariomlz99/MineInsight/main/README.md) · 2026-10-30
+
+- **NVIDIA PhysicalAI Autonomous Vehicles** · 2025 · 数据集
+  发布者确认传感器片段包含相对时间戳及对齐的历史/未来自运动。
+  `自动驾驶` · `RGB 视频` · `激光雷达` · `轨迹` · `相机位姿`
+  [主页](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · [代码](https://github.com/NVlabs/physical_ai_av) · 访问方式：发布者门控数据；需接受访问条款
+  入选依据 C3（英文审查说明）：The publisher confirms 20-second sensor clips with relative timestamps and aligned egomotion including history and future. Sensor streams are asynchronous; data access requires accepting the publisher's conditions. [审查来源](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · 2026-10-30
+
 - **OmniWorld** · 2025 · 聚合集合 / 注册表
   覆盖游戏、城市行走、人机交互和机器人轨迹的多领域多模态四维世界建模数据集。
   `游戏 / 虚拟环境` · `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB 视频` · `深度` · `相机位姿` · `光流` · `文本`
@@ -1130,6 +1526,18 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [论文](https://arxiv.org/abs/2506.11302) · [主页](https://huggingface.co/datasets/Tera-AI/STRIDE) · 访问方式：论文入口；发布状态待核验
   入选依据 C2（英文审查说明）：Road imagery is organized into connected observation, state and movement-action nodes for controlled spatiotemporal world modeling. [审查来源](https://arxiv.org/abs/2506.11302) · 2026-10-29
 
+- **STU (Sequential Sensor and Pose Data)** · 2025 · 数据集
+  连续激光雷达/相机录制配有由 KISS-ICP 估计并按 KITTI 格式导出的车辆位姿。
+  `自动驾驶` · `RGB 视频` · `激光雷达` · `相机位姿` · `轨迹`
+  [论文](https://arxiv.org/html/2505.02148v1) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C3（英文审查说明）：The paper documents sequential LiDAR/camera recordings and per-scan vehicle poses estimated by KISS-ICP and exported in KITTI format. Inclusion is limited to sequential egomotion data; these estimated poses are not independent ground truth. [审查来源](https://arxiv.org/html/2505.02148v1) · 2026-10-30
+
+- **TPT-Bench (Egomotion Sequences)** · 2025 · 数据集
+  时间戳图像和对应 ROS 包包含可提取的 ZED 里程计路径。
+  `机器人 / 具身智能` · `RGB 视频` · `相机位姿` · `轨迹`
+  [代码](https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Timestamped images and per-sequence ROS bags include an explicitly extractable ZED odometry path. This supports robot egomotion sequences; native target-person tracking scores do not measure forecasting. [审查来源](https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md) · 2026-10-30
+
 - **Ego-Exo4D** · 2024 · 数据集
   同步采集第一人称与第三人称视角的人类技能数据集，覆盖体育、音乐、烹饪等活动，并提供三维、语言和相机信息，支持跨视角世界状态理解与技能学习。
   `第一人称 / 人类活动` · `多视角 RGB 视频` · `音频` · `语言` · `相机位姿` · `三维标注`
@@ -1142,11 +1550,29 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://www.argoverse.org/av2.html) · [论文](https://arxiv.org/abs/2301.00493) · [代码](https://github.com/argoverse/av2-api) · 访问方式：开放下载
   入选依据 C3（英文审查说明）：Explicit motion-forecasting scenarios and sequential LiDAR with poses support future-agent and point-cloud prediction. [审查来源](https://arxiv.org/abs/2301.00493) · 2026-10-29
 
+- **GNM SACSoN Navigation** · 2023 · 数据集
+  办公室导航轨迹包含位置/朝向目标、RGB 和观测到的平面位置/朝向。
+  `机器人 / 具身智能` · `RGB 视频` · `智能体位姿` · `轨迹`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_sac_son) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C3（英文审查说明）：Office navigation trajectories pair position/yaw targets with RGB and observed planar position/yaw. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_sac_son) · 2026-10-30
+
 - **Robo360** · 2023 · 数据集
   面向三维物理世界建模的全视角机器人操作数据集，以密集多视角记录不同材料和光学性质物体的操作过程，支持动态神经场与多视角策略研究。
   `机器人 / 具身智能` · `物理 / 科学` · `多视角 RGB 视频` · `相机位姿` · `动作` · `物体元数据`
   [主页](https://robo360dataset.github.io/) · [论文](https://arxiv.org/abs/2312.06686) · [代码](https://github.com/robo360dataset/robo360dataset.github.io) · 访问方式：提供官方项目仓库和论文入口；数据条款待核验
   入选依据 C1（英文审查说明）：Dense-view robot manipulation recordings are explicitly used for dynamic neural representations and multi-view policy learning. [审查来源](https://arxiv.org/abs/2312.06686) · 2026-10-29
+
+- **ScanNet++ (iPhone Sequences)** · 2023 · 数据集
+  官方工具从 iPhone 视频提取编号帧并与相机位姿匹配。
+  `城市 / 三维场景` · `RGB 视频` · `相机位姿` · `轨迹`
+  [代码](https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The official loader extracts numbered frames from iPhone videos and matches sorted frame indices to camera poses. Inclusion covers observation/egomotion sequences in static scenes, not object dynamics. [审查来源](https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py) · 2026-10-30
+
+- **Assembly101 (Temporal Recordings and Poses)** · 2022 · 数据集
+  装配/拆卸录制包含同步视角、逐时二维/三维手部关键点及动作预判任务。
+  `第一人称 / 人类活动` · `多视角 RGB 视频` · `三维状态` · `动作标签` · `轨迹`
+  [代码](https://raw.githubusercontent.com/assembly-101/assembly101-download-scripts/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Assembly recordings include synchronized views and time-indexed 2D/3D hand poses at 60 fps. The native protocol includes action anticipation; hand trajectories also permit separately specified motion forecasting. [审查来源](https://raw.githubusercontent.com/assembly-101/assembly101-download-scripts/main/README.md) · 2026-10-30
 
 - **MOVi** · 2022 · 派生数据 / 子集
   使用 Kubric 生成的多对象视频系列，提供精确实例分割、深度、光流和三维属性，覆盖不同复杂度设置，适合对象发现、跟踪与可解释动态建模。
@@ -1160,11 +1586,53 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://ntu-aris.github.io/ntu_viral_dataset/) · 访问方式：官方数据下载及 CSV 真值
   入选依据 C3（英文审查说明）：Official release supplies flight sequences with synchronized cameras, lidar, IMU/UWB and ground truth. [审查来源](https://ntu-aris.github.io/ntu_viral_dataset/) · 2026-10-29
 
+- **SHIFT (Temporal Sequences)** · 2022 · 数据集
+  10 fps 合成驾驶视频提供序列/帧索引、物体轨迹标识及传感器位姿工具。
+  `自动驾驶` · `合成视频` · `三维框` · `相机位姿` · `轨迹`
+  [代码](https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The release provides 10 fps videos, sequence/frame indexing, object track IDs and sensor-pose tools. Tracking sequences can support forecasting under an explicit history/future split. [审查来源](https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md) · 2026-10-30
+
+- **AIST++** · 2021 · 数据集
+  配乐舞蹈序列，包含逐帧三维关键点和已标定的多视角图像。
+  `第一人称 / 人类活动` · `多视角 RGB 视频` · `三维状态` · `音频` · `轨迹`
+  [主页](https://google.github.io/aistplusplus_dataset/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The release documents 1,408 dance motion sequences, per-frame 3D keypoints, music and calibrated camera views. Forecasting needs a history/future split. [审查来源](https://google.github.io/aistplusplus_dataset/) · 2026-10-30
+
+- **ARKitScenes (Raw Sequences)** · 2021 · 数据集
+  原始 RGB-D 采集包含带时间戳的相机旋转和平移轨迹。
+  `城市 / 三维场景` · `RGB-D` · `相机位姿` · `轨迹`
+  [代码](https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Raw captures include RGB-D/video and camera trajectories whose rows contain timestamp, rotation and translation. Inclusion covers egomotion and observation sequences, not moving-object dynamics. [审查来源](https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md) · 2026-10-30
+
+- **CrowdBot** · 2021 · 数据集
+  拥挤环境 ROS 录制包含 RGB-D、激光雷达、机器人位姿/速度及行人轨迹。
+  `机器人 / 具身智能` · `RGB-D` · `激光雷达` · `机器人状态` · `轨迹`
+  [主页](https://www.epfl.ch/labs/lasa/crowdbot-dataset/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：ROS bag recordings pair onboard RGB-D/LiDAR with robot pose, velocity, controller state and pedestrian tracks. The release citation is December 2021, correcting the former 2020 entry. [审查来源](https://www.epfl.ch/labs/lasa/crowdbot-dataset/) · 2026-10-30
+
+- **DexYCB** · 2021 · 数据集
+  官方工具可加载完整手—物体运动序列，包含逐帧图像、手部关节及物体几何。
+  `第一人称 / 人类活动` · `RGB 视频` · `三维状态` · `物体状态` · `轨迹`
+  [代码](https://raw.githubusercontent.com/NVlabs/dex-ycb-toolkit/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The official toolkit loads full captured hand/object motion sequences and renders per-frame RGB, hand joints and object geometry; it lists 1,000 sequences. Pose-estimation scores are not forecasting metrics. [审查来源](https://raw.githubusercontent.com/NVlabs/dex-ycb-toolkit/master/README.md) · 2026-10-30
+
 - **DSEC** · 2021 · 数据集
   真实驾驶的双目事件与彩色图像序列，提供同步传感器数据、视差及后续发布的光流真值。
   `自动驾驶` · `Event Camera` · `双目 RGB` · `激光雷达` · `GPS / 惯性测量单元` · `光流`
   [主页](https://dsec.ifi.uzh.ch/) · [论文](https://arxiv.org/abs/2103.06011) · 访问方式：官方传感器数据下载及光流、视差基准
   入选依据 C3（英文审查说明）：Driving recordings synchronize stereo frames/events with LiDAR and RTK GPS, enabling ordered observation/ego-trajectory modeling. [审查来源](https://arxiv.org/abs/2103.06011) · 2026-10-29
+
+- **GNM RECON Navigation** · 2021 · 数据集
+  室外导航回合包含 RGB、平面位置/朝向和未来航点目标。
+  `机器人 / 具身智能` · `RGB 视频` · `智能体位姿` · `轨迹`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_recon) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C3（英文审查说明）：Outdoor navigation episodes expose RGB, planar position/yaw and future waypoint targets. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_recon) · 2026-10-30
+
+- **H2O: Two Hands Manipulating Objects** · 2021 · 数据集
+  同步多视角 RGB-D 交互序列包含逐帧手部、物体与相机位姿。
+  `第一人称 / 人类活动` · `RGB-D` · `三维状态` · `物体状态` · `相机位姿`
+  [主页](https://taeinkwon.com/projects/h2o/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Synchronized RGB-D interaction sequences have per-frame 3D hand, 6D object and camera poses. Temporal smoothing is documented; forecasting requires a separate causal split. [审查来源](https://taeinkwon.com/projects/h2o/) · 2026-10-30
 
 - **Hilti SLAM Challenge Dataset** · 2021 · 数据集
   建筑及办公环境的手持多传感器序列，提供时间同步的视觉、LiDAR、IMU 与稀疏高精度位姿真值。
@@ -1183,6 +1651,18 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `激光雷达` · `语义标签` · `GPS / 惯性测量单元`
   [论文](https://arxiv.org/abs/2004.06320) · 访问方式：官方下载门户
   入选依据 C3（英文审查说明）：Retain the 392,556 sequential unannotated sensor frames with vehicle-bus data; non-sequential segmentation images alone do not qualify. [审查来源](https://arxiv.org/abs/2004.06320) · 2026-10-29
+
+- **DoTA (Tracks and FOL Features)** · 2020 · 数据集
+  交通异常视频之外，还发布物体边界框轨迹及用于未来物体定位的光流特征。
+  `自动驾驶` · `RGB 视频` · `二维框` · `光流` · `轨迹`
+  [代码](https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The release includes object bounding-box tracks and optical-flow features used for future-object-localization models, plus ordered frames and anomaly intervals. The tracks support prediction; anomaly labels alone would not. [审查来源](https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md) · 2026-10-30
+
+- **InterHand2.6M** · 2020 · 数据集
+  图像序列与三维手部关节、MANO 参数及帧索引关联，另有 30 fps 版本。
+  `第一人称 / 人类活动` · `多视角 RGB 视频` · `三维状态` · `轨迹`
+  [主页](https://mks0601.github.io/InterHand2.6M/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks. [审查来源](https://mks0601.github.io/InterHand2.6M/) · 2026-10-30
 
 - **KITTI-360** · 2020 · 数据集
   面向长期城市驾驶的多模态三维数据集，提供全景图像、激光雷达、轨迹和三维场景标注。
@@ -1226,6 +1706,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://aihabitat.org/) · [代码](https://github.com/facebookresearch/habitat-lab) · [论文](https://arxiv.org/abs/1904.01201) · 访问方式：开源模拟器
   入选依据 C2（英文审查说明）：Configurable embodied agents and sensors interact in a 3D simulator through task APIs; HM3D/MP3D/Replica are asset dependencies. [审查来源](https://arxiv.org/abs/1904.01201) · 2026-10-29
 
+- **HRI Advice Dataset (HAD)** · 2019 · 派生数据 / 子集
+  HDD 派生驾驶视频包含 CAN 总线信号及自然语言驾驶建议。
+  `自动驾驶` · `RGB 视频` · `机器人状态` · `语言` · `轨迹`
+  [主页](https://usa.honda-ri.com/HAD) · 访问方式：使用大学邮箱申请
+  入选依据 C3（英文审查说明）：The publisher identifies 30 hours of HDD-derived driving videos with CAN-bus signals and language advice. Advice is not a low-level driving command; access requires a university request for non-commercial use. [审查来源](https://usa.honda-ri.com/HAD) · 2026-10-30
+
 - **iGibson** · 2019 · 生成环境 / 工具
   室内具身智能仿真平台，提供视觉、触觉、动作和物理状态轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `仿真状态` · `动作`
@@ -1237,6 +1723,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `惯性测量单元 / GPS` · `三维框`
   [主页](https://www.nuscenes.org/) · [论文](https://arxiv.org/abs/1903.11027) · [代码](https://github.com/nutonomy/nuscenes-devkit) · 访问方式：需注册
   入选依据 C3（英文审查说明）：Twenty-second driving scenes combine synchronized sensors and temporally tracked 3D agents. Retain sequence/trajectory use, not isolated detection images. [审查来源](https://arxiv.org/abs/1903.11027) · 2026-10-29
+
+- **Oxford Radar RobotCar** · 2019 · 数据集
+  RobotCar 雷达扩展包含驾驶雷达、激光雷达及优化后的雷达里程计。
+  `自动驾驶` · `毫米波雷达` · `激光雷达` · `相机位姿` · `轨迹`
+  [主页](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The radar extension provides 280 km of driving with radar, LiDAR and optimized radar odometry. It shares the RobotCar platform and is not a disjoint parent collection. [审查来源](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/) · 2026-10-30
 
 - **SoundSpaces** · 2019 · 生成环境 / 工具
   面向三维环境音频-视觉导航的仿真数据集和环境，将空间音频、视觉观测、动作和位置状态结合起来，支持具身智能体的多模态世界建模。
@@ -1274,6 +1766,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](http://gibsonenv.stanford.edu/database/) · [论文](https://arxiv.org/abs/1808.10654) · [代码](https://github.com/StanfordVL/GibsonEnv) · 访问方式：需申请并同意协议
   入选依据 C2（英文审查说明）：Gibson Env explicitly embeds agents subject to physical and spatial constraints in a released interactive simulator. Scope is Gibson Env, not the static building database alone. [审查来源](https://arxiv.org/abs/1808.10654) · 2026-10-29
 
+- **GNM Cory Hall Navigation** · 2018 · 数据集
+  走廊导航轨迹包含 RGB、平面位置/朝向及对应的航点目标。
+  `机器人 / 具身智能` · `RGB 视频` · `智能体位姿` · `轨迹`
+  [主页](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall) · 访问方式：官方 TFDS 结构与 RLDS 存储入口；完整下载未测试
+  入选依据 C3（英文审查说明）：Hallway navigation trajectories contain RGB, planar position/yaw and corresponding waypoint targets. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [审查来源](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall) · 2026-10-30
+
 - **MVSEC** · 2018 · 数据集
   在多种运动平台上采集的双目事件序列，结合图像、IMU 与多数序列的位姿和深度真值。
   `机器人 / 具身智能` · `自动驾驶` · `Event Camera` · `双目 RGB` · `惯性测量单元` · `深度` · `相机位姿`
@@ -1292,6 +1790,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [论文](https://arxiv.org/abs/1711.01458) · 访问方式：论文入口；数据访问需核验
   入选依据 C2（英文审查说明）：Paper explicitly describes concurrent image/event streams with vehicle speed, GPS, steering, throttle and brake recordings from on-board diagnostics. [审查来源](https://arxiv.org/abs/1711.01458) · 2026-10-29
 
+- **MPI-INF-3DHP (Motion Sequences)** · 2017 · 数据集
+  多相机录制包含持续活动片段和对应的三维人体关节标注。
+  `第一人称 / 人类活动` · `多视角 RGB 视频` · `三维状态` · `轨迹`
+  [论文](https://arxiv.org/pdf/1611.09813) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C3（英文审查说明）：Multi-camera recordings cover approximately minute-long activity sets with released 3D joint annotations. Inclusion concerns ordered human motion; single-frame pose estimation is its native evaluation. [审查来源](https://arxiv.org/pdf/1611.09813) · 2026-10-30
+
 - **PennCOSYVIO** · 2017 · 数据集
   室外到室内的手持视觉惯性轨迹，使用标记定位提供传感器位置参考。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `双目 RGB` · `惯性测量单元` · `相机位姿`
@@ -1303,6 +1807,18 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `城市 / 三维场景` · `机器人 / 具身智能` · `RGB-D` · `相机位姿` · `三维网格` · `语义标签`
   [主页](http://www.scan-net.org/) · [论文](https://arxiv.org/abs/1702.04405) · [代码](https://github.com/ScanNet/ScanNet) · 访问方式：需同意协议
   入选依据 C3（英文审查说明）：RGB-D videos include per-view camera poses, exposing temporal camera-observation trajectories. Retain egomotion sequences, not static reconstructed geometry or object dynamics claims. [审查来源](https://arxiv.org/abs/1702.04405) · 2026-10-29
+
+- **YCB-Video (Camera-Relative Pose Sequences)** · 2017 · 数据集
+  92 段 RGB-D 视频提供逐帧物体位姿，物体布局固定而相机移动。
+  `城市 / 三维场景` · `RGB-D` · `相机位姿` · `物体状态` · `轨迹`
+  [论文](https://arxiv.org/pdf/1711.00199) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C3（英文审查说明）：The 92 RGB-D videos include per-frame object poses; annotation estimates camera trajectories while object configurations remain fixed. Suitable for camera-relative pose sequences, not evidence of dynamic object interactions. [审查来源](https://arxiv.org/pdf/1711.00199) · 2026-10-30
+
+- **Cityscapes (Temporal and Egomotion Data)** · 2016 · 数据集
+  每个标注关键帧附带 30 帧视频上下文、双目视图及车辆里程计。
+  `自动驾驶` · `双目 RGB` · `相机位姿` · `轨迹`
+  [主页](https://www.cityscapes-dataset.com/dataset-overview/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Each annotated image is frame 20 of a 30-frame video snippet; stereo views and vehicle odometry accompany the sequence. Include the temporal/egomotion portion; native segmentation scores are not prediction scores. [审查来源](https://www.cityscapes-dataset.com/dataset-overview/) · 2026-10-30
 
 - **DeepMind Lab** · 2016 · 生成环境 / 工具
   第一人称 3D 导航与交互环境，提供视觉观测、动作和游戏状态轨迹。
@@ -1316,6 +1832,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 访问方式：官方 ETH Research Collection 下载入口
   入选依据 C3（英文审查说明）：Stereo images and synchronized IMU are paired with accurate MAV motion ground truth. [审查来源](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 2026-10-29
 
+- **Oxford RobotCar** · 2016 · 数据集
+  带时间戳的相机和激光雷达流配有 GPS/INS 位置、速度及姿态信息。
+  `自动驾驶` · `RGB 视频` · `激光雷达` · `GPS / 惯性测量单元` · `相机位姿`
+  [主页](https://robotcar-dataset.robots.ox.ac.uk/documentation/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：Timestamped camera/LiDAR streams align with GPS/INS position, velocity and attitude. VO supplies relative poses but is explicitly a reference, not ground truth. [审查来源](https://robotcar-dataset.robots.ox.ac.uk/documentation/) · 2026-10-30
+
 - **KITTI** · 2012 · 数据集
   自动驾驶领域最经典的多传感器数据集之一，提供双目相机、LiDAR、GPS/IMU 和多类评测任务，适合建立深度、场景流、里程计与三维动态建模的可比基线。
   `自动驾驶` · `双目 RGB` · `激光雷达` · `GPS / 惯性测量单元` · `三维框`
@@ -1328,9 +1850,15 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · 访问方式：官方序列下载和轨迹评估工具
   入选依据 C3（英文审查说明）：Official release provides 30 Hz RGB-D images aligned with high-accuracy motion-capture sensor trajectories. [审查来源](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · 2026-10-29
 
+- **NGSIM Vehicle Trajectories** · 2006 · 数据集
+  车辆轨迹以十分之一秒间隔描述交通中的位置变化。
+  `自动驾驶` · `轨迹` · `物体状态`
+  [主页](https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C3（英文审查说明）：The FHWA describes vehicle trajectories sampled every tenth of a second. Positions over time support traffic forecasting; the program is not a camera-control dataset. [审查来源](https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf) · 2026-10-30
+
 <a id="physical-causal-reasoning"></a>
 
-### 物理与因果推理（22）
+### 物理与因果推理（28）
 
 - **CG-World** · 2026 · 数据集
   显式记录状态、事件、关系和反事实分支的大规模计算机图形世界状态数据集。
@@ -1386,17 +1914,41 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [主页](https://bell0o.github.io/GRIP/) · [代码](https://github.com/BeLl0o/GRIP_Dataset) · 访问方式：项目页和官方仓库可用
   入选依据 C4（英文审查说明）：Official HDF5 schema explicitly contains 100-frame grasp trajectories with time-varying joint states, object mesh states, contacts and friction forces. Only currently released subsets count as available. [审查来源](https://github.com/BeLl0o/GRIP_Dataset) · 2026-10-29
 
+- **Guardian OOD (UR5-Fail / RoboFail / RoboVQA)** · 2025 · 派生数据 / 子集
+  执行与受扰规划样例包含图像、计划、任务背景及成功/失败目标。
+  `机器人 / 具身智能` · `RGB 视频` · `语言` · `奖励`
+  [主页](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C4（英文审查说明）：Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data. [审查来源](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 2026-10-30
+
+- **ManipBench (Interaction and Outcome Tasks)** · 2025 · 评测集
+  混合评测中的逆动力学、时序操作、布料交互、反事实和仿真任务提供交互结果目标。
+  `机器人 / 具身智能` · `RGB 视频` · `问答` · `仿真状态`
+  [主页](https://manipbench.github.io/) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C4（英文审查说明）：The benchmark includes inverse dynamics, temporal action sequences, fabric interaction and counterfactual questions, plus executable simulation evaluation. Inclusion is limited to these interaction/outcome tasks. [审查来源](https://manipbench.github.io/) · 2026-10-30
+
 - **OmniEAR / EAR-Bench** · 2025 · 生成环境 / 工具
   评测智能体对物理交互、工具使用和多智能体协调推理能力的文本具身场景基准。
   `机器人 / 具身智能` · `文本` · `动作` · `物体状态` · `轨迹`
   [主页](https://zju-real.github.io/OmniEmbodied/) · [代码](https://github.com/ZJU-REAL/OmniEmbodied) · 访问方式：仓库提供基准数据，Hugging Face 提供专家轨迹
   入选依据 C2（英文审查说明）：OmniEAR/EAR-Bench supplies a structured-state simulator and expert trajectories for physically constrained action execution. Rename to match the official repository; paper title differs across revisions. [审查来源](https://github.com/ZJU-REAL/OmniEmbodied) · 2026-10-29
 
+- **Robo-Dopamine GRM State Pairs** · 2025 · 派生数据 / 子集
+  任务指令、起止锚点及多视角前后状态配有相对进度目标。
+  `机器人 / 具身智能` · `RGB 视频` · `语言` · `奖励`
+  [主页](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C4（英文审查说明）：Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories. [审查来源](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 2026-10-30
+
 - **PokeFlex** · 2024 · 数据集
   面向可变形物体机器人操作的真实世界试验数据集，通过机器人戳动采集完整 360 度三维网格形变及对应力和力矩。
   `机器人 / 具身智能` · `物理 / 科学` · `三维网格` · `动作` · `机器人状态` · `多视角 RGB 视频`
   [主页](https://pokeflex-dataset.github.io/) · [论文](https://arxiv.org/abs/2409.17124) · [代码](https://github.com/pokeflex-dataset/reconstruction) · 访问方式：提供官方项目页和重建代码
   入选依据 C2（英文审查说明）：Robot poking pairs actively deformed 3D meshes with applied forces and torques. [审查来源](https://arxiv.org/abs/2409.17124) · 2026-10-29
+
+- **ARMBench (Activity Defect Subset)** · 2023 · 数据集
+  操作缺陷部分包含抓取/转移/放置背景、视频、包装物理失效及首次缺陷帧。
+  `机器人 / 具身智能` · `RGB 视频` · `物体状态`
+  [论文](https://arxiv.org/pdf/2303.16382) · 访问方式：论文描述该资源；完整下载未测试
+  入选依据 C4（英文审查说明）：The activity subset contains pick/transfer/place context, manipulation videos, physical package-failure outcomes and the first observable defect frame. Inclusion covers these outcome sequences, not the standalone segmentation/identification images. [审查来源](https://arxiv.org/pdf/2303.16382) · 2026-10-30
 
 - **Melting Pot** · 2022 · 生成环境 / 工具
   多智能体社会交互环境套件。
@@ -1421,6 +1973,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `仿真状态` · `物体状态`
   [主页](https://sites.google.com/view/causal-world) · [论文](https://arxiv.org/abs/2010.04296) · [代码](https://github.com/rr-learning/CausalWorld) · 访问方式：官方环境
   入选依据 C4（英文审查说明）：Official simulator provides step(action) and interventions on causal variables such as object mass and size, enabling controlled physical rollouts. [审查来源](https://github.com/rr-learning/CausalWorld) · 2026-10-29
+
+- **DPI-Net Simulation Rollout Generator** · 2019 · 生成环境 / 工具
+  官方脚本生成流体、刚体及颗粒交互轨迹，并分别保存真实和预测回放。
+  `物理 / 科学` · `仿真状态` · `三维状态` · `轨迹`
+  [代码](https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C4（英文审查说明）：Training scripts generate particle simulation data for FluidFall, BoxBath, FluidShake and RiceGrip; evaluation saves separate ground-truth and predicted rollouts. [审查来源](https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md) · 2026-10-30
 
 - **PHYRE** · 2019 · 评测集
   二维物理推理基准，要求智能体通过放置物体完成目标，并在大量模板化关卡中测试跨任务泛化、试错效率和因果干预能力。
@@ -1452,6 +2010,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   [代码](https://github.com/microsoft/TextWorld) · [论文](https://arxiv.org/abs/1806.11532) · 访问方式：开源生成器与游戏
   入选依据 C2（英文审查说明）：Generated interactive games expose state tracking, actions and rewards through a documented RL environment. [审查来源](https://arxiv.org/abs/1806.11532) · 2026-10-29
 
+- **PyBullet** · 2017 · 生成环境 / 工具
+  可执行物理引擎示例通过初始位姿、重力及仿真步进生成物体状态变化。
+  `物理 / 科学` · `仿真状态` · `动作` · `物体状态`
+  [代码](https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py) · 访问方式：官方文档或实现入口；未进行数据下载测试
+  入选依据 C4（英文审查说明）：The executable example sets initial body pose and gravity, advances stepSimulation and exposes body position/orientation. This is a dynamics generator, not a recorded dataset. [审查来源](https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py) · 2026-10-30
+
 - **MIT Planar Pushing Dataset** · 2016 · 数据集
   高精度平面推动实验数据集，系统记录不同物体、接触位置、推动方向和摩擦条件下的动作与物体运动，用于学习接触动力学。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `物体状态` · `轨迹` · `机器人状态`
@@ -1466,7 +2030,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### 世界模型评测与诊断（39）
+### 世界模型评测与诊断（40）
 
 - **4DSynth** · 2026 · 生成环境 / 工具
   面向动态具身仿真的可控程序化四维世界合成资源。
@@ -1629,6 +2193,12 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `自动驾驶` · `RGB 视频` · `三维标注` · `轨迹` · `GPS / 惯性测量单元`
   [主页](https://modelscope.cn/datasets/Georgehhhh/ORAD-3D) · [论文](https://arxiv.org/abs/2510.16500) · [代码](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) · 访问方式：已在 ModelScope 和百度云公开发布
   入选依据 C5（英文审查说明）：The paper explicitly defines an off-road world-model evaluation track; retain that track, not static free-space detection as inclusion evidence. [审查来源](https://arxiv.org/abs/2510.16500) · 2026-10-29
+
+- **WoWBench (Released Samples)** · 2025 · 评测集
+  初始图像和指令配有参考视频与跟踪关键点，用于物理一致性及未来轨迹评测。
+  `机器人 / 具身智能` · `RGB 视频` · `语言` · `轨迹`
+  [论文](https://arxiv.org/html/2509.22642v1) · [主页](https://huggingface.co/datasets/WoW-world-model/WoW-1-Benchmark-Samples) · 访问方式：已发布基准样例包；未确认完整评测代码发布
+  入选依据 C5（英文审查说明）：WoWBench pairs initial images/instructions with reference videos and tracking keypoints, evaluating future physical consistency and trajectories. The repository releases benchmark samples; a complete evaluation-code release is not confirmed. [审查来源](https://arxiv.org/html/2509.22642v1) · 2026-10-30
 
 - **MMWorld** · 2024 · 评测集
   用于多学科、多维度视频世界理解评测的人工标注与合成数据集，覆盖解释、反事实思考和未来预测等能力。

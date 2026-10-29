@@ -1,0 +1,53 @@
+{
+  "id": "cityscapes",
+  "name": "Cityscapes (Temporal and Egomotion Data)",
+  "shortName": "Cityscapes (Temporal and Egomotion Data)",
+  "year": 2016,
+  "summary": "每个标注关键帧附带 30 帧视频上下文、双目视图及车辆里程计。",
+  "summaryEn": "Each annotated keyframe has 30-frame video context, stereo views and vehicle odometry.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Stereo RGB",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Daimler and Max Planck Institute for Informatics",
+  "organizationsZh": "戴姆勒、马克斯·普朗克信息学研究所",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "仅凭静态分割任务不满足收录；本条限定时间上下文与自运动数据，原生分割指标不是预测指标。",
+  "wmNoteEn": "Each annotated image is frame 20 of a 30-frame video snippet; stereo views and vehicle odometry accompany the sequence. Include the temporal/egomotion portion; native segmentation scores are not prediction scores.",
+  "links": {
+    "homepage": "https://www.cityscapes-dataset.com/dataset-overview/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://www.cityscapes-dataset.com/dataset-overview/",
+    "sourceTitle": "Cityscapes Dataset Overview",
+    "locator": "Metadata",
+    "statement": "Each annotated image is frame 20 of a 30-frame video snippet; stereo views and vehicle odometry accompany the sequence. Include the temporal/egomotion portion; native segmentation scores are not prediction scores.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

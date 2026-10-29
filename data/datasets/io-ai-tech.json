@@ -1,0 +1,63 @@
+{
+  "id": "io-ai-tech",
+  "name": "IO-AI RLDS Robot Data",
+  "shortName": "IO-AI RLDS Robot Data",
+  "year": 2024,
+  "summary": "该 RLDS 版本包含七维动作、八维状态、多视角 RGB、深度及相机标定。",
+  "summaryEn": "The RLDS release has seven-dimensional actions, eight-dimensional state, multiple RGB views, depth and camera calibration.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "本条限定 TFDS RLDS 结构；上游 IO Ultra 转换说明描述了不同的更丰富结构。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "This entry describes the TFDS RLDS schema; the upstream IO Ultra conversion README describes a different, richer layout. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/io_ai_tech"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/io_ai_tech",
+    "sourceTitle": "IO-AI RLDS Robot Data / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "The RLDS release has seven-dimensional actions, eight-dimensional state, multiple RGB views, depth and camera calibration. Steps are organized into episodes. This entry describes the TFDS RLDS schema; the upstream IO Ultra conversion README describes a different, richer layout.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "io_ai_tech"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Published in the TFDS registry on 2024-04-03; original dataset date unspecified.",
+    "source": "https://github.com/tensorflow/datasets/commit/27c5a914e80a00830e1a932f563c55e4761d3a88"
+  }
+}

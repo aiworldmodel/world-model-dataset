@@ -1,0 +1,54 @@
+{
+  "id": "oxford-robotcar",
+  "name": "Oxford RobotCar",
+  "shortName": "Oxford RobotCar",
+  "year": 2016,
+  "summary": "带时间戳的相机和激光雷达流配有 GPS/INS 位置、速度及姿态信息。",
+  "summaryEn": "Timestamped camera/LiDAR streams accompany GPS/INS position, velocity and attitude.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "GPS / IMU",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "University of Oxford Mobile Robotics Group",
+  "organizationsZh": "牛津大学移动机器人研究组",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "视觉里程计是参考轨迹而非真值；年份采用原始论文在线发表年份 2016。",
+  "wmNoteEn": "Timestamped camera/LiDAR streams align with GPS/INS position, velocity and attitude. VO supplies relative poses but is explicitly a reference, not ground truth.",
+  "links": {
+    "homepage": "https://robotcar-dataset.robots.ox.ac.uk/documentation/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://robotcar-dataset.robots.ox.ac.uk/documentation/",
+    "sourceTitle": "Oxford RobotCar documentation",
+    "locator": "Data Format, GPS/INS and Visual Odometry",
+    "statement": "Timestamped camera/LiDAR streams align with GPS/INS position, velocity and attitude. VO supplies relative poses but is explicitly a reference, not ground truth.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

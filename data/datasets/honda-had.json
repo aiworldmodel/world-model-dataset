@@ -1,0 +1,54 @@
+{
+  "id": "honda-had",
+  "name": "HRI Advice Dataset (HAD)",
+  "shortName": "HRI Advice Dataset (HAD)",
+  "year": 2019,
+  "summary": "HDD 派生驾驶视频包含 CAN 总线信号及自然语言驾驶建议。",
+  "summaryEn": "HDD-derived driving videos contain CAN-bus signals and natural-language driving advice.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Language",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "30 hours of driving video with CAN-bus signals",
+  "scaleZh": "30 小时驾驶视频及 CAN 总线信号",
+  "organizations": "Honda Research Institute",
+  "organizationsZh": "本田研究院",
+  "license": "Non-commercial use; publisher request required",
+  "licenseZh": "限非商业使用；须向发布者申请",
+  "access": "Request with a university email",
+  "accessZh": "使用大学邮箱申请",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "建议不是低层控制指令；30 小时数据须通过大学邮箱申请，限非商业使用。",
+  "wmNoteEn": "The publisher identifies 30 hours of HDD-derived driving videos with CAN-bus signals and language advice. Advice is not a low-level driving command; access requires a university request for non-commercial use.",
+  "links": {
+    "homepage": "https://usa.honda-ri.com/HAD"
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://usa.honda-ri.com/HAD",
+    "sourceTitle": "HRI Advice Dataset (HAD)",
+    "locator": "Dataset features, download requirements and citation",
+    "statement": "The publisher identifies 30 hours of HDD-derived driving videos with CAN-bus signals and language advice. Advice is not a low-level driving command; access requires a university request for non-commercial use.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

@@ -1,0 +1,64 @@
+{
+  "id": "columbia-cairlab-pusht-real",
+  "name": "Columbia Push-T Real",
+  "shortName": "Columbia Push-T Real",
+  "year": 2023,
+  "summary": "真实 UR5 推送回合将末端平移/旋转/夹爪动作与外部/腕部图像及平面末端位置对应。",
+  "summaryEn": "Real UR5 pushing episodes pair end-effector translation/rotation/gripper actions with external/wrist images and planar end-effector position.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "真实 UR5 录制与另列的 Push-T 仿真包不同。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Real UR5 recordings are distinct from the separately cataloged simulated Push-T archive. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real",
+    "sourceTitle": "Columbia Push-T Real / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Real UR5 pushing episodes pair end-effector translation/rotation/gripper actions with external/wrist images and planar end-effector position. Steps are organized into episodes. Real UR5 recordings are distinct from the separately cataloged simulated Push-T archive.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "columbia_cairlab_pusht_real"
+  ],
+  "relatedResources": [
+    "open-x-embodiment",
+    "pusht"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real"
+  }
+}

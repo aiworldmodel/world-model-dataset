@@ -1,0 +1,60 @@
+{
+  "id": "minigrid",
+  "name": "Minigrid",
+  "shortName": "Minigrid",
+  "year": 2023,
+  "summary": "网格环境提供离散动作、任务条件观测以及导航和物体状态变化。",
+  "summaryEn": "Grid environments expose discrete actions, mission-conditioned observations and navigation/object state changes.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "Game State",
+    "Action",
+    "Reward"
+  ],
+  "structure": [
+    "Environment / Benchmark"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Farama Foundation",
+  "organizationsZh": "Farama 基金会",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "属于可生成交互的环境，不是固定数据包；年份采用官方引用年份 2023。BabyAI 为相关派生套件。",
+  "wmNoteEn": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md",
+    "sourceTitle": "Minigrid official README",
+    "locator": "Environments and citation",
+    "statement": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "babyai"
+  ],
+  "yearBasis": {
+    "description": "Official citation year; not a claim that the first implementation appeared in 2023.",
+    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+  }
+}

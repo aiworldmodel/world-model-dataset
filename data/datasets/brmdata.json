@@ -1,0 +1,54 @@
+{
+  "id": "brmdata",
+  "name": "BRMData",
+  "shortName": "BRMData",
+  "year": 2024,
+  "summary": "双臂移动操作 HDF5 数据对齐动作、多视角图像、关节位置/速度/力矩与底座速度。",
+  "summaryEn": "Bimanual mobile-manipulation HDF5 data align actions, multi-view images, joint position/velocity/effort and base velocity.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "依据官方采集器的逐时写入格式；数据文件下载和完整性未测试。",
+  "wmNoteEn": "The HDF5 writer pairs timesteps with actions and stores multi-view images, 14-joint position/velocity/effort and base velocity. This establishes the action-aligned bimanual trajectory schema.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py",
+    "homepage": "https://embodiedrobot.github.io/BRMData.html"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py",
+    "sourceTitle": "BRMData official collection schema",
+    "locator": "save_data and get_frame",
+    "statement": "The HDF5 writer pairs timesteps with actions and stores multi-view images, 14-joint position/velocity/effort and base velocity. This establishes the action-aligned bimanual trajectory schema.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

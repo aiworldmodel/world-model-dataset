@@ -1,0 +1,53 @@
+{
+  "id": "pybullet",
+  "name": "PyBullet",
+  "shortName": "PyBullet",
+  "year": 2017,
+  "summary": "可执行物理引擎示例通过初始位姿、重力及仿真步进生成物体状态变化。",
+  "summaryEn": "Executable physics examples generate object-state evolution from initial poses, gravity and simulation steps.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Action",
+    "Object State"
+  ],
+  "structure": [
+    "Environment / Benchmark"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Erwin Coumans and collaborators",
+  "organizationsZh": "Erwin Coumans 及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "属于生成工具；公开示例读取物体位置和朝向，不宣称已存在统一录制数据集。",
+  "wmNoteEn": "The executable example sets initial body pose and gravity, advances stepSimulation and exposes body position/orientation. This is a dynamics generator, not a recorded dataset.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py",
+    "sourceTitle": "PyBullet official simulation example",
+    "locator": "hello_pybullet.py",
+    "statement": "The executable example sets initial body pose and gravity, advances stepSimulation and exposes body position/orientation. This is a dynamics generator, not a recorded dataset.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

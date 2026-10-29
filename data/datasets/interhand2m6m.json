@@ -1,0 +1,53 @@
+{
+  "id": "interhand2m6m",
+  "name": "InterHand2.6M",
+  "shortName": "InterHand2.6M",
+  "year": 2020,
+  "summary": "图像序列与三维手部关节、MANO 参数及帧索引关联，另有 30 fps 版本。",
+  "summaryEn": "Image sequences link frame indices to 3D hand joints and MANO parameters, with a separate 30 fps release.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "3D State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "2.59M frames at nominal 5 fps; separate 30 fps version",
+  "scaleZh": "约 259 万帧（标称 5 fps）；另有 30 fps 版本",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "部分采集存在缺帧，预测实验必须检查帧间隔，不能直接视为等间隔完整轨迹。",
+  "wmNoteEn": "Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks.",
+  "links": {
+    "homepage": "https://mks0601.github.io/InterHand2.6M/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://mks0601.github.io/InterHand2.6M/",
+    "sourceTitle": "InterHand2.6M official release",
+    "locator": "Annotation files; InterHand2.6M in 30 fps",
+    "statement": "Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

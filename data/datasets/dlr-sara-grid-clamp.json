@@ -1,0 +1,63 @@
+{
+  "id": "dlr-sara-grid-clamp",
+  "name": "DLR SARA Grid Clamp",
+  "shortName": "DLR SARA Grid Clamp",
+  "year": 2023,
+  "summary": "网格夹具放置回合提供七维动作、RGB 和 12 维位姿/力旋量观测。",
+  "summaryEn": "Grid-clamp placement episodes provide seven-dimensional actions, RGB and 12-dimensional pose/wrench observations.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "107 episodes",
+  "scaleZh": "107 个回合",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "七维动作说明仅定义六个位姿分量，最后一维须另行核对。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "The seven-dimensional action description documents only six pose components; verify the last component. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds",
+    "sourceTitle": "DLR SARA Grid Clamp / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Grid-clamp placement episodes provide seven-dimensional actions, RGB and 12-dimensional pose/wrench observations. Steps are organized into episodes. The seven-dimensional action description documents only six pose components; verify the last component.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "dlr_sara_grid_clamp_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds"
+  }
+}

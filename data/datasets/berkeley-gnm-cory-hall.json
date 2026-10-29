@@ -1,0 +1,63 @@
+{
+  "id": "berkeley-gnm-cory-hall",
+  "name": "GNM Cory Hall Navigation",
+  "shortName": "GNM Cory Hall Navigation",
+  "year": 2018,
+  "summary": "走廊导航轨迹包含 RGB、平面位置/朝向及对应的航点目标。",
+  "summaryEn": "Hallway navigation trajectories contain RGB, planar position/yaw and corresponding waypoint targets.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Agent Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "7,331 episodes",
+  "scaleZh": "7,331 个回合",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "目标是导航航点，不是轮速或电机控制命令。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Targets are navigation waypoints, not wheel/motor commands. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall",
+    "sourceTitle": "GNM Cory Hall Navigation / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Hallway navigation trajectories contain RGB, planar position/yaw and corresponding waypoint targets. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "berkeley_gnm_cory_hall"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall"
+  }
+}

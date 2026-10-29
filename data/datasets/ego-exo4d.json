@@ -56,5 +56,8 @@
     "level": "paper",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [],
+  "relatedResources": [
+    "ego4d"
+  ]
 }

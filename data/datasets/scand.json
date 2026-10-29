@@ -1,0 +1,55 @@
+{
+  "id": "scand",
+  "name": "SCAND",
+  "shortName": "SCAND",
+  "year": 2022,
+  "summary": "Spot 和 Jackal 遥操作导航轨迹配有摇杆指令、里程计及视觉/惯性/激光雷达观测。",
+  "summaryEn": "Teleoperated Spot and Jackal navigation trajectories include joystick commands, odometry and visual/inertial/LiDAR observations.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "论文报告 138 条轨迹；访问和逐样本完整性未通过下载测试。",
+  "wmNoteEn": "The paper reports 138 teleoperated navigation trajectories with joystick commands, odometry, visual/inertial observations and 3D LiDAR on Spot and Jackal.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2203.15041"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2203.15041",
+    "sourceTitle": "Socially Compliant Navigation Dataset (SCAND)",
+    "locator": "Abstract",
+    "statement": "The paper reports 138 teleoperated navigation trajectories with joystick commands, odometry, visual/inertial observations and 3D LiDAR on Spot and Jackal.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

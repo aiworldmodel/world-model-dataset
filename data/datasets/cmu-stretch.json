@@ -1,0 +1,63 @@
+{
+  "id": "cmu-stretch",
+  "name": "CMU Stretch Kitchen",
+  "shortName": "CMU Stretch Kitchen",
+  "year": 2023,
+  "summary": "厨房交互回合提供八维末端/夹爪/终止动作、RGB 及四维状态。",
+  "summaryEn": "Kitchen interaction episodes provide eight-dimensional end-effector/gripper/termination actions, RGB and four-dimensional state.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "135 episodes",
+  "scaleZh": "135 个回合",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作坐标和采样约定以该版本为准；跨机器人合并前须核查。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Action coordinates and sampling conventions follow this release; check them before combining embodiments. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/cmu_stretch"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/cmu_stretch",
+    "sourceTitle": "CMU Stretch Kitchen / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Kitchen interaction episodes provide eight-dimensional end-effector/gripper/termination actions, RGB and four-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "cmu_stretch"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/cmu_stretch"
+  }
+}

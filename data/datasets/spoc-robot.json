@@ -1,0 +1,66 @@
+{
+  "id": "spoc-robot",
+  "name": "SPOC Simulation Trajectories",
+  "shortName": "SPOC Simulation Trajectories",
+  "year": 2023,
+  "summary": "导航/操作回合包含动作、双相机视角、智能体位置、物体状态标记及任务成功元数据。",
+  "summaryEn": "Navigation/manipulation episodes provide actions, two camera views, agent location, object state indicators and task-success metadata.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "Action",
+    "Agent Pose",
+    "Object State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "233,151 episodes (212,043 train / 21,108 validation)",
+  "scaleZh": "233,151 个回合 (212,043 训练 / 21,108 验证)",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作坐标和采样约定以该版本为准；跨机器人合并前须核查。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Action coordinates and sampling conventions follow this release; check them before combining embodiments. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/spoc_robot"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/spoc_robot",
+    "sourceTitle": "SPOC Simulation Trajectories / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Navigation/manipulation episodes provide actions, two camera views, agent location, object state indicators and task-success metadata. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "spoc_robot"
+  ],
+  "relatedResources": [
+    "open-x-embodiment",
+    "procthor",
+    "ai2-thor"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/spoc_robot"
+  }
+}

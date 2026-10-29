@@ -1,0 +1,58 @@
+{
+  "id": "austin-buds",
+  "name": "BUDS Robot Demonstrations",
+  "shortName": "BUDS Robot Demonstrations",
+  "year": 2022,
+  "summary": "分层机器人操作示范，逐步提供末端/夹爪动作、相机图像与机器人状态。",
+  "summaryEn": "Robot manipulation demonstrations with step-aligned end-effector/gripper actions, camera images and state.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "50 episodes (TFDS 0.1.0)",
+  "scaleZh": "50 个回合（TFDS 0.1.0）",
+  "organizations": "University of Texas at Austin",
+  "organizationsZh": "得克萨斯大学奥斯汀分校",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作定义以公开 RLDS 版本为准；与 Open X 聚合集合重叠。",
+  "wmNoteEn": "50 episodes contain step-aligned end-effector delta/gripper actions, RGB and wrist images, and robot state.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds",
+    "sourceTitle": "BUDS RLDS / TensorFlow Datasets",
+    "locator": "Feature structure and splits",
+    "statement": "50 episodes contain step-aligned end-effector delta/gripper actions, RGB and wrist images, and robot state.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "austin_buds_dataset_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
+}

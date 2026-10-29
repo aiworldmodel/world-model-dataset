@@ -1,0 +1,56 @@
+{
+  "id": "robothor",
+  "name": "RoboTHOR",
+  "shortName": "RoboTHOR",
+  "year": 2020,
+  "summary": "LoCoBot 仿真接口提供移动/转向动作、RGB/深度观测及智能体位姿。",
+  "summaryEn": "A LoCoBot simulation interface exposes move/rotate actions, RGB/depth observations and agent poses.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Agent Pose"
+  ],
+  "structure": [
+    "Environment / Benchmark"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Allen Institute for AI",
+  "organizationsZh": "艾伦人工智能研究所",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "属于 AI2-THOR 生态的可执行环境，不能与其父项目直接当作独立数据量相加。",
+  "wmNoteEn": "The LoCoBot controller exposes move/rotate actions, RGB/depth observations and agent poses in named environments. It is part of AI2-THOR, so counts do not imply independent corpora.",
+  "links": {
+    "homepage": "https://ai2thor.allenai.org/robothor/documentation/"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://ai2thor.allenai.org/robothor/documentation/",
+    "sourceTitle": "RoboTHOR API Reference",
+    "locator": "Initialization, movement, observations",
+    "statement": "The LoCoBot controller exposes move/rotate actions, RGB/depth observations and agent poses in named environments. It is part of AI2-THOR, so counts do not imply independent corpora.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "ai2-thor"
+  ]
+}

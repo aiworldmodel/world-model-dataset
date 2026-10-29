@@ -1,0 +1,59 @@
+{
+  "id": "austin-mutex",
+  "name": "MUTEX Robot Demonstrations",
+  "shortName": "MUTEX Robot Demonstrations",
+  "year": 2023,
+  "summary": "带多模态任务描述的操作回合，包含逐步动作、双视角图像及机器人状态。",
+  "summaryEn": "Manipulation episodes with multimodal task descriptions, stepwise actions, two camera views and robot state.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "1,500 episodes (TFDS 0.1.0)",
+  "scaleZh": "1,500 个回合（TFDS 0.1.0）",
+  "organizations": "University of Texas at Austin",
+  "organizationsZh": "得克萨斯大学奥斯汀分校",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "任务描述与低层控制动作分别存储；不要把语言标签当成电机控制。",
+  "wmNoteEn": "1,500 episodes expose step-level actions, RGB/wrist images and 24-dimensional robot state. Modal task descriptions are not motor commands.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/utaustin_mutex"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/utaustin_mutex",
+    "sourceTitle": "MUTEX RLDS / TensorFlow Datasets",
+    "locator": "Feature structure and splits",
+    "statement": "1,500 episodes expose step-level actions, RGB/wrist images and 24-dimensional robot state. Modal task descriptions are not motor commands.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "utaustin_mutex"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
+}

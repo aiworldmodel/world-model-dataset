@@ -1,0 +1,54 @@
+{
+  "id": "stu",
+  "name": "STU (Sequential Sensor and Pose Data)",
+  "shortName": "STU (Sequential Sensor and Pose Data)",
+  "year": 2025,
+  "summary": "连续激光雷达/相机录制配有由 KISS-ICP 估计并按 KITTI 格式导出的车辆位姿。",
+  "summaryEn": "Sequential LiDAR/camera recordings include KISS-ICP vehicle-pose estimates exported in KITTI format.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "位姿是算法估计结果，不是独立真值；只以序列和自运动数据为收录依据。",
+  "wmNoteEn": "The paper documents sequential LiDAR/camera recordings and per-scan vehicle poses estimated by KISS-ICP and exported in KITTI format. Inclusion is limited to sequential egomotion data; these estimated poses are not independent ground truth.",
+  "links": {
+    "paper": "https://arxiv.org/html/2505.02148v1"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/html/2505.02148v1",
+    "sourceTitle": "Spotting the Unexpected (STU)",
+    "locator": "Sections 3 and 7.1",
+    "statement": "The paper documents sequential LiDAR/camera recordings and per-scan vehicle poses estimated by KISS-ICP and exported in KITTI format. Inclusion is limited to sequential egomotion data; these estimated poses are not independent ground truth.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

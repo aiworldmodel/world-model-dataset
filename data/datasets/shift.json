@@ -1,0 +1,54 @@
+{
+  "id": "shift",
+  "name": "SHIFT (Temporal Sequences)",
+  "shortName": "SHIFT (Temporal Sequences)",
+  "year": 2022,
+  "summary": "10 fps 合成驾驶视频提供序列/帧索引、物体轨迹标识及传感器位姿工具。",
+  "summaryEn": "Synthetic driving video at 10 fps provides sequence/frame indices, object track IDs and sensor-pose tools.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "3D Boxes",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "可在显式历史/未来划分下研究预测；原生感知与跟踪指标不直接代表预测能力。",
+  "wmNoteEn": "The release provides 10 fps videos, sequence/frame indexing, object track IDs and sensor-pose tools. Tracking sequences can support forecasting under an explicit history/future split.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md",
+    "sourceTitle": "SHIFT DevKit",
+    "locator": "Download, dataloader and file layout",
+    "statement": "The release provides 10 fps videos, sequence/frame indexing, object track IDs and sensor-pose tools. Tracking sequences can support forecasting under an explicit history/future split.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

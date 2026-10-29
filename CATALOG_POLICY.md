@@ -32,6 +32,10 @@ Actions are not mandatory for every resource. Camera/egomotion and human-motion 
 
 ## Resource types and counting / 类型与计数
 
+The catalog year identifies the original resource publication or documented release, not the date of every later conversion, update or supporting prediction paper. Where the original date is unspecified, record a dated public registry entry in `yearBasis`. A pre-2026 publication does not establish that every currently available file existed before 2026.
+
+目录年份采用原始资源发表或有记录的发布年份，不代表后续转换、更新或支持其预测用途的论文年份。原始年份不明时，在 `yearBasis` 中记录有日期的公开注册记录。2026 年前发表不等于当前全部文件都在当时发布。
+
 | Stored value | Meaning / 含义 |
 | --- | --- |
 | `dataset` | An identifiable recorded or generated data release / 可识别的数据发布 |
@@ -58,6 +62,9 @@ The build rejects missing evidence, unsupported criteria/types, detached evidenc
 构建检查只能强制审查记录完整，不能自动判定科学证据是否成立。未来新增仍须逐源人工判断。
 
 ## Review history / 审查记录
+
+- [2026-10-30 pre-2026 expansion and complete catalog checks / 历史资源补录及全目录复查](audit/pre2026-review-2026-10-30.md)
+- [Current decisions / 当前逐条决策 JSON](audit/pre2026-review-2026-10-30.json) · [CSV](audit/pre2026-review-2026-10-30.csv)
 
 - [2026-10-29 full-catalog source review / 全量来源审查](audit/evidence-review-2026-10-29.md)
 - [Machine-readable decisions / 逐条决策 JSON](audit/evidence-review-2026-10-29.json)

@@ -54,5 +54,10 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [
+    "stanford_robocook_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

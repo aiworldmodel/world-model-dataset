@@ -1,0 +1,58 @@
+{
+  "id": "robotics-transformer-rt1",
+  "name": "RT-1 Public RLDS (fractal20220817_data)",
+  "shortName": "RT-1 Public RLDS (fractal20220817_data)",
+  "year": 2022,
+  "summary": "RT-1 公开回合包含图像、末端/底座控制以及回合边界。",
+  "summaryEn": "Public RT-1 episodes include images, end-effector/base control and episode boundaries.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "87,212 released RLDS episodes",
+  "scaleZh": "公开 RLDS 版本包含 87,212 个回合",
+  "organizations": "Google Research and collaborators",
+  "organizationsZh": "Google Research 及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "公开 RLDS 版本为 87,212 回合，不能用论文完整训练量替代公开量。",
+  "wmNoteEn": "The public RLDS release contains 87,212 episodes with image observations, end-effector/base commands and episode boundaries. This is not the paper's entire training-data total.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/fractal20220817_data"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/fractal20220817_data",
+    "sourceTitle": "RT-1 fractal20220817_data / TensorFlow Datasets",
+    "locator": "Feature structure and splits",
+    "statement": "The public RLDS release contains 87,212 episodes with image observations, end-effector/base commands and episode boundaries. This is not the paper's entire training-data total.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "fractal_20220817_data"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
+}

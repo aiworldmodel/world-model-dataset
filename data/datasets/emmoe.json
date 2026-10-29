@@ -1,0 +1,57 @@
+{
+  "id": "emmoe",
+  "name": "EMMOE-100 Interactive Benchmark",
+  "shortName": "EMMOE-100 Interactive Benchmark",
+  "year": 2025,
+  "summary": "EMMOE-100 提供任务、高层规划与 Habitat 低层执行流程和成功率评测。",
+  "summaryEn": "EMMOE-100 provides tasks, high-level planning, low-level Habitat execution and success evaluation.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Agent Pose",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "EMMOE project team",
+  "organizationsZh": "EMMOE 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "收录交互评测流程及结果保存路径；不把模型权重等同于数据发布。",
+  "wmNoteEn": "The release documents EMMOE-100 tasks and runnable high-level planning/low-level Habitat execution with saved results and success metrics. Inclusion covers the interactive benchmark.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/silence143/EMMOE/main/README.md"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://raw.githubusercontent.com/silence143/EMMOE/main/README.md",
+    "sourceTitle": "EMMOE official README",
+    "locator": "Interactive Play; Evaluations",
+    "statement": "The release documents EMMOE-100 tasks and runnable high-level planning/low-level Habitat execution with saved results and success metrics. Inclusion covers the interactive benchmark.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "habitat-lab"
+  ]
+}

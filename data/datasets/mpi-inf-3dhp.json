@@ -1,0 +1,53 @@
+{
+  "id": "mpi-inf-3dhp",
+  "name": "MPI-INF-3DHP (Motion Sequences)",
+  "shortName": "MPI-INF-3DHP (Motion Sequences)",
+  "year": 2017,
+  "summary": "多相机录制包含持续活动片段和对应的三维人体关节标注。",
+  "summaryEn": "Multi-camera activity recordings include temporally ordered 3D human-joint annotations.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "3D State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Max Planck Institute for Informatics",
+  "organizationsZh": "马克斯·普朗克信息学研究所",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "原生任务是单帧姿态估计；用于运动预测时必须保留顺序并另定时间划分。",
+  "wmNoteEn": "Multi-camera recordings cover approximately minute-long activity sets with released 3D joint annotations. Inclusion concerns ordered human motion; single-frame pose estimation is its native evaluation.",
+  "links": {
+    "paper": "https://arxiv.org/pdf/1611.09813"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/pdf/1611.09813",
+    "sourceTitle": "MPI-INF-3DHP original paper",
+    "locator": "Section 5, dataset capture",
+    "statement": "Multi-camera recordings cover approximately minute-long activity sets with released 3D joint annotations. Inclusion concerns ordered human motion; single-frame pose estimation is its native evaluation.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

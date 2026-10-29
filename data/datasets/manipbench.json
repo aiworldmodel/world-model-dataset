@@ -1,0 +1,53 @@
+{
+  "id": "manipbench",
+  "name": "ManipBench (Interaction and Outcome Tasks)",
+  "shortName": "ManipBench (Interaction and Outcome Tasks)",
+  "year": 2025,
+  "summary": "混合评测中的逆动力学、时序操作、布料交互、反事实和仿真任务提供交互结果目标。",
+  "summaryEn": "Interaction portions cover inverse dynamics, temporal actions, fabric interactions, counterfactuals and simulation tasks.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "QA",
+    "Simulation State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "仅限定这些交互/结果任务；不能把全部问答题数都算作世界模型评测样本。",
+  "wmNoteEn": "The benchmark includes inverse dynamics, temporal action sequences, fabric interaction and counterfactual questions, plus executable simulation evaluation. Inclusion is limited to these interaction/outcome tasks.",
+  "links": {
+    "homepage": "https://manipbench.github.io/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://manipbench.github.io/",
+    "sourceTitle": "ManipBench official project",
+    "locator": "Question types and simulation tasks",
+    "statement": "The benchmark includes inverse dynamics, temporal action sequences, fabric interaction and counterfactual questions, plus executable simulation evaluation. Inclusion is limited to these interaction/outcome tasks.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

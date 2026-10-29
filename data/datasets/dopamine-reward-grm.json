@@ -1,0 +1,53 @@
+{
+  "id": "dopamine-reward-grm",
+  "name": "Robo-Dopamine GRM State Pairs",
+  "shortName": "Robo-Dopamine GRM State Pairs",
+  "year": 2025,
+  "summary": "任务指令、起止锚点及多视角前后状态配有相对进度目标。",
+  "summaryEn": "Task instructions, start/end anchors and multi-view before/after states carry relative-progress targets.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Dopamine-Reward project team",
+  "organizationsZh": "Dopamine-Reward 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "这是派生状态对资源，不能描述为完整动作轨迹，也不能用模型训练总量代替公开数据量。",
+  "wmNoteEn": "Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset"
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset",
+    "sourceTitle": "Robo-Dopamine GRM dataset card",
+    "locator": "Overview and JSON format",
+    "statement": "Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

@@ -1,0 +1,63 @@
+{
+  "id": "berkeley-fanuc-manipulation",
+  "name": "Berkeley Fanuc Manipulation",
+  "shortName": "Berkeley Fanuc Manipulation",
+  "year": 2023,
+  "summary": "操作回合包含六维位姿增量动作、外部/腕部图像、末端位姿及关节状态。",
+  "summaryEn": "Manipulation episodes contain six-dimensional pose-delta actions, external/wrist images, end-effector pose and joint states.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "415 episodes",
+  "scaleZh": "415 个回合",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作坐标和采样约定以该版本为准；跨机器人合并前须核查。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Action coordinates and sampling conventions follow this release; check them before combining embodiments. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation",
+    "sourceTitle": "Berkeley Fanuc Manipulation / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Manipulation episodes contain six-dimensional pose-delta actions, external/wrist images, end-effector pose and joint states. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "berkeley_fanuc_manipulation"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation"
+  }
+}

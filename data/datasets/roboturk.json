@@ -1,10 +1,10 @@
 {
   "id": "roboturk",
-  "name": "RoboTurk",
+  "name": "RoboTurk Real-Robot Demonstrations",
   "shortName": "RoboTurk",
-  "year": 2018,
-  "summary": "通过众包远程操作收集的真实机器人示范数据，展示低成本扩展人类操作轨迹的方式，并提供视觉、动作和机器人状态。",
-  "summaryEn": "A real-robot demonstration dataset collected through crowdsourced teleoperation, with vision, actions, and robot state for scalable imitation learning.",
+  "year": 2019,
+  "summary": "真实机器人折布与叠碗回合，包含逐步平移、旋转、夹爪动作和正面 RGB 观测。",
+  "summaryEn": "Real-robot cloth-folding and bowl-stacking episodes with stepwise translation, rotation, gripper actions and front RGB observations.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
   "secondaryTasks": [
@@ -16,7 +16,7 @@
   "modalities": [
     "RGB Video",
     "Action",
-    "Robot State"
+    "Language"
   ],
   "structure": [
     "Agent Trajectories",
@@ -26,33 +26,35 @@
     "Real-world",
     "Teleoperation"
   ],
-  "scale": "2,144 demonstrations · 111 remote users · 2 manipulation tasks",
-  "scaleZh": "2,144 条示范 · 111 名远程用户 · 2 项操作任务",
+  "scale": "RLDS 0.1.0: 1,995 episodes (1,796 train / 199 test)",
+  "scaleZh": "RLDS 0.1.0：1,995 个回合（1,796 训练 / 199 测试）",
   "organizations": "Stanford University",
   "organizationsZh": "斯坦福大学",
   "license": "Project-specific research terms; verify data and platform conditions",
   "licenseZh": "适用项目专用研究条款；需核查数据和平台条件",
-  "access": "Open project access",
-  "accessZh": "开放项目访问",
+  "access": "Official RLDS schema and storage reference; complete download not tested",
+  "accessZh": "官方 RLDS 结构及存储入口；完整下载未测试",
   "verdict": "众包机器人示范先驱",
   "verdictEn": "Pioneering crowdsourced robot demonstrations",
-  "wmNote": "对研究示范收集方式很有价值，但任务数量少，规模与现代机器人数据相比有限。",
-  "wmNoteEn": "Important for scalable collection methodology, but small in task variety by modern standards.",
+  "wmNote": "限定 2019 年真实机器人数据及其 RLDS 发布；2018 年平台论文的仿真示范规模不能代替本版本规模。",
+  "wmNoteEn": "Scoped to the 2019 real-robot dataset and its RLDS release; the 2018 platform paper and simulation-demonstration totals are distinct.",
   "links": {
-    "homepage": "https://roboturk.stanford.edu/",
-    "paper": "https://arxiv.org/abs/1811.02790"
+    "homepage": "https://www.tensorflow.org/datasets/catalog/roboturk"
   },
   "resourceType": "dataset",
   "evidence": {
     "status": "source-reviewed",
     "criterion": 2,
-    "source": "https://arxiv.org/abs/1811.02790",
-    "sourceTitle": "[1811.02790] RoboTurk: A Crowdsourcing Platform for Robotic Skill Learning through Imitation",
-    "locator": "Abstract / official paper description",
-    "statement": "Crowdsourced 6DoF teleoperation produces temporally extended robot manipulation demonstrations.",
-    "reviewedAt": "2026-10-29",
-    "level": "paper",
+    "source": "https://www.tensorflow.org/datasets/catalog/roboturk",
+    "sourceTitle": "RoboTurk / TensorFlow Datasets",
+    "locator": "Features, train/test splits and 2019 real-robot dataset citation",
+    "statement": "The public RLDS version aligns translation/rotation/gripper actions with front RGB in 1,995 episodes. The cited 2019 real-robot release is distinct from the 2018 platform paper.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

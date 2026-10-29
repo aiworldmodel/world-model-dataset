@@ -1,0 +1,63 @@
+{
+  "id": "imperialcollege-sawyer-wrist-cam",
+  "name": "Imperial Sawyer Wrist Camera",
+  "shortName": "Imperial Sawyer Wrist Camera",
+  "year": 2023,
+  "summary": "桌面任务回合将八维运动/夹爪/终止动作与腕部图像及二值夹爪状态对齐。",
+  "summaryEn": "Tabletop episodes align eight-dimensional motion/gripper/termination actions with wrist images and binary gripper state.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "主图像与腕部图像字段代表同一视角。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "The main-image and wrist-image fields represent the same view. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam",
+    "sourceTitle": "Imperial Sawyer Wrist Camera / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Tabletop episodes align eight-dimensional motion/gripper/termination actions with wrist images and binary gripper state. Steps are organized into episodes. The main-image and wrist-image fields represent the same view.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "imperialcollege_sawyer_wrist_cam"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Documented in the TFDS source commit dated 2023-10-16; original dataset date unspecified.",
+    "source": "https://github.com/tensorflow/datasets/blob/b78fc27c4f830c590c28002b1a1d07ef14e588dc/tensorflow_datasets/robotics/rtx/rtx.py"
+  }
+}

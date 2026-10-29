@@ -56,5 +56,10 @@
     "level": "paper",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [
+    "dobbe"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

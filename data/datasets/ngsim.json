@@ -1,0 +1,52 @@
+{
+  "id": "ngsim",
+  "name": "NGSIM Vehicle Trajectories",
+  "shortName": "NGSIM Vehicle Trajectories",
+  "year": 2006,
+  "summary": "车辆轨迹以十分之一秒间隔描述交通中的位置变化。",
+  "summaryEn": "Vehicle trajectories describe traffic motion at tenth-of-a-second intervals.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "U.S. Federal Highway Administration",
+  "organizationsZh": "美国联邦公路管理局",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "适合车辆未来轨迹研究；不宣称包含驾驶控制命令或统一相机观测。",
+  "wmNoteEn": "The FHWA describes vehicle trajectories sampled every tenth of a second. Positions over time support traffic forecasting; the program is not a camera-control dataset.",
+  "links": {
+    "homepage": "https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf",
+    "sourceTitle": "FHWA NGSIM Overview (December 2006)",
+    "locator": "Vehicle trajectory data",
+    "statement": "The FHWA describes vehicle trajectories sampled every tenth of a second. Positions over time support traffic forecasting; the program is not a camera-control dataset.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

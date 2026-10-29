@@ -1,0 +1,57 @@
+{
+  "id": "robo-ground-data",
+  "name": "RoboGround Demonstration Data",
+  "shortName": "RoboGround Demonstration Data",
+  "year": 2025,
+  "summary": "基于 RoboCasa 的示范配有图像、机器人状态、逐时动作及语言指令。",
+  "summaryEn": "RoboCasa-based demonstrations pair images, robot state and time-indexed actions with language instructions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Paper reports 24K demonstrations and 112K instructions; released completeness unverified",
+  "scaleZh": "论文报告 24K 示范、112K 指令；公开版本完整性未核实",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "论文报告 24K 示范和 112K 指令；这是论文报告规模，公开下载完整性未核实，且与 RoboCasa 相关。",
+  "wmNoteEn": "The paper reports 24K RoboCasa-based demonstrations with images, robot state and time-indexed action supervision, paired with 112K instructions. This scope is the demonstration data, not standalone grounding masks.",
+  "links": {
+    "paper": "https://arxiv.org/html/2504.21530v1"
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/html/2504.21530v1",
+    "sourceTitle": "RoboGround original paper",
+    "locator": "Sections 3 and 4.3",
+    "statement": "The paper reports 24K RoboCasa-based demonstrations with images, robot state and time-indexed action supervision, paired with 112K instructions. This scope is the demonstration data, not standalone grounding masks.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "robocasa"
+  ]
+}

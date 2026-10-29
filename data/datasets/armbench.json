@@ -1,0 +1,52 @@
+{
+  "id": "armbench",
+  "name": "ARMBench (Activity Defect Subset)",
+  "shortName": "ARMBench (Activity Defect Subset)",
+  "year": 2023,
+  "summary": "操作缺陷部分包含抓取/转移/放置背景、视频、包装物理失效及首次缺陷帧。",
+  "summaryEn": "The activity-defect portion contains pick/transfer/place context, video, physical package failures and first-defect frames.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Amazon Robotics",
+  "organizationsZh": "亚马逊机器人团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "收录限定物理结果序列，不包含仅做分割或物品识别的静态子集。",
+  "wmNoteEn": "The activity subset contains pick/transfer/place context, manipulation videos, physical package-failure outcomes and the first observable defect frame. Inclusion covers these outcome sequences, not the standalone segmentation/identification images.",
+  "links": {
+    "paper": "https://arxiv.org/pdf/2303.16382"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://arxiv.org/pdf/2303.16382",
+    "sourceTitle": "ARMBench original paper",
+    "locator": "Section VI: defect detection",
+    "statement": "The activity subset contains pick/transfer/place context, manipulation videos, physical package-failure outcomes and the first observable defect frame. Inclusion covers these outcome sequences, not the standalone segmentation/identification images.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

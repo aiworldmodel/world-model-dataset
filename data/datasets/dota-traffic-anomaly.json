@@ -1,0 +1,54 @@
+{
+  "id": "dota-traffic-anomaly",
+  "name": "DoTA (Tracks and FOL Features)",
+  "shortName": "DoTA (Tracks and FOL Features)",
+  "year": 2020,
+  "summary": "交通异常视频之外，还发布物体边界框轨迹及用于未来物体定位的光流特征。",
+  "summaryEn": "Beyond traffic-anomaly videos, the release includes object-box tracks and optical-flow features for future object localization.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "2D Boxes",
+    "Optical Flow",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "DoTA project authors",
+  "organizationsZh": "DoTA 项目作者",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "收录依据是轨迹及 FOL 预测路径；异常类别标签本身不足以证明未来状态监督。",
+  "wmNoteEn": "The release includes object bounding-box tracks and optical-flow features used for future-object-localization models, plus ordered frames and anomaly intervals. The tracks support prediction; anomaly labels alone would not.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md",
+    "sourceTitle": "DoTA official README",
+    "locator": "Extracted data for FOL; annotation format",
+    "statement": "The release includes object bounding-box tracks and optical-flow features used for future-object-localization models, plus ordered frames and anomaly intervals. The tracks support prediction; anomaly labels alone would not.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

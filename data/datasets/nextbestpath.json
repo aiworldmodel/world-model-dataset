@@ -1,0 +1,56 @@
+{
+  "id": "nextbestpath",
+  "name": "AiMDoom / NextBestPath Benchmark",
+  "shortName": "AiMDoom / NextBestPath Benchmark",
+  "year": 2025,
+  "summary": "主动建图发布包含 AiMDoom 场景、仿真器和可执行规划评测。",
+  "summaryEn": "The active-mapping release provides AiMDoom scenes, a simulator and runnable planning evaluation.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Agent Pose",
+    "Maps"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "NextBestPath project team",
+  "organizationsZh": "NextBestPath 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "收录对象是基准场景与交互评测路径，不是 NextBestPath 方法名称本身。",
+  "wmNoteEn": "The release includes an active-mapping simulator, AiMDoom scenes and executable planning/evaluation. The resource is the AiMDoom benchmark and simulator, not the NextBestPath method alone.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md",
+    "sourceTitle": "NextBestPath / AiMDoom",
+    "locator": "Project overview; dataset and usage",
+    "statement": "The release includes an active-mapping simulator, AiMDoom scenes and executable planning/evaluation. The resource is the AiMDoom benchmark and simulator, not the NextBestPath method alone.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "aimdoom"
+  ]
+}

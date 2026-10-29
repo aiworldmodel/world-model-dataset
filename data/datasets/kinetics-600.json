@@ -1,0 +1,51 @@
+{
+  "id": "kinetics-600",
+  "name": "Kinetics-600 (Video Prediction Use)",
+  "shortName": "Kinetics-600 (Video Prediction Use)",
+  "year": 2018,
+  "summary": "动作视频在 Video Diffusion Models 中用于以 5 帧为条件预测后续 11 帧。",
+  "summaryEn": "Action videos used by Video Diffusion Models to predict eleven future frames conditioned on five frames.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "DeepMind and collaborators",
+  "organizationsZh": "DeepMind 及合作团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "2018 是数据年份，预测协议来自 2022 年论文；类别标签不是物理控制命令。",
+  "wmNoteEn": "A published forward-prediction protocol conditions on five frames and predicts the next eleven. This justifies the prediction use of the video corpus, not treating action-category labels as motor commands.",
+  "links": {
+    "paper": "https://arxiv.org/pdf/2204.03458"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/pdf/2204.03458",
+    "sourceTitle": "Video Diffusion Models",
+    "locator": "Section 4.2, Kinetics-600",
+    "statement": "A published forward-prediction protocol conditions on five frames and predicts the next eleven. This justifies the prediction use of the video corpus, not treating action-category labels as motor commands.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

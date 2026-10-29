@@ -55,5 +55,10 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [
+    "aloha_mobile"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

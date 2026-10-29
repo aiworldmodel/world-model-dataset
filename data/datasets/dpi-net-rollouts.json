@@ -1,0 +1,53 @@
+{
+  "id": "dpi-net-rollouts",
+  "name": "DPI-Net Simulation Rollout Generator",
+  "shortName": "DPI-Net Simulation Rollout Generator",
+  "year": 2019,
+  "summary": "官方脚本生成流体、刚体及颗粒交互轨迹，并分别保存真实和预测回放。",
+  "summaryEn": "Official scripts generate fluid, rigid-body and granular interaction trajectories, saving reference and predicted rollouts separately.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "3D State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Environment / Benchmark"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Massachusetts Institute of Technology",
+  "organizationsZh": "麻省理工学院",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "包含 FluidFall、BoxBath、FluidShake、RiceGrip 四类生成任务；数据规模取决于生成配置。",
+  "wmNoteEn": "Training scripts generate particle simulation data for FluidFall, BoxBath, FluidShake and RiceGrip; evaluation saves separate ground-truth and predicted rollouts.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md",
+    "sourceTitle": "DPI-Net official implementation",
+    "locator": "Training and evaluation",
+    "statement": "Training scripts generate particle simulation data for FluidFall, BoxBath, FluidShake and RiceGrip; evaluation saves separate ground-truth and predicted rollouts.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

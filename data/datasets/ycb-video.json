@@ -1,0 +1,54 @@
+{
+  "id": "ycb-video",
+  "name": "YCB-Video (Camera-Relative Pose Sequences)",
+  "shortName": "YCB-Video (Camera-Relative Pose Sequences)",
+  "year": 2017,
+  "summary": "92 段 RGB-D 视频提供逐帧物体位姿，物体布局固定而相机移动。",
+  "summaryEn": "Ninety-two RGB-D videos provide per-frame object poses with fixed object configurations and a moving camera.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Camera Pose",
+    "Object State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "92 videos; 133,827 frames; 21 YCB objects",
+  "scaleZh": "92 段视频；133,827 帧；21 个 YCB 物体",
+  "organizations": "NVIDIA, University of Washington and Carnegie Mellon University",
+  "organizationsZh": "NVIDIA、华盛顿大学与卡内基梅隆大学",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "这是相机相对位姿序列，不能作为物体接触动力学标注；年份采用 2017 年预印本。",
+  "wmNoteEn": "The 92 RGB-D videos include per-frame object poses; annotation estimates camera trajectories while object configurations remain fixed. Suitable for camera-relative pose sequences, not evidence of dynamic object interactions.",
+  "links": {
+    "paper": "https://arxiv.org/pdf/1711.00199"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/pdf/1711.00199",
+    "sourceTitle": "PoseCNN / YCB-Video",
+    "locator": "Section IV: dataset and 6D pose annotation",
+    "statement": "The 92 RGB-D videos include per-frame object poses; annotation estimates camera trajectories while object configurations remain fixed. Suitable for camera-relative pose sequences, not evidence of dynamic object interactions.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

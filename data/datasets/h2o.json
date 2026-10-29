@@ -1,0 +1,54 @@
+{
+  "id": "h2o",
+  "name": "H2O: Two Hands Manipulating Objects",
+  "shortName": "H2O: Two Hands Manipulating Objects",
+  "year": 2021,
+  "summary": "同步多视角 RGB-D 交互序列包含逐帧手部、物体与相机位姿。",
+  "summaryEn": "Synchronized multi-view RGB-D interaction sequences provide hand, object and camera poses.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB-D",
+    "3D State",
+    "Object State",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Multi-view hand-object interaction sequences",
+  "scaleZh": "多视角手—物体交互序列",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "纠正为 2021 年资源；姿态轨迹用于预测时需另行设置因果时间划分。",
+  "wmNoteEn": "Synchronized RGB-D interaction sequences have per-frame 3D hand, 6D object and camera poses. Temporal smoothing is documented; forecasting requires a separate causal split.",
+  "links": {
+    "homepage": "https://taeinkwon.com/projects/h2o/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://taeinkwon.com/projects/h2o/",
+    "sourceTitle": "H2O: Two Hands Manipulating Objects",
+    "locator": "Abstract, pipeline and citation",
+    "statement": "Synchronized RGB-D interaction sequences have per-frame 3D hand, 6D object and camera poses. Temporal smoothing is documented; forecasting requires a separate causal split.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

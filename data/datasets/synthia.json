@@ -1,0 +1,53 @@
+{
+  "id": "synthia",
+  "name": "SYNTHIA-Seqs",
+  "shortName": "SYNTHIA-Seqs",
+  "year": 2016,
+  "summary": "多视角合成驾驶序列包含运动行人/骑行者与对齐深度，面向时空建模。",
+  "summaryEn": "Multi-view synthetic driving sequences contain moving pedestrians/cyclists and aligned depth for spatiotemporal modeling.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "Depth",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Original SYNTHIA-Seqs: 4 sequences, approximately 200K frames",
+  "scaleZh": "原版 SYNTHIA-Seqs：4 条序列，约 20 万帧",
+  "organizations": "Autonomous University of Barcelona",
+  "organizationsZh": "巴塞罗那自治大学",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "收录限定连续 SYNTHIA-Seqs；独立的 SYNTHIA-Rand 随机静态图像不在范围内。",
+  "wmNoteEn": "SYNTHIA-Seqs provides four approximately 50,000-frame sequences with moving pedestrians/cyclists, aligned views and depth, explicitly intended for spatiotemporal modeling. The independent random-image subset is outside this entry's scope.",
+  "links": {
+    "paper": "https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf",
+    "sourceTitle": "The SYNTHIA Dataset for Semantic Segmentation of Urban Scenes",
+    "locator": "Section 3.2, SYNTHIA-Seqs",
+    "statement": "SYNTHIA-Seqs provides four approximately 50,000-frame sequences with moving pedestrians/cyclists, aligned views and depth, explicitly intended for spatiotemporal modeling. The independent random-image subset is outside this entry's scope.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

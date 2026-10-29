@@ -1,0 +1,53 @@
+{
+  "id": "world-models-carracing",
+  "name": "World Models CarRacing Rollout Generator (ctallec)",
+  "shortName": "World Models CarRacing Rollout Generator (ctallec)",
+  "year": 2018,
+  "summary": "PyTorch 实现提供随机 CarRacing 回合生成及动作条件下一潜变量预测流程。",
+  "summaryEn": "A PyTorch implementation provides random CarRacing rollouts and action-conditioned next-latent prediction.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Simulation State"
+  ],
+  "structure": [
+    "Environment / Benchmark"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "ctallec implementation contributors",
+  "organizationsZh": "ctallec 实现的贡献者",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "这是 ctallec 实现的生成流程，不是原论文作者发布的固定数据集，也没有统一固定回合总数。",
+  "wmNoteEn": "The implementation documents random CarRacing rollout generation and next-latent prediction from past observations/actions. These are implementation-generated rollouts, not an official fixed corpus from the original paper.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/ctallec/world-models/master/README.md"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://raw.githubusercontent.com/ctallec/world-models/master/README.md",
+    "sourceTitle": "World Models PyTorch implementation",
+    "locator": "Data generation and MDN-RNN",
+    "statement": "The implementation documents random CarRacing rollout generation and next-latent prediction from past observations/actions. These are implementation-generated rollouts, not an official fixed corpus from the original paper.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

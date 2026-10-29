@@ -1,0 +1,53 @@
+{
+  "id": "scannetpp",
+  "name": "ScanNet++ (iPhone Sequences)",
+  "shortName": "ScanNet++ (iPhone Sequences)",
+  "year": 2023,
+  "summary": "官方工具从 iPhone 视频提取编号帧并与相机位姿匹配。",
+  "summaryEn": "Official tools extract indexed iPhone video frames and match them to camera poses.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Original dataset contributors; see the reviewed source",
+  "organizationsZh": "原始数据贡献者；具体署名见审查来源",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "限定静态场景中的观测和相机运动；不宣称包含动态物体交互轨迹。",
+  "wmNoteEn": "The official loader extracts numbered frames from iPhone videos and matches sorted frame indices to camera poses. Inclusion covers observation/egomotion sequences in static scenes, not object dynamics.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py",
+    "sourceTitle": "ScanNet++ official iPhone extraction",
+    "locator": "extract_rgb and extract_rgb_in_colmap",
+    "statement": "The official loader extracts numbered frames from iPhone videos and matches sorted frame indices to camera poses. Inclusion covers observation/egomotion sequences in static scenes, not object dynamics.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

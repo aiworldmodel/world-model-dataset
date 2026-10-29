@@ -1,0 +1,53 @@
+{
+  "id": "guardian-failcot-robofail",
+  "name": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
+  "shortName": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
+  "year": 2025,
+  "summary": "执行与受扰规划样例包含图像、计划、任务背景及成功/失败目标。",
+  "summaryEn": "Execution and perturbed-planning examples contain images, plans, task context and success/failure targets.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "Guardian project team",
+  "organizationsZh": "Guardian 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "这是 OOD 评测包，包含 UR5-Fail、RoboFail 和 RoboVQA 子集，与 FailCoT 训练数据分开。",
+  "wmNoteEn": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets"
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets",
+    "sourceTitle": "Guardian OOD dataset card",
+    "locator": "Splits and metadata schema",
+    "statement": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

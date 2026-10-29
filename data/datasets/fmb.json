@@ -55,5 +55,8 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
 }

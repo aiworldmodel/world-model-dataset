@@ -1,0 +1,58 @@
+{
+  "id": "austin-sailor",
+  "name": "SAILOR Robot Demonstrations",
+  "shortName": "SAILOR Robot Demonstrations",
+  "year": 2022,
+  "summary": "机器人桌面示范，包含七维动作、图像以及末端和夹爪状态。",
+  "summaryEn": "Robot tabletop demonstrations containing seven-dimensional actions, images and end-effector/gripper state.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "240 episodes (TFDS 0.1.0)",
+  "scaleZh": "240 个回合（TFDS 0.1.0）",
+  "organizations": "University of Texas at Austin and collaborators",
+  "organizationsZh": "得克萨斯大学奥斯汀分校及合作者",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "可建立动作条件状态转移；与 Open X 聚合集合重叠。",
+  "wmNoteEn": "240 episodes align seven-dimensional actions with camera observations and end-effector/gripper states.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds",
+    "sourceTitle": "SAILOR RLDS / TensorFlow Datasets",
+    "locator": "Feature structure and splits",
+    "statement": "240 episodes align seven-dimensional actions with camera observations and end-effector/gripper states.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "austin_sailor_dataset_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
+}

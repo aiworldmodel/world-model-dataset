@@ -5,7 +5,7 @@
 _An evidence-first catalog of data resources for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Resources](https://img.shields.io/badge/resources-266-16a34a)](#dataset-catalog)
+[![Resources](https://img.shields.io/badge/resources-361-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -37,7 +37,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 ## Inclusion evidence
 
-Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [391-record audit](audit/evidence-review-2026-10-29.md).
+Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/pre2026-review-2026-10-30.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
 
@@ -45,9 +45,9 @@ Source review does not establish complete downloads, sample integrity or license
 
 | Reviewed resources | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 266 | 6 | 6 | 43 |
+| 361 | 6 | 6 | 43 |
 
-Dataset: 122 · Benchmark: 44 · Generation environment / toolkit: 81 · Collection / registry: 13 · Derived data / subset: 6
+Dataset: 204 · Benchmark: 48 · Generation environment / toolkit: 86 · Collection / registry: 13 · Derived data / subset: 10
 
 These are resource counts, not counts of independent acquired datasets. Generators require data generation; benchmark and aggregate entries must not be summed into a corpus size.
 
@@ -80,11 +80,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (38)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (45)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (76)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (46)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (22)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (39)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (43)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (104)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (76)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (70)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (40)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (38)
+### Predictive & Generative Dynamics (43)
 
 - **DenseReward Dataset** · 2026 · Dataset
   A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
@@ -290,6 +290,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://levelxdata.com/highd-dataset/) · [Paper](https://arxiv.org/abs/1810.05642) · Access: Official leveLXData/highD request page; access requires agreeing to dataset terms
   Inclusion evidence C3: Drone-recorded naturalistic highway vehicle trajectories explicitly support scenario reconstruction and motion modeling. [Reviewed source](https://arxiv.org/abs/1810.05642) · 2026-10-29
 
+- **Kinetics-600 (Video Prediction Use)** · 2018 · Dataset
+  Action videos used by Video Diffusion Models to predict eleven future frames conditioned on five frames.
+  `Egocentric / Human` · `RGB Video`
+  [Paper](https://arxiv.org/pdf/2204.03458) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C1: A published forward-prediction protocol conditions on five frames and predicts the next eleven. This justifies the prediction use of the video corpus, not treating action-category labels as motor commands. [Reviewed source](https://arxiv.org/pdf/2204.03458) · 2026-10-30
+
 - **KIT Motion-Language** · 2016 · Collection / registry
   Continuous joint motions paired with natural-language descriptions and original motion-source metadata.
   `Egocentric / Human` · `Agent Pose` · `Trajectories` · `Language`
@@ -302,11 +308,23 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://cvgl.stanford.edu/projects/uav_data/) · [Paper](https://arxiv.org/abs/1601.00998) · Access: Official project page provides the Stanford Campus Dataset download
   Inclusion evidence C3: Drone-observed road users and pedestrians are explicitly evaluated through future-trajectory prediction in crowded scenes. [Reviewed source](https://arxiv.org/abs/1601.00998) · 2026-10-29
 
+- **SYNTHIA-Seqs** · 2016 · Dataset
+  Multi-view synthetic driving sequences contain moving pedestrians/cyclists and aligned depth for spatiotemporal modeling.
+  `Autonomous Driving` · `Synthetic Video` · `Depth` · `Trajectories`
+  [Paper](https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C1: SYNTHIA-Seqs provides four approximately 50,000-frame sequences with moving pedestrians/cyclists, aligned views and depth, explicitly intended for spatiotemporal modeling. The independent random-image subset is outside this entry's scope. [Reviewed source](https://openaccess.thecvf.com/content_cvpr_2016/papers/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.pdf) · 2026-10-30
+
 - **ViZDoom** · 2016 · Generation environment / toolkit
   A Doom-based first-person visual RL environment with controllable actions and frame sequences.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Homepage](https://vizdoom.cs.put.poznan.pl/) · [Code](https://github.com/Farama-Foundation/ViZDoom) · [Paper](https://arxiv.org/abs/1605.02097) · Access: Open-source engine and scenarios
   Inclusion evidence C2: Customizable first-person Doom scenarios expose visual observations to bots executing actions; environment generator, not a fixed corpus. [Reviewed source](https://arxiv.org/abs/1605.02097) · 2026-10-29
+
+- **Moving MNIST** · 2015 · Dataset
+  Moving-digit video-prediction data with 20 frames in each released test sequence.
+  `Physics / Science` · `Synthetic Video`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/moving_mnist) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C1: The released test split contains 10,000 ordered 20-frame digit-motion videos. Official documentation identifies the video-representation/prediction paper and distinguishes generated training sequences. [Reviewed source](https://www.tensorflow.org/datasets/catalog/moving_mnist) · 2026-10-30
 
 - **Human3.6M** · 2014 · Dataset
   A large multi-view human motion dataset with synchronized video, 3D joints, camera parameters, and action labels, foundational for future-pose prediction.
@@ -314,9 +332,21 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](http://vision.imar.ro/human3.6m/description.php) · [Paper](https://ieeexplore.ieee.org/document/6682899) · Access: Registration / agreement required
   Inclusion evidence C3: Synchronized 50Hz multiview video and accurate 3D joint positions/angles expose human motion trajectories. [Reviewed source](http://vision.imar.ro/human3.6m/description.php) · 2026-10-29
 
+- **UCF101 (Video Prediction Use)** · 2012 · Dataset
+  Original action videos are explicitly evaluated for future-video prediction in a later continuous-video-flow paper.
+  `Egocentric / Human` · `RGB Video`
+  [Paper](https://arxiv.org/abs/2412.05633) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C1: The paper explicitly evaluates future-video prediction on UCF101. This later predictive protocol supplies evidence absent from the original classification paper; no action/state-control labels are claimed. [Reviewed source](https://arxiv.org/abs/2412.05633) · 2026-10-30
+
+- **KTH (Video Prediction Use)** · 2004 · Dataset
+  Human-action videos have an official PredRNN future-frame prediction training/evaluation path.
+  `Egocentric / Human` · `RGB Video`
+  [Code](https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C1: The prediction authors release KTH data-loading/training scripts and evaluate generated future frames. Inclusion is restricted to the video-prediction use, not the original action-classification task. [Reviewed source](https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md) · 2026-10-30
+
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (45)
+### Action-Conditioned Dynamics (104)
 
 - **kine2go** · 2026 · Dataset
   A dataset retargeting animal and quadruped motion capture into Unitree Go2 reference trajectories and policy rollouts.
@@ -342,11 +372,23 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://alaya-studio.github.io/wildworld-project/) · [Paper](https://arxiv.org/abs/2603.23497) · [Code](https://github.com/AlayaLab/WildWorld) · Access: Part 1 available on Hugging Face; later parts are planned
   Inclusion evidence C2: Game rollouts expose explicit state with synchronized action labels across more than 108 million frames. [Reviewed source](https://arxiv.org/abs/2603.23497) · 2026-10-29
 
+- **AiMDoom / NextBestPath Benchmark** · 2025 · Benchmark
+  The active-mapping release provides AiMDoom scenes, a simulator and runnable planning evaluation.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Agent Pose` · `Maps`
+  [Code](https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The release includes an active-mapping simulator, AiMDoom scenes and executable planning/evaluation. The resource is the AiMDoom benchmark and simulator, not the NextBestPath method alone. [Reviewed source](https://raw.githubusercontent.com/shiyao-li/NextBestPath/main/README.md) · 2026-10-30
+
 - **BlueROV2 Dynamics Dataset** · 2025 · Dataset
   Underwater robot dynamics data with training scripts and learned and physics-based models.
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Robot State` · `Trajectories`
   [Code](https://github.com/ViktorNfa/bluerov2_dynamics) · Access: Official datasets and training code available
   Inclusion evidence C2: Repository provides recorded/simulated underwater dynamics data and one-step and multi-step prediction evaluation with control-aware models. [Reviewed source](https://github.com/ViktorNfa/bluerov2_dynamics) · 2026-10-29
+
+- **EMMOE-100 Interactive Benchmark** · 2025 · Benchmark
+  EMMOE-100 provides tasks, high-level planning, low-level Habitat execution and success evaluation.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Agent Pose` · `Language`
+  [Code](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The release documents EMMOE-100 tasks and runnable high-level planning/low-level Habitat execution with saved results and success metrics. Inclusion covers the interactive benchmark. [Reviewed source](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · 2026-10-30
 
 - **MuJoCo Playground** · 2025 · Generation environment / toolkit
   An open-source MuJoCo MJX robot-learning suite for large-scale generation of contact-rich states, actions, and sensor trajectories.
@@ -366,11 +408,35 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://davian-robotics.github.io/PHUMA/) · [Paper](https://arxiv.org/abs/2510.26236) · [Code](https://github.com/DAVIAN-Robotics/PHUMA) · Access: Prebuilt dataset available through official download scripts and Hugging Face
   Inclusion evidence C3: Physics-curated and retargeted mocap/video motion produces a 73-hour humanoid trajectory corpus; overlaps source motion collections. [Reviewed source](https://arxiv.org/abs/2510.26236) · 2026-10-29
 
+- **RoboAI UR5e Demonstrations** · 2025 · Dataset
+  Scripted real-robot demonstrations provide seven-dimensional actions, action-normalization/absolute masks, RGB and 15-dimensional robot state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/robo_ai_u_r5e) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Scripted real-robot demonstrations provide seven-dimensional actions, action-normalization/absolute masks, RGB and 15-dimensional robot state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/robo_ai_u_r5e) · 2026-10-30
+
+- **RoboGround Demonstration Data** · 2025 · Derived data / subset
+  RoboCasa-based demonstrations pair images, robot state and time-indexed actions with language instructions.
+  `Robotics / Embodied AI` · `Synthetic Video` · `Action` · `Robot State` · `Language`
+  [Paper](https://arxiv.org/html/2504.21530v1) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C2: The paper reports 24K RoboCasa-based demonstrations with images, robot state and time-indexed action supervision, paired with 112K instructions. This scope is the demonstration data, not standalone grounding masks. [Reviewed source](https://arxiv.org/html/2504.21530v1) · 2026-10-30
+
 - **RoboVerse** · 2025 · Generation environment / toolkit
   A scalable embodied resource unifying robot-learning simulation, task data, and evaluation protocols.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `RGB Video` · `Action` · `Robot State` · `Object State` · `Trajectories`
   [Homepage](https://roboverse.wiki/) · [Paper](https://arxiv.org/abs/2504.18904) · [Code](https://github.com/RoboVerseOrg/RoboVerse) · Access: Platform, tasks, and benchmark code publicly available
   Inclusion evidence C2: MetaSim exposes simulator initialization, physical stepping and shared interfaces; generated data is evaluated for world-model learning and policy learning. [Reviewed source](https://arxiv.org/abs/2504.18904) · 2026-10-29
+
+- **BRMData** · 2024 · Dataset
+  Bimanual mobile-manipulation HDF5 data align actions, multi-view images, joint position/velocity/effort and base velocity.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
+  [Code](https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py) · [Homepage](https://embodiedrobot.github.io/BRMData.html) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The HDF5 writer pairs timesteps with actions and stores multi-view images, 14-joint position/velocity/effort and base velocity. This establishes the action-aligned bimanual trajectory schema. [Reviewed source](https://raw.githubusercontent.com/Louis-ZhangLe/BRMData/main/collect_data/collect_data.py) · 2026-10-30
+
+- **Conq Hose Manipulation** · 2024 · Dataset
+  Mobile hose manipulation exposes seven-dimensional actions, three onboard camera views and 66-dimensional state.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Mobile hose manipulation exposes seven-dimensional actions, three onboard camera views and 66-dimensional state. Steps are organized into episodes. The schema gives action/state dimensions without defining every component; do not infer their units. [Reviewed source](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · 2026-10-30
 
 - **DrivingDojo** · 2024 · Dataset
   A video dataset tailored to interactive driving world models, covering driving maneuvers, multi-agent interplay, open-world knowledge, and an action-instruction-following benchmark.
@@ -384,11 +450,23 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://functional-manipulation-benchmark.github.io/) · [Paper](https://arxiv.org/abs/2401.08553) · Access: Official NumPy trajectory archives and detailed data format
   Inclusion evidence C2: Official dataset page identifies 22,550 robot trajectories recorded from global and wrist cameras for multi-stage manipulation. [Reviewed source](https://functional-manipulation-benchmark.github.io/) · 2026-10-29
 
+- **IO-AI RLDS Robot Data** · 2024 · Dataset
+  The RLDS release has seven-dimensional actions, eight-dimensional state, multiple RGB views, depth and camera calibration.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/io_ai_tech) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: The RLDS release has seven-dimensional actions, eight-dimensional state, multiple RGB views, depth and camera calibration. Steps are organized into episodes. This entry describes the TFDS RLDS schema; the upstream IO Ultra conversion README describes a different, richer layout. [Reviewed source](https://www.tensorflow.org/datasets/catalog/io_ai_tech) · 2026-10-30
+
 - **Isaac Lab** · 2024 · Generation environment / toolkit
   A GPU physics-simulation framework for robot learning that generates large-scale state-action trajectories.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacLab) · Access: Open-source repository
   Inclusion evidence C2: Official framework provides robot sensors and ready-to-train simulated control environments. [Reviewed source](https://github.com/isaac-sim/IsaacLab) · 2026-10-29
+
+- **Microsoft Bridge-Compatible Trajectories** · 2024 · Dataset
+  Microsoft-collected WidowX trajectories provide seven-dimensional actions/state, multiple camera streams and per-episode modality-presence flags.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/bridge_data_msr) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Microsoft-collected WidowX trajectories provide seven-dimensional actions/state, multiple camera streams and per-episode modality-presence flags. Steps are organized into episodes. Collected at Microsoft in a Bridge-compatible format; this is not simply a renamed Berkeley BridgeData download. [Reviewed source](https://www.tensorflow.org/datasets/catalog/bridge_data_msr) · 2026-10-30
 
 - **Mobile ALOHA Demonstrations** · 2024 · Dataset
   Whole-body teleoperated mobile bimanual demonstrations with vision, arm, and mobile-base states/actions.
@@ -414,6 +492,96 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/tonyzhaozh/act) · [Homepage](https://tonyzhaozh.github.io/aloha/) · Access: Official simulated-demo archive and record_sim_episodes.py
   Inclusion evidence C2: README links scripted/human demonstrations for two controlled simulated tasks and identifies episode training and joint/EE-control environments. [Reviewed source](https://github.com/tonyzhaozh/act) · 2026-10-29
 
+- **ASU Tabletop Manipulation** · 2023 · Dataset
+  Tabletop manipulation contains seven-dimensional action/action_delta arrays, RGB, joint states and end-effector/object poses.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Object State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Tabletop manipulation contains seven-dimensional action/action_delta arrays, RGB, joint states and end-effector/object poses. Steps are organized into episodes. The official seven-dimensional action description lists inconsistent components; verify the mapping before use. [Reviewed source](https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds) · 2026-10-30
+
+- **Berkeley AUTOLAB UR5** · 2023 · Dataset
+  UR5 manipulation episodes provide stepwise translation/rotation/gripper actions, external and hand images, depth and 15-dimensional state.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_autolab_ur5) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: UR5 manipulation episodes provide stepwise translation/rotation/gripper actions, external and hand images, depth and 15-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_autolab_ur5) · 2026-10-30
+
+- **Berkeley Cable Routing** · 2023 · Dataset
+  Cable-routing episodes align translation/rotation actions, four camera views and seven-dimensional robot state.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_cable_routing) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Cable-routing episodes align translation/rotation actions, four camera views and seven-dimensional robot state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_cable_routing) · 2026-10-30
+
+- **Berkeley Fanuc Manipulation** · 2023 · Dataset
+  Manipulation episodes contain six-dimensional pose-delta actions, external/wrist images, end-effector pose and joint states.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Manipulation episodes contain six-dimensional pose-delta actions, external/wrist images, end-effector pose and joint states. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_fanuc_manipulation) · 2026-10-30
+
+- **Berkeley RPT Demonstrations** · 2023 · Dataset
+  Pick/place episodes expose seven joint-delta commands plus a gripper command, wrist images and joint positions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Pick/place episodes expose seven joint-delta commands plus a gripper command, wrist images and joint positions. Steps are organized into episodes. Robot naming differs between the overview and joint-field description; the displayed scope follows the numeric schema. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_rpt_converted_externally_to_rlds) · 2026-10-30
+
+- **CLVR Jaco Play** · 2023 · Dataset
+  Tabletop pick/place episodes align translation/gripper actions with camera images, end-effector pose/velocity and joint state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/jaco_play) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Tabletop pick/place episodes align translation/gripper actions with camera images, end-effector pose/velocity and joint state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/jaco_play) · 2026-10-30
+
+- **CMU Franka Exploration** · 2023 · Dataset
+  Kitchen exploration episodes contain RGB, eight-dimensional actions and an additional structured affordance/control action.
+  `Robotics / Embodied AI` · `RGB Video` · `Action`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/cmu_franka_exploration_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Kitchen exploration episodes contain RGB, eight-dimensional actions and an additional structured affordance/control action. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/cmu_franka_exploration_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **CMU IAMLab Pickup and Insert** · 2023 · Dataset
+  Picking/insertion episodes contain eight-dimensional pose/gripper actions, two cameras and a 20-dimensional joint/force state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/iamlab_cmu_pickup_insert_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Picking/insertion episodes contain eight-dimensional pose/gripper actions, two cameras and a 20-dimensional joint/force state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/iamlab_cmu_pickup_insert_converted_externally_to_rlds) · 2026-10-30
+
+- **CMU PlayFusion Demonstrations** · 2023 · Dataset
+  Kitchen play episodes contain nine-dimensional actions, RGB and eight-dimensional joint/gripper state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/cmu_play_fusion) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Kitchen play episodes contain nine-dimensional actions, RGB and eight-dimensional joint/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/cmu_play_fusion) · 2026-10-30
+
+- **CMU Stretch Kitchen** · 2023 · Dataset
+  Kitchen interaction episodes provide eight-dimensional end-effector/gripper/termination actions, RGB and four-dimensional state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/cmu_stretch) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Kitchen interaction episodes provide eight-dimensional end-effector/gripper/termination actions, RGB and four-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/cmu_stretch) · 2026-10-30
+
+- **Columbia Push-T Real** · 2023 · Dataset
+  Real UR5 pushing episodes pair end-effector translation/rotation/gripper actions with external/wrist images and planar end-effector position.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Real UR5 pushing episodes pair end-effector translation/rotation/gripper actions with external/wrist images and planar end-effector position. Steps are organized into episodes. Real UR5 recordings are distinct from the separately cataloged simulated Push-T archive. [Reviewed source](https://www.tensorflow.org/datasets/catalog/columbia_cairlab_pusht_real) · 2026-10-30
+
+- **D3Fields Robot Demonstrations** · 2023 · Dataset
+  Desk/utensil manipulation provides 3D displacement actions, four RGB-D camera views and 4-by-4 end-effector transforms.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/uiuc_d3field) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Desk/utensil manipulation provides 3D displacement actions, four RGB-D camera views and 4-by-4 end-effector transforms. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/uiuc_d3field) · 2026-10-30
+
+- **DLR SARA Grid Clamp** · 2023 · Dataset
+  Grid-clamp placement episodes provide seven-dimensional actions, RGB and 12-dimensional pose/wrench observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Grid-clamp placement episodes provide seven-dimensional actions, RGB and 12-dimensional pose/wrench observations. Steps are organized into episodes. The seven-dimensional action description documents only six pose components; verify the last component. [Reviewed source](https://www.tensorflow.org/datasets/catalog/dlr_sara_grid_clamp_converted_externally_to_rlds) · 2026-10-30
+
+- **DLR SARA Pouring** · 2023 · Dataset
+  Bottle-to-mug pouring episodes contain seven-dimensional actions, RGB and six-dimensional end-effector state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/dlr_sara_pour_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Bottle-to-mug pouring episodes contain seven-dimensional actions, RGB and six-dimensional end-effector state. Steps are organized into episodes. The action array has seven components but only six are described; the remaining component is unverified. [Reviewed source](https://www.tensorflow.org/datasets/catalog/dlr_sara_pour_converted_externally_to_rlds) · 2026-10-30
+
+- **ETH Agent Affordances** · 2023 · Dataset
+  Oven-opening trajectories contain six-dimensional end-effector velocities, object point clouds and state including the door angle.
+  `Robotics / Embodied AI` · `3D State` · `Action` · `Robot State` · `Object State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/eth_agent_affordances) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Oven-opening trajectories contain six-dimensional end-effector velocities, object point clouds and state including the door angle. Steps are organized into episodes. The image field is explicitly zero-filled; the object point cloud describes the episode initial state. [Reviewed source](https://www.tensorflow.org/datasets/catalog/eth_agent_affordances) · 2026-10-30
+
 - **FluidLab** · 2023 · Generation environment / toolkit
   Differentiable fluid manipulation benchmarks supporting interaction recording, saved control trajectories, and multi-material dynamics replay.
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Simulation State` · `RGB Video`
@@ -426,11 +594,53 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://dobb-e.com/) · [Paper](https://arxiv.org/abs/2311.16098) · Access: Official RGB/actions and RGB-D/actions archives
   Inclusion evidence C2: The Stick records household manipulation demonstrations in 22 homes for policy transfer. Human handheld demonstrations, not robot-collected motor controls. [Reviewed source](https://arxiv.org/abs/2311.16098) · 2026-10-29
 
+- **Imperial Sawyer Wrist Camera** · 2023 · Dataset
+  Tabletop episodes align eight-dimensional motion/gripper/termination actions with wrist images and binary gripper state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Tabletop episodes align eight-dimensional motion/gripper/termination actions with wrist images and binary gripper state. Steps are organized into episodes. The main-image and wrist-image fields represent the same view. [Reviewed source](https://www.tensorflow.org/datasets/catalog/imperialcollege_sawyer_wrist_cam) · 2026-10-30
+
+- **KAIST Nonprehensile Manipulation** · 2023 · Dataset
+  Nonprehensile episodes expose 20-dimensional pose/stiffness/damping actions, RGB, partial point clouds and 21-dimensional state.
+  `Robotics / Embodied AI` · `RGB Video` · `3D State` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/kaist_nonprehensile_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Nonprehensile episodes expose 20-dimensional pose/stiffness/damping actions, RGB, partial point clouds and 21-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/kaist_nonprehensile_converted_externally_to_rlds) · 2026-10-30
+
+- **MimicPlay Robot Demonstrations** · 2023 · Dataset
+  The robot portion contains seven-dimensional actions, two front views and a wrist view, end-effector pose and joint positions/velocities.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/mimic_play) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: The robot portion contains seven-dimensional actions, two front views and a wrist view, end-effector pose and joint positions/velocities. Steps are organized into episodes. Scope is the action-bearing robot portion; human-play videos are not automatically robot motor-command trajectories. [Reviewed source](https://www.tensorflow.org/datasets/catalog/mimic_play) · 2026-10-30
+
 - **Minari Offline RL Datasets** · 2023 · Collection / registry
   A standardized offline-RL dataset library providing complete episodes with observations, actions, rewards, and termination signals.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `Simulation State` · `Action` · `Reward` · `Trajectories`
   [Homepage](https://minari.farama.org/) · [Code](https://github.com/Farama-Foundation/Minari) · Access: Open dataset registry and loaders
   Inclusion evidence C2: Offline-RL dataset registry provides episode sampling, trajectory filtering and generation; it includes migrated D4RL components and is not an independent corpus. [Reviewed source](https://minari.farama.org/) · 2026-10-29
+
+- **Minigrid** · 2023 · Generation environment / toolkit
+  Grid environments expose discrete actions, mission-conditioned observations and navigation/object state changes.
+  `Games / Virtual Environments` · `Game State` · `Action` · `Reward`
+  [Code](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data. [Reviewed source](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · 2026-10-30
+
+- **MUTEX Robot Demonstrations** · 2023 · Dataset
+  Manipulation episodes with multimodal task descriptions, stepwise actions, two camera views and robot state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: 1,500 episodes expose step-level actions, RGB/wrist images and 24-dimensional robot state. Modal task descriptions are not motor commands. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · 2026-10-30
+
+- **NYU ROT Demonstrations** · 2023 · Dataset
+  Short-horizon tabletop episodes provide seven-dimensional end-effector/gripper actions, RGB and seven-dimensional state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/nyu_rot_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Short-horizon tabletop episodes provide seven-dimensional end-effector/gripper actions, RGB and seven-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/nyu_rot_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **PLEX Robosuite Demonstrations** · 2023 · Dataset
+  Simulation demonstrations expose seven-dimensional actions, two rendered views and 32-dimensional state for six manipulation tasks.
+  `Robotics / Embodied AI` · `Synthetic Video` · `Action` · `Simulation State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/plex_robosuite) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Simulation demonstrations expose seven-dimensional actions, two rendered views and 32-dimensional state for six manipulation tasks. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/plex_robosuite) · 2026-10-30
 
 - **Push-T Demonstrations** · 2023 · Dataset
   Planar T-block pushing demonstrations released with Diffusion Policy, containing sequential observations, states, and pushing actions.
@@ -456,11 +666,89 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/hshi74/robocook) · [Paper](https://arxiv.org/abs/2306.14447) · Access: Official repository links to data and trajectory-processing instructions
   Inclusion evidence C2: Official release provides tool-specific dynamics trajectories as per-frame HDF5 files and before/after object point clouds; distinguish real dynamics data from model-synthesized planning data. [Reviewed source](https://github.com/hshi74/robocook) · 2026-10-29
 
+- **SayTap Locomotion Rollouts** · 2023 · Dataset
+  A1 locomotion episodes contain 12 joint-position commands, 30-dimensional proprioception, desired velocity and foot-contact patterns.
+  `Robotics / Embodied AI` · `Action` · `Robot State` · `Trajectories`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: A1 locomotion episodes contain 12 joint-position commands, 30-dimensional proprioception, desired velocity and foot-contact patterns. Steps are organized into episodes. RGB fields are dummy placeholders, not recorded images. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds) · 2026-10-30
+
+- **SPOC Simulation Trajectories** · 2023 · Dataset
+  Navigation/manipulation episodes provide actions, two camera views, agent location, object state indicators and task-success metadata.
+  `Robotics / Embodied AI` · `Synthetic Video` · `Action` · `Agent Pose` · `Object State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/spoc_robot) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Navigation/manipulation episodes provide actions, two camera views, agent location, object state indicators and task-success metadata. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/spoc_robot) · 2026-10-30
+
+- **Stanford HYDRA Demonstrations** · 2023 · Dataset
+  Long-horizon episodes provide seven-dimensional actions, two camera views, 27-dimensional state and waypoint/dense-mode indicators.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/stanford_hydra_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Long-horizon episodes provide seven-dimensional actions, two camera views, 27-dimensional state and waypoint/dense-mode indicators. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/stanford_hydra_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **TOTO Scooping and Pouring** · 2023 · Dataset
+  Scooping/pouring episodes contain end-effector and gripper actions, RGB observations and seven joint positions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/toto) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Scooping/pouring episodes contain end-effector and gripper actions, RGB observations and seven joint positions. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/toto) · 2026-10-30
+
 - **TriFinger RL Dataset** · 2023 · Dataset
   An offline-RL dataset of real TriFinger Push/Lift tasks with states, actions, rewards, and behavior of varying quality.
   `Robotics / Embodied AI` · `Robot State` · `Action` · `Reward` · `RGB Video` · `Trajectories`
   [Homepage](https://doi.org/10.17617/3.DXZ7TL) · [Code](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · Access: Official DOI and dataset documentation available
   Inclusion evidence C2: Official documentation explicitly provides real/simulated robot transitions for Push and Lift, with varying behavior policies and optional camera images, for dynamics learning and offline RL. [Reviewed source](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 2026-10-29
+
+- **UCSD Kitchen Demonstrations** · 2023 · Dataset
+  Kitchen manipulation aligns eight-dimensional actions with RGB and 21-dimensional joint position/velocity/torque state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Kitchen manipulation aligns eight-dimensional actions with RGB and 21-dimensional joint position/velocity/torque state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/ucsd_kitchen_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UCSD Pick and Place** · 2023 · Dataset
+  Distractor-rich pick/place episodes expose gripper velocity/torque actions, RGB, seven-dimensional state and episode-success metadata.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/ucsd_pick_and_place_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Distractor-rich pick/place episodes expose gripper velocity/torque actions, RGB, seven-dimensional state and episode-success metadata. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/ucsd_pick_and_place_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UT Austin SIRIUS** · 2023 · Dataset
+  Manipulation episodes align seven-dimensional actions with images, joint/pose states and labels for demonstrations, interventions and autonomous execution.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/austin_sirius_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Manipulation episodes align seven-dimensional actions with images, joint/pose states and labels for demonstrations, interventions and autonomous execution. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/austin_sirius_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo PR2 Fridge Opening** · 2023 · Dataset
+  Fridge-door opening episodes pair eight-dimensional actions with RGB and seven-dimensional end-effector/gripper state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_opening_fridge_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Fridge-door opening episodes pair eight-dimensional actions with RGB and seven-dimensional end-effector/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_opening_fridge_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo PR2 Tabletop** · 2023 · Dataset
+  Tabletop manipulation pairs eight-dimensional end-effector/gripper/termination actions with RGB and seven-dimensional state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Tabletop manipulation pairs eight-dimensional end-effector/gripper/termination actions with RGB and seven-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utokyo_pr2_tabletop_manipulation_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo xArm Bimanual** · 2023 · Dataset
+  Bimanual towel-folding episodes contain 14-dimensional actions, RGB and separate six-dimensional left/right end-effector poses.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_bimanual_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Bimanual towel-folding episodes contain 14-dimensional actions, RGB and separate six-dimensional left/right end-effector poses. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_bimanual_converted_externally_to_rlds) · 2026-10-30
+
+- **UTokyo xArm Pick and Place** · 2023 · Dataset
+  Pick/place episodes pair seven-dimensional commands with three camera views, end-effector pose and joint position/velocity/acceleration.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_pick_and_place_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Pick/place episodes pair seven-dimensional commands with three camera views, end-effector pose and joint position/velocity/acceleration. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/utokyo_xarm_pick_and_place_converted_externally_to_rlds) · 2026-10-30
+
+- **Berkeley MVP Demonstrations** · 2022 · Dataset
+  Six manipulation tasks expose eight-dimensional joint/gripper actions, wrist images and joint/end-effector observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_mvp_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Six manipulation tasks expose eight-dimensional joint/gripper actions, wrist images and joint/end-effector observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_mvp_converted_externally_to_rlds) · 2026-10-30
+
+- **BUDS Robot Demonstrations** · 2022 · Dataset
+  Robot manipulation demonstrations with step-aligned end-effector/gripper actions, camera images and state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: 50 episodes contain step-aligned end-effector delta/gripper actions, RGB and wrist images, and robot state. [Reviewed source](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · 2026-10-30
 
 - **DiffSkill Environments** · 2022 · Generation environment / toolkit
   Three tool-mediated plastic-object tasks with downloadable initial/target configurations and random-interaction scripts for generating transitions.
@@ -486,6 +774,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://maniskill.ai/) · [Code](https://github.com/haosulab/ManiSkill) · Access: Official simulator and benchmark
   Inclusion evidence C2: Official SAPIEN robot simulator and manipulation-learning task framework generates controlled observations and state changes. [Reviewed source](https://github.com/haosulab/ManiSkill) · 2026-10-29
 
+- **MaskViT Sawyer Rollouts** · 2022 · Dataset
+  Pushing/picking episodes provide five-dimensional actions, images, end-effector pose and joint/velocity/gripper state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/stanford_mask_vit_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Pushing/picking episodes provide five-dimensional actions, images, end-effector pose and joint/velocity/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/stanford_mask_vit_converted_externally_to_rlds) · 2026-10-30
+
 - **MineDojo** · 2022 · Generation environment / toolkit
   A large multimodal knowledge and interaction platform built around Minecraft, combining player videos, text knowledge, community discussions, and a live simulation environment for open-world agents.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Audio` · `Text` · `Game State`
@@ -498,6 +792,60 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/facebookresearch/myosuite) · Access: Open-source benchmark
   Inclusion evidence C2: Official MuJoCo environment documents step(action), per-step observations and muscle-control tasks. [Reviewed source](https://github.com/facebookresearch/myosuite) · 2026-10-29
 
+- **NYU Franka Play** · 2022 · Dataset
+  Kitchen play contains 15-dimensional velocity/pose/gripper/termination actions, two RGB-D views and 13-dimensional state.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/nyu_franka_play_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Kitchen play contains 15-dimensional velocity/pose/gripper/termination actions, two RGB-D views and 13-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/nyu_franka_play_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **RT-1 Public RLDS (fractal20220817_data)** · 2022 · Dataset
+  Public RT-1 episodes include images, end-effector/base control and episode boundaries.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/fractal20220817_data) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The public RLDS release contains 87,212 episodes with image observations, end-effector/base commands and episode boundaries. This is not the paper's entire training-data total. [Reviewed source](https://www.tensorflow.org/datasets/catalog/fractal20220817_data) · 2026-10-30
+
+- **SAILOR Robot Demonstrations** · 2022 · Dataset
+  Robot tabletop demonstrations containing seven-dimensional actions, images and end-effector/gripper state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: 240 episodes align seven-dimensional actions with camera observations and end-effector/gripper states. [Reviewed source](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · 2026-10-30
+
+- **SCAND** · 2022 · Dataset
+  Teleoperated Spot and Jackal navigation trajectories include joystick commands, odometry and visual/inertial/LiDAR observations.
+  `Robotics / Embodied AI` · `RGB Video` · `LiDAR` · `Action` · `Robot State` · `Trajectories`
+  [Paper](https://arxiv.org/abs/2203.15041) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C2: The paper reports 138 teleoperated navigation trajectories with joystick commands, odometry, visual/inertial observations and 3D LiDAR on Spot and Jackal. [Reviewed source](https://arxiv.org/abs/2203.15041) · 2026-10-30
+
+- **TACO Play** · 2022 · Dataset
+  Franka kitchen play with seven-dimensional absolute/relative actions, two RGB-D views and 15-dimensional robot observations.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/taco_play) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Franka kitchen play with seven-dimensional absolute/relative actions, two RGB-D views and 15-dimensional robot observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/taco_play) · 2026-10-30
+
+- **Tokyo U LSMO Trajectories** · 2022 · Dataset
+  Pick/place motion-planning trajectories contain seven-dimensional end-effector/gripper commands, RGB and 13-dimensional state.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/tokyo_u_lsmo_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Pick/place motion-planning trajectories contain seven-dimensional end-effector/gripper commands, RGB and 13-dimensional state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/tokyo_u_lsmo_converted_externally_to_rlds) · 2026-10-30
+
+- **USC Cloth Simulation Demonstrations** · 2022 · Dataset
+  Simulated cloth episodes align picker position/activation commands with images and cloth-folding rewards.
+  `Robotics / Embodied AI` · `Synthetic Video` · `Action` · `Reward`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/usc_cloth_sim_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Simulated cloth episodes align picker position/activation commands with images and cloth-folding rewards. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/usc_cloth_sim_converted_externally_to_rlds) · 2026-10-30
+
+- **VIOLA Robot Demonstrations** · 2022 · Dataset
+  Kitchen manipulation demonstrations with translation, rotation, gripper actions and two camera views.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/viola) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: 135 training and 15 test episodes align translation, rotation and gripper actions with two camera streams and robot state. [Reviewed source](https://www.tensorflow.org/datasets/catalog/viola) · 2026-10-30
+
+- **BC-Z Robot Demonstrations** · 2021 · Dataset
+  Teleoperated manipulation exposes residual future end-effector/gripper targets, current pose and image observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/bc_z) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Teleoperated manipulation exposes residual future end-effector/gripper targets, current pose and image observations. Steps are organized into episodes. Future action targets require a causal history/target split; do not feed future supervision into model inputs. [Reviewed source](https://www.tensorflow.org/datasets/catalog/bc_z) · 2026-10-30
+
 - **Brax** · 2021 · Generation environment / toolkit
   A JAX-based differentiable rigid-body physics engine and RL environment for parallel state-action-reward trajectory generation.
   `Robotics / Embodied AI` · `Physics / Science` · `Simulation State` · `Action` · `Reward` · `RGB Video`
@@ -509,6 +857,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacGymEnvs) · [Paper](https://arxiv.org/abs/2108.10470) · Access: Official repository and release
   Inclusion evidence C2: GPU physics buffers directly exchange state/control tensors with robot policies; downloadable simulation platform. [Reviewed source](https://arxiv.org/abs/2108.10470) · 2026-10-29
+
+- **NYU Door Opening (VINN)** · 2021 · Dataset
+  Door/cabinet opening episodes contain end-effector translation/rotation and gripper actions paired with RGB observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/nyu_door_opening_surprising_effectiveness) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Door/cabinet opening episodes contain end-effector translation/rotation and gripper actions paired with RGB observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/nyu_door_opening_surprising_effectiveness) · 2026-10-30
 
 - **PlasticineLab** · 2021 · Generation environment / toolkit
   Differentiable soft-body manipulation tasks with actions deforming elastoplastic material and control-optimization/output interfaces.
@@ -528,6 +882,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/Farama-Foundation/D4RL) · Access: Official repository and environment loaders available
   Inclusion evidence C2: Offline-RL benchmark aggregates standardized trajectory datasets; current releases migrated to Minari and include Kitchen/Adroit subsets. [Reviewed source](https://github.com/Farama-Foundation/D4RL) · 2026-10-29
 
+- **DLR EDAN Shared Control** · 2020 · Dataset
+  Assistive shelf-picking episodes provide seven-dimensional action/state arrays and RGB observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/dlr_edan_shared_control_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Assistive shelf-picking episodes provide seven-dimensional action/state arrays and RGB observations. Steps are organized into episodes. The documented action/state shapes have seven components but the description names only six pose coordinates. [Reviewed source](https://www.tensorflow.org/datasets/catalog/dlr_edan_shared_control_converted_externally_to_rlds) · 2026-10-30
+
 - **RL Unplugged** · 2020 · Collection / registry
   An offline-RL trajectory collection spanning Atari, DeepMind Control, robotics, and other environments.
   `Games / Virtual Environments` · `Robotics / Embodied AI` · `Simulation State` · `Action` · `Reward` · `Trajectories`
@@ -546,6 +906,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://robosuite.ai/) · [Code](https://github.com/ARISE-Initiative/robosuite) · Access: Official simulator and datasets
   Inclusion evidence C2: Official simulator supports robot controllers, demonstration collection and replay utilities in standardized physical manipulation environments. [Reviewed source](https://github.com/ARISE-Initiative/robosuite) · 2026-10-29
 
+- **RoboTHOR** · 2020 · Generation environment / toolkit
+  A LoCoBot simulation interface exposes move/rotate actions, RGB/depth observations and agent poses.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Agent Pose`
+  [Homepage](https://ai2thor.allenai.org/robothor/documentation/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The LoCoBot controller exposes move/rotate actions, RGB/depth observations and agent poses in named environments. It is part of AI2-THOR, so counts do not imply independent corpora. [Reviewed source](https://ai2thor.allenai.org/robothor/documentation/) · 2026-10-30
+
 - **SoftGym** · 2020 · Generation environment / toolkit
   Deformable manipulation benchmarks with Gym interfaces and random-action examples for generating observation and state transitions.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Depth` · `Action` · `Simulation State`
@@ -558,6 +924,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/abs/1910.00618) · [Code](https://github.com/MIT-Omnipush/video-prediction) · Access: Open project access
   Inclusion evidence C2: Controlled planar pushes are recorded with RGB-D and precise object tracking across systematically varied objects. [Reviewed source](https://arxiv.org/abs/1910.00618) · 2026-10-29
 
+- **Stanford Kuka Vision and Touch** · 2019 · Dataset
+  Peg insertion provides four-dimensional position/gripper actions, RGB-D, joint/pose observations and end-effector force histories.
+  `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/stanford_kuka_multimodal_dataset_converted_externally_to_rlds) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Peg insertion provides four-dimensional position/gripper actions, RGB-D, joint/pose observations and end-effector force histories. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/stanford_kuka_multimodal_dataset_converted_externally_to_rlds) · 2026-10-30
+
 - **Adroit Arm Environments** · 2018 · Generation environment / toolkit
   Dexterous hand and arm environments in Gymnasium-Robotics, exposing state, action and subsequent observations.
   `Robotics / Embodied AI` · `Simulation State` · `Action` · `Reward` · `Trajectories`
@@ -569,6 +941,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/google-deepmind/dm_control) · Access: Open-source environment and reproducible trajectory generation
   Inclusion evidence C2: Official MuJoCo-based control environments expose physics simulation and reusable task construction for action-conditioned rollouts. [Reviewed source](https://github.com/google-deepmind/dm_control) · 2026-10-29
+
+- **QT-Opt Kuka RLDS** · 2018 · Dataset
+  Grasping episodes pair base/end-effector/gripper actions with RGB, end-effector pose and gripper observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/kuka) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C2: Grasping episodes pair base/end-effector/gripper actions with RGB, end-effector pose and gripper observations. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/kuka) · 2026-10-30
+
+- **World Models CarRacing Rollout Generator (ctallec)** · 2018 · Generation environment / toolkit
+  A PyTorch implementation provides random CarRacing rollouts and action-conditioned next-latent prediction.
+  `Games / Virtual Environments` · `RGB Video` · `Action` · `Simulation State`
+  [Code](https://raw.githubusercontent.com/ctallec/world-models/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: The implementation documents random CarRacing rollout generation and next-latent prediction from past observations/actions. These are implementation-generated rollouts, not an official fixed corpus from the original paper. [Reviewed source](https://raw.githubusercontent.com/ctallec/world-models/master/README.md) · 2026-10-30
 
 - **AI2-THOR** · 2017 · Generation environment / toolkit
   An interactive indoor simulator generating navigation, manipulation, and state-change trajectories.
@@ -988,6 +1372,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/HumanCompatibleAI/overcooked_ai) · [Paper](https://arxiv.org/abs/1910.05789) · Access: Open-source environment
   Inclusion evidence C2: The released cooperative game environment exposes multi-agent interaction and long-horizon task state; simulator rather than a fixed corpus. [Reviewed source](https://arxiv.org/abs/1910.05789) · 2026-10-29
 
+- **RoboTurk Real-Robot Demonstrations** · 2019 · Dataset
+  Real-robot cloth-folding and bowl-stacking episodes with stepwise translation, rotation, gripper actions and front RGB observations.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/roboturk) · Access: Official RLDS schema and storage reference; complete download not tested
+  Inclusion evidence C2: The public RLDS version aligns translation/rotation/gripper actions with front RGB in 1,995 episodes. The cited 2019 real-robot release is distinct from the 2018 platform paper. [Reviewed source](https://www.tensorflow.org/datasets/catalog/roboturk) · 2026-10-30
+
 - **THÖR** · 2019 · Dataset
   A human-motion dataset for shared indoor spaces with accurate trajectories, head orientation, gaze, social groups, obstacle maps, and mobile-robot sensor data.
   `Robotics / Embodied AI` · `Egocentric / Human` · `Trajectories` · `Gaze` · `Agent Pose` · `LiDAR` · `Maps`
@@ -1005,12 +1395,6 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/openai/retro) · Access: Gym environment code; most game ROMs must be obtained separately
   Inclusion evidence C2: Official Gym game environments expose emulator state, rewards, episode conditions and saved initial states. Most game ROMs must be obtained separately; remove the Rainbow citation. [Reviewed source](https://github.com/openai/retro) · 2026-10-29
-
-- **RoboTurk** · 2018 · Dataset
-  A real-robot demonstration dataset collected through crowdsourced teleoperation, with vision, actions, and robot state for scalable imitation learning.
-  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
-  [Homepage](https://roboturk.stanford.edu/) · [Paper](https://arxiv.org/abs/1811.02790) · Access: Open project access
-  Inclusion evidence C2: Crowdsourced 6DoF teleoperation produces temporally extended robot manipulation demonstrations. [Reviewed source](https://arxiv.org/abs/1811.02790) · 2026-10-29
 
 - **TrajNet** · 2018 · Collection / registry
   A benchmark for pedestrian and multi-agent trajectory prediction that standardizes future-location forecasting, social interaction, and multimodal uncertainty evaluation.
@@ -1050,7 +1434,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### Spatial & Spatiotemporal World Modeling (46)
+### Spatial & Spatiotemporal World Modeling (70)
 
 - **AudioWorldSim** · 2026 · Generation environment / toolkit
   An open simulation platform for generating binaural-audio world-model trajectories.
@@ -1100,6 +1484,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/sjtuyinjie/M3DGR) · Access: Official dataset repository and benchmark code available
   Inclusion evidence C3: Official multi-sensor SLAM release documents TUM-format trajectories, recording time and trajectory tracking metrics; retain ordered sensor/pose data. [Reviewed source](https://github.com/sjtuyinjie/M3DGR) · 2026-10-29
 
+- **MineInsight (Robot Sequences)** · 2025 · Dataset
+  Robot ROS2 recordings contain sensor observations and dynamic /tf transforms.
+  `Robotics / Embodied AI` · `RGB Video` · `LiDAR` · `Camera Pose` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/mariomlz99/MineInsight/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The release documents ROS2 sequences and dynamic /tf transforms in addition to sensor observations. First release was June 2025; current documentation also covers a 2026 update. Inclusion concerns robot/sensor motion, not moving landmine dynamics. [Reviewed source](https://raw.githubusercontent.com/mariomlz99/MineInsight/main/README.md) · 2026-10-30
+
+- **NVIDIA PhysicalAI Autonomous Vehicles** · 2025 · Dataset
+  The publisher confirms sensor clips with relative timestamps and aligned historical/future egomotion.
+  `Autonomous Driving` · `RGB Video` · `LiDAR` · `Trajectories` · `Camera Pose`
+  [Homepage](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · [Code](https://github.com/NVlabs/physical_ai_av) · Access: Publisher-gated dataset; terms acceptance required
+  Inclusion evidence C3: The publisher confirms 20-second sensor clips with relative timestamps and aligned egomotion including history and future. Sensor streams are asynchronous; data access requires accepting the publisher's conditions. [Reviewed source](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · 2026-10-30
+
 - **OmniWorld** · 2025 · Collection / registry
   A multi-domain, multimodal dataset for 4D world modeling across games, city walks, human-object interaction, and robot trajectories.
   `Games / Virtual Environments` · `Egocentric / Human` · `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Camera Pose` · `Optical Flow` · `Text`
@@ -1130,6 +1526,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/abs/2506.11302) · [Homepage](https://huggingface.co/datasets/Tera-AI/STRIDE) · Access: Paper entry; release status requires verification
   Inclusion evidence C2: Road imagery is organized into connected observation, state and movement-action nodes for controlled spatiotemporal world modeling. [Reviewed source](https://arxiv.org/abs/2506.11302) · 2026-10-29
 
+- **STU (Sequential Sensor and Pose Data)** · 2025 · Dataset
+  Sequential LiDAR/camera recordings include KISS-ICP vehicle-pose estimates exported in KITTI format.
+  `Autonomous Driving` · `RGB Video` · `LiDAR` · `Camera Pose` · `Trajectories`
+  [Paper](https://arxiv.org/html/2505.02148v1) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C3: The paper documents sequential LiDAR/camera recordings and per-scan vehicle poses estimated by KISS-ICP and exported in KITTI format. Inclusion is limited to sequential egomotion data; these estimated poses are not independent ground truth. [Reviewed source](https://arxiv.org/html/2505.02148v1) · 2026-10-30
+
+- **TPT-Bench (Egomotion Sequences)** · 2025 · Dataset
+  Timestamped images and ROS bags provide an extractable ZED odometry path.
+  `Robotics / Embodied AI` · `RGB Video` · `Camera Pose` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Timestamped images and per-sequence ROS bags include an explicitly extractable ZED odometry path. This supports robot egomotion sequences; native target-person tracking scores do not measure forecasting. [Reviewed source](https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md) · 2026-10-30
+
 - **Ego-Exo4D** · 2024 · Dataset
   A synchronized first- and third-person dataset of human skills across sports, music, and cooking, with 3D, language, and camera information.
   `Egocentric / Human` · `Multi-view RGB Video` · `Audio` · `Language` · `Camera Pose` · `3D Annotations`
@@ -1142,11 +1550,29 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://www.argoverse.org/av2.html) · [Paper](https://arxiv.org/abs/2301.00493) · [Code](https://github.com/argoverse/av2-api) · Access: Open download
   Inclusion evidence C3: Explicit motion-forecasting scenarios and sequential LiDAR with poses support future-agent and point-cloud prediction. [Reviewed source](https://arxiv.org/abs/2301.00493) · 2026-10-29
 
+- **GNM SACSoN Navigation** · 2023 · Dataset
+  Office navigation trajectories pair position/yaw targets with RGB and observed planar position/yaw.
+  `Robotics / Embodied AI` · `RGB Video` · `Agent Pose` · `Trajectories`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_sac_son) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C3: Office navigation trajectories pair position/yaw targets with RGB and observed planar position/yaw. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_sac_son) · 2026-10-30
+
 - **Robo360** · 2023 · Dataset
   An omnispective robotic manipulation dataset with dense multiview coverage and objects spanning varied material and optical properties for 3D physical-world modeling.
   `Robotics / Embodied AI` · `Physics / Science` · `Multi-view RGB Video` · `Camera Pose` · `Action` · `Object Metadata`
   [Homepage](https://robo360dataset.github.io/) · [Paper](https://arxiv.org/abs/2312.06686) · [Code](https://github.com/robo360dataset/robo360dataset.github.io) · Access: Official project repository and paper entry available; dataset terms require verification
   Inclusion evidence C1: Dense-view robot manipulation recordings are explicitly used for dynamic neural representations and multi-view policy learning. [Reviewed source](https://arxiv.org/abs/2312.06686) · 2026-10-29
+
+- **ScanNet++ (iPhone Sequences)** · 2023 · Dataset
+  Official tools extract indexed iPhone video frames and match them to camera poses.
+  `Urban / 3D Scene` · `RGB Video` · `Camera Pose` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The official loader extracts numbered frames from iPhone videos and matches sorted frame indices to camera poses. Inclusion covers observation/egomotion sequences in static scenes, not object dynamics. [Reviewed source](https://raw.githubusercontent.com/scannetpp/scannetpp/main/iphone/prepare_iphone_data.py) · 2026-10-30
+
+- **Assembly101 (Temporal Recordings and Poses)** · 2022 · Dataset
+  Assembly/disassembly recordings contain synchronized views, time-indexed hand keypoints and action-anticipation tasks.
+  `Egocentric / Human` · `Multi-view RGB Video` · `3D State` · `Action Labels` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/assembly-101/assembly101-download-scripts/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Assembly recordings include synchronized views and time-indexed 2D/3D hand poses at 60 fps. The native protocol includes action anticipation; hand trajectories also permit separately specified motion forecasting. [Reviewed source](https://raw.githubusercontent.com/assembly-101/assembly101-download-scripts/main/README.md) · 2026-10-30
 
 - **MOVi** · 2022 · Derived data / subset
   A family of Kubric-generated multi-object videos with instance masks, depth, optical flow, and 3D attributes for object discovery and interpretable dynamics.
@@ -1160,11 +1586,53 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://ntu-aris.github.io/ntu_viral_dataset/) · Access: Official repository downloads and CSV ground truth
   Inclusion evidence C3: Official release supplies flight sequences with synchronized cameras, lidar, IMU/UWB and ground truth. [Reviewed source](https://ntu-aris.github.io/ntu_viral_dataset/) · 2026-10-29
 
+- **SHIFT (Temporal Sequences)** · 2022 · Dataset
+  Synthetic driving video at 10 fps provides sequence/frame indices, object track IDs and sensor-pose tools.
+  `Autonomous Driving` · `Synthetic Video` · `3D Boxes` · `Camera Pose` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The release provides 10 fps videos, sequence/frame indexing, object track IDs and sensor-pose tools. Tracking sequences can support forecasting under an explicit history/future split. [Reviewed source](https://raw.githubusercontent.com/SysCV/shift-dev/main/README.md) · 2026-10-30
+
+- **AIST++** · 2021 · Dataset
+  Music-aligned dance sequences with per-frame 3D keypoints and calibrated multi-view images.
+  `Egocentric / Human` · `Multi-view RGB Video` · `3D State` · `Audio` · `Trajectories`
+  [Homepage](https://google.github.io/aistplusplus_dataset/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The release documents 1,408 dance motion sequences, per-frame 3D keypoints, music and calibrated camera views. Forecasting needs a history/future split. [Reviewed source](https://google.github.io/aistplusplus_dataset/) · 2026-10-30
+
+- **ARKitScenes (Raw Sequences)** · 2021 · Dataset
+  Raw RGB-D captures include timestamped camera rotation and translation trajectories.
+  `Urban / 3D Scene` · `RGB-D` · `Camera Pose` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Raw captures include RGB-D/video and camera trajectories whose rows contain timestamp, rotation and translation. Inclusion covers egomotion and observation sequences, not moving-object dynamics. [Reviewed source](https://raw.githubusercontent.com/apple-aiml-research/ARKitScenes/main/DATA.md) · 2026-10-30
+
+- **CrowdBot** · 2021 · Dataset
+  Crowded-environment ROS recordings contain RGB-D, LiDAR, robot pose/velocity and pedestrian tracks.
+  `Robotics / Embodied AI` · `RGB-D` · `LiDAR` · `Robot State` · `Trajectories`
+  [Homepage](https://www.epfl.ch/labs/lasa/crowdbot-dataset/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: ROS bag recordings pair onboard RGB-D/LiDAR with robot pose, velocity, controller state and pedestrian tracks. The release citation is December 2021, correcting the former 2020 entry. [Reviewed source](https://www.epfl.ch/labs/lasa/crowdbot-dataset/) · 2026-10-30
+
+- **DexYCB** · 2021 · Dataset
+  The official loader exposes complete hand-object motion sequences with images, hand joints and object geometry.
+  `Egocentric / Human` · `RGB Video` · `3D State` · `Object State` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/NVlabs/dex-ycb-toolkit/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The official toolkit loads full captured hand/object motion sequences and renders per-frame RGB, hand joints and object geometry; it lists 1,000 sequences. Pose-estimation scores are not forecasting metrics. [Reviewed source](https://raw.githubusercontent.com/NVlabs/dex-ycb-toolkit/master/README.md) · 2026-10-30
+
 - **DSEC** · 2021 · Dataset
   Real driving sequences with stereo events and color images, aligned sensors, disparity, and subsequently released optical-flow truth.
   `Autonomous Driving` · `Event Camera` · `Stereo RGB` · `LiDAR` · `GPS / IMU` · `Optical Flow`
   [Homepage](https://dsec.ifi.uzh.ch/) · [Paper](https://arxiv.org/abs/2103.06011) · Access: Official sensor downloads and flow/disparity benchmarks
   Inclusion evidence C3: Driving recordings synchronize stereo frames/events with LiDAR and RTK GPS, enabling ordered observation/ego-trajectory modeling. [Reviewed source](https://arxiv.org/abs/2103.06011) · 2026-10-29
+
+- **GNM RECON Navigation** · 2021 · Dataset
+  Outdoor navigation episodes expose RGB, planar position/yaw and future waypoint targets.
+  `Robotics / Embodied AI` · `RGB Video` · `Agent Pose` · `Trajectories`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_recon) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C3: Outdoor navigation episodes expose RGB, planar position/yaw and future waypoint targets. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_recon) · 2026-10-30
+
+- **H2O: Two Hands Manipulating Objects** · 2021 · Dataset
+  Synchronized multi-view RGB-D interaction sequences provide hand, object and camera poses.
+  `Egocentric / Human` · `RGB-D` · `3D State` · `Object State` · `Camera Pose`
+  [Homepage](https://taeinkwon.com/projects/h2o/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Synchronized RGB-D interaction sequences have per-frame 3D hand, 6D object and camera poses. Temporal smoothing is documented; forecasting requires a separate causal split. [Reviewed source](https://taeinkwon.com/projects/h2o/) · 2026-10-30
 
 - **Hilti SLAM Challenge Dataset** · 2021 · Dataset
   Handheld construction and office sequences with synchronized vision, LiDAR, IMU, and sparse high-accuracy pose ground truth.
@@ -1183,6 +1651,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `Semantic Labels` · `GPS / IMU`
   [Paper](https://arxiv.org/abs/2004.06320) · Access: Official download portal
   Inclusion evidence C3: Retain the 392,556 sequential unannotated sensor frames with vehicle-bus data; non-sequential segmentation images alone do not qualify. [Reviewed source](https://arxiv.org/abs/2004.06320) · 2026-10-29
+
+- **DoTA (Tracks and FOL Features)** · 2020 · Dataset
+  Beyond traffic-anomaly videos, the release includes object-box tracks and optical-flow features for future object localization.
+  `Autonomous Driving` · `RGB Video` · `2D Boxes` · `Optical Flow` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The release includes object bounding-box tracks and optical-flow features used for future-object-localization models, plus ordered frames and anomaly intervals. The tracks support prediction; anomaly labels alone would not. [Reviewed source](https://raw.githubusercontent.com/MoonBlvd/Detection-of-Traffic-Anomaly/master/README.md) · 2026-10-30
+
+- **InterHand2.6M** · 2020 · Dataset
+  Image sequences link frame indices to 3D hand joints and MANO parameters, with a separate 30 fps release.
+  `Egocentric / Human` · `Multi-view RGB Video` · `3D State` · `Trajectories`
+  [Homepage](https://mks0601.github.io/InterHand2.6M/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks. [Reviewed source](https://mks0601.github.io/InterHand2.6M/) · 2026-10-30
 
 - **KITTI-360** · 2020 · Dataset
   A multimodal 3D dataset for long-range urban driving with panoramic images, LiDAR, trajectories, and scene annotations.
@@ -1226,6 +1706,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://aihabitat.org/) · [Code](https://github.com/facebookresearch/habitat-lab) · [Paper](https://arxiv.org/abs/1904.01201) · Access: Open-source simulator
   Inclusion evidence C2: Configurable embodied agents and sensors interact in a 3D simulator through task APIs; HM3D/MP3D/Replica are asset dependencies. [Reviewed source](https://arxiv.org/abs/1904.01201) · 2026-10-29
 
+- **HRI Advice Dataset (HAD)** · 2019 · Derived data / subset
+  HDD-derived driving videos contain CAN-bus signals and natural-language driving advice.
+  `Autonomous Driving` · `RGB Video` · `Robot State` · `Language` · `Trajectories`
+  [Homepage](https://usa.honda-ri.com/HAD) · Access: Request with a university email
+  Inclusion evidence C3: The publisher identifies 30 hours of HDD-derived driving videos with CAN-bus signals and language advice. Advice is not a low-level driving command; access requires a university request for non-commercial use. [Reviewed source](https://usa.honda-ri.com/HAD) · 2026-10-30
+
 - **iGibson** · 2019 · Generation environment / toolkit
   An indoor embodied-AI simulation platform providing visual, tactile, action, and physical-state trajectories.
   `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Simulation State` · `Action`
@@ -1237,6 +1723,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `RADAR` · `IMU / GPS` · `3D Boxes`
   [Homepage](https://www.nuscenes.org/) · [Paper](https://arxiv.org/abs/1903.11027) · [Code](https://github.com/nutonomy/nuscenes-devkit) · Access: Registration required
   Inclusion evidence C3: Twenty-second driving scenes combine synchronized sensors and temporally tracked 3D agents. Retain sequence/trajectory use, not isolated detection images. [Reviewed source](https://arxiv.org/abs/1903.11027) · 2026-10-29
+
+- **Oxford Radar RobotCar** · 2019 · Dataset
+  The RobotCar radar extension provides driving radar, LiDAR and optimized radar odometry.
+  `Autonomous Driving` · `RADAR` · `LiDAR` · `Camera Pose` · `Trajectories`
+  [Homepage](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The radar extension provides 280 km of driving with radar, LiDAR and optimized radar odometry. It shares the RobotCar platform and is not a disjoint parent collection. [Reviewed source](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/) · 2026-10-30
 
 - **SoundSpaces** · 2019 · Generation environment / toolkit
   A 3D audio-visual navigation environment and dataset combining spatial audio, visual observations, actions, and position state for embodied agents.
@@ -1274,6 +1766,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](http://gibsonenv.stanford.edu/database/) · [Paper](https://arxiv.org/abs/1808.10654) · [Code](https://github.com/StanfordVL/GibsonEnv) · Access: Request / agreement required
   Inclusion evidence C2: Gibson Env explicitly embeds agents subject to physical and spatial constraints in a released interactive simulator. Scope is Gibson Env, not the static building database alone. [Reviewed source](https://arxiv.org/abs/1808.10654) · 2026-10-29
 
+- **GNM Cory Hall Navigation** · 2018 · Dataset
+  Hallway navigation trajectories contain RGB, planar position/yaw and corresponding waypoint targets.
+  `Robotics / Embodied AI` · `RGB Video` · `Agent Pose` · `Trajectories`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall) · Access: Official TFDS schema and RLDS storage reference; full download not tested
+  Inclusion evidence C3: Hallway navigation trajectories contain RGB, planar position/yaw and corresponding waypoint targets. Steps are organized into episodes. Targets are navigation waypoints, not wheel/motor commands. [Reviewed source](https://www.tensorflow.org/datasets/catalog/berkeley_gnm_cory_hall) · 2026-10-30
+
 - **MVSEC** · 2018 · Dataset
   Stereo event sequences from multiple moving platforms with images, IMU, and pose/depth truth for most sequences.
   `Robotics / Embodied AI` · `Autonomous Driving` · `Event Camera` · `Stereo RGB` · `IMU` · `Depth` · `Camera Pose`
@@ -1292,6 +1790,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/abs/1711.01458) · Access: Paper entry; data access requires verification
   Inclusion evidence C2: Paper explicitly describes concurrent image/event streams with vehicle speed, GPS, steering, throttle and brake recordings from on-board diagnostics. [Reviewed source](https://arxiv.org/abs/1711.01458) · 2026-10-29
 
+- **MPI-INF-3DHP (Motion Sequences)** · 2017 · Dataset
+  Multi-camera activity recordings include temporally ordered 3D human-joint annotations.
+  `Egocentric / Human` · `Multi-view RGB Video` · `3D State` · `Trajectories`
+  [Paper](https://arxiv.org/pdf/1611.09813) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C3: Multi-camera recordings cover approximately minute-long activity sets with released 3D joint annotations. Inclusion concerns ordered human motion; single-frame pose estimation is its native evaluation. [Reviewed source](https://arxiv.org/pdf/1611.09813) · 2026-10-30
+
 - **PennCOSYVIO** · 2017 · Dataset
   Handheld visual-inertial trajectories crossing outdoor and indoor spaces with fiducial-marker localization references.
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `RGB Video` · `Stereo RGB` · `IMU` · `Camera Pose`
@@ -1303,6 +1807,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Urban / 3D Scene` · `Robotics / Embodied AI` · `RGB-D` · `Camera Pose` · `3D Mesh` · `Semantic Labels`
   [Homepage](http://www.scan-net.org/) · [Paper](https://arxiv.org/abs/1702.04405) · [Code](https://github.com/ScanNet/ScanNet) · Access: Agreement required
   Inclusion evidence C3: RGB-D videos include per-view camera poses, exposing temporal camera-observation trajectories. Retain egomotion sequences, not static reconstructed geometry or object dynamics claims. [Reviewed source](https://arxiv.org/abs/1702.04405) · 2026-10-29
+
+- **YCB-Video (Camera-Relative Pose Sequences)** · 2017 · Dataset
+  Ninety-two RGB-D videos provide per-frame object poses with fixed object configurations and a moving camera.
+  `Urban / 3D Scene` · `RGB-D` · `Camera Pose` · `Object State` · `Trajectories`
+  [Paper](https://arxiv.org/pdf/1711.00199) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C3: The 92 RGB-D videos include per-frame object poses; annotation estimates camera trajectories while object configurations remain fixed. Suitable for camera-relative pose sequences, not evidence of dynamic object interactions. [Reviewed source](https://arxiv.org/pdf/1711.00199) · 2026-10-30
+
+- **Cityscapes (Temporal and Egomotion Data)** · 2016 · Dataset
+  Each annotated keyframe has 30-frame video context, stereo views and vehicle odometry.
+  `Autonomous Driving` · `Stereo RGB` · `Camera Pose` · `Trajectories`
+  [Homepage](https://www.cityscapes-dataset.com/dataset-overview/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Each annotated image is frame 20 of a 30-frame video snippet; stereo views and vehicle odometry accompany the sequence. Include the temporal/egomotion portion; native segmentation scores are not prediction scores. [Reviewed source](https://www.cityscapes-dataset.com/dataset-overview/) · 2026-10-30
 
 - **DeepMind Lab** · 2016 · Generation environment / toolkit
   First-person 3D navigation and interaction environments with visual observations, actions, and game-state trajectories.
@@ -1316,6 +1832,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://projects.asl.ethz.ch/datasets/euroc-mav/) · Access: Official ETH Research Collection download portal
   Inclusion evidence C3: Stereo images and synchronized IMU are paired with accurate MAV motion ground truth. [Reviewed source](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 2026-10-29
 
+- **Oxford RobotCar** · 2016 · Dataset
+  Timestamped camera/LiDAR streams accompany GPS/INS position, velocity and attitude.
+  `Autonomous Driving` · `RGB Video` · `LiDAR` · `GPS / IMU` · `Camera Pose`
+  [Homepage](https://robotcar-dataset.robots.ox.ac.uk/documentation/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: Timestamped camera/LiDAR streams align with GPS/INS position, velocity and attitude. VO supplies relative poses but is explicitly a reference, not ground truth. [Reviewed source](https://robotcar-dataset.robots.ox.ac.uk/documentation/) · 2026-10-30
+
 - **KITTI** · 2012 · Dataset
   A foundational autonomous-driving dataset with stereo cameras, LiDAR, GPS/IMU, and established benchmarks for depth, scene flow, odometry, and 3D perception.
   `Autonomous Driving` · `Stereo RGB` · `LiDAR` · `GPS / IMU` · `3D Boxes`
@@ -1328,9 +1850,15 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · Access: Official sequence downloads and trajectory evaluation tools
   Inclusion evidence C3: Official release provides 30 Hz RGB-D images aligned with high-accuracy motion-capture sensor trajectories. [Reviewed source](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · 2026-10-29
 
+- **NGSIM Vehicle Trajectories** · 2006 · Dataset
+  Vehicle trajectories describe traffic motion at tenth-of-a-second intervals.
+  `Autonomous Driving` · `Trajectories` · `Object State`
+  [Homepage](https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C3: The FHWA describes vehicle trajectories sampled every tenth of a second. Positions over time support traffic forecasting; the program is not a camera-control dataset. [Reviewed source](https://www.fhwa.dot.gov/publications/research/operations/its/06135/06135.pdf) · 2026-10-30
+
 <a id="physical-causal-reasoning"></a>
 
-### Physical & Causal Reasoning (22)
+### Physical & Causal Reasoning (28)
 
 - **CG-World** · 2026 · Dataset
   A large computer-graphics world-state dataset explicitly recording states, events, relations, and counterfactual branches.
@@ -1386,17 +1914,41 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://bell0o.github.io/GRIP/) · [Code](https://github.com/BeLl0o/GRIP_Dataset) · Access: Project page and official repository available
   Inclusion evidence C4: Official HDF5 schema explicitly contains 100-frame grasp trajectories with time-varying joint states, object mesh states, contacts and friction forces. Only currently released subsets count as available. [Reviewed source](https://github.com/BeLl0o/GRIP_Dataset) · 2026-10-29
 
+- **Guardian OOD (UR5-Fail / RoboFail / RoboVQA)** · 2025 · Derived data / subset
+  Execution and perturbed-planning examples contain images, plans, task context and success/failure targets.
+  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward`
+  [Homepage](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C4: Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data. [Reviewed source](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 2026-10-30
+
+- **ManipBench (Interaction and Outcome Tasks)** · 2025 · Benchmark
+  Interaction portions cover inverse dynamics, temporal actions, fabric interactions, counterfactuals and simulation tasks.
+  `Robotics / Embodied AI` · `RGB Video` · `QA` · `Simulation State`
+  [Homepage](https://manipbench.github.io/) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C4: The benchmark includes inverse dynamics, temporal action sequences, fabric interaction and counterfactual questions, plus executable simulation evaluation. Inclusion is limited to these interaction/outcome tasks. [Reviewed source](https://manipbench.github.io/) · 2026-10-30
+
 - **OmniEAR / EAR-Bench** · 2025 · Generation environment / toolkit
   A text-based embodied benchmark for reasoning about physical interactions, tool use, and multi-agent coordination.
   `Robotics / Embodied AI` · `Text` · `Action` · `Object State` · `Trajectories`
   [Homepage](https://zju-real.github.io/OmniEmbodied/) · [Code](https://github.com/ZJU-REAL/OmniEmbodied) · Access: Benchmark data in repository and expert trajectories on Hugging Face
   Inclusion evidence C2: OmniEAR/EAR-Bench supplies a structured-state simulator and expert trajectories for physically constrained action execution. Rename to match the official repository; paper title differs across revisions. [Reviewed source](https://github.com/ZJU-REAL/OmniEmbodied) · 2026-10-29
 
+- **Robo-Dopamine GRM State Pairs** · 2025 · Derived data / subset
+  Task instructions, start/end anchors and multi-view before/after states carry relative-progress targets.
+  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward`
+  [Homepage](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C4: Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories. [Reviewed source](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 2026-10-30
+
 - **PokeFlex** · 2024 · Dataset
   A real-world pilot dataset for deformable-object manipulation, capturing complete 360-degree 3D mesh deformations together with robot-applied forces and torques during poking.
   `Robotics / Embodied AI` · `Physics / Science` · `3D Mesh` · `Action` · `Robot State` · `Multi-view RGB Video`
   [Homepage](https://pokeflex-dataset.github.io/) · [Paper](https://arxiv.org/abs/2409.17124) · [Code](https://github.com/pokeflex-dataset/reconstruction) · Access: Official project page and reconstruction code available
   Inclusion evidence C2: Robot poking pairs actively deformed 3D meshes with applied forces and torques. [Reviewed source](https://arxiv.org/abs/2409.17124) · 2026-10-29
+
+- **ARMBench (Activity Defect Subset)** · 2023 · Dataset
+  The activity-defect portion contains pick/transfer/place context, video, physical package failures and first-defect frames.
+  `Robotics / Embodied AI` · `RGB Video` · `Object State`
+  [Paper](https://arxiv.org/pdf/2303.16382) · Access: Paper documents the resource; complete download not tested
+  Inclusion evidence C4: The activity subset contains pick/transfer/place context, manipulation videos, physical package-failure outcomes and the first observable defect frame. Inclusion covers these outcome sequences, not the standalone segmentation/identification images. [Reviewed source](https://arxiv.org/pdf/2303.16382) · 2026-10-30
 
 - **Melting Pot** · 2022 · Generation environment / toolkit
   A suite of multi-agent social interaction environments.
@@ -1421,6 +1973,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Action` · `Simulation State` · `Object State`
   [Homepage](https://sites.google.com/view/causal-world) · [Paper](https://arxiv.org/abs/2010.04296) · [Code](https://github.com/rr-learning/CausalWorld) · Access: Official environment
   Inclusion evidence C4: Official simulator provides step(action) and interventions on causal variables such as object mass and size, enabling controlled physical rollouts. [Reviewed source](https://github.com/rr-learning/CausalWorld) · 2026-10-29
+
+- **DPI-Net Simulation Rollout Generator** · 2019 · Generation environment / toolkit
+  Official scripts generate fluid, rigid-body and granular interaction trajectories, saving reference and predicted rollouts separately.
+  `Physics / Science` · `Simulation State` · `3D State` · `Trajectories`
+  [Code](https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C4: Training scripts generate particle simulation data for FluidFall, BoxBath, FluidShake and RiceGrip; evaluation saves separate ground-truth and predicted rollouts. [Reviewed source](https://raw.githubusercontent.com/YunzhuLi/DPI-Net/master/README.md) · 2026-10-30
 
 - **PHYRE** · 2019 · Benchmark
   A 2D physical reasoning benchmark where agents place objects to achieve goals across generated task templates, testing intervention, trial efficiency, and generalization.
@@ -1452,6 +2010,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/microsoft/TextWorld) · [Paper](https://arxiv.org/abs/1806.11532) · Access: Open-source generator and games
   Inclusion evidence C2: Generated interactive games expose state tracking, actions and rewards through a documented RL environment. [Reviewed source](https://arxiv.org/abs/1806.11532) · 2026-10-29
 
+- **PyBullet** · 2017 · Generation environment / toolkit
+  Executable physics examples generate object-state evolution from initial poses, gravity and simulation steps.
+  `Physics / Science` · `Simulation State` · `Action` · `Object State`
+  [Code](https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C4: The executable example sets initial body pose and gravity, advances stepSimulation and exposes body position/orientation. This is a dynamics generator, not a recorded dataset. [Reviewed source](https://raw.githubusercontent.com/bulletphysics/bullet3/master/examples/pybullet/examples/hello_pybullet.py) · 2026-10-30
+
 - **MIT Planar Pushing Dataset** · 2016 · Dataset
   A high-fidelity planar pushing dataset recording actions and object motion across shapes, contacts, pushing directions, and friction conditions.
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Object State` · `Trajectory` · `Robot State`
@@ -1466,7 +2030,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (39)
+### World Model Evaluation & Diagnostics (40)
 
 - **4DSynth** · 2026 · Generation environment / toolkit
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
@@ -1629,6 +2193,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `3D Annotations` · `Trajectories` · `GPS / IMU`
   [Homepage](https://modelscope.cn/datasets/Georgehhhh/ORAD-3D) · [Paper](https://arxiv.org/abs/2510.16500) · [Code](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) · Access: Public release on ModelScope and Baidu Cloud
   Inclusion evidence C5: The paper explicitly defines an off-road world-model evaluation track; retain that track, not static free-space detection as inclusion evidence. [Reviewed source](https://arxiv.org/abs/2510.16500) · 2026-10-29
+
+- **WoWBench (Released Samples)** · 2025 · Benchmark
+  Initial images/instructions pair with reference videos and tracked keypoints for physical-consistency and future-trajectory evaluation.
+  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Trajectories`
+  [Paper](https://arxiv.org/html/2509.22642v1) · [Homepage](https://huggingface.co/datasets/WoW-world-model/WoW-1-Benchmark-Samples) · Access: Released benchmark sample package; full evaluation-code release unconfirmed
+  Inclusion evidence C5: WoWBench pairs initial images/instructions with reference videos and tracking keypoints, evaluating future physical consistency and trajectories. The repository releases benchmark samples; a complete evaluation-code release is not confirmed. [Reviewed source](https://arxiv.org/html/2509.22642v1) · 2026-10-30
 
 - **MMWorld** · 2024 · Benchmark
   A human-annotated and synthetic benchmark for multidisciplinary, multifaceted world understanding in video, including explanation, counterfactual reasoning, and future prediction.

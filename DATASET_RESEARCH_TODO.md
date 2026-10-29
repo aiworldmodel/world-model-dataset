@@ -1,6 +1,6 @@
 # Dataset Research TODO
 
-Scope: a strict catalog of datasets first publicly released before or during 2026 that directly expose world-state evolution, action-conditioned transitions, future observations, or dedicated world-model evaluation protocols.
+Scope: a strict catalog of resources published or documented before or during 2026 that expose world-state evolution, action-conditioned transitions, future observations, or dedicated world-model evaluation protocols. Resource year and later conversion/update dates are distinguished in CATALOG_POLICY.md.
 
 ## Workflow
 
@@ -67,9 +67,11 @@ The historical batch notes below are superseded by the [2026-10-29 source review
 
 ## Current status
 
-- Formal catalog: 266 source-reviewed resources, not 266 independent acquired datasets
-- Baseline reconciliation: 391 = 266 retained + 79 pending + 38 excluded + 8 merged
-- Pending queue: filter `status=pending` in [the review ledger](audit/evidence-review-2026-10-29.csv); original records are recoverable in `audit/archived-records/`
-- Current focus: resolve primary-source identity and temporal schemas before restoring candidates; follow [CATALOG_POLICY.md](CATALOG_POLICY.md)
-- Completed scope: source-level eligibility review of the 391 existing records; no claim of exhaustive external discovery, complete data downloads or license validation
-- Known limitation: some official pages and dataset cards could not be retrieved. A failed request is recorded as unresolved, not as proof of an unavailable resource.
+- Formal catalog: 361 source-reviewed resources; 307 dated before 2026 and 54 dated 2026.
+- This pass: 46 restored + 49 newly added. Full-catalog consistency/build/UI checks completed; source and network limits are recorded.
+- Original 391 reconciliation: 312 active + 30 pending + 41 excluded + 8 merged.
+- Current 441-decision ledger: 361 active + 31 pending + 41 excluded + 8 merged; 14 pending candidates are dated before 2026.
+- Pending queue: filter status=pending in [the current ledger](audit/pre2026-review-2026-10-30.csv). Previously listed candidates remain in audit/archived-records/; newly discovered TidyBot exists only in the ledger.
+- Completed finite scope: all 62 pre-2026 pending candidates from the prior audit and all 64 official TFDS Open X builders. External discovery is not claimed exhaustive; unchecked source/year tasks above remain open.
+- Latest review: [2026-10-30 report](audit/pre2026-review-2026-10-30.md). The 2026-10-29 report remains historical.
+- No full data download, sample validation, license adjudication or experiment replication was performed. HTTP timeouts/denials remain explicitly unresolved.

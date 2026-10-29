@@ -1,0 +1,51 @@
+{
+  "id": "ucf101",
+  "name": "UCF101 (Video Prediction Use)",
+  "shortName": "UCF101 (Video Prediction Use)",
+  "year": 2012,
+  "summary": "原始动作视频在后续连续视频流模型论文中被明确用于未来视频预测。",
+  "summaryEn": "Original action videos are explicitly evaluated for future-video prediction in a later continuous-video-flow paper.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "University of Central Florida",
+  "organizationsZh": "中佛罗里达大学",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Paper documents the resource; complete download not tested",
+  "accessZh": "论文描述该资源；完整下载未测试",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "2012 是原始数据年份；2024 年预测论文补充了此前缺失的入选证据，不包含控制动作标注。",
+  "wmNoteEn": "The paper explicitly evaluates future-video prediction on UCF101. This later predictive protocol supplies evidence absent from the original classification paper; no action/state-control labels are claimed.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2412.05633"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2412.05633",
+    "sourceTitle": "Efficient Continuous Video Flow Model for Video Prediction",
+    "locator": "Abstract and reported evaluation datasets",
+    "statement": "The paper explicitly evaluates future-video prediction on UCF101. This later predictive protocol supplies evidence absent from the original classification paper; no action/state-control labels are claimed.",
+    "reviewedAt": "2026-10-30",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
+}

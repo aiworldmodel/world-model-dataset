@@ -1,0 +1,51 @@
+{
+  "id": "moving-mnist",
+  "name": "Moving MNIST",
+  "shortName": "Moving MNIST",
+  "year": 2015,
+  "summary": "移动数字未来帧预测数据，公开测试序列各含 20 帧。",
+  "summaryEn": "Moving-digit video-prediction data with 20 frames in each released test sequence.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Synthetic Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "10,000 test sequences, 20 frames each",
+  "scaleZh": "10,000 条测试序列，每条 20 帧",
+  "organizations": "University of Toronto",
+  "organizationsZh": "多伦多大学",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "测试集含 10,000 条序列；训练序列通过生成产生，不是同一个固定测试包。",
+  "wmNoteEn": "The released test split contains 10,000 ordered 20-frame digit-motion videos. Official documentation identifies the video-representation/prediction paper and distinguishes generated training sequences.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/moving_mnist"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://www.tensorflow.org/datasets/catalog/moving_mnist",
+    "sourceTitle": "Moving MNIST / TensorFlow Datasets",
+    "locator": "Description, feature documentation and citation",
+    "statement": "The released test split contains 10,000 ordered 20-frame digit-motion videos. Official documentation identifies the video-representation/prediction paper and distinguishes generated training sequences.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

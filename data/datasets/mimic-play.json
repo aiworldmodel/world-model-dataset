@@ -1,0 +1,63 @@
+{
+  "id": "mimic-play",
+  "name": "MimicPlay Robot Demonstrations",
+  "shortName": "MimicPlay Robot Demonstrations",
+  "year": 2023,
+  "summary": "机器人部分包含七维动作、两路前方视角与一路腕部视角、末端位姿及关节位置/速度。",
+  "summaryEn": "The robot portion contains seven-dimensional actions, two front views and a wrist view, end-effector pose and joint positions/velocities.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "范围限定有动作的机器人部分；人类交互视频不能自动当作机器人控制轨迹。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Scope is the action-bearing robot portion; human-play videos are not automatically robot motor-command trajectories. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/mimic_play"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/mimic_play",
+    "sourceTitle": "MimicPlay Robot Demonstrations / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "The robot portion contains seven-dimensional actions, two front views and a wrist view, end-effector pose and joint positions/velocities. Steps are organized into episodes. Scope is the action-bearing robot portion; human-play videos are not automatically robot motor-command trajectories.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "mimic_play"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/mimic_play"
+  }
+}

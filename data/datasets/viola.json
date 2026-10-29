@@ -1,0 +1,56 @@
+{
+  "id": "viola",
+  "name": "VIOLA Robot Demonstrations",
+  "shortName": "VIOLA Robot Demonstrations",
+  "year": 2022,
+  "summary": "厨房任务的操作示范，包含平移、旋转、夹爪动作以及双视角观测。",
+  "summaryEn": "Kitchen manipulation demonstrations with translation, rotation, gripper actions and two camera views.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "150 episodes: 135 train / 15 test",
+  "scaleZh": "150 个回合：135 训练 / 15 测试",
+  "organizations": "University of Texas at Austin",
+  "organizationsZh": "得克萨斯大学奥斯汀分校",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "公开拆分为 135 个训练和 15 个测试回合；与 Open X 聚合集合重叠。",
+  "wmNoteEn": "135 training and 15 test episodes align translation, rotation and gripper actions with two camera streams and robot state.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/viola"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/viola",
+    "sourceTitle": "VIOLA / TensorFlow Datasets",
+    "locator": "Feature structure and splits",
+    "statement": "135 training and 15 test episodes align translation, rotation and gripper actions with two camera streams and robot state.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "open-x-embodiment"
+  ]
+}

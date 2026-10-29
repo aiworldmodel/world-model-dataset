@@ -1,0 +1,64 @@
+{
+  "id": "asu-table-top",
+  "name": "ASU Tabletop Manipulation",
+  "shortName": "ASU Tabletop Manipulation",
+  "year": 2023,
+  "summary": "桌面操作提供七维 action/action_delta 数组、RGB、关节状态及末端/物体位姿。",
+  "summaryEn": "Tabletop manipulation contains seven-dimensional action/action_delta arrays, RGB, joint states and end-effector/object poses.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Object State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "官方七维动作说明中的分量列表不一致，使用前须核对映射。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "The official seven-dimensional action description lists inconsistent components; verify the mapping before use. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds",
+    "sourceTitle": "ASU Tabletop Manipulation / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Tabletop manipulation contains seven-dimensional action/action_delta arrays, RGB, joint states and end-effector/object poses. Steps are organized into episodes. The official seven-dimensional action description lists inconsistent components; verify the mapping before use.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "asu_table_top_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/asu_table_top_converted_externally_to_rlds"
+  }
+}

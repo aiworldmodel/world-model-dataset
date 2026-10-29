@@ -1,0 +1,53 @@
+{
+  "id": "tpt-bench",
+  "name": "TPT-Bench (Egomotion Sequences)",
+  "shortName": "TPT-Bench (Egomotion Sequences)",
+  "year": 2025,
+  "summary": "时间戳图像和对应 ROS 包包含可提取的 ZED 里程计路径。",
+  "summaryEn": "Timestamped images and ROS bags provide an extractable ZED odometry path.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Camera Pose",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "TPT-Bench project team",
+  "organizationsZh": "TPT-Bench 项目团队",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "空间与时空世界建模",
+  "verdictEn": "Spatial & Spatiotemporal World Modeling",
+  "wmNote": "收录相机/机器人运动序列；原生目标人物跟踪指标不等于未来预测指标。",
+  "wmNoteEn": "Timestamped images and per-sequence ROS bags include an explicitly extractable ZED odometry path. This supports robot egomotion sequences; native target-person tracking scores do not measure forecasting.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://raw.githubusercontent.com/MedlarTea/TPT-BENCH-TOOLS/main/README.md",
+    "sourceTitle": "TPT-Bench official tools",
+    "locator": "Dataset structure and odometry extraction",
+    "statement": "Timestamped images and per-sequence ROS bags include an explicitly extractable ZED odometry path. This supports robot egomotion sequences; native target-person tracking scores do not measure forecasting.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

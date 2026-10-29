@@ -1,0 +1,61 @@
+{
+  "id": "toto",
+  "name": "TOTO Scooping and Pouring",
+  "shortName": "TOTO Scooping and Pouring",
+  "year": 2023,
+  "summary": "舀取与倾倒回合包含末端和夹爪动作、RGB 观测及七个关节的位置。",
+  "summaryEn": "Scooping/pouring episodes contain end-effector and gripper actions, RGB observations and seven joint positions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "动作坐标和采样约定以该版本为准；跨机器人合并前须核查。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。",
+  "wmNoteEn": "Action coordinates and sampling conventions follow this release; check them before combining embodiments. Part of the TFDS Open X registry; do not sum its samples with the aggregate.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/toto"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/toto",
+    "sourceTitle": "TOTO Scooping and Pouring / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "Scooping/pouring episodes contain end-effector and gripper actions, RGB observations and seven joint positions. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/toto"
+  }
+}

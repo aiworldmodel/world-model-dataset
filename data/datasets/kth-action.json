@@ -1,0 +1,51 @@
+{
+  "id": "kth-action",
+  "name": "KTH (Video Prediction Use)",
+  "shortName": "KTH (Video Prediction Use)",
+  "year": 2004,
+  "summary": "人物动作视频具有 PredRNN 官方未来帧预测训练与评测路径。",
+  "summaryEn": "Human-action videos have an official PredRNN future-frame prediction training/evaluation path.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
+  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "organizations": "KTH Royal Institute of Technology",
+  "organizationsZh": "瑞典皇家理工学院（KTH）",
+  "license": "Data, code and asset terms must be checked for the selected release",
+  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "access": "Official documentation or implementation; data download not tested",
+  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "收录依据是明确的视频预测用途，不是原始动作分类任务。",
+  "wmNoteEn": "The prediction authors release KTH data-loading/training scripts and evaluate generated future frames. Inclusion is restricted to the video-prediction use, not the original action-classification task.",
+  "links": {
+    "code": "https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://raw.githubusercontent.com/thuml/predrnn-pytorch/master/README.md",
+    "sourceTitle": "PredRNN official implementation",
+    "locator": "KTH results and Get Started",
+    "statement": "The prediction authors release KTH data-loading/training scripts and evaluate generated future frames. Inclusion is restricted to the video-prediction use, not the original action-classification task.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
+}

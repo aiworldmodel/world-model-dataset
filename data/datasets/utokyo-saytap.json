@@ -1,0 +1,61 @@
+{
+  "id": "utokyo-saytap",
+  "name": "SayTap Locomotion Rollouts",
+  "shortName": "SayTap Locomotion Rollouts",
+  "year": 2023,
+  "summary": "A1 运动回合包含 12 个关节位置指令、30 维本体状态、期望速度及足部接触模式。",
+  "summaryEn": "A1 locomotion episodes contain 12 joint-position commands, 30-dimensional proprioception, desired velocity and foot-contact patterns.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Action",
+    "Robot State",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [],
+  "scale": "Versioned RLDS episode release; see the documented split counts",
+  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "organizations": "Dataset contributors named in the official TFDS citation",
+  "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
+  "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
+  "licenseZh": "适用数据专属条款；TFDS 代码许可不等于数据授权",
+  "access": "Official TFDS schema and RLDS storage reference; full download not tested",
+  "accessZh": "官方 TFDS 结构与 RLDS 存储入口；完整下载未测试",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "RGB 字段是占位数据，不是真实采集图像。该发布列于 TFDS Open X 注册表，不能与聚合集合直接叠加样本量。所选 RLDS 版本的仿真/实采来源未明确核实。",
+  "wmNoteEn": "RGB fields are dummy placeholders, not recorded images. Part of the TFDS Open X registry; do not sum its samples with the aggregate. Simulation-versus-real provenance of this RLDS release is not independently resolved.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds",
+    "sourceTitle": "SayTap Locomotion Rollouts / TensorFlow Datasets",
+    "locator": "Description, feature structure, splits and citation",
+    "statement": "A1 locomotion episodes contain 12 joint-position commands, 30-dimensional proprioception, desired velocity and foot-contact patterns. Steps are organized into episodes. RGB fields are dummy placeholders, not recorded images.",
+    "reviewedAt": "2026-10-30",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "utokyo_saytap_converted_externally_to_rlds"
+  ],
+  "relatedResources": [
+    "open-x-embodiment"
+  ],
+  "yearBasis": {
+    "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
+    "source": "https://www.tensorflow.org/datasets/catalog/utokyo_saytap_converted_externally_to_rlds"
+  }
+}
