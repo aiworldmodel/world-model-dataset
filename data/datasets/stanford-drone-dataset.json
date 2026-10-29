@@ -37,7 +37,6 @@
   "licenseZh": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0",
   "access": "Official project page provides the Stanford Campus Dataset download",
   "accessZh": "官方项目页提供 Stanford Campus Dataset 下载入口",
-  "rating": 4,
   "verdict": "经典鸟瞰多智能体轨迹预测数据",
   "verdictEn": "Classic bird's-eye multi-agent trajectory forecasting data",
   "wmNote": "多类别智能体在真实开放空间中的连续轨迹非常适合建模社会导航和多未来预测；缺少车载或机器人动作控制信号。",
@@ -45,5 +44,18 @@
   "links": {
     "homepage": "https://cvgl.stanford.edu/projects/uav_data/",
     "paper": "https://arxiv.org/abs/1601.00998"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1601.00998",
+    "sourceTitle": "[1601.00998] Forecasting Social Navigation in Crowded Complex Scenes",
+    "locator": "Abstract / official paper description",
+    "statement": "Drone-observed road users and pedestrians are explicitly evaluated through future-trajectory prediction in crowded scenes.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

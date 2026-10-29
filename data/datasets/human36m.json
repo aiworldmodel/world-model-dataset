@@ -34,7 +34,6 @@
   "licenseZh": "适用 Human3.6M 许可协议；包含研究用途限制",
   "access": "Registration / agreement required",
   "accessZh": "需注册并同意协议",
-  "rating": 5,
   "verdict": "人体运动预测基础数据",
   "verdictEn": "Foundational human-motion data",
   "wmNote": "三维动作真值和相机标定价值很高；实验室动作分布与真实开放环境存在明显差距。",
@@ -42,5 +41,18 @@
   "links": {
     "homepage": "http://vision.imar.ro/human3.6m/description.php",
     "paper": "https://ieeexplore.ieee.org/document/6682899"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "http://vision.imar.ro/human3.6m/description.php",
+    "sourceTitle": "Human3.6M Dataset",
+    "locator": "Official dataset / project description",
+    "statement": "Synchronized 50Hz multiview video and accurate 3D joint positions/angles expose human motion trajectories.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

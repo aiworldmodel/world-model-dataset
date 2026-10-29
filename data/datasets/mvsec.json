@@ -36,12 +36,24 @@
   "licenseZh": "CC BY-SA 4.0",
   "access": "Official sequence downloads, calibration and sample code",
   "accessZh": "官方序列下载、校准信息及示例代码",
-  "rating": 3,
   "verdict": "多平台事件时空观测",
   "verdictEn": "Multiplatform event observations",
   "wmNote": "事件、位姿和光流可支持连续时间状态演化建模；真值覆盖需按序列核查。",
   "wmNoteEn": "Events, poses, and flow support continuous-time evolution modeling; verify truth coverage per sequence.",
   "links": {
     "homepage": "https://daniilidis-group.github.io/mvsec/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://daniilidis-group.github.io/mvsec/",
+    "sourceTitle": "Multi Vehicle Stereo Event Camera Dataset",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Multi-vehicle event/frame streams align with LiDAR/IMU/GPS/mocap ground-truth pose, depth and optical flow.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

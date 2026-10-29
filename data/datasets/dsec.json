@@ -35,7 +35,6 @@
   "licenseZh": "CC BY-SA 4.0",
   "access": "Official sensor downloads and flow/disparity benchmarks",
   "accessZh": "官方传感器数据下载及光流、视差基准",
-  "rating": 3,
   "verdict": "事件视觉驾驶时序",
   "verdictEn": "Event-vision driving sequences",
   "wmNote": "收录依据是连续驾驶观测及跨时刻光流；静态检测或语义子集不单独作为动力学证据。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://dsec.ifi.uzh.ch/",
     "paper": "https://arxiv.org/abs/2103.06011"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2103.06011",
+    "sourceTitle": "[2103.06011] DSEC: A Stereo Event Camera Dataset for Driving Scenarios",
+    "locator": "Abstract / official paper description",
+    "statement": "Driving recordings synchronize stereo frames/events with LiDAR and RTK GPS, enabling ordered observation/ego-trajectory modeling.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

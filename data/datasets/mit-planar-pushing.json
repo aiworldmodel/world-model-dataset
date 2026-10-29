@@ -7,11 +7,27 @@
   "summaryEn": "A high-fidelity planar pushing dataset recording actions and object motion across shapes, contacts, pushing directions, and friction conditions.",
   "primaryTask": "Physical & Causal Reasoning",
   "primaryTaskZh": "物理与因果推理",
-  "secondaryTasks": ["Action-Conditioned Dynamics"],
-  "domain": ["Robotics / Embodied AI", "Physics / Science"],
-  "modalities": ["Action", "Object State", "Trajectory", "Robot State"],
-  "structure": ["Interaction Episodes", "Temporal Sequences"],
-  "source": ["Real-world", "Autonomous Agent"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Action",
+    "Object State",
+    "Trajectory",
+    "Robot State"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Autonomous Agent"
+  ],
   "scale": "1M+ planar pushing experiments",
   "scaleZh": "超过 100 万次平面推动实验",
   "organizations": "Massachusetts Institute of Technology",
@@ -20,7 +36,6 @@
   "licenseZh": "复用前需核查代码仓库和数据集条款",
   "access": "Official processing repository available",
   "accessZh": "提供官方处理代码仓库",
-  "rating": 5,
   "verdict": "高精度接触动力学数据",
   "verdictEn": "High-fidelity contact dynamics",
   "wmNote": "大规模受控实验直接连接推动动作、接触条件和物体响应，适合学习及诊断接触动力学。",
@@ -28,5 +43,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1604.04038",
     "code": "https://github.com/mcubelab/pdproc"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1604.04038",
+    "sourceTitle": "[1604.04038] More than a Million Ways to Be Pushed: A High-Fidelity Experimental Dataset of Planar Pushing",
+    "locator": "Abstract / official paper description",
+    "statement": "Timestamped pusher/object poses and contact forces record controlled physical pushing experiments.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

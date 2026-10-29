@@ -35,12 +35,24 @@
   "licenseZh": "CC BY-NC-SA 3.0",
   "access": "Official sequence downloads; benchmark test truth withheld",
   "accessZh": "官方序列下载；基准测试真值不公开",
-  "rating": 3,
   "verdict": "激烈飞行下的未来观测",
   "verdictEn": "Future observations under aggressive flight",
   "wmNote": "可研究高速自运动下的时序观测和轨迹预测；不将 IMU 信号当作执行器控制。",
   "wmNoteEn": "Supports fast egomotion and trajectory prediction; IMU signals are not actuator controls.",
   "links": {
     "homepage": "https://fpv.ifi.uzh.ch/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://fpv.ifi.uzh.ch/",
+    "sourceTitle": "The UZH FPV Dataset",
+    "locator": "Official dataset / project description",
+    "statement": "Aggressive flight sequences provide visual-inertial measurements and 6DoF ground-truth trajectories.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

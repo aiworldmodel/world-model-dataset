@@ -33,13 +33,24 @@
   "licenseZh": "适用研究数据集条款及项目署名要求",
   "access": "Open project access",
   "accessZh": "开放项目访问",
-  "rating": 4,
   "verdict": "真实视频物理属性基准",
   "verdictEn": "Real-video physical-property benchmark",
   "wmNote": "真实材料与运动比纯合成基准更有价值，但场景和动力学类型较单一。",
   "wmNoteEn": "Real materials add value over synthetic benchmarks, while scene and dynamics diversity remain narrow.",
   "links": {
-    "homepage": "https://phys101.csail.mit.edu/",
-    "paper": "https://arxiv.org/abs/1511.07439"
-  }
+    "homepage": "https://phys101.csail.mit.edu/"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://phys101.csail.mit.edu/",
+    "sourceTitle": "Physics 101",
+    "locator": "Official dataset / project description",
+    "statement": "Official videos depict sliding, collisions, springs and falls; physical-property learning and outcome prediction are explicit.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

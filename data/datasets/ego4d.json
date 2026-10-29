@@ -31,7 +31,6 @@
   "organizations": "Meta AI (FAIR), UT Austin, CMU, and collaborators",
   "license": "Ego4D License Agreement · application-based research access",
   "access": "Application required",
-  "rating": 5,
   "verdict": "第一人称未来预测",
   "wmNote": "适合手—物交互和长期行为预测。下载规模大且需要签署协议，建议按官方 CLI 只获取目标 benchmark 的片段。",
   "links": {
@@ -45,5 +44,21 @@
   "scaleZh": "3,670 小时 · 900+ 名参与者 · 9 个国家的 74 个地点",
   "organizationsZh": "Meta AI（FAIR）、得克萨斯大学奥斯汀分校、卡内基梅隆大学及合作机构",
   "accessZh": "需申请",
-  "licenseZh": "Ego4D 许可协议；通过申请向研究用途开放"
+  "licenseZh": "Ego4D 许可协议；通过申请向研究用途开放",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2110.07058",
+    "sourceTitle": "[2110.07058] Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+    "locator": "Abstract / official paper description",
+    "statement": "The parent corpus explicitly includes future-activity forecasting and interaction-state tasks. Merge v2 and forecasting aliases rather than count them separately.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": [
+    "ego4d-v2",
+    "ego4d-forecasting"
+  ]
 }

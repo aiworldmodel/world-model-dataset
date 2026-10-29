@@ -7,11 +7,28 @@
   "summaryEn": "A large-scale 5D semantic autonomous-driving benchmark combining video, 3D objects, trajectories, maps, and time for dynamic traffic-scene modeling.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
-  "secondaryTasks": ["Predictive & Generative Dynamics", "Decision-Making & Agent Trajectories"],
-  "domain": ["Autonomous Driving", "Urban / 3D Scene"],
-  "modalities": ["RGB Video", "3D Boxes", "Trajectories", "Maps", "Semantic Labels"],
-  "structure": ["Temporal Sequences", "Multi-view Sequences"],
-  "source": ["Real-world"],
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics",
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "3D Boxes",
+    "Trajectories",
+    "Maps",
+    "Semantic Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Multi-view Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
   "scale": "Large-scale urban driving sequences with 5D semantic annotations",
   "scaleZh": "包含 5D 语义标注的大规模城市驾驶序列",
   "organizations": "Chinese Academy of Sciences and collaborators",
@@ -20,7 +37,6 @@
   "licenseZh": "适用项目数据条款；需核查访问和下游限制",
   "access": "Official repository available",
   "accessZh": "提供官方代码仓库",
-  "rating": 4,
   "verdict": "自动驾驶 5D 时空基准",
   "verdictEn": "5D spatiotemporal driving benchmark",
   "wmNote": "时间、语义、三维目标和轨迹联合标注适合动态场景状态建模；直接车辆控制信号有限。",
@@ -28,5 +44,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1903.06405",
     "code": "https://github.com/VCCIV/BLVD"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1903.06405",
+    "sourceTitle": "[1903.06405] BLVD: Building A Large-scale 5D Semantics Benchmark for Autonomous Driving",
+    "locator": "Abstract / official paper description",
+    "statement": "The benchmark explicitly targets temporal object tracking, interactive events and intention prediction, beyond static detection.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

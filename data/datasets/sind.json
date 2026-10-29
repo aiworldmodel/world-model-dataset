@@ -34,7 +34,6 @@
   "licenseZh": "自定义非商业条款；LICENSE 修改了 CC0 文本",
   "access": "Public samples; full data requested with educational email",
   "accessZh": "公开示例；完整数据需用教育邮箱申请",
-  "rating": 4,
   "verdict": "交通信号条件多智能体轨迹",
   "verdictEn": "Signal-conditioned multiagent trajectories",
   "wmNote": "轨迹、运动学和信号可用于未来交互预测；原始版与后续多城市版需按发布范围区分。",
@@ -42,5 +41,18 @@
   "links": {
     "code": "https://github.com/SOTIF-AVLab/SinD",
     "paper": "https://arxiv.org/abs/2209.02297"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2209.02297",
+    "sourceTitle": "[2209.02297] SIND: A Drone Dataset at Signalized Intersection in China",
+    "locator": "Abstract / official paper description",
+    "statement": "Drone-recorded signalized-intersection road-user trajectories explicitly support behavior modeling and motion prediction.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

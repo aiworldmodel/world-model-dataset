@@ -1,10 +1,10 @@
 {
   "id": "gibson",
-  "name": "Gibson Environment Dataset",
+  "name": "Gibson Env",
   "shortName": "Gibson Environment Dataset",
   "year": 2018,
-  "summary": "由真实空间扫描构建的可导航三维环境集合，配合 Gibson 模拟器生成 RGB、深度、语义和智能体轨迹，面向具身感知与导航。",
-  "summaryEn": "A collection of navigable 3D environments reconstructed from real scans, used with Gibson to generate RGB, depth, semantics, and agent trajectories.",
+  "summary": "基于真实场景重建的交互式具身仿真环境；本条收录可生成交互的环境，不单独计数静态建筑资产。",
+  "summaryEn": "Interactive embodied simulation built from reconstructed real scenes; this entry covers transition generation rather than a standalone static building asset set.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
   "secondaryTasks": [
@@ -36,14 +36,26 @@
   "licenseZh": "适用 Gibson 数据条款；包含研究及非商业限制",
   "access": "Request / agreement required",
   "accessZh": "需申请并同意协议",
-  "rating": 4,
-  "verdict": "早期具身仿真场景库",
-  "verdictEn": "Early embodied simulation scene bank",
+  "verdict": "基于真实场景重建的交互式具身仿真环境；本条收录可生成交互的环境，不单独计数静态建筑资产。",
+  "verdictEn": "Interactive embodied simulation built from reconstructed real scenes; this entry covers transition generation rather than a standalone static building asset set.",
   "wmNote": "可用于生成导航轨迹，但旧版 Gibson 工具链已归档，现代项目通常应评估 iGibson 等后继方案。",
   "wmNoteEn": "Useful for navigation rollouts, though the original toolkit is archived and newer successors may be preferable.",
   "links": {
     "homepage": "http://gibsonenv.stanford.edu/database/",
     "paper": "https://arxiv.org/abs/1808.10654",
     "code": "https://github.com/StanfordVL/GibsonEnv"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1808.10654",
+    "sourceTitle": "[1808.10654] Gibson Env: Real-World Perception for Embodied Agents",
+    "locator": "Abstract / official paper description",
+    "statement": "Gibson Env explicitly embeds agents subject to physical and spatial constraints in a released interactive simulator. Scope is Gibson Env, not the static building database alone.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

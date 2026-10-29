@@ -28,7 +28,6 @@
   "organizations": "IBM Research and MIT",
   "license": "Dataset and code research terms; verify repository license",
   "access": "Open download",
-  "rating": "4",
   "verdict": "对象中心时空推理",
   "wmNote": "精确元数据适合对象级世界状态学习；视觉和动作类型高度程序化，真实域泛化有限。",
   "links": {
@@ -42,5 +41,18 @@
   "scaleZh": "约 5,500 段视频 · 组合动作 · 密集元数据",
   "organizationsZh": "IBM Research、麻省理工学院",
   "accessZh": "开放下载",
-  "licenseZh": "适用数据与代码研究条款；需核查仓库许可"
+  "licenseZh": "适用数据与代码研究条款；需核查仓库许可",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://rohitgirdhar.github.io/CATER/",
+    "sourceTitle": "CATER",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Controlled synthetic videos require tracking object motion, occlusion and recursive containment through time; an observable scene-state evolution task is explicit.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -30,7 +30,6 @@
   "organizations": "Google DeepMind, Stanford, UC Berkeley, and collaborators",
   "license": "Mixed: Apache-2.0 / CC BY 4.0; component datasets retain their own terms",
   "access": "Open / component-dependent",
-  "rating": 5,
   "verdict": "具身智能基础设施",
   "wmNote": "适合跨机器人动力学、目标条件建模和离线轨迹学习。不同机器人的动作空间与坐标定义并不完全统一，使用前需要标准化。",
   "links": {
@@ -44,5 +43,18 @@
   "scaleZh": "100 万+ 回合 · 500+ 种技能 · 22 种机器人形态 · RLDS 格式",
   "organizationsZh": "Google DeepMind、斯坦福大学、加州大学伯克利分校及合作机构",
   "accessZh": "开放获取，具体取决于组成数据集",
-  "licenseZh": "混合许可：Apache-2.0 / CC BY 4.0；各组成数据集保留自身条款"
+  "licenseZh": "混合许可：Apache-2.0 / CC BY 4.0；各组成数据集保留自身条款",
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2310.08864",
+    "sourceTitle": "[2310.08864] Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "locator": "Abstract / official paper description",
+    "statement": "Standardized robot learning datasets pool trajectories from multiple embodiments; constituent datasets overlap other catalog records.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

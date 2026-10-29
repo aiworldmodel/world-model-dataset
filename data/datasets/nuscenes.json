@@ -29,7 +29,6 @@
   "organizations": "Motional (formerly nuTonomy)",
   "license": "CC BY-NC-SA 4.0 · non-commercial",
   "access": "Registration required",
-  "rating": 5,
   "verdict": "多传感器 4D 基准",
   "wmNote": "传感器同步与标定质量高，适合多视角一致性生成、BEV 和 occupancy 预测。缺少直接的油门、制动和方向盘控制信号。",
   "links": {
@@ -43,5 +42,18 @@
   "scaleZh": "1,000 个场景 × 20 秒 · 140 万张图像 · 40 万帧点云",
   "organizationsZh": "Motional（原 nuTonomy）",
   "accessZh": "需注册",
-  "licenseZh": "CC BY-NC-SA 4.0 · 仅限非商业用途"
+  "licenseZh": "CC BY-NC-SA 4.0 · 仅限非商业用途",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1903.11027",
+    "sourceTitle": "[1903.11027] nuScenes: A multimodal dataset for autonomous driving",
+    "locator": "Abstract / official paper description",
+    "statement": "Twenty-second driving scenes combine synchronized sensors and temporally tracked 3D agents. Retain sequence/trajectory use, not isolated detection images.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

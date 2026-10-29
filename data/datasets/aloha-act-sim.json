@@ -34,7 +34,6 @@
   "licenseZh": "代码为 MIT；示范数据包条款需核查",
   "access": "Official simulated-demo archive and record_sim_episodes.py",
   "accessZh": "官方仿真示范包及 record_sim_episodes.py",
-  "rating": 4,
   "verdict": "双臂观测与控制序列",
   "verdictEn": "Bimanual observation/control sequences",
   "wmNote": "仅收录已确认公开的仿真数据；图像、关节状态与动作可支持转换预测，不宣称所有真机示范公开。",
@@ -42,5 +41,18 @@
   "links": {
     "code": "https://github.com/tonyzhaozh/act",
     "homepage": "https://tonyzhaozh.github.io/aloha/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/tonyzhaozh/act",
+    "sourceTitle": "GitHub - tonyzhaozh/act · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "README links scripted/human demonstrations for two controlled simulated tasks and identifies episode training and joint/EE-control environments.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

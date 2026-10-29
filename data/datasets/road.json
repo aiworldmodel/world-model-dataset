@@ -36,12 +36,27 @@
   "licenseZh": "数据集条款需进一步核查",
   "access": "Official GitHub repository provides dataset resources and code",
   "accessZh": "官方 GitHub 仓库提供数据资源和代码",
-  "rating": 4,
   "verdict": "驾驶事件和道路参与者状态标注",
   "verdictEn": "Driving-event and road-agent state annotations",
   "wmNote": "ROAD 更适合评测模型是否能理解连续视频中的事件结构，而不仅是预测像素或框位置。",
   "wmNoteEn": "ROAD is useful for evaluating whether models understand event structure in continuous video, beyond predicting pixels or box locations.",
   "links": {
     "homepage": "https://github.com/gurkirt/road-dataset"
-  }
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/gurkirt/road-dataset",
+    "sourceTitle": "GitHub - gurkirt/road-dataset: Download and pre-processing of ROAD dataset · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official release provides per-frame agent boxes linked through persistent tracks over Oxford RobotCar videos. This is derived annotation data; native detection metrics are not forecasting metrics.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "oxford-robotcar"
+  ]
 }

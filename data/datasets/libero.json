@@ -7,11 +7,27 @@
   "summaryEn": "A benchmark for lifelong and language-conditioned robot manipulation with multi-task demonstrations, visual observations, actions, and task descriptions.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["Action-Conditioned Dynamics", "World Model Evaluation & Diagnostics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["RGB Video", "Action", "Robot State", "Language"],
-  "structure": ["Interaction Episodes", "Agent Trajectories"],
-  "source": ["Simulation", "Human Demonstration"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Agent Trajectories"
+  ],
+  "source": [
+    "Simulation",
+    "Human Demonstration"
+  ],
   "scale": "5 benchmark suites · 130 tasks · multi-view demonstrations",
   "scaleZh": "5 个基准套件 · 130 个任务 · 多视角示范轨迹",
   "organizations": "University of Southern California and collaborators",
@@ -20,14 +36,25 @@
   "licenseZh": "代码采用 MIT 许可；数据集和仿真器另有使用条款",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 5,
   "verdict": "语言条件操作与终身学习基准",
   "verdictEn": "Language-conditioned lifelong manipulation benchmark",
   "wmNote": "任务组合和语言指令适合研究可迁移的动作条件模型，但主要依赖仿真环境，真实世界外推需要额外验证。",
   "wmNoteEn": "Task compositions and language instructions support transferable action-conditioned models, while sim-to-real transfer requires additional validation.",
   "links": {
     "homepage": "https://libero-project.github.io/",
-    "paper": "https://arxiv.org/abs/2306.14877",
     "code": "https://github.com/Lifelong-Robot-Learning/LIBERO"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+    "sourceTitle": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge Transfer in Lifelong Robot Learning · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official repository supplies teleoperation demonstrations for four manipulation task suites and an explicit download script.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

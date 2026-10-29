@@ -28,7 +28,6 @@
   "organizations": "UC Berkeley",
   "license": "BDD100K license; non-commercial research conditions apply",
   "access": "Registration required",
-  "rating": "4",
   "verdict": "多样化驾驶视频",
   "wmNote": "视觉场景覆盖广，适合视频预训练和分布鲁棒性研究；缺少同步 LiDAR 与直接控制信号。",
   "links": {
@@ -42,5 +41,18 @@
   "scaleZh": "10 万段驾驶视频 · 每段 40 秒 · 10 项任务",
   "organizationsZh": "加州大学伯克利分校",
   "accessZh": "需注册",
-  "licenseZh": "适用 BDD100K 许可；包含非商业研究用途条件"
+  "licenseZh": "适用 BDD100K 许可；包含非商业研究用途条件",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/bdd100k/bdd100k",
+    "sourceTitle": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous Multitask Learning - CVPR 2020 Oral Paper · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official toolkit explicitly links driving videos to GPS/IMU trajectory information; the retained scope is sequential driving recordings, not isolated perception images.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-catalog.mjs",
-    "check": "node scripts/build-catalog.mjs && node --check app.js",
+    "check": "node scripts/build-catalog.mjs && node --check app.js && node --test scripts/catalog-policy.test.mjs",
     "check:links": "node scripts/check-links.mjs"
   }
 }

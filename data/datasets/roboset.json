@@ -37,7 +37,6 @@
   "licenseZh": "RoboAgent 代码和 RoboSet 数据集采用 MIT License",
   "access": "Official RoboSet pages provide downloadable trajectories; alternate Hugging Face mirror is referenced by the code repository",
   "accessZh": "官方 RoboSet 页面提供可下载轨迹；代码仓库引用了备用 Hugging Face 镜像",
-  "rating": 5,
   "verdict": "真实多技能桌面操作轨迹",
   "verdictEn": "Real multi-skill tabletop manipulation trajectories",
   "wmNote": "多视角、语言任务和动作轨迹使其适合训练可泛化的操作世界模型；不同子集规模和来源需要在实验中明确说明。",
@@ -46,5 +45,18 @@
     "homepage": "https://robopen.github.io/roboset/",
     "paper": "https://arxiv.org/abs/2309.01918",
     "code": "https://github.com/robopen/roboagent"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/robopen/roboagent",
+    "sourceTitle": "GitHub - robopen/roboagent: Repository to train and evaluate RoboAgent · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official RoboAgent repository explicitly trains on released RoboSet HDF5 teleoperation demonstrations and links their download channel.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -35,7 +35,6 @@
   "licenseZh": "CC BY-NC-SA 4.0",
   "access": "Official website provides raw data, processed data, tools, and annotations",
   "accessZh": "官方网站提供原始数据、处理后数据、工具和标注",
-  "rating": 4,
   "verdict": "车辆意图预测的多传感器时序基准",
   "verdictEn": "Multisensor temporal benchmark for vehicle-intention prediction",
   "wmNote": "车道变化阶段、车辆轨迹和多传感器时序记录使其适合研究交通参与者未来状态预测；规模小于大型自动驾驶数据集。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://prevention-dataset.uah.es/",
     "paper": "https://doi.org/10.1109/ITSC.2019.8917433"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://prevention-dataset.uah.es/",
+    "sourceTitle": "The PREVENTION Dataset - Homepage",
+    "locator": "Official dataset / project description",
+    "statement": "Official release includes a trajectory-prediction challenge and frame-indexed vehicle annotations with calibrated raw recordings.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

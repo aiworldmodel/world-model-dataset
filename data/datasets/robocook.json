@@ -34,7 +34,6 @@
   "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
   "access": "Official repository links to data and trajectory-processing instructions",
   "accessZh": "官方仓库提供数据和轨迹处理说明",
-  "rating": 4,
   "verdict": "工具与面团的交互动力学",
   "verdictEn": "Tool-dough interaction dynamics",
   "wmNote": "官方仓库提供数据入口和逐帧 HDF5 粒子轨迹；各工具样本数量不均衡。",
@@ -42,5 +41,18 @@
   "links": {
     "code": "https://github.com/hshi74/robocook",
     "paper": "https://arxiv.org/abs/2306.14447"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/hshi74/robocook",
+    "sourceTitle": "GitHub - hshi74/robocook · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official release provides tool-specific dynamics trajectories as per-frame HDF5 files and before/after object point clouds; distinguish real dynamics data from model-synthesized planning data.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

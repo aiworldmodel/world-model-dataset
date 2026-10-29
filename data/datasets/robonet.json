@@ -28,7 +28,6 @@
   "organizations": "UC Berkeley, Stanford, Google, UPenn",
   "license": "Research use; component data terms may vary",
   "access": "Open download",
-  "rating": "4",
   "verdict": "跨机器人视觉动力学",
   "wmNote": "非常适合动作条件视频预测和跨平台迁移，但数据年代较早，动作语义与现代统一格式需要额外适配。",
   "links": {
@@ -42,5 +41,18 @@
   "scaleZh": "1,500 万帧视频 · 7 种机器人平台 · 4 个实验室",
   "organizationsZh": "加州大学伯克利分校、斯坦福大学、Google、宾夕法尼亚大学",
   "accessZh": "开放下载",
-  "licenseZh": "面向研究用途；各组成数据的条款可能不同"
+  "licenseZh": "面向研究用途；各组成数据的条款可能不同",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/SudeepDasari/RoboNet",
+    "sourceTitle": "GitHub - SudeepDasari/RoboNet · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official dataset loader includes supervised inverse-model and forward video-prediction training over robot experience; data downloads are documented.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

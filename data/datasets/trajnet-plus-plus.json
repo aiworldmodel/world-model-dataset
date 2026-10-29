@@ -35,12 +35,24 @@
   "licenseZh": "组成数据集许可各不相同；需逐一核查下游划分",
   "access": "Official GitHub resources provide benchmark tooling and dataset preparation",
   "accessZh": "官方 GitHub 资源提供基准工具和数据准备流程",
-  "rating": 4,
   "verdict": "行人多智能体未来轨迹预测基准",
   "verdictEn": "Pedestrian multi-agent trajectory forecasting benchmark",
   "wmNote": "统一格式和评测协议降低了比较社会导航世界模型的摩擦，但底层数据源异质性需要在实验中说明。",
   "wmNoteEn": "A unified format and protocol reduce friction when comparing social-navigation world models, but experiments should document the heterogeneous underlying sources.",
   "links": {
     "homepage": "https://github.com/vita-epfl/trajnetplusplusbaselines"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/vita-epfl/trajnetplusplusbaselines",
+    "sourceTitle": "GitHub - vita-epfl/trajnetplusplusbaselines: [ITS'21] Human Trajectory Forecasting in Crowds: A Deep Learning Perspective · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official interaction-centric pedestrian trajectories and a defined future-trajectory forecasting protocol provide direct evidence; underlying source datasets overlap other motion collections.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

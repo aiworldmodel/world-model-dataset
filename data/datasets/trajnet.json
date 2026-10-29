@@ -7,26 +7,51 @@
   "summaryEn": "A benchmark for pedestrian and multi-agent trajectory prediction that standardizes future-location forecasting, social interaction, and multimodal uncertainty evaluation.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["World Model Evaluation & Diagnostics"],
-  "domain": ["Egocentric / Human", "Autonomous Driving"],
-  "modalities": ["Trajectories", "Agent Pose", "Maps"],
-  "structure": ["Agent Trajectories", "Temporal Sequences"],
-  "source": ["Real-world"],
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Egocentric / Human",
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Agent Pose",
+    "Maps"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
   "scale": "Multiple pedestrian and crowd trajectory sources with standardized splits",
   "scaleZh": "汇集多来源行人和人群轨迹，并提供统一数据划分",
   "organizations": "Stanford University and trajectory-prediction community",
   "organizationsZh": "斯坦福大学及轨迹预测研究社区",
   "license": "Individual source datasets have separate terms",
   "licenseZh": "各来源数据集适用不同使用条款",
-  "access": "Official benchmark repository available",
-  "accessZh": "提供官方基准代码仓库",
-  "rating": 4,
+  "access": "Paper-level evidence; original benchmark access not verified",
+  "accessZh": "论文级依据；原版基准的访问未核验",
   "verdict": "多智能体轨迹评测基准",
   "verdictEn": "Multi-agent trajectory benchmark",
   "wmNote": "统一评测协议适合比较多智能体未来预测和交互建模，但原始数据许可需要按子集分别核查。",
   "wmNoteEn": "Unified evaluation supports comparison of multi-agent forecasting and interaction models, while source-data licenses must be checked per subset.",
   "links": {
-    "paper": "https://arxiv.org/abs/1805.07663",
-    "code": "https://github.com/vita-epfl/trajnetplusplusbaselines"
-  }
+    "paper": "https://arxiv.org/abs/1805.07663"
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1805.07663",
+    "sourceTitle": "[1805.07663] An Evaluation of Trajectory Prediction Approaches and Notes on the TrajNet Benchmark",
+    "locator": "Abstract / official paper description",
+    "statement": "The original TrajNet paper identifies a repository of existing trajectory datasets and future-path prediction evaluation. It is distinct from TrajNet++.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

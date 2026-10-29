@@ -29,7 +29,6 @@
   "organizations": "Imperial College London and collaborators",
   "license": "MIT code license; simulator and assets have separate terms",
   "access": "Open generation toolkit",
-  "rating": "4",
   "verdict": "可程序化操作任务库",
   "wmNote": "任务覆盖广且可重复生成，适合快速实验和消融；仿真视觉与物理仍存在 sim-to-real 差距。",
   "links": {
@@ -43,5 +42,18 @@
   "scaleZh": "100+ 项操作任务 · 可按需生成示范",
   "organizationsZh": "帝国理工学院及合作机构",
   "accessZh": "开放生成工具",
-  "licenseZh": "代码采用 MIT 许可；模拟器和资产另有条款"
+  "licenseZh": "代码采用 MIT 许可；模拟器和资产另有条款",
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1909.12271",
+    "sourceTitle": "[1909.12271] RLBench: The Robot Learning Benchmark & Learning Environment",
+    "locator": "Abstract / official paper description",
+    "statement": "Manipulation tasks expose visual/proprioceptive observations and unlimited motion-planned demonstrations with a documented generator.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -7,11 +7,27 @@
   "summaryEn": "An event-camera driving dataset for end-to-end driving research, recording asynchronous visual events and driving-state signals on real roads.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
-  "secondaryTasks": ["Decision-Making & Agent Trajectories", "Predictive & Generative Dynamics"],
-  "domain": ["Autonomous Driving"],
-  "modalities": ["Event Camera", "GPS / IMU", "Action", "Trajectories"],
-  "structure": ["Temporal Sequences", "Agent Trajectories"],
-  "source": ["Real-world", "Autonomous Agent"],
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories",
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "Event Camera",
+    "GPS / IMU",
+    "Action",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Agent Trajectories"
+  ],
+  "source": [
+    "Real-world",
+    "Autonomous Agent"
+  ],
   "scale": "Real-world event-camera driving sequences with synchronized vehicle signals",
   "scaleZh": "同步车辆信号的真实道路事件相机驾驶序列",
   "organizations": "University of Zurich and collaborators",
@@ -20,10 +36,24 @@
   "licenseZh": "项目说明数据集条款；需核查访问条件",
   "access": "Paper entry; data access requires verification",
   "accessZh": "论文入口；数据访问需核验",
-  "rating": 3,
   "verdict": "事件相机驾驶序列",
   "verdictEn": "Event-camera driving sequences",
   "wmNote": "异步视觉和车辆状态适合研究高动态环境表征，但模态特殊、数据规模和获取条件需进一步核验。",
   "wmNoteEn": "Asynchronous vision and vehicle state support high-dynamic scene modeling, while the specialized modality and access conditions need verification.",
-  "links": {"paper": "https://arxiv.org/abs/1711.01458"}
+  "links": {
+    "paper": "https://arxiv.org/abs/1711.01458"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1711.01458",
+    "sourceTitle": "[1711.01458] DDD17: End-To-End DAVIS Driving Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Paper explicitly describes concurrent image/event streams with vehicle speed, GPS, steering, throttle and brake recordings from on-board diagnostics.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

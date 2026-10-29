@@ -34,7 +34,6 @@
   "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
   "access": "Official sequence downloads and visualization script",
   "accessZh": "官方序列下载及可视化脚本",
-  "rating": 3,
   "verdict": "高时间分辨率观测演化",
   "verdictEn": "High-temporal-resolution observation evolution",
   "wmNote": "事件流与连续观测支持动态预测；运动捕捉真值主要覆盖序列起止段。",
@@ -42,5 +41,18 @@
   "links": {
     "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset",
     "paper": "https://arxiv.org/abs/2108.07329"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2108.07329",
+    "sourceTitle": "[2108.07329] TUM-VIE: The TUM Stereo Visual-Inertial Event Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Hardware-synchronized event/frame/IMU streams record handheld and head-mounted motion trajectories; future prediction requires a causal sequence split.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

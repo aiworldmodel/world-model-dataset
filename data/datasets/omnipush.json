@@ -7,11 +7,26 @@
   "summaryEn": "A real-robot pushing-dynamics dataset with RGB-D video and state changes across objects, surfaces, and pushing actions for transferable visual dynamics learning.",
   "primaryTask": "Action-Conditioned Dynamics",
   "primaryTaskZh": "动作条件动力学",
-  "secondaryTasks": ["Predictive & Generative Dynamics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["RGB-D", "Action", "Object State", "Trajectory"],
-  "structure": ["Interaction Episodes", "Temporal Sequences"],
-  "source": ["Real-world", "Autonomous Agent"],
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB-D",
+    "Action",
+    "Object State",
+    "Trajectory"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Autonomous Agent"
+  ],
   "scale": "Real-world pushing episodes across multiple objects and surfaces",
   "scaleZh": "覆盖多种物体和桌面的真实机器人推动交互回合",
   "organizations": "Massachusetts Institute of Technology",
@@ -20,7 +35,6 @@
   "licenseZh": "适用项目专用研究条款；需核查数据访问条件",
   "access": "Open project access",
   "accessZh": "开放项目访问",
-  "rating": 4,
   "verdict": "真实推动动力学数据",
   "verdictEn": "Real-world pushing dynamics",
   "wmNote": "直接记录动作、视觉观测和物体变化，适合动作条件预测；任务集中在推动，场景多样性有限。",
@@ -28,5 +42,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1910.00618",
     "code": "https://github.com/MIT-Omnipush/video-prediction"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1910.00618",
+    "sourceTitle": "[1910.00618] Omnipush: accurate, diverse, real-world dataset of pushing dynamics with RGB-D video",
+    "locator": "Abstract / official paper description",
+    "statement": "Controlled planar pushes are recorded with RGB-D and precise object tracking across systematically varied objects.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

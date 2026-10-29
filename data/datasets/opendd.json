@@ -36,12 +36,24 @@
   "licenseZh": "数据集条款需进一步核查",
   "access": "Paper and project resources document the dataset; data access requires verification",
   "accessZh": "论文和项目资源描述该数据集；数据访问方式需进一步核查",
-  "rating": 4,
   "verdict": "开放城市交互交通轨迹",
   "verdictEn": "Open urban interactive traffic trajectories",
   "wmNote": "环岛、交叉口和多类别道路参与者让它适合评测交互式预测、让行和合流行为。",
   "wmNoteEn": "Roundabouts, intersections, and multiple road-user classes make it useful for evaluating interaction prediction, yielding, and merging behavior.",
   "links": {
     "paper": "https://arxiv.org/abs/2007.08463"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2007.08463",
+    "sourceTitle": "[2007.08463] openDD: A Large-Scale Roundabout Drone Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Accurately tracked road-user trajectories and roundabout maps explicitly support traffic-scene prediction.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -35,12 +35,24 @@
   "licenseZh": "数据集条款需进一步核查",
   "access": "Official downloads, calibration and benchmark documentation",
   "accessZh": "官方下载、校准和基准文档",
-  "rating": 3,
   "verdict": "室内外跨场景连续运动",
   "verdictEn": "Continuous indoor-outdoor motion",
   "wmNote": "连续传感器流与参考轨迹可用于空间演化建模；部分测试真值由基准保留。",
   "wmNoteEn": "Sensor streams and reference trajectories support spatial evolution; some test truth is held out.",
   "links": {
     "homepage": "https://daniilidis-group.github.io/penncosyvio/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://daniilidis-group.github.io/penncosyvio/",
+    "sourceTitle": "PennCOSYVIO Data Set",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Synchronized video/IMU recordings have an indoor-outdoor sensor trajectory and localized ground-truth positions.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

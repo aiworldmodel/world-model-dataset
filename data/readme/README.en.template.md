@@ -2,10 +2,10 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-_A task-first, evidence-aware catalog of open datasets for world-model research._
+_An evidence-first catalog of data resources for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-{{DATASET_COUNT}}-16a34a)](#dataset-catalog)
+[![Resources](https://img.shields.io/badge/resources-{{DATASET_COUNT}}-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -35,11 +35,21 @@ The GitHub README is the browsable community catalog. The [interactive website](
 
 This is a curated research resource, not a ranking. Detailed suitability notes on the website are more informative than a single aggregate score.
 
+## Inclusion evidence
+
+Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [391-record audit](audit/evidence-review-2026-10-29.md).
+
+Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
+
 ## Catalog snapshot
 
-| Datasets | Primary tasks | Domains | Modalities |
+| Reviewed resources | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
 | {{DATASET_COUNT}} | 6 | 6 | {{MODALITY_COUNT}} |
+
+{{RESOURCE_TYPES}}
+
+These are resource counts, not counts of independent acquired datasets. Generators require data generation; benchmark and aggregate entries must not be summed into a corpus size.
 
 ## Taxonomy
 

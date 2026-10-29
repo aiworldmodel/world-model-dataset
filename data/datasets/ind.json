@@ -36,7 +36,6 @@
   "licenseZh": "按 leveLXData/inD 条款可免费用于非商业研究；再分发受限",
   "access": "Official leveLXData/inD request page; access requires agreeing to dataset terms",
   "accessZh": "官方 leveLXData/inD 申请页面；访问需同意数据集条款",
-  "rating": 5,
   "verdict": "城市路口多类别道路参与者轨迹",
   "verdictEn": "Urban-intersection trajectories for multiple road-user classes",
   "wmNote": "它补足 highD 的高速场景局限，提供路口中车辆、骑行者和行人的交互轨迹，适合多智能体未来预测和安全场景生成。",
@@ -44,5 +43,18 @@
   "links": {
     "homepage": "https://levelxdata.com/ind-dataset/",
     "paper": "https://arxiv.org/abs/1911.07602"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1911.07602",
+    "sourceTitle": "[1911.07602] The inD Dataset: A Drone Dataset of Naturalistic Road User Trajectories at German Intersections",
+    "locator": "Abstract / official paper description",
+    "statement": "Naturalistic urban road-user trajectories are explicitly designed for motion prediction and scenario validation.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

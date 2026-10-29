@@ -35,7 +35,6 @@
   "licenseZh": "代码采用 MIT 许可；模拟器依赖另有条款",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 5,
   "verdict": "多任务操作评测平台",
   "verdictEn": "Multi-task manipulation benchmark",
   "wmNote": "统一接口便于比较任务泛化，但它是轨迹生成环境而非固定的大规模真实数据集。",
@@ -44,5 +43,18 @@
     "homepage": "https://meta-world.github.io/",
     "paper": "https://arxiv.org/abs/1910.10897",
     "code": "https://github.com/Farama-Foundation/Metaworld"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/Farama-Foundation/Metaworld",
+    "sourceTitle": "GitHub - Farama-Foundation/Metaworld: Collections of robotics environments geared towards benchmarking multi-task and meta reinforcement learning · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official robot-task interface explicitly demonstrates reset observations followed by action-conditioned next observations via env.step(action).",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

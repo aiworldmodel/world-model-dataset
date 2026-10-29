@@ -7,11 +7,27 @@
   "summaryEn": "An open physical robotics environment and benchmark for real-world reinforcement learning with sensor observations, actions, rewards, and interaction episodes.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["Action-Conditioned Dynamics", "World Model Evaluation & Diagnostics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["RGB Video", "Action", "Robot State", "Reward"],
-  "structure": ["Interaction Episodes", "Agent Trajectories"],
-  "source": ["Real-world", "Autonomous Agent"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Reward"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Agent Trajectories"
+  ],
+  "source": [
+    "Real-world",
+    "Autonomous Agent"
+  ],
   "scale": "Physical robot benchmark with repeatable real-world interaction tasks",
   "scaleZh": "包含可重复真实交互任务的物理机器人基准",
   "organizations": "OffWorld",
@@ -20,7 +36,6 @@
   "licenseZh": "代码仓库开放；硬件和数据使用条件可能不同",
   "access": "Official repository available",
   "accessZh": "提供官方代码仓库",
-  "rating": 4,
   "verdict": "真实机器人强化学习环境",
   "verdictEn": "Real-robot reinforcement learning environment",
   "wmNote": "真实观测、动作和奖励回合适合研究在线世界模型与控制，但它是环境接口而非固定大规模语料。",
@@ -28,5 +43,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1910.08639",
     "code": "https://github.com/offworld-projects/offworld-gym"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1910.08639",
+    "sourceTitle": "[1910.08639] OffWorld Gym: open-access physical robotics environment for real-world reinforcement learning benchmark and research",
+    "locator": "Abstract / official paper description",
+    "statement": "Real robots expose remotely accessible RL interaction environments; service availability is separate from paper-level relevance evidence.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

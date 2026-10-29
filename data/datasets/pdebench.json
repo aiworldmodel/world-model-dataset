@@ -30,7 +30,6 @@
   "licenseZh": "数据条款见 DaRUS；代码为 MIT，注明的组件除外",
   "access": "Official DaRUS datasets and generation/download scripts",
   "accessZh": "官方 DaRUS 数据集及生成、下载脚本",
-  "rating": 4,
   "verdict": "物理场多步预测",
   "verdictEn": "Multi-step physical-field prediction",
   "wmNote": "时序物理场可用于前向动力学预测；不将稳态子任务视为时序 rollout。",
@@ -38,5 +37,18 @@
   "links": {
     "code": "https://github.com/pdebench/PDEBench",
     "paper": "https://arxiv.org/abs/2210.07182"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2210.07182",
+    "sourceTitle": "[2210.07182] PDEBENCH: An Extensive Benchmark for Scientific Machine Learning",
+    "locator": "Abstract / official paper description",
+    "statement": "Time-dependent PDE simulation data and code define future physical-state prediction benchmarks.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

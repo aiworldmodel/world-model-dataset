@@ -34,12 +34,24 @@
   "licenseZh": "CC BY-NC-SA 4.0",
   "access": "Official repository downloads and CSV ground truth",
   "accessZh": "官方数据下载及 CSV 真值",
-  "rating": 3,
   "verdict": "多传感器飞行状态序列",
   "verdictEn": "Multisensor flight-state sequences",
   "wmNote": "可进行观测融合与位置演化预测；评测须处理 IMU 到真值棱镜的 0.4 米偏移。",
   "wmNoteEn": "Supports fused observations and position evolution; evaluation must account for the 0.4 m IMU-to-prism offset.",
   "links": {
     "homepage": "https://ntu-aris.github.io/ntu_viral_dataset/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://ntu-aris.github.io/ntu_viral_dataset/",
+    "sourceTitle": "NTU VIRAL DATASET · A Comprehensive Datasuite for Autonomous Aerial Vehicles",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official release supplies flight sequences with synchronized cameras, lidar, IMU/UWB and ground truth.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

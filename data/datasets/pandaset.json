@@ -7,11 +7,26 @@
   "summaryEn": "A multi-sensor autonomous-driving dataset with cameras, LiDAR, GPS/IMU, and 3D annotations across urban traffic scenes.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
-  "secondaryTasks": ["Predictive & Generative Dynamics"],
-  "domain": ["Autonomous Driving"],
-  "modalities": ["RGB Video", "LiDAR", "GPS / IMU", "3D Boxes", "Maps"],
-  "structure": ["Temporal Sequences", "Multi-view Sequences"],
-  "source": ["Real-world"],
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "LiDAR",
+    "GPS / IMU",
+    "3D Boxes",
+    "Maps"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Multi-view Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
   "scale": "48,000+ LiDAR sweeps · 6,000+ camera sequences · 28 scenes",
   "scaleZh": "48,000+ 帧激光雷达扫描 · 6,000+ 段相机序列 · 28 个场景",
   "organizations": "Pony.ai and Scale AI",
@@ -20,13 +35,24 @@
   "licenseZh": "适用 PandaSet 许可；包含商业使用和署名条款",
   "access": "Open download",
   "accessZh": "开放下载",
-  "rating": 4,
   "verdict": "多传感器自动驾驶数据",
   "verdictEn": "Multi-sensor driving dataset",
   "wmNote": "传感器同步和三维标注适合时空场景建模，但缺少直接的车辆控制动作。",
   "wmNoteEn": "Synchronized sensors and 3D labels support spatiotemporal scene modeling, although direct vehicle controls are not provided.",
   "links": {
-    "paper": "https://arxiv.org/abs/2102.02684",
     "code": "https://github.com/scaleapi/pandaset-devkit"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/scaleapi/pandaset-devkit",
+    "sourceTitle": "GitHub - scaleapi/pandaset-devkit · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official devkit exposes sequences of sensor measurements and per-frame poses; retain sequential recordings.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -7,11 +7,24 @@
   "summaryEn": "A large-scale dashcam video dataset spanning diverse weather, roads, and traffic conditions for urban driving dynamics and distribution generalization.",
   "primaryTask": "Predictive & Generative Dynamics",
   "primaryTaskZh": "预测与生成式动力学",
-  "secondaryTasks": ["Spatial & Spatiotemporal World Modeling"],
-  "domain": ["Autonomous Driving", "Urban / 3D Scene"],
-  "modalities": ["RGB Video", "Semantic Labels", "Trajectories"],
-  "structure": ["Temporal Sequences"],
-  "source": ["Real-world"],
+  "secondaryTasks": [
+    "Spatial & Spatiotemporal World Modeling"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Semantic Labels",
+    "Trajectories"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
   "scale": "Large-scale dashcam videos across diverse traffic and weather conditions",
   "scaleZh": "覆盖多种交通和天气条件的大规模行车记录仪视频",
   "organizations": "Alibaba DAMO Academy and collaborators",
@@ -20,10 +33,24 @@
   "licenseZh": "适用项目数据条款；需核查注册和下游限制",
   "access": "Paper entry; official access requires verification",
   "accessZh": "论文入口；官方访问方式需核验",
-  "rating": 3,
   "verdict": "多样交通场景视频",
   "verdictEn": "Diverse urban-driving video",
   "wmNote": "长时行车视频和环境多样性适合未来观测预测与鲁棒性研究，但动作和三维状态信号有限。",
   "wmNoteEn": "Long driving videos and environmental diversity support future-observation prediction and robustness studies, while action and 3D-state signals are limited.",
-  "links": {"paper": "https://arxiv.org/abs/1904.01975"}
+  "links": {
+    "paper": "https://arxiv.org/abs/1904.01975"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1904.01975",
+    "sourceTitle": "[1904.01975] D$^2$-City: A Large-Scale Dashcam Video Dataset of Diverse Traffic Scenarios",
+    "locator": "Abstract / official paper description",
+    "statement": "Per-frame object tracking annotations across 1,000 driving videos expose road-user motion; single-keyframe detection subsets are not the inclusion basis.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -7,11 +7,28 @@
   "summaryEn": "An omnispective robotic manipulation dataset with dense multiview coverage and objects spanning varied material and optical properties for 3D physical-world modeling.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
-  "secondaryTasks": ["Action-Conditioned Dynamics", "Physical & Causal Reasoning"],
-  "domain": ["Robotics / Embodied AI", "Physics / Science"],
-  "modalities": ["Multi-view RGB Video", "Camera Pose", "Action", "Object Metadata"],
-  "structure": ["Manipulation Episodes", "Synchronized Multi-view Sequences"],
-  "source": ["Real-world", "Robot Platform"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics",
+    "Physical & Causal Reasoning"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Camera Pose",
+    "Action",
+    "Object Metadata"
+  ],
+  "structure": [
+    "Manipulation Episodes",
+    "Synchronized Multi-view Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Robot Platform"
+  ],
   "scale": "Dense 360-degree multiview manipulation sequences across diverse objects and materials",
   "scaleZh": "覆盖多种物体和材料的密集 360 度多视角操作序列",
   "organizations": "University of Texas at Austin and collaborators",
@@ -20,7 +37,6 @@
   "licenseZh": "项目仓库采用 MIT；数据专用条款待核验",
   "access": "Official project repository and paper entry available; dataset terms require verification",
   "accessZh": "提供官方项目仓库和论文入口；数据条款待核验",
-  "rating": 5,
   "verdict": "全视角三维物理交互",
   "verdictEn": "Omnispective 3D physical interaction",
   "wmNote": "密集同步视角和材料多样性特别适合动态三维表征及物理属性建模，但数据访问条件需要在使用前确认。",
@@ -29,5 +45,18 @@
     "homepage": "https://robo360dataset.github.io/",
     "paper": "https://arxiv.org/abs/2312.06686",
     "code": "https://github.com/robo360dataset/robo360dataset.github.io"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2312.06686",
+    "sourceTitle": "[2312.06686] Robo360: A 3D Omnispective Multi-Material Robotic Manipulation Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Dense-view robot manipulation recordings are explicitly used for dynamic neural representations and multi-view policy learning.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

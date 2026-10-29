@@ -35,7 +35,6 @@
   "licenseZh": "数据为 CC BY 4.0；仓库代码为 MIT",
   "access": "Official downloader scripts and flight format documentation",
   "accessZh": "官方下载脚本及飞行数据格式文档",
-  "rating": 4,
   "verdict": "控制对齐的无人机状态转换",
   "verdictEn": "Control-aligned aerial state transitions",
   "wmNote": "油门、控制通道和状态时间对齐，可学习动作条件飞行动力学；人类与自主飞行需区分。",
@@ -43,5 +42,18 @@
   "links": {
     "code": "https://github.com/tii-racing/drone-racing-dataset",
     "paper": "https://arxiv.org/abs/2311.02667"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2311.02667",
+    "sourceTitle": "[2311.02667] Race Against the Machine: a Fully-annotated, Open-design Dataset of Autonomous and Piloted High-speed Flight",
+    "locator": "Abstract / official paper description",
+    "statement": "High-speed flight recordings pair visual/inertial/mocap streams with commands and control inputs.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

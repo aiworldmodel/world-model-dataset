@@ -30,7 +30,6 @@
   "licenseZh": "代码为 MIT；数据条款需逐项核查",
   "access": "Official dataset generation documentation and loaders",
   "accessZh": "官方数据生成文档和加载器",
-  "rating": 4,
   "verdict": "多尺度 PDE 时序建模",
   "verdictEn": "Multiscale PDE trajectory modeling",
   "wmNote": "按初始状态和物理参数预测未来场，可评测多步误差积累。",
@@ -38,5 +37,18 @@
   "links": {
     "homepage": "https://pdearena.github.io/pdearena/data/",
     "code": "https://github.com/pdearena/pdearena"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://pdearena.github.io/pdearena/data/",
+    "sourceTitle": "Generation - PDEArena",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official documentation gives executable Navier-Stokes trajectory generation commands and split definitions.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

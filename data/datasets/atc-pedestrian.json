@@ -34,12 +34,24 @@
   "licenseZh": "数据集条款需进一步核查",
   "access": "Official ATC dataset page provides data access information",
   "accessZh": "官方 ATC 数据集页面提供数据访问说明",
-  "rating": 3,
   "verdict": "真实室内人群长期轨迹",
   "verdictEn": "Long-term real indoor crowd trajectories",
   "wmNote": "ATC 可用于人群流和室内社会导航建模；传感器视角和场景较固定，视觉模态有限。",
   "wmNoteEn": "ATC supports crowd-flow and indoor social-navigation modeling, but has fixed sensing geometry and limited visual modalities.",
   "links": {
     "homepage": "https://dil.atr.jp/crest2010_HRI/ATC_dataset/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://dil.atr.jp/crest2010_HRI/ATC_dataset/",
+    "sourceTitle": "ATC shopping center tracking dataset",
+    "locator": "Official dataset / project description",
+    "statement": "Official release contains complete time-varying person tracks from a sensor network over 92 days.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

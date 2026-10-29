@@ -36,7 +36,6 @@
   "licenseZh": "代码采用 MIT 许可；Unity 资产和数据条款可能不同",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 4,
   "verdict": "家庭活动程序与仿真",
   "verdictEn": "Household programs and simulation",
   "wmNote": "程序化动作适合长程规划和状态转移；视觉和物理真实性受 Unity 场景限制。",
@@ -45,5 +44,18 @@
     "homepage": "http://virtual-home.org/",
     "paper": "https://arxiv.org/abs/1806.07011",
     "code": "https://github.com/xavierpuigf/virtualhome"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1806.07011",
+    "sourceTitle": "[1806.07011] VirtualHome: Simulating Household Activities via Programs",
+    "locator": "Abstract / official paper description",
+    "statement": "Executable action programs drive agents through Unity household interactions, explicitly generating state-changing activity sequences.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -33,7 +33,6 @@
   "licenseZh": "配置数据和仿真器条款需进一步核查",
   "access": "Official configuration archive and environment rollout scripts",
   "accessZh": "官方配置包和环境 rollout 脚本",
-  "rating": 4,
   "verdict": "工具与可塑材料的交互轨迹",
   "verdictEn": "Tool and plastic-material interactions",
   "wmNote": "配置包本身不是完整轨迹；需运行官方环境记录动作与粒子状态转换。",
@@ -41,5 +40,18 @@
   "links": {
     "code": "https://github.com/Xingyu-Lin/DiffSkill",
     "paper": "https://arxiv.org/abs/2203.17275"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2203.17275",
+    "sourceTitle": "[2203.17275] DiffSkill: Skill Abstraction from Differentiable Physics for Deformable Object Manipulations with Tools",
+    "locator": "Abstract / official paper description",
+    "statement": "Differentiable-physics tool manipulation produces demonstration trajectories paired with RGB-D observations; derived from simulator tasks, not the policy alone.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

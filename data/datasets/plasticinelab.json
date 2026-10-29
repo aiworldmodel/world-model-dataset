@@ -33,7 +33,6 @@
   "licenseZh": "仓库及仿真依赖条款需进一步核查",
   "access": "Official simulator and action-sequence optimization commands; generate rollouts locally",
   "accessZh": "官方仿真器及动作序列优化命令；需本地生成 rollout",
-  "rating": 4,
   "verdict": "弹塑性操作 rollout 生成",
   "verdictEn": "Elastoplastic manipulation rollout generation",
   "wmNote": "收录为生成工具；记录动作与粒子状态构造转换数据，参考图像和目标配置本身不是轨迹。",
@@ -41,5 +40,18 @@
   "links": {
     "homepage": "https://plasticinelab.csail.mit.edu/",
     "code": "https://github.com/hzaskywalker/PlasticineLab"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://plasticinelab.csail.mit.edu/",
+    "sourceTitle": "Plasticinelab",
+    "locator": "Official dataset / project description",
+    "statement": "Differentiable soft-body physics lets manipulators deform objects toward goals, generating controlled state transitions.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

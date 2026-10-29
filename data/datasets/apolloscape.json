@@ -7,11 +7,27 @@
   "summaryEn": "A multi-task autonomous-driving dataset with street-view video, stereo images, depth, 3D vehicles, and high-definition maps for urban spatiotemporal modeling.",
   "primaryTask": "Spatial & Spatiotemporal World Modeling",
   "primaryTaskZh": "空间与时空世界建模",
-  "secondaryTasks": ["Predictive & Generative Dynamics"],
-  "domain": ["Autonomous Driving", "Urban / 3D Scene"],
-  "modalities": ["RGB Video", "Depth", "Maps", "3D Boxes", "Semantic Labels"],
-  "structure": ["Temporal Sequences", "Multi-view Sequences"],
-  "source": ["Real-world"],
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Autonomous Driving",
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Depth",
+    "Maps",
+    "3D Boxes",
+    "Semantic Labels"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Multi-view Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
   "scale": "Multiple urban-driving benchmarks with stereo imagery, video, maps, and 3D annotations",
   "scaleZh": "覆盖立体图像、视频、地图和三维标注的多项城市驾驶基准",
   "organizations": "Baidu Apollo and academic collaborators",
@@ -20,7 +36,6 @@
   "licenseZh": "适用 ApolloScape 使用条款；不同子集有具体限制",
   "access": "Registration required",
   "accessZh": "需要注册",
-  "rating": 4,
   "verdict": "城市驾驶多任务基准",
   "verdictEn": "Urban-driving multi-task benchmark",
   "wmNote": "多视角、深度和地图信息支持空间状态建模，但不同子任务的数据格式需要分别处理。",
@@ -29,5 +44,18 @@
     "homepage": "https://apolloscape.auto/",
     "paper": "https://arxiv.org/abs/1803.06184",
     "code": "https://github.com/ApolloScapeAuto/dataset-api"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1803.06184",
+    "sourceTitle": "[1803.06184] The ApolloScape Open Dataset for Autonomous Driving and its Application",
+    "locator": "Abstract / official paper description",
+    "statement": "Driving videos include accurate per-frame location; retain sequential observation/pose or trajectory subsets, not isolated perception annotations.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -7,11 +7,27 @@
   "summaryEn": "A large-scale simulation environment and task suite for household robot learning, with diverse kitchens, objects, language tasks, and generated visual-action trajectories.",
   "primaryTask": "Action-Conditioned Dynamics",
   "primaryTaskZh": "动作条件动力学",
-  "secondaryTasks": ["Decision-Making & Agent Trajectories", "World Model Evaluation & Diagnostics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["RGB Video", "Depth", "Action", "Robot State", "Language"],
-  "structure": ["Interaction Episodes", "Simulation Rollouts"],
-  "source": ["Simulation"],
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Depth",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation"
+  ],
   "scale": "100+ kitchen scenes · 100+ tasks · 500+ objects",
   "scaleZh": "100+ 个厨房场景 · 100+ 个任务 · 500+ 种物体",
   "organizations": "Stanford University and NVIDIA Research",
@@ -20,7 +36,6 @@
   "licenseZh": "代码采用 MIT 许可；资源和生成数据另有使用条款",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 5,
   "verdict": "家庭机器人动作条件仿真",
   "verdictEn": "Action-conditioned household simulation",
   "wmNote": "丰富的厨房、物体和任务组合适合学习可控环境转移，但结果依赖仿真器的接触与视觉真实性。",
@@ -29,5 +44,18 @@
     "homepage": "https://robocasa.ai/",
     "paper": "https://arxiv.org/abs/2406.02523",
     "code": "https://github.com/robocasa/robocasa"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2406.02523",
+    "sourceTitle": "[2406.02523] RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots",
+    "locator": "Abstract / official paper description",
+    "statement": "Interactive kitchen simulation provides human demonstrations for controlled manipulation tasks; generation platform, with associated recorded demonstrations.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

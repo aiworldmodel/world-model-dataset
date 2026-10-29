@@ -35,12 +35,24 @@
   "licenseZh": "CC BY-NC-SA 4.0；面向非商业学术用途",
   "access": "Official Google Drive and Hugging Face resources",
   "accessZh": "官方 Google Drive 与 Hugging Face 资源",
-  "rating": 3,
   "verdict": "多地点传感器轨迹与地图",
   "verdictEn": "Multisite sensor trajectories and maps",
   "wmNote": "连续观测和核心序列真值轨迹支持时空建模；不是所有序列都有轨迹真值。",
   "wmNoteEn": "Continuous observations and core-sequence truth support spatiotemporal modeling; pose truth is not available for every sequence.",
   "links": {
     "homepage": "https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/",
+    "sourceTitle": "Oxford Spires Dataset | Dynamic Robot Systems Group",
+    "locator": "Official dataset / project description",
+    "statement": "Core recording sequences explicitly include centimetre-accurate ground-truth LiDAR trajectories aligned with image recordings.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -1,12 +1,15 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateEvidence, resourceTypes } from "./catalog-policy.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const sourceDir = path.join(root, "data", "datasets");
 const files = (await readdir(sourceDir)).filter((name) => name.endsWith(".json")).sort();
 const records = [];
 const ids = new Set();
+const identities = new Set();
+const archivedIds = new Set((await readdir(path.join(root, "audit", "archived-records"))).filter(name => name.endsWith(".json")).map(name => name.slice(0, -5)));
 const catalogStart = "<!-- DATASET_CATALOG_START -->";
 const catalogEnd = "<!-- DATASET_CATALOG_END -->";
 const taskOrder = [
@@ -42,9 +45,17 @@ for (const file of files) {
     if (record[field] === undefined) throw new Error(`${file}: missing ${field}`);
   }
   if (ids.has(record.id)) throw new Error(`${file}: duplicate id ${record.id}`);
+  if (file !== `${record.id}.json`) throw new Error(`${file}: filename must match id`);
+  if (archivedIds.has(record.id)) throw new Error(`${file}: archived records require re-review before restoration`);
+  if (!taskOrder.includes(record.primaryTask)) throw new Error(`${file}: unknown primary task`);
   if (!Array.isArray(record.domain) || !Array.isArray(record.modalities)) throw new Error(`${file}: tags must be arrays`);
   if (record.links.download) throw new Error(`${file}: download links are not part of the catalog schema`);
   if (!record.links.homepage && !record.links.paper && !record.links.code) throw new Error(`${file}: at least one verified resource link is required`);
+  validateEvidence(record);
+  for (const identity of [record.id, ...(record.aliases || [])]) {
+    if (identities.has(identity)) throw new Error(`${file}: duplicate identity or alias ${identity}`);
+    identities.add(identity);
+  }
   ids.add(record.id);
   records.push(record);
 }
@@ -56,6 +67,7 @@ const resourceLinks = (record, zh) => {
   const labels = zh ? {homepage:"主页",paper:"论文",code:"代码"} : {homepage:"Homepage",paper:"Paper",code:"Code"};
   return Object.entries(record.links).map(([key, url]) => `[${labels[key]}](${url})`).join(" · ");
 };
+const typeLabels = {dataset:["Dataset","数据集"],benchmark:["Benchmark","评测集"],generator:["Generation environment / toolkit","生成环境 / 工具"],aggregate:["Collection / registry","聚合集合 / 注册表"],derived:["Derived data / subset","派生数据 / 子集"]};
 
 const renderCatalog = (zh) => {
   const navigation = taskOrder.map((task) => {
@@ -71,7 +83,10 @@ const renderCatalog = (zh) => {
     const tags = [...domains, ...modalities].map((value) => `\`${value}\``).join(" · ");
     const access = zh ? record.accessZh : record.access;
     const accessLine = zh ? `访问方式：${access}` : `Access: ${access}`;
-    return `- **${record.name}** · ${record.year}\n  ${summary}\n  ${tags}\n  ${resourceLinks(record, zh)} · ${accessLine}`;
+    const e = record.evidence;
+    const evidenceLine = zh ? `入选依据 C${e.criterion}（英文审查说明）：${e.statement}` : `Inclusion evidence C${e.criterion}: ${e.statement}`;
+    const sourceLabel = zh ? "审查来源" : "Reviewed source";
+    return `- **${record.name}** · ${record.year} · ${typeLabels[record.resourceType][zh ? 1 : 0]}\n  ${summary}\n  ${tags}\n  ${resourceLinks(record, zh)} · ${accessLine}\n  ${evidenceLine} [${sourceLabel}](${e.source}) · ${e.reviewedAt}`;
   });
   const heading = zh ? `${taskZh[task]}（${entries.length}）` : `${task} (${entries.length})`;
   return `<a id="${taskAnchor[task]}"></a>\n\n### ${heading}\n\n${entries.join("\n\n")}`;
@@ -85,6 +100,7 @@ for (const [file, template, zh] of [["README.md", "README.en.template.md", false
   const templatePath = path.join(root, "data", "readme", template);
   const readme = (await readFile(templatePath, "utf8"))
     .replaceAll("{{DATASET_COUNT}}", String(records.length))
+    .replaceAll("{{RESOURCE_TYPES}}", resourceTypes.map(type => `${typeLabels[type][zh ? 1 : 0]}: ${records.filter(r => r.resourceType === type).length}`).join(" · "))
     .replaceAll("{{MODALITY_COUNT}}", String(modalityCount));
   const start = readme.indexOf(catalogStart);
   const end = readme.indexOf(catalogEnd);

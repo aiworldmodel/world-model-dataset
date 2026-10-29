@@ -34,12 +34,24 @@
   "licenseZh": "数据集许可条款需进一步核查",
   "access": "Official trajectory and raw LiDAR download links",
   "accessZh": "官方轨迹及原始 LiDAR 下载链接",
-  "rating": 4,
   "verdict": "室内行人位置与朝向预测",
   "verdictEn": "Indoor pedestrian position and heading prediction",
   "wmNote": "世界坐标轨迹支持未来位置与朝向建模；提取跟踪结果需考虑传感器噪声。",
   "wmNoteEn": "World-frame tracks support future position/heading modeling; extracted tracks retain sensor uncertainty.",
   "links": {
     "homepage": "https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/",
+    "sourceTitle": "L-CAS 3DOF Pedestrian Trajectory Dataset – Lincoln Centre for Autonomous Systems",
+    "locator": "Official dataset / project description",
+    "statement": "Official release explicitly extracts 935 world-frame pedestrian trajectories from time-ordered LiDAR recordings.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

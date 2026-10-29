@@ -32,7 +32,6 @@
   "licenseZh": "数据集条款需与代码许可分别核查",
   "access": "Official dataset downloader and metadata in DeepMind Research",
   "accessZh": "DeepMind Research 官方数据下载器和元数据",
-  "rating": 4,
   "verdict": "网格上的物理状态演化",
   "verdictEn": "Physical state evolution on meshes",
   "wmNote": "收录依据是布料、变形板和圆柱流等时序数据；稳态 Airfoil 子任务不作为未来状态监督。",
@@ -41,5 +40,18 @@
     "homepage": "https://sites.google.com/view/meshgraphnets/home",
     "code": "https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets",
     "paper": "https://arxiv.org/abs/2010.03409"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets",
+    "sourceTitle": "deepmind-research/meshgraphnets at master · google-deepmind/deepmind-research · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official release contains physical mesh simulation datasets, loaders, rollout evaluation and trajectory plotting for cloth and fluid systems.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

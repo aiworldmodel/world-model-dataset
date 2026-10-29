@@ -1,45 +1,55 @@
 {
-    "id":  "slabim",
-    "name":  "SLABIM",
-    "shortName":  "SLABIM",
-    "year":  2025,
-    "summary":  "耦合 SLAM 传感器数据与建筑 BIM 的室内数据集。",
-    "summaryEn":  "An indoor dataset coupling SLAM sensor data with building information models.",
-    "primaryTask":  "Spatial \u0026 Spatiotemporal World Modeling",
-    "primaryTaskZh":  "空间与时空世界建模",
-    "secondaryTasks":  [
-
-                       ],
-    "domain":  [
-                   "Robotics / Embodied AI"
-               ],
-    "modalities":  [
-                       "RGB Video",
-                       "Action",
-                       "Scene Metadata"
-                   ],
-    "structure":  [
-                      "Dataset / Benchmark"
-                  ],
-    "source":  [
-                   "Real-world",
-                   "Simulation"
-               ],
-    "scale":  "Multi-session university-building data",
-    "scaleZh":  "Multi-session university-building data",
-    "organizations":  "Authors and collaborators",
-    "organizationsZh":  "作者及合作团队",
-    "license":  "Not confirmed from the paper entry",
-    "licenseZh":  "论文入口未确认许可",
-    "access":  "Paper entry; release status requires verification",
-    "accessZh":  "论文入口；发布状态待核验",
-    "rating":  4,
-    "verdict":  "耦合 SLAM 传感器数据与建筑 BIM 的室内数据集",
-    "verdictEn":  "An indoor dataset coupling SLAM sensor data with building information models",
-    "wmNote":  "适合近期世界模型或具身智能研究；使用前需核验官方发布范围。",
-    "wmNoteEn":  "Relevant to recent world-model or embodied-AI research; verify the official released scope before use.",
-    "links":  {
-                  "paper":  "https://arxiv.org/abs/2502.16856",
-                  "code":  "https://github.com/HKUST-Aerial-Robotics/SLABIM"
-              }
+  "id": "slabim",
+  "name": "SLABIM",
+  "shortName": "SLABIM",
+  "year": 2025,
+  "summary": "耦合 SLAM 传感器数据与建筑 BIM 的室内数据集。",
+  "summaryEn": "An indoor dataset coupling SLAM sensor data with building information models.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Dataset / Benchmark"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "Multi-session university-building data",
+  "scaleZh": "Multi-session university-building data",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Not confirmed from the paper entry",
+  "licenseZh": "论文入口未确认许可",
+  "access": "Paper entry; release status requires verification",
+  "accessZh": "论文入口；发布状态待核验",
+  "verdict": "耦合 SLAM 传感器数据与建筑 BIM 的室内数据集",
+  "verdictEn": "An indoor dataset coupling SLAM sensor data with building information models",
+  "wmNote": "适合近期世界模型或具身智能研究；使用前需核验官方发布范围。",
+  "wmNoteEn": "Relevant to recent world-model or embodied-AI research; verify the official released scope before use.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2502.16856",
+    "code": "https://github.com/HKUST-Aerial-Robotics/SLABIM"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2502.16856",
+    "sourceTitle": "[2502.16856] SLABIM: A SLAM-BIM Coupled Dataset in HKUST Main Building",
+    "locator": "Abstract / official paper description",
+    "statement": "Timestamped multi-session SLAM sensor recordings accompany building models; retain ordered sensing sequences, not BIM assets as dynamics data.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -35,7 +35,6 @@
   "licenseZh": "代码为 MIT；数据发布条款需另行核查",
   "access": "Official project links to demonstration datasets and replay tools",
   "accessZh": "官方项目提供示范数据集入口及回放工具",
-  "rating": 4,
   "verdict": "移动底盘与双臂协同转换",
   "verdictEn": "Mobile-base and bimanual transitions",
   "wmNote": "结合底盘和双臂动作预测观测变化；共训练使用的静态 ALOHA 数据与移动数据需分开识别。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://mobile-aloha.github.io/",
     "code": "https://github.com/MarkFzp/mobile-aloha"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://mobile-aloha.github.io/",
+    "sourceTitle": "Mobile ALOHA",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Whole-body teleoperation records mobile bimanual demonstrations and the project provides a datasets entry point.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

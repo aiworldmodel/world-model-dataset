@@ -30,7 +30,6 @@
   "licenseZh": "代码为 BSD-3-Clause；数据条款以各子集为准",
   "access": "Official downloader and Hugging Face streaming",
   "accessZh": "官方下载工具及 Hugging Face 流式访问",
-  "rating": 4,
   "verdict": "多领域物理时空演化",
   "verdictEn": "Cross-domain spatiotemporal physics",
   "wmNote": "使用具有时间轴的子集研究跨领域动力学；静态场不作为未来状态监督。",
@@ -38,5 +37,18 @@
   "links": {
     "homepage": "https://polymathic-ai.org/the_well/",
     "code": "https://github.com/PolymathicAI/the_well"
-  }
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://polymathic-ai.org/the_well/",
+    "sourceTitle": "The Well",
+    "locator": "Official dataset / project description",
+    "statement": "The official release collects numerical time-evolving physical simulations across 16 component datasets. Count the collection once, not all samples as independent sources.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

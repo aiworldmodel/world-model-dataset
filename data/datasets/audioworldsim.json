@@ -1,46 +1,56 @@
 {
-    "id":  "audioworldsim",
-    "name":  "AudioWorldSim",
-    "shortName":  "AudioWorldSim",
-    "year":  2026,
-    "summary":  "用于生成双耳音频世界模型轨迹的开放仿真平台。",
-    "summaryEn":  "An open simulation platform for generating binaural-audio world-model trajectories.",
-    "primaryTask":  "Spatial \u0026 Spatiotemporal World Modeling",
-    "primaryTaskZh":  "空间与时空世界建模",
-    "secondaryTasks":  [
-
-                       ],
-    "domain":  [
-                   "Robotics / Embodied AI",
-                   "Physics / Science"
-               ],
-    "modalities":  [
-                       "Audio",
-                       "Agent Pose",
-                       "Simulation State"
-                   ],
-    "structure":  [
-                      "Dataset / Benchmark"
-                  ],
-    "source":  [
-                   "Real-world",
-                   "Simulation"
-               ],
-    "scale":  "Configurable binaural navigation rollouts",
-    "scaleZh":  "Configurable binaural navigation rollouts",
-    "organizations":  "Authors and collaborators",
-    "organizationsZh":  "作者及合作团队",
-    "license":  "Not confirmed from the paper entry",
-    "licenseZh":  "论文入口未确认许可",
-    "access":  "Paper entry; release status requires verification",
-    "accessZh":  "论文入口；发布状态待核验",
-    "rating":  4,
-    "verdict":  "用于生成双耳音频世界模型轨迹的开放仿真平台",
-    "verdictEn":  "An open simulation platform for generating binaural-audio world-model trajectories",
-    "wmNote":  "适合世界模型训练或诊断；实际开放范围需按官方发布核验。",
-    "wmNoteEn":  "Useful for world-model training or diagnosis; verify the released scope from official sources.",
-    "links":  {
-                  "paper":  "https://arxiv.org/abs/2608.21075",
-                  "code":  "https://github.com/Luizerko/AudioWorldSim"
-              }
+  "id": "audioworldsim",
+  "name": "AudioWorldSim",
+  "shortName": "AudioWorldSim",
+  "year": 2026,
+  "summary": "用于生成双耳音频世界模型轨迹的开放仿真平台。",
+  "summaryEn": "An open simulation platform for generating binaural-audio world-model trajectories.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Audio",
+    "Agent Pose",
+    "Simulation State"
+  ],
+  "structure": [
+    "Dataset / Benchmark"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "Configurable binaural navigation rollouts",
+  "scaleZh": "Configurable binaural navigation rollouts",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Not confirmed from the paper entry",
+  "licenseZh": "论文入口未确认许可",
+  "access": "Generator code available; pre-generated data withheld due to source-asset licenses",
+  "accessZh": "提供生成代码；因源资产许可不分发预生成数据",
+  "verdict": "用于生成双耳音频世界模型轨迹的开放仿真平台",
+  "verdictEn": "An open simulation platform for generating binaural-audio world-model trajectories",
+  "wmNote": "适合世界模型训练或诊断；实际开放范围需按官方发布核验。",
+  "wmNoteEn": "Useful for world-model training or diagnosis; verify the released scope from official sources.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2608.21075",
+    "code": "https://github.com/Luizerko/AudioWorldSim"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/Luizerko/AudioWorldSim",
+    "sourceTitle": "GitHub - Luizerko/AudioWorldSim: A custom version of SoundSpaces by Meta to generate realistic binaural datasets and work torwards and audio-based world models. · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Agent navigation generates aligned binaural observations. README explicitly withholds pre-generated data because source scene licenses restrict redistribution.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

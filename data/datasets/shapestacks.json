@@ -35,7 +35,6 @@
   "licenseZh": "开源生成器；资产和数据条款见代码仓库",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 4,
   "verdict": "稳定性与支撑关系诊断",
   "verdictEn": "Stability and support diagnostics",
   "wmNote": "适合测试三维物理结构理解；外观和动力学高度受控，不覆盖复杂材料和接触。",
@@ -43,5 +42,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1804.08018",
     "code": "https://github.com/ogroth/shapestacks"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://arxiv.org/abs/1804.08018",
+    "sourceTitle": "[1804.08018] ShapeStacks: Learning Vision-Based Physical Intuition for Generalised Object Stacking",
+    "locator": "Abstract / official paper description",
+    "statement": "Initial stack configurations are paired with simulated structural-stability outcomes, supporting physical future-outcome reasoning. Not a dense trajectory dataset.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

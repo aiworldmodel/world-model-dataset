@@ -35,7 +35,6 @@
   "licenseZh": "数据为 CC BY 4.0；代码为 BSD-2-Clause",
   "access": "Official raw and calibrated sequence downloads",
   "accessZh": "官方原始及校准序列下载",
-  "rating": 3,
   "verdict": "视觉惯性长轨迹",
   "verdictEn": "Long visual-inertial trajectories",
   "wmNote": "房间序列提供完整位姿真值；其他主要序列仅起止段有真值，评测需遵守该覆盖范围。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset",
     "paper": "https://arxiv.org/abs/1804.06120"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1804.06120",
+    "sourceTitle": "[1804.06120] The TUM VI Benchmark for Evaluating Visual-Inertial Odometry",
+    "locator": "Abstract / official paper description",
+    "statement": "Hardware-synchronized images/IMU and motion-capture pose references support ordered visual-inertial trajectory modeling.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

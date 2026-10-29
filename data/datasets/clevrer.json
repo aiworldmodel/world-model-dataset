@@ -31,7 +31,6 @@
   "organizations": "MIT CSAIL, DeepMind, Harvard",
   "license": "Research dataset terms; verify individual assets and code separately",
   "access": "Open download",
-  "rating": 5,
   "verdict": "反事实物理诊断",
   "wmNote": "非常适合测试碰撞事件、因果解释和反事实预测。场景高度受控，不能直接代表复杂真实世界中的物理泛化能力。",
   "links": {
@@ -44,5 +43,18 @@
   "scaleZh": "2 万段 5 秒视频 · 30 万+ 个描述及因果问题",
   "organizationsZh": "麻省理工学院 CSAIL、DeepMind、哈佛大学",
   "accessZh": "开放下载",
-  "licenseZh": "适用研究数据集条款；需分别核查资产和代码许可"
+  "licenseZh": "适用研究数据集条款；需分别核查资产和代码许可",
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://arxiv.org/abs/1910.01442",
+    "sourceTitle": "[1910.01442] CLEVRER: CoLlision Events for Video REpresentation and Reasoning",
+    "locator": "Abstract / official paper description",
+    "statement": "Collision videos have explicit future-event prediction and counterfactual questions about physical outcomes.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

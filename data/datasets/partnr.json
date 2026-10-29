@@ -7,11 +7,29 @@
   "summaryEn": "A large embodied benchmark for planning and reasoning in household human-robot collaboration, with simulation-grounded language tasks containing spatial, temporal, and heterogeneous-agent constraints.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["World Model Evaluation & Diagnostics", "Action-Conditioned Dynamics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["Language", "Action", "Simulation State", "Object State", "Trajectory"],
-  "structure": ["Natural-language Tasks", "Multi-agent Interaction Episodes"],
-  "source": ["Simulation", "Procedural Generation", "Human Interaction"],
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics",
+    "Action-Conditioned Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Language",
+    "Action",
+    "Simulation State",
+    "Object State",
+    "Trajectory"
+  ],
+  "structure": [
+    "Natural-language Tasks",
+    "Multi-agent Interaction Episodes"
+  ],
+  "source": [
+    "Simulation",
+    "Procedural Generation",
+    "Human Interaction"
+  ],
   "scale": "100,000 tasks · 60 houses · 5,819 unique objects",
   "scaleZh": "10 万项任务 · 60 套房屋 · 5819 个独特物体",
   "organizations": "Meta FAIR and collaborators",
@@ -20,7 +38,6 @@
   "licenseZh": "适用官方仓库条款；底层 Habitat 资源许可可能不同",
   "access": "Official benchmark planner and task resources available",
   "accessZh": "提供官方基准规划器和任务资源",
-  "rating": 5,
   "verdict": "大规模人机协作任务",
   "verdictEn": "Large-scale human-robot collaboration tasks",
   "wmNote": "多智能体约束、任务跟踪和错误恢复可诊断长期规划能力，但任务由半自动流程生成且依赖仿真。",
@@ -28,5 +45,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/2411.00081",
     "code": "https://github.com/facebookresearch/partnr-planner"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2411.00081",
+    "sourceTitle": "[2411.00081] PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+    "locator": "Abstract / official paper description",
+    "statement": "Simulator-grounded household collaboration tasks execute agents under temporal/spatial constraints; task specifications are not recorded trajectories.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

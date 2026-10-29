@@ -33,7 +33,6 @@
   "licenseZh": "CC BY-SA 4.0；同时适用项目条款",
   "access": "Open download",
   "accessZh": "开放下载",
-  "rating": 5,
   "verdict": "高交互多智能体轨迹",
   "verdictEn": "Highly interactive multi-agent trajectories",
   "wmNote": "特别适合建模协商和相互影响；不包含丰富相机或激光雷达原始观测。",
@@ -41,5 +40,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/1910.03088",
     "code": "https://github.com/interaction-dataset/interaction-dataset"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1910.03088",
+    "sourceTitle": "[1910.03088] INTERACTION Dataset: An INTERnational, Adversarial and Cooperative moTION Dataset in Interactive Driving Scenarios with Semantic Maps",
+    "locator": "Abstract / official paper description",
+    "statement": "International interactive-driving motion trajectories with semantic maps support prediction, planning and behavior generation.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

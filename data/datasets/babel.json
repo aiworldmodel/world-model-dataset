@@ -34,12 +34,27 @@
   "licenseZh": "非商业研究许可，禁止再分发；另适用 AMASS 条款",
   "access": "Official annotation download; motion data obtained separately from AMASS",
   "accessZh": "官方标注下载；运动数据需另从 AMASS 获取",
-  "rating": 4,
   "verdict": "带时间语义的连续人体运动",
   "verdictEn": "Temporally labeled continuous motion",
   "wmNote": "标注结合原始运动可研究语义条件状态演化；标注文件本身不包含完整运动，且与 AMASS 重叠。",
   "wmNoteEn": "Pair annotations with source motion for semantic state evolution; annotations alone lack full motion and overlap AMASS.",
   "links": {
     "homepage": "https://babel.is.tue.mpg.de/data.html"
-  }
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://babel.is.tue.mpg.de/data.html",
+    "sourceTitle": "BABEL",
+    "locator": "Official dataset / project description",
+    "statement": "Frame/sequence annotations index underlying motion sequences; AMASS motion must be obtained separately and must not be counted as new acquisition.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "amass"
+  ]
 }

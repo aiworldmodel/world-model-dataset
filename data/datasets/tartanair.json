@@ -35,7 +35,6 @@
   "licenseZh": "CC BY 4.0",
   "access": "Official project provides dataset access instructions",
   "accessZh": "官方项目提供数据访问说明",
-  "rating": 3,
   "verdict": "多模态相机轨迹预测",
   "verdictEn": "Multimodal camera trajectory modeling",
   "wmNote": "位姿与连续观测可支持运动条件未来观测建模；不默认包含执行器动作。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://theairlab.org/tartanair-dataset/",
     "paper": "https://arxiv.org/abs/2003.14338"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2003.14338",
+    "sourceTitle": "[2003.14338] TartanAir: A Dataset to Push the Limits of Visual SLAM",
+    "locator": "Abstract / official paper description",
+    "statement": "Simulation trajectory sampling provides ordered stereo/depth/flow observations and camera poses amid moving objects and changing conditions.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

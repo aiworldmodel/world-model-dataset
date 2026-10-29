@@ -33,7 +33,6 @@
   "licenseZh": "需核查发布版本及原始运动来源条款",
   "access": "Official archive downloads and MMM/C3D parsing example",
   "accessZh": "官方数据包及 MMM/C3D 解析示例",
-  "rating": 4,
   "verdict": "语言条件人体轨迹生成",
   "verdictEn": "Language-conditioned motion trajectories",
   "wmNote": "语言与连续关节序列支持条件运动生成；与原始 mocap 来源有重叠，跨库划分需去重。",
@@ -41,5 +40,18 @@
   "links": {
     "homepage": "https://motion-annotation.humanoids.kit.edu/dataset/",
     "paper": "https://arxiv.org/abs/1607.03827"
-  }
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1607.03827",
+    "sourceTitle": "[1607.03827] The KIT Motion-Language Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Human motion-capture sequences from multiple collections are unified and language-annotated; overlap underlying mocap/AMASS resources.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

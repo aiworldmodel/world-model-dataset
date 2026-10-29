@@ -29,7 +29,6 @@
   "organizations": "University of Bristol and University of Catania",
   "license": "EPIC-KITCHENS data license; research use conditions apply",
   "access": "Application / agreement required",
-  "rating": "5",
   "verdict": "厨房行为预测基准",
   "wmNote": "动作与物体标签细致，适合短期行为建模；场景集中在厨房且数据使用需遵守专门协议。",
   "links": {
@@ -43,5 +42,20 @@
   "scaleZh": "100 小时 · 9 万个动作片段 · 700 段不定长视频",
   "organizationsZh": "布里斯托大学、卡塔尼亚大学",
   "accessZh": "需申请并同意协议",
-  "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件"
+  "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2006.13256",
+    "sourceTitle": "[2006.13256] Rescaling Egocentric Vision",
+    "locator": "Abstract / official paper description",
+    "statement": "Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": [
+    "epic-kitchens-55"
+  ]
 }

@@ -30,11 +30,9 @@
   "organizations": "Google Research",
   "license": "Apache-2.0 generator; released datasets follow project terms",
   "access": "Open download",
-  "rating": "5",
   "verdict": "密集真值动态场景",
   "wmNote": "几乎完整的像素与对象真值非常适合对象中心模型；合成渲染偏差需要与真实视频联合使用。",
   "links": {
-    "paper": "https://arxiv.org/abs/2203.12602",
     "code": "https://github.com/google-research/kubric"
   },
   "summaryEn": "A family of Kubric-generated multi-object videos with instance masks, depth, optical flow, and 3D attributes for object discovery and interpretable dynamics.",
@@ -43,5 +41,21 @@
   "scaleZh": "多个版本，生成视频片段总量最高达数十万",
   "organizationsZh": "Google Research",
   "accessZh": "开放下载",
-  "licenseZh": "生成器采用 Apache-2.0；已发布数据集遵循项目条款"
+  "licenseZh": "生成器采用 Apache-2.0；已发布数据集遵循项目条款",
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://github.com/google-research/kubric",
+    "sourceTitle": "GitHub - google-research/kubric: A data generation pipeline for creating semi-realistic synthetic multi-object videos with rich annotations such as instance segmentation masks, depth maps, and optical flow. · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "The Kubric release identifies generated multi-object video challenges and downloadable data produced by its physical simulation pipeline. MOVi is a derived family, not an independent collection.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "kubric"
+  ]
 }

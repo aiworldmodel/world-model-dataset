@@ -7,11 +7,29 @@
   "summaryEn": "A human-motion dataset for shared indoor spaces with accurate trajectories, head orientation, gaze, social groups, obstacle maps, and mobile-robot sensor data.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["Spatial & Spatiotemporal World Modeling", "World Model Evaluation & Diagnostics"],
-  "domain": ["Robotics / Embodied AI", "Egocentric / Human"],
-  "modalities": ["Trajectories", "Gaze", "Agent Pose", "LiDAR", "Maps"],
-  "structure": ["Agent Trajectories", "Temporal Sequences"],
-  "source": ["Real-world", "Human Demonstration"],
+  "secondaryTasks": [
+    "Spatial & Spatiotemporal World Modeling",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Trajectories",
+    "Gaze",
+    "Agent Pose",
+    "LiDAR",
+    "Maps"
+  ],
+  "structure": [
+    "Agent Trajectories",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
   "scale": "Indoor human trajectories with gaze, social, map, and robot-sensor annotations",
   "scaleZh": "包含视线、社交、地图和机器人传感器标注的室内人类轨迹",
   "organizations": "University of Innsbruck and collaborators",
@@ -20,10 +38,24 @@
   "licenseZh": "数据访问和来源条款需核验",
   "access": "Paper entry; official access requires verification",
   "accessZh": "论文入口；官方访问方式需核验",
-  "rating": 4,
   "verdict": "人机共享空间轨迹",
   "verdictEn": "Human-robot shared-space trajectories",
   "wmNote": "轨迹、视线、障碍物和机器人传感器共同描述可交互空间状态，适合导航预测和社会行为建模。",
   "wmNoteEn": "Trajectories, gaze, obstacles, and robot sensors describe an interactive spatial state for navigation prediction and social behavior modeling.",
-  "links": {"paper": "https://arxiv.org/abs/1909.04403"}
+  "links": {
+    "paper": "https://arxiv.org/abs/1909.04403"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1909.04403",
+    "sourceTitle": "[1909.04403] THÖR: Human-Robot Navigation Data Collection and Accurate Motion Trajectories Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Human motion trajectories include accurate position, orientation, gaze, grouping, goals and nearby robot observations.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

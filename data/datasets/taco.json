@@ -38,7 +38,6 @@
   "licenseZh": "数据集条款需进一步核查；项目网站采用 CC BY-SA 4.0",
   "access": "Official project page provides dataset V1, pre-release data, paper, and code links",
   "accessZh": "官方项目页提供 Dataset V1、预发布数据、论文和代码链接",
-  "rating": 4,
   "verdict": "双手工具交互的 4D 人手-物体序列",
   "verdictEn": "4D bimanual hand-object sequences for tool interaction",
   "wmNote": "动作标签、第一人称/第三人称视频和精确 3D 网格让它适合研究人手-物体未来运动预测和操作可泛化性；它不是机器人执行动作数据。",
@@ -47,5 +46,18 @@
     "homepage": "https://taco2024.github.io/",
     "paper": "https://arxiv.org/abs/2401.08399",
     "code": "https://github.com/leolyliu/TACO-Instructions"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2401.08399",
+    "sourceTitle": "[2401.08399] TACO: Benchmarking Generalizable Bimanual Tool-ACtion-Object Understanding",
+    "locator": "Abstract / official paper description",
+    "statement": "2.5K human-object motion sequences pair ego/third-person views with precise time-varying hand-object 3D meshes.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

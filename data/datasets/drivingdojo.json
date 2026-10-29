@@ -7,11 +7,27 @@
   "summaryEn": "A video dataset tailored to interactive driving world models, covering driving maneuvers, multi-agent interplay, open-world knowledge, and an action-instruction-following benchmark.",
   "primaryTask": "Action-Conditioned Dynamics",
   "primaryTaskZh": "动作条件动力学",
-  "secondaryTasks": ["Predictive & Generative Dynamics", "World Model Evaluation & Diagnostics"],
-  "domain": ["Autonomous Driving"],
-  "modalities": ["RGB Video", "Action", "Language", "Scene Metadata"],
-  "structure": ["Driving Video Clips", "Action Instructions"],
-  "source": ["Real-world", "Driving Platform"],
+  "secondaryTasks": [
+    "Predictive & Generative Dynamics",
+    "World Model Evaluation & Diagnostics"
+  ],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Language",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Driving Video Clips",
+    "Action Instructions"
+  ],
+  "source": [
+    "Real-world",
+    "Driving Platform"
+  ],
   "scale": "Driving clips spanning diverse maneuvers, multi-agent interactions, and open-world knowledge",
   "scaleZh": "覆盖多样驾驶操作、多智能体交互和开放世界知识的视频片段",
   "organizations": "The University of Hong Kong and collaborators",
@@ -20,7 +36,6 @@
   "licenseZh": "现有官方入口未确认数据许可",
   "access": "Paper and official project repository available; dataset access terms require verification",
   "accessZh": "提供论文和官方项目仓库；数据访问条款待核验",
-  "rating": 5,
   "verdict": "交互式驾驶世界模型数据",
   "verdictEn": "Interactive driving world-model data",
   "wmNote": "动作覆盖和多车互动直接服务可控未来预测；详细规模与许可需要从发布渠道继续核验。",
@@ -28,5 +43,18 @@
   "links": {
     "paper": "https://arxiv.org/abs/2410.10738",
     "code": "https://github.com/Robertwyq/Drivingdojo"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2410.10738",
+    "sourceTitle": "[2410.10738] DrivingDojo Dataset: Advancing Interactive and Knowledge-Enriched Driving World Model",
+    "locator": "Abstract / official paper description",
+    "statement": "Dataset explicitly targets interactive driving dynamics and an action-instruction-following benchmark for controlled future prediction.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

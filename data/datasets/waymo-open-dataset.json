@@ -29,7 +29,6 @@
   "organizations": "Waymo",
   "license": "Waymo Dataset License Agreement; non-commercial restrictions apply",
   "access": "Registration required",
-  "rating": "5",
   "verdict": "高质量驾驶时空数据",
   "wmNote": "传感器和标注质量突出，适合 3D/4D 感知与运动预测；授权和下载体量需要在项目规划中提前考虑。",
   "links": {
@@ -43,5 +42,18 @@
   "scaleZh": "2,030 个感知片段 · 10.3 万个运动场景",
   "organizationsZh": "Waymo",
   "accessZh": "需注册",
-  "licenseZh": "适用 Waymo 数据集许可协议；包含非商业限制"
+  "licenseZh": "适用 Waymo 数据集许可协议；包含非商业限制",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1912.04838",
+    "sourceTitle": "[1912.04838] Scalability in Perception for Autonomous Driving: Waymo Open Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Synchronized 20-second driving sequences expose time-indexed observations and road-agent annotations. Static detection labels alone are not the basis.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

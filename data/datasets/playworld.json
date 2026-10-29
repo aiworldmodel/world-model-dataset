@@ -1,46 +1,56 @@
 {
-    "id":  "playworld",
-    "name":  "PlayWorld",
-    "shortName":  "PlayWorld",
-    "year":  2026,
-    "summary":  "由智能体玩家完成长时目标的交互式世界模型评测基准。",
-    "summaryEn":  "An interactive world-model benchmark using agent players to pursue long-horizon objectives.",
-    "primaryTask":  "World Model Evaluation \u0026 Diagnostics",
-    "primaryTaskZh":  "世界模型评测与诊断",
-    "secondaryTasks":  [
-
-                       ],
-    "domain":  [
-                   "Robotics / Embodied AI",
-                   "Physics / Science"
-               ],
-    "modalities":  [
-                       "RGB Video",
-                       "Action",
-                       "Simulation State"
-                   ],
-    "structure":  [
-                      "Dataset / Benchmark"
-                  ],
-    "source":  [
-                   "Real-world",
-                   "Simulation"
-               ],
-    "scale":  "171 scenarios",
-    "scaleZh":  "171 scenarios",
-    "organizations":  "Authors and collaborators",
-    "organizationsZh":  "作者及合作团队",
-    "license":  "Not confirmed from the paper entry",
-    "licenseZh":  "论文入口未确认许可",
-    "access":  "Paper entry; release status requires verification",
-    "accessZh":  "论文入口；发布状态待核验",
-    "rating":  4,
-    "verdict":  "由智能体玩家完成长时目标的交互式世界模型评测基准",
-    "verdictEn":  "An interactive world-model benchmark using agent players to pursue long-horizon objectives",
-    "wmNote":  "适合世界模型训练或诊断；实际开放范围需按官方发布核验。",
-    "wmNoteEn":  "Useful for world-model training or diagnosis; verify the released scope from official sources.",
-    "links":  {
-                  "paper":  "https://arxiv.org/abs/2608.13552",
-                  "code":  "https://github.com/kxding/PlayWorld"
-              }
+  "id": "playworld",
+  "name": "PlayWorld",
+  "shortName": "PlayWorld",
+  "year": 2026,
+  "summary": "由智能体玩家完成长时目标的交互式世界模型评测基准。",
+  "summaryEn": "An interactive world-model benchmark using agent players to pursue long-horizon objectives.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Simulation State"
+  ],
+  "structure": [
+    "Dataset / Benchmark"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "171 scenarios",
+  "scaleZh": "171 scenarios",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Not confirmed from the paper entry",
+  "licenseZh": "论文入口未确认许可",
+  "access": "Paper entry; release status requires verification",
+  "accessZh": "论文入口；发布状态待核验",
+  "verdict": "由智能体玩家完成长时目标的交互式世界模型评测基准",
+  "verdictEn": "An interactive world-model benchmark using agent players to pursue long-horizon objectives",
+  "wmNote": "适合世界模型训练或诊断；实际开放范围需按官方发布核验。",
+  "wmNoteEn": "Useful for world-model training or diagnosis; verify the released scope from official sources.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2608.13552",
+    "code": "https://github.com/kxding/PlayWorld"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://arxiv.org/abs/2608.13552",
+    "sourceTitle": "[2608.13552] PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives",
+    "locator": "Abstract / official paper description",
+    "statement": "Agent players interact with world models across 171 objectives testing persistent state, geometry and out-of-sight evolution.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

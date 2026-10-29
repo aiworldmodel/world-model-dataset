@@ -23,11 +23,10 @@
     "Real-world",
     "Autonomous Agent"
   ],
-  "scale": "~44K training sequences · 30 frames per sequence",
+  "scale": "Paper reports 59K interactions; processed release/split counts vary",
   "organizations": "UC Berkeley",
   "license": "Distributed through TensorFlow Datasets; source terms should be checked",
   "access": "Open download",
-  "rating": "3",
   "verdict": "经典动作视频预测基准",
   "wmNote": "规模和分辨率已落后于现代数据，但任务简单、基线丰富，仍适合验证动作条件预测模型。",
   "links": {
@@ -38,8 +37,21 @@
   "summaryEn": "A classic action-conditioned video dataset of a robot pushing objects on a tabletop, widely used for stochastic future prediction and visual dynamics baselines.",
   "verdictEn": "Classic action-video benchmark",
   "wmNoteEn": "Small and low-resolution by current standards, but still useful for fast validation because of its simple setup and extensive baseline history.",
-  "scaleZh": "约 4.4 万条训练序列 · 每条 30 帧",
+  "scaleZh": "论文报告 59K 次交互；处理版本与划分规模不同",
   "organizationsZh": "加州大学伯克利分校",
   "accessZh": "开放下载",
-  "licenseZh": "通过 TensorFlow Datasets 分发；需核查原始数据条款"
+  "licenseZh": "通过 TensorFlow Datasets 分发；需核查原始数据条款",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1605.07157",
+    "sourceTitle": "[1605.07157] Unsupervised Learning for Physical Interaction through Video Prediction",
+    "locator": "Abstract / official paper description",
+    "statement": "The paper introduces 59K real robot pushing interactions for action-conditioned future-video prediction.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

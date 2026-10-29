@@ -7,11 +7,28 @@
   "summaryEn": "A MuJoCo and OpenAI Gym task framework for physical reasoning, using sparse-reward block puzzles to study rule learning, curriculum training, and transfer across tasks.",
   "primaryTask": "Physical & Causal Reasoning",
   "primaryTaskZh": "物理与因果推理",
-  "secondaryTasks": ["World Model Evaluation & Diagnostics", "Decision-Making & Agent Trajectories"],
-  "domain": ["Robotics / Embodied AI", "Physics / Science"],
-  "modalities": ["Simulation State", "Action", "Reward", "Object State"],
-  "structure": ["Simulation Rollouts", "Interaction Episodes", "Diagnostic Cases"],
-  "source": ["Simulation"],
+  "secondaryTasks": [
+    "World Model Evaluation & Diagnostics",
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Action",
+    "Reward",
+    "Object State"
+  ],
+  "structure": [
+    "Simulation Rollouts",
+    "Interaction Episodes",
+    "Diagnostic Cases"
+  ],
+  "source": [
+    "Simulation"
+  ],
   "scale": "Multiple sparse-reward physical reasoning environments",
   "scaleZh": "多个稀疏奖励物理推理仿真环境",
   "organizations": "Research project described in the dataset paper",
@@ -20,10 +37,24 @@
   "licenseZh": "论文定义的任务框架；访问和许可需核验",
   "access": "Paper entry; environment access unverified",
   "accessZh": "论文入口；环境访问待核验",
-  "rating": 3,
   "verdict": "稀疏奖励物理推理环境",
   "verdictEn": "Sparse-reward physical reasoning environments",
   "wmNote": "显式动作、奖励和仿真状态适合研究可干预物理环境中的世界模型，但数据规模和公开程度有限。",
   "wmNoteEn": "Explicit actions, rewards, and simulator states support intervention-aware world models, while scale and public availability are limited.",
-  "links": {"paper": "https://arxiv.org/abs/1812.00091"}
+  "links": {
+    "paper": "https://arxiv.org/abs/1812.00091"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1812.00091",
+    "sourceTitle": "[1812.00091] BlockPuzzle - A Challenge in Physical Reasoning and Generalization for Robot Learning",
+    "locator": "Abstract / official paper description",
+    "statement": "MuJoCo/Gym physical-puzzle environments expose actions and resulting state transitions, with curriculum and imitation tasks.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

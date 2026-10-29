@@ -35,7 +35,6 @@
   "licenseZh": "适用 Argoverse 使用条款；主要面向研究用途",
   "access": "Open download",
   "accessZh": "开放下载",
-  "rating": 5,
   "verdict": "地图条件运动预测基准",
   "verdictEn": "Map-conditioned motion forecasting benchmark",
   "wmNote": "适合历史基线复现；新项目通常优先使用 Argoverse 2，但第一版仍有大量可比结果。",
@@ -44,5 +43,18 @@
     "homepage": "https://www.argoverse.org/av1.html",
     "paper": "https://arxiv.org/abs/1911.02620",
     "code": "https://github.com/argoverse/argoverse-api"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1911.02620",
+    "sourceTitle": "[1911.02620] Argoverse: 3D Tracking and Forecasting with Rich Maps",
+    "locator": "Abstract / official paper description",
+    "statement": "Tracked agent trajectories with rich maps include a dedicated five-second motion-forecasting dataset and 3D tracking sequences.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

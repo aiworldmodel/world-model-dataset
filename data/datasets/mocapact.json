@@ -39,7 +39,6 @@
   "licenseZh": "数据使用条款需进一步核查；官方仓库提供代码",
   "access": "Official project page, GitHub code, and Hugging Face dataset collection available",
   "accessZh": "官方项目页、GitHub 代码和 Hugging Face 数据集合可用",
-  "rating": 5,
   "verdict": "带动作的仿真人形动作捕捉 rollout",
   "verdictEn": "Humanoid motion-capture rollouts with executable actions",
   "wmNote": "它把纯运动捕捉转化为可执行的观测-动作-奖励序列，直接支持人形动力学建模、动作补全和层级策略学习。",
@@ -48,5 +47,18 @@
     "homepage": "https://microsoft.github.io/MoCapAct/",
     "paper": "https://arxiv.org/abs/2208.07363",
     "code": "https://github.com/microsoft/MoCapAct"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://microsoft.github.io/MoCapAct/",
+    "sourceTitle": "microsoft.github.io",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official release explicitly provides expert HDF5 rollouts containing proprioceptive observations and actions, with small and large dataset downloads.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

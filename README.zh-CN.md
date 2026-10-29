@@ -2,10 +2,10 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-_一个以任务为核心、重视证据的世界模型开放数据集目录。_
+_一个以证据为先的世界模型数据资源目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-391-16a34a)](#数据集目录)
+[![资源](https://img.shields.io/badge/资源-266-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -35,11 +35,21 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 本项目是经过整理的研究资源，而不是数据集排行榜。网站中的详细适用建议比单一综合评分更有参考价值。
 
+## 入选证据
+
+每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[391 条全量审查报告](audit/evidence-review-2026-10-29.md)。
+
+来源审查不代表已完成数据下载、样本完整性或许可权限验证。仅论文证据单独标注。访问条件各异，不宣称全部开放下载；聚合集合和派生数据可能重叠。逐条详细审查理由保留英文，便于对照原始来源。
+
 ## 目录概览
 
-| 数据集 | 一级任务 | 研究领域 | 数据模态 |
+| 已审查资源 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 391 | 6 | 6 | 45 |
+| 266 | 6 | 6 | 43 |
+
+数据集: 122 · 评测集: 44 · 生成环境 / 工具: 81 · 聚合集合 / 注册表: 13 · 派生数据 / 子集: 6
+
+上述为资源条目数，不代表独立采集的数据集数量。生成环境需自行生成数据，评测集与聚合集合不能直接相加为总数据规模。
 
 ## 分类体系
 
@@ -70,1986 +80,1627 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (56)](#predictive-generative-dynamics) · [动作条件动力学 (63)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (38)](#predictive-generative-dynamics) · [动作条件动力学 (45)](#action-conditioned-dynamics) · [决策与智能体轨迹 (76)](#decision-making-agent-trajectories) · [空间与时空世界建模 (46)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (22)](#physical-causal-reasoning) · [世界模型评测与诊断 (39)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### 预测与生成式动力学（56）
+### 预测与生成式动力学（38）
 
-- **DenseReward Dataset** · 2026
+- **DenseReward Dataset** · 2026 · 数据集
   为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `语言` · `奖励` · `动作标签`
   [主页](https://dense-reward.github.io/) · [代码](https://github.com/dense-reward/DenseReward) · 访问方式：官方项目和已发布基准资源可用
+  入选依据 C1（英文审查说明）：The project describes 27K simulated success/failure episodes with current and historical observations and per-timestep execution-state supervision. [审查来源](https://dense-reward.github.io/) · 2026-10-29
 
-- **Kimodo Motion Data** · 2026
-  用于人体与人形机器人动作生成的 700 小时商业友好型光学动作捕捉数据资源。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
-  [主页](https://research.nvidia.com/labs/sil/projects/kimodo/) · [代码](https://github.com/nv-tlabs/kimodo) · 访问方式：提供官方项目和代码入口
+- **Game2World** · 2026 · 数据集
+  游戏界面去除和世界模型训练的成对视频、野外片段及 UI 资产数据集。
+  `游戏 / 虚拟环境` · `RGB 视频`
+  [论文](https://arxiv.org/abs/2608.24680) · [主页](https://github.com/Dongping-Chen/Game2World) · 访问方式：提供官方项目和论文入口
+  入选依据 C1（英文审查说明）：Official release identifies paired gameplay training videos with clean temporal references for world-model pretraining; the UI-removal benchmark is not a transition-accuracy evaluation. [审查来源](https://github.com/Dongping-Chen/Game2World) · 2026-10-29
 
-- **Mini Moving Shapes** · 2026
+- **Kimodo Motion Generation Benchmark (BONES-SEED)** · 2026 · 评测集
+  基于 BONES-SEED 的动作生成测试用例、评测代码与时序文本标注，不代表 Kimodo 的完整 700 小时训练数据。
+  `第一人称 / 人类活动` · `三维状态` · `语言` · `轨迹`
+  [主页](https://research.nvidia.com/labs/sil/projects/kimodo/) · [代码](https://github.com/nv-tlabs/kimodo) · 访问方式：官方评测与标注入口；未实测下载
+  入选依据 C3（英文审查说明）：Retain the released BONES-SEED-based motion-generation benchmark and temporal annotations; the full 700-hour commercial training corpus is not the released dataset. [审查来源](https://github.com/nv-tlabs/kimodo) · 2026-10-29
+
+- **Mini Moving Shapes** · 2026 · 生成环境 / 工具
   带离散动作控制和符号状态描述的合成多模态下一状态预测数据集，支持多步想象回放。
   `游戏 / 虚拟环境` · `物理 / 科学` · `RGB 视频` · `文本` · `动作` · `仿真状态`
   [代码](https://github.com/andrew-jeremy/Spectral-World-Models) · 访问方式：数据集随官方仓库提供，并可通过脚本重新生成
+  入选依据 C2（英文审查说明）：Bundled data.py generates moving shapes with discrete controls and next-image/text targets for multi-step rollout evaluation. [审查来源](https://github.com/andrew-jeremy/Spectral-World-Models) · 2026-10-29
 
-- **Procgen Action-Conditioned World Model Dataset** · 2026
+- **Procgen Action-Conditioned World Model Dataset** · 2026 · 生成环境 / 工具
   由 Procgen Atari 环境生成的离线帧、动作和终止信号数据，专门用于动作条件下一帧预测与滚动评测。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `游戏状态`
   [代码](https://github.com/Mayavan/world_model) · 访问方式：数据生成代码和回放评测可用
+  入选依据 C2（英文审查说明）：README supplies a CoinRun random-policy dataset-generation command and action-conditioned next-frame/multi-step evaluation. Community generator derived from Procgen. [审查来源](https://github.com/Mayavan/world_model) · 2026-10-29
 
-- **Scaling Laws for Motion Corpus** · 2026
-  经过视觉、物理质量和安全筛选的大规模人体动作语料，用于研究动作生成的缩放规律。
-  `第一人称 / 人类活动` · `轨迹` · `三维状态` · `RGB 视频`
-  [主页](https://getcartwheel.com/blog/scaling-laws) · [代码](https://github.com/Cartwhl/scaling-laws-for-motion) · 访问方式：提供官方仓库和技术报告，语料发布条款仍需核验
-
-- **Dopamine-Reward / GRM Dataset** · 2025
-  以 BEFORE/AFTER 相对进度监督构建的大规模机器人、人类与仿真操作轨迹数据集。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `多视角 RGB 视频` · `语言` · `奖励` · `轨迹`
-  [主页](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 访问方式：可通过 Hugging Face 申请访问受限数据集
-
-- **OpenS2V-Nexus** · 2025
-  主体到视频生成的五百万规模训练集与细粒度评测集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2505.20292) · 访问方式：论文入口；发布状态待核验
-
-- **TACO** · 2024
+- **TACO** · 2024 · 数据集
   面向双手工具-动作-物体理解的真实人手-物体交互数据集，包含第三人称与第一人称视角、精确手物体 3D 网格和动作标签，用于动作识别、运动预测与协同抓取合成。
   `第一人称 / 人类活动` · `机器人 / 具身智能` · `多视角 RGB 视频` · `三维网格` · `动作标签` · `智能体位姿` · `物体元数据`
   [主页](https://taco2024.github.io/) · [论文](https://arxiv.org/abs/2401.08399) · [代码](https://github.com/leolyliu/TACO-Instructions) · 访问方式：官方项目页提供 Dataset V1、预发布数据、论文和代码链接
+  入选依据 C3（英文审查说明）：2.5K human-object motion sequences pair ego/third-person views with precise time-varying hand-object 3D meshes. [审查来源](https://arxiv.org/abs/2401.08399) · 2026-10-29
 
-- **The Well** · 2024
+- **The Well** · 2024 · 聚合集合 / 注册表
   来自多种科学领域的时空物理仿真集合，提供统一格式和用于代理模型训练的时间窗口接口。
   `物理 / 科学` · `仿真状态`
   [主页](https://polymathic-ai.org/the_well/) · [代码](https://github.com/PolymathicAI/the_well) · 访问方式：官方下载工具及 Hugging Face 流式访问
+  入选依据 C1（英文审查说明）：The official release collects numerical time-evolving physical simulations across 16 component datasets. Count the collection once, not all samples as independent sources. [审查来源](https://polymathic-ai.org/the_well/) · 2026-10-29
 
-- **LagrangeBench** · 2023
+- **LagrangeBench** · 2023 · 评测集
   面向拉格朗日流体动力学的粒子轨迹集合，覆盖二维和三维流动、涡旋、腔体及溃坝场景。
   `物理 / 科学` · `仿真状态` · `轨迹`
   [代码](https://github.com/tumaer/lagrangebench) · [论文](https://arxiv.org/abs/2309.16342) · 访问方式：官方 Zenodo 数据包及自动下载、加载器
+  入选依据 C1（英文审查说明）：SPH fluid-particle datasets and temporal coarse-graining evaluate learned time-evolution surrogates. [审查来源](https://arxiv.org/abs/2309.16342) · 2026-10-29
 
-- **BEAT** · 2022
+- **BEAT** · 2022 · 数据集
   语音和文本对齐的三维身体、手势与面部表情序列，包含情绪和语义相关性标注。
   `第一人称 / 人类活动` · `智能体位姿` · `音频` · `文本` · `动作标签`
   [主页](https://pantomatrix.github.io/BEAT/) · [论文](https://arxiv.org/abs/2203.05297) · 访问方式：官方项目及数据发布仓库
+  入选依据 C3（英文审查说明）：Conversational motion capture is time-aligned with audio and frame-level semantic/emotional annotations; human motion, not robot action commands. [审查来源](https://arxiv.org/abs/2203.05297) · 2026-10-29
 
-- **Ego4D** · 2022
+- **Ego4D** · 2022 · 数据集
   由 Meta AI 联合全球高校采集的大规模第一人称真实生活视频数据集，其短期物体交互预判与长期动作预测任务，为人类行为、手物交互和具身未来预测提供了重要基准。
   `第一人称 / 人类活动` · `RGB 视频` · `音频` · `三维网格` · `视线` · `惯性测量单元`
   [主页](https://ego4d-data.org/) · [论文](https://arxiv.org/abs/2110.07058) · [代码](https://github.com/facebookresearch/Ego4d) · 访问方式：需申请
+  入选依据 C1（英文审查说明）：The parent corpus explicitly includes future-activity forecasting and interaction-state tasks. Merge v2 and forecasting aliases rather than count them separately. [审查来源](https://arxiv.org/abs/2110.07058) · 2026-10-29
 
-- **Ego4D Forecasting** · 2022
-  第一人称视频短期未来动作预测基准。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签` · `语言`
-  [主页](https://ego4d-data.org/) · [论文](https://arxiv.org/abs/2206.01641) · 访问方式：官方挑战赛门户
-
-- **EPIC-KITCHENS-100** · 2022
+- **EPIC-KITCHENS-100** · 2022 · 数据集
   大规模第一人称厨房活动数据集，提供连续视频、动作分段、名词与动词标注及多项预测任务，适合研究人类手物交互和下一动作预测。
   `第一人称 / 人类活动` · `RGB 视频` · `音频` · `动作标签` · `语言`
   [主页](https://epic-kitchens.github.io/2021) · [论文](https://arxiv.org/abs/2006.13256) · [代码](https://github.com/epic-kitchens/epic-kitchens-100-annotations) · 访问方式：需申请并同意协议
+  入选依据 C1（英文审查说明）：Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55. [审查来源](https://arxiv.org/abs/2006.13256) · 2026-10-29
 
-- **HumanML3D** · 2022
+- **HumanML3D** · 2022 · 派生数据 / 子集
   基于 AMASS 与 HumanAct12 的三维人体运动和文本描述数据，提供标准预处理与运动表示。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言`
   [代码](https://github.com/EricGuo5513/HumanML3D) · 访问方式：官方重建脚本；需另行获取原始数据和人体模型
+  入选依据 C3（英文审查说明）：Text annotations pair with 20-fps 3D motion clips derived from AMASS/HumanAct12; not independent motion acquisition. [审查来源](https://github.com/EricGuo5513/HumanML3D) · 2026-10-29
 
-- **Kubric** · 2022
+- **Kubric** · 2022 · 生成环境 / 工具
   用于生成带精确三维、光流、深度和分割标注的视频数据管线。
   `物理 / 科学` · `游戏 / 虚拟环境` · `合成视频` · `深度` · `光流` · `分割标注` · `三维状态`
   [主页](https://kubric.readthedocs.io/) · [论文](https://arxiv.org/abs/2203.03570) · [代码](https://github.com/google-research/kubric) · 访问方式：官方生成工具
+  入选依据 C4（英文审查说明）：Official pipeline simulates multi-object physical interactions and renders annotated videos; MOVi is a generated output family. [审查来源](https://github.com/google-research/kubric) · 2026-10-29
 
-- **PDEArena** · 2022
+- **PDEArena** · 2022 · 生成环境 / 工具
   面向 PDE 代理建模的时序数据与生成工具，包含 Navier-Stokes 和浅水方程的演化轨迹。
   `物理 / 科学` · `仿真状态`
   [主页](https://pdearena.github.io/pdearena/data/) · [代码](https://github.com/pdearena/pdearena) · 访问方式：官方数据生成文档和加载器
+  入选依据 C1（英文审查说明）：Official documentation gives executable Navier-Stokes trajectory generation commands and split definitions. [审查来源](https://pdearena.github.io/pdearena/data/) · 2026-10-29
 
-- **PDEBench** · 2022
+- **PDEBench** · 2022 · 评测集
   多种偏微分方程的时序数值解，提供初始条件、边界条件和参数变化下的物理场演化数据。
   `物理 / 科学` · `仿真状态`
   [代码](https://github.com/pdebench/PDEBench) · [论文](https://arxiv.org/abs/2210.07182) · 访问方式：官方 DaRUS 数据集及生成、下载脚本
+  入选依据 C1（英文审查说明）：Time-dependent PDE simulation data and code define future physical-state prediction benchmarks. [审查来源](https://arxiv.org/abs/2210.07182) · 2026-10-29
 
-- **V-D4RL** · 2022
+- **V-D4RL** · 2022 · 评测集
   面向视觉离线强化学习的像素轨迹数据与评测基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `奖励` · `仿真状态`
   [代码](https://github.com/conglu1997/v-d4rl) · [论文](https://arxiv.org/abs/2206.04779) · 访问方式：公开 Google Drive 数据与开源加载器
+  入选依据 C2（英文审查说明）：Offline continuous-control tasks pair visual observations with action interactions and test changing dynamics; derived from control-suite environments. [审查来源](https://arxiv.org/abs/2206.04779) · 2026-10-29
 
-- **AIST++** · 2021
-  带音乐和多视角视频的三维舞蹈运动序列，提供关节旋转、根节点轨迹和逐帧关键点。
-  `第一人称 / 人类活动` · `多视角 RGB 视频` · `智能体位姿` · `轨迹` · `音频`
-  [主页](https://google.github.io/aistplusplus_dataset/) · 访问方式：官方标注下载及视频下载脚本
-
-- **BABEL** · 2021
+- **BABEL** · 2021 · 派生数据 / 子集
   为 AMASS 连续运动捕捉序列增加动作语义和起止时间标注，描述动作之间的时间结构。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言` · `动作标签`
   [主页](https://babel.is.tue.mpg.de/data.html) · 访问方式：官方标注下载；运动数据需另从 AMASS 获取
+  入选依据 C3（英文审查说明）：Frame/sequence annotations index underlying motion sequences; AMASS motion must be obtained separately and must not be counted as new acquisition. [审查来源](https://babel.is.tue.mpg.de/data.html) · 2026-10-29
 
-- **Atari 100K Dataset** · 2020
-  在 Atari 游戏中记录有限交互预算下的帧、动作、奖励和终止信号，用于模型式强化学习。
-  `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `游戏状态`
-  [代码](https://github.com/mila-iqia/atari-dqn) · 访问方式：官方基准实现和数据加载器可用
-
-- **BDD100K** · 2020
+- **BDD100K** · 2020 · 数据集
   覆盖多城市、天气与时段的大规模驾驶视频数据集，提供目标检测、车道线、可行驶区域、跟踪等多任务标注，适合研究视觉动态表示和复杂道路分布泛化。
   `自动驾驶` · `RGB 视频` · `二维框` · `分割标注` · `车道线`
   [主页](https://bdd-data.berkeley.edu/) · [论文](https://arxiv.org/abs/1805.04687) · [代码](https://github.com/bdd100k/bdd100k) · 访问方式：需注册
+  入选依据 C3（英文审查说明）：Official toolkit explicitly links driving videos to GPS/IMU trajectory information; the retained scope is sequential driving recordings, not isolated perception images. [审查来源](https://github.com/bdd100k/bdd100k) · 2026-10-29
 
-- **GRAB** · 2020
+- **GRAB** · 2020 · 数据集
   全身与日常物体交互的连续三维运动数据，包含身体、手部、面部、物体位姿及逐时刻接触信息。
   `第一人称 / 人类活动` · `机器人 / 具身智能` · `智能体位姿` · `物体状态` · `三维网格` · `轨迹`
   [主页](https://grab.is.tue.mpg.de/) · 访问方式：官方下载需注册并接受许可协议
+  入选依据 C3（英文审查说明）：Whole-body grasping provides full human/object pose sequences and contact during interactions, not merely static grasps. [审查来源](https://grab.is.tue.mpg.de/) · 2026-10-29
 
-- **Griddly** · 2020
+- **Griddly** · 2020 · 生成环境 / 工具
   可配置二维游戏与物理环境生成器。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/Bam4d/Griddly) · [论文](https://arxiv.org/abs/2011.04683) · 访问方式：开源引擎
+  [代码](https://github.com/Bam4d/Griddly) · 访问方式：开源引擎
+  入选依据 C2（英文审查说明）：Official grid-world engine exposes step-wise action histories and configurable interactions between objects. [审查来源](https://github.com/Bam4d/Griddly) · 2026-10-29
 
-- **LAFAN1** · 2020
+- **LAFAN1** · 2020 · 数据集
   高质量 BVH 人体运动捕捉序列，用于运动过渡、插帧和长时运动生成。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹`
   [代码](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) · 访问方式：官方 Git LFS 数据包及运动过渡评估代码
+  入选依据 C3（英文审查说明）：Official motion-capture sequence release and motion-transition benchmarking support temporal pose modeling; interpolation differs from causal forecasting. [审查来源](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) · 2026-10-29
 
-- **Learning to Simulate / GNS Datasets** · 2020
+- **Learning to Simulate / GNS Datasets** · 2020 · 数据集
   多材料粒子物理仿真轨迹，提供粒子类型、连续位置和全局上下文，用于下一步及长时 rollout 预测。
   `物理 / 科学` · `仿真状态` · `轨迹`
   [代码](https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate) · [论文](https://arxiv.org/abs/2002.09405) · 访问方式：官方 Google Cloud TFRecord 数据和下载脚本
+  入选依据 C4（英文审查说明）：Official learning_to_simulate release includes downloadable particle-dynamics datasets and explicit test trajectory rollout evaluation. [审查来源](https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate) · 2026-10-29
 
-- **MeshGraphNets Simulation Datasets** · 2020
+- **MeshGraphNets Simulation Datasets** · 2020 · 数据集
   包含布料、变形固体和流体的网格仿真数据，提供节点状态、网格结构及训练验证测试划分。
   `物理 / 科学` · `仿真状态` · `三维网格` · `轨迹`
   [主页](https://sites.google.com/view/meshgraphnets/home) · [代码](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets) · [论文](https://arxiv.org/abs/2010.03409) · 访问方式：DeepMind Research 官方数据下载器和元数据
+  入选依据 C4（英文审查说明）：Official release contains physical mesh simulation datasets, loaders, rollout evaluation and trajectory plotting for cloth and fluid systems. [审查来源](https://github.com/google-deepmind/deepmind-research/tree/master/meshgraphnets) · 2026-10-29
 
-- **Procgen Benchmark** · 2020
+- **Procgen Benchmark** · 2020 · 生成环境 / 工具
   程序生成的视觉强化学习环境集合，提供可控动作、观测和关卡状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/openai/procgen) · [论文](https://arxiv.org/abs/1912.01588) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：Sixteen procedurally generated game environments supply controlled interaction episodes; distinguish the base environments from derived rollout generators. [审查来源](https://arxiv.org/abs/1912.01588) · 2026-10-29
 
-- **TrajNet++** · 2020
+- **TrajNet++** · 2020 · 评测集
   面向行人轨迹预测的统一基准和数据格式，整合多个人群轨迹数据源，用于比较社会交互建模和多未来预测方法。
   `第一人称 / 人类活动` · `城市 / 三维场景` · `轨迹` · `智能体位姿` · `物体元数据`
   [主页](https://github.com/vita-epfl/trajnetplusplusbaselines) · 访问方式：官方 GitHub 资源提供基准工具和数据准备流程
+  入选依据 C3（英文审查说明）：Official interaction-centric pedestrian trajectories and a defined future-trajectory forecasting protocol provide direct evidence; underlying source datasets overlap other motion collections. [审查来源](https://github.com/vita-epfl/trajnetplusplusbaselines) · 2026-10-29
 
-- **Virtual KITTI 2** · 2020
+- **Virtual KITTI 2** · 2020 · 数据集
   带有深度、光流、场景流和三维标注的逼真合成驾驶视频数据集。
   `自动驾驶` · `游戏 / 虚拟环境` · `合成视频` · `深度` · `光流` · `三维框` · `分割标注`
   [主页](https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/) · [论文](https://arxiv.org/abs/2001.10773) · 访问方式：官方下载
+  入选依据 C3（英文审查说明）：Cloned driving sequences provide camera poses, vehicle locations and scene flow over time; updated release overlaps Virtual KITTI. [审查来源](https://arxiv.org/abs/2001.10773) · 2026-10-29
 
-- **AMASS** · 2019
+- **AMASS** · 2019 · 聚合集合 / 注册表
   统一多个动作捕捉数据集的四维人体运动数据库，将不同参数化转换为一致的 SMPL 身体表示，支持长时人体运动预测、生成和交互建模。
   `第一人称 / 人类活动` · `三维状态` · `轨迹` · `智能体位姿`
   [主页](https://amass.is.tue.mpg.de/) · [论文](https://arxiv.org/abs/1904.03278) · 访问方式：官方项目访问；可能需要注册
+  入选依据 C3（英文审查说明）：Unifies motion-capture sequences into a common parameterized human-body representation; source and derived motion datasets overlap. [审查来源](https://arxiv.org/abs/1904.03278) · 2026-10-29
 
-- **Argoverse 1** · 2019
+- **Argoverse 1** · 2019 · 数据集
   面向三维跟踪与运动预测的自动驾驶数据集，结合车辆轨迹、传感器日志和高清地图，为地图条件未来预测建立了重要基准。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `轨迹` · `三维框`
   [主页](https://www.argoverse.org/av1.html) · [论文](https://arxiv.org/abs/1911.02620) · [代码](https://github.com/argoverse/argoverse-api) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：Tracked agent trajectories with rich maps include a dedicated five-second motion-forecasting dataset and 3D tracking sequences. [审查来源](https://arxiv.org/abs/1911.02620) · 2026-10-29
 
-- **D²-City** · 2019
+- **D²-City** · 2019 · 数据集
   覆盖多种天气、道路和交通状况的大规模行车视频数据集，提供连续驾驶片段和场景标注，适合研究城市交通时序建模与分布泛化。
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `语义标签` · `轨迹`
   [论文](https://arxiv.org/abs/1904.01975) · 访问方式：论文入口；官方访问方式需核验
+  入选依据 C3（英文审查说明）：Per-frame object tracking annotations across 1,000 driving videos expose road-user motion; single-keyframe detection subsets are not the inclusion basis. [审查来源](https://arxiv.org/abs/1904.01975) · 2026-10-29
 
-- **DADA-2000** · 2019
-  面向驾驶事故预测与驾驶员注意分析的行车视频数据集，包含事故发生前后的连续片段和注意/显著性相关标注。
-  `自动驾驶` · `RGB 视频` · `动作标签` · `语义标签`
-  [主页](https://github.com/JWFangit/LOTVS-DADA) · 访问方式：官方 GitHub 仓库提供 DADA 资源和基准代码
-
-- **inD** · 2019
+- **inD** · 2019 · 数据集
   使用无人机在德国城市路口采集的自然道路参与者轨迹数据集，覆盖车辆、自行车和行人，面向城市交互行为预测和场景化安全验证。
   `自动驾驶` · `城市 / 三维场景` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
   [主页](https://levelxdata.com/ind-dataset/) · [论文](https://arxiv.org/abs/1911.07602) · 访问方式：官方 leveLXData/inD 申请页面；访问需同意数据集条款
+  入选依据 C3（英文审查说明）：Naturalistic urban road-user trajectories are explicitly designed for motion prediction and scenario validation. [审查来源](https://arxiv.org/abs/1911.07602) · 2026-10-29
 
-- **INTERACTION Dataset** · 2019
+- **INTERACTION Dataset** · 2019 · 数据集
   聚焦路口、环岛和汇入等高交互驾驶场景的轨迹数据集，包含多国道路中的车辆与行人运动，适合多智能体预测和交互建模。
   `自动驾驶` · `轨迹` · `地图` · `智能体位姿`
   [论文](https://arxiv.org/abs/1910.03088) · [代码](https://github.com/interaction-dataset/interaction-dataset) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：International interactive-driving motion trajectories with semantic maps support prediction, planning and behavior generation. [审查来源](https://arxiv.org/abs/1910.03088) · 2026-10-29
 
-- **Kinetics-700** · 2019
-  大规模人类动作视频分类数据集，覆盖 700 类日常和体育动作。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [论文](https://arxiv.org/abs/1907.06987) · 访问方式：官方标注和下载脚本
-
-- **PREVENTION Dataset** · 2019
+- **PREVENTION Dataset** · 2019 · 数据集
   面向周围车辆意图与轨迹预测的真实自动驾驶数据集，包含前后彩色视频、LiDAR、长短距雷达、RTK DGNSS、IMU、车道变化标注、检测和车辆轨迹。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `GPS / 惯性测量单元` · `轨迹`
   [主页](https://prevention-dataset.uah.es/) · [论文](https://doi.org/10.1109/ITSC.2019.8917433) · 访问方式：官方网站提供原始数据、处理后数据、工具和标注
+  入选依据 C3（英文审查说明）：Official release includes a trajectory-prediction challenge and frame-indexed vehicle annotations with calibrated raw recordings. [审查来源](https://prevention-dataset.uah.es/) · 2026-10-29
 
-- **3DPW** · 2018
+- **3DPW** · 2018 · 数据集
   真实环境中采集的三维人体姿态与运动视频数据集，包含 SMPL 参数和相机信息。
   `第一人称 / 人类活动` · `RGB 视频` · `智能体位姿` · `相机位姿`
-  [主页](https://virtualhumans.mpi-inf.mpg.de/3DPW/) · [论文](https://arxiv.org/abs/1810.04558) · 访问方式：官方下载
+  [主页](https://virtualhumans.mpi-inf.mpg.de/3DPW/) · 访问方式：官方下载
+  入选依据 C3（英文审查说明）：Official page provides per-frame camera poses and explicitly links a future human-trajectory and skeleton forecasting protocol. [审查来源](https://virtualhumans.mpi-inf.mpg.de/3DPW/) · 2026-10-29
 
-- **Charades-Ego** · 2018
-  将同一室内活动的第一人称和第三人称视频配对，提供多标签动作和时间区间标注，用于跨视角行为理解与未来状态表示。
-  `第一人称 / 人类活动` · `多视角 RGB 视频` · `动作标签`
-  [主页](https://prior.allenai.org/projects/charades-ego) · [论文](https://arxiv.org/abs/1804.09626) · 访问方式：开放获取，具体取决于协议要求
-
-- **EPIC-KITCHENS-55** · 2018
-  EPIC-KITCHENS 的首个大规模版本，记录参与者在自家厨房中的连续第一人称活动，包含动作分段、动词、名词和叙述标注。
-  `第一人称 / 人类活动` · `RGB 视频` · `音频` · `动作标签` · `语言`
-  [主页](https://epic-kitchens.github.io/2018) · [论文](https://arxiv.org/abs/1804.02748) · [代码](https://github.com/epic-kitchens/epic-kitchens-55-annotations) · 访问方式：需申请并同意协议
-
-- **highD** · 2018
+- **highD** · 2018 · 数据集
   使用无人机在德国高速公路上采集的自然驾驶车辆轨迹数据集，提供车辆位置、速度、加速度、车道、车型、尺寸和机动行为等高精度轨迹信息。
   `自动驾驶` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
   [主页](https://levelxdata.com/highd-dataset/) · [论文](https://arxiv.org/abs/1810.05642) · 访问方式：官方 leveLXData/highD 申请页面；访问需同意数据集条款
+  入选依据 C3（英文审查说明）：Drone-recorded naturalistic highway vehicle trajectories explicitly support scenario reconstruction and motion modeling. [审查来源](https://arxiv.org/abs/1810.05642) · 2026-10-29
 
-- **Kinetics-600** · 2018
-  覆盖 600 类人类动作的大规模视频数据集。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [论文](https://arxiv.org/abs/1808.01316) · 访问方式：官方标注
-
-- **Something-Something V2** · 2018
-  由人类执行日常物体交互构成的大规模短视频数据集，类别强调推动、放置、遮挡等细粒度时间变化，是学习动作结果与时序因果线索的常用资源。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签` · `文本模板`
-  [论文](https://arxiv.org/abs/1706.04261) · 访问方式：需注册
-
-- **World Models CarRacing Rollouts** · 2018
-  World Models 项目中的 CarRacing 视觉观测、动作和潜变量回放数据。
-  `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `仿真状态`
-  [代码](https://github.com/ctallec/world-models) · 访问方式：官方仓库提供数据生成和训练流程
-
-- **YouTube-VOS** · 2018
-  大规模视频目标分割数据集，提供跨帧目标掩码和长时跟踪场景。
-  `第一人称 / 人类活动` · `RGB 视频` · `分割标注` · `物体元数据`
-  [主页](https://youtube-vos.org/) · [论文](https://arxiv.org/abs/1809.03327) · 访问方式：官方挑战赛网站
-
-- **DAVIS** · 2016
-  高质量视频目标分割与跟踪数据集，提供密集逐帧像素标注。
-  `第一人称 / 人类活动` · `RGB 视频` · `分割标注`
-  [主页](https://davischallenge.org/) · [论文](https://arxiv.org/abs/1604.00675) · 访问方式：官方数据网站
-
-- **KIT Motion-Language** · 2016
+- **KIT Motion-Language** · 2016 · 聚合集合 / 注册表
   提供连续关节运动与自然语言描述的多模态集合，保留原始动作来源元数据。
   `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `语言`
   [主页](https://motion-annotation.humanoids.kit.edu/dataset/) · [论文](https://arxiv.org/abs/1607.03827) · 访问方式：官方数据包及 MMM/C3D 解析示例
+  入选依据 C3（英文审查说明）：Human motion-capture sequences from multiple collections are unified and language-annotated; overlap underlying mocap/AMASS resources. [审查来源](https://arxiv.org/abs/1607.03827) · 2026-10-29
 
-- **Stanford Drone Dataset** · 2016
+- **Stanford Drone Dataset** · 2016 · 数据集
   从斯坦福校园上空采集的多智能体鸟瞰视频数据集，标注行人、自行车、滑板、车辆、公交车和高尔夫车轨迹，用于目标跟踪、社会导航和未来轨迹预测。
   `第一人称 / 人类活动` · `城市 / 三维场景` · `RGB 视频` · `轨迹` · `二维框` · `动作标签` · `物体元数据`
   [主页](https://cvgl.stanford.edu/projects/uav_data/) · [论文](https://arxiv.org/abs/1601.00998) · 访问方式：官方项目页提供 Stanford Campus Dataset 下载入口
+  入选依据 C3（英文审查说明）：Drone-observed road users and pedestrians are explicitly evaluated through future-trajectory prediction in crowded scenes. [审查来源](https://arxiv.org/abs/1601.00998) · 2026-10-29
 
-- **ViZDoom** · 2016
+- **ViZDoom** · 2016 · 生成环境 / 工具
   基于 Doom 的第一人称视觉强化学习环境，提供可控动作和帧序列。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [主页](https://vizdoom.cs.put.poznan.pl/) · [代码](https://github.com/Farama-Foundation/ViZDoom) · [论文](https://arxiv.org/abs/1605.02097) · 访问方式：开源引擎与场景
+  入选依据 C2（英文审查说明）：Customizable first-person Doom scenarios expose visual observations to bots executing actions; environment generator, not a fixed corpus. [审查来源](https://arxiv.org/abs/1605.02097) · 2026-10-29
 
-- **Moving MNIST** · 2015
-  将 MNIST 数字在画布中按速度移动并反弹生成的经典视频预测基准，可按需生成确定或随机轨迹，长期用于验证时序表征、外推和不确定未来建模。
-  `物理 / 科学` · `合成视频` · `物体状态` · `轨迹`
-  [主页](https://www.tensorflow.org/datasets/catalog/moving_mnist) · [论文](https://arxiv.org/abs/1502.04681) · [代码](https://github.com/tensorflow/datasets) · 访问方式：开放生成工具
-
-- **Human3.6M** · 2014
+- **Human3.6M** · 2014 · 数据集
   面向人体姿态与运动建模的大规模多视角数据集，提供同步视频、三维关节、相机参数和动作类别，是人类未来姿态预测的重要历史基准。
   `第一人称 / 人类活动` · `多视角 RGB 视频` · `三维状态` · `动作标签` · `相机位姿`
   [主页](http://vision.imar.ro/human3.6m/description.php) · [论文](https://ieeexplore.ieee.org/document/6682899) · 访问方式：需注册并同意协议
-
-- **UCF101** · 2012
-  包含 101 类人类动作的公开视频数据集，提供动作类别和时序片段。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [主页](https://www.crcv.ucf.edu/data/UCF101.php) · [论文](https://arxiv.org/abs/1212.0402) · 访问方式：官方数据页
-
-- **HMDB51** · 2011
-  从电影和公开视频整理的 51 类人类动作视频数据集。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [主页](https://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/) · 访问方式：官方项目页
-
-- **KTH Human Actions** · 2004
-  最早被广泛用于视频预测的真实人物动作数据之一，包含固定背景及尺度变化下的六类连续动作，为长期预测和人体运动动态提供轻量基准。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [主页](https://www.csc.kth.se/cvap/actions/) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：Synchronized 50Hz multiview video and accurate 3D joint positions/angles expose human motion trajectories. [审查来源](http://vision.imar.ro/human3.6m/description.php) · 2026-10-29
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（63）
+### 动作条件动力学（45）
 
-- **AgiBot World 2026** · 2026
-  真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
-  `机器人 / 具身智能` · `多视角 RGB 视频` · `机器人状态` · `动作` · `语言` · `奖励`
-  [主页](https://agibot-world.com) · [代码](https://huggingface.co/datasets/agibot-world/AgiBotWorld2026) · 访问方式：数据集已在 Hugging Face 和官方网站提供
-
-- **HandEdit** · 2026
-  将第一人称人手图像编辑为多种灵巧机器人本体的大规模数据集。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `三维元数据` · `文本`
-  [论文](https://arxiv.org/abs/2608.12122) · 访问方式：论文入口；发布状态待核验
-
-- **kine2go** · 2026
+- **kine2go** · 2026 · 数据集
   将动物与四足动作捕捉重定向为 Unitree Go2 可执行参考轨迹并生成策略回放的数据集。
   `机器人 / 具身智能` · `轨迹` · `机器人状态` · `动作` · `RGB 视频`
   [主页](https://nomagiclab.github.io/kine2go-pipeline/) · [论文](https://arxiv.org/abs/2606.14433) · [代码](https://github.com/nomagiclab/kine2go-pipeline) · 访问方式：数据产物已在 Hugging Face 提供
+  入选依据 C2（英文审查说明）：The dataset contains Go2-compatible kinematic trajectories with corresponding motor-level actions, collected from 40 policies. [审查来源](https://arxiv.org/abs/2606.14433) · 2026-10-29
 
-- **KungFuAthleteBot Motion Dataset** · 2026
+- **KungFuAthleteBot Motion Dataset** · 2026 · 数据集
   由武术训练视频提取并重定向到人形机器人的高动态动作数据集，覆盖地面和跳跃动作。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `轨迹` · `机器人状态`
   [主页](https://kungfuathletebot.github.io/) · [论文](https://arxiv.org/abs/2602.13656) · [代码](https://github.com/NPCLEI/KungFuAthleteBot) · 访问方式：可通过 Hugging Face 和官方下载入口访问
+  入选依据 C3（英文审查说明）：The paper explicitly introduces a high-dynamic human motion dataset and trajectory correction for robot motion learning; release access remains unverified. [审查来源](https://arxiv.org/abs/2602.13656) · 2026-10-29
 
-- **Open Locomotion Skills Dataset** · 2026
+- **Open Locomotion Skills Dataset** · 2026 · 生成环境 / 工具
   统一不同形态腿式机器人的运动轨迹、地形元数据和仿真到现实工具的数据集。
   `机器人 / 具身智能` · `轨迹` · `机器人状态` · `动作` · `场景元数据`
   [主页](https://kanishqgandharv219.github.io/open-locomotion-dataset/) · [代码](https://github.com/KanishqGandharv219/open-locomotion-dataset) · 访问方式：统一模式、导入器、校验和基准工具可用
+  入选依据 C2（英文审查说明）：Official toolkit defines locomotion episode/trajectory schemas and a generate_trajectories API; generated and imported hardware data retain separate provenance. [审查来源](https://github.com/KanishqGandharv219/open-locomotion-dataset) · 2026-10-29
 
-- **REBOOT26 Recovery Trajectories** · 2026
-  双臂 WidowX 机器人恢复轨迹集合，覆盖移除、安装和故障恢复任务。
-  `机器人 / 具身智能` · `RGB 视频` · `机器人状态` · `动作` · `轨迹`
-  [主页](https://huggingface.co/REBOOT26) · 访问方式：恢复数据集已通过 Hugging Face 组织提供
-
-- **Robo-ValueRL** · 2026
-  面向真实机器人操作的离线到在线强化学习数据集，包含历史条件价值、逐帧进度和动作质量标签。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `奖励` · `轨迹`
-  [主页](https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL) · [代码](https://github.com/Open-X-Humanoid/Robo-ValueRL) · 访问方式：LeRobot 数据集已在 Hugging Face 公开
-
-- **ViTacWorld** · 2026
-  面向接触丰富操作的视觉、触觉和动作轨迹数据资源。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `机器人状态`
-  [论文](https://arxiv.org/abs/2607.22530) · [主页](https://vitacworld.github.io/) · 访问方式：论文入口；发布状态待核验
-
-- **VLA-REPLICA** · 2026
-  低成本 SO-101 机器人视觉语言动作复现实验数据集，包含示范、动作状态和场景参考。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [代码](https://github.com/IRVLUTD/VLAReplica) · [主页](https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data) · 访问方式：SFT 数据已在 Hugging Face 提供，并有官方代码
-
-- **WildWorld** · 2026
+- **WildWorld** · 2026 · 数据集
   面向可交互生成式角色扮演世界模型的大规模动作条件游戏数据集，带显式角色状态、相机位姿和深度标注。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `深度` · `相机位姿` · `游戏状态`
   [主页](https://alaya-studio.github.io/wildworld-project/) · [论文](https://arxiv.org/abs/2603.23497) · [代码](https://github.com/AlayaLab/WildWorld) · 访问方式：第一部分已在 Hugging Face 提供，后续部分计划发布
+  入选依据 C2（英文审查说明）：Game rollouts expose explicit state with synchronized action labels across more than 108 million frames. [审查来源](https://arxiv.org/abs/2603.23497) · 2026-10-29
 
-- **BlueROV2 Dynamics Dataset** · 2025
+- **BlueROV2 Dynamics Dataset** · 2025 · 数据集
   包含水下机器人动力学数据、训练脚本和学习与物理模型的资源。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `机器人状态` · `轨迹`
   [代码](https://github.com/ViktorNfa/bluerov2_dynamics) · 访问方式：官方数据和训练代码可用
+  入选依据 C2（英文审查说明）：Repository provides recorded/simulated underwater dynamics data and one-step and multi-step prediction evaluation with control-aware models. [审查来源](https://github.com/ViktorNfa/bluerov2_dynamics) · 2026-10-29
 
-- **MuJoCo Playground** · 2025
+- **MuJoCo Playground** · 2025 · 生成环境 / 工具
   基于 MuJoCo MJX 的开源机器人学习环境集合，可大规模生成接触丰富的状态、动作和传感器轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `仿真状态` · `动作` · `奖励` · `RGB 视频`
   [代码](https://github.com/google-deepmind/mujoco_playground) · [论文](https://arxiv.org/abs/2502.08844) · 访问方式：开源环境与训练代码
+  入选依据 C2（英文审查说明）：Released physics engine, batch renderer and robot training environments expose controlled state/pixel interactions; not a fixed recorded dataset. [审查来源](https://arxiv.org/abs/2502.08844) · 2026-10-29
 
-- **Open-H-Embodiment** · 2025
+- **Open-H-Embodiment** · 2025 · 聚合集合 / 注册表
   面向医疗机器人通用视觉语言动作模型的社区驱动开放数据计划。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
   [代码](https://github.com/open-h/open-h-embodiment) · 访问方式：官方项目仓库和贡献入口可用
+  入选依据 C2（英文审查说明）：Official v1 release pairs healthcare-robot videos and kinematics; v2 uses a versioned LeRobot format. Do not count versions separately. [审查来源](https://github.com/open-h/open-h-embodiment) · 2026-10-29
 
-- **PHUMA** · 2025
+- **PHUMA** · 2025 · 聚合集合 / 注册表
   通过物理约束筛选和重定向构建的高质量人形机器人运动数据集。
   `机器人 / 具身智能` · `轨迹` · `机器人状态` · `三维状态`
   [主页](https://davian-robotics.github.io/PHUMA/) · [论文](https://arxiv.org/abs/2510.26236) · [代码](https://github.com/DAVIAN-Robotics/PHUMA) · 访问方式：可通过官方下载脚本和 Hugging Face 获取预构建数据
+  入选依据 C3（英文审查说明）：Physics-curated and retargeted mocap/video motion produces a 73-hour humanoid trajectory corpus; overlaps source motion collections. [审查来源](https://arxiv.org/abs/2510.26236) · 2026-10-29
 
-- **RoboVerse** · 2025
+- **RoboVerse** · 2025 · 生成环境 / 工具
   统一机器人学习仿真平台、任务数据和评测协议的可扩展具身资源。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `机器人状态` · `物体状态` · `轨迹`
   [主页](https://roboverse.wiki/) · [论文](https://arxiv.org/abs/2504.18904) · [代码](https://github.com/RoboVerseOrg/RoboVerse) · 访问方式：平台、任务和基准代码已公开
+  入选依据 C2（英文审查说明）：MetaSim exposes simulator initialization, physical stepping and shared interfaces; generated data is evaluated for world-model learning and policy learning. [审查来源](https://arxiv.org/abs/2504.18904) · 2026-10-29
 
-- **RoVI-Book** · 2025
-  聚焦机器人操作和视觉理解的机器人视觉指令数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `机器人状态`
-  [主页](https://robotic-visual-instruction.github.io/) · [代码](https://github.com/robotic-visual-instruction/RoVI-Book) · 访问方式：官方项目页和仓库可用
-
-- **DrivingDojo** · 2024
+- **DrivingDojo** · 2024 · 数据集
   专为交互式驾驶世界模型构建的视频数据集，覆盖完整驾驶操作、多智能体交互和开放世界驾驶知识，并提供动作指令跟随评测。
   `自动驾驶` · `RGB 视频` · `动作` · `语言` · `场景元数据`
   [论文](https://arxiv.org/abs/2410.10738) · [代码](https://github.com/Robertwyq/Drivingdojo) · 访问方式：提供论文和官方项目仓库；数据访问条款待核验
+  入选依据 C2（英文审查说明）：Dataset explicitly targets interactive driving dynamics and an action-instruction-following benchmark for controlled future prediction. [审查来源](https://arxiv.org/abs/2410.10738) · 2026-10-29
 
-- **Functional Manipulation Benchmark (FMB)** · 2024
+- **Functional Manipulation Benchmark (FMB)** · 2024 · 数据集
   多阶段抓取、重定向与装配示范，提供四视角 RGB-D、机械臂状态、末端力矩和笛卡尔控制动作。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `轨迹`
   [主页](https://functional-manipulation-benchmark.github.io/) · [论文](https://arxiv.org/abs/2401.08553) · 访问方式：官方 NumPy 轨迹包及详细数据格式
+  入选依据 C2（英文审查说明）：Official dataset page identifies 22,550 robot trajectories recorded from global and wrist cameras for multi-stage manipulation. [审查来源](https://functional-manipulation-benchmark.github.io/) · 2026-10-29
 
-- **Isaac Lab** · 2024
+- **Isaac Lab** · 2024 · 生成环境 / 工具
   面向机器人学习的 GPU 物理仿真框架，可生成大规模状态—动作轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
-  [代码](https://github.com/isaac-sim/IsaacLab) · [论文](https://arxiv.org/abs/2309.07137) · 访问方式：开源仓库
+  [代码](https://github.com/isaac-sim/IsaacLab) · 访问方式：开源仓库
+  入选依据 C2（英文审查说明）：Official framework provides robot sensors and ready-to-train simulated control environments. [审查来源](https://github.com/isaac-sim/IsaacLab) · 2026-10-29
 
-- **Mobile ALOHA Demonstrations** · 2024
+- **Mobile ALOHA Demonstrations** · 2024 · 数据集
   全身遥操作采集的移动双臂操作示范，联合记录视觉、机械臂和移动底盘相关状态与动作。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `轨迹`
   [主页](https://mobile-aloha.github.io/) · [代码](https://github.com/MarkFzp/mobile-aloha) · 访问方式：官方项目提供示范数据集入口及回放工具
+  入选依据 C2（英文审查说明）：Whole-body teleoperation records mobile bimanual demonstrations and the project provides a datasets entry point. [审查来源](https://mobile-aloha.github.io/) · 2026-10-29
 
-- **RetroAct** · 2024
-  为生成式交互环境和动作条件世界模型标注的复古游戏环境数据集，含行为、视角、运动轴和控制信息。
+- **RetroAct Environment Annotations and Rollout Generator** · 2024 · 生成环境 / 工具
+  覆盖 974 个游戏环境的标注与回放生成工具，用于动作条件世界模型；不把环境数量当作已下载轨迹数量。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `仿真状态` · `相机位姿`
   [主页](https://nsavov.github.io/GenieRedux/) · [代码](https://github.com/insait-institute/GenieRedux) · 访问方式：官方仓库提供环境标注、数据生成、训练和评测代码
+  入选依据 C2（英文审查说明）：RetroAct annotates 974 game environments and the repository gives executable action-aligned dataset-generation commands. Environment annotations are not 974 independent trajectory datasets. [审查来源](https://github.com/insait-institute/GenieRedux) · 2026-10-29
 
-- **RoboCasa** · 2024
+- **RoboCasa** · 2024 · 生成环境 / 工具
   面向家庭厨房机器人学习的大规模仿真环境和任务套件，提供多样化场景、物体、语言任务及可生成的视觉动作轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `动作` · `机器人状态` · `语言`
   [主页](https://robocasa.ai/) · [论文](https://arxiv.org/abs/2406.02523) · [代码](https://github.com/robocasa/robocasa) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Interactive kitchen simulation provides human demonstrations for controlled manipulation tasks; generation platform, with associated recorded demonstrations. [审查来源](https://arxiv.org/abs/2406.02523) · 2026-10-29
 
-- **ALOHA / ACT Simulation Demonstrations** · 2023
+- **ALOHA / ACT Simulation Demonstrations** · 2023 · 数据集
   ACT 官方公开的双臂仿真示范，涵盖方块转移和双臂插入，提供脚本及人类演示和录制工具。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `轨迹`
   [代码](https://github.com/tonyzhaozh/act) · [主页](https://tonyzhaozh.github.io/aloha/) · 访问方式：官方仿真示范包及 record_sim_episodes.py
+  入选依据 C2（英文审查说明）：README links scripted/human demonstrations for two controlled simulated tasks and identifies episode training and joint/EE-control environments. [审查来源](https://github.com/tonyzhaozh/act) · 2026-10-29
 
-- **ARMBench** · 2023
-  在亚马逊仓库机器人拣放流程中采集的大规模物体中心基准，覆盖操作前、转运中和放置后的图像、视频与元数据，并提供分割、识别和缺陷检测标注。
-  `机器人 / 具身智能` · `RGB 视频` · `分割标注` · `物体元数据` · `动作标签`
-  [主页](http://armbench.com) · [论文](https://arxiv.org/abs/2303.16382) · [代码](https://github.com/amzn/armbench) · 访问方式：提供官方数据网站和加载代码
-
-- **Austin MUTEX** · 2023
-  多任务家庭操作的真实机器人轨迹，按步骤提供图像、机器人状态、动作和语言指令。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
-
-- **FluidLab** · 2023
+- **FluidLab** · 2023 · 生成环境 / 工具
   复杂流体操作的可微仿真基准，支持记录交互目标、保存优化控制轨迹并回放多材料动力学。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `仿真状态` · `RGB 视频`
   [主页](https://fluidlab2023.github.io/) · [代码](https://github.com/zhouxian/FluidLab) · 访问方式：官方生成、轨迹保存和回放命令
+  入选依据 C2（英文审查说明）：Differentiable multi-material simulation defines controlled fluid-manipulation tasks and physical evolution; generation environment, not a fixed dataset. [审查来源](https://fluidlab2023.github.io/) · 2026-10-29
 
-- **Homes of New York (Dobb-E)** · 2023
+- **Homes of New York (Dobb-E)** · 2023 · 数据集
   使用手持 Stick 采集的家庭操作示范，包含 RGB-D 视频、六维夹爪位姿及开合角度标注。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB-D` · `动作` · `智能体位姿` · `轨迹`
   [主页](https://dobb-e.com/) · [论文](https://arxiv.org/abs/2311.16098) · 访问方式：官方 RGB/动作及 RGB-D/动作数据包
+  入选依据 C2（英文审查说明）：The Stick records household manipulation demonstrations in 22 homes for policy transfer. Human handheld demonstrations, not robot-collected motor controls. [审查来源](https://arxiv.org/abs/2311.16098) · 2026-10-29
 
-- **Minari Offline RL Datasets** · 2023
+- **Minari Offline RL Datasets** · 2023 · 聚合集合 / 注册表
   标准化离线强化学习数据集库，提供带观测、动作、奖励和终止信号的完整回合。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [主页](https://minari.farama.org/) · [代码](https://github.com/Farama-Foundation/Minari) · 访问方式：开放数据注册表与加载器
+  入选依据 C2（英文审查说明）：Offline-RL dataset registry provides episode sampling, trajectory filtering and generation; it includes migrated D4RL components and is not an independent corpus. [审查来源](https://minari.farama.org/) · 2026-10-29
 
-- **Push-T Demonstrations** · 2023
+- **Push-T Demonstrations** · 2023 · 数据集
   Diffusion Policy 发布的平面 T 形物体推送示范，包含连续观测、状态和推动动作。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `物体状态` · `轨迹`
   [代码](https://github.com/real-stanford/diffusion_policy) · [论文](https://arxiv.org/abs/2303.04137) · 访问方式：官方训练数据包和回放缓冲区加载器
+  入选依据 C2（英文审查说明）：Official Diffusion Policy repository links Push-T training data, demonstration collection and task-specific rollout evaluation. [审查来源](https://github.com/real-stanford/diffusion_policy) · 2026-10-29
 
-- **Race Against the Machine** · 2023
+- **Race Against the Machine** · 2023 · 数据集
   自主和人类驾驶竞速飞行数据，记录控制输入、惯性测量、图像和运动捕捉状态。
   `机器人 / 具身智能` · `RGB 视频` · `惯性测量单元` · `动作` · `机器人状态` · `轨迹`
   [代码](https://github.com/tii-racing/drone-racing-dataset) · [论文](https://arxiv.org/abs/2311.02667) · 访问方式：官方下载脚本及飞行数据格式文档
+  入选依据 C2（英文审查说明）：High-speed flight recordings pair visual/inertial/mocap streams with commands and control inputs. [审查来源](https://arxiv.org/abs/2311.02667) · 2026-10-29
 
-- **RH20T** · 2023
+- **RH20T** · 2023 · 数据集
   真实机器人双臂操作数据集，包含多视角 RGB-D、力觉和机器人状态。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
-  [主页](https://rh20t.github.io/) · [论文](https://arxiv.org/abs/2307.00770) · [代码](https://github.com/rh20t/rh20t_api) · 访问方式：官方项目和下载入口
+  [主页](https://rh20t.github.io/) · [代码](https://github.com/rh20t/rh20t_api) · 访问方式：官方项目和下载入口
+  入选依据 C2（英文审查说明）：Official release describes 110K+ manipulation sequences with synchronized visual, force, audio and action signals. [审查来源](https://rh20t.github.io/) · 2026-10-29
 
-- **RoboCook** · 2023
+- **RoboCook** · 2023 · 数据集
   真实工具操作弹塑性物体的粒子轨迹，记录不同工具作用下面团几何随时间的变化。
   `机器人 / 具身智能` · `物体状态` · `动作` · `轨迹`
   [代码](https://github.com/hshi74/robocook) · [论文](https://arxiv.org/abs/2306.14447) · 访问方式：官方仓库提供数据和轨迹处理说明
+  入选依据 C2（英文审查说明）：Official release provides tool-specific dynamics trajectories as per-frame HDF5 files and before/after object point clouds; distinguish real dynamics data from model-synthesized planning data. [审查来源](https://github.com/hshi74/robocook) · 2026-10-29
 
-- **TriFinger RL Dataset** · 2023
+- **TriFinger RL Dataset** · 2023 · 数据集
   TriFinger 真实机器人 Push/Lift 离线强化学习数据，包含多质量策略的状态、动作和奖励。
   `机器人 / 具身智能` · `机器人状态` · `动作` · `奖励` · `RGB 视频` · `轨迹`
   [主页](https://doi.org/10.17617/3.DXZ7TL) · [代码](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 访问方式：官方 DOI 和数据文档可用
+  入选依据 C2（英文审查说明）：Official documentation explicitly provides real/simulated robot transitions for Push and Lift, with varying behavior policies and optional camera images, for dynamics learning and offline RL. [审查来源](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 2026-10-29
 
-- **Austin BUDS** · 2022
-  Franka 厨房操作示范，按步骤记录主视角、腕部图像、关节与末端状态及七维控制动作。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
-
-- **Austin SAILOR** · 2022
-  Franka 餐桌布置与厨房操作时序，提供双视角图像、末端位姿、夹爪和控制动作。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
-
-- **DiffSkill Environments** · 2022
+- **DiffSkill Environments** · 2022 · 生成环境 / 工具
   工具操作可塑物体的三个仿真任务，提供初始和目标配置下载及随机交互脚本以生成转换轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `仿真状态` · `物体状态`
   [代码](https://github.com/Xingyu-Lin/DiffSkill) · [论文](https://arxiv.org/abs/2203.17275) · 访问方式：官方配置包和环境 rollout 脚本
+  入选依据 C2（英文审查说明）：Differentiable-physics tool manipulation produces demonstration trajectories paired with RGB-D observations; derived from simulator tasks, not the policy alone. [审查来源](https://arxiv.org/abs/2203.17275) · 2026-10-29
 
-- **ExORL** · 2022
+- **ExORL** · 2022 · 数据集
   通过无监督探索收集的 DeepMind Control Suite 离线状态动作轨迹。
   `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/denisyarats/exorl) · [论文](https://arxiv.org/abs/2201.13425) · 访问方式：下载脚本与开源加载器
+  入选依据 C2（英文审查说明）：Unsupervised exploratory interactions are collected and relabeled for offline-RL downstream tasks; controlled transition data. [审查来源](https://arxiv.org/abs/2201.13425) · 2026-10-29
 
-- **H2O** · 2022
-  第一人称手-物交互数据集，提供双手和物体的三维姿态。
-  `第一人称 / 人类活动` · `RGB 视频` · `深度` · `Hand Pose` · `物体状态`
-  [论文](https://arxiv.org/abs/2206.13809) · 访问方式：官方项目页
-
-- **HOI4D** · 2022
+- **HOI4D** · 2022 · 数据集
   四维人-物交互视频数据集，包含手部、物体和相机运动标注。
   `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB-D` · `动作标签` · `物体状态` · `智能体位姿`
   [主页](https://hoi4d.github.io/) · [论文](https://arxiv.org/abs/2203.01577) · 访问方式：官方项目和数据
+  入选依据 C3（英文审查说明）：RGB-D interaction sequences include frame-wise hand and object poses and motion segmentation, directly exposing temporal object evolution. [审查来源](https://arxiv.org/abs/2203.01577) · 2026-10-29
 
-- **ManiSkill** · 2022
+- **ManiSkill** · 2022 · 生成环境 / 工具
   面向机器人操作学习的高效物理仿真基准和可生成轨迹环境。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB-D` · `动作` · `仿真状态` · `物体状态`
-  [主页](https://maniskill.ai/) · [论文](https://arxiv.org/abs/2202.04057) · [代码](https://github.com/haosulab/ManiSkill) · 访问方式：官方仿真器和基准
+  [主页](https://maniskill.ai/) · [代码](https://github.com/haosulab/ManiSkill) · 访问方式：官方仿真器和基准
+  入选依据 C2（英文审查说明）：Official SAPIEN robot simulator and manipulation-learning task framework generates controlled observations and state changes. [审查来源](https://github.com/haosulab/ManiSkill) · 2026-10-29
 
-- **MineDojo** · 2022
+- **MineDojo** · 2022 · 生成环境 / 工具
   围绕 Minecraft 开放世界构建的大规模多模态知识与交互平台，结合玩家视频、文本知识、社区讨论及可实时交互的仿真环境，适合长期探索和开放域智能体研究。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `音频` · `文本` · `游戏状态`
-  [主页](https://minedojo.org/) · [论文](https://arxiv.org/abs/2206.01356) · [代码](https://github.com/MineDojo/MineDojo) · 访问方式：开放获取，具体取决于数据来源
+  [主页](https://minedojo.org/) · [代码](https://github.com/MineDojo/MineDojo) · 访问方式：开放获取，具体取决于数据来源
+  入选依据 C2（英文审查说明）：Official environment exposes multimodal observations and compound actions for step-based Minecraft interaction. Scope is the simulator, not its static wiki assets. [审查来源](https://github.com/MineDojo/MineDojo) · 2026-10-29
 
-- **MyoSuite** · 2022
+- **MyoSuite** · 2022 · 生成环境 / 工具
   肌肉骨骼机器人 MuJoCo 环境，提供高维身体状态、动作和运动轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `仿真状态` · `动作` · `奖励` · `轨迹`
-  [代码](https://github.com/facebookresearch/myosuite) · [论文](https://arxiv.org/abs/2205.13608) · 访问方式：开源基准
+  [代码](https://github.com/facebookresearch/myosuite) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：Official MuJoCo environment documents step(action), per-step observations and muscle-control tasks. [审查来源](https://github.com/facebookresearch/myosuite) · 2026-10-29
 
-- **RT-1 Data** · 2022
-  真实机器人多任务语言条件操作轨迹数据，用于训练 Robotics Transformer 策略。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `机器人状态`
-  [论文](https://arxiv.org/abs/2212.06817) · [代码](https://github.com/google-research/robotics_transformer) · 访问方式：论文和项目入口；访问可能受限
-
-- **VIOLA Robot Demonstrations** · 2022
-  Franka 厨房操作轨迹，包含工作区和腕部图像、末端位姿、关节状态及平移旋转动作。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://www.tensorflow.org/datasets/catalog/viola) · [论文](https://arxiv.org/abs/2210.11339) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
-
-- **Brax** · 2021
+- **Brax** · 2021 · 生成环境 / 工具
   基于 JAX 的可微分刚体物理引擎和强化学习环境，可并行生成状态、动作与奖励轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `仿真状态` · `动作` · `奖励` · `RGB 视频`
   [代码](https://github.com/google/brax) · [论文](https://arxiv.org/abs/2106.13281) · 访问方式：开源引擎与环境
+  入选依据 C2（英文审查说明）：Open-source rigid-body simulation supplies controlled Gym-like environments and executable training notebooks. [审查来源](https://arxiv.org/abs/2106.13281) · 2026-10-29
 
-- **DexYCB** · 2021
-  手部与 YCB 物体交互的 RGB-D 视频数据集，包含三维手部姿态和物体姿态。
-  `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB-D` · `三维网格` · `智能体位姿` · `物体状态`
-  [主页](https://dex-ycb.github.io/) · [论文](https://arxiv.org/abs/2104.04631) · [代码](https://github.com/NVlabs/dex-ycb-toolkit) · 访问方式：官方下载
-
-- **Isaac Gym** · 2021
+- **Isaac Gym** · 2021 · 生成环境 / 工具
   GPU 加速物理仿真环境，可生成机器人状态、动作和视觉轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/isaac-sim/IsaacGymEnvs) · [论文](https://arxiv.org/abs/2108.10470) · 访问方式：官方仓库和发行版
+  入选依据 C2（英文审查说明）：GPU physics buffers directly exchange state/control tensors with robot policies; downloadable simulation platform. [审查来源](https://arxiv.org/abs/2108.10470) · 2026-10-29
 
-- **PlasticineLab** · 2021
+- **PlasticineLab** · 2021 · 生成环境 / 工具
   可微软体操作基准，通过操纵器动作改变弹塑性材料，并提供控制序列优化和结果保存接口。
   `物理 / 科学` · `机器人 / 具身智能` · `动作` · `仿真状态` · `物体状态`
   [主页](https://plasticinelab.csail.mit.edu/) · [代码](https://github.com/hzaskywalker/PlasticineLab) · 访问方式：官方仿真器及动作序列优化命令；需本地生成 rollout
+  入选依据 C2（英文审查说明）：Differentiable soft-body physics lets manipulators deform objects toward goals, generating controlled state transitions. [审查来源](https://plasticinelab.csail.mit.edu/) · 2026-10-29
 
-- **Atari Replay Dataset** · 2020
+- **Atari Replay Dataset** · 2020 · 数据集
   DQN 训练过程保存的大规模 Atari 回放，包含帧、动作、奖励和终止信号。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `奖励` · `游戏状态`
   [代码](https://github.com/google/dopamine/tree/master/dopamine/labs/offline_rl) · [论文](https://arxiv.org/abs/1907.04543) · 访问方式：通过 Dopamine 工具访问公开回放数据
+  入选依据 C2（英文审查说明）：The released DQN replay corpus contains logged interaction experience across 60 Atari games. [审查来源](https://arxiv.org/abs/1907.04543) · 2026-10-29
 
-- **D4RL** · 2020
+- **D4RL** · 2020 · 聚合集合 / 注册表
   用于离线强化学习的标准化环境数据集，包含状态、动作、奖励和终止信号。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/Farama-Foundation/D4RL) · 访问方式：官方仓库和环境加载器可用
+  入选依据 C2（英文审查说明）：Offline-RL benchmark aggregates standardized trajectory datasets; current releases migrated to Minari and include Kitchen/Adroit subsets. [审查来源](https://github.com/Farama-Foundation/D4RL) · 2026-10-29
 
-- **InterHand2.6M** · 2020
-  大规模双手三维姿态数据集，包含真实和合成的手部交互序列。
-  `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB 视频` · `智能体位姿` · `三维网格`
-  [主页](https://mks.ue.tsinghua.edu.cn/InterHand2.6M/) · [论文](https://arxiv.org/abs/2008.09309) · 访问方式：官方项目页
-
-- **RL Unplugged** · 2020
+- **RL Unplugged** · 2020 · 聚合集合 / 注册表
   覆盖 Atari、DeepMind Control 和机器人等环境的离线强化学习轨迹集合。
   `游戏 / 虚拟环境` · `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/deepmind/deepmind-research/tree/master/rl_unplugged) · 访问方式：可通过 TensorFlow Datasets 和官方代码访问
+  入选依据 C2（英文审查说明）：Unified offline-RL suite provides logged interactions with high-dimensional actions and visual observations; component datasets are not independent of the collection. [审查来源](https://github.com/deepmind/deepmind-research/tree/master/rl_unplugged) · 2026-10-29
 
-- **RoboNet** · 2020
+- **RoboNet** · 2020 · 数据集
   汇集多所实验室机器人交互视频的跨平台数据集，通过不同机械臂、视角、物体和实验设置提供视觉动力学训练信号，重点考察视频预测与控制的跨机器人泛化。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
   [主页](https://www.robonet.wiki/) · [论文](https://arxiv.org/abs/1910.11215) · [代码](https://github.com/SudeepDasari/RoboNet) · 访问方式：开放下载
+  入选依据 C2（英文审查说明）：Official dataset loader includes supervised inverse-model and forward video-prediction training over robot experience; data downloads are documented. [审查来源](https://github.com/SudeepDasari/RoboNet) · 2026-10-29
 
-- **robosuite Benchmark** · 2020
+- **robosuite Benchmark** · 2020 · 生成环境 / 工具
   模块化机器人操作仿真框架，提供可生成的多任务轨迹、视觉观测和物理状态。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB-D` · `动作` · `仿真状态` · `机器人状态`
-  [主页](https://robosuite.ai/) · [论文](https://arxiv.org/abs/2009.08993) · [代码](https://github.com/ARISE-Initiative/robosuite) · 访问方式：官方仿真器和数据
+  [主页](https://robosuite.ai/) · [代码](https://github.com/ARISE-Initiative/robosuite) · 访问方式：官方仿真器和数据
+  入选依据 C2（英文审查说明）：Official simulator supports robot controllers, demonstration collection and replay utilities in standardized physical manipulation environments. [审查来源](https://github.com/ARISE-Initiative/robosuite) · 2026-10-29
 
-- **SoftGym** · 2020
+- **SoftGym** · 2020 · 生成环境 / 工具
   布料、绳索和液体操作的仿真基准，通过 Gym 接口和随机动作示例生成动作条件观测与状态转换。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `深度` · `动作` · `仿真状态`
   [代码](https://github.com/Xingyu-Lin/softgym) · [论文](https://arxiv.org/abs/2011.07215) · 访问方式：官方仿真器和 rollout 示例；需本地生成数据
+  入选依据 C2（英文审查说明）：Open-source deformable-object manipulation environments expose a Gym control interface and physical state evolution. [审查来源](https://arxiv.org/abs/2011.07215) · 2026-10-29
 
-- **DPI-Net Particle Rollouts** · 2019
-  刚体、可变形材料和液体的粒子交互生成工具，提供相邻时刻位置、速度及操纵形状状态。
-  `物理 / 科学` · `机器人 / 具身智能` · `仿真状态` · `物体状态` · `动作` · `轨迹`
-  [代码](https://github.com/YunzhuLi/DPI-Net) · 访问方式：官方训练脚本可在本地生成训练和验证仿真轨迹
-
-- **OmniPush** · 2019
+- **OmniPush** · 2019 · 数据集
   真实机器人推动动力学数据集，记录不同物体、桌面环境和推动动作下的 RGB-D 视频及状态变化，用于学习可迁移的视觉动力学。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `物体状态` · `轨迹`
   [论文](https://arxiv.org/abs/1910.00618) · [代码](https://github.com/MIT-Omnipush/video-prediction) · 访问方式：开放项目访问
+  入选依据 C2（英文审查说明）：Controlled planar pushes are recorded with RGB-D and precise object tracking across systematically varied objects. [审查来源](https://arxiv.org/abs/1910.00618) · 2026-10-29
 
-- **Adroit Demonstrations** · 2018
-  灵巧手操作示范轨迹。
+- **Adroit Arm Environments** · 2018 · 生成环境 / 工具
+  Gymnasium-Robotics 提供的灵巧手与手臂交互环境，可生成状态、动作及后续观测。
   `机器人 / 具身智能` · `仿真状态` · `动作` · `奖励` · `轨迹`
-  [代码](https://github.com/Farama-Foundation/Gymnasium-Robotics) · 访问方式：开源环境和离线数据
+  [代码](https://github.com/Farama-Foundation/Gymnasium-Robotics) · 访问方式：维护中的仿真环境；历史示范数据属于 D4RL/Minari
+  入选依据 C2（英文审查说明）：Official maintained Gymnasium-Robotics release explicitly lists Adroit Arm environments and a state/action stepping interface. Scope is the simulator; legacy D4RL demonstrations are not newly collected data. [审查来源](https://github.com/Farama-Foundation/Gymnasium-Robotics) · 2026-10-29
 
-- **DeepMind Control Suite** · 2018
+- **DeepMind Control Suite** · 2018 · 生成环境 / 工具
   连续控制物理环境集合，可生成带状态、动作、奖励和视觉观测的世界模型轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/google-deepmind/dm_control) · 访问方式：开源环境，可复现生成轨迹
+  入选依据 C2（英文审查说明）：Official MuJoCo-based control environments expose physics simulation and reusable task construction for action-conditioned rollouts. [审查来源](https://github.com/google-deepmind/dm_control) · 2026-10-29
 
-- **AI2-THOR** · 2017
+- **AI2-THOR** · 2017 · 生成环境 / 工具
   可交互室内场景仿真环境，可生成导航、操作和状态变化轨迹。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB-D` · `动作` · `仿真状态` · `物体状态`
   [主页](https://ai2thor.allenai.org/) · [论文](https://arxiv.org/abs/1712.05474) · [代码](https://github.com/allenai/ai2thor) · 访问方式：官方仿真器
+  入选依据 C2（英文审查说明）：Agents navigate and interact with objects in executable 3D scenes, enabling action-conditioned observation/state transitions. [审查来源](https://arxiv.org/abs/1712.05474) · 2026-10-29
 
-- **CARLA** · 2017
+- **CARLA** · 2017 · 生成环境 / 工具
   开放自动驾驶仿真器，可生成多传感器驾驶、交通参与者和控制轨迹。
   `自动驾驶` · `游戏 / 虚拟环境` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `动作` · `仿真状态`
   [主页](https://carla.org/) · [论文](https://arxiv.org/abs/1711.03938) · [代码](https://github.com/carla-simulator/carla) · 访问方式：官方仿真器
+  入选依据 C2（英文审查说明）：Open urban driving simulator exposes vehicle interaction, configurable sensors and controlled environmental conditions. [审查来源](https://arxiv.org/abs/1711.03938) · 2026-10-29
 
-- **PyBullet** · 2017
-  开源刚体物理仿真环境。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
-  [代码](https://github.com/bulletphysics/bullet3) · [论文](https://arxiv.org/abs/1705.04895) · 访问方式：开源模拟器
-
-- **BAIR Robot Pushing** · 2016
+- **BAIR Robot Pushing** · 2016 · 数据集
   经典机器人推物视频数据集，记录机械臂在桌面环境中执行随机推动动作的连续图像与控制信号，长期作为动作条件视频预测和随机未来建模的基础基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作`
   [主页](https://www.tensorflow.org/datasets/catalog/bair_robot_pushing_small) · [论文](https://arxiv.org/abs/1605.07157) · [代码](https://github.com/tensorflow/datasets) · 访问方式：开放下载
+  入选依据 C2（英文审查说明）：The paper introduces 59K real robot pushing interactions for action-conditioned future-video prediction. [审查来源](https://arxiv.org/abs/1605.07157) · 2026-10-29
 
 <a id="decision-making-agent-trajectories"></a>
 
-### 决策与智能体轨迹（94）
+### 决策与智能体轨迹（76）
 
-- **AbstainEQA** · 2026
-  评测具身问答智能体在证据不足时能否正确拒答的轨迹与问答基准。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `问答` · `轨迹` · `相机位姿`
-  [代码](https://github.com/gibrantaowu/AbstainEQA) · 访问方式：问答文件和帧提取工具可用，源素材需分别申请访问
-
-- **ACE-Data-0** · 2026
+- **ACE-Data-0** · 2026 · 数据集
   同步多视角、全身、手部、物体、音频和触觉的家庭交互数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `多视角 RGB 视频` · `音频` · `动作` · `物体状态`
   [论文](https://arxiv.org/abs/2607.28625) · 访问方式：论文入口；发布状态待核验
+  入选依据 C3（英文审查说明）：Synchronized human interactions include articulated motion and object 6-DoF trajectories across 75,000 episodes. Paper evidence; data access not tested. [审查来源](https://arxiv.org/abs/2607.28625) · 2026-10-29
 
-- **AXIS** · 2026
+- **AXIS** · 2026 · 数据集
   社区驱动的浏览器遥操作机器人数据引擎与基准。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `机器人状态`
   [论文](https://arxiv.org/abs/2607.21588) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：Browser teleoperation produces 50K+ robot demonstration trajectories across 207 tasks. Paper evidence; release files not inspected. [审查来源](https://arxiv.org/abs/2607.21588) · 2026-10-29
 
-- **CARLA-Air** · 2026
+- **CARLA-Air** · 2026 · 生成环境 / 工具
   在同一 CARLA 世界中统一城市驾驶与多旋翼飞行的空地具身仿真基础设施。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
   [论文](https://arxiv.org/abs/2603.28032) · [代码](https://github.com/louiszengCN/CarlaAir) · 访问方式：提供官方项目、代码和数据入口：https://huggingface.co/tianlezeng/CarlaAIr-v0.1.7
+  入选依据 C2（英文审查说明）：A shared physics tick synchronizes control and up to 18 sensor modalities; the paper identifies released simulator binaries and source. [审查来源](https://arxiv.org/abs/2603.28032) · 2026-10-29
 
-- **DreamDojo Data** · 2026
-  用于通用机器人世界模型预训练的 4.4 万小时第一人称人类视频及机器人后训练数据。
+- **DreamDojo GR-1 Data** · 2026 · 派生数据 / 子集
+  DreamDojo 官方发布的 GR-1 机器人后训练与评测数据；不代表完整的 4.4 万小时人类视频训练集合。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
-  [主页](https://dreamdojo-world.github.io/) · [论文](https://arxiv.org/abs/2602.06949) · [代码](https://github.com/NVIDIA/DreamDojo) · 访问方式：提供官方项目、代码和数据入口：https://huggingface.co/datasets/nvidia/PhysicalAI-Robotics-GR00T-Teleop-GR1
+  [主页](https://dreamdojo-world.github.io/) · [论文](https://arxiv.org/abs/2602.06949) · [代码](https://github.com/NVIDIA/DreamDojo) · 访问方式：官方说明已发布 GR-1 数据；未实测下载
+  入选依据 C2（英文审查说明）：Official release explicitly provides GR-1 post-training datasets and evaluation sets. Retention covers those releases, not an assumption that the full 44K-hour human training mixture is downloadable. [审查来源](https://github.com/NVIDIA/DreamDojo) · 2026-10-29
 
-- **EBiM Benchmark** · 2026
+- **EBiM Benchmark** · 2026 · 生成环境 / 工具
   面向移动双臂操作的具身基准环境，包含任务场景、仿真配置和轨迹采集入口。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `物体状态` · `轨迹`
-  [主页](https://ebim-benchmark.github.io/) · [代码](https://github.com/EBiM-Benchmark/benchmark) · 访问方式：官方仓库提供任务环境和入门工具
+  [主页](https://ebim-benchmark.github.io/) · [代码](https://github.com/EBiM-Benchmark/benchmark) · 访问方式：开发预览版任务环境；正式评分以比赛规则为准
+  入选依据 C2（英文审查说明）：README provides mobile dual-arm teleoperation task environments and launch commands. Developer preview, not a fixed released demonstration corpus. [审查来源](https://github.com/EBiM-Benchmark/benchmark) · 2026-10-29
 
-- **Evo-RL Real-World Dataset** · 2026
+- **Evo-RL Real-World Dataset** · 2026 · 数据集
   面向 SO-101 和 AgileX PiPER 的开放真实机器人离线强化学习数据集。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
   [主页](https://huggingface.co/datasets/MINT-SJTU/RW-RL-Dataset) · [代码](https://github.com/MINT-SJTU/Evo-RL) · 访问方式：提供官方代码和数据入口：https://huggingface.co/datasets/MINT-SJTU/RW-RL-Dataset
+  入选依据 C2（英文审查说明）：Official README documents real-robot offline RL data collection, released datasets, and closed-loop rollouts on SO101 and PiPER. [审查来源](https://github.com/MINT-SJTU/Evo-RL) · 2026-10-29
 
-- **HiPHI** · 2026
+- **HiPHI** · 2026 · 数据集
   高精度全身人体运动与物体交互数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `智能体位姿` · `三维网格` · `物体状态`
   [论文](https://arxiv.org/abs/2608.16222) · 访问方式：论文入口；发布状态待核验
+  入选依据 C3（英文审查说明）：Optical motion capture supplies whole-body motion and mesh-level object trajectories. Paper evidence; access not tested. [审查来源](https://arxiv.org/abs/2608.16222) · 2026-10-29
 
-- **HUI360** · 2026
+- **HUI360** · 2026 · 数据集
   移动机器人采集的 360 度第一人称人机交互预判数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `智能体位姿` · `分割标注`
   [论文](https://arxiv.org/abs/2608.11051) · [主页](https://hucebot.github.io/hui360) · 访问方式：论文入口；发布状态待核验
+  入选依据 C3（英文审查说明）：Robot-view tracking and interaction annotations support an explicit human-robot interaction anticipation benchmark. Raw images are request-only. [审查来源](https://arxiv.org/abs/2608.11051) · 2026-10-29
 
-- **ManipArena Dataset** · 2026
+- **ManipArena Dataset** · 2026 · 数据集
   覆盖推理导向真机操作任务的多视角专家轨迹数据集和评测基准。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://huggingface.co/datasets/ManipArena/maniparena-dataset) · 访问方式：可通过 Hugging Face 受限访问获取数据
+  [主页](https://huggingface.co/datasets/ManipArena/maniparena-dataset) · [论文](https://arxiv.org/abs/2603.28545) · 访问方式：可通过 Hugging Face 受限访问获取数据
+  入选依据 C2（英文审查说明）：The current paper identifies ManipArena: expert trajectories, low-level motor signals, frame observations and paired real-to-sim environments. Consolidates the misnamed PRIMO-R1 record. [审查来源](https://arxiv.org/abs/2603.28545) · 2026-10-29
 
-- **OmniBehavior** · 2026
+- **OmniBehavior** · 2026 · 评测集
   用于长时、跨场景人类行为模拟的真实用户交互轨迹数据集，提供中英文版本。
   `第一人称 / 人类活动` · `动作` · `轨迹` · `文本`
   [主页](https://huggingface.co/datasets/jiawei-ucas/OmniBehavior) · [论文](https://arxiv.org/abs/2604.08362) · [代码](https://github.com/icip-cas/OmniBehavior) · 访问方式：完整中英文数据集已在 Hugging Face 提供
+  入选依据 C3（英文审查说明）：Real long-horizon cross-scenario human behavior traces are used for an explicit predictive simulation benchmark; behavioral events are not physical motor controls. [审查来源](https://arxiv.org/abs/2604.08362) · 2026-10-29
 
-- **RescueBench** · 2026
+- **RescueBench** · 2026 · 生成环境 / 工具
   基于 Unreal Engine 的开放世界搜救具身智能基准，提供多阶段任务、渐进难度和专家轨迹采集工具。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `语言` · `奖励` · `轨迹`
   [主页](https://github.com/UnrealZoo/RescueBench) · [代码](https://github.com/UnrealZoo/RescueBench) · 访问方式：基准环境和轨迹采集工具可用，数据发布仍在计划中
+  入选依据 C2（英文审查说明）：Gym-like interface exposes first-person observations, navigation/interaction actions and rewards; README explicitly provides expert-trajectory collection tools. [审查来源](https://github.com/UnrealZoo/RescueBench) · 2026-10-29
 
-- **TableVerse-100K** · 2026
+- **TableVerse-100K** · 2026 · 数据集
   从真实图像重建的十万套可交互桌面环境及操作轨迹。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB-D` · `动作` · `仿真状态`
   [论文](https://arxiv.org/abs/2607.21017) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：Simulation-ready tabletop environments are explicitly paired with task-conditioned interactive pick-and-place trajectories. [审查来源](https://arxiv.org/abs/2607.21017) · 2026-10-29
 
-- **UniETP** · 2026
+- **UniETP** · 2026 · 生成环境 / 工具
   统一 AI2-THOR、VirtualHome、Habitat 和 BEHAVIOR 的具身任务规划与自动任务生成基准。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `场景元数据` · `语言` · `轨迹`
   [代码](https://github.com/woyut/UniETP) · 访问方式：统一环境和任务生成代码可用
+  入选依据 C2（英文审查说明）：Unified interfaces expose observations, actions and scene graphs across four simulators with grounded task generation. Not an independent recorded corpus. [审查来源](https://github.com/woyut/UniETP) · 2026-10-29
 
-- **AirCopBench** · 2025
-  面向多无人机协同具身感知与推理的空中机器人基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `轨迹` · `语言`
-  [代码](https://github.com/zhajirong/AirCopBench) · 访问方式：官方评测代码和项目资源可用
-
-- **EMMOE** · 2025
-  面向开放环境移动操作机器人的综合具身评测基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `物体状态`
-  [代码](https://github.com/silence143/EMMOE) · 访问方式：官方基准代码可用
-
-- **FLAME** · 2025
+- **FLAME** · 2025 · 数据集
   面向联邦机器人操作学习的大规模仿真演示基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2503.01729) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：The benchmark explicitly releases over 160K expert manipulation demonstrations across simulated environments for policy learning. [审查来源](https://arxiv.org/abs/2503.01729) · 2026-10-29
 
-- **HINT-Bench** · 2025
+- **HINT-Bench** · 2025 · 生成环境 / 工具
   在共享环境中利用激光雷达、骨架和机器人状态轨迹评测早期人类意图预测的基准。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `激光雷达` · `智能体位姿` · `机器人状态` · `轨迹`
   [代码](https://github.com/valerio-bo/HINT-Bench) · 访问方式：基准数据和仿真生成器已公开
+  入选依据 C3（英文审查说明）：README identifies per-episode robot/human states, skeletons and trajectories with data-collection scripts. The intent labels alone are not the inclusion evidence. [审查来源](https://github.com/valerio-bo/HINT-Bench) · 2026-10-29
 
-- **LabUtopia** · 2025
+- **LabUtopia** · 2025 · 生成环境 / 工具
   科学实验室多物理仿真、程序化场景与分层具身任务基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2505.22634) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：LabSim provides physical/chemical interactions and a task suite spanning atomic actions to long-horizon mobile manipulation. [审查来源](https://arxiv.org/abs/2505.22634) · 2026-10-29
 
-- **MIKASA** · 2025
+- **MIKASA** · 2025 · 生成环境 / 工具
   机器人记忆强化学习任务基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2502.10550) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：Installable MIKASA-Robo defines memory-intensive interactive manipulation tasks under partial observability. A simulator benchmark, not a fixed corpus. [审查来源](https://arxiv.org/abs/2502.10550) · 2026-10-29
 
-- **MRCD** · 2025
+- **MRCD** · 2025 · 数据集
   面向户外移动机器人 ROS2 感知与导航的公开数据集。
   `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `惯性测量单元 / GPS` · `轨迹`
   [主页](https://sm20598.github.io/MRCD/) · [代码](https://github.com/SM20598/MRCD) · 访问方式：项目页和仓库可用
+  入选依据 C3（英文审查说明）：ROS2 robot recordings contain stereo/depth streams, LiDAR, IMU, odometry and GPS/ground truth across temporal sequences. [审查来源](https://sm20598.github.io/MRCD/) · 2026-10-29
 
-- **MuBlE / SHOP-VRB2** · 2025
+- **MuBlE / SHOP-VRB2** · 2025 · 生成环境 / 工具
   结合 MuJoCo 与 Blender 的长时物理操作环境和推理基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2503.02834) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：MuJoCo/Blender environment generates aligned visual-action and control-physics loops for physical multi-step tasks. [审查来源](https://arxiv.org/abs/2503.02834) · 2026-10-29
 
-- **NVIDIA Physical AI Autonomous Vehicles Dataset** · 2025
-  面向端到端自动驾驶和物理智能研究的大规模、多地区、多传感器驾驶数据集。
-  `自动驾驶` · `多视角 RGB 视频` · `激光雷达` · `毫米波雷达` · `GPS / 惯性测量单元` · `轨迹`
-  [主页](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles) · [代码](https://github.com/NVlabs/physical_ai_av) · 访问方式：接受数据条款后可通过 Hugging Face 访问
-
-- **OceanGym** · 2025
+- **OceanGym** · 2025 · 生成环境 / 工具
   用于水下具身智能体感知、连续控制导航和决策的高保真海洋仿真环境与数据集。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `轨迹` · `场景元数据`
   [主页](https://oceangpt.github.io/OceanGym/) · [论文](https://arxiv.org/abs/2509.26536) · [代码](https://github.com/OceanGPT/OceanGym) · 访问方式：环境数据和轨迹已在 Hugging Face 提供
+  入选依据 C2（英文审查说明）：Underwater tasks expose optical/sonar observations and sequential exploration/interaction in simulated currents; retain as environment benchmark. [审查来源](https://arxiv.org/abs/2509.26536) · 2026-10-29
 
-- **PartInstruct** · 2025
+- **PartInstruct** · 2025 · 数据集
   具有部件级指令、三维标注和专家演示的精细机器人操作基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2505.21652) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：More than 10K simulated expert demonstrations pair manipulation instructions with object/part state information. [审查来源](https://arxiv.org/abs/2505.21652) · 2026-10-29
 
-- **RoboGround Data** · 2025
-  带对象和指令多样性的仿真机器人操作数据生成资源。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2504.21530) · 访问方式：论文入口；发布状态待核验
-
-- **SHREC** · 2025
-  用于社会性人机对话智能体研究的多模态人机交互视频数据集。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `音频` · `语言` · `轨迹`
-  [代码](https://github.com/mitmedialab/SHREC) · 访问方式：官方项目仓库和数据文档可用
-
-- **TPT-Bench** · 2025
-  用于长期机器人第一人称目标人物跟踪的规模化数据集与基准。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `轨迹` · `三维标注`
-  [代码](https://github.com/MedlarTea/TPT-BENCH-TOOLS) · 访问方式：官方基准工具和项目仓库可用
-
-- **BRMData** · 2024
-  面向家庭任务的双臂移动机器人操作数据集，覆盖单臂与双臂、桌面与移动操作、人机互动以及刚性和柔性物体，并提供多视角和深度观测。
-  `机器人 / 具身智能` · `多视角 RGB 视频` · `深度` · `动作` · `机器人状态`
-  [主页](https://embodiedrobot.github.io/) · [论文](https://arxiv.org/abs/2405.18860) · 访问方式：提供官方项目页和论文；访问条件待核验
-
-- **DROID** · 2024
+- **DROID** · 2024 · 数据集
   大规模真实机器人操作数据集，覆盖多地点、多操作者和多种日常场景，提供同步视觉、动作、语言与机器人状态，适合研究真实世界中的通用操作策略和动作条件世界模型。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
   [主页](https://droid-dataset.github.io/) · [论文](https://arxiv.org/abs/2403.12945) · [代码](https://github.com/droid-dataset/droid) · 访问方式：开放下载
+  入选依据 C2（英文审查说明）：Official dataset quickstart iterates per-step robot observations; the release documents teleoperated manipulation demonstration collection. [审查来源](https://droid-dataset.github.io/) · 2026-10-29
 
-- **PARTNR** · 2024
+- **PARTNR** · 2024 · 生成环境 / 工具
   面向家庭场景人机协作规划与推理的大规模具身基准，通过仿真闭环生成并验证具有空间、时间和异构智能体能力约束的自然语言任务。
   `机器人 / 具身智能` · `语言` · `动作` · `仿真状态` · `物体状态` · `轨迹`
   [论文](https://arxiv.org/abs/2411.00081) · [代码](https://github.com/facebookresearch/partnr-planner) · 访问方式：提供官方基准规划器和任务资源
+  入选依据 C2（英文审查说明）：Simulator-grounded household collaboration tasks execute agents under temporal/spatial constraints; task specifications are not recorded trajectories. [审查来源](https://arxiv.org/abs/2411.00081) · 2026-10-29
 
-- **RoboMIND** · 2024
+- **RoboMIND** · 2024 · 数据集
   统一采集平台上的大规模多本体机器人操作数据集，包含成功与失败遥操作轨迹、多视角观测、机器人状态、语言任务描述和对应数字孪生环境。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `语言` · `深度`
   [主页](https://x-humanoid-robomind.github.io/) · [论文](https://arxiv.org/abs/2412.13877) · [代码](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) · 访问方式：官方项目提供数据和工具入口
+  入选依据 C2（英文审查说明）：Teleoperated trajectories include multi-view observations and proprioceptive state, including explicitly collected failure demonstrations. [审查来源](https://arxiv.org/abs/2412.13877) · 2026-10-29
 
-- **BridgeData V2** · 2023
+- **BridgeData V2** · 2023 · 数据集
   大规模多任务真实机器人操作数据集，覆盖多种厨房和桌面场景。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://rail-berkeley.github.io/bridgedata/) · [论文](https://arxiv.org/abs/2305.08990) · 访问方式：官方项目和下载
+  [主页](https://rail-berkeley.github.io/bridgedata/) · 访问方式：官方项目和下载
+  入选依据 C2（英文审查说明）：Official release provides robot trajectories, scripted rollouts and initial/final states with language annotations. Consolidate the older BridgeData record and remove unrelated paper links. [审查来源](https://rail-berkeley.github.io/bridgedata/) · 2026-10-29
 
-- **FurnitureBench** · 2023
+- **FurnitureBench** · 2023 · 数据集
   真实与仿真的长时家具装配机器人基准和轨迹数据。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `物体状态`
   [主页](https://clvrai.github.io/furniture-bench/) · [论文](https://arxiv.org/abs/2305.12821) · [代码](https://github.com/clvrai/furniture-bench) · 访问方式：官方基准和代码
+  入选依据 C2（英文审查说明）：Furniture assembly benchmark explicitly provides 5,000+ pre-collected demonstrations and a reproducible robot environment. [审查来源](https://arxiv.org/abs/2305.12821) · 2026-10-29
 
-- **JRDB-Traj** · 2023
+- **JRDB-Traj** · 2023 · 评测集
   基于 JRDB 的机器人视角人群轨迹预测基准，从原始图像和点云预测相对机器人的未来行人位置。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `激光雷达` · `轨迹`
   [主页](https://jrdb.erc.monash.edu/benchmark/) · [论文](https://arxiv.org/abs/2311.02736) · 访问方式：JRDB 下载需登录账号；提供轨迹预测开发工具
+  入选依据 C3（英文审查说明）：Robot-view sensory sequences and agent locations support an explicit future-position forecasting protocol. [审查来源](https://arxiv.org/abs/2311.02736) · 2026-10-29
 
-- **Jumanji** · 2023
+- **Jumanji** · 2023 · 生成环境 / 工具
   基于 JAX 的组合优化与强化学习环境套件，提供可批处理的状态、动作和奖励轨迹。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/instadeepai/jumanji) · [论文](https://arxiv.org/abs/2306.09884) · 访问方式：开源基准套件
+  入选依据 C2（英文审查说明）：Scalable configurable RL environments expose controlled transitions and initial-state distributions; simulator suite, not recorded data. [审查来源](https://arxiv.org/abs/2306.09884) · 2026-10-29
 
-- **LIBERO** · 2023
+- **LIBERO** · 2023 · 数据集
   面向终身学习和语言条件机器人操作的基准，包含多任务示范轨迹、视觉观测、动作和任务描述，用于研究跨任务知识迁移。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://libero-project.github.io/) · [论文](https://arxiv.org/abs/2306.14877) · [代码](https://github.com/Lifelong-Robot-Learning/LIBERO) · 访问方式：开放生成工具
+  [主页](https://libero-project.github.io/) · [代码](https://github.com/Lifelong-Robot-Learning/LIBERO) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Official repository supplies teleoperation demonstrations for four manipulation task suites and an explicit download script. [审查来源](https://github.com/Lifelong-Robot-Learning/LIBERO) · 2026-10-29
 
-- **MimicGen** · 2023
+- **MimicGen** · 2023 · 生成环境 / 工具
   通过在仿真环境中重放和组合少量人类示范，自动生成多样化机器人操作轨迹的数据生成框架，支持模仿学习和世界模型训练。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
   [主页](https://mimicgen.github.io/) · [论文](https://arxiv.org/abs/2310.17596) · [代码](https://github.com/NVlabs/mimicgen) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Adapts source human demonstrations into over 50K robot trajectories across tasks, configurations and embodiments; generated demonstrations are derived data. [审查来源](https://arxiv.org/abs/2310.17596) · 2026-10-29
 
-- **Mini-BEHAVIOR** · 2023
+- **Mini-BEHAVIOR** · 2023 · 生成环境 / 工具
   用于具身智能长时决策的程序化三维网格世界基准，实现日常家务任务、对象状态和交互动作，并支持生成大量任务变体及收集人类演示。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `仿真状态` · `物体状态` · `轨迹`
   [论文](https://arxiv.org/abs/2310.01824) · [代码](https://github.com/StanfordVL/mini_behavior) · 访问方式：提供官方环境代码和演示收集工具
+  入选依据 C2（英文审查说明）：Gridworld household tasks preserve symbolic state transitions and include starter code for data collection. [审查来源](https://arxiv.org/abs/2310.01824) · 2026-10-29
 
-- **Open X-Embodiment** · 2023
+- **Open X-Embodiment** · 2023 · 聚合集合 / 注册表
   由 Google DeepMind 与全球 30 余家研究机构联合构建的跨机器人真实交互数据集合，统一汇集多种机器人形态、任务与操作轨迹，是研究跨实体泛化和通用具身世界模型的重要基础。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
   [主页](https://robotics-transformer-x.github.io/) · [论文](https://arxiv.org/abs/2310.08864) · [代码](https://github.com/google-deepmind/open_x_embodiment) · 访问方式：开放获取，具体取决于组成数据集
+  入选依据 C2（英文审查说明）：Standardized robot learning datasets pool trajectories from multiple embodiments; constituent datasets overlap other catalog records. [审查来源](https://arxiv.org/abs/2310.08864) · 2026-10-29
 
-- **RoboHive** · 2023
+- **RoboHive** · 2023 · 生成环境 / 工具
   统一真实与仿真机器人学习任务、轨迹和硬件接口的基准框架。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `仿真状态`
   [主页](https://sites.google.com/view/robohive) · [论文](https://arxiv.org/abs/2310.06828) · [代码](https://github.com/vikashplus/robohive) · 访问方式：官方框架
+  入选依据 C2（英文审查说明）：Unified physically simulated robot tasks and expert demonstrations support controlled interactions across embodiments. [审查来源](https://arxiv.org/abs/2310.06828) · 2026-10-29
 
-- **RoboSet** · 2023
+- **RoboSet** · 2023 · 数据集
   真实家庭桌面操作数据集，覆盖厨房等日常活动中的多技能、多任务演示，包含四视角图像、语言定义任务、遥操作和动觉回放轨迹。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `语言` · `轨迹`
   [主页](https://robopen.github.io/roboset/) · [论文](https://arxiv.org/abs/2309.01918) · [代码](https://github.com/robopen/roboagent) · 访问方式：官方 RoboSet 页面提供可下载轨迹；代码仓库引用了备用 Hugging Face 镜像
+  入选依据 C2（英文审查说明）：Official RoboAgent repository explicitly trains on released RoboSet HDF5 teleoperation demonstrations and links their download channel. [审查来源](https://github.com/robopen/roboagent) · 2026-10-29
 
-- **UMI** · 2023
+- **UMI** · 2023 · 数据集
   通用移动操作接口与数据集，记录手持相机、末端动作和跨机器人操作轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
   [主页](https://umi-gripper.github.io/) · [论文](https://arxiv.org/abs/2402.10329) · 访问方式：开源项目和论文
+  入选依据 C2（英文审查说明）：Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques. [审查来源](https://arxiv.org/abs/2402.10329) · 2026-10-29
 
-- **WebArena** · 2023
+- **WebArena** · 2023 · 生成环境 / 工具
   可复现的真实网站交互环境，提供浏览器状态、动作和任务轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `文本` · `动作` · `奖励`
   [主页](https://webarena.dev/) · [代码](https://github.com/web-arena-x/webarena) · [论文](https://arxiv.org/abs/2307.13854) · 访问方式：开源基准与部署工具
+  入选依据 C2（英文审查说明）：Self-hosted functional websites define long-horizon agent actions and resulting environment changes; digital-state environment, not physical robot data. [审查来源](https://arxiv.org/abs/2307.13854) · 2026-10-29
 
-- **Assembly101** · 2022
-  多视角第一人称与第三人称装配动作视频数据集。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签` · `Hand Pose`
-  [主页](https://assembly101.github.io/) · [论文](https://arxiv.org/abs/2206.01063) · 访问方式：官方基准
-
-- **BEHAVIOR-1K** · 2022
+- **BEHAVIOR-1K** · 2022 · 生成环境 / 工具
   包含一千项日常家庭活动的具身智能任务、场景和仿真基准。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `仿真状态` · `语言`
   [主页](https://behavior.stanford.edu/) · [论文](https://arxiv.org/abs/2403.09227) · [代码](https://github.com/StanfordVL/BEHAVIOR-1K) · 访问方式：官方基准
+  入选依据 C2（英文审查说明）：OmniGibson supplies controlled rigid/deformable/liquid physics for long-horizon household activities; task and simulation suite. [审查来源](https://arxiv.org/abs/2403.09227) · 2026-10-29
 
-- **BridgeData** · 2022
-  跨场景机器人操作演示数据集，记录多样桌面任务的视觉、动作和状态。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
-  [主页](https://rail-berkeley.github.io/bridgedata/) · [论文](https://arxiv.org/abs/2203.16897) · 访问方式：论文和项目入口
-
-- **CALVIN** · 2022
+- **CALVIN** · 2022 · 数据集
   在可控桌面环境中构建的长时程语言条件机器人基准，提供连续交互轨迹和组合任务序列，重点评估智能体能否依据语言完成多个连续操作。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `语言`
   [主页](https://calvin.cs.uni-freiburg.de/) · [论文](https://arxiv.org/abs/2112.03227) · [代码](https://github.com/mees/calvin) · 访问方式：开放下载
+  入选依据 C2（英文审查说明）：Simulated long-horizon manipulation benchmark combines onboard observations, action sequences and language instructions. [审查来源](https://arxiv.org/abs/2112.03227) · 2026-10-29
 
-- **Ego4D v2** · 2022
-  大规模第一人称生活视频数据集，提供手部、物体、动作和自然语言时间标注。
-  `第一人称 / 人类活动` · `RGB 视频` · `语言` · `动作标签` · `物体元数据`
-  [主页](https://ego4d-data.org/) · [论文](https://arxiv.org/abs/2110.07058) · 访问方式：官方挑战赛门户
-
-- **exiD** · 2022
+- **exiD** · 2022 · 数据集
   使用无人机在德国高速公路入口、出口和交织区采集的自然车辆轨迹数据集，补充了 highD 缺少的匝道并线、驶出和复杂交织行为。
   `自动驾驶` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
   [主页](https://levelxdata.com/exid-dataset/) · 访问方式：官方 leveLXData/exiD 申请页面；访问需同意数据集条款
+  入选依据 C3（英文审查说明）：Official release provides naturalistic road-user trajectories, maps and maneuver annotations for merging/on-ramp/off-ramp scenarios. [审查来源](https://levelxdata.com/exid-dataset/) · 2026-10-29
 
-- **Language-Table** · 2022
+- **Language-Table** · 2022 · 数据集
   语言条件桌面机器人操作数据集与环境，包含长时自由形式指令。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `机器人状态`
   [论文](https://arxiv.org/abs/2210.06407) · [代码](https://github.com/google-research/language-table) · 访问方式：官方数据和代码
+  入选依据 C2（英文审查说明）：Released language-labeled visuomotor trajectories explicitly pair manipulation behavior with real-time instructions. [审查来源](https://arxiv.org/abs/2210.06407) · 2026-10-29
 
-- **MAgent2** · 2022
+- **MAgent2** · 2022 · 生成环境 / 工具
   大规模多智能体网格世界环境，提供并行动作、观测和群体状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/Farama-Foundation/MAgent2) · [论文](https://arxiv.org/abs/2109.07807) · 访问方式：开源环境
+  [代码](https://github.com/Farama-Foundation/MAgent2) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：Official maintained PettingZoo environment library simulates interacting pixel agents in configurable grid-world tasks. [审查来源](https://github.com/Farama-Foundation/MAgent2) · 2026-10-29
 
-- **MoCapAct** · 2022
+- **MoCapAct** · 2022 · 数据集
   面向仿真人形控制的动作捕捉到动作数据集，发布可跟踪 CMU MoCap 片段的专家策略及其带噪声 rollout，包含本体观测、动作和奖励。
   `机器人 / 具身智能` · `物理 / 科学` · `三维状态` · `动作` · `奖励` · `仿真状态` · `轨迹`
   [主页](https://microsoft.github.io/MoCapAct/) · [论文](https://arxiv.org/abs/2208.07363) · [代码](https://github.com/microsoft/MoCapAct) · 访问方式：官方项目页、GitHub 代码和 Hugging Face 数据集合可用
+  入选依据 C2（英文审查说明）：Official release explicitly provides expert HDF5 rollouts containing proprioceptive observations and actions, with small and large dataset downloads. [审查来源](https://microsoft.github.io/MoCapAct/) · 2026-10-29
 
-- **ProcTHOR** · 2022
+- **ProcTHOR** · 2022 · 生成环境 / 工具
   用于具身智能训练与评测的程序化交互环境框架，可生成任意规模、多样且可定制的虚拟室内场景，官方样本包含 1 万套房屋。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `仿真状态` · `场景元数据`
   [论文](https://arxiv.org/abs/2206.06994) · [代码](https://github.com/allenai/procthor) · 访问方式：提供官方生成器和 ProcTHOR-10K 样本
+  入选依据 C2（英文审查说明）：Procedural generation yields interactive environments for navigation, rearrangement and manipulation, with an identified simulator data path. [审查来源](https://arxiv.org/abs/2206.06994) · 2026-10-29
 
-- **SCAND** · 2022
-  面向社交合规导航的真实机器人数据集，在多种人群密度和环境中记录机器人运动、控制、激光、视觉和人群上下文。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `激光雷达` · `动作` · `机器人状态` · `轨迹`
-  [主页](https://people.cs.gmu.edu/~xiao/Research/SCAND/SCAND.html) · 访问方式：官方项目页提供数据集资源
-
-- **SinD** · 2022
+- **SinD** · 2022 · 数据集
   信号交叉口无人机轨迹数据，包含异构交通参与者的连续位置、运动学、地图和信号灯信息。
   `自动驾驶` · `轨迹` · `智能体位姿` · `地图` · `场景元数据`
   [代码](https://github.com/SOTIF-AVLab/SinD) · [论文](https://arxiv.org/abs/2209.02297) · 访问方式：公开示例；完整数据需用教育邮箱申请
+  入选依据 C3（英文审查说明）：Drone-recorded signalized-intersection road-user trajectories explicitly support behavior modeling and motion prediction. [审查来源](https://arxiv.org/abs/2209.02297) · 2026-10-29
 
-- **TEACh** · 2022
+- **TEACh** · 2022 · 数据集
   对话驱动的具身任务数据集，包含人类指挥者与执行者的语言和动作轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `物体状态`
   [主页](https://teachingalfred.github.io/) · [论文](https://arxiv.org/abs/2110.00534) · [代码](https://github.com/alexa/teach) · 访问方式：官方基准和代码
+  入选依据 C2（英文审查说明）：Recorded dialogues accompany a follower navigating and manipulating household environments, establishing interaction episodes rather than text-only conversations. [审查来源](https://arxiv.org/abs/2110.00534) · 2026-10-29
 
-- **ALFWorld** · 2021
+- **ALFWorld** · 2021 · 生成环境 / 工具
   将文本任务与室内具身环境对齐的交互基准，提供动作、观测和任务状态轨迹。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `文本` · `RGB 视频` · `动作` · `游戏状态`
   [代码](https://github.com/alfworld/alfworld) · [论文](https://arxiv.org/abs/2010.03768) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：TextWorld actions are aligned to executable ALFRED visual-environment goals, providing interactive state transitions. [审查来源](https://arxiv.org/abs/2010.03768) · 2026-10-29
 
-- **nuPlan** · 2021
+- **nuPlan** · 2021 · 评测集
   面向自动驾驶规划的真实世界数据集与基准，提供多传感器日志、地图、轨迹和规划评测工具，支持闭环驾驶策略研究。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `轨迹` · `GPS / 惯性测量单元`
   [主页](https://www.nuscenes.org/nuplan) · [论文](https://arxiv.org/abs/2106.11810) · [代码](https://github.com/motional/nuplan-devkit) · 访问方式：需要注册
+  入选依据 C3（英文审查说明）：Human-driving trajectories and a closed-loop simulator support long-horizon motion planning and resulting state evolution. [审查来源](https://arxiv.org/abs/2106.11810) · 2026-10-29
 
-- **PettingZoo** · 2021
+- **PettingZoo** · 2021 · 聚合集合 / 注册表
   标准化多智能体环境集合。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [主页](https://pettingzoo.farama.org/) · [代码](https://github.com/Farama-Foundation/PettingZoo) · [论文](https://arxiv.org/abs/2009.14471) · 访问方式：开源环境库
+  入选依据 C2（英文审查说明）：Multi-agent environment API bundles interactive transition-generating environments. Framework/collection; component environments may overlap other records. [审查来源](https://arxiv.org/abs/2009.14471) · 2026-10-29
 
-- **robomimic Datasets** · 2021
+- **robomimic Datasets** · 2021 · 数据集
   面向模仿学习的机器人操作演示数据集与基准，包含多种任务、示范来源和视觉状态。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
   [主页](https://robomimic.github.io/) · [论文](https://arxiv.org/abs/2108.03298) · [代码](https://github.com/ARISE-Initiative/robomimic) · 访问方式：官方基准和下载
+  入选依据 C2（英文审查说明）：Offline human demonstration datasets span simulated and real multi-stage manipulation tasks with differing demonstration quality. [审查来源](https://arxiv.org/abs/2108.03298) · 2026-10-29
 
-- **ThreeDWorld Transport Challenge** · 2021
+- **ThreeDWorld Transport Challenge** · 2021 · 生成环境 / 工具
   基于 ThreeDWorld 物理仿真的视觉任务与运动规划基准，要求双臂智能体在住宅中寻找、抓取并运输物体，同时利用容器等工具提高效率。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `仿真状态` · `物体状态`
   [论文](https://arxiv.org/abs/2103.14025) · [代码](https://github.com/chuangg/tdw-transport-challenge-starter-code) · 访问方式：提供官方论文和入门代码
+  入选依据 C2（英文审查说明）：Agents plan and execute action sequences that change object states under physical constraints in ThreeDWorld. [审查来源](https://arxiv.org/abs/2103.14025) · 2026-10-29
 
-- **ALFRED** · 2020
+- **ALFRED** · 2020 · 数据集
   语言指令驱动的室内导航与操作演示数据集和基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `物体状态`
   [主页](https://askforalfred.com/) · [论文](https://arxiv.org/abs/1912.01734) · [代码](https://github.com/askforalfred/alfred) · 访问方式：官方数据和基准
+  入选依据 C2（英文审查说明）：Expert demonstrations pair egocentric observations and action sequences with non-reversible household state changes. [审查来源](https://arxiv.org/abs/1912.01734) · 2026-10-29
 
-- **CrowdBot Dataset** · 2020
-  面向机器人在人群中导航的真实数据集，记录移动机器人在人类密集环境中的传感器观测、轨迹和交互行为。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB-D` · `激光雷达` · `机器人状态` · `轨迹` · `动作`
-  [论文](https://arxiv.org/abs/2003.07433) · 访问方式：项目数据页和论文资源可用；下载可用性可能变化
+- **Lyft Level 5 Motion Prediction Dataset** · 2020 · 数据集
+  以 25 秒场景组织的交通参与者位置与运动轨迹，配有语义地图，用于运动预测、规划与仿真。
+  `自动驾驶` · `轨迹` · `地图`
+  [论文](https://arxiv.org/abs/2006.14480) · 访问方式：论文注明数据渠道；当前访问未实测
+  入选依据 C3（英文审查说明）：The cited motion-prediction release contains 25-second scenes with positions/motions of traffic participants and maps; distinguish it from Lyft perception-only releases. [审查来源](https://arxiv.org/abs/2006.14480) · 2026-10-29
 
-- **Diving48** · 2020
-  包含 48 类细粒度跳水动作的视频数据集，强调动作阶段和时序差异。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [论文](https://arxiv.org/abs/1903.11204) · 访问方式：官方项目和标注
-
-- **NetHack Learning Environment** · 2020
+- **NetHack Learning Environment** · 2020 · 生成环境 / 工具
   NetHack 长期交互环境。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `文本` · `奖励`
   [代码](https://github.com/facebookresearch/nle) · [论文](https://arxiv.org/abs/2006.13760) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：Procedurally generated stochastic game environments and task suite expose actions and persistent game-state evolution. [审查来源](https://arxiv.org/abs/2006.13760) · 2026-10-29
 
-- **openDD** · 2020
+- **openDD** · 2020 · 数据集
   面向自动驾驶研究的无人机交通轨迹数据集，覆盖德国环岛和交叉路口中车辆、骑行者与行人的自然交互行为。
   `自动驾驶` · `城市 / 三维场景` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
   [论文](https://arxiv.org/abs/2007.08463) · 访问方式：论文和项目资源描述该数据集；数据访问方式需进一步核查
+  入选依据 C3（英文审查说明）：Accurately tracked road-user trajectories and roundabout maps explicitly support traffic-scene prediction. [审查来源](https://arxiv.org/abs/2007.08463) · 2026-10-29
 
-- **Ravens** · 2020
+- **Ravens** · 2020 · 生成环境 / 工具
   具有程序化任务和演示轨迹的桌面机器人操作基准。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `仿真状态`
-  [论文](https://arxiv.org/abs/2003.08927) · [代码](https://github.com/google-research/ravens) · 访问方式：官方代码和生成工具
+  [代码](https://github.com/google-research/ravens) · 访问方式：官方代码和生成工具
+  入选依据 C2（英文审查说明）：Official release documents MDP transitions with RGB-D observations and primitive robot actions, and downloadable generated train/test data. [审查来源](https://github.com/google-research/ravens) · 2026-10-29
 
-- **RLBench** · 2020
+- **RLBench** · 2020 · 生成环境 / 工具
   基于 CoppeliaSim 的大规模机器人操作学习套件，提供大量可程序化任务、示范轨迹和多视角视觉观测，可用于强化学习、模仿学习以及可控世界模型评测。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态` · `语言`
   [主页](https://sites.google.com/view/rlbench) · [论文](https://arxiv.org/abs/1909.12271) · [代码](https://github.com/stepjam/RLBench) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Manipulation tasks expose visual/proprioceptive observations and unlimited motion-planned demonstrations with a documented generator. [审查来源](https://arxiv.org/abs/1909.12271) · 2026-10-29
 
-- **RoboTHOR** · 2020
-  面向仿真到真实导航的室内机器人环境和轨迹基准。
-  `机器人 / 具身智能` · `RGB-D` · `动作` · `智能体位姿` · `地图`
-  [主页](https://ai2thor.allenai.org/robothor/) · [论文](https://arxiv.org/abs/2004.06799) · 访问方式：官方挑战赛和仿真器
-
-- **rounD** · 2020
+- **rounD** · 2020 · 数据集
   使用无人机在德国环岛采集的自然道路参与者轨迹数据集，面向无信号、高交互交通场景中的车辆、行人和骑行者行为建模。
   `自动驾驶` · `城市 / 三维场景` · `轨迹` · `物体元数据` · `智能体位姿` · `场景元数据`
   [主页](https://levelxdata.com/round-dataset/) · [论文](https://ieeexplore.ieee.org/document/9294728) · 访问方式：官方 leveLXData/rounD 申请页面；访问需同意数据集条款
+  入选依据 C3（英文审查说明）：Official release supplies naturalistic road-user trajectories and roundabout map geometry, with parsing and visualization tools. [审查来源](https://levelxdata.com/round-dataset/) · 2026-10-29
 
-- **BabyAI** · 2019
+- **BabyAI** · 2019 · 生成环境 / 工具
   可生成语言指令、网格环境和专家轨迹的具身学习平台。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `语言` · `仿真状态`
   [论文](https://arxiv.org/abs/1810.08272) · [代码](https://github.com/mila-iqia/babyai) · 访问方式：官方环境和生成器
+  入选依据 C2（英文审查说明）：Interactive instruction-following levels and a heuristic expert produce executable action sequences in an extensible environment suite. [审查来源](https://arxiv.org/abs/1810.08272) · 2026-10-29
 
-- **Franka Kitchen** · 2019
+- **Franka Kitchen** · 2019 · 派生数据 / 子集
   厨房场景中的长时机器人操作环境和人类演示轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `物体状态`
   [论文](https://arxiv.org/abs/1910.11956) · [代码](https://github.com/Farama-Foundation/D4RL) · 访问方式：官方环境和离线数据
+  入选依据 C2（英文审查说明）：D4RL supplies fixed offline datasets with observations, actions and next_observations for its task environments. Franka Kitchen is a constituent task family, not independent of D4RL. [审查来源](https://github.com/Farama-Foundation/D4RL) · 2026-10-29
 
-- **Honda Research Institute Driving Dataset** · 2019
-  面向驾驶员行为、场景理解和因果解释的真实道路数据集，结合驾驶视频、车辆状态与人类建议，支持研究驾驶决策和可解释世界状态。
-  `自动驾驶` · `RGB 视频` · `动作` · `机器人状态` · `语言`
-  [主页](https://usa.honda-ri.com/HAD) · [论文](https://arxiv.org/abs/1811.02307) · 访问方式：官方项目页面；访问方式需核验
-
-- **Meta-World** · 2019
+- **Meta-World** · 2019 · 生成环境 / 工具
   面向多任务和元强化学习的机器人操作基准，提供统一机械臂、可程序化任务和可生成轨迹，用于测试跨任务动力学与策略泛化。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `奖励`
   [主页](https://meta-world.github.io/) · [论文](https://arxiv.org/abs/1910.10897) · [代码](https://github.com/Farama-Foundation/Metaworld) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Official robot-task interface explicitly demonstrates reset observations followed by action-conditioned next observations via env.step(action). [审查来源](https://github.com/Farama-Foundation/Metaworld) · 2026-10-29
 
-- **MineRL** · 2019
+- **MineRL** · 2019 · 数据集
   基于 Minecraft 的人类示范与交互数据集，记录长时视频、键鼠动作和游戏状态，最初用于样本高效强化学习竞赛，也适合开放世界动作模型和长程规划研究。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `游戏状态` · `奖励`
   [主页](https://minerl.io/) · [论文](https://arxiv.org/abs/1907.13440) · [代码](https://github.com/minerllabs/minerl) · 访问方式：开放下载
+  入选依据 C2（英文审查说明）：Human Minecraft demonstrations are paired with a simulator for interactive learning; retain observation/action trajectories, not ancillary media. [审查来源](https://arxiv.org/abs/1907.13440) · 2026-10-29
 
-- **MiniWoB++** · 2019
+- **MiniWoB++** · 2019 · 生成环境 / 工具
   网页交互环境集合，提供动作、页面状态和任务轨迹用于智能体建模。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `文本` · `奖励`
-  [代码](https://github.com/Farama-Foundation/miniwob-plusplus) · [论文](https://arxiv.org/abs/1905.04362) · 访问方式：开源基准
+  [代码](https://github.com/Farama-Foundation/miniwob-plusplus) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：Official browser-task environment documents configurable actions and resulting observations from env.step(action). [审查来源](https://github.com/Farama-Foundation/miniwob-plusplus) · 2026-10-29
 
-- **Neural MMO** · 2019
+- **Neural MMO** · 2019 · 生成环境 / 工具
   支持大量智能体持续交互的程序生成大型多人在线环境，记录个体动作、局部观测和群体状态演化。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励` · `RGB 视频`
   [主页](https://neuralmmo.github.io/) · [代码](https://github.com/NeuralMMO/neural-mmo) · [论文](https://arxiv.org/abs/1903.00784) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：Persistent multi-agent worlds require combat/navigation actions that alter shared state over time. [审查来源](https://arxiv.org/abs/1903.00784) · 2026-10-29
 
-- **OffWorld Gym** · 2019
+- **OffWorld Gym** · 2019 · 生成环境 / 工具
   用于真实机器人强化学习的开放物理环境与基准，通过统一接口提供传感器观测、动作、奖励和真实交互回合。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `奖励`
   [论文](https://arxiv.org/abs/1910.08639) · [代码](https://github.com/offworld-projects/offworld-gym) · 访问方式：提供官方代码仓库
+  入选依据 C2（英文审查说明）：Real robots expose remotely accessible RL interaction environments; service availability is separate from paper-level relevance evidence. [审查来源](https://arxiv.org/abs/1910.08639) · 2026-10-29
 
-- **OpenSpiel** · 2019
+- **OpenSpiel** · 2019 · 聚合集合 / 注册表
   博弈与多智能体决策环境集合。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/google-deepmind/open_spiel) · [论文](https://arxiv.org/abs/1908.09453) · 访问方式：开源框架
+  入选依据 C2（英文审查说明）：Sequential game environments provide state transitions and actions; one-shot games are outside the retained temporal scope. [审查来源](https://arxiv.org/abs/1908.09453) · 2026-10-29
 
-- **Overcooked-AI** · 2019
+- **Overcooked-AI** · 2019 · 生成环境 / 工具
   合作烹饪多智能体环境。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/HumanCompatibleAI/overcooked_ai) · [论文](https://arxiv.org/abs/1910.05789) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：The released cooperative game environment exposes multi-agent interaction and long-horizon task state; simulator rather than a fixed corpus. [审查来源](https://arxiv.org/abs/1910.05789) · 2026-10-29
 
-- **SocNav1** · 2019
-  用于学习和评测社交导航约定的数据集，包含人类在共享空间中的位置、朝向、群组和障碍物关系，支持人机交互轨迹预测。
-  `机器人 / 具身智能` · `第一人称 / 人类活动` · `智能体位姿` · `轨迹` · `地图` · `物体状态`
-  [论文](https://arxiv.org/abs/1909.02993) · [代码](https://github.com/gnns4hri/SocNav1) · 访问方式：提供官方代码仓库
-
-- **THÖR** · 2019
+- **THÖR** · 2019 · 数据集
   面向人机共享室内空间的人类运动数据集，提供高精度位置、头部朝向、视线、社交群组、障碍物地图和移动机器人传感器数据。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `轨迹` · `视线` · `智能体位姿` · `激光雷达` · `地图`
   [论文](https://arxiv.org/abs/1909.04403) · 访问方式：论文入口；官方访问方式需核验
+  入选依据 C3（英文审查说明）：Human motion trajectories include accurate position, orientation, gaze, grouping, goals and nearby robot observations. [审查来源](https://arxiv.org/abs/1909.04403) · 2026-10-29
 
-- **40K Robotic Grasp Demonstrations** · 2018
-  包含约四万条自然场景六自由度机器人抓取示范的数据集，记录视觉观测、末端位姿和抓取结果，用于学习从视觉到动作的操作策略。
-  `机器人 / 具身智能` · `RGB 视频` · `深度` · `动作` · `机器人状态` · `轨迹`
-  [论文](https://arxiv.org/abs/1812.11683) · 访问方式：仅有论文入口；数据访问待核验
-
-- **CoSTAR Block Stacking** · 2018
+- **CoSTAR Block Stacking** · 2018 · 数据集
   面向机器人积木堆叠的示范数据集，包含视觉观测、动作和工作空间约束信息，用于研究从示范中学习可组合的操作技能。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `物体状态`
   [论文](https://arxiv.org/abs/1810.11714) · 访问方式：仅有论文入口；数据访问待核验
+  入选依据 C2（英文审查说明）：Robot block-stacking attempts explicitly include dynamic scenes and real time-series interaction data. [审查来源](https://arxiv.org/abs/1810.11714) · 2026-10-29
 
-- **Gym Retro** · 2018
+- **Gym Retro** · 2018 · 生成环境 / 工具
   经典游戏模拟器环境，提供像素观测、离散动作和完整游戏状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/openai/retro) · [论文](https://arxiv.org/abs/1710.02298) · 访问方式：开源模拟器集成
+  [代码](https://github.com/openai/retro) · 访问方式：Gym 环境代码；多数游戏 ROM 需另行获取
+  入选依据 C2（英文审查说明）：Official Gym game environments expose emulator state, rewards, episode conditions and saved initial states. Most game ROMs must be obtained separately; remove the Rainbow citation. [审查来源](https://github.com/openai/retro) · 2026-10-29
 
-- **RoboTurk** · 2018
+- **RoboTurk** · 2018 · 数据集
   通过众包远程操作收集的真实机器人示范数据，展示低成本扩展人类操作轨迹的方式，并提供视觉、动作和机器人状态。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
   [主页](https://roboturk.stanford.edu/) · [论文](https://arxiv.org/abs/1811.02790) · 访问方式：开放项目访问
+  入选依据 C2（英文审查说明）：Crowdsourced 6DoF teleoperation produces temporally extended robot manipulation demonstrations. [审查来源](https://arxiv.org/abs/1811.02790) · 2026-10-29
 
-- **TrajNet** · 2018
+- **TrajNet** · 2018 · 聚合集合 / 注册表
   面向行人和多智能体轨迹预测的基准，汇集多个真实场景轨迹并统一评测未来位置预测、社会交互和多模态不确定性。
   `第一人称 / 人类活动` · `自动驾驶` · `轨迹` · `智能体位姿` · `地图`
-  [论文](https://arxiv.org/abs/1805.07663) · [代码](https://github.com/vita-epfl/trajnetplusplusbaselines) · 访问方式：提供官方基准代码仓库
+  [论文](https://arxiv.org/abs/1805.07663) · 访问方式：论文级依据；原版基准的访问未核验
+  入选依据 C3（英文审查说明）：The original TrajNet paper identifies a repository of existing trajectory datasets and future-path prediction evaluation. It is distinct from TrajNet++. [审查来源](https://arxiv.org/abs/1805.07663) · 2026-10-29
 
-- **VirtualHome** · 2018
+- **VirtualHome** · 2018 · 生成环境 / 工具
   将家庭活动表示为可执行程序并在三维室内环境中模拟，连接自然语言、动作序列、物体状态和视频，可用于长时任务与因果状态转移研究。
   `游戏 / 虚拟环境` · `机器人 / 具身智能` · `文本` · `动作` · `仿真状态` · `合成视频`
   [主页](http://virtual-home.org/) · [论文](https://arxiv.org/abs/1806.07011) · [代码](https://github.com/xavierpuigf/virtualhome) · 访问方式：开放生成工具
+  入选依据 C2（英文审查说明）：Executable action programs drive agents through Unity household interactions, explicitly generating state-changing activity sequences. [审查来源](https://arxiv.org/abs/1806.07011) · 2026-10-29
 
-- **JAAD** · 2017
+- **JAAD** · 2017 · 数据集
   面向自动驾驶中行人与驾驶员联合注意和过街行为预测的视频数据集，包含短视频片段、逐帧行人框、遮挡标签、行为标签、交通上下文和车辆行为标注。
   `自动驾驶` · `第一人称 / 人类活动` · `RGB 视频` · `二维框` · `动作标签` · `语义标签` · `轨迹`
   [主页](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/) · [论文](https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html) · [代码](https://github.com/ykotseruba/JAAD) · 访问方式：官方数据集页面和 GitHub 标注公开可用
+  入选依据 C3（英文审查说明）：Official paper establishes pedestrian intention prediction using temporal behavioral and contextual annotations; retain crossing-prediction scope. [审查来源](https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html) · 2026-10-29
 
-- **L-CAS 3DOF Pedestrian Trajectories** · 2017
+- **L-CAS 3DOF Pedestrian Trajectories** · 2017 · 数据集
   由机器人搭载 LiDAR 在室内公共空间提取的行人三自由度轨迹，提供位置与朝向预测评测。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `轨迹` · `智能体位姿` · `激光雷达`
   [主页](https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/) · 访问方式：官方轨迹及原始 LiDAR 下载链接
+  入选依据 C3（英文审查说明）：Official release explicitly extracts 935 world-frame pedestrian trajectories from time-ordered LiDAR recordings. [审查来源](https://lcas.lincoln.ac.uk/wp/3dof-pedestrian-trajectory-dataset/) · 2026-10-29
 
-- **PoseTrack** · 2017
+- **PoseTrack** · 2017 · 评测集
   视频中的多人姿态估计与跟踪基准，提供连续人体关键点和轨迹标注。
   `第一人称 / 人类活动` · `RGB 视频` · `智能体位姿` · `动作标签`
   [主页](https://posetrack.net/) · [论文](https://arxiv.org/abs/1611.07727) · 访问方式：官方挑战赛门户
+  入选依据 C3（英文审查说明）：Person associations over time define body-joint trajectories in videos; native tracking can use future frames, so forecasting requires separate causal splits. [审查来源](https://arxiv.org/abs/1611.07727) · 2026-10-29
 
-- **ATC Pedestrian Tracking Dataset** · 2013
+- **ATC Pedestrian Tracking Dataset** · 2013 · 数据集
   在大阪 ATC 购物中心采集的大规模行人轨迹数据集，通过环境传感器长期跟踪真实人群移动，适合研究室内社会导航和人群流演化。
   `第一人称 / 人类活动` · `城市 / 三维场景` · `轨迹` · `智能体位姿`
   [主页](https://dil.atr.jp/crest2010_HRI/ATC_dataset/) · 访问方式：官方 ATC 数据集页面提供数据访问说明
-
-- **NGSIM** · 2006
-  美国公路交通管理部门发布的自然驾驶轨迹数据集，记录高速公路和城市道路中车辆的连续位置、速度与车道信息，用于交通行为预测和多智能体建模。
-  `自动驾驶` · `轨迹` · `地图` · `智能体位姿`
-  [主页](https://ops.fhwa.dot.gov/trafficanalysistools/ngsim.htm) · 访问方式：官方公共数据页面
+  入选依据 C3（英文审查说明）：Official release contains complete time-varying person tracks from a sensor network over 92 days. [审查来源](https://dil.atr.jp/crest2010_HRI/ATC_dataset/) · 2026-10-29
 
 <a id="spatial-spatiotemporal-world-modeling"></a>
 
-### 空间与时空世界建模（76）
+### 空间与时空世界建模（46）
 
-- **AudioWorldSim** · 2026
+- **AudioWorldSim** · 2026 · 生成环境 / 工具
   用于生成双耳音频世界模型轨迹的开放仿真平台。
   `机器人 / 具身智能` · `物理 / 科学` · `音频` · `智能体位姿` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.21075) · [代码](https://github.com/Luizerko/AudioWorldSim) · 访问方式：论文入口；发布状态待核验
+  [论文](https://arxiv.org/abs/2608.21075) · [代码](https://github.com/Luizerko/AudioWorldSim) · 访问方式：提供生成代码；因源资产许可不分发预生成数据
+  入选依据 C2（英文审查说明）：Agent navigation generates aligned binaural observations. README explicitly withholds pre-generated data because source scene licenses restrict redistribution. [审查来源](https://github.com/Luizerko/AudioWorldSim) · 2026-10-29
 
-- **EPIC-Bench** · 2026
-  面向定位、导航感知和操作感知的细粒度具身视觉掩码定位基准。
-  `机器人 / 具身智能` · `RGB 视频` · `分割标注` · `语言`
-  [主页](https://epic-bench.github.io/EPIC-Bench/) · [论文](https://arxiv.org/abs/2605.17070) · [代码](https://github.com/rxc205/EPIC-Bench-Eval) · 访问方式：数据集已在 Hugging Face 和 ModelScope 提供
-
-- **ESPIRE** · 2026
-  在可程序化生成的模拟物理环境中诊断视觉语言模型具身空间推理能力的基准。
-  `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `语言` · `动作` · `物体状态`
-  [论文](https://arxiv.org/abs/2603.13033) · [代码](https://github.com/spatigen/espire) · 访问方式：环境生成框架和评测代码可用
-
-- **Orbis-Tabletop** · 2026
-  面向机器人仿真、具身智能和视觉研究的高质量桌面尺度三维场景数据集。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `三维元数据` · `物体元数据`
-  [代码](https://github.com/IntimeAI/Orbis-Tabletop) · 访问方式：官方仓库提供场景素材和文档入口
-
-- **Sekai2** · 2026
+- **Sekai2** · 2026 · 数据集
   面向交互式世界模型的真实第一人称长时视频数据集，配有相机轨迹和时间对齐描述。
   `第一人称 / 人类活动` · `RGB 视频` · `相机位姿` · `语言` · `轨迹`
   [主页](https://kangverse.github.io/sekai2-project/) · [论文](https://arxiv.org/abs/2608.09449) · [代码](https://github.com/kangverse/Sekai2-Dataset) · 访问方式：已公布官方数据入口，完整发布尚待完成
+  入选依据 C3（英文审查说明）：Released long video clips have camera trajectories, temporally grounded dynamics annotations and revisits for persistent-state modeling. [审查来源](https://arxiv.org/abs/2608.09449) · 2026-10-29
 
-- **STONE Dataset** · 2026
-  面向非结构化越野导航和三维可通行性预测的环视多模态机器人数据集。
-  `机器人 / 具身智能` · `多视角 RGB 视频` · `激光雷达` · `三维标注` · `机器人状态`
-  [主页](https://konyul.github.io/STONE-dataset/) · [代码](https://github.com/konyul/STONE) · 访问方式：已公布官方发布计划，下载入口尚待开放
-
-- **TransBiolab** · 2026
-  杂乱透明生物医学物体的真实多视角 RGB-D 数据集。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB-D` · `三维框` · `分割标注` · `相机位姿`
-  [论文](https://arxiv.org/abs/2607.21071) · [主页](https://dualtransparency.github.io/TransBiolab/) · 访问方式：论文入口；发布状态待核验
-
-- **CU-MULTI** · 2025
+- **CU-MULTI** · 2025 · 数据集
   由地面机器人采集的多机器人户外长序列数据集。
   `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `惯性测量单元 / GPS` · `轨迹`
   [代码](https://github.com/arpg/CU-Multi) · 访问方式：官方仓库和序列文档可用
+  入选依据 C3（英文审查说明）：ROS2 recordings pair RGB/depth/LiDAR with timestamped ground-truth path and odometry; use ordered observation/pose sequences, not static maps. [审查来源](https://github.com/arpg/CU-Multi) · 2026-10-29
 
-- **EOC-Bench** · 2025
+- **EOC-Bench** · 2025 · 评测集
   系统评测动态第一人称场景中物体中心具身认知能力的数据集。
   `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB 视频` · `物体状态` · `问答` · `语言`
   [主页](https://circleradon.github.io/EOCBench/) · [论文](https://arxiv.org/abs/2506.05287) · [代码](https://github.com/alibaba-damo-academy/EOCBench) · 访问方式：基准数据集和项目页已公开
+  入选依据 C1（英文审查说明）：Future-object questions and temporal accuracy metrics evaluate changes caused by egocentric interactions; retain the predictive track rather than all generic QA. [审查来源](https://arxiv.org/abs/2506.05287) · 2026-10-29
 
-- **GrandTour Dataset** · 2025
+- **GrandTour Dataset** · 2025 · 数据集
   在真实复杂环境中采集的腿式机器人多传感器长程轨迹数据集。
   `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `惯性测量单元 / GPS` · `轨迹` · `机器人状态`
   [主页](https://grand-tour.leggedrobotics.com/dataset) · [论文](https://arxiv.org/abs/2602.18164) · [代码](https://github.com/leggedrobotics/grand_tour_dataset) · 访问方式：提供数据页、Hugging Face 仓库和定位基准
+  入选依据 C3（英文审查说明）：Time-synchronized sensors and proprioception are paired with high-precision ground-truth robot trajectories. [审查来源](https://arxiv.org/abs/2602.18164) · 2026-10-29
 
-- **i2Nav-Robot** · 2025
+- **i2Nav-Robot** · 2025 · 数据集
   面向室内外多传感器融合导航与建图的大规模机器人数据集。
   `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `惯性测量单元 / GPS` · `轨迹`
   [代码](https://github.com/i2Nav-WHU/i2Nav-Robot) · 访问方式：官方仓库和基线代码可用
+  入选依据 C3（英文审查说明）：Ten synchronized robot sequences include accurate ground-truth pose and velocity over recorded trajectories. [审查来源](https://github.com/i2Nav-WHU/i2Nav-Robot) · 2026-10-29
 
-- **iilab Indoor LiDAR SLAM Dataset** · 2025
+- **iilab Indoor LiDAR SLAM Dataset** · 2025 · 数据集
   用于室内激光雷达 SLAM、定位和三维重建的真实机器人序列数据集工具包。
   `机器人 / 具身智能` · `城市 / 三维场景` · `激光雷达` · `惯性测量单元` · `相机位姿` · `轨迹`
   [主页](https://doi.org/10.25747/VHNJ-WM80) · [代码](https://github.com/JorgeDFR/iilabs3d-toolkit) · 访问方式：提供官方工具包和 DOI 数据入口
+  入选依据 C3（英文审查说明）：Official data repository describes synchronized LiDAR, IMU and wheel odometry with motion-capture ground truth and timestamp correction; retain ordered sensor/pose sequences. [审查来源](https://doi.org/10.25747/VHNJ-WM80) · 2026-10-29
 
-- **M3DGR** · 2025
+- **M3DGR** · 2025 · 数据集
   面向地面机器人的多传感器、多场景大规模 SLAM 数据集。
   `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `惯性测量单元 / GPS` · `轨迹`
   [代码](https://github.com/sjtuyinjie/M3DGR) · 访问方式：官方数据仓库和基准代码可用
+  入选依据 C3（英文审查说明）：Official multi-sensor SLAM release documents TUM-format trajectories, recording time and trajectory tracking metrics; retain ordered sensor/pose data. [审查来源](https://github.com/sjtuyinjie/M3DGR) · 2026-10-29
 
-- **MineInsight** · 2025
-  面向越野人道排雷机器人的多光谱环境数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `激光雷达` · `三维标注` · `场景元数据`
-  [代码](https://github.com/mariomlz99/MineInsight) · 访问方式：官方仓库和项目资源可用
-
-- **Multimodal AMR Dataset** · 2025
-  工业室内与城市室外自主移动机器人采集的多模态时序数据集。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `深度` · `场景元数据`
-  [代码](https://github.com/SEW-Eurodrive-Open-Source/Multimodal_AMR_dataset) · 访问方式：官方文档和仓库可用
-
-- **NextBestPath** · 2025
-  用于未知环境高效三维建图和主动探索路径规划的数据与基准。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `深度` · `相机位姿` · `轨迹`
-  [主页](https://shiyao-li.github.io/nbp/) · [代码](https://github.com/shiyao-li/NextBestPath) · 访问方式：官方项目页和代码可用
-
-- **OmniWorld** · 2025
+- **OmniWorld** · 2025 · 聚合集合 / 注册表
   覆盖游戏、城市行走、人机交互和机器人轨迹的多领域多模态四维世界建模数据集。
   `游戏 / 虚拟环境` · `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB 视频` · `深度` · `相机位姿` · `光流` · `文本`
   [主页](https://yangzhou24.github.io/OmniWorld/) · [论文](https://arxiv.org/abs/2509.12201) · [代码](https://github.com/yangzhou24/OmniWorld) · 访问方式：多个子集已在 Hugging Face 和 ModelScope 提供
+  入选依据 C1（英文审查说明）：OmniWorld-Game and curated public datasets explicitly support future prediction and dynamic 4D modeling; aggregate data overlap must remain explicit. [审查来源](https://arxiv.org/abs/2509.12201) · 2026-10-29
 
-- **Open3D-VQA** · 2025
-  在开放三维空间中评测多模态模型具身空间推理能力的问答基准。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `三维元数据` · `问答` · `语言`
-  [代码](https://github.com/EmbodiedCity/Open3D-VQA.code) · 访问方式：官方代码和基准资源可用
-
-- **Oxford Spires Dataset** · 2025
+- **Oxford Spires Dataset** · 2025 · 数据集
   牛津多地点的连续多传感器扫描，提供相机、LiDAR、IMU、参考地图与核心序列的轨迹真值。
   `机器人 / 具身智能` · `城市 / 三维场景` · `多视角 RGB 视频` · `激光雷达` · `惯性测量单元` · `相机位姿`
   [主页](https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/) · 访问方式：官方 Google Drive 与 Hugging Face 资源
+  入选依据 C3（英文审查说明）：Core recording sequences explicitly include centimetre-accurate ground-truth LiDAR trajectories aligned with image recordings. [审查来源](https://dynamic.robots.ox.ac.uk/datasets/oxford-spires/) · 2026-10-29
 
-- **RadarRGBD** · 2025
-  同步 RGB-D、毫米波雷达点云与原始雷达矩阵的室内外感知数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2505.15860) · [代码](https://github.com/song4399/RadarRGBD) · 访问方式：论文入口；发布状态待核验
-
-- **ROVR Open Dataset** · 2025
-  面向自动驾驶、机器人和四维感知的大规模开放三维数据集。
-  `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `三维标注` · `激光雷达` · `相机位姿`
-  [主页](https://rovr.network/#/dataset) · [代码](https://github.com/rovr-network/ROVR-Open-Dataset) · 访问方式：官方数据门户可用
-
-- **SLABIM** · 2025
+- **SLABIM** · 2025 · 数据集
   耦合 SLAM 传感器数据与建筑 BIM 的室内数据集。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2502.16856) · [代码](https://github.com/HKUST-Aerial-Robotics/SLABIM) · 访问方式：论文入口；发布状态待核验
+  入选依据 C3（英文审查说明）：Timestamped multi-session SLAM sensor recordings accompany building models; retain ordered sensing sequences, not BIM assets as dynamics data. [审查来源](https://arxiv.org/abs/2502.16856) · 2026-10-29
 
-- **SPICE-HL3** · 2025
+- **SPICE-HL3** · 2025 · 数据集
   高纬月面模拟环境中的单光子、惯性、双目和里程计数据集。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2506.22956) · 访问方式：论文入口；发布状态待核验
+  入选依据 C3（英文审查说明）：Robot images, inertial measurements and wheel odometry are recorded along seven trajectories under varied lunar-like illumination. [审查来源](https://arxiv.org/abs/2506.22956) · 2026-10-29
 
-- **STRIDE** · 2025
+- **STRIDE** · 2025 · 数据集
   将全景道路图像组织为观测、状态和动作节点的时空自主数据集。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2506.11302) · [主页](https://huggingface.co/datasets/Tera-AI/STRIDE) · 访问方式：论文入口；发布状态待核验
+  入选依据 C2（英文审查说明）：Road imagery is organized into connected observation, state and movement-action nodes for controlled spatiotemporal world modeling. [审查来源](https://arxiv.org/abs/2506.11302) · 2026-10-29
 
-- **UrbanVideo-Bench** · 2025
-  利用城市空间连续第一人称视频评测回忆、感知、推理和导航能力的具身基准。
-  `第一人称 / 人类活动` · `城市 / 三维场景` · `RGB 视频` · `语言` · `轨迹` · `问答`
-  [主页](https://huggingface.co/datasets/EmbodiedCity/UrbanVideo-Bench) · [代码](https://github.com/EmbodiedCity/UrbanVideo-Bench.code) · 访问方式：数据集和生成代码已公开
-
-- **Ego-Exo4D** · 2024
+- **Ego-Exo4D** · 2024 · 数据集
   同步采集第一人称与第三人称视角的人类技能数据集，覆盖体育、音乐、烹饪等活动，并提供三维、语言和相机信息，支持跨视角世界状态理解与技能学习。
   `第一人称 / 人类活动` · `多视角 RGB 视频` · `音频` · `语言` · `相机位姿` · `三维标注`
   [主页](https://ego-exo4d-data.org/) · [论文](https://arxiv.org/abs/2311.18259) · [代码](https://github.com/facebookresearch/Ego4d) · 访问方式：需申请
+  入选依据 C3（英文审查说明）：Synchronized long-form ego/exocentric recordings include camera poses and IMU. Retain temporal motion/pose tracks; activity classification alone is not the criterion. [审查来源](https://arxiv.org/abs/2311.18259) · 2026-10-29
 
-- **Argoverse 2** · 2023
+- **Argoverse 2** · 2023 · 数据集
   面向自动驾驶感知、运动预测和地图理解的多任务数据集合，包含传感器序列、丰富高清地图及大量运动场景，强调复杂城市中的长尾行为与轨迹预测。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `轨迹` · `三维框`
   [主页](https://www.argoverse.org/av2.html) · [论文](https://arxiv.org/abs/2301.00493) · [代码](https://github.com/argoverse/av2-api) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：Explicit motion-forecasting scenarios and sequential LiDAR with poses support future-agent and point-cloud prediction. [审查来源](https://arxiv.org/abs/2301.00493) · 2026-10-29
 
-- **EmbodiedScan** · 2023
-  面向具身智能整体三维场景理解的多模态第一人称数据集与基准，结合大规模 RGB-D 视图、语言提示、三维框和稠密语义占据标注。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB-D` · `语言` · `三维框` · `语义标签` · `相机位姿`
-  [论文](https://arxiv.org/abs/2312.16170) · [代码](https://github.com/OpenRobotLab/EmbodiedScan) · 访问方式：提供官方代码、标注和基准资源
-
-- **Objaverse** · 2023
-  大规模三维物体资产集合，支持开放世界三维理解与生成。
-  `城市 / 三维场景` · `游戏 / 虚拟环境` · `三维网格` · `物体元数据` · `文本`
-  [主页](https://objaverse.allenai.org/) · [论文](https://arxiv.org/abs/2212.08051) · 访问方式：官方数据工具
-
-- **Robo360** · 2023
+- **Robo360** · 2023 · 数据集
   面向三维物理世界建模的全视角机器人操作数据集，以密集多视角记录不同材料和光学性质物体的操作过程，支持动态神经场与多视角策略研究。
   `机器人 / 具身智能` · `物理 / 科学` · `多视角 RGB 视频` · `相机位姿` · `动作` · `物体元数据`
   [主页](https://robo360dataset.github.io/) · [论文](https://arxiv.org/abs/2312.06686) · [代码](https://github.com/robo360dataset/robo360dataset.github.io) · 访问方式：提供官方项目仓库和论文入口；数据条款待核验
+  入选依据 C1（英文审查说明）：Dense-view robot manipulation recordings are explicitly used for dynamic neural representations and multi-view policy learning. [审查来源](https://arxiv.org/abs/2312.06686) · 2026-10-29
 
-- **ScanNet++** · 2023
-  高保真室内三维扫描数据集，包含神经渲染和密集语义标注。
-  `城市 / 三维场景` · `RGB-D` · `三维网格` · `语义标签` · `相机位姿`
-  [主页](https://scannetpp.ml/) · [论文](https://arxiv.org/abs/2308.11417) · 访问方式：官方项目页
-
-- **MOVi** · 2022
+- **MOVi** · 2022 · 派生数据 / 子集
   使用 Kubric 生成的多对象视频系列，提供精确实例分割、深度、光流和三维属性，覆盖不同复杂度设置，适合对象发现、跟踪与可解释动态建模。
   `物理 / 科学` · `合成视频` · `深度` · `光流` · `分割标注` · `三维状态`
-  [论文](https://arxiv.org/abs/2203.12602) · [代码](https://github.com/google-research/kubric) · 访问方式：开放下载
+  [代码](https://github.com/google-research/kubric) · 访问方式：开放下载
+  入选依据 C4（英文审查说明）：The Kubric release identifies generated multi-object video challenges and downloadable data produced by its physical simulation pipeline. MOVi is a derived family, not an independent collection. [审查来源](https://github.com/google-research/kubric) · 2026-10-29
 
-- **NTU VIRAL** · 2022
+- **NTU VIRAL** · 2022 · 数据集
   无人机视觉、惯性、LiDAR 和 UWB 测距序列，配有地面跟踪位置真值。
   `机器人 / 具身智能` · `双目 RGB` · `激光雷达` · `惯性测量单元` · `轨迹`
   [主页](https://ntu-aris.github.io/ntu_viral_dataset/) · 访问方式：官方数据下载及 CSV 真值
+  入选依据 C3（英文审查说明）：Official release supplies flight sequences with synchronized cameras, lidar, IMU/UWB and ground truth. [审查来源](https://ntu-aris.github.io/ntu_viral_dataset/) · 2026-10-29
 
-- **ARKitScenes** · 2021
-  室内移动设备 RGB-D 扫描与三维重建数据集。
-  `城市 / 三维场景` · `RGB-D` · `三维网格` · `相机位姿`
-  [主页](https://github.com/apple/ARKitScenes) · [论文](https://arxiv.org/abs/2111.08853) · 访问方式：官方下载
-
-- **DSEC** · 2021
+- **DSEC** · 2021 · 数据集
   真实驾驶的双目事件与彩色图像序列，提供同步传感器数据、视差及后续发布的光流真值。
   `自动驾驶` · `Event Camera` · `双目 RGB` · `激光雷达` · `GPS / 惯性测量单元` · `光流`
   [主页](https://dsec.ifi.uzh.ch/) · [论文](https://arxiv.org/abs/2103.06011) · 访问方式：官方传感器数据下载及光流、视差基准
+  入选依据 C3（英文审查说明）：Driving recordings synchronize stereo frames/events with LiDAR and RTK GPS, enabling ordered observation/ego-trajectory modeling. [审查来源](https://arxiv.org/abs/2103.06011) · 2026-10-29
 
-- **Habitat-Matterport 3D** · 2021
-  面向具身导航与室内模拟的高质量三维场景数据，结合 Habitat 平台可生成视觉、深度、语义和智能体轨迹，用于空间记忆、导航规划与交互式世界建模。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `RGB-D` · `语义标签` · `智能体位姿`
-  [主页](https://aihabitat.org/datasets/hm3d/) · [论文](https://arxiv.org/abs/2109.08238) · [代码](https://github.com/facebookresearch/habitat-sim) · 访问方式：需申请
-
-- **Habitat-Matterport 3D (HM3D)** · 2021
-  高质量真实室内三维场景集合，用于具身导航和交互仿真。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `RGB 视频` · `地图`
-  [主页](https://aihabitat.org/datasets/hm3d/) · [论文](https://arxiv.org/abs/2109.08238) · 访问方式：官方 Habitat 下载
-
-- **Hilti SLAM Challenge Dataset** · 2021
+- **Hilti SLAM Challenge Dataset** · 2021 · 数据集
   建筑及办公环境的手持多传感器序列，提供时间同步的视觉、LiDAR、IMU 与稀疏高精度位姿真值。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `激光雷达` · `惯性测量单元` · `相机位姿`
   [代码](https://github.com/Hilti-Research/hilti-slam-challenge-2021) · [论文](https://arxiv.org/abs/2109.11316) · 访问方式：官方仓库提供数据和真值下载入口
+  入选依据 C3（英文审查说明）：Indoor/outdoor robot sensor sequences have accurate ground-truth references; retain temporal observation/pose modeling, not static construction perception. [审查来源](https://arxiv.org/abs/2109.11316) · 2026-10-29
 
-- **TUM-VIE** · 2021
+- **TUM-VIE** · 2021 · 数据集
   同步双目事件、灰度图像和惯性数据的手持及头戴序列，配有起止段运动捕捉真值。
   `机器人 / 具身智能` · `Event Camera` · `双目 RGB` · `惯性测量单元` · `相机位姿`
   [主页](https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset) · [论文](https://arxiv.org/abs/2108.07329) · 访问方式：官方序列下载及可视化脚本
+  入选依据 C3（英文审查说明）：Hardware-synchronized event/frame/IMU streams record handheld and head-mounted motion trajectories; future prediction requires a causal sequence split. [审查来源](https://arxiv.org/abs/2108.07329) · 2026-10-29
 
-- **Audi Autonomous Driving Dataset** · 2020
+- **Audi Autonomous Driving Dataset** · 2020 · 数据集
   奥迪公开的自动驾驶多传感器数据集，包含相机、激光雷达、语义标注和车辆状态。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `语义标签` · `GPS / 惯性测量单元`
   [论文](https://arxiv.org/abs/2004.06320) · 访问方式：官方下载门户
+  入选依据 C3（英文审查说明）：Retain the 392,556 sequential unannotated sensor frames with vehicle-bus data; non-sequential segmentation images alone do not qualify. [审查来源](https://arxiv.org/abs/2004.06320) · 2026-10-29
 
-- **HOPE Object Pose Dataset** · 2020
-  面向家庭物体六维姿态估计的 RGB-D 数据集，包含杂乱场景和真实物体模型。
-  `机器人 / 具身智能` · `RGB-D` · `三维网格` · `相机位姿`
-  [论文](https://arxiv.org/abs/2003.09111) · 访问方式：官方项目页和代码
-
-- **KITTI-360** · 2020
+- **KITTI-360** · 2020 · 数据集
   面向长期城市驾驶的多模态三维数据集，提供全景图像、激光雷达、轨迹和三维场景标注。
   `自动驾驶` · `城市 / 三维场景` · `激光雷达` · `RGB 视频` · `三维框` · `地图` · `GPS / 惯性测量单元`
-  [主页](https://www.cvlibs.net/datasets/kitti-360/) · [论文](https://arxiv.org/abs/2012.06268) · 访问方式：官方基准下载
+  [主页](https://www.cvlibs.net/datasets/kitti-360/) · 访问方式：官方基准下载
+  入选依据 C3（英文审查说明）：Official release supplies ordered driving frames with accurate geolocation, consistent instance IDs and released image/LiDAR timestamps. [审查来源](https://www.cvlibs.net/datasets/kitti-360/) · 2026-10-29
 
-- **Newer College Dataset** · 2020
+- **Newer College Dataset** · 2020 · 数据集
   牛津学院区域的手持多传感器序列，结合 LiDAR、视觉、IMU 与厘米级轨迹真值。
   `机器人 / 具身智能` · `城市 / 三维场景` · `双目 RGB` · `激光雷达` · `惯性测量单元` · `相机位姿`
   [主页](https://ori-drs.github.io/newer-college-dataset/) · 访问方式：官方项目提供序列下载入口
+  入选依据 C3（英文审查说明）：Hand-carried stereo/LiDAR/IMU recordings include challenging motion sequences and precise ground truth; static map alone is not the inclusion basis. [审查来源](https://ori-drs.github.io/newer-college-dataset/) · 2026-10-29
 
-- **PandaSet** · 2020
+- **PandaSet** · 2020 · 数据集
   面向自动驾驶研究的多传感器数据集，提供相机、激光雷达、GPS/IMU 和三维标注，覆盖城市道路中的车辆、行人和交通场景。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `GPS / 惯性测量单元` · `三维框` · `地图`
-  [论文](https://arxiv.org/abs/2102.02684) · [代码](https://github.com/scaleapi/pandaset-devkit) · 访问方式：开放下载
+  [代码](https://github.com/scaleapi/pandaset-devkit) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：Official devkit exposes sequences of sensor measurements and per-frame poses; retain sequential recordings. [审查来源](https://github.com/scaleapi/pandaset-devkit) · 2026-10-29
 
-- **pNEUMA** · 2020
+- **pNEUMA** · 2020 · 数据集
   使用多架无人机在雅典市中心采集的大规模城市交通轨迹数据集，提供车辆、行人和其他道路参与者在拥挤城市路网中的连续运动。
   `自动驾驶` · `城市 / 三维场景` · `轨迹` · `智能体位姿` · `物体元数据` · `场景元数据`
   [主页](https://open-traffic.epfl.ch/) · 访问方式：官方 Open Traffic 平台提供数据访问入口
+  入选依据 C3（英文审查说明）：Drone recordings yield naturalistic urban vehicle trajectories across many intersections. [审查来源](https://open-traffic.epfl.ch/) · 2026-10-29
 
-- **TartanAir** · 2020
+- **TartanAir** · 2020 · 数据集
   多种仿真场景中的连续相机轨迹，提供同步图像、深度、光流和位姿真值。
   `机器人 / 具身智能` · `城市 / 三维场景` · `双目 RGB` · `深度` · `光流` · `相机位姿` · `激光雷达`
   [主页](https://theairlab.org/tartanair-dataset/) · [论文](https://arxiv.org/abs/2003.14338) · 访问方式：官方项目提供数据访问说明
+  入选依据 C3（英文审查说明）：Simulation trajectory sampling provides ordered stereo/depth/flow observations and camera poses amid moving objects and changing conditions. [审查来源](https://arxiv.org/abs/2003.14338) · 2026-10-29
 
-- **BLVD** · 2019
+- **BLVD** · 2019 · 数据集
   面向自动驾驶的大规模 5D 语义数据集，结合视频、三维目标、轨迹、地图和时间信息，支持动态交通场景理解与未来状态建模。
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `三维框` · `轨迹` · `地图` · `语义标签`
   [论文](https://arxiv.org/abs/1903.06405) · [代码](https://github.com/VCCIV/BLVD) · 访问方式：提供官方代码仓库
+  入选依据 C3（英文审查说明）：The benchmark explicitly targets temporal object tracking, interactive events and intention prediction, beyond static detection. [审查来源](https://arxiv.org/abs/1903.06405) · 2026-10-29
 
-- **Habitat-Lab** · 2019
+- **Habitat-Lab** · 2019 · 生成环境 / 工具
   具身导航与操作仿真平台。
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `智能体位姿` · `动作`
   [主页](https://aihabitat.org/) · [代码](https://github.com/facebookresearch/habitat-lab) · [论文](https://arxiv.org/abs/1904.01201) · 访问方式：开源模拟器
+  入选依据 C2（英文审查说明）：Configurable embodied agents and sensors interact in a 3D simulator through task APIs; HM3D/MP3D/Replica are asset dependencies. [审查来源](https://arxiv.org/abs/1904.01201) · 2026-10-29
 
-- **iGibson** · 2019
+- **iGibson** · 2019 · 生成环境 / 工具
   室内具身智能仿真平台，提供视觉、触觉、动作和物理状态轨迹。
   `机器人 / 具身智能` · `RGB 视频` · `深度` · `仿真状态` · `动作`
-  [主页](https://svl.stanford.edu/igibson/) · [代码](https://github.com/StanfordVL/iGibson) · [论文](https://arxiv.org/abs/1810.03993) · 访问方式：开源模拟器与资源
+  [主页](https://svl.stanford.edu/igibson/) · [代码](https://github.com/StanfordVL/iGibson) · 访问方式：开源模拟器与资源
+  入选依据 C4（英文审查说明）：Official simulator couples visual observations with physical interactions and explicit object states including temperature, wetness and slicing. [审查来源](https://svl.stanford.edu/igibson/) · 2026-10-29
 
-- **Lyft Level 5 Dataset** · 2019
-  自动驾驶多传感器数据集，包含激光雷达、相机、地图和轨迹标注。
-  `自动驾驶` · `激光雷达` · `RGB 视频` · `地图` · `轨迹` · `GPS / 惯性测量单元`
-  [论文](https://arxiv.org/abs/2006.14480) · 访问方式：官方下载门户
-
-- **nuScenes** · 2019
+- **nuScenes** · 2019 · 数据集
   覆盖波士顿与新加坡城市道路的多传感器自动驾驶数据集，提供同步环视相机、LiDAR、RADAR、定位和三维标注，适合多视角时空建模、占用预测与驾驶世界模型研究。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `惯性测量单元 / GPS` · `三维框`
   [主页](https://www.nuscenes.org/) · [论文](https://arxiv.org/abs/1903.11027) · [代码](https://github.com/nutonomy/nuscenes-devkit) · 访问方式：需注册
+  入选依据 C3（英文审查说明）：Twenty-second driving scenes combine synchronized sensors and temporally tracked 3D agents. Retain sequence/trajectory use, not isolated detection images. [审查来源](https://arxiv.org/abs/1903.11027) · 2026-10-29
 
-- **Oxford Radar RobotCar Dataset** · 2019
-  长期重复采集的雷达、激光雷达和相机驾驶数据集，用于鲁棒定位与动态环境建模。
-  `自动驾驶` · `毫米波雷达` · `激光雷达` · `RGB 视频` · `GPS / 惯性测量单元`
-  [主页](https://oxford-robotics-institute.github.io/radar-robotcar-dataset/) · [论文](https://arxiv.org/abs/1909.01384) · 访问方式：官方下载
-
-- **Replica** · 2019
-  由高质量真实室内重建组成的三维场景数据集，提供纹理网格、语义和高保真渲染资产，常用于具身导航与神经场景表示。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `语义标签` · `相机位姿`
-  [论文](https://arxiv.org/abs/1906.05797) · [代码](https://github.com/facebookresearch/Replica-Dataset) · 访问方式：开放下载，需同意协议
-
-- **SoundSpaces** · 2019
+- **SoundSpaces** · 2019 · 生成环境 / 工具
   面向三维环境音频-视觉导航的仿真数据集和环境，将空间音频、视觉观测、动作和位置状态结合起来，支持具身智能体的多模态世界建模。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `音频` · `动作` · `仿真状态` · `地图`
   [论文](https://arxiv.org/abs/1912.11474) · [代码](https://github.com/facebookresearch/sound-spaces) · 访问方式：官方项目访问；可能需要注册
+  入选依据 C2（英文审查说明）：Audio-visual navigation uses egocentric observations generated by agent motion in acoustically simulated scenes; source scenes are dependencies. [审查来源](https://arxiv.org/abs/1912.11474) · 2026-10-29
 
-- **UZH-FPV Drone Racing Dataset** · 2019
+- **UZH-FPV Drone Racing Dataset** · 2019 · 数据集
   专家操控竞速无人机的激烈运动序列，提供相机、事件、IMU 和激光跟踪运动真值。
   `机器人 / 具身智能` · `RGB 视频` · `Event Camera` · `惯性测量单元` · `相机位姿` · `轨迹`
   [主页](https://fpv.ifi.uzh.ch/) · 访问方式：官方序列下载；基准测试真值不公开
+  入选依据 C3（英文审查说明）：Aggressive flight sequences provide visual-inertial measurements and 6DoF ground-truth trajectories. [审查来源](https://fpv.ifi.uzh.ch/) · 2026-10-29
 
-- **Waymo Open Dataset** · 2019
+- **Waymo Open Dataset** · 2019 · 数据集
   高质量自动驾驶多传感器数据集，覆盖摄像头、LiDAR、地图、三维检测和运动预测场景，能够支持动态占用、未来轨迹以及闭环驾驶世界表示研究。
   `自动驾驶` · `RGB 视频` · `激光雷达` · `地图` · `三维框` · `轨迹`
   [主页](https://waymo.com/open/) · [论文](https://arxiv.org/abs/1912.04838) · [代码](https://github.com/waymo-research/waymo-open-dataset) · 访问方式：需注册
+  入选依据 C3（英文审查说明）：Synchronized 20-second driving sequences expose time-indexed observations and road-agent annotations. Static detection labels alone are not the basis. [审查来源](https://arxiv.org/abs/1912.04838) · 2026-10-29
 
-- **ApolloScape** · 2018
+- **ApolloScape** · 2018 · 数据集
   面向自动驾驶的多任务数据集，提供街景视频、立体图像、深度、三维车辆和高精地图等信息，支持城市时空场景建模。
   `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `深度` · `地图` · `三维框` · `语义标签`
   [主页](https://apolloscape.auto/) · [论文](https://arxiv.org/abs/1803.06184) · [代码](https://github.com/ApolloScapeAuto/dataset-api) · 访问方式：需要注册
+  入选依据 C3（英文审查说明）：Driving videos include accurate per-frame location; retain sequential observation/pose or trajectory subsets, not isolated perception annotations. [审查来源](https://arxiv.org/abs/1803.06184) · 2026-10-29
 
-- **comma2k19** · 2018
+- **comma2k19** · 2018 · 数据集
   comma.ai 发布的真实高速通勤驾驶数据集，包含道路前视视频、GPS/GNSS、IMU、CAN 总线、车辆速度、转向角和全局相机位姿，适合研究低成本传感器下的驾驶状态估计与时序地图构建。
   `自动驾驶` · `RGB 视频` · `GPS / 惯性测量单元` · `动作` · `相机位姿` · `轨迹`
   [主页](https://github.com/commaai/comma2k19) · [论文](https://arxiv.org/abs/1812.05752) · 访问方式：公开 GitHub 仓库提供数据下载说明和示例片段
+  入选依据 C3（英文审查说明）：Minute-long driving sequences include road video, GNSS/IMU/CAN and camera position/orientation estimates. [审查来源](https://arxiv.org/abs/1812.05752) · 2026-10-29
 
-- **Gibson Environment Dataset** · 2018
-  由真实空间扫描构建的可导航三维环境集合，配合 Gibson 模拟器生成 RGB、深度、语义和智能体轨迹，面向具身感知与导航。
+- **Gibson Env** · 2018 · 生成环境 / 工具
+  基于真实场景重建的交互式具身仿真环境；本条收录可生成交互的环境，不单独计数静态建筑资产。
   `机器人 / 具身智能` · `城市 / 三维场景` · `三维网格` · `RGB-D` · `智能体位姿` · `语义标签`
   [主页](http://gibsonenv.stanford.edu/database/) · [论文](https://arxiv.org/abs/1808.10654) · [代码](https://github.com/StanfordVL/GibsonEnv) · 访问方式：需申请并同意协议
+  入选依据 C2（英文审查说明）：Gibson Env explicitly embeds agents subject to physical and spatial constraints in a released interactive simulator. Scope is Gibson Env, not the static building database alone. [审查来源](https://arxiv.org/abs/1808.10654) · 2026-10-29
 
-- **MVSEC** · 2018
+- **MVSEC** · 2018 · 数据集
   在多种运动平台上采集的双目事件序列，结合图像、IMU 与多数序列的位姿和深度真值。
   `机器人 / 具身智能` · `自动驾驶` · `Event Camera` · `双目 RGB` · `惯性测量单元` · `深度` · `相机位姿`
   [主页](https://daniilidis-group.github.io/mvsec/) · 访问方式：官方序列下载、校准信息及示例代码
+  入选依据 C3（英文审查说明）：Multi-vehicle event/frame streams align with LiDAR/IMU/GPS/mocap ground-truth pose, depth and optical flow. [审查来源](https://daniilidis-group.github.io/mvsec/) · 2026-10-29
 
-- **TUM VI** · 2018
+- **TUM VI** · 2018 · 数据集
   室内外视觉惯性序列，提供校准后的双目图像、IMU 与部分或完整运动捕捉轨迹。
   `机器人 / 具身智能` · `城市 / 三维场景` · `双目 RGB` · `惯性测量单元` · `相机位姿` · `轨迹`
   [主页](https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset) · [论文](https://arxiv.org/abs/1804.06120) · 访问方式：官方原始及校准序列下载
+  入选依据 C3（英文审查说明）：Hardware-synchronized images/IMU and motion-capture pose references support ordered visual-inertial trajectory modeling. [审查来源](https://arxiv.org/abs/1804.06120) · 2026-10-29
 
-- **DDD17** · 2017
+- **DDD17** · 2017 · 数据集
   面向端到端驾驶研究的事件相机数据集，记录真实道路中的异步视觉事件、驾驶状态和控制相关信息，用于动态场景理解与驾驶行为建模。
   `自动驾驶` · `Event Camera` · `GPS / 惯性测量单元` · `动作` · `轨迹`
   [论文](https://arxiv.org/abs/1711.01458) · 访问方式：论文入口；数据访问需核验
+  入选依据 C2（英文审查说明）：Paper explicitly describes concurrent image/event streams with vehicle speed, GPS, steering, throttle and brake recordings from on-board diagnostics. [审查来源](https://arxiv.org/abs/1711.01458) · 2026-10-29
 
-- **Matterport3D** · 2017
-  面向室内场景理解和具身导航的建筑级 RGB-D 全景数据集，提供精细网格、相机位姿、语义及区域标注。
-  `城市 / 三维场景` · `机器人 / 具身智能` · `RGB-D` · `三维网格` · `相机位姿` · `语义标签`
-  [主页](https://niessner.github.io/Matterport/) · [论文](https://arxiv.org/abs/1709.06158) · [代码](https://github.com/niessner/Matterport) · 访问方式：需申请并同意协议
-
-- **MPI-INF-3DHP** · 2017
-  室内外三维人体姿态视频数据集，包含多视角和绿幕合成序列。
-  `第一人称 / 人类活动` · `RGB 视频` · `智能体位姿` · `相机位姿`
-  [主页](https://vcai.mpi-inf.mpg.de/3dhp-dataset/) · [论文](https://arxiv.org/abs/1611.09813) · 访问方式：官方项目页
-
-- **PennCOSYVIO** · 2017
+- **PennCOSYVIO** · 2017 · 数据集
   室外到室内的手持视觉惯性轨迹，使用标记定位提供传感器位置参考。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `双目 RGB` · `惯性测量单元` · `相机位姿`
   [主页](https://daniilidis-group.github.io/penncosyvio/) · 访问方式：官方下载、校准和基准文档
+  入选依据 C3（英文审查说明）：Synchronized video/IMU recordings have an indoor-outdoor sensor trajectory and localized ground-truth positions. [审查来源](https://daniilidis-group.github.io/penncosyvio/) · 2026-10-29
 
-- **ScanNet** · 2017
+- **ScanNet** · 2017 · 数据集
   由手持 RGB-D 设备采集的大规模室内扫描序列，提供相机位姿、重建网格、语义和实例标注，是室内三维世界表示与导航的重要数据源。
   `城市 / 三维场景` · `机器人 / 具身智能` · `RGB-D` · `相机位姿` · `三维网格` · `语义标签`
   [主页](http://www.scan-net.org/) · [论文](https://arxiv.org/abs/1702.04405) · [代码](https://github.com/ScanNet/ScanNet) · 访问方式：需同意协议
+  入选依据 C3（英文审查说明）：RGB-D videos include per-view camera poses, exposing temporal camera-observation trajectories. Retain egomotion sequences, not static reconstructed geometry or object dynamics claims. [审查来源](https://arxiv.org/abs/1702.04405) · 2026-10-29
 
-- **Cityscapes** · 2016
-  覆盖欧洲城市街景的驾驶图像与短时序数据集，提供精细像素语义、实例及深度相关信息，广泛用于未来语义预测和城市视觉世界建模。
-  `自动驾驶` · `城市 / 三维场景` · `RGB 视频` · `语义标签` · `分割标注` · `深度`
-  [主页](https://www.cityscapes-dataset.com/) · [论文](https://openaccess.thecvf.com/content_cvpr_2016/html/Cordts_The_Cityscapes_Dataset_CVPR_2016_paper.html) · [代码](https://github.com/mcordts/cityscapesScripts) · 访问方式：需注册
-
-- **DeepMind Lab** · 2016
+- **DeepMind Lab** · 2016 · 生成环境 / 工具
   第一人称 3D 导航与交互环境，提供视觉观测、动作和游戏状态轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/google-deepmind/lab) · [论文](https://arxiv.org/abs/1612.03801) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：First-person game worlds expose a flexible agent/environment API for partially observed sequential tasks. [审查来源](https://arxiv.org/abs/1612.03801) · 2026-10-29
 
-- **EuRoC MAV** · 2016
+- **EuRoC MAV** · 2016 · 数据集
   微型飞行器采集的视觉惯性序列，包含双目灰度图、同步 IMU 和运动真值。
   `机器人 / 具身智能` · `双目 RGB` · `惯性测量单元` · `相机位姿` · `轨迹`
   [主页](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 访问方式：官方 ETH Research Collection 下载入口
+  入选依据 C3（英文审查说明）：Stereo images and synchronized IMU are paired with accurate MAV motion ground truth. [审查来源](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 2026-10-29
 
-- **MiniGrid** · 2016
-  可组合的二维部分可观测导航环境。
-  `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/Farama-Foundation/Minigrid) · [论文](https://arxiv.org/abs/2010.02567) · 访问方式：开源环境
-
-- **Oxford RobotCar** · 2016
-  同一路线跨越一年多次重复采集的自动驾驶数据集，包含相机、激光雷达、雷达和定位信号，特别适合长期环境变化和世界状态鲁棒性研究。
-  `自动驾驶` · `RGB 视频` · `激光雷达` · `毫米波雷达` · `GPS / 惯性测量单元`
-  [主页](https://robotcar-dataset.robots.ox.ac.uk/) · [论文](https://arxiv.org/abs/1610.08265) · [代码](https://github.com/ori-mrg/robotcar-dataset-sdk) · 访问方式：开放下载
-
-- **SYNTHIA** · 2016
-  面向城市场景理解的合成驾驶数据集，通过虚拟城市生成多季节、多天气和多视角图像序列，并提供像素级语义及深度真值。
-  `自动驾驶` · `城市 / 三维场景` · `合成视频` · `深度` · `语义标签` · `相机位姿`
-  [主页](https://synthia-dataset.net/) · [论文](https://openaccess.thecvf.com/content_cvpr_2016/html/Ros_The_SYNTHIA_Dataset_CVPR_2016_paper.html) · 访问方式：需申请并同意协议
-
-- **Virtual KITTI** · 2016
-  与 KITTI 真实序列对应的合成驾驶视频数据，提供深度、光流、实例、语义和相机真值，可用于可控条件下的场景动态及域迁移实验。
-  `自动驾驶` · `合成视频` · `深度` · `光流` · `分割标注` · `相机位姿`
-  [主页](https://europe.naverlabs.com/research/computer-vision/proxy-virtual-worlds-vkitti-1/) · [论文](https://arxiv.org/abs/1605.06457) · 访问方式：开放下载
-
-- **YCB-Video** · 2016
-  包含 21 个 YCB 物体视频序列及逐帧六维姿态标注，用于机器人视觉与操作。
-  `机器人 / 具身智能` · `RGB-D` · `三维网格` · `相机位姿`
-  [主页](https://rse-lab.cs.washington.edu/projects/posecnn/) · [论文](https://arxiv.org/abs/1711.00199) · 访问方式：提供官方下载
-
-- **KITTI** · 2012
+- **KITTI** · 2012 · 数据集
   自动驾驶领域最经典的多传感器数据集之一，提供双目相机、LiDAR、GPS/IMU 和多类评测任务，适合建立深度、场景流、里程计与三维动态建模的可比基线。
   `自动驾驶` · `双目 RGB` · `激光雷达` · `GPS / 惯性测量单元` · `三维框`
   [主页](https://www.cvlibs.net/datasets/kitti/) · [论文](https://www.cvlibs.net/publications/Geiger2013IJRR.pdf) · [代码](https://github.com/utiasSTARS/pykitti) · 访问方式：开放下载
+  入选依据 C3（英文审查说明）：Official suite includes raw calibrated driving recordings, GPS localization, visual odometry and 3D tracking. Retain sequential/odometry scope rather than standalone detection images. [审查来源](https://www.cvlibs.net/datasets/kitti/) · 2026-10-29
 
-- **TUM RGB-D** · 2012
+- **TUM RGB-D** · 2012 · 数据集
   手持和机器人 RGB-D 序列配有运动捕捉轨迹，包含动态人群场景和连续相机运动。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB-D` · `相机位姿` · `轨迹`
   [主页](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · 访问方式：官方序列下载和轨迹评估工具
+  入选依据 C3（英文审查说明）：Official release provides 30 Hz RGB-D images aligned with high-accuracy motion-capture sensor trajectories. [审查来源](https://cvg.cit.tum.de/data/datasets/rgbd-dataset) · 2026-10-29
 
 <a id="physical-causal-reasoning"></a>
 
-### 物理与因果推理（28）
+### 物理与因果推理（22）
 
-- **CG-World** · 2026
+- **CG-World** · 2026 · 数据集
   显式记录状态、事件、关系和反事实分支的大规模计算机图形世界状态数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `合成视频` · `三维状态` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2607.26452) · 访问方式：论文入口；发布状态待核验
+  入选依据 C4（英文审查说明）：Temporally aligned state, action, contact and branch metadata explicitly distinguish factual and counterfactual trajectories. [审查来源](https://arxiv.org/abs/2607.26452) · 2026-10-29
 
-- **GAUGE** · 2026
+- **GAUGE** · 2026 · 评测集
   以真实测量轨迹和物理属性为依据，评测物理引擎与视频世界模型物理保真度的基准。
   `物理 / 科学` · `机器人 / 具身智能` · `RGB 视频` · `轨迹` · `物体状态` · `三维元数据`
   [主页](https://internrobotics.github.io/GAUGE/) · [论文](https://arxiv.org/abs/2608.05948) · [代码](https://github.com/InternRobotics/GAUGE) · 访问方式：基准数据集已在 Hugging Face 提供
+  入选依据 C5（英文审查说明）：Measured physical trajectories and task-specific observables evaluate simulation engines and video world models against controlled real experiments. [审查来源](https://arxiv.org/abs/2608.05948) · 2026-10-29
 
-- **KinDER** · 2026
+- **KinDER** · 2026 · 生成环境 / 工具
   面向机器人学习与规划的物理推理基准，提供任务环境、示范数据和模型资源。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `物体状态` · `轨迹`
   [主页](https://huggingface.co/datasets/kinder-bench/kinder-datasets) · [代码](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden) · 访问方式：示范数据已在 Hugging Face 提供
+  入选依据 C2（英文审查说明）：README shows action_space sampling, step(action), next observations and object-centric state conversion, with dataset collection support. [审查来源](https://github.com/Princeton-Robot-Planning-and-Learning/kindergarden) · 2026-10-29
 
-- **PhyCheck** · 2026
-  面向视频模型物理规律理解的细粒度证据问答数据集。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `问答` · `文本`
-  [论文](https://arxiv.org/abs/2608.02150) · 访问方式：论文入口；发布状态待核验
-
-- **PhyGround** · 2026
+- **PhyGround** · 2026 · 评测集
   通过文本、首帧和生成视频评测生成式世界模型物理合理性的基准。
   `物理 / 科学` · `RGB 视频` · `文本` · `物体状态`
   [主页](https://phyground.github.io/) · [论文](https://arxiv.org/abs/2605.10806) · [代码](https://github.com/NU-World-Model-Embodied-AI/PhyGround) · 访问方式：提示和首帧图像已在 Hugging Face 提供
+  入选依据 C5（英文审查说明）：Expected physical outcomes and law-specific questions evaluate generative world models across 250 prompts. [审查来源](https://arxiv.org/abs/2605.10806) · 2026-10-29
 
-- **PhysEditWorld** · 2026
+- **PhysEditWorld** · 2026 · 数据集
   通过在相同场景、初态和动作序列下改变重力参数生成的物理规则可编辑世界模型数据集。
   `游戏 / 虚拟环境` · `物理 / 科学` · `RGB 视频` · `动作` · `游戏状态` · `相机位姿`
   [主页](https://yizhiqianbi.github.io/physeditworld/) · [论文](https://arxiv.org/abs/2606.26694) · [代码](https://github.com/yizhiqianbi/physeditworld) · 访问方式：ModelScope 提供公开数据入口
+  入选依据 C4（英文审查说明）：Matched initial states and action traces are replayed under different gravity values with synchronized engine state and observations. [审查来源](https://arxiv.org/abs/2606.26694) · 2026-10-29
 
-- **RigidBench** · 2026
+- **RigidBench** · 2026 · 评测集
   具有精确仿真状态的刚体物理视频生成基准。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `深度` · `三维状态`
   [论文](https://arxiv.org/abs/2608.15555) · 访问方式：论文入口；发布状态待核验
+  入选依据 C1（英文审查说明）：Generated continuations are compared with simulator rollouts from the same initial frame, with per-frame poses, contacts and depth. [审查来源](https://arxiv.org/abs/2608.15555) · 2026-10-29
 
-- **VisTouch** · 2026
+- **VisTouch** · 2026 · 数据集
   机器人滑动接触场景下同步采集视觉、触觉力和接触音频的大规模多模态数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `音频` · `机器人状态` · `动作`
   [代码](https://github.com/liangnjupt/VisTouch) · 访问方式：官方仓库提供元数据、加载器、基准和下载说明
+  入选依据 C1（英文审查说明）：Robot sliding-contact episodes pair video and audio with time-varying tactile-force trajectories; no inferred motor-action labels. [审查来源](https://github.com/liangnjupt/VisTouch) · 2026-10-29
 
-- **CausalVQA** · 2025
+- **CausalVQA** · 2025 · 评测集
   面向现实视频反事实、假设、预判与规划的物理因果问答基准。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
   [论文](https://arxiv.org/abs/2506.09943) · 访问方式：论文入口；发布状态待核验
+  入选依据 C4（英文审查说明）：Counterfactual, hypothetical and anticipation questions explicitly ask for outcomes of actions/events in physical videos; descriptive QA is outside the retained scope. [审查来源](https://arxiv.org/abs/2506.09943) · 2026-10-29
 
-- **GRIP Dataset** · 2025
+- **GRIP Dataset** · 2025 · 数据集
   面向可变形与刚体耦合抓取的通用机器人增量势接触仿真数据集。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `物体状态` · `三维状态`
   [主页](https://bell0o.github.io/GRIP/) · [代码](https://github.com/BeLl0o/GRIP_Dataset) · 访问方式：项目页和官方仓库可用
+  入选依据 C4（英文审查说明）：Official HDF5 schema explicitly contains 100-frame grasp trajectories with time-varying joint states, object mesh states, contacts and friction forces. Only currently released subsets count as available. [审查来源](https://github.com/BeLl0o/GRIP_Dataset) · 2026-10-29
 
-- **OmniEmbodied / EAR-Bench** · 2025
+- **OmniEAR / EAR-Bench** · 2025 · 生成环境 / 工具
   评测智能体对物理交互、工具使用和多智能体协调推理能力的文本具身场景基准。
   `机器人 / 具身智能` · `文本` · `动作` · `物体状态` · `轨迹`
-  [主页](https://zju-real.github.io/OmniEmbodied/) · [论文](https://arxiv.org/abs/2508.05614) · [代码](https://github.com/ZJU-REAL/OmniEmbodied) · 访问方式：仓库提供基准数据，Hugging Face 提供专家轨迹
+  [主页](https://zju-real.github.io/OmniEmbodied/) · [代码](https://github.com/ZJU-REAL/OmniEmbodied) · 访问方式：仓库提供基准数据，Hugging Face 提供专家轨迹
+  入选依据 C2（英文审查说明）：OmniEAR/EAR-Bench supplies a structured-state simulator and expert trajectories for physically constrained action execution. Rename to match the official repository; paper title differs across revisions. [审查来源](https://github.com/ZJU-REAL/OmniEmbodied) · 2026-10-29
 
-- **PokeFlex** · 2024
+- **PokeFlex** · 2024 · 数据集
   面向可变形物体机器人操作的真实世界试验数据集，通过机器人戳动采集完整 360 度三维网格形变及对应力和力矩。
   `机器人 / 具身智能` · `物理 / 科学` · `三维网格` · `动作` · `机器人状态` · `多视角 RGB 视频`
   [主页](https://pokeflex-dataset.github.io/) · [论文](https://arxiv.org/abs/2409.17124) · [代码](https://github.com/pokeflex-dataset/reconstruction) · 访问方式：提供官方项目页和重建代码
+  入选依据 C2（英文审查说明）：Robot poking pairs actively deformed 3D meshes with applied forces and torques. [审查来源](https://arxiv.org/abs/2409.17124) · 2026-10-29
 
-- **Melting Pot** · 2022
+- **Melting Pot** · 2022 · 生成环境 / 工具
   多智能体社会交互环境套件。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/google-deepmind/meltingpot) · [论文](https://arxiv.org/abs/2211.13746) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：Interactive multi-agent substrates and co-player populations create controlled state-transition scenarios; an environment suite, not a fixed dataset. [审查来源](https://arxiv.org/abs/2211.13746) · 2026-10-29
 
-- **Physion** · 2021
+- **Physion** · 2021 · 评测集
   用于直觉物理学习和评测的合成视频数据集，通过碰撞、支撑、包含和形变等场景测试模型能否预测物体间接触及后续动态。
   `物理 / 科学` · `合成视频` · `深度` · `分割标注` · `物体状态`
   [主页](https://physion-benchmark.github.io/) · [论文](https://arxiv.org/abs/2106.08261) · [代码](https://github.com/cogtoolslab/physics-benchmarking-neurips2021) · 访问方式：开放下载
+  入选依据 C1（英文审查说明）：Physics simulations explicitly evaluate how scenes evolve into future states across collisions, rolling, sliding and deformable interactions. [审查来源](https://arxiv.org/abs/2106.08261) · 2026-10-29
 
-- **Physion** · 2021
-  通过物理仿真视频和问答评测视觉物理推理的数据集。
-  `物理 / 科学` · `游戏 / 虚拟环境` · `RGB 视频` · `问答` · `仿真状态`
-  [论文](https://arxiv.org/abs/2106.08261) · 访问方式：官方基准代码和数据
-
-- **CATER** · 2020
+- **CATER** · 2020 · 数据集
   由可组合物体运动生成的合成视频数据集，强调时空关系、动作组合和被遮挡目标的定位，适合研究对象中心的动态表示及长期状态追踪。
   `物理 / 科学` · `合成视频` · `物体状态` · `动作标签` · `三维元数据`
   [主页](https://rohitgirdhar.github.io/CATER/) · [论文](https://arxiv.org/abs/1910.04744) · [代码](https://github.com/rohitgirdhar/CATER) · 访问方式：开放下载
+  入选依据 C1（英文审查说明）：Controlled synthetic videos require tracking object motion, occlusion and recursive containment through time; an observable scene-state evolution task is explicit. [审查来源](https://rohitgirdhar.github.io/CATER/) · 2026-10-29
 
-- **CausalWorld** · 2020
+- **CausalWorld** · 2020 · 生成环境 / 工具
   用于因果结构和泛化研究的可干预机器人操作仿真环境。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `仿真状态` · `物体状态`
   [主页](https://sites.google.com/view/causal-world) · [论文](https://arxiv.org/abs/2010.04296) · [代码](https://github.com/rr-learning/CausalWorld) · 访问方式：官方环境
+  入选依据 C4（英文审查说明）：Official simulator provides step(action) and interventions on causal variables such as object mass and size, enabling controlled physical rollouts. [审查来源](https://github.com/rr-learning/CausalWorld) · 2026-10-29
 
-- **EGAD!** · 2020
-  面向机器人抓取训练与可复现评测的程序化物体数据集，包含 2000 余个覆盖不同几何复杂度和抓取难度的生成物体，以及 49 个可三维打印的评测物体。
-  `机器人 / 具身智能` · `物理 / 科学` · `三维网格` · `物体元数据`
-  [主页](https://dougsm.github.io/egad/) · [论文](https://arxiv.org/abs/2003.01314) · [代码](https://github.com/dougsm/egad) · 访问方式：官方项目提供数据下载和生成代码
-
-- **GraspNet-1Billion** · 2020
-  大规模杂乱场景六维抓取基准，提供 RGB-D 场景、物体模型和十亿级抓取标注。
-  `机器人 / 具身智能` · `RGB-D` · `三维网格` · `动作标签`
-  [主页](https://graspnet.net/) · [论文](https://arxiv.org/abs/1912.13470) · [代码](https://github.com/graspnet/graspnet-baseline) · 访问方式：官方基准下载
-
-- **ContactDB** · 2019
-  人手与物体接触区域和力方向数据集，支持触觉与视觉交互建模。
-  `机器人 / 具身智能` · `物理 / 科学` · `三维网格` · `物体状态` · `智能体位姿`
-  [主页](https://contactdb.cc.gatech.edu/) · [论文](https://arxiv.org/abs/1904.03796) · 访问方式：官方项目页
-
-- **PHYRE** · 2019
+- **PHYRE** · 2019 · 评测集
   二维物理推理基准，要求智能体通过放置物体完成目标，并在大量模板化关卡中测试跨任务泛化、试错效率和因果干预能力。
   `物理 / 科学` · `游戏 / 虚拟环境` · `仿真状态` · `动作` · `合成视频`
   [主页](https://phyre.ai/) · [论文](https://arxiv.org/abs/1908.05656) · [代码](https://github.com/facebookresearch/phyre) · 访问方式：开放生成工具
+  入选依据 C4（英文审查说明）：Physical puzzles in a 2D mechanics simulator allow interventions and resulting outcome evaluation. [审查来源](https://arxiv.org/abs/1908.05656) · 2026-10-29
 
-- **BlockPuzzle** · 2018
+- **BlockPuzzle** · 2018 · 生成环境 / 工具
   基于 MuJoCo 和 OpenAI Gym 的物理推理任务框架，通过积木拼图和稀疏奖励环境研究智能体对物理规则的学习、课程训练和跨任务迁移。
   `机器人 / 具身智能` · `物理 / 科学` · `仿真状态` · `动作` · `奖励` · `物体状态`
   [论文](https://arxiv.org/abs/1812.00091) · 访问方式：论文入口；环境访问待核验
+  入选依据 C2（英文审查说明）：MuJoCo/Gym physical-puzzle environments expose actions and resulting state transitions, with curriculum and imitation tasks. [审查来源](https://arxiv.org/abs/1812.00091) · 2026-10-29
 
-- **IntPhys** · 2018
+- **IntPhys** · 2018 · 评测集
   面向视觉直觉物理评测的合成数据集，通过可能与不可能的场景测试物体恒存、遮挡和支撑关系，避免模型只依赖单帧外观线索。
   `物理 / 科学` · `合成视频` · `深度` · `分割标注` · `场景元数据`
   [主页](https://intphys.cognitive-ml.fr/) · [论文](https://arxiv.org/abs/1803.07616) · [代码](https://github.com/rronan/IntPhys) · 访问方式：开放下载
+  入选依据 C1（英文审查说明）：Possible/impossible physical event videos are evaluated using future semantic-mask prediction and physical plausibility. [审查来源](https://arxiv.org/abs/1803.07616) · 2026-10-29
 
-- **ShapeStacks** · 2018
+- **ShapeStacks** · 2018 · 评测集
   通过程序化堆叠不同形状物体生成的合成数据和工具，重点研究稳定性、支撑关系及从图像推断三维物理结构。
   `物理 / 科学` · `合成视频` · `三维状态` · `物体元数据` · `仿真状态`
   [论文](https://arxiv.org/abs/1804.08018) · [代码](https://github.com/ogroth/shapestacks) · 访问方式：开放生成工具
+  入选依据 C4（英文审查说明）：Initial stack configurations are paired with simulated structural-stability outcomes, supporting physical future-outcome reasoning. Not a dense trajectory dataset. [审查来源](https://arxiv.org/abs/1804.08018) · 2026-10-29
 
-- **TextWorld** · 2018
+- **TextWorld** · 2018 · 生成环境 / 工具
   文本交互式世界生成器，提供语言观测、动作和隐藏状态转移。
   `游戏 / 虚拟环境` · `文本` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/microsoft/TextWorld) · [论文](https://arxiv.org/abs/1806.11532) · 访问方式：开源生成器与游戏
+  入选依据 C2（英文审查说明）：Generated interactive games expose state tracking, actions and rewards through a documented RL environment. [审查来源](https://arxiv.org/abs/1806.11532) · 2026-10-29
 
-- **MIT Planar Pushing Dataset** · 2016
+- **MIT Planar Pushing Dataset** · 2016 · 数据集
   高精度平面推动实验数据集，系统记录不同物体、接触位置、推动方向和摩擦条件下的动作与物体运动，用于学习接触动力学。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `物体状态` · `轨迹` · `机器人状态`
   [论文](https://arxiv.org/abs/1604.04038) · [代码](https://github.com/mcubelab/pdproc) · 访问方式：提供官方处理代码仓库
+  入选依据 C2（英文审查说明）：Timestamped pusher/object poses and contact forces record controlled physical pushing experiments. [审查来源](https://arxiv.org/abs/1604.04038) · 2026-10-29
 
-- **Physical Prediction Dataset** · 2016
-  用于视频物理预测的合成碰撞和运动序列数据集。
-  `物理 / 科学` · `RGB 视频` · `仿真状态`
-  [论文](https://arxiv.org/abs/1608.04239) · 访问方式：仅论文入口；数据访问待核验
-
-- **Physics 101** · 2016
+- **Physics 101** · 2016 · 数据集
   通过真实视频记录物体在斜面上的运动，并提供材料、质量、角度和运动信息，用于从视觉估计物理属性及预测动力学。
   `物理 / 科学` · `RGB 视频` · `物体元数据` · `轨迹`
-  [主页](https://phys101.csail.mit.edu/) · [论文](https://arxiv.org/abs/1511.07439) · 访问方式：开放项目访问
+  [主页](https://phys101.csail.mit.edu/) · 访问方式：开放项目访问
+  入选依据 C4（英文审查说明）：Official videos depict sliding, collisions, springs and falls; physical-property learning and outcome prediction are explicit. [审查来源](https://phys101.csail.mit.edu/) · 2026-10-29
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### 世界模型评测与诊断（74）
+### 世界模型评测与诊断（39）
 
-- **4DSynth** · 2026
+- **4DSynth** · 2026 · 生成环境 / 工具
   面向动态具身仿真的可控程序化四维世界合成资源。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.26947) · 访问方式：论文入口；数据访问待核验
+  入选依据 C4（英文审查说明）：Procedural environments expose animated actors, trajectories and physics-ready state; the paper defines a generated navigation benchmark. Generator, not a downloaded dataset. [审查来源](https://arxiv.org/abs/2608.26947) · 2026-10-29
 
-- **CaliBench** · 2026
+- **CaliBench** · 2026 · 评测集
   检验视频世界模型随机物理结果校准程度的可解释基准。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.16829) · 访问方式：论文入口；发布状态待核验
+  入选依据 C5（英文审查说明）：Video world-model outputs are tested against known physical outcome distributions with a defined calibration protocol. [审查来源](https://arxiv.org/abs/2608.16829) · 2026-10-29
 
-- **CamWorldQA** · 2026
+- **CamWorldQA** · 2026 · 评测集
   相机控制世界视频生成的人工感知质量评测集。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `相机位姿`
   [论文](https://arxiv.org/abs/2608.18710) · 访问方式：论文入口；发布状态待核验
+  入选依据 C5（英文审查说明）：Camera-controlled generated videos are evaluated for viewpoint consistency, motion coherence and content preservation; perceptual quality is not physical accuracy. [审查来源](https://arxiv.org/abs/2608.18710) · 2026-10-29
 
-- **Complex-Scene Multi-Person Motion Forecasting** · 2026
-  复杂场景多人运动轨迹预测数据与基准。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.27039) · 访问方式：论文入口；数据访问待核验
-
-- **DrivingGen** · 2026
+- **DrivingGen** · 2026 · 评测集
   从视觉质量和机器人轨迹物理合理性两方面评测自动驾驶生成式视频世界模型的基准。
   `自动驾驶` · `RGB 视频` · `轨迹`
   [主页](https://drivinggen-bench.github.io/) · [论文](https://arxiv.org/abs/2601.01528) · [代码](https://github.com/youngzhou1999/DrivingGen) · 访问方式：数据集已在 Hugging Face 提供
+  入选依据 C5（英文审查说明）：Dedicated driving world-model evaluation measures trajectory plausibility, temporal consistency and control conditioning; source clips overlap existing datasets. [审查来源](https://arxiv.org/abs/2601.01528) · 2026-10-29
 
-- **EgoSafetyBench** · 2026
-  评测具身视觉语言模型能否根据第一人称视频在运行时识别危险并提供安全防护的诊断基准。
-  `第一人称 / 人类活动` · `机器人 / 具身智能` · `RGB 视频` · `语言` · `动作标签`
-  [论文](https://arxiv.org/abs/2607.00218) · [代码](https://github.com/AIM-Intelligence/EgoSafetyBench) · 访问方式：数据集已在 Hugging Face 提供
-
-- **Embodied Scene Rearrangement Planning** · 2026
+- **Embodied Scene Rearrangement Planning** · 2026 · 生成环境 / 工具
   具身场景重排规划任务、环境状态和评测基准。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.27371) · [主页](https://pie-lab.cn/ESRP/) · 访问方式：提供官方项目和论文入口
+  入选依据 C2（英文审查说明）：OmniGibson scene-rearrangement tasks execute agents from egocentric observations toward target configurations. Scene pairs are task specifications, not recorded rollouts. [审查来源](https://arxiv.org/abs/2608.27371) · 2026-10-29
 
-- **Game2World** · 2026
-  游戏界面去除和世界模型训练的成对视频、野外片段及 UI 资产数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.24680) · [主页](https://github.com/Dongping-Chen/Game2World) · 访问方式：提供官方项目和论文入口
-
-- **GeoCon-Bench** · 2026
-  评测生成视频跨帧几何一致性的场景数据与指标基准。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.09594) · 访问方式：论文入口；数据访问待核验
-
-- **GigaBrain Challenge 2026 World Models Track Dataset** · 2026
+- **GigaBrain Challenge 2026 World Models Track Dataset** · 2026 · 评测集
   用于轨迹条件视频生成和闭环 VLA 交互评测的多任务、多视角视频与状态轨迹数据。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `轨迹` · `机器人状态` · `深度`
   [主页](https://gigaai-research.github.io/GigaBrain-Challenge-2026/guide/world-model.html) · [代码](https://github.com/open-gigaai/CVPR-2026-Workshop-WM-Track) · 访问方式：数据集和排行榜已在 Hugging Face 提供
+  入选依据 C5（英文审查说明）：Official track supplies manipulation trajectories and evaluates generated world-model videos as VLA evaluators. Data access requires an agreement. [审查来源](https://gigaai-research.github.io/GigaBrain-Challenge-2026/guide/world-model.html) · 2026-10-29
 
-- **GigaWorld-1 / WMBench** · 2026
-  面向机器人策略评测的世界模型基准，覆盖闭环控制、分布外回放和多源长时数据。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `轨迹` · `奖励`
-  [代码](https://github.com/Yvonne-OH/Giga-World-1-projectpage) · 访问方式：官方仓库包含闭环和 OOD 回放产物，完整数据访问待核验
-
-- **H2R-Bench** · 2026
+- **H2R-Bench** · 2026 · 评测集
   评测人类操作视频向机器人操作视频跨本体生成的基准。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作标签` · `物体状态`
   [论文](https://arxiv.org/abs/2608.13049) · 访问方式：论文入口；发布状态待核验
+  入选依据 C5（英文审查说明）：World-model video generation is tested against human demonstrations, embodiment constraints, action events and object responses. [审查来源](https://arxiv.org/abs/2608.13049) · 2026-10-29
 
-- **HarnessEval-W** · 2026
+- **HarnessEval-W** · 2026 · 评测集
   带证据推理树的视觉世界模型动态评测案例集。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `文本` · `问答`
   [论文](https://arxiv.org/abs/2608.16859) · 访问方式：论文入口；发布状态待核验
+  入选依据 C5（英文审查说明）：Dedicated world-model evaluation uses 330 cases to diagnose physical, causal and world-state evolution in generated rollouts. [审查来源](https://arxiv.org/abs/2608.16859) · 2026-10-29
 
-- **MILO HOI Benchmark** · 2026
-  人-物交互三维重建数据与评测资源。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.27407) · [主页](https://ac5113.github.io/MILO) · 访问方式：提供官方项目和论文入口
-
-- **Natural-Input Failure Discovery Benchmark** · 2026
-  用于发现世界模型自然输入灾难性失效的可复现测试案例。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.22421) · 访问方式：论文入口；数据访问待核验
-
-- **PAWBench** · 2026
+- **PAWBench** · 2026 · 评测集
   评测概率分布与世界动态对齐程度的世界模型基准。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.27345) · 访问方式：论文入口；数据访问待核验
+  入选依据 C5（英文审查说明）：World-model rollout outcome distributions are evaluated against reference probabilities under matched initial observations and actions. [审查来源](https://arxiv.org/abs/2608.27345) · 2026-10-29
 
-- **PersonaShot** · 2026
-  面向多镜头人物叙事连续性的千段视频和 16 项指标基准。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.16717) · 访问方式：论文入口；数据访问待核验
-
-- **PhAIL** · 2026
+- **PhAIL** · 2026 · 评测集
   Franka FR3 真机 VLA 评测数据，包含多视角视频、遥测、动作结果和安全停止回放。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `机器人状态` · `动作` · `奖励` · `轨迹`
   [主页](https://phail.ai/releases/v1.0) · [论文](https://arxiv.org/abs/2605.29710) · 访问方式：官方发布包含视频、遥测和结果
+  入选依据 C1（英文审查说明）：The paper identifies real-robot per-rollout artifacts and time-to-success distributions with teleoperation references. Inspect artifact fields before action-conditioned use. [审查来源](https://arxiv.org/abs/2605.29710) · 2026-10-29
 
-- **PlayWorld** · 2026
+- **PlayWorld** · 2026 · 评测集
   由智能体玩家完成长时目标的交互式世界模型评测基准。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.13552) · [代码](https://github.com/kxding/PlayWorld) · 访问方式：论文入口；发布状态待核验
+  入选依据 C5（英文审查说明）：Agent players interact with world models across 171 objectives testing persistent state, geometry and out-of-sight evolution. [审查来源](https://arxiv.org/abs/2608.13552) · 2026-10-29
 
-- **PRIMO-R1 Process Reasoning Dataset** · 2026
-  面向机器人过程进度推理的 SFT、RL 和基准数据，包含失败检测与进度链式标注。
-  `机器人 / 具身智能` · `RGB 视频` · `语言` · `奖励` · `动作标签`
-  [主页](https://huggingface.co/datasets/LeonOverload/primo-bench-json) · [论文](https://arxiv.org/abs/2603.28545) · 访问方式：基准 JSON 和模型/数据集合已在 Hugging Face 提供
-
-- **R2M-Bench** · 2026
+- **R2M-Bench** · 2026 · 评测集
   评测交互式视频世界模型重访记忆和相对一致性的基准。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.27328) · 访问方式：论文入口；数据访问待核验
+  入选依据 C5（英文审查说明）：Controlled leave-and-return trajectories evaluate persistent state and revisit memory in action-conditioned video world models. [审查来源](https://arxiv.org/abs/2608.27328) · 2026-10-29
 
-- **RoboDojo RealEval** · 2026
+- **RoboDojo RealEval** · 2026 · 生成环境 / 工具
   面向真机机器人任务的远程评测基准，提供任务配置、仿真环境和结果产物。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `场景元数据`
-  [主页](https://robodojo-benchmark.com/) · [代码](https://github.com/RoboDojo-Benchmark/RoboDojo) · 访问方式：官方网页和仓库可用；完整真机回放仍待核验
+  [主页](https://robodojo-benchmark.com/) · [代码](https://github.com/RoboDojo-Benchmark/RoboDojo) · 访问方式：仅评测用途的仿真发布；不是已发布的训练数据集
+  入选依据 C2（英文审查说明）：Official release provides simulator clients, manipulation tasks and result artifacts; it explicitly describes an eval-only release, not a fixed training corpus. [审查来源](https://github.com/RoboDojo-Benchmark/RoboDojo) · 2026-10-29
 
-- **RoboReward** · 2026
-  面向机器人任务进度与成功判断的真实回放数据集和奖励模型基准。
-  `机器人 / 具身智能` · `RGB 视频` · `语言` · `奖励` · `轨迹`
-  [主页](https://huggingface.co/datasets/teetone/RoboReward) · [代码](https://crfm.stanford.edu/helm/robo-reward-bench/) · 访问方式：数据集已在 Hugging Face 提供，基准可通过 HELM 访问
-
-- **RoboStressBench** · 2026
-  评测视觉语言模型在具身场景物理视觉扰动下鲁棒性的诊断数据集与基准。
-  `机器人 / 具身智能` · `RGB 视频` · `语言` · `场景元数据`
-  [主页](https://yuevii.github.io/robostressbench-page/) · [论文](https://arxiv.org/abs/2606.00828) · [代码](https://github.com/YUEVII/RoboStressBench) · 访问方式：提供官方 Hugging Face 数据入口和评测代码
-
-- **RoboVista** · 2026
-  由机器人专家标注、覆盖真实机器人决策点的视觉问答基准。
-  `机器人 / 具身智能` · `RGB 视频` · `问答` · `语言`
-  [主页](https://berkeleyautomation.github.io/robovista/) · [代码](https://github.com/ehehee/robovista) · 访问方式：数据集、浏览器和排行榜均已公开
-
-- **Sci-VBench** · 2026
-  跨科学领域评测知识与因果推理视频生成的专家标注基准。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `文本`
-  [论文](https://arxiv.org/abs/2608.09873) · 访问方式：论文入口；发布状态待核验
-
-- **SemComp-Data** · 2026
+- **SemComp-Data** · 2026 · 评测集
   面向视频语义任务完成评测的六领域参考图像、指令和结果视频数据。
   `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `文本`
   [论文](https://arxiv.org/abs/2608.17426) · 访问方式：论文入口；发布状态待核验
+  入选依据 C1（英文审查说明）：Reference images and instructions are paired with outcome videos for outcome prediction; intermediate physical trajectories are explicitly not required by the protocol. [审查来源](https://arxiv.org/abs/2608.17426) · 2026-10-29
 
-- **SpatialCrafter Benchmark** · 2026
-  从单图生成可探索三维代理世界的评测资源。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.27073) · [主页](https://fangchuan.github.io/SpatialCrafter/) · 访问方式：提供官方项目和论文入口
-
-- **ST-BiBench** · 2026
+- **ST-BiBench** · 2026 · 生成环境 / 工具
   系统评测多模态模型在双臂具身任务中多流时空协调能力的分层基准。
   `机器人 / 具身智能` · `多视角 RGB 视频` · `动作` · `机器人状态` · `语言`
   [论文](https://arxiv.org/abs/2602.08392) · [代码](https://github.com/stbibench/ST-BiBench) · 访问方式：评测代码和基准素材已提供
+  入选依据 C2（英文审查说明）：RoboTwin-based closed-loop benchmark iterates perception and 16D robot actuation with downloadable task assets; generator rather than a fixed transition corpus. [审查来源](https://github.com/stbibench/ST-BiBench) · 2026-10-29
 
-- **SurgWMBench** · 2026
+- **SurgWMBench** · 2026 · 评测集
   外科器械短时运动规划与连续 rollout 稳定性评测基准。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.08070) · 访问方式：论文入口；数据访问待核验
+  入选依据 C5（英文审查说明）：Historical instrument trajectories and surgical image sequences condition short-horizon motion and future visual-state evaluation. [审查来源](https://arxiv.org/abs/2608.08070) · 2026-10-29
 
-- **Teaching Monster Challenge** · 2026
-  面向学习者画像适配的教学视频生成基准及人工判断集。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.08852) · 访问方式：论文入口；数据访问待核验
-
-- **TrapVLA Benchmark** · 2026
+- **TrapVLA Benchmark** · 2026 · 评测集
   可配置视觉语言动作模型失效模式的机器人评测集。
   `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
   [论文](https://arxiv.org/abs/2608.26578) · [主页](https://john-liua.github.io/TrapVLA/) · 访问方式：提供官方项目和论文入口
+  入选依据 C2（英文审查说明）：Trap-LIBERO and Trap-RoboTwin synthesize robot target trajectories with configured failure outcomes; derived from existing simulation suites. [审查来源](https://arxiv.org/abs/2608.26578) · 2026-10-29
 
-- **VBVR-Pro** · 2026
-  包含 300 个程序化可验证视觉推理任务的数据与评测套件。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.26105) · 访问方式：论文入口；数据访问待核验
-
-- **VGI-Bench** · 2026
-  评测视频生成模型视觉推理能力的 27 项任务基准。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `文本` · `问答`
-  [论文](https://arxiv.org/abs/2608.19583) · 访问方式：论文入口；发布状态待核验
-
-- **VideoArgus-Bench** · 2026
-  统一视频生成与编辑评测的冻结 rubric 数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `文本` · `仿真状态`
-  [论文](https://arxiv.org/abs/2608.05485) · [主页](https://zzzmyyzeng.github.io/VideoArgus) · 访问方式：提供官方项目和论文入口
-
-- **ViewBench** · 2026
+- **ViewBench** · 2026 · 评测集
   用于评测相机条件长时视频世界模型视角一致性和闭环回访一致性的数据集与诊断基准。
   `游戏 / 虚拟环境` · `RGB 视频` · `深度` · `相机位姿`
-  [主页](https://huggingface.co/datasets/JEdward/viewbench-dataset) · [论文](https://arxiv.org/abs/2602.07854) · [代码](https://github.com/jedward225/viewbench-dataset) · 访问方式：训练划分已在 Hugging Face 和 ModelScope 提供
+  [主页](https://huggingface.co/datasets/JEdward/viewbench-dataset) · [论文](https://arxiv.org/abs/2602.07854) · [代码](https://github.com/jedward225/viewbench-dataset) · 访问方式：公开训练划分入口；不含保留评测数据
+  入选依据 C5（英文审查说明）：Released UE5 videos contain per-frame SE(3) poses and loop trajectories for camera-conditioned world models. The public training split excludes the held-out evaluation set. [审查来源](https://github.com/jedward225/viewbench-dataset) · 2026-10-29
 
-- **VLAC-Cut Benchmark** · 2026
+- **VLAC-Cut Benchmark** · 2026 · 评测集
   对机器人回放视频进行非单调进度估计和失败恢复分段的过程级轨迹基准。
   `机器人 / 具身智能` · `RGB 视频` · `语言` · `奖励` · `动作`
   [主页](https://huggingface.co/datasets/InternRobotics/VLAC-Cut-Benchmark) · [代码](https://github.com/InternRobotics/VLAC-Cut) · 访问方式：基准和完整数据已在 Hugging Face 提供
+  入选依据 C1（英文审查说明）：Benchmark robot rollout videos carry temporal progress and advancement/regression/recovery segmentation. They are derived rollouts, not a new independent collection. [审查来源](https://github.com/InternRobotics/VLAC-Cut) · 2026-10-29
 
-- **WBench** · 2026
+- **WBench** · 2026 · 评测集
   评测交互式视频世界模型多轮动作响应、视觉质量和长期一致性的综合基准。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `文本`
   [主页](https://huggingface.co/datasets/meituan-longcat/WBench) · [代码](https://github.com/meituan-longcat/WBench) · 访问方式：数据集已在 Hugging Face 提供
+  入选依据 C5（英文审查说明）：Official repository defines multi-turn interactive video world-model evaluation across multiple capabilities and control types. [审查来源](https://github.com/meituan-longcat/WBench) · 2026-10-29
 
-- **WorldArena** · 2026
-  评测动作条件机器人世界模型和数据引擎能力的公开排行榜与基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态`
-  [主页](https://huggingface.co/spaces/WorldArena/WorldArena) · [论文](https://arxiv.org/abs/2607.29302) · [代码](https://github.com/boundless-large-model/boundless-world-model) · 访问方式：提供官方项目和代码入口
+- **WMBench (GigaWorld-1)** · 2026 · 评测集
+  以真实机器人执行与匹配的模拟回放评测世界模型的动作忠实性、轨迹一致性和闭环策略表现。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `轨迹` · `奖励`
+  [主页](https://open-gigaai.github.io/giga-world-1/) · 访问方式：官方评测与数据入口；未实测完整下载
+  入选依据 C5（英文审查说明）：Official WMBench protocol pairs teleoperation and real policy executions with simulated rollouts, measuring trajectory fidelity and closed-loop success correlation. Do not count the entire training mixture as released benchmark data. [审查来源](https://open-gigaai.github.io/giga-world-1/) · 2026-10-29
 
-- **WorldMark** · 2026
+- **WorldMark** · 2026 · 评测集
   覆盖多视角和多领域动作序列的交互式视频世界模型统一评测套件。
   `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `相机位姿`
   [主页](https://alayalab.github.io/WorldMark/) · [论文](https://arxiv.org/abs/2604.21686) · [代码](https://github.com/AlayaLab/WorldMark) · 访问方式：官方提示、动作序列和评测代码可用
+  入选依据 C5（英文审查说明）：A common action vocabulary and 500 standardized cases test command following and response dynamics in interactive world models. [审查来源](https://arxiv.org/abs/2604.21686) · 2026-10-29
 
-- **WRBench** · 2026
+- **WRBench** · 2026 · 评测集
   诊断相机运动过程中视频世界模型是否保持持久世界状态的相机可控生成基准。
   `游戏 / 虚拟环境` · `RGB 视频` · `相机位姿` · `文本`
   [主页](https://jinplu.github.io/WRBench/) · [论文](https://arxiv.org/abs/2606.20545) · [代码](https://github.com/JinPLu/WRBench) · 访问方式：Hugging Face 提供数据、评测产物和排行榜
+  入选依据 C5（英文审查说明）：Camera motion intervenes on observability to test persistent world-state evolution when targets leave and re-enter view. [审查来源](https://arxiv.org/abs/2606.20545) · 2026-10-29
 
-- **BEAR** · 2025
-  评测多模态模型原子级具身能力的基准。
-  `机器人 / 具身智能` · `RGB 视频` · `语言` · `动作`
-  [代码](https://github.com/yqi19/BEAR-official) · 访问方式：官方仓库和基准资源可用
-
-- **DriveAction** · 2025
-  基于真实驾驶操作标注的人类式驾驶决策问答基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2506.05667) · 访问方式：论文入口；发布状态待核验
-
-- **EmbodiedBench** · 2025
+- **EmbodiedBench** · 2025 · 生成环境 / 工具
   跨导航、操作、ALFRED 和 Habitat 环境评测多模态模型作为具身智能体能力的综合基准。
   `机器人 / 具身智能` · `游戏 / 虚拟环境` · `RGB 视频` · `动作` · `语言` · `轨迹`
   [主页](https://embodiedbench.github.io/) · [论文](https://arxiv.org/abs/2502.09560) · [代码](https://github.com/EmbodiedBench/EmbodiedBench) · 访问方式：基准数据和生成轨迹已在 Hugging Face 提供
+  入选依据 C2（英文审查说明）：Interactive testing tasks execute navigation and manipulation actions in four environments; retain as an environment benchmark, not a fixed dataset. [审查来源](https://arxiv.org/abs/2502.09560) · 2026-10-29
 
-- **ENACT** · 2025
+- **ENACT** · 2025 · 评测集
   从第一人称交互评测具身认知的前向与逆向世界建模基准，提供问答、回放和 HDF5 数据。
   `机器人 / 具身智能` · `第一人称 / 人类活动` · `RGB 视频` · `动作` · `物体状态` · `轨迹`
   [主页](https://huggingface.co/datasets/MLL-Lab/ENACT) · [代码](https://github.com/mll-lab-nu/ENACT) · 访问方式：ENACT 问答、HDF5、回放和分段数据可用
+  入选依据 C5（英文审查说明）：Official protocol explicitly evaluates future-state sequences from actions and inverse action sequences, with download and generation instructions. [审查来源](https://github.com/mll-lab-nu/ENACT) · 2026-10-29
 
-- **EXPRESS-Bench** · 2025
+- **EXPRESS-Bench** · 2025 · 评测集
   评测具身问答智能体在连续视觉观察中记忆、定位和推理能力的基准。
   `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `问答` · `语言` · `轨迹`
   [主页](https://hcplab-sysu.github.io/EXPRESS-Bench/) · [代码](https://github.com/HCPLab-SYSU/EXPRESS-Bench) · 访问方式：官方项目页和基准代码可用
+  入选依据 C3（英文审查说明）：Official release identifies 777 exploration trajectories, waypoint observations and full episodes; retain trajectory data rather than generic QA alone. [审查来源](https://github.com/HCPLab-SYSU/EXPRESS-Bench) · 2026-10-29
 
-- **Guardian FailCoT / RoboFail** · 2025
-  机器人失败推理与 OOD 失败评测数据，包含规划失败、执行失败和子任务标注。
-  `机器人 / 具身智能` · `多视角 RGB 视频` · `语言` · `物体状态` · `动作标签`
-  [主页](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 访问方式：失败数据集已在 Hugging Face 提供
-
-- **ManipBench** · 2025
-  评测视觉语言模型低层机器人操作推理的基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2505.09698) · [主页](https://manipbench.github.io/) · 访问方式：论文入口；发布状态待核验
-
-- **MMR** · 2025
-  多目标、多粒度对象及部件推理分割数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2503.13881) · 访问方式：论文入口；发布状态待核验
-
-- **ORAD-3D** · 2025
+- **ORAD-3D** · 2025 · 评测集
   面向越野自动驾驶的多天气、多地形三维数据集，并包含越野世界模型和轨迹规划基准。
   `自动驾驶` · `RGB 视频` · `三维标注` · `轨迹` · `GPS / 惯性测量单元`
   [主页](https://modelscope.cn/datasets/Georgehhhh/ORAD-3D) · [论文](https://arxiv.org/abs/2510.16500) · [代码](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) · 访问方式：已在 ModelScope 和百度云公开发布
+  入选依据 C5（英文审查说明）：The paper explicitly defines an off-road world-model evaluation track; retain that track, not static free-space detection as inclusion evidence. [审查来源](https://arxiv.org/abs/2510.16500) · 2026-10-29
 
-- **Robo2VLM-1** · 2025
-  从真实机器人轨迹生成的空间、目标和交互推理问答数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2505.15517) · 访问方式：论文入口；发布状态待核验
-
-- **RoboArena** · 2025
-  分布式真机策略评测数据集，包含成功与失败回放、偏好反馈和动作状态日志。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `奖励` · `轨迹`
-  [主页](https://robo-arena.github.io/) · [代码](https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026) · 访问方式：评测回放和反馈已在 Hugging Face 提供
-
-- **SimWorld Benchmark** · 2025
-  仿真条件自动驾驶场景生成数据与评测基准。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2503.13952) · 访问方式：论文入口；发布状态待核验
-
-- **STU** · 2025
-  自动驾驶道路异常的相机与稠密三维激光雷达分割数据集。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2505.02148) · 访问方式：论文入口；发布状态待核验
-
-- **WorldGym** · 2025
-  使用动作条件世界模型进行真实机器人策略安全评测的环境。
-  `机器人 / 具身智能` · `RGB 视频` · `动作` · `场景元数据`
-  [论文](https://arxiv.org/abs/2506.00613) · 访问方式：论文入口；发布状态待核验
-
-- **WoWBench** · 2025
-  用于评测物理一致性和因果推理的机器人交互世界模型基准样本。
-  `机器人 / 具身智能` · `物理 / 科学` · `RGB 视频` · `动作` · `机器人状态` · `文本`
-  [主页](https://huggingface.co/datasets/WoW-world-model/WoW-1-Benchmark-Samples) · [代码](https://github.com/wow-world-model/wow-world-model) · 访问方式：WoW 基准样本已在 Hugging Face 公开
-
-- **AeroVerse** · 2024
-  面向无人机具身世界模型的综合基准套件，论文描述了真实与仿真的预训练数据、五类指令微调数据以及覆盖感知、推理、导航、规划和动作的评测。
-  `机器人 / 具身智能` · `城市 / 三维场景` · `RGB 视频` · `文本` · `智能体位姿` · `动作` · `问答`
-  [论文](https://arxiv.org/abs/2408.15511) · 访问方式：仅有论文入口；数据发布和访问状态待核验
-
-- **MMWorld** · 2024
+- **MMWorld** · 2024 · 评测集
   用于多学科、多维度视频世界理解评测的人工标注与合成数据集，覆盖解释、反事实思考和未来预测等能力。
   `物理 / 科学` · `第一人称 / 人类活动` · `RGB 视频` · `问答` · `文本`
   [主页](https://mmworld-bench.github.io/) · [论文](https://arxiv.org/abs/2406.08407) · [代码](https://github.com/UCSB-AI/MMWorld) · 访问方式：提供官方基准仓库和项目页
+  入选依据 C5（英文审查说明）：The source explicitly evaluates world-model reasoning with future-prediction and counterfactual questions; restrict inclusion evidence to those tracks. [审查来源](https://arxiv.org/abs/2406.08407) · 2026-10-29
 
-- **Perception Test** · 2023
+- **Perception Test** · 2023 · 评测集
   面向多模态模型的真实视频感知、记忆、物理和抽象推理评测集。
   `第一人称 / 人类活动` · `物理 / 科学` · `RGB 视频` · `音频` · `问答`
   [主页](https://github.com/deepmind/perception_test) · [论文](https://arxiv.org/abs/2305.13786) · 访问方式：官方基准
+  入选依据 C4（英文审查说明）：The benchmark explicitly includes predictive and counterfactual physical reasoning in designed videos; static tracking/classification tracks alone are not the inclusion basis. [审查来源](https://arxiv.org/abs/2305.13786) · 2026-10-29
 
-- **SceneReplica** · 2023
-  用于复现真实机器人抓取与放置实验的标准化场景基准，提供 YCB 物体场景、RGB-D 元数据、抓取数据和仿真到真实环境的搭建工具。
-  `机器人 / 具身智能` · `RGB-D` · `三维元数据` · `物体状态` · `动作`
-  [主页](https://irvlutd.github.io/SceneReplica/) · [论文](https://arxiv.org/abs/2306.15620) · [代码](https://github.com/IRVLUTD/SceneReplica) · 访问方式：官方仓库提供场景、抓取和模型文件入口
-
-- **XLand-MiniGrid** · 2023
+- **XLand-MiniGrid** · 2023 · 生成环境 / 工具
   可扩展的程序生成网格世界与任务规则系统，可生成多样的状态、动作和目标条件轨迹。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
-  [代码](https://github.com/corl-team/xland-minigrid) · [论文](https://arxiv.org/abs/2107.12808) · 访问方式：开源环境与任务生成器
+  [代码](https://github.com/corl-team/xland-minigrid) · 访问方式：开源环境与任务生成器
+  入选依据 C2（英文审查说明）：Official JAX interface exposes step(action), observation, reward and internal state. [审查来源](https://github.com/corl-team/xland-minigrid) · 2026-10-29
 
-- **SHIFT** · 2022
-  覆盖天气、时间和交通变化的离散与连续域迁移合成驾驶数据集。
-  `自动驾驶` · `RGB 视频` · `深度` · `光流` · `三维框` · `分割标注`
-  [主页](https://www.vis.xyz/shift/) · [论文](https://arxiv.org/abs/2206.08367) · [代码](https://github.com/SysCV/shift-dev) · 访问方式：官方数据和代码
-
-- **TAP-Vid** · 2022
+- **TAP-Vid** · 2022 · 评测集
   视频任意点跟踪基准，覆盖真实、运动捕捉和合成视频。
   `第一人称 / 人类活动` · `物理 / 科学` · `RGB 视频` · `轨迹` · `Occlusion Labels`
   [主页](https://deepmind-tapir.github.io/) · [论文](https://arxiv.org/abs/2211.03726) · [代码](https://github.com/google-deepmind/tapnet) · 访问方式：官方基准代码和数据
+  入选依据 C3（英文审查说明）：Video point tracks expose object-surface motion trajectories; use causal train/target splits for prediction, since the native tracking protocol can observe future frames. [审查来源](https://arxiv.org/abs/2211.03726) · 2026-10-29
 
-- **VIMA-Bench** · 2022
+- **VIMA-Bench** · 2022 · 数据集
   多模态提示驱动的机器人操作任务与程序化评测基准。
   `机器人 / 具身智能` · `RGB-D` · `动作` · `语言` · `物体元数据`
   [主页](https://vimalabs.github.io/) · [论文](https://arxiv.org/abs/2210.03094) · [代码](https://github.com/vimalabs/VIMA) · 访问方式：官方基准代码
+  入选依据 C2（英文审查说明）：Procedurally generated manipulation tasks include more than 600K expert trajectories and a defined generalization protocol. [审查来源](https://arxiv.org/abs/2210.03094) · 2026-10-29
 
-- **Crafter** · 2021
+- **Crafter** · 2021 · 生成环境 / 工具
   开放世界生存环境。
   `游戏 / 虚拟环境` · `RGB 视频` · `游戏状态` · `动作` · `奖励`
   [代码](https://github.com/danijar/crafter) · [论文](https://arxiv.org/abs/2109.06780) · 访问方式：开源环境
+  入选依据 C2（英文审查说明）：Visual survival-game episodes include actions, rewards and persistent crafting/resource state; generator, not a recorded dataset. [审查来源](https://arxiv.org/abs/2109.06780) · 2026-10-29
 
-- **Distracting Control Suite** · 2021
+- **Distracting Control Suite** · 2021 · 生成环境 / 工具
   在连续控制视频中加入背景、颜色和相机变化的视觉动力学鲁棒性基准。
   `机器人 / 具身智能` · `RGB 视频` · `仿真状态` · `动作` · `奖励`
   [代码](https://github.com/google-research/google-research/tree/master/distracting_control) · [论文](https://arxiv.org/abs/2101.02722) · 访问方式：开源基准生成器
+  入选依据 C2（英文审查说明）：Extends DM Control interactions with systematic visual distractions; a derived control environment, not an independent recorded collection. [审查来源](https://arxiv.org/abs/2101.02722) · 2026-10-29
 
-- **MiniHack** · 2021
+- **MiniHack** · 2021 · 生成环境 / 工具
   基于 NetHack 的可组合环境，用于研究规划、记忆和长期状态演化。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `文本` · `奖励`
   [代码](https://github.com/facebookresearch/minihack) · [论文](https://arxiv.org/abs/2109.13202) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：NetHack-based customizable interactive environments expose rich action-conditioned game dynamics; derived environment generator. [审查来源](https://arxiv.org/abs/2109.13202) · 2026-10-29
 
-- **ROAD** · 2021
+- **ROAD** · 2021 · 派生数据 / 子集
   面向自动驾驶事件理解的道路视频数据集，提供道路智能体、位置、动作和事件级标注，支持从连续驾驶视频中推理交通参与者状态变化。
   `自动驾驶` · `RGB 视频` · `二维框` · `动作标签` · `语义标签` · `轨迹`
   [主页](https://github.com/gurkirt/road-dataset) · 访问方式：官方 GitHub 仓库提供数据资源和代码
+  入选依据 C3（英文审查说明）：Official release provides per-frame agent boxes linked through persistent tracks over Oxford RobotCar videos. This is derived annotation data; native detection metrics are not forecasting metrics. [审查来源](https://github.com/gurkirt/road-dataset) · 2026-10-29
 
-- **bsuite** · 2020
+- **bsuite** · 2020 · 生成环境 / 工具
   用于分析强化学习核心能力的可复现实验环境和轨迹基准。
   `游戏 / 虚拟环境` · `游戏状态` · `动作` · `奖励` · `轨迹`
   [代码](https://github.com/google-deepmind/bsuite) · [论文](https://arxiv.org/abs/1908.03568) · 访问方式：开源基准
+  入选依据 C2（英文审查说明）：Official interface documents observation arrays, discrete action specifications and env.step(action), enabling controlled state-transition collection. [审查来源](https://github.com/google-deepmind/bsuite) · 2026-10-29
 
-- **CLEVRER** · 2020
+- **CLEVRER** · 2020 · 评测集
   面向视频物理与因果推理的合成基准，通过碰撞和运动事件考察描述、解释、预测与反事实推理能力，尤其适合诊断模型是否学习到可组合的物理因果机制。
   `物理 / 科学` · `合成视频` · `物体元数据` · `轨迹` · `逻辑程序` · `问答`
   [主页](https://clevrer.csail.mit.edu/) · [论文](https://arxiv.org/abs/1910.01442) · 访问方式：开放下载
+  入选依据 C4（英文审查说明）：Collision videos have explicit future-event prediction and counterfactual questions about physical outcomes. [审查来源](https://arxiv.org/abs/1910.01442) · 2026-10-29
 
-- **DoTA** · 2020
-  面向交通异常检测的驾驶视频数据集，标注道路异常、事故和相关时序片段，用于评测模型对罕见危险状态演化的识别能力。
-  `自动驾驶` · `RGB 视频` · `动作标签` · `二维框` · `语义标签`
-  [主页](https://github.com/MoonBlvd/Detection-of-Traffic-Anomaly) · 访问方式：官方 GitHub 仓库提供数据集和基准资源
-
-- **BOP Benchmark** · 2018
-  统一的六维物体姿态估计基准，整合多个工业和日常物体数据集。
-  `机器人 / 具身智能` · `RGB-D` · `三维网格` · `相机位姿`
-  [主页](https://bop.felk.cvut.cz/) · [论文](https://arxiv.org/abs/1808.08319) · 访问方式：官方基准门户
-
-- **Moving Symbols** · 2018
+- **Moving Symbols** · 2018 · 生成环境 / 工具
   专为评估视频预测模型表征能力设计的参数化合成数据集，通过可控的符号运动和组合变化检验模型是否学习到有语义的时序表示。
   `物理 / 科学` · `合成视频` · `物体状态` · `轨迹`
   [论文](https://arxiv.org/abs/1802.08936) · [代码](https://github.com/rszeto/moving-symbols) · 访问方式：官方代码和生成工具仓库
-
-- **UCF-Crime** · 2018
-  长时监控视频异常事件数据集。
-  `第一人称 / 人类活动` · `RGB 视频` · `动作标签`
-  [主页](https://www.crcv.ucf.edu/projects/real-world/) · [论文](https://arxiv.org/abs/1801.04264) · 访问方式：官方项目页
+  入选依据 C1（英文审查说明）：Parameterized synthetic moving symbols explicitly evaluate video-prediction representations under controlled variation. [审查来源](https://arxiv.org/abs/1802.08936) · 2026-10-29
 
 <!-- DATASET_CATALOG_END -->
 

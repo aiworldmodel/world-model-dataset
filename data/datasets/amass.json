@@ -7,11 +7,26 @@
   "summaryEn": "A unified 4D human-motion database combining 15 motion-capture datasets in a common SMPL representation for motion prediction, generation, and interaction modeling.",
   "primaryTask": "Predictive & Generative Dynamics",
   "primaryTaskZh": "预测与生成式动力学",
-  "secondaryTasks": ["Spatial & Spatiotemporal World Modeling", "Decision-Making & Agent Trajectories"],
-  "domain": ["Egocentric / Human"],
-  "modalities": ["3D State", "Trajectories", "Agent Pose"],
-  "structure": ["Temporal Sequences", "Agent Trajectories"],
-  "source": ["Human Demonstration", "Real-world"],
+  "secondaryTasks": [
+    "Spatial & Spatiotemporal World Modeling",
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "3D State",
+    "Trajectories",
+    "Agent Pose"
+  ],
+  "structure": [
+    "Temporal Sequences",
+    "Agent Trajectories"
+  ],
+  "source": [
+    "Human Demonstration",
+    "Real-world"
+  ],
   "scale": "15 mocap datasets · 300+ subjects · 11,000+ motions · 40+ hours",
   "scaleZh": "15 个动作捕捉数据集 · 300+ 名受试者 · 11,000+ 段动作 · 40+ 小时",
   "organizations": "Max Planck Institute for Intelligent Systems and collaborators",
@@ -20,7 +35,6 @@
   "licenseZh": "适用 AMASS 和各来源数据集许可；研究限制可能不同",
   "access": "Official project access; registration may be required",
   "accessZh": "官方项目访问；可能需要注册",
-  "rating": 5,
   "verdict": "统一四维人体动作数据库",
   "verdictEn": "Unified 4D human-motion database",
   "wmNote": "统一身体状态表示和丰富动作多样性适合学习长时人体动力学，但它主要提供运动状态，不包含完整环境观测。",
@@ -28,5 +42,18 @@
   "links": {
     "homepage": "https://amass.is.tue.mpg.de/",
     "paper": "https://arxiv.org/abs/1904.03278"
-  }
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1904.03278",
+    "sourceTitle": "[1904.03278] AMASS: Archive of Motion Capture as Surface Shapes",
+    "locator": "Abstract / official paper description",
+    "statement": "Unifies motion-capture sequences into a common parameterized human-body representation; source and derived motion datasets overlap.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

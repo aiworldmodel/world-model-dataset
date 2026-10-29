@@ -36,7 +36,6 @@
   "licenseZh": "数据发布许可条款需进一步核查",
   "access": "Official RGB/actions and RGB-D/actions archives",
   "accessZh": "官方 RGB/动作及 RGB-D/动作数据包",
-  "rating": 4,
   "verdict": "家庭夹爪动作与观测对齐",
   "verdictEn": "Household gripper-motion observations",
   "wmNote": "人类手持工具而非机器人本体采集；位姿及开合轨迹可用于动作条件预测，迁移到机器人需处理具身差异。",
@@ -44,5 +43,18 @@
   "links": {
     "homepage": "https://dobb-e.com/",
     "paper": "https://arxiv.org/abs/2311.16098"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2311.16098",
+    "sourceTitle": "[2311.16098] On Bringing Robots Home",
+    "locator": "Abstract / official paper description",
+    "statement": "The Stick records household manipulation demonstrations in 22 homes for policy transfer. Human handheld demonstrations, not robot-collected motor controls.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

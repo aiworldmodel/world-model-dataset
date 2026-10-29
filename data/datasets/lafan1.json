@@ -32,12 +32,24 @@
   "licenseZh": "CC BY-NC-ND 4.0",
   "access": "Official Git LFS archive and transition evaluation code",
   "accessZh": "官方 Git LFS 数据包及运动过渡评估代码",
-  "rating": 4,
   "verdict": "人体运动过渡建模",
   "verdictEn": "Human motion-transition modeling",
   "wmNote": "连续骨架与位移轨迹支持未来姿态建模；插帧评测可使用终点条件，不能与无终点预测混用。",
   "wmNoteEn": "Skeleton trajectories support future-pose modeling; endpoint-conditioned in-betweening differs from unconditional forecasting.",
   "links": {
     "code": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset",
+    "sourceTitle": "GitHub - ubisoft/ubisoft-laforge-animation-dataset: Ubisoft La Forge Animation Dataset · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official motion-capture sequence release and motion-transition benchmarking support temporal pose modeling; interpolation differs from causal forecasting.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

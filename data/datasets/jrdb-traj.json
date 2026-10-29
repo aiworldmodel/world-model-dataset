@@ -34,7 +34,6 @@
   "licenseZh": "许可条款以 JRDB 数据集为准",
   "access": "JRDB portal requires an account for downloads; forecasting development kit provided",
   "accessZh": "JRDB 下载需登录账号；提供轨迹预测开发工具",
-  "rating": 4,
   "verdict": "机器人视角未来人群轨迹",
   "verdictEn": "Robot-view future crowd trajectories",
   "wmNote": "评测感知、跟踪误差下的端到端未来轨迹预测；与纯检测数据明确区分。",
@@ -42,5 +41,18 @@
   "links": {
     "homepage": "https://jrdb.erc.monash.edu/benchmark/",
     "paper": "https://arxiv.org/abs/2311.02736"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2311.02736",
+    "sourceTitle": "[2311.02736] JRDB-Traj: A Dataset and Benchmark for Trajectory Forecasting in Crowds",
+    "locator": "Abstract / official paper description",
+    "statement": "Robot-view sensory sequences and agent locations support an explicit future-position forecasting protocol.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

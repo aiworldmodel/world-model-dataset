@@ -1,45 +1,55 @@
 {
-    "id":  "stride",
-    "name":  "STRIDE",
-    "shortName":  "STRIDE",
-    "year":  2025,
-    "summary":  "将全景道路图像组织为观测、状态和动作节点的时空自主数据集。",
-    "summaryEn":  "A spatiotemporal autonomy dataset organizing panoramic road imagery into observation, state, and action nodes.",
-    "primaryTask":  "Spatial \u0026 Spatiotemporal World Modeling",
-    "primaryTaskZh":  "空间与时空世界建模",
-    "secondaryTasks":  [
-
-                       ],
-    "domain":  [
-                   "Robotics / Embodied AI"
-               ],
-    "modalities":  [
-                       "RGB Video",
-                       "Action",
-                       "Scene Metadata"
-                   ],
-    "structure":  [
-                      "Dataset / Benchmark"
-                  ],
-    "source":  [
-                   "Real-world",
-                   "Simulation"
-               ],
-    "scale":  "Interconnected panoramic road graph",
-    "scaleZh":  "Interconnected panoramic road graph",
-    "organizations":  "Authors and collaborators",
-    "organizationsZh":  "作者及合作团队",
-    "license":  "Not confirmed from the paper entry",
-    "licenseZh":  "论文入口未确认许可",
-    "access":  "Paper entry; release status requires verification",
-    "accessZh":  "论文入口；发布状态待核验",
-    "rating":  4,
-    "verdict":  "将全景道路图像组织为观测、状态和动作节点的时空自主数据集",
-    "verdictEn":  "A spatiotemporal autonomy dataset organizing panoramic road imagery into observation, state, and action nodes",
-    "wmNote":  "适合近期世界模型或具身智能研究；使用前需核验官方发布范围。",
-    "wmNoteEn":  "Relevant to recent world-model or embodied-AI research; verify the official released scope before use.",
-    "links":  {
-                  "paper":  "https://arxiv.org/abs/2506.11302",
-                  "homepage":  "https://huggingface.co/datasets/Tera-AI/STRIDE"
-              }
+  "id": "stride",
+  "name": "STRIDE",
+  "shortName": "STRIDE",
+  "year": 2025,
+  "summary": "将全景道路图像组织为观测、状态和动作节点的时空自主数据集。",
+  "summaryEn": "A spatiotemporal autonomy dataset organizing panoramic road imagery into observation, state, and action nodes.",
+  "primaryTask": "Spatial & Spatiotemporal World Modeling",
+  "primaryTaskZh": "空间与时空世界建模",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Scene Metadata"
+  ],
+  "structure": [
+    "Dataset / Benchmark"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "Interconnected panoramic road graph",
+  "scaleZh": "Interconnected panoramic road graph",
+  "organizations": "Authors and collaborators",
+  "organizationsZh": "作者及合作团队",
+  "license": "Not confirmed from the paper entry",
+  "licenseZh": "论文入口未确认许可",
+  "access": "Paper entry; release status requires verification",
+  "accessZh": "论文入口；发布状态待核验",
+  "verdict": "将全景道路图像组织为观测、状态和动作节点的时空自主数据集",
+  "verdictEn": "A spatiotemporal autonomy dataset organizing panoramic road imagery into observation, state, and action nodes",
+  "wmNote": "适合近期世界模型或具身智能研究；使用前需核验官方发布范围。",
+  "wmNoteEn": "Relevant to recent world-model or embodied-AI research; verify the official released scope before use.",
+  "links": {
+    "paper": "https://arxiv.org/abs/2506.11302",
+    "homepage": "https://huggingface.co/datasets/Tera-AI/STRIDE"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2506.11302",
+    "sourceTitle": "[2506.11302] TARDIS STRIDE: A Spatio-Temporal Road Image Dataset and World Model for Autonomy",
+    "locator": "Abstract / official paper description",
+    "statement": "Road imagery is organized into connected observation, state and movement-action nodes for controlled spatiotemporal world modeling.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

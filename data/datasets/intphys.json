@@ -29,7 +29,6 @@
   "organizations": "Meta AI Research",
   "license": "Research dataset terms; verify current download agreement",
   "access": "Open download",
-  "rating": "4",
   "verdict": "违反物理检测",
   "wmNote": "适合评测物体恒存和视觉合理性，但任务规模与视觉复杂度有限，主要用于诊断而非大规模预训练。",
   "links": {
@@ -43,5 +42,18 @@
   "scaleZh": "覆盖物体恒存、形状和支撑关系的受控视频",
   "organizationsZh": "Meta AI Research",
   "accessZh": "开放下载",
-  "licenseZh": "适用研究数据集条款；需核查当前下载协议"
+  "licenseZh": "适用研究数据集条款；需核查当前下载协议",
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/1803.07616",
+    "sourceTitle": "[1803.07616] IntPhys: A Framework and Benchmark for Visual Intuitive Physics Reasoning",
+    "locator": "Abstract / official paper description",
+    "statement": "Possible/impossible physical event videos are evaluated using future semantic-mask prediction and physical plausibility.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

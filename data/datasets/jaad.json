@@ -38,7 +38,6 @@
   "licenseZh": "发布的视频和标注采用 MIT License",
   "access": "Official dataset page and GitHub annotations are publicly available",
   "accessZh": "官方数据集页面和 GitHub 标注公开可用",
-  "rating": 4,
   "verdict": "行人-车辆交互和过街意图序列",
   "verdictEn": "Pedestrian-vehicle interaction and crossing-intention sequences",
   "wmNote": "逐帧行为、轨迹和车辆动作标注能支持行人意图预测与交互式驾驶决策建模；规模偏向过街交互场景。",
@@ -47,5 +46,18 @@
     "homepage": "https://data.nvision2.eecs.yorku.ca/JAAD_dataset/",
     "paper": "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html",
     "code": "https://github.com/ykotseruba/JAAD"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w3/html/Rasouli_Are_They_Going_ICCV_2017_paper.html",
+    "sourceTitle": "ICCV 2017 Open Access Repository",
+    "locator": "Abstract / official paper description",
+    "statement": "Official paper establishes pedestrian intention prediction using temporal behavioral and contextual annotations; retain crossing-prediction scope.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

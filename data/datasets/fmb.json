@@ -35,7 +35,6 @@
   "licenseZh": "CC BY 4.0",
   "access": "Official NumPy trajectory archives and detailed data format",
   "accessZh": "官方 NumPy 轨迹包及详细数据格式",
-  "rating": 4,
   "verdict": "多阶段接触操作动力学",
   "verdictEn": "Multistage contact manipulation dynamics",
   "wmNote": "动作、末端状态与力矩对齐，可研究接触条件预测和长期状态变化；技能标签是注释而非额外控制信号。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://functional-manipulation-benchmark.github.io/",
     "paper": "https://arxiv.org/abs/2401.08553"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://functional-manipulation-benchmark.github.io/",
+    "sourceTitle": "FMB: A Functional Manipulation Benchmark for Generalizable Robotic Learning",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official dataset page identifies 22,550 robot trajectories recorded from global and wrist cameras for multi-stage manipulation.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

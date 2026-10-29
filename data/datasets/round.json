@@ -37,7 +37,6 @@
   "licenseZh": "按 leveLXData/rounD 条款可免费用于非商业研究；再分发受限",
   "access": "Official leveLXData/rounD request page; access requires agreeing to dataset terms",
   "accessZh": "官方 leveLXData/rounD 申请页面；访问需同意数据集条款",
-  "rating": 4,
   "verdict": "环岛场景的高交互道路参与者轨迹",
   "verdictEn": "Highly interactive road-user trajectories at roundabouts",
   "wmNote": "环岛合流、让行和绕行行为为多智能体交互世界模型提供了紧凑但困难的评测场景；规模小于 openDD 等后续环岛数据集。",
@@ -45,5 +44,18 @@
   "links": {
     "homepage": "https://levelxdata.com/round-dataset/",
     "paper": "https://ieeexplore.ieee.org/document/9294728"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://levelxdata.com/round-dataset/",
+    "sourceTitle": "rounD by leveLXData - Real-World Scenario Data",
+    "locator": "Official dataset / project description",
+    "statement": "Official release supplies naturalistic road-user trajectories and roundabout map geometry, with parsing and visualization tools.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

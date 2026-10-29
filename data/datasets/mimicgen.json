@@ -7,11 +7,27 @@
   "summaryEn": "A framework that generates diverse robot manipulation demonstrations by replaying and composing a small number of human demonstrations in simulation.",
   "primaryTask": "Decision-Making & Agent Trajectories",
   "primaryTaskZh": "决策与智能体轨迹",
-  "secondaryTasks": ["Action-Conditioned Dynamics"],
-  "domain": ["Robotics / Embodied AI"],
-  "modalities": ["RGB Video", "Action", "Robot State", "Language"],
-  "structure": ["Interaction Episodes", "Agent Trajectories", "Simulation Rollouts"],
-  "source": ["Simulation", "Human Demonstration"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Agent Trajectories",
+    "Simulation Rollouts"
+  ],
+  "source": [
+    "Simulation",
+    "Human Demonstration"
+  ],
   "scale": "10 task families · generated demonstrations across multiple embodiments",
   "scaleZh": "10 类任务 · 覆盖多种机器人形态的生成式示范轨迹",
   "organizations": "NVIDIA Research",
@@ -20,7 +36,6 @@
   "licenseZh": "代码采用 MIT 许可；生成数据和资源另有使用条款",
   "access": "Open generation toolkit",
   "accessZh": "开放生成工具",
-  "rating": 4,
   "verdict": "可扩展机器人示范生成",
   "verdictEn": "Scalable robot-demonstration generation",
   "wmNote": "通过可控重放获得动作、观测和状态转移，适合扩展仿真训练集；生成分布与真实操作之间仍存在差异。",
@@ -29,5 +44,18 @@
     "homepage": "https://mimicgen.github.io/",
     "paper": "https://arxiv.org/abs/2310.17596",
     "code": "https://github.com/NVlabs/mimicgen"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2310.17596",
+    "sourceTitle": "[2310.17596] MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations",
+    "locator": "Abstract / official paper description",
+    "statement": "Adapts source human demonstrations into over 50K robot trajectories across tasks, configurations and embodiments; generated demonstrations are derived data.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -28,7 +28,6 @@
   "organizations": "Karlsruhe Institute of Technology and Toyota Technological Institute",
   "license": "CC BY-NC-SA 3.0 for dataset; benchmark terms apply",
   "access": "Open download",
-  "rating": "4",
   "verdict": "经典驾驶几何基准",
   "wmNote": "数据规模不大但工具链与历史基线极丰富，适合几何组件验证，不适合作为现代大模型的唯一训练源。",
   "links": {
@@ -42,5 +41,18 @@
   "scaleZh": "22 段双目序列 · 各项基准共 20 万+ 个三维物体标注",
   "organizationsZh": "卡尔斯鲁厄理工学院、丰田工业大学",
   "accessZh": "开放下载",
-  "licenseZh": "数据集采用 CC BY-NC-SA 3.0；同时适用各基准条款"
+  "licenseZh": "数据集采用 CC BY-NC-SA 3.0；同时适用各基准条款",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://www.cvlibs.net/datasets/kitti/",
+    "sourceTitle": "The KITTI Vision Benchmark Suite",
+    "locator": "Official dataset / project description",
+    "statement": "Official suite includes raw calibrated driving recordings, GPS localization, visual odometry and 3D tracking. Retain sequential/odometry scope rather than standalone detection images.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

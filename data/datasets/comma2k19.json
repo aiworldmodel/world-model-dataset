@@ -35,7 +35,6 @@
   "licenseZh": "代码仓库为 MIT 许可；数据再分发条件需进一步核查",
   "access": "Public GitHub repository with dataset download instructions and examples",
   "accessZh": "公开 GitHub 仓库提供数据下载说明和示例片段",
-  "rating": 4,
   "verdict": "低成本车载传感器的真实时序驾驶日志",
   "verdictEn": "Real sequential driving logs from commodity vehicle sensors",
   "wmNote": "视频、CAN、GNSS/IMU 和相机位姿形成了可对齐的时空状态序列，适合地图、定位和驾驶状态演化建模；任务覆盖较集中在高速通勤场景。",
@@ -43,5 +42,18 @@
   "links": {
     "homepage": "https://github.com/commaai/comma2k19",
     "paper": "https://arxiv.org/abs/1812.05752"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1812.05752",
+    "sourceTitle": "[1812.05752] A Commute in Data: The comma2k19 Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Minute-long driving sequences include road video, GNSS/IMU/CAN and camera position/orientation estimates.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

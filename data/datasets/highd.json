@@ -36,7 +36,6 @@
   "licenseZh": "按 leveLXData/highD 条款可免费用于非商业研究；再分发受限",
   "access": "Official leveLXData/highD request page; access requires agreeing to dataset terms",
   "accessZh": "官方 leveLXData/highD 申请页面；访问需同意数据集条款",
-  "rating": 5,
   "verdict": "高速公路场景的经典自然车辆轨迹数据",
   "verdictEn": "Classic naturalistic vehicle-trajectory data for highway scenarios",
   "wmNote": "高精度连续轨迹、变道事件和交通流上下文适合训练与评测高速驾驶世界模型；它提供轨迹而非原始车载传感器流。",
@@ -44,5 +43,18 @@
   "links": {
     "homepage": "https://levelxdata.com/highd-dataset/",
     "paper": "https://arxiv.org/abs/1810.05642"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1810.05642",
+    "sourceTitle": "[1810.05642] The highD Dataset: A Drone Dataset of Naturalistic Vehicle Trajectories on German Highways for Validation of Highly Automated Driving Systems",
+    "locator": "Abstract / official paper description",
+    "statement": "Drone-recorded naturalistic highway vehicle trajectories explicitly support scenario reconstruction and motion modeling.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

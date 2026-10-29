@@ -31,7 +31,6 @@
   "licenseZh": "数据集条款需与代码许可分别核查",
   "access": "Official Google Cloud TFRecords and download script",
   "accessZh": "官方 Google Cloud TFRecord 数据和下载脚本",
-  "rating": 4,
   "verdict": "多材料粒子动力学",
   "verdictEn": "Multimaterial particle dynamics",
   "wmNote": "粒子位置历史和材料属性支持动力学预测；调试样本 WaterDropSample 不作为独立数据集。",
@@ -39,5 +38,18 @@
   "links": {
     "code": "https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate",
     "paper": "https://arxiv.org/abs/2002.09405"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate",
+    "sourceTitle": "deepmind-research/learning_to_simulate at master · google-deepmind/deepmind-research · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official learning_to_simulate release includes downloadable particle-dynamics datasets and explicit test trajectory rollout evaluation.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

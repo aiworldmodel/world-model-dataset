@@ -29,7 +29,6 @@
   "organizations": "Argo AI and Carnegie Mellon University",
   "license": "Argoverse Terms of Use; research-oriented access",
   "access": "Open download",
-  "rating": "5",
   "verdict": "地图增强运动预测",
   "wmNote": "适合结合地图、交通参与者与传感器观测建模未来；不同子集的字段和任务需要分别处理。",
   "links": {
@@ -43,5 +42,18 @@
   "scaleZh": "1,000 段传感器日志 · 25 万个运动场景 · 6 座城市",
   "organizationsZh": "Argo AI、卡内基梅隆大学",
   "accessZh": "开放下载",
-  "licenseZh": "适用 Argoverse 使用条款；主要面向研究用途"
+  "licenseZh": "适用 Argoverse 使用条款；主要面向研究用途",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2301.00493",
+    "sourceTitle": "[2301.00493] Argoverse 2: Next Generation Datasets for Self-Driving Perception and Forecasting",
+    "locator": "Abstract / official paper description",
+    "statement": "Explicit motion-forecasting scenarios and sequential LiDAR with poses support future-agent and point-cloud prediction.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

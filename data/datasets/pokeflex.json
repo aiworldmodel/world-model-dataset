@@ -7,11 +7,28 @@
   "summaryEn": "A real-world pilot dataset for deformable-object manipulation, capturing complete 360-degree 3D mesh deformations together with robot-applied forces and torques during poking.",
   "primaryTask": "Physical & Causal Reasoning",
   "primaryTaskZh": "物理与因果推理",
-  "secondaryTasks": ["Action-Conditioned Dynamics", "Spatial & Spatiotemporal World Modeling"],
-  "domain": ["Robotics / Embodied AI", "Physics / Science"],
-  "modalities": ["3D Mesh", "Action", "Robot State", "Multi-view RGB Video"],
-  "structure": ["Deformation Sequences", "Force-Torque Measurements"],
-  "source": ["Real-world", "Robot Platform"],
+  "secondaryTasks": [
+    "Action-Conditioned Dynamics",
+    "Spatial & Spatiotemporal World Modeling"
+  ],
+  "domain": [
+    "Robotics / Embodied AI",
+    "Physics / Science"
+  ],
+  "modalities": [
+    "3D Mesh",
+    "Action",
+    "Robot State",
+    "Multi-view RGB Video"
+  ],
+  "structure": [
+    "Deformation Sequences",
+    "Force-Torque Measurements"
+  ],
+  "source": [
+    "Real-world",
+    "Robot Platform"
+  ],
   "scale": "Five deformable objects spanning different shapes and stiffness levels",
   "scaleZh": "5 个具有不同形状和刚度的可变形物体",
   "organizations": "University of Stuttgart and collaborators",
@@ -20,7 +37,6 @@
   "licenseZh": "官方项目入口未确认数据许可",
   "access": "Official project page and reconstruction code available",
   "accessZh": "提供官方项目页和重建代码",
-  "rating": 4,
   "verdict": "带力反馈的三维形变数据",
   "verdictEn": "3D deformation with force feedback",
   "wmNote": "同步动作、力矩和完整形变几何非常适合可变形动力学建模，但试验对象数量较少。",
@@ -29,5 +45,18 @@
     "homepage": "https://pokeflex-dataset.github.io/",
     "paper": "https://arxiv.org/abs/2409.17124",
     "code": "https://github.com/pokeflex-dataset/reconstruction"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2409.17124",
+    "sourceTitle": "[2409.17124] PokeFlex: Towards a Real-World Dataset of Deformable Objects for Robotic Manipulation",
+    "locator": "Abstract / official paper description",
+    "statement": "Robot poking pairs actively deformed 3D meshes with applied forces and torques.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

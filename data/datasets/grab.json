@@ -36,12 +36,24 @@
   "licenseZh": "研究使用协议及参与者特定限制；另适用物体和人体模型条款",
   "access": "Registration and license acceptance required for official downloads",
   "accessZh": "官方下载需注册并接受许可协议",
-  "rating": 4,
   "verdict": "人体与物体接触状态演化",
   "verdictEn": "Human-object contact evolution",
   "wmNote": "连续人体和物体状态及接触变化支持交互动力学预测；区别于静态抓取姿态和 GrabNet 模型资源。",
   "wmNoteEn": "Body/object states and changing contacts support interaction dynamics; distinguish temporal GRAB data from static grasps and GrabNet models.",
   "links": {
     "homepage": "https://grab.is.tue.mpg.de/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://grab.is.tue.mpg.de/",
+    "sourceTitle": "GRAB",
+    "locator": "Official dataset / project description",
+    "statement": "Whole-body grasping provides full human/object pose sequences and contact during interactions, not merely static grasps.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

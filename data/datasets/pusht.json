@@ -33,7 +33,6 @@
   "licenseZh": "代码为 MIT；数据专属条款需核查",
   "access": "Official training archive and replay-buffer loaders",
   "accessZh": "官方训练数据包和回放缓冲区加载器",
-  "rating": 4,
   "verdict": "接触推送的动作条件转换",
   "verdictEn": "Action-conditioned contact pushing",
   "wmNote": "本条限定官方平面仿真示范，可用于动作条件状态或图像预测；不混同真实 UR5 推送录制。",
@@ -41,5 +40,18 @@
   "links": {
     "code": "https://github.com/real-stanford/diffusion_policy",
     "paper": "https://arxiv.org/abs/2303.04137"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/real-stanford/diffusion_policy",
+    "sourceTitle": "GitHub - real-stanford/diffusion_policy: [RSS 2023] Diffusion Policy Visuomotor Policy Learning via Action Diffusion · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official Diffusion Policy repository links Push-T training data, demonstration collection and task-specific rollout evaluation.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

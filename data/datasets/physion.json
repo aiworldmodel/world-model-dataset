@@ -30,7 +30,6 @@
   "organizations": "MIT and IBM Research",
   "license": "Research use terms; simulator assets may have separate restrictions",
   "access": "Open download",
-  "rating": "5",
   "verdict": "直觉物理预测基准",
   "wmNote": "场景设计直接针对物理推理，适合表征诊断；合成域和二元接触判断不能覆盖真实世界全部物理复杂性。",
   "links": {
@@ -44,5 +43,20 @@
   "scaleZh": "8 类物理场景 · 数千次受控仿真",
   "organizationsZh": "麻省理工学院、IBM Research",
   "accessZh": "开放下载",
-  "licenseZh": "适用研究用途条款；模拟器资产可能有单独限制"
+  "licenseZh": "适用研究用途条款；模拟器资产可能有单独限制",
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2106.08261",
+    "sourceTitle": "[2106.08261] Physion: Evaluating Physical Prediction from Vision in Humans and Machines",
+    "locator": "Abstract / official paper description",
+    "statement": "Physics simulations explicitly evaluate how scenes evolve into future states across collisions, rolling, sliding and deformable interactions.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": [
+    "physion2"
+  ]
 }

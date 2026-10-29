@@ -54,6 +54,8 @@ Scope: a strict catalog of datasets first publicly released before or during 202
 
 ## Strict audit log
 
+The historical batch notes below are superseded by the [2026-10-29 source review](audit/evidence-review-2026-10-29.md). Earlier “retained” decisions are not current approvals.
+
 - 2026 batch 1: reviewed 20 records; retained 17 and removed 3 (CodecArena, AlloEgo-View, AeroGround) for lacking world-state transitions, action-aligned trajectories, or dedicated world-model evaluation evidence.
 - 2026/2017-2025 batch 2: reviewed 20 records; retained 18 and removed 2 (Digital Twin Catalog, FloodReasonBench) because they were static digital-twin imagery or ordinary flood-scene perception without strict world-model evidence.
 - Remaining queue review (2026-08-31): reviewed the remaining 43 flagged records across 2016-2026. All retained records document at least one strict signal (state evolution, action/trajectory alignment, simulation rollouts, physical/counterfactual reasoning, or explicit world-model evaluation). Records with paper-only access remain marked as access-unverified; no additional removals were justified from the available evidence.
@@ -65,7 +67,9 @@ Scope: a strict catalog of datasets first publicly released before or during 202
 
 ## Current status
 
-- Formal catalog: 52 datasets
-- Completed source checks: arXiv, GitHub Repository Search, Hugging Face Datasets, Papers with Code migration
-- Current focus: strict datasets first publicly released before 2026; defer 2026 additions until the pre-2026 pass is complete
-- Known limitation: Semantic Scholar API and Parallel Search backend are not currently configured
+- Formal catalog: 266 source-reviewed resources, not 266 independent acquired datasets
+- Baseline reconciliation: 391 = 266 retained + 79 pending + 38 excluded + 8 merged
+- Pending queue: filter `status=pending` in [the review ledger](audit/evidence-review-2026-10-29.csv); original records are recoverable in `audit/archived-records/`
+- Current focus: resolve primary-source identity and temporal schemas before restoring candidates; follow [CATALOG_POLICY.md](CATALOG_POLICY.md)
+- Completed scope: source-level eligibility review of the 391 existing records; no claim of exhaustive external discovery, complete data downloads or license validation
+- Known limitation: some official pages and dataset cards could not be retrieved. A failed request is recorded as unresolved, not as proof of an unavailable resource.

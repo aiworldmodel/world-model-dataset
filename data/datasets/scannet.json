@@ -33,7 +33,6 @@
   "licenseZh": "适用 ScanNet 使用条款；面向非商业研究开放",
   "access": "Agreement required",
   "accessZh": "需同意协议",
-  "rating": 5,
   "verdict": "室内三维序列基础数据",
   "verdictEn": "Foundational indoor 3D sequences",
   "wmNote": "连续 RGB-D 与位姿支持地图和场景记忆；动态对象与交互行为覆盖有限。",
@@ -42,5 +41,18 @@
     "homepage": "http://www.scan-net.org/",
     "paper": "https://arxiv.org/abs/1702.04405",
     "code": "https://github.com/ScanNet/ScanNet"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/1702.04405",
+    "sourceTitle": "[1702.04405] ScanNet: Richly-annotated 3D Reconstructions of Indoor Scenes",
+    "locator": "Abstract / official paper description",
+    "statement": "RGB-D videos include per-view camera poses, exposing temporal camera-observation trajectories. Retain egomotion sequences, not static reconstructed geometry or object dynamics claims.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

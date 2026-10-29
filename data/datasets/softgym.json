@@ -34,7 +34,6 @@
   "licenseZh": "需核查仓库及 NVIDIA FleX 依赖条款",
   "access": "Official simulator and rollout examples; data generated locally",
   "accessZh": "官方仿真器和 rollout 示例；需本地生成数据",
-  "rating": 4,
   "verdict": "可变形物体 rollout 生成",
   "verdictEn": "Deformable-object rollout generation",
   "wmNote": "收录为生成工具；记录动作及相邻粒子状态或图像可构造动力学训练数据。",
@@ -42,5 +41,18 @@
   "links": {
     "code": "https://github.com/Xingyu-Lin/softgym",
     "paper": "https://arxiv.org/abs/2011.07215"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2011.07215",
+    "sourceTitle": "[2011.07215] SoftGym: Benchmarking Deep Reinforcement Learning for Deformable Object Manipulation",
+    "locator": "Abstract / official paper description",
+    "statement": "Open-source deformable-object manipulation environments expose a Gym control interface and physical state evolution.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

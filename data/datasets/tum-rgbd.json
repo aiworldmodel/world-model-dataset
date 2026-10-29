@@ -34,12 +34,24 @@
   "licenseZh": "数据默认 CC BY 4.0；代码为 BSD-2-Clause",
   "access": "Official sequence downloads and trajectory evaluation tools",
   "accessZh": "官方序列下载和轨迹评估工具",
-  "rating": 3,
   "verdict": "RGB-D 连续观测与位姿",
   "verdictEn": "RGB-D observation and pose sequences",
   "wmNote": "连续 RGB-D 和真值位姿可支持未来观测与时空一致性分析；验证序列无公开真值。",
   "wmNoteEn": "RGB-D and pose sequences support future-view consistency analysis; validation sequences lack public ground truth.",
   "links": {
     "homepage": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://cvg.cit.tum.de/data/datasets/rgbd-dataset",
+    "sourceTitle": "Computer Vision Group - Datasets - RGB-D SLAM Dataset and Benchmark",
+    "locator": "Official dataset / project description",
+    "statement": "Official release provides 30 Hz RGB-D images aligned with high-accuracy motion-capture sensor trajectories.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -30,7 +30,6 @@
   "organizations": "DROID collaboration led by Stanford",
   "license": "Dataset terms apply; verify downstream and third-party restrictions",
   "access": "Open download",
-  "rating": "5",
   "verdict": "多场景真实机器人轨迹",
   "wmNote": "适合研究跨场景操作和动作条件转移；不同采集地点带来有价值的分布差异，也增加了数据清洗与标定成本。",
   "links": {
@@ -44,5 +43,18 @@
   "scaleZh": "7.6 万条轨迹 · 350 小时 · 564 个场景 · 86 项任务",
   "organizationsZh": "斯坦福大学牵头的 DROID 协作团队",
   "accessZh": "开放下载",
-  "licenseZh": "适用数据集专用条款；需核查下游使用及第三方内容限制"
+  "licenseZh": "适用数据集专用条款；需核查下游使用及第三方内容限制",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://droid-dataset.github.io/",
+    "sourceTitle": "DROID: A Large-Scale In-the-Wild Robot Manipulation Dataset",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official dataset quickstart iterates per-step robot observations; the release documents teleoperated manipulation demonstration collection.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

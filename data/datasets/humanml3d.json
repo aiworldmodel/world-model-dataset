@@ -33,12 +33,27 @@
   "licenseZh": "代码为 MIT；另适用 AMASS、HumanAct12 和人体模型条款",
   "access": "Official reconstruction scripts; obtain source data and body models separately",
   "accessZh": "官方重建脚本；需另行获取原始数据和人体模型",
-  "rating": 4,
   "verdict": "文本条件三维运动序列",
   "verdictEn": "Text-conditioned 3D motion sequences",
   "wmNote": "连续关节和根运动支持生成与预测；源数据与 AMASS 重叠，不能视为独立采集样本。",
   "wmNoteEn": "Joint and root sequences support generation and prediction; AMASS overlap means this is not independently captured data.",
   "links": {
     "code": "https://github.com/EricGuo5513/HumanML3D"
-  }
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/EricGuo5513/HumanML3D",
+    "sourceTitle": "GitHub - EricGuo5513/HumanML3D: HumanML3D: A large and diverse 3d human motion-language dataset. · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Text annotations pair with 20-fps 3D motion clips derived from AMASS/HumanAct12; not independent motion acquisition.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "amass"
+  ]
 }

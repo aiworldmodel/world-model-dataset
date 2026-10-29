@@ -2,10 +2,10 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-_一个以任务为核心、重视证据的世界模型开放数据集目录。_
+_一个以证据为先的世界模型数据资源目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-{{DATASET_COUNT}}-16a34a)](#数据集目录)
+[![资源](https://img.shields.io/badge/资源-{{DATASET_COUNT}}-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -35,11 +35,21 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 本项目是经过整理的研究资源，而不是数据集排行榜。网站中的详细适用建议比单一综合评分更有参考价值。
 
+## 入选证据
+
+每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[391 条全量审查报告](audit/evidence-review-2026-10-29.md)。
+
+来源审查不代表已完成数据下载、样本完整性或许可权限验证。仅论文证据单独标注。访问条件各异，不宣称全部开放下载；聚合集合和派生数据可能重叠。逐条详细审查理由保留英文，便于对照原始来源。
+
 ## 目录概览
 
-| 数据集 | 一级任务 | 研究领域 | 数据模态 |
+| 已审查资源 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
 | {{DATASET_COUNT}} | 6 | 6 | {{MODALITY_COUNT}} |
+
+{{RESOURCE_TYPES}}
+
+上述为资源条目数，不代表独立采集的数据集数量。生成环境需自行生成数据，评测集与聚合集合不能直接相加为总数据规模。
 
 ## 分类体系
 

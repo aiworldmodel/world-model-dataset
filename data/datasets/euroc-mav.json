@@ -34,12 +34,24 @@
   "licenseZh": "许可条款见 ETH Research Collection",
   "access": "Official ETH Research Collection download portal",
   "accessZh": "官方 ETH Research Collection 下载入口",
-  "rating": 3,
   "verdict": "飞行器视觉惯性轨迹",
   "verdictEn": "Aerial visual-inertial trajectories",
   "wmNote": "用于连续观测与位姿演化建模；运动真值存在同步和动态运动精度限制。",
   "wmNoteEn": "Supports observation and pose evolution; ground truth has synchronization and dynamic-motion limitations.",
   "links": {
     "homepage": "https://projects.asl.ethz.ch/datasets/euroc-mav/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://projects.asl.ethz.ch/datasets/euroc-mav/",
+    "sourceTitle": "EuRoC MAV Dataset | ETHZ ASL",
+    "locator": "Official dataset / project description",
+    "statement": "Stereo images and synchronized IMU are paired with accurate MAV motion ground truth.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

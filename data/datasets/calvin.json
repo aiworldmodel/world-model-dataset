@@ -31,7 +31,6 @@
   "organizations": "University of Freiburg and collaborators",
   "license": "Code and dataset terms documented by project; verify intended use",
   "access": "Open download",
-  "rating": "4",
   "verdict": "长时语言条件控制",
   "wmNote": "连续任务链很适合评估长期规划和 rollout；场景相对受控，迁移到真实开放环境需要额外数据。",
   "links": {
@@ -45,5 +44,18 @@
   "scaleZh": "24 小时遥操作探索数据 · 34 项任务",
   "organizationsZh": "弗赖堡大学及合作机构",
   "accessZh": "开放下载",
-  "licenseZh": "代码与数据条款见项目说明；使用前需核查适用范围"
+  "licenseZh": "代码与数据条款见项目说明；使用前需核查适用范围",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/2112.03227",
+    "sourceTitle": "[2112.03227] CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks",
+    "locator": "Abstract / official paper description",
+    "statement": "Simulated long-horizon manipulation benchmark combines onboard observations, action sequences and language instructions.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

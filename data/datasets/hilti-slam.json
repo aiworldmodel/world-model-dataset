@@ -35,7 +35,6 @@
   "licenseZh": "CC BY-NC-SA 3.0",
   "access": "Official repository links to datasets and ground truth",
   "accessZh": "官方仓库提供数据和真值下载入口",
-  "rating": 3,
   "verdict": "建筑场景多传感器时序",
   "verdictEn": "Construction multisensor sequences",
   "wmNote": "连续传感器流提供观测演化；稀疏真值不应视为每帧都有完整位姿标注。",
@@ -43,5 +42,18 @@
   "links": {
     "code": "https://github.com/Hilti-Research/hilti-slam-challenge-2021",
     "paper": "https://arxiv.org/abs/2109.11316"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2109.11316",
+    "sourceTitle": "[2109.11316] The Hilti SLAM Challenge Dataset",
+    "locator": "Abstract / official paper description",
+    "statement": "Indoor/outdoor robot sensor sequences have accurate ground-truth references; retain temporal observation/pose modeling, not static construction perception.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

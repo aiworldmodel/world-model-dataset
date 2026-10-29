@@ -34,7 +34,6 @@
   "licenseZh": "非商业条款；需核查所用版本协议",
   "access": "Official project and dataset release repository",
   "accessZh": "官方项目及数据发布仓库",
-  "rating": 4,
   "verdict": "语音条件身体与表情演化",
   "verdictEn": "Speech-conditioned body and face evolution",
   "wmNote": "同步动作与音频可训练条件姿态生成；语音是上下文条件，不是物理控制输入。",
@@ -42,5 +41,18 @@
   "links": {
     "homepage": "https://pantomatrix.github.io/BEAT/",
     "paper": "https://arxiv.org/abs/2203.05297"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2203.05297",
+    "sourceTitle": "[2203.05297] BEAT: A Large-Scale Semantic and Emotional Multi-Modal Dataset for Conversational Gestures Synthesis",
+    "locator": "Abstract / official paper description",
+    "statement": "Conversational motion capture is time-aligned with audio and frame-level semantic/emotional annotations; human motion, not robot action commands.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

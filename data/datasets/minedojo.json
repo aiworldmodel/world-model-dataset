@@ -31,12 +31,10 @@
   "organizations": "Stanford, NVIDIA, Caltech, MIT",
   "license": "MIT for code; source media and Minecraft assets have separate terms",
   "access": "Open / source-dependent",
-  "rating": 5,
   "verdict": "开放世界交互试验场",
   "wmNote": "适合交互式游戏世界模型和长时程 agent。数据来源复杂，代码许可不等于所有视频、文本与游戏资产均采用 MIT 许可。",
   "links": {
     "homepage": "https://minedojo.org/",
-    "paper": "https://arxiv.org/abs/2206.01356",
     "code": "https://github.com/MineDojo/MineDojo"
   },
   "summaryEn": "A large multimodal knowledge and interaction platform built around Minecraft, combining player videos, text knowledge, community discussions, and a live simulation environment for open-world agents.",
@@ -45,5 +43,18 @@
   "scaleZh": "73 万+ 视频 · 约 1.9 万小时 · 6,000+ 个 Wiki 页面 · 34 万+ 条讨论",
   "organizationsZh": "斯坦福大学、NVIDIA、加州理工学院、麻省理工学院",
   "accessZh": "开放获取，具体取决于数据来源",
-  "licenseZh": "代码采用 MIT 许可；源媒体与 Minecraft 资产另有条款"
+  "licenseZh": "代码采用 MIT 许可；源媒体与 Minecraft 资产另有条款",
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/MineDojo/MineDojo",
+    "sourceTitle": "GitHub - MineDojo/MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge · GitHub",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Official environment exposes multimodal observations and compound actions for step-based Minecraft interaction. Scope is the simulator, not its static wiki assets.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

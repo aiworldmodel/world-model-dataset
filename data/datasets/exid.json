@@ -36,12 +36,24 @@
   "licenseZh": "按 leveLXData/exiD 条款可免费用于非商业研究；再分发受限",
   "access": "Official leveLXData/exiD request page; access requires agreeing to dataset terms",
   "accessZh": "官方 leveLXData/exiD 申请页面；访问需同意数据集条款",
-  "rating": 4,
   "verdict": "高速匝道并线与交织区轨迹",
   "verdictEn": "Highway ramp, merge, and weaving trajectories",
   "wmNote": "并线和驶出行为为多智能体驾驶世界模型提供比普通车道保持更强的交互压力测试。",
   "wmNoteEn": "Merge and exit behavior provides a stronger interaction stress test for driving world models than ordinary lane-following data.",
   "links": {
     "homepage": "https://levelxdata.com/exid-dataset/"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://levelxdata.com/exid-dataset/",
+    "sourceTitle": "exiD by leveLXData - Real-World Scenario Data",
+    "locator": "Official dataset / project description",
+    "statement": "Official release provides naturalistic road-user trajectories, maps and maneuver annotations for merging/on-ramp/off-ramp scenarios.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

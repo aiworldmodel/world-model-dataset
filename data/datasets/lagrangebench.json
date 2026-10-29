@@ -31,7 +31,6 @@
   "licenseZh": "数据许可见 Zenodo 发布条款；代码条款另行适用",
   "access": "Official Zenodo archives and automatic download/loaders",
   "accessZh": "官方 Zenodo 数据包及自动下载、加载器",
-  "rating": 4,
   "verdict": "多步流体粒子预测",
   "verdictEn": "Multi-step fluid particle prediction",
   "wmNote": "使用连续位置与外力信息预测粒子演化；工具支持导入的 GNS 数据不作为新增独立样本重复计算。",
@@ -39,5 +38,18 @@
   "links": {
     "code": "https://github.com/tumaer/lagrangebench",
     "paper": "https://arxiv.org/abs/2309.16342"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://arxiv.org/abs/2309.16342",
+    "sourceTitle": "[2309.16342] LagrangeBench: A Lagrangian Fluid Mechanics Benchmarking Suite",
+    "locator": "Abstract / official paper description",
+    "statement": "SPH fluid-particle datasets and temporal coarse-graining evaluate learned time-evolution surrogates.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -30,7 +30,6 @@
   "organizations": "Meta and international academic consortium",
   "license": "Ego-Exo4D License Agreement; approved access required",
   "access": "Application required",
-  "rating": "5",
   "verdict": "第一与第三人称同步技能",
   "wmNote": "同步多视角为视角不变世界表示提供稀缺监督；下载和许可门槛较高，且不是机器人动作数据。",
   "links": {
@@ -44,5 +43,18 @@
   "scaleZh": "1,400+ 小时 · 800+ 名参与者 · 13 座城市",
   "organizationsZh": "Meta 与国际学术联盟",
   "accessZh": "需申请",
-  "licenseZh": "Ego-Exo4D 许可协议；需通过审核方可访问"
+  "licenseZh": "Ego-Exo4D 许可协议；需通过审核方可访问",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://arxiv.org/abs/2311.18259",
+    "sourceTitle": "[2311.18259] Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
+    "locator": "Abstract / official paper description",
+    "statement": "Synchronized long-form ego/exocentric recordings include camera poses and IMU. Retain temporal motion/pose tracks; activity classification alone is not the criterion.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

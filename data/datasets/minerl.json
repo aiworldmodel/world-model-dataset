@@ -30,7 +30,6 @@
   "organizations": "Carnegie Mellon University and collaborators",
   "license": "MIT for code; Minecraft EULA and dataset terms also apply",
   "access": "Open download",
-  "rating": "4",
   "verdict": "开放世界人类示范",
   "wmNote": "动作和状态对齐适合长时策略与动力学建模；依赖特定 Minecraft 版本和游戏许可。",
   "links": {
@@ -44,5 +43,18 @@
   "scaleZh": "6,000 万+ 状态—动作对 · 500+ 小时示范",
   "organizationsZh": "卡内基梅隆大学及合作机构",
   "accessZh": "开放下载",
-  "licenseZh": "代码采用 MIT 许可；同时适用 Minecraft EULA 和数据集条款"
+  "licenseZh": "代码采用 MIT 许可；同时适用 Minecraft EULA 和数据集条款",
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1907.13440",
+    "sourceTitle": "[1907.13440] MineRL: A Large-Scale Dataset of Minecraft Demonstrations",
+    "locator": "Abstract / official paper description",
+    "statement": "Human Minecraft demonstrations are paired with a simulator for interactive learning; retain observation/action trajectories, not ancillary media.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

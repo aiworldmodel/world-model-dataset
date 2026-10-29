@@ -33,7 +33,6 @@
   "licenseZh": "需核查仓库及附带依赖条款",
   "access": "Official generation, trajectory saving and replay commands",
   "accessZh": "官方生成、轨迹保存和回放命令",
-  "rating": 4,
   "verdict": "复杂流体控制 rollout",
   "verdictEn": "Complex-fluid control rollouts",
   "wmNote": "收录为 rollout 生成工具；控制轨迹结合仿真状态可用于动作条件预测。",
@@ -41,5 +40,18 @@
   "links": {
     "homepage": "https://fluidlab2023.github.io/",
     "code": "https://github.com/zhouxian/FluidLab"
-  }
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://fluidlab2023.github.io/",
+    "sourceTitle": "FluidLab",
+    "locator": "README / dataset or environment documentation",
+    "statement": "Differentiable multi-material simulation defines controlled fluid-manipulation tasks and physical evolution; generation environment, not a fixed dataset.",
+    "reviewedAt": "2026-10-29",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": []
 }

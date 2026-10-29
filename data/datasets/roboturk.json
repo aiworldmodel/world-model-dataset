@@ -34,7 +34,6 @@
   "licenseZh": "适用项目专用研究条款；需核查数据和平台条件",
   "access": "Open project access",
   "accessZh": "开放项目访问",
-  "rating": 4,
   "verdict": "众包机器人示范先驱",
   "verdictEn": "Pioneering crowdsourced robot demonstrations",
   "wmNote": "对研究示范收集方式很有价值，但任务数量少，规模与现代机器人数据相比有限。",
@@ -42,5 +41,18 @@
   "links": {
     "homepage": "https://roboturk.stanford.edu/",
     "paper": "https://arxiv.org/abs/1811.02790"
-  }
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://arxiv.org/abs/1811.02790",
+    "sourceTitle": "[1811.02790] RoboTurk: A Crowdsourcing Platform for Robotic Skill Learning through Imitation",
+    "locator": "Abstract / official paper description",
+    "statement": "Crowdsourced 6DoF teleoperation produces temporally extended robot manipulation demonstrations.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }

@@ -7,11 +7,29 @@
   "summaryEn": "A human-annotated and synthetic benchmark for multidisciplinary, multifaceted world understanding in video, including explanation, counterfactual reasoning, and future prediction.",
   "primaryTask": "World Model Evaluation & Diagnostics",
   "primaryTaskZh": "世界模型评测与诊断",
-  "secondaryTasks": ["Physical & Causal Reasoning", "Predictive & Generative Dynamics"],
-  "domain": ["Physics / Science", "Egocentric / Human"],
-  "modalities": ["RGB Video", "QA", "Text"],
-  "structure": ["Video Question Answering", "Human-annotated Samples", "Synthetic Samples"],
-  "source": ["Real-world", "Synthetic", "Human Annotation"],
+  "secondaryTasks": [
+    "Physical & Causal Reasoning",
+    "Predictive & Generative Dynamics"
+  ],
+  "domain": [
+    "Physics / Science",
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video",
+    "QA",
+    "Text"
+  ],
+  "structure": [
+    "Video Question Answering",
+    "Human-annotated Samples",
+    "Synthetic Samples"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic",
+    "Human Annotation"
+  ],
   "scale": "1,910 videos · 6,627 QA pairs · 7 disciplines · 69 subdisciplines",
   "scaleZh": "1910 个视频 · 6627 组问答 · 7 个学科 · 69 个子学科",
   "organizations": "University of California, Santa Barbara and collaborators",
@@ -20,7 +38,6 @@
   "licenseZh": "官方仓库采用 MIT；源视频条款可能不同",
   "access": "Official benchmark repository and project page available",
   "accessZh": "提供官方基准仓库和项目页",
-  "rating": 4,
   "verdict": "多学科视频世界理解评测",
   "verdictEn": "Multidisciplinary video-world evaluation",
   "wmNote": "多维推理问题可诊断视频模型的因果和预测能力；问答成绩只能间接反映可生成、可交互的世界模型能力。",
@@ -29,5 +46,18 @@
     "homepage": "https://mmworld-bench.github.io/",
     "paper": "https://arxiv.org/abs/2406.08407",
     "code": "https://github.com/UCSB-AI/MMWorld"
-  }
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://arxiv.org/abs/2406.08407",
+    "sourceTitle": "[2406.08407] MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+    "locator": "Abstract / official paper description",
+    "statement": "The source explicitly evaluates world-model reasoning with future-prediction and counterfactual questions; restrict inclusion evidence to those tracks.",
+    "reviewedAt": "2026-10-29",
+    "level": "paper",
+    "downloadTested": false
+  },
+  "aliases": []
 }
