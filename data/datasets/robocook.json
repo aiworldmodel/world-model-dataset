@@ -1,0 +1,46 @@
+{
+  "id": "robocook",
+  "name": "RoboCook",
+  "shortName": "RoboCook",
+  "year": 2023,
+  "summary": "真实工具操作弹塑性物体的粒子轨迹，记录不同工具作用下面团几何随时间的变化。",
+  "summaryEn": "Real tool-mediated elastoplastic manipulation trajectories tracking evolving dough geometry.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Object State",
+    "Action",
+    "Trajectories"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "About 20 minutes of real interaction data per tool",
+  "scaleZh": "每种工具约 20 分钟真实交互数据",
+  "organizations": "MIT and collaborators",
+  "organizationsZh": "麻省理工学院及合作者",
+  "license": "Dataset-specific terms require verification; documentation license is not a data license",
+  "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+  "access": "Official repository links to data and trajectory-processing instructions",
+  "accessZh": "官方仓库提供数据和轨迹处理说明",
+  "rating": 4,
+  "verdict": "工具与面团的交互动力学",
+  "verdictEn": "Tool-dough interaction dynamics",
+  "wmNote": "官方仓库提供数据入口和逐帧 HDF5 粒子轨迹；各工具样本数量不均衡。",
+  "wmNoteEn": "Official data links and per-frame HDF5 particle trajectories; samples are imbalanced across tools.",
+  "links": {
+    "code": "https://github.com/hshi74/robocook",
+    "paper": "https://arxiv.org/abs/2306.14447"
+  }
+}

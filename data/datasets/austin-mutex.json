@@ -1,0 +1,46 @@
+{
+  "id": "austin-mutex",
+  "name": "Austin MUTEX",
+  "shortName": "Austin MUTEX",
+  "year": 2023,
+  "summary": "多任务家庭操作的真实机器人轨迹，按步骤提供图像、机器人状态、动作和语言指令。",
+  "summaryEn": "Real-robot household manipulation trajectories with stepwise images, robot state, actions, and instructions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "TFDS real-robot release: 1,500 training episodes",
+  "scaleZh": "TFDS 真实机器人版本：1,500 条训练轨迹",
+  "organizations": "University of Texas at Austin",
+  "organizationsZh": "得克萨斯大学奥斯汀分校",
+  "license": "Dataset-specific terms require verification; documentation license is not a data license",
+  "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+  "access": "Official TFDS/RLDS catalog and dataset builder",
+  "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+  "rating": 4,
+  "verdict": "任务条件多步状态变化",
+  "verdictEn": "Task-conditioned state evolution",
+  "wmNote": "本条限定 TFDS 真实机器人数据，不将论文复用的 LIBERO 仿真轨迹重复计入；与 Open X 有重叠。",
+  "wmNoteEn": "Scoped to real-robot TFDS data, not reused LIBERO simulations; overlaps Open X aggregation.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/utaustin_mutex"
+  }
+}

@@ -7331,6 +7331,52 @@
     }
   },
   {
+    "id": "austin-mutex",
+    "name": "Austin MUTEX",
+    "shortName": "Austin MUTEX",
+    "year": 2023,
+    "summary": "多任务家庭操作的真实机器人轨迹，按步骤提供图像、机器人状态、动作和语言指令。",
+    "summaryEn": "Real-robot household manipulation trajectories with stepwise images, robot state, actions, and instructions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Robot State",
+      "Language"
+    ],
+    "structure": [
+      "Interaction Episodes",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "TFDS real-robot release: 1,500 training episodes",
+    "scaleZh": "TFDS 真实机器人版本：1,500 条训练轨迹",
+    "organizations": "University of Texas at Austin",
+    "organizationsZh": "得克萨斯大学奥斯汀分校",
+    "license": "Dataset-specific terms require verification; documentation license is not a data license",
+    "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+    "access": "Official TFDS/RLDS catalog and dataset builder",
+    "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+    "rating": 4,
+    "verdict": "任务条件多步状态变化",
+    "verdictEn": "Task-conditioned state evolution",
+    "wmNote": "本条限定 TFDS 真实机器人数据，不将论文复用的 LIBERO 仿真轨迹重复计入；与 Open X 有重叠。",
+    "wmNoteEn": "Scoped to real-robot TFDS data, not reused LIBERO simulations; overlaps Open X aggregation.",
+    "links": {
+      "homepage": "https://www.tensorflow.org/datasets/catalog/utaustin_mutex"
+    }
+  },
+  {
     "id": "bridge-data-v2",
     "name": "BridgeData V2",
     "shortName": "BridgeData V2",
@@ -8230,6 +8276,52 @@
     }
   },
   {
+    "id": "robocook",
+    "name": "RoboCook",
+    "shortName": "RoboCook",
+    "year": 2023,
+    "summary": "真实工具操作弹塑性物体的粒子轨迹，记录不同工具作用下面团几何随时间的变化。",
+    "summaryEn": "Real tool-mediated elastoplastic manipulation trajectories tracking evolving dough geometry.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Object State",
+      "Action",
+      "Trajectories"
+    ],
+    "structure": [
+      "Interaction Episodes",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "About 20 minutes of real interaction data per tool",
+    "scaleZh": "每种工具约 20 分钟真实交互数据",
+    "organizations": "MIT and collaborators",
+    "organizationsZh": "麻省理工学院及合作者",
+    "license": "Dataset-specific terms require verification; documentation license is not a data license",
+    "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+    "access": "Official repository links to data and trajectory-processing instructions",
+    "accessZh": "官方仓库提供数据和轨迹处理说明",
+    "rating": 4,
+    "verdict": "工具与面团的交互动力学",
+    "verdictEn": "Tool-dough interaction dynamics",
+    "wmNote": "官方仓库提供数据入口和逐帧 HDF5 粒子轨迹；各工具样本数量不均衡。",
+    "wmNoteEn": "Official data links and per-frame HDF5 particle trajectories; samples are imbalanced across tools.",
+    "links": {
+      "code": "https://github.com/hshi74/robocook",
+      "paper": "https://arxiv.org/abs/2306.14447"
+    }
+  },
+  {
     "id": "robohive",
     "name": "RoboHive",
     "shortName": "RoboHive",
@@ -8651,6 +8743,98 @@
     "links": {
       "homepage": "https://assembly101.github.io/",
       "paper": "https://arxiv.org/abs/2206.01063"
+    }
+  },
+  {
+    "id": "austin-buds",
+    "name": "Austin BUDS",
+    "shortName": "Austin BUDS",
+    "year": 2022,
+    "summary": "Franka 厨房操作示范，按步骤记录主视角、腕部图像、关节与末端状态及七维控制动作。",
+    "summaryEn": "Franka kitchen demonstrations with stepwise workspace/wrist images, joint/end-effector states, and seven-dimensional actions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Robot State",
+      "Language"
+    ],
+    "structure": [
+      "Interaction Episodes",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "TFDS release: 50 training episodes",
+    "scaleZh": "TFDS 发布：50 条训练轨迹",
+    "organizations": "University of Texas at Austin",
+    "organizationsZh": "得克萨斯大学奥斯汀分校",
+    "license": "Dataset-specific terms require verification; documentation license is not a data license",
+    "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+    "access": "Official TFDS/RLDS catalog and dataset builder",
+    "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+    "rating": 4,
+    "verdict": "未分割长时操作轨迹",
+    "verdictEn": "Unsegmented long-horizon manipulation",
+    "wmNote": "按连续状态和末端位姿增量构造转换；属于 Open X 汇总来源，跨库使用需去重。",
+    "wmNoteEn": "Pair sequential states with end-effector deltas; overlaps Open X aggregation and requires cross-catalog deduplication.",
+    "links": {
+      "homepage": "https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds"
+    }
+  },
+  {
+    "id": "austin-sailor",
+    "name": "Austin SAILOR",
+    "shortName": "Austin SAILOR",
+    "year": 2022,
+    "summary": "Franka 餐桌布置与厨房操作时序，提供双视角图像、末端位姿、夹爪和控制动作。",
+    "summaryEn": "Franka table-setting and kitchen sequences with workspace/wrist images, end-effector poses, gripper states, and controls.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Robot State",
+      "Language"
+    ],
+    "structure": [
+      "Interaction Episodes",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "TFDS release: 240 training episodes",
+    "scaleZh": "TFDS 发布：240 条训练轨迹",
+    "organizations": "University of Texas at Austin and collaborators",
+    "organizationsZh": "得克萨斯大学奥斯汀分校及合作者",
+    "license": "Dataset-specific terms require verification; documentation license is not a data license",
+    "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+    "access": "Official TFDS/RLDS catalog and dataset builder",
+    "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+    "rating": 4,
+    "verdict": "技能片段与连续状态预测",
+    "verdictEn": "Skill segments and state prediction",
+    "wmNote": "限定 TFDS 真实机器人子集，不重复收录论文中的 CALVIN 和 Kitchen 仿真数据；与 Open X 存在重叠。",
+    "wmNoteEn": "Scoped to real-robot TFDS data, excluding reused CALVIN/Kitchen simulation data; overlaps Open X.",
+    "links": {
+      "homepage": "https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds"
     }
   },
   {
@@ -10295,6 +10479,53 @@
       "homepage": "https://vimalabs.github.io/",
       "paper": "https://arxiv.org/abs/2210.03094",
       "code": "https://github.com/vimalabs/VIMA"
+    }
+  },
+  {
+    "id": "viola",
+    "name": "VIOLA Robot Demonstrations",
+    "shortName": "VIOLA Robot Demonstrations",
+    "year": 2022,
+    "summary": "Franka 厨房操作轨迹，包含工作区和腕部图像、末端位姿、关节状态及平移旋转动作。",
+    "summaryEn": "Franka kitchen trajectories with workspace/wrist images, end-effector poses, joints, and translation/rotation actions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [
+      "Decision-Making & Agent Trajectories"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Robot State",
+      "Language"
+    ],
+    "structure": [
+      "Interaction Episodes",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "TFDS release: 135 train and 15 test episodes",
+    "scaleZh": "TFDS 发布：135 条训练、15 条测试轨迹",
+    "organizations": "University of Texas at Austin",
+    "organizationsZh": "得克萨斯大学奥斯汀分校",
+    "license": "Dataset-specific terms require verification; documentation license is not a data license",
+    "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+    "access": "Official TFDS/RLDS catalog and dataset builder",
+    "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+    "rating": 4,
+    "verdict": "物体操作的视觉状态转换",
+    "verdictEn": "Visual transitions in object manipulation",
+    "wmNote": "使用相邻观测与动作做条件预测；物体检测先验并非动态真值，数据与 Open X 汇总有重叠。",
+    "wmNoteEn": "Use adjacent observations/actions for prediction; detection priors are not dynamic truth, and data overlap Open X.",
+    "links": {
+      "homepage": "https://www.tensorflow.org/datasets/catalog/viola",
+      "paper": "https://arxiv.org/abs/2210.11339"
     }
   },
   {

@@ -5,7 +5,7 @@
 _一个以任务为核心、重视证据的世界模型开放数据集目录。_
 
 [![在线目录](https://img.shields.io/badge/浏览-在线目录-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![数据集](https://img.shields.io/badge/数据集-386-16a34a)](#数据集目录)
+[![数据集](https://img.shields.io/badge/数据集-391-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 | 数据集 | 一级任务 | 研究领域 | 数据模态 |
 | ---: | ---: | ---: | ---: |
-| 386 | 6 | 6 | 45 |
+| 391 | 6 | 6 | 45 |
 
 ## 分类体系
 
@@ -70,7 +70,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <!-- DATASET_CATALOG_START -->
 
-[预测与生成式动力学 (56)](#predictive-generative-dynamics) · [动作条件动力学 (58)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
+[预测与生成式动力学 (56)](#predictive-generative-dynamics) · [动作条件动力学 (63)](#action-conditioned-dynamics) · [决策与智能体轨迹 (94)](#decision-making-agent-trajectories) · [空间与时空世界建模 (76)](#spatial-spatiotemporal-world-modeling) · [物理与因果推理 (28)](#physical-causal-reasoning) · [世界模型评测与诊断 (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
@@ -358,7 +358,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 <a id="action-conditioned-dynamics"></a>
 
-### 动作条件动力学（58）
+### 动作条件动力学（63）
 
 - **AgiBot World 2026** · 2026
   真实场景多视角机器人操作数据，带步骤、成功帧、错误原因和失败恢复标注。
@@ -480,6 +480,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB 视频` · `分割标注` · `物体元数据` · `动作标签`
   [主页](http://armbench.com) · [论文](https://arxiv.org/abs/2303.16382) · [代码](https://github.com/amzn/armbench) · 访问方式：提供官方数据网站和加载代码
 
+- **Austin MUTEX** · 2023
+  多任务家庭操作的真实机器人轨迹，按步骤提供图像、机器人状态、动作和语言指令。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
+
 - **FluidLab** · 2023
   复杂流体操作的可微仿真基准，支持记录交互目标、保存优化控制轨迹并回放多材料动力学。
   `机器人 / 具身智能` · `物理 / 科学` · `动作` · `仿真状态` · `RGB 视频`
@@ -510,10 +515,25 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   `机器人 / 具身智能` · `RGB-D` · `动作` · `机器人状态`
   [主页](https://rh20t.github.io/) · [论文](https://arxiv.org/abs/2307.00770) · [代码](https://github.com/rh20t/rh20t_api) · 访问方式：官方项目和下载入口
 
+- **RoboCook** · 2023
+  真实工具操作弹塑性物体的粒子轨迹，记录不同工具作用下面团几何随时间的变化。
+  `机器人 / 具身智能` · `物体状态` · `动作` · `轨迹`
+  [代码](https://github.com/hshi74/robocook) · [论文](https://arxiv.org/abs/2306.14447) · 访问方式：官方仓库提供数据和轨迹处理说明
+
 - **TriFinger RL Dataset** · 2023
   TriFinger 真实机器人 Push/Lift 离线强化学习数据，包含多质量策略的状态、动作和奖励。
   `机器人 / 具身智能` · `机器人状态` · `动作` · `奖励` · `RGB 视频` · `轨迹`
   [主页](https://doi.org/10.17617/3.DXZ7TL) · [代码](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · 访问方式：官方 DOI 和数据文档可用
+
+- **Austin BUDS** · 2022
+  Franka 厨房操作示范，按步骤记录主视角、腕部图像、关节与末端状态及七维控制动作。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
+
+- **Austin SAILOR** · 2022
+  Franka 餐桌布置与厨房操作时序，提供双视角图像、末端位姿、夹爪和控制动作。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
 
 - **DiffSkill Environments** · 2022
   工具操作可塑物体的三个仿真任务，提供初始和目标配置下载及随机交互脚本以生成转换轨迹。
@@ -554,6 +574,11 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
   真实机器人多任务语言条件操作轨迹数据，用于训练 Robotics Transformer 策略。
   `机器人 / 具身智能` · `RGB 视频` · `动作` · `语言` · `机器人状态`
   [论文](https://arxiv.org/abs/2212.06817) · [代码](https://github.com/google-research/robotics_transformer) · 访问方式：论文和项目入口；访问可能受限
+
+- **VIOLA Robot Demonstrations** · 2022
+  Franka 厨房操作轨迹，包含工作区和腕部图像、末端位姿、关节状态及平移旋转动作。
+  `机器人 / 具身智能` · `RGB 视频` · `动作` · `机器人状态` · `语言`
+  [主页](https://www.tensorflow.org/datasets/catalog/viola) · [论文](https://arxiv.org/abs/2210.11339) · 访问方式：官方 TFDS/RLDS 目录及数据加载器
 
 - **Brax** · 2021
   基于 JAX 的可微分刚体物理引擎和强化学习环境，可并行生成状态、动作与奖励轨迹。

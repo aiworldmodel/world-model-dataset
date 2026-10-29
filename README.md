@@ -5,7 +5,7 @@
 _A task-first, evidence-aware catalog of open datasets for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Datasets](https://img.shields.io/badge/datasets-386-16a34a)](#dataset-catalog)
+[![Datasets](https://img.shields.io/badge/datasets-391-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -39,7 +39,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 | Datasets | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 386 | 6 | 6 | 45 |
+| 391 | 6 | 6 | 45 |
 
 ## Taxonomy
 
@@ -70,7 +70,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (56)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (58)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (94)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (76)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (56)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (63)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (94)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (76)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (74)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
@@ -358,7 +358,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (58)
+### Action-Conditioned Dynamics (63)
 
 - **AgiBot World 2026** · 2026
   A real-scene multiview robot-manipulation dataset with step, success-frame, error-cause, and recovery annotations.
@@ -480,6 +480,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Segmentation` · `Object Metadata` · `Action Labels`
   [Homepage](http://armbench.com) · [Paper](https://arxiv.org/abs/2303.16382) · [Code](https://github.com/amzn/armbench) · Access: Official dataset website and loading code available
 
+- **Austin MUTEX** · 2023
+  Real-robot household manipulation trajectories with stepwise images, robot state, actions, and instructions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/utaustin_mutex) · Access: Official TFDS/RLDS catalog and dataset builder
+
 - **FluidLab** · 2023
   Differentiable fluid manipulation benchmarks supporting interaction recording, saved control trajectories, and multi-material dynamics replay.
   `Robotics / Embodied AI` · `Physics / Science` · `Action` · `Simulation State` · `RGB Video`
@@ -510,10 +515,25 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State`
   [Homepage](https://rh20t.github.io/) · [Paper](https://arxiv.org/abs/2307.00770) · [Code](https://github.com/rh20t/rh20t_api) · Access: Official project and download entry
 
+- **RoboCook** · 2023
+  Real tool-mediated elastoplastic manipulation trajectories tracking evolving dough geometry.
+  `Robotics / Embodied AI` · `Object State` · `Action` · `Trajectories`
+  [Code](https://github.com/hshi74/robocook) · [Paper](https://arxiv.org/abs/2306.14447) · Access: Official repository links to data and trajectory-processing instructions
+
 - **TriFinger RL Dataset** · 2023
   An offline-RL dataset of real TriFinger Push/Lift tasks with states, actions, rewards, and behavior of varying quality.
   `Robotics / Embodied AI` · `Robot State` · `Action` · `Reward` · `RGB Video` · `Trajectories`
   [Homepage](https://doi.org/10.17617/3.DXZ7TL) · [Code](https://webdav.tuebingen.mpg.de/trifinger-rl/docs/datasets/index.html) · Access: Official DOI and dataset documentation available
+
+- **Austin BUDS** · 2022
+  Franka kitchen demonstrations with stepwise workspace/wrist images, joint/end-effector states, and seven-dimensional actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds) · Access: Official TFDS/RLDS catalog and dataset builder
+
+- **Austin SAILOR** · 2022
+  Franka table-setting and kitchen sequences with workspace/wrist images, end-effector poses, gripper states, and controls.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/austin_sailor_dataset_converted_externally_to_rlds) · Access: Official TFDS/RLDS catalog and dataset builder
 
 - **DiffSkill Environments** · 2022
   Three tool-mediated plastic-object tasks with downloadable initial/target configurations and random-interaction scripts for generating transitions.
@@ -554,6 +574,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Real-robot multitask language-conditioned manipulation trajectories used to train the Robotics Transformer.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language` · `Robot State`
   [Paper](https://arxiv.org/abs/2212.06817) · [Code](https://github.com/google-research/robotics_transformer) · Access: Paper and project entry; access may be restricted
+
+- **VIOLA Robot Demonstrations** · 2022
+  Franka kitchen trajectories with workspace/wrist images, end-effector poses, joints, and translation/rotation actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
+  [Homepage](https://www.tensorflow.org/datasets/catalog/viola) · [Paper](https://arxiv.org/abs/2210.11339) · Access: Official TFDS/RLDS catalog and dataset builder
 
 - **Brax** · 2021
   A JAX-based differentiable rigid-body physics engine and RL environment for parallel state-action-reward trajectory generation.

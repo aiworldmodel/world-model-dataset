@@ -1,0 +1,46 @@
+{
+  "id": "austin-buds",
+  "name": "Austin BUDS",
+  "shortName": "Austin BUDS",
+  "year": 2022,
+  "summary": "Franka 厨房操作示范，按步骤记录主视角、腕部图像、关节与末端状态及七维控制动作。",
+  "summaryEn": "Franka kitchen demonstrations with stepwise workspace/wrist images, joint/end-effector states, and seven-dimensional actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [
+    "Decision-Making & Agent Trajectories"
+  ],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Robot State",
+    "Language"
+  ],
+  "structure": [
+    "Interaction Episodes",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Human Demonstration"
+  ],
+  "scale": "TFDS release: 50 training episodes",
+  "scaleZh": "TFDS 发布：50 条训练轨迹",
+  "organizations": "University of Texas at Austin",
+  "organizationsZh": "得克萨斯大学奥斯汀分校",
+  "license": "Dataset-specific terms require verification; documentation license is not a data license",
+  "licenseZh": "数据专属条款需核查；文档页面许可不等于数据许可",
+  "access": "Official TFDS/RLDS catalog and dataset builder",
+  "accessZh": "官方 TFDS/RLDS 目录及数据加载器",
+  "rating": 4,
+  "verdict": "未分割长时操作轨迹",
+  "verdictEn": "Unsegmented long-horizon manipulation",
+  "wmNote": "按连续状态和末端位姿增量构造转换；属于 Open X 汇总来源，跨库使用需去重。",
+  "wmNoteEn": "Pair sequential states with end-effector deltas; overlaps Open X aggregation and requires cross-catalog deduplication.",
+  "links": {
+    "homepage": "https://www.tensorflow.org/datasets/catalog/austin_buds_dataset_converted_externally_to_rlds"
+  }
+}
