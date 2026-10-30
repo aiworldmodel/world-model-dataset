@@ -28,8 +28,8 @@
     "Simulation",
     "Human Demonstration"
   ],
-  "scale": "5 benchmark suites · 130 tasks · multi-view demonstrations",
-  "scaleZh": "5 个基准套件 · 130 个任务 · 多视角示范轨迹",
+  "scale": "130 tasks in 4 suites; LIBERO-100 is split into LIBERO-90 and LIBERO-10",
+  "scaleZh": "4 个任务套件，共 130 项任务；LIBERO-100 再划分为 LIBERO-90 和 LIBERO-10",
   "organizations": "University of Southern California and collaborators",
   "organizationsZh": "南加州大学及合作团队",
   "license": "MIT License for code; dataset and simulator terms should be checked",

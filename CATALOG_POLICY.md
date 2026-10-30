@@ -63,6 +63,9 @@ The build rejects missing evidence, unsupported criteria/types, detached evidenc
 
 ## Review history / 审查记录
 
+- [2026-10-30 all-361 field and website audit / 全部 361 条字段与网站检查](audit/full-review-361-2026-10-30.md)
+- [Field-level results and corrections / 逐字段结果及修订 JSON](audit/full-review-361-2026-10-30.json) · [CSV](audit/full-review-361-2026-10-30.csv) · [URL retrieval results / 链接结果](audit/full-links-2026-10-30.json)
+
 - [2026-10-30 pre-2026 expansion and complete catalog checks / 历史资源补录及全目录复查](audit/pre2026-review-2026-10-30.md)
 - [Current decisions / 当前逐条决策 JSON](audit/pre2026-review-2026-10-30.json) · [CSV](audit/pre2026-review-2026-10-30.csv)
 

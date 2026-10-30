@@ -23,8 +23,8 @@
   "source": [
     "Real-world"
   ],
-  "scale": "64 episodes",
-  "scaleZh": "64 个回合",
+  "scale": "TFDS 0.1.0: 70 episodes (64 train / 6 val)",
+  "scaleZh": "TFDS 0.1.0：70 个回合（64 训练 / 6 验证）",
   "organizations": "Dataset contributors named in the official TFDS citation",
   "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
   "license": "Dataset-specific release terms; TFDS code license does not establish data permission",

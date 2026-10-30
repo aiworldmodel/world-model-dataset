@@ -2,7 +2,7 @@
   "id": "epic-kitchens-100",
   "name": "EPIC-KITCHENS-100",
   "shortName": "EPIC-KITCHENS-100",
-  "year": 2022,
+  "year": 2020,
   "summary": "大规模第一人称厨房活动数据集，提供连续视频、动作分段、名词与动词标注及多项预测任务，适合研究人类手物交互和下一动作预测。",
   "primaryTask": "Predictive & Generative Dynamics",
   "primaryTaskZh": "预测与生成式动力学",
@@ -57,5 +57,9 @@
   },
   "aliases": [
     "epic-kitchens-55"
-  ]
+  ],
+  "yearBasis": {
+    "description": "Original EPIC-KITCHENS-100 paper submitted 2020-06-23; later journal publication is not the resource introduction.",
+    "source": "https://arxiv.org/abs/2006.13256"
+  }
 }

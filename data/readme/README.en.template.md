@@ -8,7 +8,7 @@ _An evidence-first catalog of data resources for world-model research._
 [![Resources](https://img.shields.io/badge/resources-{{DATASET_COUNT}}-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
-[![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
+[![website](images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
 
 [Explore the website](https://aiworldmodel.github.io/world-model-dataset/) · [Browse datasets](#dataset-catalog) · [Contribute](#contributing-and-corrections)
 
@@ -37,7 +37,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 ## Inclusion evidence
 
-Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/pre2026-review-2026-10-30.md).
+Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/full-review-361-2026-10-30.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
 

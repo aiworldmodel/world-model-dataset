@@ -3,8 +3,8 @@
   "name": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
   "shortName": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
   "year": 2025,
-  "summary": "执行与受扰规划样例包含图像、计划、任务背景及成功/失败目标。",
-  "summaryEn": "Execution and perturbed-planning examples contain images, plans, task context and success/failure targets.",
+  "summary": "执行前后的多视角图像配有子任务成功/失败与失败类别标注。",
+  "summaryEn": "Multi-view images before and after execution carry subtask success/failure and failure-category labels.",
   "primaryTask": "Physical & Causal Reasoning",
   "primaryTaskZh": "物理与因果推理",
   "secondaryTasks": [],
@@ -12,28 +12,28 @@
     "Robotics / Embodied AI"
   ],
   "modalities": [
-    "RGB Video",
+    "RGB Images",
     "Language",
     "Reward"
   ],
   "structure": [
-    "Temporal Sequences"
+    "State Pairs"
   ],
   "source": [
     "Real-world"
   ],
-  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
-  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "scale": "650 execution examples; 170 planning cases are separately bundled",
+  "scaleZh": "650 个执行样例；另附 170 个规划案例",
   "organizations": "Guardian project team",
   "organizationsZh": "Guardian 项目团队",
-  "license": "Data, code and asset terms must be checked for the selected release",
-  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+  "license": "Card states Apache-2.0; original RoboFail and RoboVQA terms also apply",
+  "licenseZh": "数据卡声明 Apache-2.0；原始 RoboFail 与 RoboVQA 条款另行适用",
   "access": "Official documentation or implementation; data download not tested",
   "accessZh": "官方文档或实现入口；未进行数据下载测试",
   "verdict": "物理与因果推理",
   "verdictEn": "Physical & Causal Reasoning",
-  "wmNote": "这是 OOD 评测包，包含 UR5-Fail、RoboFail 和 RoboVQA 子集，与 FailCoT 训练数据分开。",
-  "wmNoteEn": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+  "wmNote": "收录限定带起止图像与执行结果的 OOD 子集，不是完整视频轨迹。另附单张初始图像的规划案例，不能据此声称有时序转移。与 FailCoT 训练数据分开。",
+  "wmNoteEn": "Scope is the OOD execution subset with start/end images and outcome labels, not full video trajectories. Separately bundled single-image planning cases do not establish temporal transitions. Distinct from FailCoT training data.",
   "links": {
     "homepage": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets"
   },
@@ -44,7 +44,7 @@
     "source": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets",
     "sourceTitle": "Guardian OOD dataset card",
     "locator": "Splits and metadata schema",
-    "statement": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+    "statement": "The OOD execution subsets provide start/end subtask images paired with success/failure outcomes: UR5-Fail 140, RoboFail 153 and RoboVQA 357 examples. Separately bundled single-image planning cases are not the qualifying temporal evidence.",
     "reviewedAt": "2026-10-30",
     "level": "documentation",
     "downloadTested": false

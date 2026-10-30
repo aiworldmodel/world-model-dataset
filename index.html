@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="依据原始来源审查的世界模型数据资源目录">
   <title>WorldModel Data Atlas</title>
-  <link rel="stylesheet" href="styles.css?v=20261030-pre2026-361">
+  <link rel="stylesheet" href="styles.css?v=20261030-full-review-361">
 </head>
 <body>
   <header class="topbar">
@@ -16,56 +16,57 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="heroEyebrow">A TASK-FIRST CATALOG FOR WORLD MODELS</p>
-        <h1 data-i18n-html="heroTitle">从研究问题出发，<br><em>找到真正适合的数据。</em></h1>
-        <p class="lede" data-i18n="heroLead">不是按论文年份堆叠链接，而是用任务、领域与模态建立一张可检索的世界模型数据地图。</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">证据优先的世界模型数据目录</p>
+        <h1 data-i18n-html="heroTitle">从状态演化出发，<br><em>寻找有依据的数据。</em></h1>
+        <p class="lede" data-i18n="heroLead">依据原始论文和官方发布说明，收录具有时序状态、动作转移、预测轨迹、物理结果或专门评测协议的数据资源。</p>
         <a class="primary-button" href="#catalog"><span data-i18n="browse">浏览资源</span> <span>↓</span></a>
       </div>
       <div class="hero-graphic" aria-label="任务、领域、模态三层分类示意">
-        <div class="orbit orbit-a"><span data-i18n="graphicTask">Task</span></div>
-        <div class="orbit orbit-b"><span data-i18n="graphicDomain">Domain</span></div>
-        <div class="orbit orbit-c"><span data-i18n="graphicModality">Modality</span></div>
+        <div class="orbit orbit-a"><span data-i18n="graphicTask">任务</span></div>
+        <div class="orbit orbit-b"><span data-i18n="graphicDomain">领域</span></div>
+        <div class="orbit orbit-c"><span data-i18n="graphicModality">模态</span></div>
         <div class="core" data-i18n-html="graphicCore">WORLD<br>MODEL</div>
       </div>
     </section>
 
     <section class="metrics" aria-label="目录统计">
-      <div><strong id="metricDatasets">—</strong><span data-i18n="metricDatasets">Curated datasets</span></div>
-      <div><strong id="metricTasks">—</strong><span data-i18n="metricTasks">Primary tasks</span></div>
-      <div><strong id="metricDomains">—</strong><span data-i18n="metricDomains">Research domains</span></div>
-      <div><strong id="metricModalities">—</strong><span data-i18n="metricModalities">Data modalities</span></div>
+      <div><strong id="metricDatasets">—</strong><span data-i18n="metricDatasets">来源已审查资源</span></div>
+      <div><strong id="metricTasks">—</strong><span data-i18n="metricTasks">一级任务</span></div>
+      <div><strong id="metricDomains">—</strong><span data-i18n="metricDomains">研究领域</span></div>
+      <div><strong id="metricModalities">—</strong><span data-i18n="metricModalities">数据模态</span></div>
     </section>
 
     <p id="resourceBreakdown" class="resource-breakdown"></p>
 
     <section class="catalog" id="catalog">
       <div class="section-heading">
-        <div><p class="eyebrow" data-i18n="catalogEyebrow">CURATED CATALOG · V0.2</p><h2 data-i18n="catalogTitle">世界模型数据资源</h2></div>
-        <p data-i18n="catalogDescription">每个数据集只有一个 Primary Task，其他用途通过标签表达。当前按年份倒排。</p>
+        <div><p class="eyebrow" data-i18n="catalogEyebrow">证据优先目录</p><h2 data-i18n="catalogTitle">世界模型数据资源</h2></div>
+        <p data-i18n="catalogDescription">统计包含数据集、评测集、生成环境、聚合集合与派生数据，不代表互不重叠的独立数据集。来源审查不代表已验证下载和许可。</p>
       </div>
       <div class="toolbar">
-        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索名称、机构、任务或模态…" autocomplete="off"></label>
+        <label class="search"><span aria-hidden="true">⌕</span><span class="sr-only" data-i18n="searchPlaceholder">搜索名称、机构、任务或模态…</span><input id="searchInput" type="search" placeholder="搜索名称、机构、任务或模态…" autocomplete="off"></label>
         <label><span class="sr-only" data-i18n="filterTaskLabel">按任务筛选</span><select id="taskFilter"></select></label>
         <label><span class="sr-only" data-i18n="filterDomainLabel">按领域筛选</span><select id="domainFilter"></select></label>
         <label><span class="sr-only" data-i18n="filterTypeLabel">按资源类型筛选</span><select id="typeFilter"></select></label>
         <button id="resetButton" type="button" data-i18n="reset">重置</button>
       </div>
-      <div class="result-line"><span id="resultCount">—</span><span data-i18n="sortLabel">↓ 按时间倒排</span></div>
-      <div id="datasetGrid" class="dataset-grid" aria-live="polite"></div>
-      <p id="emptyState" class="empty" hidden data-i18n="empty">没有匹配的数据集，试试清除筛选条件。</p>
+      <div class="result-line"><span id="resultCount" role="status" aria-live="polite">—</span><span data-i18n="sortLabel">↓ 按时间倒排</span></div>
+      <noscript><p>请启用 JavaScript，或阅读 <a href="README.zh-CN.md">中文目录</a> / <a href="README.md">English catalog</a>。</p></noscript>
+      <div id="datasetGrid" class="dataset-grid"></div>
+      <p id="emptyState" class="empty" hidden data-i18n="empty">没有匹配的资源，试试清除筛选条件。</p>
     </section>
 
     <section class="method" id="method">
-      <div><p class="eyebrow" data-i18n="methodEyebrow">OUR METHOD</p><h2 data-i18n="methodTitle">一个主任务，多个事实标签。</h2></div>
+      <div><p class="eyebrow" data-i18n="methodEyebrow">分类方法</p><h2 data-i18n="methodTitle">先确认依据，再组织目录。</h2></div>
       <div class="method-grid">
-        <article><span>01</span><h3 data-i18n="methodTaskHeading">Primary Task</h3><p data-i18n="methodTask">回答“它主要训练或评测什么能力”，每条记录只选一个。</p></article>
-        <article><span>02</span><h3 data-i18n="methodDomainHeading">Domain Tags</h3><p data-i18n="methodDomain">描述数据发生在哪里，例如机器人、驾驶、游戏或物理科学。</p></article>
-        <article><span>03</span><h3 data-i18n="methodModalityHeading">Modality Tags</h3><p data-i18n="methodModality">准确说明数据提供的视频、动作、状态、点云与语言等信号。</p></article>
+        <article><span>01</span><h3 data-i18n="methodTaskHeading">入选证据</h3><p data-i18n="methodTask">至少满足状态演化、对齐动作、预测轨迹、物理结果或世界模型专门评测中的一项。</p></article>
+        <article><span>02</span><h3 data-i18n="methodDomainHeading">类型与重叠</h3><p data-i18n="methodDomain">区分数据集、评测、生成工具、聚合集合和派生数据；相关集合不重复累加样本规模。</p></article>
+        <article><span>03</span><h3 data-i18n="methodModalityHeading">审查边界</h3><p data-i18n="methodModality">记录原始来源和日期。证据不足暂存待核验；论文相关性、下载可用性和许可权限分别判断。</p></article>
       </div>
-      <p><a href="https://github.com/aiworldmodel/world-model-dataset/blob/main/CATALOG_POLICY.md" data-i18n="policyLink">收录规则</a> · <a href="https://github.com/aiworldmodel/world-model-dataset/blob/main/audit/pre2026-review-2026-10-30.md" data-i18n="auditLink">完整审查记录</a></p>
+      <p><a href="https://github.com/aiworldmodel/world-model-dataset/blob/main/CATALOG_POLICY.md" data-i18n="policyLink">收录规则</a> · <a href="https://github.com/aiworldmodel/world-model-dataset/blob/main/audit/full-review-361-2026-10-30.md" data-i18n="auditLink">完整审查记录</a></p>
     </section>
   </main>
-  <footer><span data-i18n="footerVersion">WorldModel Data Atlas · Preview 0.2</span><span data-i18n="footerMotto">Evidence over hype. Structure over accumulation.</span></footer>
-  <script src="app.js?v=20261030-pre2026-361" defer></script>
+  <footer><span data-i18n="footerVersion">WorldModel Data Atlas · Evidence review 2026-10-30</span><span data-i18n="footerMotto">证据胜于宣传，结构胜于堆积。</span></footer>
+  <script src="app.js?v=20261030-full-review-361" defer></script>
 </body>
 </html>

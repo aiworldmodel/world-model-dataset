@@ -24,8 +24,8 @@
   "source": [
     "Real-world"
   ],
-  "scale": "Versioned RLDS episode release; see the documented split counts",
-  "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+  "scale": "TFDS 0.1.0: 110 episodes (110 train)",
+  "scaleZh": "TFDS 0.1.0：110 个回合（110 训练）",
   "organizations": "Dataset contributors named in the official TFDS citation",
   "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
   "license": "Dataset-specific release terms; TFDS code license does not establish data permission",

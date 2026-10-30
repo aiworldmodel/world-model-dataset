@@ -16,7 +16,7 @@
   ],
   "modalities": [
     "Event Camera",
-    "Stereo RGB",
+    "Stereo Grayscale",
     "IMU",
     "Depth",
     "Camera Pose"

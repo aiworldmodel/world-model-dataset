@@ -23,8 +23,8 @@
   "source": [
     "Simulation"
   ],
-  "scale": "800 episodes",
-  "scaleZh": "800 个回合",
+  "scale": "TFDS 0.1.0: 1,000 episodes (800 train / 200 val)",
+  "scaleZh": "TFDS 0.1.0：1,000 个回合（800 训练 / 200 验证）",
   "organizations": "Dataset contributors named in the official TFDS citation",
   "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
   "license": "Dataset-specific release terms; TFDS code license does not establish data permission",

@@ -4,6 +4,8 @@ Scope: a strict catalog of resources published or documented before or during 20
 
 ## Workflow
 
+Latest audit: [all 361 records, 2026-10-30](audit/full-review-361-2026-10-30.md). This pass revised 70 records and website behavior without changing the resource count. Its field-level matrix distinguishes structural checks from factual re-verification; existing review dates are not refreshed by successful link requests. Follow-up: unresolved publisher URLs, PandaSet download route, DenseReward release files, TOTO split count, and release-specific data/license verification. Full downloads, sample validation and reproduction remain unperformed.
+
 - [ ] Discover candidates from all available channels
 - [ ] Normalize names, papers, URLs, and aliases
 - [ ] Deduplicate against `data/datasets/`

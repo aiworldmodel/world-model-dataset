@@ -8,7 +8,7 @@ _An evidence-first catalog of data resources for world-model research._
 [![Resources](https://img.shields.io/badge/resources-361-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
-[![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
+[![website](images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
 
 [Explore the website](https://aiworldmodel.github.io/world-model-dataset/) · [Browse datasets](#dataset-catalog) · [Contribute](#contributing-and-corrections)
 
@@ -37,7 +37,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 ## Inclusion evidence
 
-Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/pre2026-review-2026-10-30.md).
+Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/full-review-361-2026-10-30.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
 
@@ -45,7 +45,7 @@ Source review does not establish complete downloads, sample integrity or license
 
 | Reviewed resources | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 361 | 6 | 6 | 43 |
+| 361 | 6 | 6 | 46 |
 
 Dataset: 204 · Benchmark: 48 · Generation environment / toolkit: 86 · Collection / registry: 13 · Derived data / subset: 10
 
@@ -87,9 +87,9 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 ### Predictive & Generative Dynamics (43)
 
 - **DenseReward Dataset** · 2026 · Dataset
-  A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.
-  `Robotics / Embodied AI` · `Egocentric / Human` · `RGB Video` · `Language` · `Reward` · `Action Labels`
-  [Homepage](https://dense-reward.github.io/) · [Code](https://github.com/dense-reward/DenseReward) · Access: Official project and released benchmark resources available
+  Simulated success and failure trajectories provide per-timestep manipulation states and dense reward supervision.
+  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward` · `Action Labels`
+  [Homepage](https://dense-reward.github.io/) · [Code](https://github.com/dense-reward/DenseReward) · Access: Project announces a data release; current file access not verified
   Inclusion evidence C1: The project describes 27K simulated success/failure episodes with current and historical observations and per-timestep execution-state supervision. [Reviewed source](https://dense-reward.github.io/) · 2026-10-29
 
 - **Game2World** · 2026 · Dataset
@@ -106,7 +106,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 - **Mini Moving Shapes** · 2026 · Generation environment / toolkit
   A synthetic multimodal next-state prediction dataset with discrete action controls and symbolic state descriptions for multi-step imagination rollouts.
-  `Games / Virtual Environments` · `Physics / Science` · `RGB Video` · `Text` · `Action` · `Simulation State`
+  `Games / Virtual Environments` · `Physics / Science` · `Grayscale Video` · `Text` · `Action` · `Simulation State`
   [Code](https://github.com/andrew-jeremy/Spectral-World-Models) · Access: Dataset bundled in the official repository and regenerable by script
   Inclusion evidence C2: Bundled data.py generates moving shapes with discrete controls and next-image/text targets for multi-step rollout evaluation. [Reviewed source](https://github.com/andrew-jeremy/Spectral-World-Models) · 2026-10-29
 
@@ -145,12 +145,6 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Egocentric / Human` · `RGB Video` · `Audio` · `3D Mesh` · `Gaze` · `IMU`
   [Homepage](https://ego4d-data.org/) · [Paper](https://arxiv.org/abs/2110.07058) · [Code](https://github.com/facebookresearch/Ego4d) · Access: Application required
   Inclusion evidence C1: The parent corpus explicitly includes future-activity forecasting and interaction-state tasks. Merge v2 and forecasting aliases rather than count them separately. [Reviewed source](https://arxiv.org/abs/2110.07058) · 2026-10-29
-
-- **EPIC-KITCHENS-100** · 2022 · Dataset
-  A large first-person kitchen activity dataset with continuous video, action segments, verb-noun labels, and anticipation benchmarks for hand-object interaction.
-  `Egocentric / Human` · `RGB Video` · `Audio` · `Action Labels` · `Language`
-  [Homepage](https://epic-kitchens.github.io/2021) · [Paper](https://arxiv.org/abs/2006.13256) · [Code](https://github.com/epic-kitchens/epic-kitchens-100-annotations) · Access: Application / agreement required
-  Inclusion evidence C1: Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55. [Reviewed source](https://arxiv.org/abs/2006.13256) · 2026-10-29
 
 - **HumanML3D** · 2022 · Derived data / subset
   Text-paired 3D human motion derived from AMASS and HumanAct12 with standard preprocessing and motion representations.
@@ -193,6 +187,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `RGB Video` · `2D Boxes` · `Segmentation` · `Lane Markings`
   [Homepage](https://bdd-data.berkeley.edu/) · [Paper](https://arxiv.org/abs/1805.04687) · [Code](https://github.com/bdd100k/bdd100k) · Access: Registration required
   Inclusion evidence C3: Official toolkit explicitly links driving videos to GPS/IMU trajectory information; the retained scope is sequential driving recordings, not isolated perception images. [Reviewed source](https://github.com/bdd100k/bdd100k) · 2026-10-29
+
+- **EPIC-KITCHENS-100** · 2020 · Dataset
+  A large first-person kitchen activity dataset with continuous video, action segments, verb-noun labels, and anticipation benchmarks for hand-object interaction.
+  `Egocentric / Human` · `RGB Video` · `Audio` · `Action Labels` · `Language`
+  [Homepage](https://epic-kitchens.github.io/2021) · [Paper](https://arxiv.org/abs/2006.13256) · [Code](https://github.com/epic-kitchens/epic-kitchens-100-annotations) · Access: Application / agreement required
+  Inclusion evidence C1: Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55. [Reviewed source](https://arxiv.org/abs/2006.13256) · 2026-10-29
 
 - **GRAB** · 2020 · Dataset
   Continuous 3D whole-body object interactions with body, hand, face, object-pose sequences and temporal contact information.
@@ -621,8 +621,8 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **Minigrid** · 2023 · Generation environment / toolkit
   Grid environments expose discrete actions, mission-conditioned observations and navigation/object state changes.
   `Games / Virtual Environments` · `Game State` · `Action` · `Reward`
-  [Code](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · Access: Official documentation or implementation; data download not tested
-  Inclusion evidence C2: Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data. [Reviewed source](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md) · 2026-10-30
+  [Code](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md) · Access: Official documentation or implementation; data download not tested
+  Inclusion evidence C2: Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data. [Reviewed source](https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md) · 2026-10-30
 
 - **MUTEX Robot Demonstrations** · 2023 · Dataset
   Manipulation episodes with multimodal task descriptions, stepwise actions, two camera views and robot state.
@@ -781,8 +781,8 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Inclusion evidence C2: Pushing/picking episodes provide five-dimensional actions, images, end-effector pose and joint/velocity/gripper state. Steps are organized into episodes. Action coordinates and sampling conventions follow this release; check them before combining embodiments. [Reviewed source](https://www.tensorflow.org/datasets/catalog/stanford_mask_vit_converted_externally_to_rlds) · 2026-10-30
 
 - **MineDojo** · 2022 · Generation environment / toolkit
-  A large multimodal knowledge and interaction platform built around Minecraft, combining player videos, text knowledge, community discussions, and a live simulation environment for open-world agents.
-  `Games / Virtual Environments` · `RGB Video` · `Action` · `Audio` · `Text` · `Game State`
+  An interactive Minecraft simulation suite with exploration, gathering and crafting tasks plus stepwise actions and observations. This entry covers the environment; accompanying web videos and knowledge databases are not counted as aligned action trajectories.
+  `Games / Virtual Environments` · `RGB Video` · `Action` · `Game State`
   [Homepage](https://minedojo.org/) · [Code](https://github.com/MineDojo/MineDojo) · Access: Open / source-dependent
   Inclusion evidence C2: Official environment exposes multimodal observations and compound actions for step-based Minecraft interaction. Scope is the simulator, not its static wiki assets. [Reviewed source](https://github.com/MineDojo/MineDojo) · 2026-10-29
 
@@ -1120,6 +1120,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://x-humanoid-robomind.github.io/) · [Paper](https://arxiv.org/abs/2412.13877) · [Code](https://github.com/x-humanoid-robomind/x-humanoid-robomind.github.io) · Access: Official project provides dataset and tooling entry points
   Inclusion evidence C2: Teleoperated trajectories include multi-view observations and proprioceptive state, including explicitly collected failure demonstrations. [Reviewed source](https://arxiv.org/abs/2412.13877) · 2026-10-29
 
+- **UMI** · 2024 · Dataset
+  A universal mobile-manipulation interface and dataset recording handheld vision, end-effector actions, and cross-robot trajectories.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
+  [Homepage](https://umi-gripper.github.io/) · [Paper](https://arxiv.org/abs/2402.10329) · Access: Open-source project and paper
+  Inclusion evidence C2: Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques. [Reviewed source](https://arxiv.org/abs/2402.10329) · 2026-10-29
+
 - **BridgeData V2** · 2023 · Dataset
   A large real-robot multitask manipulation dataset spanning diverse kitchen and tabletop scenes.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
@@ -1179,12 +1185,6 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State` · `Language` · `Trajectories`
   [Homepage](https://robopen.github.io/roboset/) · [Paper](https://arxiv.org/abs/2309.01918) · [Code](https://github.com/robopen/roboagent) · Access: Official RoboSet pages provide downloadable trajectories; alternate Hugging Face mirror is referenced by the code repository
   Inclusion evidence C2: Official RoboAgent repository explicitly trains on released RoboSet HDF5 teleoperation demonstrations and links their download channel. [Reviewed source](https://github.com/robopen/roboagent) · 2026-10-29
-
-- **UMI** · 2023 · Dataset
-  A universal mobile-manipulation interface and dataset recording handheld vision, end-effector actions, and cross-robot trajectories.
-  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
-  [Homepage](https://umi-gripper.github.io/) · [Paper](https://arxiv.org/abs/2402.10329) · Access: Open-source project and paper
-  Inclusion evidence C2: Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques. [Reviewed source](https://arxiv.org/abs/2402.10329) · 2026-10-29
 
 - **WebArena** · 2023 · Generation environment / toolkit
   A reproducible real-website interaction environment with browser states, actions, and task trajectories.
@@ -1640,9 +1640,15 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/Hilti-Research/hilti-slam-challenge-2021) · [Paper](https://arxiv.org/abs/2109.11316) · Access: Official repository links to datasets and ground truth
   Inclusion evidence C3: Indoor/outdoor robot sensor sequences have accurate ground-truth references; retain temporal observation/pose modeling, not static construction perception. [Reviewed source](https://arxiv.org/abs/2109.11316) · 2026-10-29
 
+- **KITTI-360** · 2021 · Dataset
+  A multimodal 3D dataset for long-range urban driving with panoramic images, LiDAR, trajectories, and scene annotations.
+  `Autonomous Driving` · `Urban / 3D Scene` · `LiDAR` · `RGB Video` · `3D Boxes` · `Maps` · `GPS / IMU`
+  [Homepage](https://www.cvlibs.net/datasets/kitti-360/) · Access: Official benchmark download
+  Inclusion evidence C3: Official release supplies ordered driving frames with accurate geolocation, consistent instance IDs and released image/LiDAR timestamps. [Reviewed source](https://www.cvlibs.net/datasets/kitti-360/) · 2026-10-29
+
 - **TUM-VIE** · 2021 · Dataset
   Handheld and head-mounted sequences with synchronized stereo events, grayscale frames, IMU, and start/end motion-capture ground truth.
-  `Robotics / Embodied AI` · `Event Camera` · `Stereo RGB` · `IMU` · `Camera Pose`
+  `Robotics / Embodied AI` · `Event Camera` · `Stereo Grayscale` · `IMU` · `Camera Pose`
   [Homepage](https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset) · [Paper](https://arxiv.org/abs/2108.07329) · Access: Official sequence downloads and visualization script
   Inclusion evidence C3: Hardware-synchronized event/frame/IMU streams record handheld and head-mounted motion trajectories; future prediction requires a causal sequence split. [Reviewed source](https://arxiv.org/abs/2108.07329) · 2026-10-29
 
@@ -1664,12 +1670,6 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://mks0601.github.io/InterHand2.6M/) · Access: Official documentation or implementation; data download not tested
   Inclusion evidence C3: Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks. [Reviewed source](https://mks0601.github.io/InterHand2.6M/) · 2026-10-30
 
-- **KITTI-360** · 2020 · Dataset
-  A multimodal 3D dataset for long-range urban driving with panoramic images, LiDAR, trajectories, and scene annotations.
-  `Autonomous Driving` · `Urban / 3D Scene` · `LiDAR` · `RGB Video` · `3D Boxes` · `Maps` · `GPS / IMU`
-  [Homepage](https://www.cvlibs.net/datasets/kitti-360/) · Access: Official benchmark download
-  Inclusion evidence C3: Official release supplies ordered driving frames with accurate geolocation, consistent instance IDs and released image/LiDAR timestamps. [Reviewed source](https://www.cvlibs.net/datasets/kitti-360/) · 2026-10-29
-
 - **Newer College Dataset** · 2020 · Dataset
   Handheld Oxford sequences combining LiDAR, vision, IMU, and centimeter-accurate trajectory ground truth.
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo RGB` · `LiDAR` · `IMU` · `Camera Pose`
@@ -1678,8 +1678,8 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 - **PandaSet** · 2020 · Dataset
   A multi-sensor autonomous-driving dataset with cameras, LiDAR, GPS/IMU, and 3D annotations across urban traffic scenes.
-  `Autonomous Driving` · `RGB Video` · `LiDAR` · `GPS / IMU` · `3D Boxes` · `Maps`
-  [Code](https://github.com/scaleapi/pandaset-devkit) · Access: Open download
+  `Autonomous Driving` · `RGB Video` · `LiDAR` · `GPS / IMU` · `3D Boxes` · `Segmentation`
+  [Code](https://github.com/scaleapi/pandaset-devkit) · [Paper](https://arxiv.org/abs/2112.12610) · Access: Original download pages are no longer reliable; current publisher download route unconfirmed
   Inclusion evidence C3: Official devkit exposes sequences of sensor measurements and per-frame poses; retain sequential recordings. [Reviewed source](https://github.com/scaleapi/pandaset-devkit) · 2026-10-29
 
 - **pNEUMA** · 2020 · Dataset
@@ -1774,13 +1774,13 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 - **MVSEC** · 2018 · Dataset
   Stereo event sequences from multiple moving platforms with images, IMU, and pose/depth truth for most sequences.
-  `Robotics / Embodied AI` · `Autonomous Driving` · `Event Camera` · `Stereo RGB` · `IMU` · `Depth` · `Camera Pose`
+  `Robotics / Embodied AI` · `Autonomous Driving` · `Event Camera` · `Stereo Grayscale` · `IMU` · `Depth` · `Camera Pose`
   [Homepage](https://daniilidis-group.github.io/mvsec/) · Access: Official sequence downloads, calibration and sample code
   Inclusion evidence C3: Multi-vehicle event/frame streams align with LiDAR/IMU/GPS/mocap ground-truth pose, depth and optical flow. [Reviewed source](https://daniilidis-group.github.io/mvsec/) · 2026-10-29
 
 - **TUM VI** · 2018 · Dataset
   Indoor and outdoor visual-inertial sequences with calibrated stereo images, IMU, and partial or full motion-capture trajectories.
-  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo RGB` · `IMU` · `Camera Pose` · `Trajectories`
+  `Robotics / Embodied AI` · `Urban / 3D Scene` · `Stereo Grayscale` · `IMU` · `Camera Pose` · `Trajectories`
   [Homepage](https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset) · [Paper](https://arxiv.org/abs/1804.06120) · Access: Official raw and calibrated sequence downloads
   Inclusion evidence C3: Hardware-synchronized images/IMU and motion-capture pose references support ordered visual-inertial trajectory modeling. [Reviewed source](https://arxiv.org/abs/1804.06120) · 2026-10-29
 
@@ -1828,7 +1828,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 - **EuRoC MAV** · 2016 · Dataset
   Micro-aerial-vehicle sequences with stereo grayscale imagery, synchronized IMU, and motion ground truth.
-  `Robotics / Embodied AI` · `Stereo RGB` · `IMU` · `Camera Pose` · `Trajectories`
+  `Robotics / Embodied AI` · `Stereo Grayscale` · `IMU` · `Camera Pose` · `Trajectories`
   [Homepage](https://projects.asl.ethz.ch/datasets/euroc-mav/) · Access: Official ETH Research Collection download portal
   Inclusion evidence C3: Stereo images and synchronized IMU are paired with accurate MAV motion ground truth. [Reviewed source](https://projects.asl.ethz.ch/datasets/euroc-mav/) · 2026-10-29
 
@@ -1915,10 +1915,10 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Inclusion evidence C4: Official HDF5 schema explicitly contains 100-frame grasp trajectories with time-varying joint states, object mesh states, contacts and friction forces. Only currently released subsets count as available. [Reviewed source](https://github.com/BeLl0o/GRIP_Dataset) · 2026-10-29
 
 - **Guardian OOD (UR5-Fail / RoboFail / RoboVQA)** · 2025 · Derived data / subset
-  Execution and perturbed-planning examples contain images, plans, task context and success/failure targets.
-  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward`
+  Multi-view images before and after execution carry subtask success/failure and failure-category labels.
+  `Robotics / Embodied AI` · `RGB Images` · `Language` · `Reward`
   [Homepage](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · Access: Official documentation or implementation; data download not tested
-  Inclusion evidence C4: Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data. [Reviewed source](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 2026-10-30
+  Inclusion evidence C4: The OOD execution subsets provide start/end subtask images paired with success/failure outcomes: UR5-Fail 140, RoboFail 153 and RoboVQA 357 examples. Separately bundled single-image planning cases are not the qualifying temporal evidence. [Reviewed source](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 2026-10-30
 
 - **ManipBench (Interaction and Outcome Tasks)** · 2025 · Benchmark
   Interaction portions cover inverse dynamics, temporal actions, fabric interactions, counterfactuals and simulation tasks.
@@ -1934,8 +1934,8 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 - **Robo-Dopamine GRM State Pairs** · 2025 · Derived data / subset
   Task instructions, start/end anchors and multi-view before/after states carry relative-progress targets.
-  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward`
-  [Homepage](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · Access: Official documentation or implementation; data download not tested
+  `Robotics / Embodied AI` · `RGB Images` · `Language` · `Reward`
+  [Homepage](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · Access: Hugging Face gated release; accepting publisher conditions is required; files not downloaded
   Inclusion evidence C4: Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories. [Reviewed source](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 2026-10-30
 
 - **PokeFlex** · 2024 · Dataset
@@ -1950,7 +1950,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/pdf/2303.16382) · Access: Paper documents the resource; complete download not tested
   Inclusion evidence C4: The activity subset contains pick/transfer/place context, manipulation videos, physical package-failure outcomes and the first observable defect frame. Inclusion covers these outcome sequences, not the standalone segmentation/identification images. [Reviewed source](https://arxiv.org/pdf/2303.16382) · 2026-10-30
 
-- **Melting Pot** · 2022 · Generation environment / toolkit
+- **Melting Pot 2.0** · 2022 · Generation environment / toolkit
   A suite of multi-agent social interaction environments.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/google-deepmind/meltingpot) · [Paper](https://arxiv.org/abs/2211.13746) · Access: Open-source benchmark

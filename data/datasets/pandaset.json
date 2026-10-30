@@ -18,7 +18,7 @@
     "LiDAR",
     "GPS / IMU",
     "3D Boxes",
-    "Maps"
+    "Segmentation"
   ],
   "structure": [
     "Temporal Sequences",
@@ -27,20 +27,21 @@
   "source": [
     "Real-world"
   ],
-  "scale": "48,000+ LiDAR sweeps · 6,000+ camera sequences · 28 scenes",
-  "scaleZh": "48,000+ 帧激光雷达扫描 · 6,000+ 段相机序列 · 28 个场景",
-  "organizations": "Pony.ai and Scale AI",
-  "organizationsZh": "小马智行与 Scale AI",
-  "license": "PandaSet License; commercial and attribution terms apply",
-  "licenseZh": "适用 PandaSet 许可；包含商业使用和署名条款",
-  "access": "Open download",
-  "accessZh": "开放下载",
+  "scale": "103 eight-second scenes; 80 synchronized timesteps per scene; 6 cameras and 2 LiDARs",
+  "scaleZh": "103 个八秒场景；每场景 80 个同步时刻；6 台相机、2 台激光雷达",
+  "organizations": "Hesai Technology and Scale AI",
+  "organizationsZh": "禾赛科技与 Scale AI",
+  "license": "Paper reports a no-cost commercial license; obtain the release LICENSE.txt and verify its terms",
+  "licenseZh": "论文报告可免费商用；须取得发布包 LICENSE.txt 并核对具体条款",
+  "access": "Original download pages are no longer reliable; current publisher download route unconfirmed",
+  "accessZh": "原下载网页已不可靠；尚未确认当前发布方下载入口",
   "verdict": "多传感器自动驾驶数据",
   "verdictEn": "Multi-sensor driving dataset",
-  "wmNote": "传感器同步和三维标注适合时空场景建模，但缺少直接的车辆控制动作。",
-  "wmNoteEn": "Synchronized sensors and 3D labels support spatiotemporal scene modeling, although direct vehicle controls are not provided.",
+  "wmNote": "有序传感器观测与位姿可用于预测。旧 pandaset.org 在本轮检查中跳转到无关内容，Scale 的旧下载路径返回 404；不要在那里提交注册资料。当前保留原论文与开发工具来源。",
+  "wmNoteEn": "Ordered sensor observations and poses support prediction. In this check the old pandaset.org domain redirected to unrelated content, and the former Scale download path returned 404. Do not submit registration details there. The original paper and devkit remain the evidence sources.",
   "links": {
-    "code": "https://github.com/scaleapi/pandaset-devkit"
+    "code": "https://github.com/scaleapi/pandaset-devkit",
+    "paper": "https://arxiv.org/abs/2112.12610"
   },
   "resourceType": "dataset",
   "evidence": {
@@ -54,5 +55,9 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [],
+  "yearBasis": {
+    "description": "Original paper Table I dates the release to 2020, although the paper was submitted in 2021.",
+    "source": "https://arxiv.org/pdf/2112.12610"
+  }
 }

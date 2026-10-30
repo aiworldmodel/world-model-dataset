@@ -14,7 +14,7 @@
     "Robotics / Embodied AI"
   ],
   "modalities": [
-    "Stereo RGB",
+    "Stereo Grayscale",
     "IMU",
     "Camera Pose",
     "Trajectories"

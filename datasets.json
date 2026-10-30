@@ -83,7 +83,7 @@
       "Simulation"
     ],
     "scale": "150 hours · 75K episodes · 200 tasks",
-    "scaleZh": "150 hours · 75K episodes · 200 tasks",
+    "scaleZh": "150 小时 · 7.5 万个回合 · 200 项任务",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -138,7 +138,7 @@
       "Simulation"
     ],
     "scale": "Configurable binaural navigation rollouts",
-    "scaleZh": "Configurable binaural navigation rollouts",
+    "scaleZh": "可配置的双耳音频导航回放",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -194,7 +194,7 @@
       "Simulation"
     ],
     "scale": "50K+ trajectories · 207 tasks",
-    "scaleZh": "50K+ trajectories · 207 tasks",
+    "scaleZh": "5 万+ 条轨迹 · 207 项任务",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -248,7 +248,7 @@
       "Simulation"
     ],
     "scale": "Nine physical scenes",
-    "scaleZh": "Nine physical scenes",
+    "scaleZh": "9 个物理场景",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -302,7 +302,7 @@
       "Simulation"
     ],
     "scale": "720 videos · 6 methods · 6 camera trajectories",
-    "scaleZh": "720 videos · 6 methods · 6 camera trajectories",
+    "scaleZh": "720 段视频 · 6 种方法 · 6 条相机轨迹",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -358,7 +358,7 @@
       "Simulation"
     ],
     "scale": "Configurable air-ground simulation rollouts",
-    "scaleZh": "Configurable air-ground simulation rollouts",
+    "scaleZh": "可配置的空地协同仿真回放",
     "organizations": "Official project team",
     "organizationsZh": "官方项目团队",
     "license": "See official repository and dataset terms",
@@ -415,7 +415,7 @@
       "Simulation"
     ],
     "scale": "~850K aligned segments",
-    "scaleZh": "~850K aligned segments",
+    "scaleZh": "约 85 万个对齐片段",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -448,16 +448,15 @@
     "name": "DenseReward Dataset",
     "shortName": "DenseReward",
     "year": 2026,
-    "summary": "为机器人与人类操作视频提供逐帧稠密进度、阶段和失败恢复标注的数据集。",
-    "summaryEn": "A robot and human manipulation-video dataset with frame-level dense progress, stage, and failure-recovery annotations.",
+    "summary": "通过仿真合成成功、碰撞、漏抓、掉落和恢复轨迹，提供逐时刻操作状态与稠密奖励标注。",
+    "summaryEn": "Simulated success and failure trajectories provide per-timestep manipulation states and dense reward supervision.",
     "primaryTask": "Predictive & Generative Dynamics",
     "primaryTaskZh": "预测与生成式动力学",
     "secondaryTasks": [
       "World Model Evaluation & Diagnostics"
     ],
     "domain": [
-      "Robotics / Embodied AI",
-      "Egocentric / Human"
+      "Robotics / Embodied AI"
     ],
     "modalities": [
       "RGB Video",
@@ -469,22 +468,20 @@
       "Dataset / Benchmark"
     ],
     "source": [
-      "Real-world",
-      "Simulation",
-      "Generated"
+      "Simulation"
     ],
-    "scale": "26,579 episodes and 7.56M densely labeled frames",
-    "scaleZh": "26,579 个回合和 756 万个稠密标注帧",
+    "scale": "Project reports approximately 27,000 simulated success/failure episodes",
+    "scaleZh": "项目报告约 27,000 个仿真成功与失败回合",
     "organizations": "DenseReward project team",
     "organizationsZh": "DenseReward 项目团队",
     "license": "See official dataset terms",
     "licenseZh": "见官方数据集条款",
-    "access": "Official project and released benchmark resources available",
-    "accessZh": "官方项目和已发布基准资源可用",
+    "access": "Project announces a data release; current file access not verified",
+    "accessZh": "项目宣布发布数据；当前文件访问尚未验证",
     "verdict": "刻画操作过程推进、碰撞、失败和恢复的稠密时序数据",
     "verdictEn": "Dense temporal data capturing manipulation progress, collisions, failures, and recovery",
-    "wmNote": "逐帧状态进度直接支持过程世界模型和失败预测。",
-    "wmNoteEn": "Frame-level state progress directly supports process world models and failure prediction.",
+    "wmNote": "收录仿真生成的操作过程数据。真实机器人实验不等于发布了对应数据；已发布文件范围与帧数仍待核实。",
+    "wmNoteEn": "Scope is the simulated manipulation data. Real-robot experiments do not establish release of their recordings; released file scope and frame counts remain unverified.",
     "links": {
       "homepage": "https://dense-reward.github.io/",
       "code": "https://github.com/dense-reward/DenseReward"
@@ -762,7 +759,7 @@
       "Simulation"
     ],
     "scale": "Real-world offline RL trajectories",
-    "scaleZh": "Real-world offline RL trajectories",
+    "scaleZh": "真实机器人离线强化学习轨迹",
     "organizations": "Official project team",
     "organizationsZh": "官方项目团队",
     "license": "See official repository and dataset terms",
@@ -989,7 +986,7 @@
       "Simulation"
     ],
     "scale": "Six task families · two robot embodiments",
-    "scaleZh": "Six task families · two robot embodiments",
+    "scaleZh": "6 类任务 · 2 种机器人形态",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -1044,7 +1041,7 @@
       "Simulation"
     ],
     "scale": "330 cases · 18 world models",
-    "scaleZh": "330 cases · 18 world models",
+    "scaleZh": "330 个测试案例 · 18 个世界模型",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -1099,7 +1096,7 @@
       "Simulation"
     ],
     "scale": "600+ hours",
-    "scaleZh": "600+ hours",
+    "scaleZh": "600+ 小时",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -1154,7 +1151,7 @@
       "Simulation"
     ],
     "scale": "1M curated annotations",
-    "scaleZh": "1M curated annotations",
+    "scaleZh": "100 万条筛选标注",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -1493,7 +1490,7 @@
       "Physics / Science"
     ],
     "modalities": [
-      "RGB Video",
+      "Grayscale Video",
       "Text",
       "Action",
       "Simulation State"
@@ -1908,7 +1905,7 @@
       "Simulation"
     ],
     "scale": "171 scenarios",
-    "scaleZh": "171 scenarios",
+    "scaleZh": "171 个场景",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -2138,7 +2135,7 @@
       "Simulation"
     ],
     "scale": "5,000 training videos · 100 evaluation examples",
-    "scaleZh": "5,000 training videos · 100 evaluation examples",
+    "scaleZh": "5,000 段训练视频 · 100 个评测样例",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -2308,7 +2305,7 @@
       "Simulation"
     ],
     "scale": "Six evaluation domains",
-    "scaleZh": "Six evaluation domains",
+    "scaleZh": "6 个评测领域",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -2476,7 +2473,7 @@
       "Simulation"
     ],
     "scale": "100K environments",
-    "scaleZh": "100K environments",
+    "scaleZh": "10 万个环境",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -3222,7 +3219,7 @@
       "Simulation"
     ],
     "scale": "Five causal question types",
-    "scaleZh": "Five causal question types",
+    "scaleZh": "5 类因果问题",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -3627,7 +3624,7 @@
       "Simulation"
     ],
     "scale": "160K+ expert demonstrations",
-    "scaleZh": "160K+ expert demonstrations",
+    "scaleZh": "16 万+ 条专家示范",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -3687,8 +3684,8 @@
     "scaleZh": "大规模真实环境腿式机器人序列和参考轨迹",
     "organizations": "ETH Zurich Robotic Systems Lab",
     "organizationsZh": "苏黎世联邦理工机器人系统实验室",
-    "license": "See official dataset terms",
-    "licenseZh": "见官方数据集条款",
+    "license": "Publisher states data CC BY-SA 4.0; software MIT",
+    "licenseZh": "发布方注明数据采用 CC BY-SA 4.0，软件采用 MIT",
     "access": "Dataset page, Hugging Face repository, and localization benchmark available",
     "accessZh": "提供数据页、Hugging Face 仓库和定位基准",
     "verdict": "真实野外腿式机器人定位与世界状态估计数据",
@@ -3712,7 +3709,11 @@
       "level": "paper",
       "downloadTested": false
     },
-    "aliases": []
+    "aliases": [],
+    "yearBasis": {
+      "description": "Publisher announces public access rollout on 2025-07-15; dataset paper appeared in 2026.",
+      "source": "https://grand-tour.leggedrobotics.com/"
+    }
   },
   {
     "id": "grip",
@@ -3777,8 +3778,8 @@
     "name": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
     "shortName": "Guardian OOD (UR5-Fail / RoboFail / RoboVQA)",
     "year": 2025,
-    "summary": "执行与受扰规划样例包含图像、计划、任务背景及成功/失败目标。",
-    "summaryEn": "Execution and perturbed-planning examples contain images, plans, task context and success/failure targets.",
+    "summary": "执行前后的多视角图像配有子任务成功/失败与失败类别标注。",
+    "summaryEn": "Multi-view images before and after execution carry subtask success/failure and failure-category labels.",
     "primaryTask": "Physical & Causal Reasoning",
     "primaryTaskZh": "物理与因果推理",
     "secondaryTasks": [],
@@ -3786,28 +3787,28 @@
       "Robotics / Embodied AI"
     ],
     "modalities": [
-      "RGB Video",
+      "RGB Images",
       "Language",
       "Reward"
     ],
     "structure": [
-      "Temporal Sequences"
+      "State Pairs"
     ],
     "source": [
       "Real-world"
     ],
-    "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
-    "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+    "scale": "650 execution examples; 170 planning cases are separately bundled",
+    "scaleZh": "650 个执行样例；另附 170 个规划案例",
     "organizations": "Guardian project team",
     "organizationsZh": "Guardian 项目团队",
-    "license": "Data, code and asset terms must be checked for the selected release",
-    "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
+    "license": "Card states Apache-2.0; original RoboFail and RoboVQA terms also apply",
+    "licenseZh": "数据卡声明 Apache-2.0；原始 RoboFail 与 RoboVQA 条款另行适用",
     "access": "Official documentation or implementation; data download not tested",
     "accessZh": "官方文档或实现入口；未进行数据下载测试",
     "verdict": "物理与因果推理",
     "verdictEn": "Physical & Causal Reasoning",
-    "wmNote": "这是 OOD 评测包，包含 UR5-Fail、RoboFail 和 RoboVQA 子集，与 FailCoT 训练数据分开。",
-    "wmNoteEn": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+    "wmNote": "收录限定带起止图像与执行结果的 OOD 子集，不是完整视频轨迹。另附单张初始图像的规划案例，不能据此声称有时序转移。与 FailCoT 训练数据分开。",
+    "wmNoteEn": "Scope is the OOD execution subset with start/end images and outcome labels, not full video trajectories. Separately bundled single-image planning cases do not establish temporal transitions. Distinct from FailCoT training data.",
     "links": {
       "homepage": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets"
     },
@@ -3818,7 +3819,7 @@
       "source": "https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets",
       "sourceTitle": "Guardian OOD dataset card",
       "locator": "Splits and metadata schema",
-      "statement": "Execution and perturbed-planning examples provide task context, images, plans, success/failure targets and failure modes. The OOD package contains UR5-Fail, RoboFail and a RoboVQA subset; it is separate from FailCoT training data.",
+      "statement": "The OOD execution subsets provide start/end subtask images paired with success/failure outcomes: UR5-Fail 140, RoboFail 153 and RoboVQA 357 examples. Separately bundled single-image planning cases are not the qualifying temporal evidence.",
       "reviewedAt": "2026-10-30",
       "level": "documentation",
       "downloadTested": false
@@ -4022,7 +4023,7 @@
       "Simulation"
     ],
     "scale": "30 tasks · 200+ assets",
-    "scaleZh": "30 tasks · 200+ assets",
+    "scaleZh": "30 项任务 · 200+ 个资产",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -4185,7 +4186,7 @@
       "Simulation"
     ],
     "scale": "32 manipulation tasks",
-    "scaleZh": "32 manipulation tasks",
+    "scaleZh": "32 项操作任务",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -4350,7 +4351,7 @@
       "Simulation"
     ],
     "scale": "10 classes of multi-step scenarios",
-    "scaleZh": "10 classes of multi-step scenarios",
+    "scaleZh": "10 类多步骤场景",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -4869,7 +4870,7 @@
       "Simulation"
     ],
     "scale": "513 objects · 1,302 tasks · 10K+ demos",
-    "scaleZh": "513 objects · 1,302 tasks · 10K+ demos",
+    "scaleZh": "513 个物体 · 1,302 项任务 · 1 万+ 条示范",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -4969,24 +4970,25 @@
       "Robotics / Embodied AI"
     ],
     "modalities": [
-      "RGB Video",
+      "RGB Images",
       "Language",
       "Reward"
     ],
     "structure": [
-      "Temporal Sequences"
+      "State Pairs"
     ],
     "source": [
-      "Real-world"
+      "Real-world",
+      "Simulation"
     ],
-    "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
-    "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+    "scale": "Card reports 34,601,209 state-comparison samples; 2,997,257 form a selected subset",
+    "scaleZh": "数据卡报告 34,601,209 个状态比较样例；其中 2,997,257 个为筛选子集",
     "organizations": "Dopamine-Reward project team",
     "organizationsZh": "Dopamine-Reward 项目团队",
-    "license": "Data, code and asset terms must be checked for the selected release",
-    "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
-    "access": "Official documentation or implementation; data download not tested",
-    "accessZh": "官方文档或实现入口；未进行数据下载测试",
+    "license": "Card tags Apache-2.0; original source-dataset terms still apply",
+    "licenseZh": "数据卡标注 Apache-2.0；原始来源数据集条款仍适用",
+    "access": "Hugging Face gated release; accepting publisher conditions is required; files not downloaded",
+    "accessZh": "Hugging Face 门控发布，须接受发布方条件；未下载文件",
     "verdict": "物理与因果推理",
     "verdictEn": "Physical & Causal Reasoning",
     "wmNote": "这是派生状态对资源，不能描述为完整动作轨迹，也不能用模型训练总量代替公开数据量。",
@@ -5006,7 +5008,12 @@
       "level": "documentation",
       "downloadTested": false
     },
-    "aliases": []
+    "aliases": [],
+    "relatedResources": [
+      "droid",
+      "libero",
+      "robocasa"
+    ]
   },
   {
     "id": "robo-ai-u-r5e",
@@ -5215,7 +5222,7 @@
       "Simulation"
     ],
     "scale": "Multi-session university-building data",
-    "scaleZh": "Multi-session university-building data",
+    "scaleZh": "大学建筑内的多次采集数据",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -5270,7 +5277,7 @@
       "Simulation"
     ],
     "scale": "88 sequences · 1.3M images",
-    "scaleZh": "88 sequences · 1.3M images",
+    "scaleZh": "88 条序列 · 130 万张图像",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -5324,7 +5331,7 @@
       "Simulation"
     ],
     "scale": "Interconnected panoramic road graph",
-    "scaleZh": "Interconnected panoramic road graph",
+    "scaleZh": "互联的全景道路图",
     "organizations": "Authors and collaborators",
     "organizationsZh": "作者及合作团队",
     "license": "Not confirmed from the paper entry",
@@ -5593,8 +5600,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 139 episodes (113 train / 26 val)",
+    "scaleZh": "TFDS 0.1.0：139 个回合（113 训练 / 26 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -5901,8 +5908,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 3,847 episodes (3,847 train)",
+    "scaleZh": "TFDS 0.1.0：3,847 个回合（3,847 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -6613,6 +6620,67 @@
     "aliases": []
   },
   {
+    "id": "umi",
+    "name": "UMI",
+    "shortName": "UMI",
+    "year": 2024,
+    "summary": "通用移动操作接口与数据集，记录手持相机、末端动作和跨机器人操作轨迹。",
+    "summaryEn": "A universal mobile-manipulation interface and dataset recording handheld vision, end-effector actions, and cross-robot trajectories.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [
+      "Action-Conditioned Dynamics"
+    ],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Robot State"
+    ],
+    "structure": [
+      "Demonstration Trajectories"
+    ],
+    "source": [
+      "Real-world",
+      "Teleoperation"
+    ],
+    "scale": "Cross-robot mobile manipulation demonstrations",
+    "scaleZh": "跨机器人移动操作演示",
+    "organizations": "Carnegie Mellon University and collaborators",
+    "organizationsZh": "卡内基梅隆大学及合作团队",
+    "license": "See official repository",
+    "licenseZh": "见官方仓库",
+    "access": "Open-source project and paper",
+    "accessZh": "开源项目和论文",
+    "verdict": "跨机器人移动操作",
+    "verdictEn": "Cross-robot mobile manipulation",
+    "wmNote": "统一接口便于迁移动力学。",
+    "wmNoteEn": "A unified interface aids dynamics transfer.",
+    "links": {
+      "homepage": "https://umi-gripper.github.io/",
+      "paper": "https://arxiv.org/abs/2402.10329"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://arxiv.org/abs/2402.10329",
+      "sourceTitle": "[2402.10329] Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
+      "locator": "Abstract / official paper description",
+      "statement": "Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques.",
+      "reviewedAt": "2026-10-29",
+      "level": "paper",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "yearBasis": {
+      "description": "Original UMI paper submitted 2024-02-15.",
+      "source": "https://arxiv.org/abs/2402.10329"
+    }
+  },
+  {
     "id": "aloha-act-sim",
     "name": "ALOHA / ACT Simulation Demonstrations",
     "shortName": "ALOHA / ACT Simulation Demonstrations",
@@ -6807,8 +6875,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 110 episodes (110 train)",
+    "scaleZh": "TFDS 0.1.0：110 个回合（110 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -6870,8 +6938,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 1,000 episodes (104 test / 896 train)",
+    "scaleZh": "TFDS 0.1.0：1,000 个回合（104 测试 / 896 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -7186,8 +7254,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 1,085 episodes (109 test / 976 train)",
+    "scaleZh": "TFDS 0.1.0：1,085 个回合（109 测试 / 976 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -7500,8 +7568,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 136 episodes (14 test / 122 train)",
+    "scaleZh": "TFDS 0.1.0：136 个回合（14 测试 / 122 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -7564,8 +7632,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 192 episodes (192 train)",
+    "scaleZh": "TFDS 0.1.0：192 个回合（192 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -7690,8 +7758,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 100 episodes (100 train)",
+    "scaleZh": "TFDS 0.1.0：100 个回合（100 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -7752,8 +7820,8 @@
       "Temporal Sequences"
     ],
     "source": [],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 118 episodes (118 train)",
+    "scaleZh": "TFDS 0.1.0：118 个回合（118 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -8061,8 +8129,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 170 episodes (170 train)",
+    "scaleZh": "TFDS 0.1.0：170 个回合（170 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -8240,8 +8308,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 201 episodes (201 train)",
+    "scaleZh": "TFDS 0.1.0：201 个回合（201 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -8363,8 +8431,8 @@
       "Simulation",
       "Human Demonstration"
     ],
-    "scale": "5 benchmark suites · 130 tasks · multi-view demonstrations",
-    "scaleZh": "5 个基准套件 · 130 个任务 · 多视角示范轨迹",
+    "scale": "130 tasks in 4 suites; LIBERO-100 is split into LIBERO-90 and LIBERO-10",
+    "scaleZh": "4 个任务套件，共 130 项任务；LIBERO-100 再划分为 LIBERO-90 和 LIBERO-10",
     "organizations": "University of Southern California and collaborators",
     "organizationsZh": "南加州大学及合作团队",
     "license": "MIT License for code; dataset and simulator terms should be checked",
@@ -8479,8 +8547,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 378 episodes (378 train)",
+    "scaleZh": "TFDS 0.1.0：378 个回合（378 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -8680,13 +8748,13 @@
     "wmNote": "属于可生成交互的环境，不是固定数据包；年份采用官方引用年份 2023。BabyAI 为相关派生套件。",
     "wmNoteEn": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
     "links": {
-      "code": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+      "code": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md"
     },
     "resourceType": "generator",
     "evidence": {
       "status": "source-reviewed",
       "criterion": 2,
-      "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md",
+      "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md",
       "sourceTitle": "Minigrid official README",
       "locator": "Environments and citation",
       "statement": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
@@ -8700,7 +8768,7 @@
     ],
     "yearBasis": {
       "description": "Official citation year; not a claim that the first implementation appeared in 2023.",
-      "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+      "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md"
     }
   },
   {
@@ -8787,8 +8855,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 14 episodes (14 train)",
+    "scaleZh": "TFDS 0.1.0：14 个回合（14 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -9456,8 +9524,8 @@
       "Temporal Sequences"
     ],
     "source": [],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 20 episodes (20 train)",
+    "scaleZh": "TFDS 0.1.0：20 个回合（20 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -9923,63 +9991,6 @@
     }
   },
   {
-    "id": "umi",
-    "name": "UMI",
-    "shortName": "UMI",
-    "year": 2023,
-    "summary": "通用移动操作接口与数据集，记录手持相机、末端动作和跨机器人操作轨迹。",
-    "summaryEn": "A universal mobile-manipulation interface and dataset recording handheld vision, end-effector actions, and cross-robot trajectories.",
-    "primaryTask": "Decision-Making & Agent Trajectories",
-    "primaryTaskZh": "决策与智能体轨迹",
-    "secondaryTasks": [
-      "Action-Conditioned Dynamics"
-    ],
-    "domain": [
-      "Robotics / Embodied AI"
-    ],
-    "modalities": [
-      "RGB Video",
-      "Action",
-      "Robot State"
-    ],
-    "structure": [
-      "Demonstration Trajectories"
-    ],
-    "source": [
-      "Real-world",
-      "Teleoperation"
-    ],
-    "scale": "Cross-robot mobile manipulation demonstrations",
-    "scaleZh": "跨机器人移动操作演示",
-    "organizations": "Carnegie Mellon University and collaborators",
-    "organizationsZh": "卡内基梅隆大学及合作团队",
-    "license": "See official repository",
-    "licenseZh": "见官方仓库",
-    "access": "Open-source project and paper",
-    "accessZh": "开源项目和论文",
-    "verdict": "跨机器人移动操作",
-    "verdictEn": "Cross-robot mobile manipulation",
-    "wmNote": "统一接口便于迁移动力学。",
-    "wmNoteEn": "A unified interface aids dynamics transfer.",
-    "links": {
-      "homepage": "https://umi-gripper.github.io/",
-      "paper": "https://arxiv.org/abs/2402.10329"
-    },
-    "resourceType": "dataset",
-    "evidence": {
-      "status": "source-reviewed",
-      "criterion": 2,
-      "source": "https://arxiv.org/abs/2402.10329",
-      "sourceTitle": "[2402.10329] Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild Robots",
-      "locator": "Abstract / official paper description",
-      "statement": "Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques.",
-      "reviewedAt": "2026-10-29",
-      "level": "paper",
-      "downloadTested": false
-    },
-    "aliases": []
-  },
-  {
     "id": "austin-sirius-dataset",
     "name": "UT Austin SIRIUS",
     "shortName": "UT Austin SIRIUS",
@@ -10004,8 +10015,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 559 episodes (559 train)",
+    "scaleZh": "TFDS 0.1.0：559 个回合（559 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -10067,8 +10078,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "64 episodes",
-    "scaleZh": "64 个回合",
+    "scale": "TFDS 0.1.0: 80 episodes (64 train / 16 val)",
+    "scaleZh": "TFDS 0.1.0：80 个回合（64 训练 / 16 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -10130,8 +10141,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "192 episodes",
-    "scaleZh": "192 个回合",
+    "scale": "TFDS 0.1.0: 240 episodes (192 train / 48 val)",
+    "scaleZh": "TFDS 0.1.0：240 个回合（192 训练 / 48 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -10193,8 +10204,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "64 episodes",
-    "scaleZh": "64 个回合",
+    "scale": "TFDS 0.1.0: 70 episodes (64 train / 6 val)",
+    "scaleZh": "TFDS 0.1.0：70 个回合（64 训练 / 6 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -10256,8 +10267,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "92 episodes",
-    "scaleZh": "92 个回合",
+    "scale": "TFDS 0.1.0: 102 episodes (92 train / 10 val)",
+    "scaleZh": "TFDS 0.1.0：102 个回合（92 训练 / 10 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -10581,7 +10592,11 @@
       "level": "paper",
       "downloadTested": false
     },
-    "aliases": []
+    "aliases": [],
+    "yearBasis": {
+      "description": "2024 extended paper explicitly identifies the preliminary CoRL 2022 publication.",
+      "source": "https://arxiv.org/abs/2403.09227"
+    }
   },
   {
     "id": "berkeley-mvp",
@@ -10884,67 +10899,6 @@
     "aliases": [
       "ego4d-v2",
       "ego4d-forecasting"
-    ]
-  },
-  {
-    "id": "epic-kitchens-100",
-    "name": "EPIC-KITCHENS-100",
-    "shortName": "EPIC-KITCHENS-100",
-    "year": 2022,
-    "summary": "大规模第一人称厨房活动数据集，提供连续视频、动作分段、名词与动词标注及多项预测任务，适合研究人类手物交互和下一动作预测。",
-    "primaryTask": "Predictive & Generative Dynamics",
-    "primaryTaskZh": "预测与生成式动力学",
-    "secondaryTasks": [
-      "World Model Evaluation & Diagnostics"
-    ],
-    "domain": [
-      "Egocentric / Human"
-    ],
-    "modalities": [
-      "RGB Video",
-      "Audio",
-      "Action Labels",
-      "Language"
-    ],
-    "structure": [
-      "Temporal Sequences"
-    ],
-    "source": [
-      "Real-world",
-      "Human Demonstration"
-    ],
-    "scale": "100 hours · 90K action segments · 700 variable-length videos",
-    "organizations": "University of Bristol and University of Catania",
-    "license": "EPIC-KITCHENS data license; research use conditions apply",
-    "access": "Application / agreement required",
-    "verdict": "厨房行为预测基准",
-    "wmNote": "动作与物体标签细致，适合短期行为建模；场景集中在厨房且数据使用需遵守专门协议。",
-    "links": {
-      "homepage": "https://epic-kitchens.github.io/2021",
-      "paper": "https://arxiv.org/abs/2006.13256",
-      "code": "https://github.com/epic-kitchens/epic-kitchens-100-annotations"
-    },
-    "summaryEn": "A large first-person kitchen activity dataset with continuous video, action segments, verb-noun labels, and anticipation benchmarks for hand-object interaction.",
-    "verdictEn": "Kitchen behavior forecasting",
-    "wmNoteEn": "Detailed actions and objects support short-term behavior modeling. The domain is kitchen-specific and access follows a dedicated agreement.",
-    "scaleZh": "100 小时 · 9 万个动作片段 · 700 段不定长视频",
-    "organizationsZh": "布里斯托大学、卡塔尼亚大学",
-    "accessZh": "需申请并同意协议",
-    "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件",
-    "resourceType": "dataset",
-    "evidence": {
-      "status": "source-reviewed",
-      "criterion": 1,
-      "source": "https://arxiv.org/abs/2006.13256",
-      "sourceTitle": "[2006.13256] Rescaling Egocentric Vision",
-      "locator": "Abstract / official paper description",
-      "statement": "Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55.",
-      "reviewedAt": "2026-10-29",
-      "level": "paper",
-      "downloadTested": false
-    },
-    "aliases": [
-      "epic-kitchens-55"
     ]
   },
   {
@@ -11451,8 +11405,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "9,109 episodes",
-    "scaleZh": "9,109 个回合",
+    "scale": "TFDS 0.1.0: 9,200 episodes (9,109 train / 91 val)",
+    "scaleZh": "TFDS 0.1.0：9,200 个回合（9,109 训练 / 91 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -11491,8 +11445,8 @@
   },
   {
     "id": "melting-pot",
-    "name": "Melting Pot",
-    "shortName": "Melting Pot",
+    "name": "Melting Pot 2.0",
+    "shortName": "Melting Pot 2.0",
     "year": 2022,
     "summary": "多智能体社会交互环境套件。",
     "summaryEn": "A suite of multi-agent social interaction environments.",
@@ -11551,7 +11505,7 @@
     "name": "MineDojo",
     "shortName": "MineDojo",
     "year": 2022,
-    "summary": "围绕 Minecraft 开放世界构建的大规模多模态知识与交互平台，结合玩家视频、文本知识、社区讨论及可实时交互的仿真环境，适合长期探索和开放域智能体研究。",
+    "summary": "基于 Minecraft 的交互式仿真套件，提供探索、采集、制作等任务及逐步动作与观测。此条目收录生成环境；附带网络视频与知识库不作为已对齐动作轨迹的规模。",
     "primaryTask": "Action-Conditioned Dynamics",
     "primaryTaskZh": "动作条件动力学",
     "secondaryTasks": [
@@ -11563,8 +11517,6 @@
     "modalities": [
       "RGB Video",
       "Action",
-      "Audio",
-      "Text",
       "Game State"
     ],
     "structure": [
@@ -11572,11 +11524,10 @@
       "Simulation Rollouts"
     ],
     "source": [
-      "Simulation",
-      "Human Demonstration"
+      "Simulation"
     ],
-    "scale": "730K+ videos · ~19K hours · 6K+ wiki pages · 340K+ discussions",
-    "organizations": "Stanford, NVIDIA, Caltech, MIT",
+    "scale": "Simulation suite with thousands of configurable tasks; knowledge-base media totals are separate",
+    "organizations": "NVIDIA, Caltech, Stanford and UT Austin contributors",
     "license": "MIT for code; source media and Minecraft assets have separate terms",
     "access": "Open / source-dependent",
     "verdict": "开放世界交互试验场",
@@ -11585,11 +11536,11 @@
       "homepage": "https://minedojo.org/",
       "code": "https://github.com/MineDojo/MineDojo"
     },
-    "summaryEn": "A large multimodal knowledge and interaction platform built around Minecraft, combining player videos, text knowledge, community discussions, and a live simulation environment for open-world agents.",
+    "summaryEn": "An interactive Minecraft simulation suite with exploration, gathering and crafting tasks plus stepwise actions and observations. This entry covers the environment; accompanying web videos and knowledge databases are not counted as aligned action trajectories.",
     "verdictEn": "Open-world interaction testbed",
     "wmNoteEn": "Useful for interactive game world models and long-horizon agents. Code licensing does not automatically cover all source videos, text, or game assets.",
-    "scaleZh": "73 万+ 视频 · 约 1.9 万小时 · 6,000+ 个 Wiki 页面 · 34 万+ 条讨论",
-    "organizationsZh": "斯坦福大学、NVIDIA、加州理工学院、麻省理工学院",
+    "scaleZh": "包含数千项可配置任务的仿真套件；知识库媒体总量另计",
+    "organizationsZh": "NVIDIA、加州理工学院、斯坦福大学与得克萨斯大学奥斯汀分校贡献者",
     "accessZh": "开放获取，具体取决于数据来源",
     "licenseZh": "代码采用 MIT 许可；源媒体与 Minecraft 资产另有条款",
     "resourceType": "generator",
@@ -11871,8 +11822,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "365 episodes",
-    "scaleZh": "365 个回合",
+    "scale": "TFDS 0.1.0: 456 episodes (365 train / 91 val)",
+    "scaleZh": "TFDS 0.1.0：456 个回合（365 训练 / 91 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -12386,8 +12337,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 3,603 episodes (361 test / 3,242 train)",
+    "scaleZh": "TFDS 0.1.0：3,603 个回合（361 测试 / 3,242 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -12630,8 +12581,8 @@
     "source": [
       "Simulation"
     ],
-    "scale": "800 episodes",
-    "scaleZh": "800 个回合",
+    "scale": "TFDS 0.1.0: 1,000 episodes (800 train / 200 val)",
+    "scaleZh": "TFDS 0.1.0：1,000 个回合（800 训练 / 200 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -13101,8 +13052,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 43,264 episodes (39,350 train / 3,914 val)",
+    "scaleZh": "TFDS 0.1.0：43,264 个回合（39,350 训练 / 3,914 验证）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -13719,6 +13670,70 @@
     "aliases": []
   },
   {
+    "id": "kitti-360",
+    "name": "KITTI-360",
+    "shortName": "KITTI-360",
+    "year": 2021,
+    "summary": "面向长期城市驾驶的多模态三维数据集，提供全景图像、激光雷达、轨迹和三维场景标注。",
+    "summaryEn": "A multimodal 3D dataset for long-range urban driving with panoramic images, LiDAR, trajectories, and scene annotations.",
+    "primaryTask": "Spatial & Spatiotemporal World Modeling",
+    "primaryTaskZh": "空间与时空世界建模",
+    "secondaryTasks": [
+      "Predictive & Generative Dynamics"
+    ],
+    "domain": [
+      "Autonomous Driving",
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "LiDAR",
+      "RGB Video",
+      "3D Boxes",
+      "Maps",
+      "GPS / IMU"
+    ],
+    "structure": [
+      "Driving Sequences",
+      "3D Scene Scans"
+    ],
+    "source": [
+      "Real-world",
+      "Autonomous Vehicle"
+    ],
+    "scale": "73 km of urban driving sequences",
+    "scaleZh": "73 公里城市驾驶序列",
+    "organizations": "Karlsruhe Institute of Technology and TUM",
+    "organizationsZh": "卡尔斯鲁厄理工学院与慕尼黑工大",
+    "license": "Publisher states CC BY-NC-SA 3.0; registration and intended-use declaration required",
+    "licenseZh": "发布方注明 CC BY-NC-SA 3.0；需注册并申明使用目的",
+    "access": "Official benchmark download",
+    "accessZh": "官方基准下载",
+    "verdict": "长期城市三维驾驶",
+    "verdictEn": "Long-range urban 3D driving",
+    "wmNote": "适合时空场景和占据建模。",
+    "wmNoteEn": "Useful for spatiotemporal scene and occupancy modeling.",
+    "links": {
+      "homepage": "https://www.cvlibs.net/datasets/kitti-360/"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://www.cvlibs.net/datasets/kitti-360/",
+      "sourceTitle": "KITTI-360",
+      "locator": "Official dataset / project description",
+      "statement": "Official release supplies ordered driving frames with accurate geolocation, consistent instance IDs and released image/LiDAR timestamps.",
+      "reviewedAt": "2026-10-29",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "yearBasis": {
+      "description": "Original dataset preprint submitted 2021-09-28; publisher citation is PAMI 2022.",
+      "source": "https://arxiv.org/abs/2109.13410"
+    }
+  },
+  {
     "id": "minihack",
     "name": "MiniHack",
     "shortName": "MiniHack",
@@ -13809,8 +13824,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "1,300+ hours · 1,500+ km · 4 cities · 15,000 scenarios",
-    "scaleZh": "1,300+ 小时 · 1,500+ 千米 · 4 座城市 · 15,000 个场景",
+    "scale": "Paper reports 1,500 hours of human driving across 4 cities; released subset size is version-dependent",
+    "scaleZh": "论文报告 4 座城市共 1,500 小时人类驾驶数据；实际发布子集规模依版本而定",
     "organizations": "Motional",
     "organizationsZh": "Motional",
     "license": "nuPlan Terms of Use; research access conditions apply",
@@ -14279,7 +14294,7 @@
     ],
     "modalities": [
       "Event Camera",
-      "Stereo RGB",
+      "Stereo Grayscale",
       "IMU",
       "Camera Pose"
     ],
@@ -14967,6 +14982,71 @@
     "aliases": []
   },
   {
+    "id": "epic-kitchens-100",
+    "name": "EPIC-KITCHENS-100",
+    "shortName": "EPIC-KITCHENS-100",
+    "year": 2020,
+    "summary": "大规模第一人称厨房活动数据集，提供连续视频、动作分段、名词与动词标注及多项预测任务，适合研究人类手物交互和下一动作预测。",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [
+      "World Model Evaluation & Diagnostics"
+    ],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Audio",
+      "Action Labels",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Human Demonstration"
+    ],
+    "scale": "100 hours · 90K action segments · 700 variable-length videos",
+    "organizations": "University of Bristol and University of Catania",
+    "license": "EPIC-KITCHENS data license; research use conditions apply",
+    "access": "Application / agreement required",
+    "verdict": "厨房行为预测基准",
+    "wmNote": "动作与物体标签细致，适合短期行为建模；场景集中在厨房且数据使用需遵守专门协议。",
+    "links": {
+      "homepage": "https://epic-kitchens.github.io/2021",
+      "paper": "https://arxiv.org/abs/2006.13256",
+      "code": "https://github.com/epic-kitchens/epic-kitchens-100-annotations"
+    },
+    "summaryEn": "A large first-person kitchen activity dataset with continuous video, action segments, verb-noun labels, and anticipation benchmarks for hand-object interaction.",
+    "verdictEn": "Kitchen behavior forecasting",
+    "wmNoteEn": "Detailed actions and objects support short-term behavior modeling. The domain is kitchen-specific and access follows a dedicated agreement.",
+    "scaleZh": "100 小时 · 9 万个动作片段 · 700 段不定长视频",
+    "organizationsZh": "布里斯托大学、卡塔尼亚大学",
+    "accessZh": "需申请并同意协议",
+    "licenseZh": "适用 EPIC-KITCHENS 数据许可及研究用途条件",
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://arxiv.org/abs/2006.13256",
+      "sourceTitle": "[2006.13256] Rescaling Egocentric Vision",
+      "locator": "Abstract / official paper description",
+      "statement": "Long unscripted action sequences include an explicit action-anticipation challenge; includes and extends EPIC-KITCHENS-55.",
+      "reviewedAt": "2026-10-29",
+      "level": "paper",
+      "downloadTested": false
+    },
+    "aliases": [
+      "epic-kitchens-55"
+    ],
+    "yearBasis": {
+      "description": "Original EPIC-KITCHENS-100 paper submitted 2020-06-23; later journal publication is not the resource introduction.",
+      "source": "https://arxiv.org/abs/2006.13256"
+    }
+  },
+  {
     "id": "grab",
     "name": "GRAB",
     "shortName": "GRAB",
@@ -15129,66 +15209,6 @@
       "locator": "Annotation files; InterHand2.6M in 30 fps",
       "statement": "Sequence names and frame indices link images to 3D hand joints and MANO parameters; a 30 fps release supports temporal research. Some captures have missing frames, requiring explicit timing checks.",
       "reviewedAt": "2026-10-30",
-      "level": "documentation",
-      "downloadTested": false
-    },
-    "aliases": []
-  },
-  {
-    "id": "kitti-360",
-    "name": "KITTI-360",
-    "shortName": "KITTI-360",
-    "year": 2020,
-    "summary": "面向长期城市驾驶的多模态三维数据集，提供全景图像、激光雷达、轨迹和三维场景标注。",
-    "summaryEn": "A multimodal 3D dataset for long-range urban driving with panoramic images, LiDAR, trajectories, and scene annotations.",
-    "primaryTask": "Spatial & Spatiotemporal World Modeling",
-    "primaryTaskZh": "空间与时空世界建模",
-    "secondaryTasks": [
-      "Predictive & Generative Dynamics"
-    ],
-    "domain": [
-      "Autonomous Driving",
-      "Urban / 3D Scene"
-    ],
-    "modalities": [
-      "LiDAR",
-      "RGB Video",
-      "3D Boxes",
-      "Maps",
-      "GPS / IMU"
-    ],
-    "structure": [
-      "Driving Sequences",
-      "3D Scene Scans"
-    ],
-    "source": [
-      "Real-world",
-      "Autonomous Vehicle"
-    ],
-    "scale": "73 km of urban driving sequences",
-    "scaleZh": "73 公里城市驾驶序列",
-    "organizations": "Karlsruhe Institute of Technology and TUM",
-    "organizationsZh": "卡尔斯鲁厄理工学院与慕尼黑工大",
-    "license": "CC BY-NC-SA terms apply",
-    "licenseZh": "适用 CC BY-NC-SA 条款",
-    "access": "Official benchmark download",
-    "accessZh": "官方基准下载",
-    "verdict": "长期城市三维驾驶",
-    "verdictEn": "Long-range urban 3D driving",
-    "wmNote": "适合时空场景和占据建模。",
-    "wmNoteEn": "Useful for spatiotemporal scene and occupancy modeling.",
-    "links": {
-      "homepage": "https://www.cvlibs.net/datasets/kitti-360/"
-    },
-    "resourceType": "dataset",
-    "evidence": {
-      "status": "source-reviewed",
-      "criterion": 3,
-      "source": "https://www.cvlibs.net/datasets/kitti-360/",
-      "sourceTitle": "KITTI-360",
-      "locator": "Official dataset / project description",
-      "statement": "Official release supplies ordered driving frames with accurate geolocation, consistent instance IDs and released image/LiDAR timestamps.",
-      "reviewedAt": "2026-10-29",
       "level": "documentation",
       "downloadTested": false
     },
@@ -15611,7 +15631,7 @@
       "LiDAR",
       "GPS / IMU",
       "3D Boxes",
-      "Maps"
+      "Segmentation"
     ],
     "structure": [
       "Temporal Sequences",
@@ -15620,20 +15640,21 @@
     "source": [
       "Real-world"
     ],
-    "scale": "48,000+ LiDAR sweeps · 6,000+ camera sequences · 28 scenes",
-    "scaleZh": "48,000+ 帧激光雷达扫描 · 6,000+ 段相机序列 · 28 个场景",
-    "organizations": "Pony.ai and Scale AI",
-    "organizationsZh": "小马智行与 Scale AI",
-    "license": "PandaSet License; commercial and attribution terms apply",
-    "licenseZh": "适用 PandaSet 许可；包含商业使用和署名条款",
-    "access": "Open download",
-    "accessZh": "开放下载",
+    "scale": "103 eight-second scenes; 80 synchronized timesteps per scene; 6 cameras and 2 LiDARs",
+    "scaleZh": "103 个八秒场景；每场景 80 个同步时刻；6 台相机、2 台激光雷达",
+    "organizations": "Hesai Technology and Scale AI",
+    "organizationsZh": "禾赛科技与 Scale AI",
+    "license": "Paper reports a no-cost commercial license; obtain the release LICENSE.txt and verify its terms",
+    "licenseZh": "论文报告可免费商用；须取得发布包 LICENSE.txt 并核对具体条款",
+    "access": "Original download pages are no longer reliable; current publisher download route unconfirmed",
+    "accessZh": "原下载网页已不可靠；尚未确认当前发布方下载入口",
     "verdict": "多传感器自动驾驶数据",
     "verdictEn": "Multi-sensor driving dataset",
-    "wmNote": "传感器同步和三维标注适合时空场景建模，但缺少直接的车辆控制动作。",
-    "wmNoteEn": "Synchronized sensors and 3D labels support spatiotemporal scene modeling, although direct vehicle controls are not provided.",
+    "wmNote": "有序传感器观测与位姿可用于预测。旧 pandaset.org 在本轮检查中跳转到无关内容，Scale 的旧下载路径返回 404；不要在那里提交注册资料。当前保留原论文与开发工具来源。",
+    "wmNoteEn": "Ordered sensor observations and poses support prediction. In this check the old pandaset.org domain redirected to unrelated content, and the former Scale download path returned 404. Do not submit registration details there. The original paper and devkit remain the evidence sources.",
     "links": {
-      "code": "https://github.com/scaleapi/pandaset-devkit"
+      "code": "https://github.com/scaleapi/pandaset-devkit",
+      "paper": "https://arxiv.org/abs/2112.12610"
     },
     "resourceType": "dataset",
     "evidence": {
@@ -15647,7 +15668,11 @@
       "level": "documentation",
       "downloadTested": false
     },
-    "aliases": []
+    "aliases": [],
+    "yearBasis": {
+      "description": "Original paper Table I dates the release to 2020, although the paper was submitted in 2021.",
+      "source": "https://arxiv.org/pdf/2112.12610"
+    }
   },
   {
     "id": "pneuma",
@@ -17734,7 +17759,7 @@
     "source": [
       "Simulation"
     ],
-    "scale": "25 task templates · 100K+ generated tasks",
+    "scale": "Original benchmark: 2 tiers × 25 templates × 100 tasks = 5,000 tasks",
     "organizations": "Meta AI Research",
     "license": "Apache-2.0 code; dataset generated by included simulator",
     "access": "Open generation toolkit",
@@ -17748,7 +17773,7 @@
     "summaryEn": "A 2D physical reasoning benchmark where agents place objects to achieve goals across generated task templates, testing intervention, trial efficiency, and generalization.",
     "verdictEn": "Physical intervention and trial-and-error",
     "wmNoteEn": "Direct interventions make it useful for model-based planning evaluation, though the controlled 2D world is far from real physics.",
-    "scaleZh": "25 个任务模板 · 10 万+ 个生成任务",
+    "scaleZh": "原始基准：2 个难度层级 × 25 个模板 × 100 个任务，共 5,000 个任务",
     "organizationsZh": "Meta AI Research",
     "accessZh": "开放生成工具",
     "licenseZh": "代码采用 Apache-2.0；数据由随附模拟器生成",
@@ -19023,7 +19048,7 @@
     ],
     "modalities": [
       "Event Camera",
-      "Stereo RGB",
+      "Stereo Grayscale",
       "IMU",
       "Depth",
       "Camera Pose"
@@ -19089,8 +19114,8 @@
     "source": [
       "Real-world"
     ],
-    "scale": "Versioned RLDS episode release; see the documented split counts",
-    "scaleZh": "版本化 RLDS 回合发布；规模以文档中的拆分为准",
+    "scale": "TFDS 0.1.0: 580,392 episodes (580,392 train)",
+    "scaleZh": "TFDS 0.1.0：580,392 个回合（580,392 训练）",
     "organizations": "Dataset contributors named in the official TFDS citation",
     "organizationsZh": "官方 TFDS 引用中列出的数据贡献者",
     "license": "Dataset-specific release terms; TFDS code license does not establish data permission",
@@ -19316,7 +19341,7 @@
       "Urban / 3D Scene"
     ],
     "modalities": [
-      "Stereo RGB",
+      "Stereo Grayscale",
       "IMU",
       "Camera Pose",
       "Trajectories"
@@ -20290,7 +20315,7 @@
       "Robotics / Embodied AI"
     ],
     "modalities": [
-      "Stereo RGB",
+      "Stereo Grayscale",
       "IMU",
       "Camera Pose",
       "Trajectories"

@@ -15,7 +15,7 @@
     "Urban / 3D Scene"
   ],
   "modalities": [
-    "Stereo RGB",
+    "Stereo Grayscale",
     "IMU",
     "Camera Pose",
     "Trajectories"

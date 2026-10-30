@@ -10,4 +10,5 @@
 @media(max-width:560px){.details{grid-template-columns:1fr}}
 
 .resource-breakdown{margin:12px max(24px,5vw) 24px;color:var(--muted);line-height:1.8}.note a{color:inherit;text-decoration:underline}.details .detail span{overflow-wrap:anywhere}
+.card-top>div{min-width:0}.card h3{overflow-wrap:anywhere}.year{flex-shrink:0}
 @media(min-width:901px){.toolbar{grid-template-columns:minmax(220px,1fr) repeat(3,minmax(0,210px)) auto}}

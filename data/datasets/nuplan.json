@@ -28,8 +28,8 @@
   "source": [
     "Real-world"
   ],
-  "scale": "1,300+ hours · 1,500+ km · 4 cities · 15,000 scenarios",
-  "scaleZh": "1,300+ 小时 · 1,500+ 千米 · 4 座城市 · 15,000 个场景",
+  "scale": "Paper reports 1,500 hours of human driving across 4 cities; released subset size is version-dependent",
+  "scaleZh": "论文报告 4 座城市共 1,500 小时人类驾驶数据；实际发布子集规模依版本而定",
   "organizations": "Motional",
   "organizationsZh": "Motional",
   "license": "nuPlan Terms of Use; research access conditions apply",

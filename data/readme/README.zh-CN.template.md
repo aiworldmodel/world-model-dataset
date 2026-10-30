@@ -8,7 +8,7 @@ _一个以证据为先的世界模型数据资源目录。_
 [![资源](https://img.shields.io/badge/资源-{{DATASET_COUNT}}-16a34a)](#数据集目录)
 [![一级任务](https://img.shields.io/badge/一级任务-6-7c3aed)](#分类体系)
 
-[![website](https://github.com/worldopendata/world-model-dataset/blob/main/images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
+[![website](images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
 
 [浏览网站](https://aiworldmodel.github.io/world-model-dataset/) · [查看数据集](#数据集目录) · [参与贡献](#贡献与修正)
 
@@ -37,7 +37,7 @@ GitHub README 是便于浏览、搜索和社区协作的数据目录；[交互�
 
 ## 入选证据
 
-每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[最新目录审查报告](audit/pre2026-review-2026-10-30.md)。
+每条资源均有带日期的原始来源审查，明确支持时序状态演化、对齐的控制信号、预测轨迹、物理/反事实结果或专门的世界模型评测协议。静态资产、通用感知/问答、仅模型发布和证据未决候选不进入主目录。详见[收录规则](CATALOG_POLICY.md)和[最新目录审查报告](audit/full-review-361-2026-10-30.md)。
 
 来源审查不代表已完成数据下载、样本完整性或许可权限验证。仅论文证据单独标注。访问条件各异，不宣称全部开放下载；聚合集合和派生数据可能重叠。逐条详细审查理由保留英文，便于对照原始来源。
 

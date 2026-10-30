@@ -3,7 +3,7 @@
   "name": "MineDojo",
   "shortName": "MineDojo",
   "year": 2022,
-  "summary": "围绕 Minecraft 开放世界构建的大规模多模态知识与交互平台，结合玩家视频、文本知识、社区讨论及可实时交互的仿真环境，适合长期探索和开放域智能体研究。",
+  "summary": "基于 Minecraft 的交互式仿真套件，提供探索、采集、制作等任务及逐步动作与观测。此条目收录生成环境；附带网络视频与知识库不作为已对齐动作轨迹的规模。",
   "primaryTask": "Action-Conditioned Dynamics",
   "primaryTaskZh": "动作条件动力学",
   "secondaryTasks": [
@@ -15,8 +15,6 @@
   "modalities": [
     "RGB Video",
     "Action",
-    "Audio",
-    "Text",
     "Game State"
   ],
   "structure": [
@@ -24,11 +22,10 @@
     "Simulation Rollouts"
   ],
   "source": [
-    "Simulation",
-    "Human Demonstration"
+    "Simulation"
   ],
-  "scale": "730K+ videos · ~19K hours · 6K+ wiki pages · 340K+ discussions",
-  "organizations": "Stanford, NVIDIA, Caltech, MIT",
+  "scale": "Simulation suite with thousands of configurable tasks; knowledge-base media totals are separate",
+  "organizations": "NVIDIA, Caltech, Stanford and UT Austin contributors",
   "license": "MIT for code; source media and Minecraft assets have separate terms",
   "access": "Open / source-dependent",
   "verdict": "开放世界交互试验场",
@@ -37,11 +34,11 @@
     "homepage": "https://minedojo.org/",
     "code": "https://github.com/MineDojo/MineDojo"
   },
-  "summaryEn": "A large multimodal knowledge and interaction platform built around Minecraft, combining player videos, text knowledge, community discussions, and a live simulation environment for open-world agents.",
+  "summaryEn": "An interactive Minecraft simulation suite with exploration, gathering and crafting tasks plus stepwise actions and observations. This entry covers the environment; accompanying web videos and knowledge databases are not counted as aligned action trajectories.",
   "verdictEn": "Open-world interaction testbed",
   "wmNoteEn": "Useful for interactive game world models and long-horizon agents. Code licensing does not automatically cover all source videos, text, or game assets.",
-  "scaleZh": "73 万+ 视频 · 约 1.9 万小时 · 6,000+ 个 Wiki 页面 · 34 万+ 条讨论",
-  "organizationsZh": "斯坦福大学、NVIDIA、加州理工学院、麻省理工学院",
+  "scaleZh": "包含数千项可配置任务的仿真套件；知识库媒体总量另计",
+  "organizationsZh": "NVIDIA、加州理工学院、斯坦福大学与得克萨斯大学奥斯汀分校贡献者",
   "accessZh": "开放获取，具体取决于数据来源",
   "licenseZh": "代码采用 MIT 许可；源媒体与 Minecraft 资产另有条款",
   "resourceType": "generator",

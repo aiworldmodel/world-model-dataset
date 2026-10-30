@@ -35,13 +35,13 @@
   "wmNote": "属于可生成交互的环境，不是固定数据包；年份采用官方引用年份 2023。BabyAI 为相关派生套件。",
   "wmNoteEn": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
   "links": {
-    "code": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+    "code": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md"
   },
   "resourceType": "generator",
   "evidence": {
     "status": "source-reviewed",
     "criterion": 2,
-    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md",
+    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md",
     "sourceTitle": "Minigrid official README",
     "locator": "Environments and citation",
     "statement": "Gymnasium environments provide discrete actions, mission-conditioned observations and state-changing navigation/object tasks. BabyAI is a related derived suite, not disjoint data.",
@@ -55,6 +55,6 @@
   ],
   "yearBasis": {
     "description": "Official citation year; not a claim that the first implementation appeared in 2023.",
-    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/master/README.md"
+    "source": "https://raw.githubusercontent.com/Farama-Foundation/Minigrid/main/README.md"
   }
 }

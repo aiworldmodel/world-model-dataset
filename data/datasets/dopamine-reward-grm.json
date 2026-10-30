@@ -12,24 +12,25 @@
     "Robotics / Embodied AI"
   ],
   "modalities": [
-    "RGB Video",
+    "RGB Images",
     "Language",
     "Reward"
   ],
   "structure": [
-    "Temporal Sequences"
+    "State Pairs"
   ],
   "source": [
-    "Real-world"
+    "Real-world",
+    "Simulation"
   ],
-  "scale": "Scope and version specified in the reviewed source; no pooled total asserted",
-  "scaleZh": "范围和版本见审查来源；不宣称合并后的总量",
+  "scale": "Card reports 34,601,209 state-comparison samples; 2,997,257 form a selected subset",
+  "scaleZh": "数据卡报告 34,601,209 个状态比较样例；其中 2,997,257 个为筛选子集",
   "organizations": "Dopamine-Reward project team",
   "organizationsZh": "Dopamine-Reward 项目团队",
-  "license": "Data, code and asset terms must be checked for the selected release",
-  "licenseZh": "所选版本的数据、代码和资产条款须分别核查",
-  "access": "Official documentation or implementation; data download not tested",
-  "accessZh": "官方文档或实现入口；未进行数据下载测试",
+  "license": "Card tags Apache-2.0; original source-dataset terms still apply",
+  "licenseZh": "数据卡标注 Apache-2.0；原始来源数据集条款仍适用",
+  "access": "Hugging Face gated release; accepting publisher conditions is required; files not downloaded",
+  "accessZh": "Hugging Face 门控发布，须接受发布方条件；未下载文件",
   "verdict": "物理与因果推理",
   "verdictEn": "Physical & Causal Reasoning",
   "wmNote": "这是派生状态对资源，不能描述为完整动作轨迹，也不能用模型训练总量代替公开数据量。",
@@ -49,5 +50,10 @@
     "level": "documentation",
     "downloadTested": false
   },
-  "aliases": []
+  "aliases": [],
+  "relatedResources": [
+    "droid",
+    "libero",
+    "robocasa"
+  ]
 }
