@@ -27,11 +27,10 @@
   "scale": "100K driving videos · 40 seconds each · 10 tasks",
   "organizations": "UC Berkeley",
   "license": "BDD100K license; non-commercial research conditions apply",
-  "access": "Registration required",
+  "access": "Official repository and paper; follow publisher instructions for dataset access",
   "verdict": "多样化驾驶视频",
   "wmNote": "视觉场景覆盖广，适合视频预训练和分布鲁棒性研究；缺少同步 LiDAR 与直接控制信号。",
   "links": {
-    "homepage": "https://bdd-data.berkeley.edu/",
     "paper": "https://arxiv.org/abs/1805.04687",
     "code": "https://github.com/bdd100k/bdd100k"
   },
@@ -40,7 +39,7 @@
   "wmNoteEn": "Broad visual coverage supports video pretraining and robustness research. It lacks synchronized LiDAR and direct vehicle controls.",
   "scaleZh": "10 万段驾驶视频 · 每段 40 秒 · 10 项任务",
   "organizationsZh": "加州大学伯克利分校",
-  "accessZh": "需注册",
+  "accessZh": "提供官方仓库和论文；数据访问按发布方说明办理",
   "licenseZh": "适用 BDD100K 许可；包含非商业研究用途条件",
   "resourceType": "dataset",
   "evidence": {

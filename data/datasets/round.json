@@ -42,8 +42,7 @@
   "wmNote": "环岛合流、让行和绕行行为为多智能体交互世界模型提供了紧凑但困难的评测场景；规模小于 openDD 等后续环岛数据集。",
   "wmNoteEn": "Merging, yielding, and circulating behavior at roundabouts create compact but difficult benchmarks for interactive world models, though the scale is smaller than later roundabout datasets such as openDD.",
   "links": {
-    "homepage": "https://levelxdata.com/round-dataset/",
-    "paper": "https://ieeexplore.ieee.org/document/9294728"
+    "homepage": "https://levelxdata.com/round-dataset/"
   },
   "resourceType": "dataset",
   "evidence": {

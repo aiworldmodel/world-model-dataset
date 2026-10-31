@@ -29,7 +29,7 @@ The GitHub README is the browsable community catalog. The [interactive website](
 - **Task-first organization** — start from the capability you want to train or evaluate
 - **Research-oriented metadata** — compare modalities, scale, structure, source, access, and licensing
 - **Bilingual content** — use the English or Chinese README and switch languages on the website
-- **Curated resource links** — follow official homepages, papers, and code repositories
+- **Confirmed resource links** — at least one reliable official homepage, paper or repository per resource
 - **Evidence-aware notes** — understand both useful properties and important limitations
 - **Reproducible maintenance** — generate the website and both README catalogs from one data source
 
@@ -40,6 +40,8 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/full-review-361-2026-10-30.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
+
+Unconfirmed or empty entry points are omitted; not every resource needs homepage, paper and code links. See the [2026-10-31 link cleanup record](audit/link-cleanup-2026-10-31.md).
 
 ## Catalog snapshot
 

@@ -41,7 +41,6 @@
   "wmNote": "可用于生成导航轨迹，但旧版 Gibson 工具链已归档，现代项目通常应评估 iGibson 等后继方案。",
   "wmNoteEn": "Useful for navigation rollouts, though the original toolkit is archived and newer successors may be preferable.",
   "links": {
-    "homepage": "http://gibsonenv.stanford.edu/database/",
     "paper": "https://arxiv.org/abs/1808.10654",
     "code": "https://github.com/StanfordVL/GibsonEnv"
   },

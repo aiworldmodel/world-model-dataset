@@ -39,8 +39,7 @@
   "wmNote": "三维动作真值和相机标定价值很高；实验室动作分布与真实开放环境存在明显差距。",
   "wmNoteEn": "High-quality 3D motion and calibration are valuable, while laboratory actions differ from open-world behavior.",
   "links": {
-    "homepage": "http://vision.imar.ro/human3.6m/description.php",
-    "paper": "https://ieeexplore.ieee.org/document/6682899"
+    "homepage": "http://vision.imar.ro/human3.6m/description.php"
   },
   "resourceType": "dataset",
   "evidence": {

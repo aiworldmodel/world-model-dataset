@@ -29,11 +29,10 @@
   "scale": "60M+ state-action pairs · 500+ hours of demonstrations",
   "organizations": "Carnegie Mellon University and collaborators",
   "license": "MIT for code; Minecraft EULA and dataset terms also apply",
-  "access": "Open download",
+  "access": "Official paper and repository; current data-download availability not verified",
   "verdict": "开放世界人类示范",
   "wmNote": "动作和状态对齐适合长时策略与动力学建模；依赖特定 Minecraft 版本和游戏许可。",
   "links": {
-    "homepage": "https://minerl.io/",
     "paper": "https://arxiv.org/abs/1907.13440",
     "code": "https://github.com/minerllabs/minerl"
   },
@@ -42,7 +41,7 @@
   "wmNoteEn": "Aligned actions and states support long-horizon policy and dynamics modeling. Use depends on compatible Minecraft versions and game licensing.",
   "scaleZh": "6,000 万+ 状态—动作对 · 500+ 小时示范",
   "organizationsZh": "卡内基梅隆大学及合作机构",
-  "accessZh": "开放下载",
+  "accessZh": "提供官方论文和仓库；当前数据下载可用性未确认",
   "licenseZh": "代码采用 MIT 许可；同时适用 Minecraft EULA 和数据集条款",
   "resourceType": "dataset",
   "evidence": {

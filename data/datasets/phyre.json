@@ -33,7 +33,6 @@
   "verdict": "物理干预与试错",
   "wmNote": "动作直接改变物理场景，适合评估模型驱动规划；二维受控环境与现实物理差距较大。",
   "links": {
-    "homepage": "https://phyre.ai/",
     "paper": "https://arxiv.org/abs/1908.05656",
     "code": "https://github.com/facebookresearch/phyre"
   },

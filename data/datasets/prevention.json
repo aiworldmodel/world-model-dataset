@@ -40,8 +40,7 @@
   "wmNote": "车道变化阶段、车辆轨迹和多传感器时序记录使其适合研究交通参与者未来状态预测；规模小于大型自动驾驶数据集。",
   "wmNoteEn": "Lane-change stages, vehicle trajectories, and multisensor temporal logs make it useful for forecasting traffic-agent futures, though it is smaller than large industrial driving datasets.",
   "links": {
-    "homepage": "https://prevention-dataset.uah.es/",
-    "paper": "https://doi.org/10.1109/ITSC.2019.8917433"
+    "homepage": "https://prevention-dataset.uah.es/"
   },
   "resourceType": "dataset",
   "evidence": {

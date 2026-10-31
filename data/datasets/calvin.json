@@ -30,11 +30,10 @@
   "scale": "24 hours teleoperated play data · 34 tasks",
   "organizations": "University of Freiburg and collaborators",
   "license": "Code and dataset terms documented by project; verify intended use",
-  "access": "Open download",
+  "access": "Official paper and repository; current data-download availability not verified",
   "verdict": "长时语言条件控制",
   "wmNote": "连续任务链很适合评估长期规划和 rollout；场景相对受控，迁移到真实开放环境需要额外数据。",
   "links": {
-    "homepage": "https://calvin.cs.uni-freiburg.de/",
     "paper": "https://arxiv.org/abs/2112.03227",
     "code": "https://github.com/mees/calvin"
   },
@@ -43,7 +42,7 @@
   "wmNoteEn": "Continuous task chains are useful for planning and rollout evaluation. The controlled setting requires additional data for transfer to open real-world environments.",
   "scaleZh": "24 小时遥操作探索数据 · 34 项任务",
   "organizationsZh": "弗赖堡大学及合作机构",
-  "accessZh": "开放下载",
+  "accessZh": "提供官方论文和仓库；当前数据下载可用性未确认",
   "licenseZh": "代码与数据条款见项目说明；使用前需核查适用范围",
   "resourceType": "dataset",
   "evidence": {

@@ -38,8 +38,7 @@
   "wmNote": "收录仿真生成的操作过程数据。真实机器人实验不等于发布了对应数据；已发布文件范围与帧数仍待核实。",
   "wmNoteEn": "Scope is the simulated manipulation data. Real-robot experiments do not establish release of their recordings; released file scope and frame counts remain unverified.",
   "links": {
-    "homepage": "https://dense-reward.github.io/",
-    "code": "https://github.com/dense-reward/DenseReward"
+    "homepage": "https://dense-reward.github.io/"
   },
   "resourceType": "dataset",
   "evidence": {

@@ -50,6 +50,10 @@ The headline counts catalog resources, not independent acquired corpora. Type la
 
 ## Maintenance / 维护流程
 
+Display only confirmed official homepages, papers or repositories. Each resource needs at least one reliable entry point; all three link types are optional. Remove uncertain, unrelated or empty entries instead of filling every link slot. If no confirmed entry remains, move the resource to the pending queue and retain the audit record. When replacing an evidence source, recheck the claims it supports and record the actual review date.
+
+只展示已确认的官方主页、论文或仓库入口，每条至少一个即可，不要求三类链接齐全。移除未确认、无关或空入口；若没有可靠入口，则移入待核验并保留审查记录。更换证据来源时须重新核对其支持的陈述，并记录实际审查日期。
+
 1. Check active IDs, aliases and `audit/archived-records/` before adding a candidate.
 2. Read the original paper, official data page or official repository. Confirm identity before interpreting evidence. Write a concrete scope statement; “useful for world models” is insufficient.
 3. Record `resourceType` and `evidence` in `data/datasets/<id>.json`; add known `relatedResources` and aliases. Choose a task only after the evidence gate passes.
@@ -63,6 +67,7 @@ The build rejects missing evidence, unsupported criteria/types, detached evidenc
 
 ## Review history / 审查记录
 
+- [2026-10-31 confirmed-link cleanup / 入口清理与逐条覆盖记录](audit/link-cleanup-2026-10-31.md)
 - [2026-10-30 all-361 field and website audit / 全部 361 条字段与网站检查](audit/full-review-361-2026-10-30.md)
 - [Field-level results and corrections / 逐字段结果及修订 JSON](audit/full-review-361-2026-10-30.json) · [CSV](audit/full-review-361-2026-10-30.csv) · [URL retrieval results / 链接结果](audit/full-links-2026-10-30.json)
 

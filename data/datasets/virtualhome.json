@@ -41,7 +41,6 @@
   "wmNote": "程序化动作适合长程规划和状态转移；视觉和物理真实性受 Unity 场景限制。",
   "wmNoteEn": "Executable programs support long-horizon planning, with visual and physical realism limited by Unity scenes.",
   "links": {
-    "homepage": "http://virtual-home.org/",
     "paper": "https://arxiv.org/abs/1806.07011",
     "code": "https://github.com/xavierpuigf/virtualhome"
   },

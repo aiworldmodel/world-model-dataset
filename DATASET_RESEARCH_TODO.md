@@ -69,6 +69,7 @@ The historical batch notes below are superseded by the [2026-10-29 source review
 
 ## Current status
 
+- Link cleanup, 2026-10-31: all 361 resources retain at least one confirmed entry point; 14 uncertain or empty links removed and NVIDIA's official data card added. See [cleanup and coverage records](audit/link-cleanup-2026-10-31.md). Historical unresolved URLs are no longer active catalog links.
 - Formal catalog: 361 source-reviewed resources; 307 dated before 2026 and 54 dated 2026.
 - This pass: 46 restored + 49 newly added. Full-catalog consistency/build/UI checks completed; source and network limits are recorded.
 - Original 391 reconciliation: 312 active + 30 pending + 41 excluded + 8 merged.

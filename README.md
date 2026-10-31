@@ -29,7 +29,7 @@ The GitHub README is the browsable community catalog. The [interactive website](
 - **Task-first organization** — start from the capability you want to train or evaluate
 - **Research-oriented metadata** — compare modalities, scale, structure, source, access, and licensing
 - **Bilingual content** — use the English or Chinese README and switch languages on the website
-- **Curated resource links** — follow official homepages, papers, and code repositories
+- **Confirmed resource links** — at least one reliable official homepage, paper or repository per resource
 - **Evidence-aware notes** — understand both useful properties and important limitations
 - **Reproducible maintenance** — generate the website and both README catalogs from one data source
 
@@ -40,6 +40,8 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/full-review-361-2026-10-30.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
+
+Unconfirmed or empty entry points are omitted; not every resource needs homepage, paper and code links. See the [2026-10-31 link cleanup record](audit/link-cleanup-2026-10-31.md).
 
 ## Catalog snapshot
 
@@ -89,7 +91,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **DenseReward Dataset** · 2026 · Dataset
   Simulated success and failure trajectories provide per-timestep manipulation states and dense reward supervision.
   `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward` · `Action Labels`
-  [Homepage](https://dense-reward.github.io/) · [Code](https://github.com/dense-reward/DenseReward) · Access: Project announces a data release; current file access not verified
+  [Homepage](https://dense-reward.github.io/) · Access: Project announces a data release; current file access not verified
   Inclusion evidence C1: The project describes 27K simulated success/failure episodes with current and historical observations and per-timestep execution-state supervision. [Reviewed source](https://dense-reward.github.io/) · 2026-10-29
 
 - **Game2World** · 2026 · Dataset
@@ -185,7 +187,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **BDD100K** · 2020 · Dataset
   A large driving-video dataset spanning cities, weather, and time of day, with annotations for detection, lanes, drivable areas, and tracking.
   `Autonomous Driving` · `RGB Video` · `2D Boxes` · `Segmentation` · `Lane Markings`
-  [Homepage](https://bdd-data.berkeley.edu/) · [Paper](https://arxiv.org/abs/1805.04687) · [Code](https://github.com/bdd100k/bdd100k) · Access: Registration required
+  [Paper](https://arxiv.org/abs/1805.04687) · [Code](https://github.com/bdd100k/bdd100k) · Access: Official repository and paper; follow publisher instructions for dataset access
   Inclusion evidence C3: Official toolkit explicitly links driving videos to GPS/IMU trajectory information; the retained scope is sequential driving recordings, not isolated perception images. [Reviewed source](https://github.com/bdd100k/bdd100k) · 2026-10-29
 
 - **EPIC-KITCHENS-100** · 2020 · Dataset
@@ -275,7 +277,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **PREVENTION Dataset** · 2019 · Dataset
   A real autonomous-driving dataset for surrounding-vehicle intention and trajectory prediction, with front/back video, LiDAR, long- and short-range radar, RTK DGNSS, IMU, lane-change labels, detections, and trajectories.
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `RADAR` · `GPS / IMU` · `Trajectories`
-  [Homepage](https://prevention-dataset.uah.es/) · [Paper](https://doi.org/10.1109/ITSC.2019.8917433) · Access: Official website provides raw data, processed data, tools, and annotations
+  [Homepage](https://prevention-dataset.uah.es/) · Access: Official website provides raw data, processed data, tools, and annotations
   Inclusion evidence C3: Official release includes a trajectory-prediction challenge and frame-indexed vehicle annotations with calibrated raw recordings. [Reviewed source](https://prevention-dataset.uah.es/) · 2026-10-29
 
 - **3DPW** · 2018 · Dataset
@@ -305,7 +307,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **Stanford Drone Dataset** · 2016 · Dataset
   A multi-agent bird's-eye-view video dataset recorded over the Stanford campus, annotating pedestrians, bicyclists, skateboarders, cars, buses, and golf carts for tracking, social navigation, and trajectory forecasting.
   `Egocentric / Human` · `Urban / 3D Scene` · `RGB Video` · `Trajectories` · `2D Boxes` · `Action Labels` · `Object Metadata`
-  [Homepage](https://cvgl.stanford.edu/projects/uav_data/) · [Paper](https://arxiv.org/abs/1601.00998) · Access: Official project page provides the Stanford Campus Dataset download
+  [Paper](https://arxiv.org/abs/1601.00998) · Access: Original paper available; current publisher download route not confirmed
   Inclusion evidence C3: Drone-observed road users and pedestrians are explicitly evaluated through future-trajectory prediction in crowded scenes. [Reviewed source](https://arxiv.org/abs/1601.00998) · 2026-10-29
 
 - **SYNTHIA-Seqs** · 2016 · Dataset
@@ -317,7 +319,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **ViZDoom** · 2016 · Generation environment / toolkit
   A Doom-based first-person visual RL environment with controllable actions and frame sequences.
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
-  [Homepage](https://vizdoom.cs.put.poznan.pl/) · [Code](https://github.com/Farama-Foundation/ViZDoom) · [Paper](https://arxiv.org/abs/1605.02097) · Access: Open-source engine and scenarios
+  [Code](https://github.com/Farama-Foundation/ViZDoom) · [Paper](https://arxiv.org/abs/1605.02097) · Access: Open-source engine and scenarios
   Inclusion evidence C2: Customizable first-person Doom scenarios expose visual observations to bots executing actions; environment generator, not a fixed corpus. [Reviewed source](https://arxiv.org/abs/1605.02097) · 2026-10-29
 
 - **Moving MNIST** · 2015 · Dataset
@@ -329,7 +331,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **Human3.6M** · 2014 · Dataset
   A large multi-view human motion dataset with synchronized video, 3D joints, camera parameters, and action labels, foundational for future-pose prediction.
   `Egocentric / Human` · `Multi-view RGB Video` · `3D State` · `Action Labels` · `Camera Pose`
-  [Homepage](http://vision.imar.ro/human3.6m/description.php) · [Paper](https://ieeexplore.ieee.org/document/6682899) · Access: Registration / agreement required
+  [Homepage](http://vision.imar.ro/human3.6m/description.php) · Access: Registration / agreement required
   Inclusion evidence C3: Synchronized 50Hz multiview video and accurate 3D joint positions/angles expose human motion trajectories. [Reviewed source](http://vision.imar.ro/human3.6m/description.php) · 2026-10-29
 
 - **UCF101 (Video Prediction Use)** · 2012 · Dataset
@@ -1201,7 +1203,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **CALVIN** · 2022 · Dataset
   A long-horizon language-conditioned robot benchmark in a controlled tabletop environment, with continuous interaction trajectories and compositional task sequences.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Language`
-  [Homepage](https://calvin.cs.uni-freiburg.de/) · [Paper](https://arxiv.org/abs/2112.03227) · [Code](https://github.com/mees/calvin) · Access: Open download
+  [Paper](https://arxiv.org/abs/2112.03227) · [Code](https://github.com/mees/calvin) · Access: Official paper and repository; current data-download availability not verified
   Inclusion evidence C2: Simulated long-horizon manipulation benchmark combines onboard observations, action sequences and language instructions. [Reviewed source](https://arxiv.org/abs/2112.03227) · 2026-10-29
 
 - **exiD** · 2022 · Dataset
@@ -1315,7 +1317,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **rounD** · 2020 · Dataset
   A naturalistic road-user trajectory dataset recorded by drones at German roundabouts, targeting behavior modeling in unsignalized, highly interactive traffic scenes with vehicles, pedestrians, and cyclists.
   `Autonomous Driving` · `Urban / 3D Scene` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
-  [Homepage](https://levelxdata.com/round-dataset/) · [Paper](https://ieeexplore.ieee.org/document/9294728) · Access: Official leveLXData/rounD request page; access requires agreeing to dataset terms
+  [Homepage](https://levelxdata.com/round-dataset/) · Access: Official leveLXData/rounD request page; access requires agreeing to dataset terms
   Inclusion evidence C3: Official release supplies naturalistic road-user trajectories and roundabout map geometry, with parsing and visualization tools. [Reviewed source](https://levelxdata.com/round-dataset/) · 2026-10-29
 
 - **BabyAI** · 2019 · Generation environment / toolkit
@@ -1339,7 +1341,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **MineRL** · 2019 · Dataset
   A Minecraft dataset of human demonstrations with long videos, keyboard and mouse actions, game state, and rewards for sample-efficient learning and open-world planning.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Game State` · `Reward`
-  [Homepage](https://minerl.io/) · [Paper](https://arxiv.org/abs/1907.13440) · [Code](https://github.com/minerllabs/minerl) · Access: Open download
+  [Paper](https://arxiv.org/abs/1907.13440) · [Code](https://github.com/minerllabs/minerl) · Access: Official paper and repository; current data-download availability not verified
   Inclusion evidence C2: Human Minecraft demonstrations are paired with a simulator for interactive learning; retain observation/action trajectories, not ancillary media. [Reviewed source](https://arxiv.org/abs/1907.13440) · 2026-10-29
 
 - **MiniWoB++** · 2019 · Generation environment / toolkit
@@ -1405,7 +1407,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **VirtualHome** · 2018 · Generation environment / toolkit
   Represents household activities as executable programs in 3D homes, linking language, action sequences, object states, and rendered video.
   `Games / Virtual Environments` · `Robotics / Embodied AI` · `Text` · `Action` · `Simulation State` · `Synthetic Video`
-  [Homepage](http://virtual-home.org/) · [Paper](https://arxiv.org/abs/1806.07011) · [Code](https://github.com/xavierpuigf/virtualhome) · Access: Open generation toolkit
+  [Paper](https://arxiv.org/abs/1806.07011) · [Code](https://github.com/xavierpuigf/virtualhome) · Access: Open generation toolkit
   Inclusion evidence C2: Executable action programs drive agents through Unity household interactions, explicitly generating state-changing activity sequences. [Reviewed source](https://arxiv.org/abs/1806.07011) · 2026-10-29
 
 - **JAAD** · 2017 · Dataset
@@ -1423,7 +1425,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **PoseTrack** · 2017 · Benchmark
   A multi-person pose estimation and tracking benchmark with temporally consistent keypoints and tracks in video.
   `Egocentric / Human` · `RGB Video` · `Agent Pose` · `Action Labels`
-  [Homepage](https://posetrack.net/) · [Paper](https://arxiv.org/abs/1611.07727) · Access: Official challenge portal
+  [Paper](https://arxiv.org/abs/1611.07727) · Access: Original paper available; current download portal not confirmed
   Inclusion evidence C3: Person associations over time define body-joint trajectories in videos; native tracking can use future frames, so forecasting requires separate causal splits. [Reviewed source](https://arxiv.org/abs/1611.07727) · 2026-10-29
 
 - **ATC Pedestrian Tracking Dataset** · 2013 · Dataset
@@ -1491,10 +1493,10 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   Inclusion evidence C3: The release documents ROS2 sequences and dynamic /tf transforms in addition to sensor observations. First release was June 2025; current documentation also covers a 2026 update. Inclusion concerns robot/sensor motion, not moving landmine dynamics. [Reviewed source](https://raw.githubusercontent.com/mariomlz99/MineInsight/main/README.md) · 2026-10-30
 
 - **NVIDIA PhysicalAI Autonomous Vehicles** · 2025 · Dataset
-  The publisher confirms sensor clips with relative timestamps and aligned historical/future egomotion.
+  The official card documents 20-second multisensor driving clips with frame timestamps, egomotion and calibration.
   `Autonomous Driving` · `RGB Video` · `LiDAR` · `Trajectories` · `Camera Pose`
-  [Homepage](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · [Code](https://github.com/NVlabs/physical_ai_av) · Access: Publisher-gated dataset; terms acceptance required
-  Inclusion evidence C3: The publisher confirms 20-second sensor clips with relative timestamps and aligned egomotion including history and future. Sensor streams are asynchronous; data access requires accepting the publisher's conditions. [Reviewed source](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles/discussions/4) · 2026-10-30
+  [Homepage](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles) · [Code](https://github.com/NVlabs/physical_ai_av) · Access: Publisher-gated dataset; terms acceptance required
+  Inclusion evidence C3: The publisher documents 20-second driving clips with timestamped camera frames, LiDAR and egomotion in a common local coordinate frame across timestamps. This supports ordered sensor/pose trajectories; access to files is gated. [Reviewed source](https://huggingface.co/datasets/nvidia/PhysicalAI-Autonomous-Vehicles) · 2026-10-31
 
 - **OmniWorld** · 2025 · Collection / registry
   A multi-domain, multimodal dataset for 4D world modeling across games, city walks, human-object interaction, and robot trajectories.
@@ -1763,7 +1765,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **Gibson Env** · 2018 · Generation environment / toolkit
   Interactive embodied simulation built from reconstructed real scenes; this entry covers transition generation rather than a standalone static building asset set.
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `3D Mesh` · `RGB-D` · `Agent Pose` · `Semantic Labels`
-  [Homepage](http://gibsonenv.stanford.edu/database/) · [Paper](https://arxiv.org/abs/1808.10654) · [Code](https://github.com/StanfordVL/GibsonEnv) · Access: Request / agreement required
+  [Paper](https://arxiv.org/abs/1808.10654) · [Code](https://github.com/StanfordVL/GibsonEnv) · Access: Request / agreement required
   Inclusion evidence C2: Gibson Env explicitly embeds agents subject to physical and spatial constraints in a released interactive simulator. Scope is Gibson Env, not the static building database alone. [Reviewed source](https://arxiv.org/abs/1808.10654) · 2026-10-29
 
 - **GNM Cory Hall Navigation** · 2018 · Dataset
@@ -1983,7 +1985,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 - **PHYRE** · 2019 · Benchmark
   A 2D physical reasoning benchmark where agents place objects to achieve goals across generated task templates, testing intervention, trial efficiency, and generalization.
   `Physics / Science` · `Games / Virtual Environments` · `Simulation State` · `Action` · `Synthetic Video`
-  [Homepage](https://phyre.ai/) · [Paper](https://arxiv.org/abs/1908.05656) · [Code](https://github.com/facebookresearch/phyre) · Access: Open generation toolkit
+  [Paper](https://arxiv.org/abs/1908.05656) · [Code](https://github.com/facebookresearch/phyre) · Access: Open generation toolkit
   Inclusion evidence C4: Physical puzzles in a 2D mechanics simulator allow interventions and resulting outcome evaluation. [Reviewed source](https://arxiv.org/abs/1908.05656) · 2026-10-29
 
 - **BlockPuzzle** · 2018 · Generation environment / toolkit
