@@ -1,0 +1,55 @@
+{
+  "id": "opendv-youtube",
+  "name": "OpenDV-YouTube",
+  "shortName": "OpenDV-YouTube",
+  "year": 2024,
+  "summary": "为驾驶视频预测发布的视频清单、处理脚本和语言标注。",
+  "summaryEn": "Video lists, processing scripts and language annotations released for driving-video prediction.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "OpenDV-YouTube authors",
+  "organizationsZh": "OpenDV-YouTube 发布团队",
+  "access": "Acquire using official lists/scripts; upstream video availability and rights require separate checks",
+  "accessZh": "按官方清单与脚本获取；上游视频可用性和权利需另核对",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "仅收录 YouTube 发布部分；不把未完全发布的 OpenDV-2K 混合物或 Mini 子集另算。",
+  "wmNoteEn": "Scope is the YouTube release; the incompletely released OpenDV-2K mixture and Mini subset are not separate corpora.",
+  "links": {
+    "code": "https://github.com/OpenDriveLab/DriveAGI"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://github.com/OpenDriveLab/DriveAGI",
+    "sourceTitle": "OpenDV-YouTube official release documentation",
+    "locator": "News 2024/03/24; GenAD: OpenDV Dataset",
+    "statement": "The GenAD release explicitly supports future driving-video prediction and provides a complete video list, consecutive-frame preprocessing and language annotations. March 2024 news confirms the release of this toolkit.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "opendv-youtube-mini"
+  ],
+  "relatedResources": []
+}

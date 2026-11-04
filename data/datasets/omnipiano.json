@@ -1,0 +1,54 @@
+{
+  "id": "omnipiano",
+  "name": "OmniPiano",
+  "shortName": "OmniPiano",
+  "year": 2026,
+  "summary": "一至五只仿真灵巧手协同弹琴的控制任务与环境。",
+  "summaryEn": "Control tasks and environments for one to five simulated dexterous hands playing piano.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Action",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "OmniPiano authors",
+  "organizationsZh": "OmniPiano 发布团队",
+  "access": "Official environment/training interfaces; some score assets require separate registration",
+  "accessZh": "官方环境与训练接口；部分曲谱资产需单独注册获取",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "作为交互生成环境收录；音乐资产另有访问限制，不代表已采集的真实钢琴动作数据。",
+  "wmNoteEn": "Included as an interactive generation environment; music assets have separate access restrictions and this is not recorded real-piano motion data.",
+  "links": {
+    "code": "https://github.com/SAIL-Research-Lab/omnipiano"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/SAIL-Research-Lab/omnipiano",
+    "sourceTitle": "OmniPiano official release documentation",
+    "locator": "Benchmark tracks; Quick start; Gymnasium step; data prerequisites",
+    "statement": "The official environment exposes reset and action-conditioned step APIs returning observations, rewards and termination, with robot safety costs and multi-agent variants. It can generate physical-control trajectories without relying on a model-only release.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

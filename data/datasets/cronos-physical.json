@@ -1,0 +1,53 @@
+{
+  "id": "cronos-physical",
+  "name": "CRONOS (Counterfactual Physical Consistency)",
+  "shortName": "CRONOS (Counterfactual Physical Consistency)",
+  "year": 2026,
+  "summary": "通过受控场景变化评测碰撞、下落与遮挡事件的反事实预测一致性。",
+  "summaryEn": "Tests counterfactual prediction consistency for collisions, falling and occlusion under controlled scene changes.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Synthetic Video",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "2,025 videos",
+  "scaleZh": "2,025 段视频",
+  "organizations": "CRONOS (Counterfactual Physical Consistency) authors",
+  "organizationsZh": "CRONOS (Counterfactual Physical Consistency) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "视角与外观变化可保持物理参数；物体和场景干预可能改变结果；与同名 RL 基准无关。",
+  "wmNoteEn": "Viewpoint/appearance changes can preserve physical parameters; object/scene interventions may change outcomes. Unrelated to the namesake RL benchmark.",
+  "links": {
+    "homepage": "https://genintel.github.io/CRONOS/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://genintel.github.io/CRONOS/",
+    "sourceTitle": "CRONOS (Counterfactual Physical Consistency) official release documentation",
+    "locator": "Physical Events; Systematic Visual Interventions; dataset and code release",
+    "statement": "The benchmark varies one scene factor at a time and supplies reference continuations for fall, collision and occlusion. Multiple physical-parameter rollouts share conditioning signals, enabling explicit outcome and counterfactual-consistency evaluation.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "roboreward",
+  "name": "RoboReward / RoboRewardBench",
+  "shortName": "RoboReward / RoboRewardBench",
+  "year": 2026,
+  "summary": "机器人回放视频与任务描述、回合末进度奖励配对的数据。",
+  "summaryEn": "Robot rollout videos paired with task instructions and end-of-episode progress rewards.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "54,135 examples; 2,831 test examples",
+  "scaleZh": "54,135 个样例；测试集 2,831 个",
+  "organizations": "RoboReward / RoboRewardBench authors",
+  "organizationsZh": "RoboReward / RoboRewardBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Card specifies CC BY 4.0; verify upstream data terms separately",
+  "licenseZh": "数据卡标注 CC BY 4.0；上游数据条款需另核对",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "由 OXE、RoboArena 等派生；任务重标注与时间裁剪不构成新的独立物理干预。",
+  "wmNoteEn": "Derived from OXE and RoboArena; instruction relabeling and temporal clipping do not constitute new physical interventions.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/teetone/RoboReward"
+  },
+  "resourceType": "derived",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://huggingface.co/datasets/teetone/RoboReward",
+    "sourceTitle": "RoboReward / RoboRewardBench official release documentation",
+    "locator": "Dataset description; Splits and size; Fields",
+    "statement": "Each example includes a real-robot rollout video, task instruction and terminal progress score. Temporal clipping creates partial-outcome examples; the test subset is RoboRewardBench. Inclusion concerns observed execution outcomes, not causal intervention claims.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "open-x-embodiment",
+    "roboarena"
+  ]
+}

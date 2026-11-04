@@ -1,0 +1,60 @@
+{
+  "id": "agibot-world-beta",
+  "name": "AgiBot World Colosseo (Beta)",
+  "shortName": "AgiBot World Colosseo (Beta)",
+  "year": 2025,
+  "summary": "大规模双臂机器人操作轨迹，配有相机观测、状态与动作。",
+  "summaryEn": "Large-scale bimanual manipulation trajectories with camera observations, states and actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Beta reports 1,003,672 trajectories; Alpha is a 92,214-trajectory subset",
+  "scaleZh": "Beta 报告 1,003,672 条轨迹；Alpha 为其中 92,214 条子集",
+  "organizations": "AgiBot World Colosseo (Beta) authors",
+  "organizationsZh": "AgiBot World Colosseo (Beta) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Publisher states CC BY-NC-SA 4.0",
+  "licenseZh": "CC BY-NC-SA 4.0，以发布说明为准",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "Alpha 是 Beta 子集，不能重复累加；与 2026 G2 数据版本分开记录。",
+  "wmNoteEn": "Alpha is a subset of Beta and must not be added to its totals; the 2026 G2 release is recorded separately.",
+  "links": {
+    "code": "https://github.com/OpenDriveLab/Agibot-World"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/OpenDriveLab/Agibot-World",
+    "sourceTitle": "AgiBot World Colosseo (Beta) official release documentation",
+    "locator": "Released datasets; News; Visualize Datasets",
+    "statement": "The publisher identifies Beta as the full trajectory release and Alpha as its subset, and documents visualization of camera streams, robot states and actions. Beta release is dated 2025-03-01.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "agibot-world",
+    "agibot-world-alpha"
+  ],
+  "relatedResources": [
+    "agibot-world-2026"
+  ]
+}

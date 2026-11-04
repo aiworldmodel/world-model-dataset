@@ -1,0 +1,55 @@
+{
+  "id": "apple-pi",
+  "name": "Apple-π / Orchard",
+  "shortName": "Apple-π / Orchard",
+  "year": 2026,
+  "summary": "通过目标时刻状态与完整轨迹生成，诊断视频模型的力学推理。",
+  "summaryEn": "Diagnoses video-model mechanics reasoning through target-time states and full trajectory generation.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "400 test cases; 10 classical mechanics tasks",
+  "scaleZh": "400 个测试案例；10 类经典力学任务",
+  "organizations": "Apple-π / Orchard authors",
+  "organizationsZh": "Apple-π / Orchard 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "仅以 Formulation-Graphic 与 Deduction 的预测协议作为入选依据；不将普通感知子任务单独算数据集。",
+  "wmNoteEn": "Admission rests on predictive Formulation-Graphic and Deduction tracks; ordinary perception subtracks are not separate datasets.",
+  "links": {
+    "code": "https://github.com/21yrm/Apple-PI"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/21yrm/Apple-PI",
+    "sourceTitle": "Apple-π / Orchard official release documentation",
+    "locator": "News: August 2026 GT release; Benchmark subtracks; GT dataset",
+    "statement": "The released Orchard ground truth supports target-time state prediction and frame-wise trajectory comparison against physics-derived targets. The evaluator defines repeated rollouts and state/velocity/trajectory metrics, beyond generic physical-law QA.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

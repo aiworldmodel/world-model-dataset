@@ -1,0 +1,57 @@
+{
+  "id": "loopnav",
+  "name": "LoopNav",
+  "shortName": "LoopNav",
+  "year": 2025,
+  "summary": "利用 Minecraft 闭环导航和重访场景检验世界模型空间记忆。",
+  "summaryEn": "Tests spatial memory in world models using Minecraft navigation loops and scene revisits.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "Publisher reports 250 navigation hours; current fixed benchmark has 720 trajectories",
+  "scaleZh": "发布方报告 250 小时导航；当前固定评测为 720 条轨迹",
+  "organizations": "LoopNav authors",
+  "organizationsZh": "LoopNav 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "2025 年原始论文与后续发布版本区分；重访一致性不等于物理真实性。",
+  "wmNoteEn": "Distinguish the 2025 original paper from subsequent release versions; revisit consistency does not establish physical realism.",
+  "links": {
+    "code": "https://github.com/Kevin-lkw/LoopNav"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/Kevin-lkw/LoopNav",
+    "sourceTitle": "LoopNav official release documentation",
+    "locator": "Dataset and benchmark; TURN / ABA / ABCA tasks",
+    "statement": "Action-annotated navigation loops return to previously seen locations via rotations, retraced paths and alternate paths. Scene Graph Consistency Score evaluates persistence of the generated scene across revisits.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2505.22976",
+    "description": "Original preprint in May 2025; current repository also describes a 2026 benchmark update."
+  }
+}

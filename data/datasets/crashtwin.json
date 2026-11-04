@@ -1,0 +1,54 @@
+{
+  "id": "crashtwin",
+  "name": "CrashTwin",
+  "shortName": "CrashTwin",
+  "year": 2026,
+  "summary": "评测多智能体碰撞回放中的时空一致性与物理守恒。",
+  "summaryEn": "Evaluates spatiotemporal consistency and physical conservation in multi-agent collision rollouts.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Autonomous Driving"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "CrashTwin authors",
+  "organizationsZh": "CrashTwin 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "真实与合成来源分开；从单目视频重建的物理量存在尺度与估计误差。",
+  "wmNoteEn": "Real and synthetic sources are distinct; monocular physical reconstruction has scale and estimation errors.",
+  "links": {
+    "code": "https://github.com/phai-lab/CrashTwin"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/phai-lab/CrashTwin",
+    "sourceTitle": "CrashTwin official release documentation",
+    "locator": "Data Preparation; Data Layout; Evaluation pipeline",
+    "statement": "The official release provides collision sequences and a reconstruction/evaluation pipeline for generated rollouts, including temporal dynamics, momentum and kinetic-energy diagnostics. Admission concerns the specified world-model evaluation protocol, not visual collision classification.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

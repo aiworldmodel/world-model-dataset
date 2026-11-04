@@ -1,0 +1,53 @@
+{
+  "id": "pdegym-temporal",
+  "name": "PDEGym / Poseidon (Time-Dependent Data)",
+  "shortName": "PDEGym / Poseidon (Time-Dependent Data)",
+  "year": 2024,
+  "summary": "Poseidon 发布的流体、波动与反应扩散等时变偏微分方程轨迹集合。",
+  "summaryEn": "Time-dependent PDE trajectories released with Poseidon, including fluids, waves and reaction-diffusion systems.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State"
+  ],
+  "structure": [
+    "Dataset / Benchmark",
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "PDEGym / Poseidon (Time-Dependent Data) authors",
+  "organizationsZh": "PDEGym / Poseidon (Time-Dependent Data) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "排除稳态 Airfoil、Poisson 和 Helmholtz；添加 .time 包装不使静态问题成为真实时序数据。",
+  "wmNoteEn": "Excludes steady Airfoil, Poisson and Helmholtz data; a .time wrapper does not turn static problems into physical trajectories.",
+  "links": {
+    "code": "https://github.com/camlab-ethz/Poseidon"
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://github.com/camlab-ethz/Poseidon",
+    "sourceTitle": "PDEGym / Poseidon (Time-Dependent Data) official release documentation",
+    "locator": "Datasets: identifier mapping; BaseTimeDataset; NS-Sines data card",
+    "statement": "The official release maps named dynamic PDE datasets to download and temporal loaders. The NS-Sines card explicitly documents 20,000 trajectories with 21 uniformly sampled time steps and train/validation/test splits. The admitted collection is restricted to time-dependent systems.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

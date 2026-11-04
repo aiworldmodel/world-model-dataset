@@ -1,0 +1,55 @@
+{
+  "id": "reboot26",
+  "name": "REBOOT26 (Verified LeRobot Tasks)",
+  "shortName": "REBOOT26 (Verified LeRobot Tasks)",
+  "year": 2026,
+  "summary": "REBOOT26 官方任务集合中已核对时序元数据的机器人操作发布。",
+  "summaryEn": "Robot manipulation releases in the REBOOT26 registry with inspected temporal metadata.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Depth",
+    "Robot State",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Robot Platform"
+  ],
+  "scale": "Metadata inspected for three tasks; no collection-wide total claimed",
+  "scaleZh": "核对三个任务的元数据；不报告集合总规模",
+  "organizations": "REBOOT26 (Verified LeRobot Tasks) authors",
+  "organizationsZh": "REBOOT26 (Verified LeRobot Tasks) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Inspected cards specify Apache 2.0; verify each task individually",
+  "licenseZh": "所查数据卡标注 Apache 2.0；须按具体任务核对",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "本轮仅确认 han10e_remove、16mm-cylinder_install、M12-fastener_remove 三个任务；不为整个账号背书，不累计未经核实的总量。",
+  "wmNoteEn": "This review confirms only han10e_remove, 16mm-cylinder_install and M12-fastener_remove; it does not certify the whole account or sum unverified totals.",
+  "links": {
+    "homepage": "https://huggingface.co/REBOOT26"
+  },
+  "resourceType": "aggregate",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/REBOOT26",
+    "sourceTitle": "REBOOT26 (Verified LeRobot Tasks) official release documentation",
+    "locator": "Official dataset registry; three named releases: meta/info.json",
+    "statement": "The official registry links named LeRobot task releases. Their actual meta/info.json files define action, observation.state, camera/depth videos, timestamp and frame/episode indices. The three inspected manifests report 60, 62 and 60 episodes respectively; schema inspection replaces the previous profile-only evidence.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

@@ -1,0 +1,55 @@
+{
+  "id": "egodex",
+  "name": "EgoDex",
+  "shortName": "EgoDex",
+  "year": 2025,
+  "summary": "第一人称操作视频与逐帧头部、手部和上身三维位姿配对。",
+  "summaryEn": "Egocentric manipulation videos paired with per-frame head, hand and upper-body poses.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Agent Pose",
+    "Camera Pose",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "829 hours; 194 tasks; 30 Hz",
+  "scaleZh": "829 小时；194 类任务；30 Hz",
+  "organizations": "Apple research team",
+  "organizationsZh": "Apple 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Dataset under CC BY-NC-ND terms; separate code license",
+  "licenseZh": "数据采用 CC BY-NC-ND 条款；代码另有许可",
+  "verdict": "决策与智能体轨迹",
+  "verdictEn": "Decision-Making & Agent Trajectories",
+  "wmNote": "位姿由 ARKit 估计，置信度与语言标注可能有误差；人体轨迹不等于机器人控制。",
+  "wmNoteEn": "ARKit poses and automated language annotations can contain errors; human trajectories are not robot controls.",
+  "links": {
+    "code": "https://github.com/apple-aiml-research/ml-egodex"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/apple-aiml-research/ml-egodex",
+    "sourceTitle": "EgoDex official release documentation",
+    "locator": "Dataset Structure; Code Structure / compute_metrics.py",
+    "statement": "Paired MP4/HDF5 files align each video frame with joint and camera transforms in an episode-fixed coordinate frame. The release includes metrics for dexterous trajectory prediction.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

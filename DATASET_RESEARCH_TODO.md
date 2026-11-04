@@ -4,7 +4,7 @@ Scope: a strict catalog of resources published or documented before or during 20
 
 ## Workflow
 
-Latest audit: [all 361 records, 2026-10-30](audit/full-review-361-2026-10-30.md). This pass revised 70 records and website behavior without changing the resource count. Its field-level matrix distinguishes structural checks from factual re-verification; existing review dates are not refreshed by successful link requests. Follow-up: unresolved publisher URLs, PandaSet download route, DenseReward release files, TOTO split count, and release-specific data/license verification. Full downloads, sample validation and reproduction remain unperformed.
+Latest expansion: [2026-11-04 strict primary-source review](audit/expansion-2026-11-04.md): 52 new resources and 7 restorations, bringing the catalog to 420 (343 pre-2026; 77 dated 2026). The new-source review and full-catalog structural checks do not refresh all older manual source-review dates. Full downloads, sample validation and reproduction remain unperformed.
 
 - [ ] Discover candidates from all available channels
 - [ ] Normalize names, papers, URLs, and aliases
@@ -69,12 +69,10 @@ The historical batch notes below are superseded by the [2026-10-29 source review
 
 ## Current status
 
-- Link cleanup, 2026-10-31: all 361 resources retain at least one confirmed entry point; 14 uncertain or empty links removed and NVIDIA's official data card added. See [cleanup and coverage records](audit/link-cleanup-2026-10-31.md). Historical unresolved URLs are no longer active catalog links.
-- Formal catalog: 361 source-reviewed resources; 307 dated before 2026 and 54 dated 2026.
-- This pass: 46 restored + 49 newly added. Full-catalog consistency/build/UI checks completed; source and network limits are recorded.
-- Original 391 reconciliation: 312 active + 30 pending + 41 excluded + 8 merged.
-- Current 441-decision ledger: 361 active + 31 pending + 41 excluded + 8 merged; 14 pending candidates are dated before 2026.
-- Pending queue: filter status=pending in [the current ledger](audit/pre2026-review-2026-10-30.csv). Previously listed candidates remain in audit/archived-records/; newly discovered TidyBot exists only in the ledger.
-- Completed finite scope: all 62 pre-2026 pending candidates from the prior audit and all 64 official TFDS Open X builders. External discovery is not claimed exhaustive; unchecked source/year tasks above remain open.
-- Latest review: [2026-10-30 report](audit/pre2026-review-2026-10-30.md). The 2026-10-29 report remains historical.
-- No full data download, sample validation, license adjudication or experiment replication was performed. HTTP timeouts/denials remain explicitly unresolved.
+- Cutoff for this pass: **2026-11-04**. Catalog: **420 source-reviewed resources**, including 343 pre-2026 and 77 dated 2026.
+- New additions: 52. Restorations with new evidence: 7. The prior 361 active records retain their dated reviews.
+- New entries have at least one confirmed primary entry point; 61 added URLs passed HTTP retrieval.
+- Current decision ledger: 420 active, 39 pending, 44 excluded and 8 merged. Restored-record provenance and pending reasons are preserved in the [current JSON ledger](audit/expansion-2026-11-04.json) and [CSV](audit/expansion-2026-11-04.csv). Earlier ledgers remain historical snapshots.
+- This pass screened official robotics, human-motion, driving, games, physical simulation/weather and world-model evaluation sources. Exact arXiv query/result lists and reviewed source hashes are recorded in the report.
+- Discovery remains open: the finite search is not proof of exhaustive worldwide coverage. Do not mark source channels or year batches complete based on this pass.
+- No complete data downloads, sample verification, simulator execution, license adjudication or replication was performed.

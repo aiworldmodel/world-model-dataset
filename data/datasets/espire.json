@@ -1,0 +1,55 @@
+{
+  "id": "espire",
+  "name": "ESPIRE (Interactive Evaluation Environment)",
+  "shortName": "ESPIRE (Interactive Evaluation Environment)",
+  "year": 2026,
+  "summary": "以定位、移动和更新观测构成执行循环的空间操作仿真评测环境。",
+  "summaryEn": "Spatial manipulation evaluation environment with localization, movement and updated observations in an execution loop.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Depth",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "ESPIRE (Interactive Evaluation Environment) authors",
+  "organizationsZh": "ESPIRE (Interactive Evaluation Environment) 发布团队",
+  "access": "Official simulation server and evaluation client; deployment required",
+  "accessZh": "官方服务端与评测客户端；需自行部署运行",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "入选依据是公开的交互控制路径，而非静态空间问答；环境未运行验证。",
+  "wmNoteEn": "Admission rests on the released interactive control path rather than static spatial QA; the environment was not executed.",
+  "links": {
+    "code": "https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py",
+    "homepage": "https://github.com/spatigen/espire"
+  },
+  "resourceType": "generator",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py",
+    "sourceTitle": "ESPIRE (Interactive Evaluation Environment) official release documentation",
+    "locator": "BaseDriver moving loop; execute_moving; get_obs_for_moving",
+    "statement": "The official driver obtains observations, invokes client.move_to, records execution results and refreshes observations before the next movement. This directly exposes action-conditioned transitions, resolving the prior uncertainty about whether evaluation was static only.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

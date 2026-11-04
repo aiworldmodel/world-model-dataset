@@ -1,0 +1,54 @@
+{
+  "id": "omomo",
+  "name": "OMOMO Interaction Motion Data",
+  "shortName": "OMOMO Interaction Motion Data",
+  "year": 2023,
+  "summary": "物体运动引导全身人体动作生成的交互序列。",
+  "summaryEn": "Interaction sequences for object-motion-conditioned full-body human motion synthesis.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Object State",
+    "3D Mesh"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "OMOMO Interaction Motion Data authors",
+  "organizationsZh": "OMOMO Interaction Motion Data 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "决策与智能体轨迹",
+  "verdictEn": "Decision-Making & Agent Trajectories",
+  "wmNote": "物体轨迹作为生成条件；不代表从机器人控制输入识别真实动力学。",
+  "wmNoteEn": "Object trajectories condition motion synthesis; this does not establish robot-action-driven physical dynamics.",
+  "links": {
+    "code": "https://github.com/lijiaman/omomo_release"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/lijiaman/omomo_release",
+    "sourceTitle": "OMOMO Interaction Motion Data official release documentation",
+    "locator": "Testing: released dataset and motion-sequence visualizations; Training",
+    "statement": "The official release provides interaction motion data and sequence visualizations, with human-motion generation conditioned on object motion and geometry. Its temporal motion targets satisfy the trajectory criterion.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

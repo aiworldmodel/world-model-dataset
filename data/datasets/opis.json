@@ -1,0 +1,58 @@
+{
+  "id": "opis",
+  "name": "OPIS",
+  "shortName": "OPIS",
+  "year": 2026,
+  "summary": "以输入图像中的固定对象实例检验生成回放的对象保持、身份与结构。",
+  "summaryEn": "Tests generated-rollout object presence, identity and structure against fixed input-image instances.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Segmentation",
+    "Language"
+  ],
+  "structure": [
+    "Diagnostic Cases",
+    "Annotated Frames"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic"
+  ],
+  "scale": "500 cases; 12,672 object instances",
+  "scaleZh": "500 个案例；12,672 个对象实例",
+  "organizations": "OPIS authors",
+  "organizationsZh": "OPIS 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "输入包含静态图像，入选依据是明确的时序保持评测协议；上游素材并非独立采集。",
+  "wmNoteEn": "Inputs include still images; admission rests on the explicit temporal-persistence protocol, and upstream assets are not independently collected.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset",
+    "sourceTitle": "OPIS official release documentation",
+    "locator": "Dataset summary; Sources and construction; Evaluation artifacts",
+    "statement": "The release anchors rollout evaluation to an annotated initial object inventory, then measures presence, identity and structural persistence with visibility reasoning and static/dynamic tracks. This is a dedicated world-model memory protocol.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "bridge-data-v2"
+  ]
+}

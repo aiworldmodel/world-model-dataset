@@ -1,0 +1,54 @@
+{
+  "id": "worldmodelbench",
+  "name": "WorldModelBench",
+  "shortName": "WorldModelBench",
+  "year": 2025,
+  "summary": "评测视频世界模型指令遵循、时序一致性和物理规则遵循情况。",
+  "summaryEn": "Evaluates instruction following, temporal coherence and physical-law adherence in video world models.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Language"
+  ],
+  "structure": [
+    "Diagnostic Cases"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic"
+  ],
+  "scale": "350 prompts; 7 domains and 56 subdomains",
+  "scaleZh": "350 个提示；7 个领域、56 个子领域",
+  "organizations": "WorldModelBench authors",
+  "organizationsZh": "WorldModelBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "测试提示与生成视频评测协议，不是动作对齐训练轨迹库；评判器存在误差。",
+  "wmNoteEn": "A prompt set and generated-video evaluation protocol, not an action-aligned trajectory corpus; judge errors remain possible.",
+  "links": {
+    "homepage": "https://worldmodelbench-team.github.io/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://worldmodelbench-team.github.io/",
+    "sourceTitle": "WorldModelBench official release documentation",
+    "locator": "Overview; WorldModelBench Overview; evaluation dimensions",
+    "statement": "The benchmark explicitly tests video world models for temporal/common-sense violations and adherence to physical laws, alongside instruction following, using released multimodal prompts and a defined judging protocol.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

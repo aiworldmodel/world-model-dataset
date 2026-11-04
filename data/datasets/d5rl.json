@@ -1,0 +1,59 @@
+{
+  "id": "d5rl",
+  "name": "D5RL",
+  "shortName": "D5RL",
+  "year": 2024,
+  "summary": "涵盖机械臂与四足控制的多来源离线强化学习轨迹。",
+  "summaryEn": "Diverse offline reinforcement-learning trajectories for manipulation and quadruped control.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Simulation State",
+    "Action",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "D5RL authors",
+  "organizationsZh": "D5RL 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "仿真任务包含脚本和遥操作数据；不应表述为独立真实机器人采集。",
+  "wmNoteEn": "Simulated tasks include scripted and teleoperated data; they are not an independent real-robot collection.",
+  "links": {
+    "code": "https://github.com/d5rlbenchmark/d5rl"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/d5rlbenchmark/d5rl",
+    "sourceTitle": "D5RL official release documentation",
+    "locator": "Overview; Downloading the datasets; Running the experiments",
+    "statement": "The official benchmark releases Franka Kitchen, WidowX and A1 data and matching executable environments for offline RL and online fine-tuning. State/image observations and control trajectories support action-conditioned dynamics.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2408.08441",
+    "description": "Verified arXiv record announced in August 2024."
+  }
+}

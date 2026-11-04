@@ -1,0 +1,55 @@
+{
+  "id": "hot3d",
+  "name": "HOT3D (Full Tracking Sequences)",
+  "shortName": "HOT3D (Full Tracking Sequences)",
+  "year": 2024,
+  "summary": "第一人称三维手部与物体跟踪序列，配套官方读取和下载工具。",
+  "summaryEn": "Egocentric 3D hand/object tracking sequences with official loading and download tools.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Agent Pose",
+    "Object State",
+    "Camera Pose"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "HOT3D (Full Tracking Sequences) authors",
+  "organizationsZh": "HOT3D (Full Tracking Sequences) 发布团队",
+  "access": "Registration provides expiring download links",
+  "accessZh": "需注册领取有时效的下载链接",
+  "license": "Sequences, hand annotations and object models may have different terms",
+  "licenseZh": "序列、手部标注与物体模型可能适用不同条款",
+  "verdict": "决策与智能体轨迹",
+  "verdictEn": "Decision-Making & Agent Trajectories",
+  "wmNote": "HOT3D-Clips 是完整数据的筛选子集；不另行相加，灰度与 RGB 视图依设备而异。",
+  "wmNoteEn": "HOT3D-Clips is a curated subset and is not added to the full-set count; grayscale and RGB views depend on device.",
+  "links": {
+    "code": "https://github.com/facebookresearch/hot3d"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/facebookresearch/hot3d",
+    "sourceTitle": "HOT3D (Full Tracking Sequences) official release documentation",
+    "locator": "Toolkit overview; Full dataset; registration and download sections",
+    "statement": "The official toolkit provides the complete VRS-based hand/object tracking sequences and distinguishes them from the curated HOT3D-Clips subset. Tracking observations and 3D states support ordered trajectory modeling.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

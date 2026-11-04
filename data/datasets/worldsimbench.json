@@ -1,0 +1,59 @@
+{
+  "id": "worldsimbench",
+  "name": "WorldSimBench",
+  "shortName": "WorldSimBench",
+  "year": 2024,
+  "summary": "结合人类反馈与视频到控制信号的一致性评测世界模拟器。",
+  "summaryEn": "Evaluates world simulators with human feedback and video-to-control consistency.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation",
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "WorldSimBench authors",
+  "organizationsZh": "WorldSimBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "包含感知与操作两个评测层面；衍生反馈数据不应作为独立采集视频重复计数。",
+  "wmNoteEn": "Perceptual and manipulative evaluations are distinct; derived feedback data must not be counted as independently captured video.",
+  "links": {
+    "homepage": "https://iranqin.github.io/WorldSimBench.github.io/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://iranqin.github.io/WorldSimBench.github.io/",
+    "sourceTitle": "WorldSimBench official release documentation",
+    "locator": "Abstract; Explicit Perceptual and Implicit Manipulative Evaluation",
+    "statement": "The protocol explicitly assesses world simulators in gaming, driving and robot manipulation. Its manipulative evaluation measures whether predicted situation-aware videos translate into correct controls in dynamic environments.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2410.18072",
+    "description": "Original preprint in October 2024; later ICML 2025 publication."
+  }
+}

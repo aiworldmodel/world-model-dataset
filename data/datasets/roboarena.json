@@ -1,0 +1,56 @@
+{
+  "id": "roboarena",
+  "name": "RoboArena Rollout Snapshot (2026-07-17)",
+  "shortName": "RoboArena Rollout Snapshot (2026-07-17)",
+  "year": 2026,
+  "summary": "真实机器人策略回放，配有视频、动作与本体状态文件及任务结果。",
+  "summaryEn": "Real-robot policy rollouts with videos, action/proprioception files and task outcomes.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "10,783 policy episodes; 3,883 evaluation sessions",
+  "scaleZh": "10,783 个策略回合；3,883 场评测",
+  "organizations": "RoboArena Rollout Snapshot (2026-07-17) authors",
+  "organizationsZh": "RoboArena Rollout Snapshot (2026-07-17) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Dataset card specifies MIT; verify applicability to the intended contents",
+  "licenseZh": "数据卡标注 MIT；使用时核对适用内容",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "收录的是 2026-07-17 快照；2025 年基准论文不能证明这一数据包当时已发布。",
+  "wmNoteEn": "This entry is the 2026-07-17 snapshot; the 2025 benchmark paper does not establish its earlier availability.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026",
+    "sourceTitle": "RoboArena Rollout Snapshot (2026-07-17) official release documentation",
+    "locator": "Snapshot statistics; Data layout; session metadata",
+    "statement": "The snapshot pairs policy-episode MP4s with 10,783 NPZ proprioception/action files; session metadata provides instructions, timestamps and outcomes. The data card explicitly dates this snapshot 2026-07-17.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

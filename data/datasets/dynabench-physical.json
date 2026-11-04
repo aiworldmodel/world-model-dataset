@@ -1,0 +1,52 @@
+{
+  "id": "dynabench-physical",
+  "name": "DynaBench (Physical Systems)",
+  "shortName": "DynaBench (Physical Systems)",
+  "year": 2023,
+  "summary": "六类物理系统的时空演化数据与多步预测评测。",
+  "summaryEn": "Spatiotemporal physical-system data with multistep forecasting evaluation.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "DynaBench (Physical Systems) authors",
+  "organizationsZh": "DynaBench (Physical Systems) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "与同名自然语言基准无关；稀疏观测和规则网格分辨率需区分。",
+  "wmNoteEn": "Unrelated to the similarly named language benchmark; distinguish sparse observations from grid resolutions.",
+  "links": {
+    "code": "https://github.com/badulion/dynabench"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://github.com/badulion/dynabench",
+    "sourceTitle": "DynaBench (Physical Systems) official release documentation",
+    "locator": "Downloading data; dataset loaders; forecasting models; Citation",
+    "statement": "Dataset loaders separate lookback observations from future rollout targets, with documented tensor shapes and 16-step rollout MSE. The benchmark contains simulated physical-system evolution and an explicit future-state prediction protocol.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

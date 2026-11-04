@@ -1,0 +1,52 @@
+{
+  "id": "sevir",
+  "name": "SEVIR (Nowcasting Sequences)",
+  "shortName": "SEVIR (Nowcasting Sequences)",
+  "year": 2020,
+  "summary": "雷达与卫星风暴观测序列，提供短临预报数据划分和处理流程。",
+  "summaryEn": "Radar/satellite storm observation sequences with a documented nowcasting pipeline and splits.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Weather Fields"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "SEVIR (Nowcasting Sequences) authors",
+  "organizationsZh": "SEVIR (Nowcasting Sequences) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "仅收录未来天气预测用途；静态跨模态雷达合成任务不单独作为入选依据。",
+  "wmNoteEn": "Inclusion concerns future-weather nowcasting; static cross-modal radar synthesis is not an independent inclusion basis.",
+  "links": {
+    "code": "https://github.com/MIT-AI-Accelerator/neurips-2020-sevir"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://github.com/MIT-AI-Accelerator/neurips-2020-sevir",
+    "sourceTitle": "SEVIR (Nowcasting Sequences) official release documentation",
+    "locator": "Extracting training/testing datasets; Training nowcast",
+    "statement": "Official scripts construct temporal nowcasting training and testing datasets from SEVIR storm observations, using a date-based split. The documented forecast task predicts future observed weather fields.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

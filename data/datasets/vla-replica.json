@@ -1,0 +1,59 @@
+{
+  "id": "vla-replica",
+  "name": "VLA-REPLICA SFT Trajectories",
+  "shortName": "VLA-REPLICA SFT Trajectories",
+  "year": 2026,
+  "summary": "SO 系列机械臂演示，含双相机视频和逐帧六维状态、动作。",
+  "summaryEn": "SO-arm demonstrations with two camera streams and per-frame six-dimensional states and actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "501 episodes; 266,240 frames; 27 tasks; 30 Hz",
+  "scaleZh": "501 回合；266,240 帧；27 项任务；30 Hz",
+  "organizations": "VLA-REPLICA SFT Trajectories authors",
+  "organizationsZh": "VLA-REPLICA SFT Trajectories 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Dataset card specifies CC BY 4.0",
+  "licenseZh": "数据卡标注 CC BY 4.0",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "规模对应当前 LeRobot v3 元数据；不从模型演示推断额外数据。",
+  "wmNoteEn": "Counts refer to the inspected LeRobot v3 metadata; model demonstrations do not establish additional released data.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json",
+    "code": "https://github.com/IRVLUTD/VLAReplica"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json",
+    "sourceTitle": "VLA-REPLICA SFT Trajectories official release documentation",
+    "locator": "meta/info.json: features, paths, splits and counts",
+    "statement": "Official dataset metadata defines six-dimensional action and observation.state fields, top/wrist video streams, timestamps and frame/episode indices. These document aligned manipulation trajectories; the official VLAReplica repository names this SFT release.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data",
+    "description": "Official dataset registry created 2026-04-19; schema and SFT release identity verified separately."
+  }
+}

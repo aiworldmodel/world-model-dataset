@@ -1,0 +1,58 @@
+{
+  "id": "physics-iq",
+  "name": "Physics-IQ",
+  "shortName": "Physics-IQ",
+  "year": 2025,
+  "summary": "以真实物理事件的后续视频检验生成模型的物理预测能力。",
+  "summaryEn": "Tests physical prediction through continuations of recorded real-world events.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "Physics-IQ authors",
+  "organizationsZh": "Physics-IQ 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Code: Apache 2.0; other materials: repository CC BY 4.0 notice",
+  "licenseZh": "代码 Apache 2.0；其他材料按仓库 CC BY 4.0 声明",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "Original 与 Verified 属于同一基准家族，提示和指标版本需匹配；不重复累计视频。",
+  "wmNoteEn": "Original and Verified belong to one benchmark family; match prompt and metric versions and do not double-count videos.",
+  "links": {
+    "code": "https://github.com/google-deepmind/physics-iq-benchmark"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/google-deepmind/physics-iq-benchmark",
+    "sourceTitle": "Physics-IQ official release documentation",
+    "locator": "Overview; Original / Verified workflows; License and Disclaimer",
+    "statement": "The official workflow splits physical-event recordings into conditioning and held-out continuation videos and evaluates generated physical rollouts. The repository maintains original and Verified evaluation variants.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [
+    "physics-iq-verified"
+  ],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2501.09038",
+    "description": "Original Physics-IQ preprint in January 2025; Verified is a later benchmark revision."
+  }
+}

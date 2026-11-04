@@ -1,0 +1,57 @@
+{
+  "id": "worldoracle",
+  "name": "WorldOracle",
+  "shortName": "WorldOracle",
+  "year": 2026,
+  "summary": "将相同初始观测和低层动作下的预测回放与真实执行逐项比较。",
+  "summaryEn": "Compares predicted rollouts with real executions under the same initial observation and low-level actions.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "WorldOracle authors",
+  "organizationsZh": "WorldOracle 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "包含 AgiBot、YAM 和人手数据；训练与评测分割不能混用，与上游发布的重叠需单独检查。",
+  "wmNoteEn": "Includes AgiBot, YAM and human-hand data; preserve training/evaluation separation and check overlap with upstream releases.",
+  "links": {
+    "code": "https://github.com/WorldOracle-benchmark/WorldOracle"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/WorldOracle-benchmark/WorldOracle",
+    "sourceTitle": "WorldOracle official release documentation",
+    "locator": "News 2026-10-15/21; Overview; Data Preparation & Inference",
+    "statement": "The release documents validation/test sets and an AgiBot training set, with paired action-conditioned real executions including successes and failures. Defined metrics evaluate physical state, interaction alignment and multiview action coherence.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "agibot-world-2026"
+  ]
+}

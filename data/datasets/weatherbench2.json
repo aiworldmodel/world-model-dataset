@@ -1,0 +1,53 @@
+{
+  "id": "weatherbench2",
+  "name": "WeatherBench 2",
+  "shortName": "WeatherBench 2",
+  "year": 2023,
+  "summary": "面向全球天气预测的参考场、基线预报和统一评测协议。",
+  "summaryEn": "Reference fields, baseline forecasts and standardized evaluation for global weather prediction.",
+  "primaryTask": "Predictive & Generative Dynamics",
+  "primaryTaskZh": "预测与生成式动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Weather Fields"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "WeatherBench 2 authors",
+  "organizationsZh": "WeatherBench 2 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Code: Apache 2.0; data follow each product’s terms",
+  "licenseZh": "代码为 Apache 2.0；数据按各产品条款使用",
+  "verdict": "预测与生成式动力学",
+  "verdictEn": "Predictive & Generative Dynamics",
+  "wmNote": "包含再分析与预报产品，不能当作独立采集气象观测相加；具体数据产品许可不同。",
+  "wmNoteEn": "Includes reanalysis and forecast products, not independent observational corpora; data products have different terms.",
+  "links": {
+    "code": "https://github.com/google-research/weatherbench2"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 1,
+    "source": "https://github.com/google-research/weatherbench2",
+    "sourceTitle": "WeatherBench 2 official release documentation",
+    "locator": "Why WeatherBench; public ground-truth/baseline datasets; evaluation setup",
+    "statement": "The benchmark supplies temporally indexed reference weather fields and baseline forecasts, with an explicit protocol comparing predicted future atmospheric states at forecast lead times.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

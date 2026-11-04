@@ -1,0 +1,57 @@
+{
+  "id": "agibot-world-2026",
+  "name": "AgiBot World 2026 (G2)",
+  "shortName": "AgiBot World 2026 (G2)",
+  "year": 2026,
+  "summary": "G2 机器人真实场景操作回合，按时间索引组织多相机视频、状态和动作。",
+  "summaryEn": "Real-world G2 manipulation episodes with time-indexed multicamera video, states and actions.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "AgiBot World 2026 (G2) authors",
+  "organizationsZh": "AgiBot World 2026 (G2) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Dataset card specifies CC BY-NC-SA 4.0",
+  "licenseZh": "数据卡标注 CC BY-NC-SA 4.0",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "仅指真实 G2 数据；GenieSim 仿真数据是另一个发布，不能混算。",
+  "wmNoteEn": "Scope is the real G2 release; GenieSim simulation data are a separate release and are not included in its totals.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026",
+    "sourceTitle": "AgiBot World 2026 (G2) official release documentation",
+    "locator": "Dataset organization; Parquet features; episode/video alignment",
+    "statement": "The data card documents one complete episode per Parquet file, matching per-camera episode videos, timestamp/frame/episode indices, robot observations and action fields. This establishes an action-aligned temporal data path.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "agibot-world-beta"
+  ]
+}

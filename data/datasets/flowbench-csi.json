@@ -1,0 +1,57 @@
+{
+  "id": "flowbench-csi",
+  "name": "FlowBench (Counterfactual Spatial Imagination)",
+  "shortName": "FlowBench (Counterfactual Spatial Imagination)",
+  "year": 2026,
+  "summary": "给定初始场景与物体位移，预测移动后的空间关系与结果图像。",
+  "summaryEn": "Predicts post-move spatial relations and images from an initial scene and specified object displacement.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Depth",
+    "Optical Flow",
+    "Language"
+  ],
+  "structure": [
+    "State Pairs",
+    "Interventions"
+  ],
+  "source": [
+    "Simulation",
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "FlowBench (Counterfactual Spatial Imagination) authors",
+  "organizationsZh": "FlowBench (Counterfactual Spatial Imagination) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "位移指令不等同于电机控制；与其他同名 FlowBench 项目区分。",
+  "wmNoteEn": "Displacement instructions are not motor commands; distinguish this release from unrelated FlowBench projects.",
+  "links": {
+    "code": "https://github.com/liuyifan22/FlowBench"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://github.com/liuyifan22/FlowBench",
+    "sourceTitle": "FlowBench (Counterfactual Spatial Imagination) official release documentation",
+    "locator": "Overview; Building the release; evaluating world-model outputs",
+    "statement": "Each simulation sample includes a before/after pair for an explicit object move, state-derived answers and optical flow/depth/masks. The release includes data construction and evaluation procedures, making the physical counterfactual target identifiable.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

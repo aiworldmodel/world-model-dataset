@@ -1,0 +1,54 @@
+{
+  "id": "intphys2",
+  "name": "IntPhys 2",
+  "shortName": "IntPhys 2",
+  "year": 2025,
+  "summary": "通过可能与不可能事件检验物体持续性、连续性、固体性和不变性。",
+  "summaryEn": "Possible and impossible event videos test object persistence, continuity, solidity and immutability.",
+  "primaryTask": "Physical & Causal Reasoning",
+  "primaryTaskZh": "物理与因果推理",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Synthetic Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "1,012 main-set videos; 60 debug and 344 held-out videos",
+  "scaleZh": "主集 1,012 段视频；另有 60 段调试和 344 段保留集视频",
+  "organizations": "IntPhys 2 authors",
+  "organizationsZh": "IntPhys 2 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "CC BY-NC 4.0 with additional evaluation-only and no-generative-use restrictions",
+  "licenseZh": "CC BY-NC 4.0，并附仅限评测、禁止生成用途的额外限制",
+  "verdict": "物理与因果推理",
+  "verdictEn": "Physical & Causal Reasoning",
+  "wmNote": "保留集不发布完整元数据；原生任务是物理合理性评测。",
+  "wmNoteEn": "Held-out metadata are withheld; the native task evaluates physical plausibility.",
+  "links": {
+    "code": "https://github.com/facebookresearch/IntPhys2"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 4,
+    "source": "https://github.com/facebookresearch/IntPhys2",
+    "sourceTitle": "IntPhys 2 official release documentation",
+    "locator": "Benchmark description; Splits; License",
+    "statement": "Controlled possible/impossible event videos test violations of four physical principles, with loaders and evaluation code for prediction-based models. The released split table separates debug, main and held-out sets.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "intphys"
+  ]
+}

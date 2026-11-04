@@ -1,0 +1,57 @@
+{
+  "id": "rmbench",
+  "name": "RMBench",
+  "shortName": "RMBench",
+  "year": 2026,
+  "summary": "面向记忆需求的机器人操作任务、演示轨迹和回放评测。",
+  "summaryEn": "Memory-demanding robot manipulation tasks with demonstrations and rollout evaluation.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "RMBench authors",
+  "organizationsZh": "RMBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "基于 RoboTwin 工具；属于独立任务协议，不能与底层平台重复累加数据规模。",
+  "wmNoteEn": "Built on RoboTwin tools; a distinct task protocol whose data totals must not be added to the base platform without overlap checks.",
+  "links": {
+    "code": "https://github.com/RoboTwin-Platform/RMBench"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/RoboTwin-Platform/RMBench",
+    "sourceTitle": "RMBench official release documentation",
+    "locator": "Download Data; collection and evaluation",
+    "statement": "The release provides task demonstrations, deterministic seed replay for collecting trajectories, and policy evaluation in the same manipulation environments. Its admission rests on action-conditioned interaction, not a generic memory label.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [
+    "robotwin"
+  ]
+}

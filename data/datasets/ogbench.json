@@ -1,0 +1,58 @@
+{
+  "id": "ogbench",
+  "name": "OGBench",
+  "shortName": "OGBench",
+  "year": 2024,
+  "summary": "面向离线目标条件学习的仿真轨迹及配套环境。",
+  "summaryEn": "Simulation trajectories and environments for offline goal-conditioned learning.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Action",
+    "RGB Images"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "OGBench authors",
+  "organizationsZh": "OGBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "原始论文发表于 2024 年；任务规模随版本变化，状态和像素任务分别提供。",
+  "wmNoteEn": "The original paper appeared in 2024; task counts vary by release, with separate state and pixel variants.",
+  "links": {
+    "code": "https://github.com/seohongpark/ogbench"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/seohongpark/ogbench",
+    "sourceTitle": "OGBench official release documentation",
+    "locator": "Dataset APIs; Reproducing Datasets",
+    "statement": "The documented schema explicitly represents observations, actions, next_observations and terminal boundaries. Scripts reproduce the trajectories, and environment APIs expose step-wise transitions.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2410.20092",
+    "description": "Original preprint in October 2024; the conference citation is ICLR 2025."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "robo-valuerl",
+  "name": "Robo-ValueRL Dataset",
+  "shortName": "Robo-ValueRL Dataset",
+  "year": 2026,
+  "summary": "芯片插入和积木拆卸任务中的混合质量真实机器人轨迹。",
+  "summaryEn": "Mixed-quality real-robot trajectories for chip insertion and block disassembly.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Publisher reports 240 offline hours and 3,000+ online rollouts",
+  "scaleZh": "发布方报告 240 小时离线演示及 3,000 余条在线轨迹",
+  "organizations": "Robo-ValueRL Dataset authors",
+  "organizationsZh": "Robo-ValueRL Dataset 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "规模为数据卡报告值，未下载核对；代码中的许可说明需与数据权限分别确认。",
+  "wmNoteEn": "Scale is publisher-reported and not checked against downloaded files; verify data permissions separately from code terms.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL",
+    "sourceTitle": "Robo-ValueRL Dataset official release documentation",
+    "locator": "Dataset Description; Key Features",
+    "statement": "The official card identifies real-robot episodes containing multiview observations, robot states, action chunks and rollout segments, including failures and corrections. This supplies action-conditioned physical transitions.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL",
+    "description": "Official Hugging Face registry records creation on 2026-07-08; the card has no finalized paper citation."
+  }
+}

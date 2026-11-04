@@ -1,0 +1,56 @@
+{
+  "id": "arc3-human-think-aloud",
+  "name": "ARC3 Human Think-Aloud",
+  "shortName": "ARC3 Human Think-Aloud",
+  "year": 2026,
+  "summary": "陌生交互游戏中的观测、动作与同步口述记录。",
+  "summaryEn": "Observations, actions and synchronized think-aloud records from unfamiliar interactive games.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Action",
+    "Audio",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation",
+    "Human Demonstration"
+  ],
+  "scale": "144 successful human trajectories; 250 agent trajectories; 25 games",
+  "scaleZh": "144 条成功的人类轨迹；250 条智能体轨迹；25 个游戏",
+  "organizations": "ARC3 Human Think-Aloud authors",
+  "organizationsZh": "ARC3 Human Think-Aloud 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Card specifies CC BY 4.0; check upstream game and agent-trace terms separately",
+  "licenseZh": "数据卡标注 CC BY 4.0；上游游戏与智能体数据条款需另核对",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "人类部分筛选成功轨迹，存在选择偏差；智能体轨迹重用公开来源，口述不等于真实内部机制。",
+  "wmNoteEn": "Human trajectories are success-selected; agent traces reuse public sources, and verbal reports do not establish internal mechanisms.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud",
+    "sourceTitle": "ARC3 Human Think-Aloud official release documentation",
+    "locator": "Dataset Overview; Data Organization; actions / observed_actions / timeline",
+    "statement": "The official release pairs gameplay actions and visual observations with timestamps, audio and transcripts. Ordered interaction traces and outcome annotations expose action-conditioned game transitions rather than dialogue-only state.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

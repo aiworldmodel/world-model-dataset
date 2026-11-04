@@ -5,7 +5,7 @@
 _An evidence-first catalog of data resources for world-model research._
 
 [![Live catalog](https://img.shields.io/badge/explore-live_catalog-2563eb)](https://aiworldmodel.github.io/world-model-dataset/)
-[![Resources](https://img.shields.io/badge/resources-361-16a34a)](#dataset-catalog)
+[![Resources](https://img.shields.io/badge/resources-420-16a34a)](#dataset-catalog)
 [![Primary tasks](https://img.shields.io/badge/primary_tasks-6-7c3aed)](#taxonomy)
 
 [![website](images/cover.jpg)](https://aiworldmodel.github.io/world-model-dataset)
@@ -37,7 +37,7 @@ This is a curated research resource, not a ranking. Detailed suitability notes o
 
 ## Inclusion evidence
 
-Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/full-review-361-2026-10-30.md).
+Every listed resource has a dated primary-source review establishing temporal state evolution, aligned controls, predictive trajectories, physical/counterfactual outcomes, or a dedicated world-model evaluation protocol. Static assets, generic perception/QA, model-only releases and unresolved candidates stay outside the main catalog. Read the [inclusion policy](CATALOG_POLICY.md) and [latest catalog audit](audit/expansion-2026-11-04.md).
 
 Source review does not establish complete downloads, sample integrity or license permission. Paper-level evidence is labeled explicitly. Access conditions vary; not all resources are openly downloadable. Known collections and derived subsets can overlap.
 
@@ -47,9 +47,9 @@ Unconfirmed or empty entry points are omitted; not every resource needs homepage
 
 | Reviewed resources | Primary tasks | Domains | Modalities |
 | ---: | ---: | ---: | ---: |
-| 361 | 6 | 6 | 46 |
+| 420 | 6 | 6 | 48 |
 
-Dataset: 204 · Benchmark: 48 · Generation environment / toolkit: 86 · Collection / registry: 13 · Derived data / subset: 10
+Dataset: 229 · Benchmark: 74 · Generation environment / toolkit: 90 · Collection / registry: 15 · Derived data / subset: 12
 
 These are resource counts, not counts of independent acquired datasets. Generators require data generation; benchmark and aggregate entries must not be summed into a corpus size.
 
@@ -82,11 +82,11 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <!-- DATASET_CATALOG_START -->
 
-[Predictive & Generative Dynamics (43)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (104)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (76)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (70)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (28)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (40)](#world-model-evaluation-diagnostics)
+[Predictive & Generative Dynamics (48)](#predictive-generative-dynamics) · [Action-Conditioned Dynamics (124)](#action-conditioned-dynamics) · [Decision-Making & Agent Trajectories (90)](#decision-making-agent-trajectories) · [Spatial & Spatiotemporal World Modeling (70)](#spatial-spatiotemporal-world-modeling) · [Physical & Causal Reasoning (33)](#physical-causal-reasoning) · [World Model Evaluation & Diagnostics (55)](#world-model-evaluation-diagnostics)
 
 <a id="predictive-generative-dynamics"></a>
 
-### Predictive & Generative Dynamics (43)
+### Predictive & Generative Dynamics (48)
 
 - **DenseReward Dataset** · 2026 · Dataset
   Simulated success and failure trajectories provide per-timestep manipulation states and dense reward supervision.
@@ -118,6 +118,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Code](https://github.com/Mayavan/world_model) · Access: Dataset generation code and rollout evaluation available
   Inclusion evidence C2: README supplies a CoinRun random-policy dataset-generation command and action-conditioned next-frame/multi-step evaluation. Community generator derived from Procgen. [Reviewed source](https://github.com/Mayavan/world_model) · 2026-10-29
 
+- **OpenDV-YouTube** · 2024 · Dataset
+  Video lists, processing scripts and language annotations released for driving-video prediction.
+  `Autonomous Driving` · `RGB Video` · `Language`
+  [Code](https://github.com/OpenDriveLab/DriveAGI) · Access: Acquire using official lists/scripts; upstream video availability and rights require separate checks
+  Inclusion evidence C1: The GenAD release explicitly supports future driving-video prediction and provides a complete video list, consecutive-frame preprocessing and language annotations. March 2024 news confirms the release of this toolkit. [Reviewed source](https://github.com/OpenDriveLab/DriveAGI) · 2026-11-04
+
+- **PDEGym / Poseidon (Time-Dependent Data)** · 2024 · Collection / registry
+  Time-dependent PDE trajectories released with Poseidon, including fluids, waves and reaction-diffusion systems.
+  `Physics / Science` · `Simulation State`
+  [Code](https://github.com/camlab-ethz/Poseidon) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C1: The official release maps named dynamic PDE datasets to download and temporal loaders. The NS-Sines card explicitly documents 20,000 trajectories with 21 uniformly sampled time steps and train/validation/test splits. The admitted collection is restricted to time-dependent systems. [Reviewed source](https://github.com/camlab-ethz/Poseidon) · 2026-11-04
+
 - **TACO** · 2024 · Dataset
   A real bimanual tool-action-object interaction dataset with third-person and egocentric views, precise hand-object 3D meshes, and action labels for action recognition, motion forecasting, and cooperative grasp synthesis.
   `Egocentric / Human` · `Robotics / Embodied AI` · `Multi-view RGB Video` · `3D Mesh` · `Action Labels` · `Agent Pose` · `Object Metadata`
@@ -130,11 +142,23 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://polymathic-ai.org/the_well/) · [Code](https://github.com/PolymathicAI/the_well) · Access: Official downloader and Hugging Face streaming
   Inclusion evidence C1: The official release collects numerical time-evolving physical simulations across 16 component datasets. Count the collection once, not all samples as independent sources. [Reviewed source](https://polymathic-ai.org/the_well/) · 2026-10-29
 
+- **DynaBench (Physical Systems)** · 2023 · Benchmark
+  Spatiotemporal physical-system data with multistep forecasting evaluation.
+  `Physics / Science` · `Simulation State`
+  [Code](https://github.com/badulion/dynabench) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C1: Dataset loaders separate lookback observations from future rollout targets, with documented tensor shapes and 16-step rollout MSE. The benchmark contains simulated physical-system evolution and an explicit future-state prediction protocol. [Reviewed source](https://github.com/badulion/dynabench) · 2026-11-04
+
 - **LagrangeBench** · 2023 · Benchmark
   Particle trajectories for Lagrangian fluid dynamics spanning 2D/3D flows, vortices, cavities, and dam breaks.
   `Physics / Science` · `Simulation State` · `Trajectories`
   [Code](https://github.com/tumaer/lagrangebench) · [Paper](https://arxiv.org/abs/2309.16342) · Access: Official Zenodo archives and automatic download/loaders
   Inclusion evidence C1: SPH fluid-particle datasets and temporal coarse-graining evaluate learned time-evolution surrogates. [Reviewed source](https://arxiv.org/abs/2309.16342) · 2026-10-29
+
+- **WeatherBench 2** · 2023 · Benchmark
+  Reference fields, baseline forecasts and standardized evaluation for global weather prediction.
+  `Physics / Science` · `Weather Fields`
+  [Code](https://github.com/google-research/weatherbench2) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C1: The benchmark supplies temporally indexed reference weather fields and baseline forecasts, with an explicit protocol comparing predicted future atmospheric states at forecast lead times. [Reviewed source](https://github.com/google-research/weatherbench2) · 2026-11-04
 
 - **BEAT** · 2022 · Dataset
   Speech/text-aligned 3D body, gesture, and facial-expression sequences with emotion and semantic-relevance annotations.
@@ -231,6 +255,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Games / Virtual Environments` · `RGB Video` · `Game State` · `Action` · `Reward`
   [Code](https://github.com/openai/procgen) · [Paper](https://arxiv.org/abs/1912.01588) · Access: Open-source environments
   Inclusion evidence C2: Sixteen procedurally generated game environments supply controlled interaction episodes; distinguish the base environments from derived rollout generators. [Reviewed source](https://arxiv.org/abs/1912.01588) · 2026-10-29
+
+- **SEVIR (Nowcasting Sequences)** · 2020 · Dataset
+  Radar/satellite storm observation sequences with a documented nowcasting pipeline and splits.
+  `Physics / Science` · `Weather Fields`
+  [Code](https://github.com/MIT-AI-Accelerator/neurips-2020-sevir) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C1: Official scripts construct temporal nowcasting training and testing datasets from SEVIR storm observations, using a date-based split. The documented forecast task predicts future observed weather fields. [Reviewed source](https://github.com/MIT-AI-Accelerator/neurips-2020-sevir) · 2026-11-04
 
 - **TrajNet++** · 2020 · Benchmark
   A unified benchmark and data format for pedestrian trajectory forecasting, integrating multiple crowd-trajectory sources to compare social-interaction modeling and multi-future prediction methods.
@@ -348,7 +378,43 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="action-conditioned-dynamics"></a>
 
-### Action-Conditioned Dynamics (104)
+### Action-Conditioned Dynamics (124)
+
+- **AgiBot World 2026 (G2)** · 2026 · Dataset
+  Real-world G2 manipulation episodes with time-indexed multicamera video, states and actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Homepage](https://huggingface.co/datasets/agibot-world/AgiBotWorld2026) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The data card documents one complete episode per Parquet file, matching per-camera episode videos, timestamp/frame/episode indices, robot observations and action fields. This establishes an action-aligned temporal data path. [Reviewed source](https://huggingface.co/datasets/agibot-world/AgiBotWorld2026) · 2026-11-04
+
+- **ARC3 Human Think-Aloud** · 2026 · Dataset
+  Observations, actions and synchronized think-aloud records from unfamiliar interactive games.
+  `Games / Virtual Environments` · `RGB Images` · `Action` · `Audio` · `Language`
+  [Homepage](https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official release pairs gameplay actions and visual observations with timestamps, audio and transcripts. Ordered interaction traces and outcome annotations expose action-conditioned game transitions rather than dialogue-only state. [Reviewed source](https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud) · 2026-11-04
+
+- **Daimon-Infinity (Released Batch)** · 2026 · Dataset
+  Visual, tactile and manipulation trajectories recorded with handheld/wearable interfaces.
+  `Robotics / Embodied AI` · `RGB Video` · `Tactile` · `Robot State` · `Action` · `Language`
+  [Homepage](https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The publisher explicitly releases a 1,000-hour batch and documents synchronized episode videos, tactile streams, 114-dimensional observation.state, 111-dimensional action and metadata. Some dimensions are placeholders, so users must inspect embodiment-specific validity. [Reviewed source](https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity) · 2026-11-04
+
+- **Deform360** · 2026 · Dataset
+  Multiview and bimanual tactile interaction data for predicting deformable-object dynamics.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Tactile` · `Object State` · `Action`
+  [Code](https://github.com/lhy0807/deform360) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official release pairs timestamp files with camera/tactile streams and documents synchronized observation loading, manipulation data and reconstructed particle dynamics. Its world-model tasks predict subsequent object deformation under interactions. [Reviewed source](https://github.com/lhy0807/deform360) · 2026-11-04
+
+- **ESPIRE (Interactive Evaluation Environment)** · 2026 · Generation environment / toolkit
+  Spatial manipulation evaluation environment with localization, movement and updated observations in an execution loop.
+  `Robotics / Embodied AI` · `RGB Images` · `Depth` · `Action`
+  [Code](https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py) · [Homepage](https://github.com/spatigen/espire) · Access: Official simulation server and evaluation client; deployment required
+  Inclusion evidence C2: The official driver obtains observations, invokes client.move_to, records execution results and refreshes observations before the next movement. This directly exposes action-conditioned transitions, resolving the prior uncertainty about whether evaluation was static only. [Reviewed source](https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py) · 2026-11-04
+
+- **Esports World Model Dataset** · 2026 · Dataset
+  Multiplayer esports replays aligning player views, actions, states and events to the game clock.
+  `Games / Virtual Environments` · `RGB Video` · `Simulation State` · `Action`
+  [Code](https://github.com/sc2musa/esports-worldmodel-datasets) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The StarCraft II schema aligns step/action records with current and next observations, timestamps, frame indices and boundaries. Dota 2 and CS2 releases document replay-clock alignment, partial visibility and per-view files. Published manifests distinguish completed data from estimates. [Reviewed source](https://github.com/sc2musa/esports-worldmodel-datasets) · 2026-11-04
 
 - **kine2go** · 2026 · Dataset
   A dataset retargeting animal and quadruped motion capture into Unitree Go2 reference trajectories and policy rollouts.
@@ -362,17 +428,59 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://kungfuathletebot.github.io/) · [Paper](https://arxiv.org/abs/2602.13656) · [Code](https://github.com/NPCLEI/KungFuAthleteBot) · Access: Dataset available through Hugging Face and official download links
   Inclusion evidence C3: The paper explicitly introduces a high-dynamic human motion dataset and trajectory correction for robot motion learning; release access remains unverified. [Reviewed source](https://arxiv.org/abs/2602.13656) · 2026-10-29
 
+- **OmniPiano** · 2026 · Generation environment / toolkit
+  Control tasks and environments for one to five simulated dexterous hands playing piano.
+  `Robotics / Embodied AI` · `Simulation State` · `Action` · `Reward`
+  [Code](https://github.com/SAIL-Research-Lab/omnipiano) · Access: Official environment/training interfaces; some score assets require separate registration
+  Inclusion evidence C2: The official environment exposes reset and action-conditioned step APIs returning observations, rewards and termination, with robot safety costs and multi-agent variants. It can generate physical-control trajectories without relying on a model-only release. [Reviewed source](https://github.com/SAIL-Research-Lab/omnipiano) · 2026-11-04
+
 - **Open Locomotion Skills Dataset** · 2026 · Generation environment / toolkit
   A unified dataset of locomotion trajectories, terrain metadata, and sim-to-real tools across legged robot morphologies.
   `Robotics / Embodied AI` · `Trajectories` · `Robot State` · `Action` · `Scene Metadata`
   [Homepage](https://kanishqgandharv219.github.io/open-locomotion-dataset/) · [Code](https://github.com/KanishqGandharv219/open-locomotion-dataset) · Access: Schema, ingestors, validation, and benchmark tools available
   Inclusion evidence C2: Official toolkit defines locomotion episode/trajectory schemas and a generate_trajectories API; generated and imported hardware data retain separate provenance. [Reviewed source](https://github.com/KanishqGandharv219/open-locomotion-dataset) · 2026-10-29
 
+- **REBOOT26 (Verified LeRobot Tasks)** · 2026 · Collection / registry
+  Robot manipulation releases in the REBOOT26 registry with inspected temporal metadata.
+  `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Robot State` · `Action`
+  [Homepage](https://huggingface.co/REBOOT26) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official registry links named LeRobot task releases. Their actual meta/info.json files define action, observation.state, camera/depth videos, timestamp and frame/episode indices. The three inspected manifests report 60, 62 and 60 episodes respectively; schema inspection replaces the previous profile-only evidence. [Reviewed source](https://huggingface.co/REBOOT26) · 2026-11-04
+
+- **RMBench** · 2026 · Benchmark
+  Memory-demanding robot manipulation tasks with demonstrations and rollout evaluation.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Code](https://github.com/RoboTwin-Platform/RMBench) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The release provides task demonstrations, deterministic seed replay for collecting trajectories, and policy evaluation in the same manipulation environments. Its admission rests on action-conditioned interaction, not a generic memory label. [Reviewed source](https://github.com/RoboTwin-Platform/RMBench) · 2026-11-04
+
+- **Robo-ValueRL Dataset** · 2026 · Dataset
+  Mixed-quality real-robot trajectories for chip insertion and block disassembly.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Homepage](https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official card identifies real-robot episodes containing multiview observations, robot states, action chunks and rollout segments, including failures and corrections. This supplies action-conditioned physical transitions. [Reviewed source](https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL) · 2026-11-04
+
+- **RoboArena Rollout Snapshot (2026-07-17)** · 2026 · Dataset
+  Real-robot policy rollouts with videos, action/proprioception files and task outcomes.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language` · `Reward`
+  [Homepage](https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The snapshot pairs policy-episode MP4s with 10,783 NPZ proprioception/action files; session metadata provides instructions, timestamps and outcomes. The data card explicitly dates this snapshot 2026-07-17. [Reviewed source](https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026) · 2026-11-04
+
+- **VLA-REPLICA SFT Trajectories** · 2026 · Dataset
+  SO-arm demonstrations with two camera streams and per-frame six-dimensional states and actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action`
+  [Homepage](https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json) · [Code](https://github.com/IRVLUTD/VLAReplica) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: Official dataset metadata defines six-dimensional action and observation.state fields, top/wrist video streams, timestamps and frame/episode indices. These document aligned manipulation trajectories; the official VLAReplica repository names this SFT release. [Reviewed source](https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json) · 2026-11-04
+
 - **WildWorld** · 2026 · Dataset
   A large-scale action-conditioned game dataset for interactive generative world models, with explicit character state, camera pose, and depth annotations.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Depth` · `Camera Pose` · `Game State`
   [Homepage](https://alaya-studio.github.io/wildworld-project/) · [Paper](https://arxiv.org/abs/2603.23497) · [Code](https://github.com/AlayaLab/WildWorld) · Access: Part 1 available on Hugging Face; later parts are planned
   Inclusion evidence C2: Game rollouts expose explicit state with synchronized action labels across more than 108 million frames. [Reviewed source](https://arxiv.org/abs/2603.23497) · 2026-10-29
+
+- **AgiBot World Colosseo (Beta)** · 2025 · Dataset
+  Large-scale bimanual manipulation trajectories with camera observations, states and actions.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Code](https://github.com/OpenDriveLab/Agibot-World) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The publisher identifies Beta as the full trajectory release and Alpha as its subset, and documents visualization of camera streams, robot states and actions. Beta release is dated 2025-03-01. [Reviewed source](https://github.com/OpenDriveLab/Agibot-World) · 2026-11-04
 
 - **AiMDoom / NextBestPath Benchmark** · 2025 · Benchmark
   The active-mapping release provides AiMDoom scenes, a simulator and runnable planning evaluation.
@@ -391,6 +499,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Agent Pose` · `Language`
   [Code](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · Access: Official documentation or implementation; data download not tested
   Inclusion evidence C2: The release documents EMMOE-100 tasks and runnable high-level planning/low-level Habitat execution with saved results and success metrics. Inclusion covers the interactive benchmark. [Reviewed source](https://raw.githubusercontent.com/silence143/EMMOE/main/README.md) · 2026-10-30
+
+- **Galaxea Open-World Dataset** · 2025 · Dataset
+  Bimanual and whole-body mobile-manipulation trajectories from R1-Lite robots.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Homepage](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) · Access: Hugging Face login and acceptance of publisher access conditions
+  Inclusion evidence C2: The official card documents per-episode Parquet and camera MP4 files, robot observation/action vectors, timestamps and episode/frame indices in LeRobot format. This directly establishes aligned mobile-manipulation transitions. [Reviewed source](https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset) · 2026-11-04
 
 - **MuJoCo Playground** · 2025 · Generation environment / toolkit
   An open-source MuJoCo MJX robot-learning suite for large-scale generation of contact-rich states, actions, and sensor trajectories.
@@ -428,6 +542,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://roboverse.wiki/) · [Paper](https://arxiv.org/abs/2504.18904) · [Code](https://github.com/RoboVerseOrg/RoboVerse) · Access: Platform, tasks, and benchmark code publicly available
   Inclusion evidence C2: MetaSim exposes simulator initialization, physical stepping and shared interfaces; generated data is evaluated for world-model learning and policy learning. [Reviewed source](https://arxiv.org/abs/2504.18904) · 2026-10-29
 
+- **Bench2Drive** · 2024 · Benchmark
+  CARLA driving trajectories with a multi-ability closed-loop evaluation protocol.
+  `Autonomous Driving` · `Multi-view RGB Video` · `Simulation State` · `Action`
+  [Code](https://github.com/Thinklab-SJTU/Bench2Drive) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official release supplies driving clips collected by a driving agent and executable CARLA policy evaluation with defined routes, driving success, efficiency and smoothness metrics. Version and split manifests identify the released data. [Reviewed source](https://github.com/Thinklab-SJTU/Bench2Drive) · 2026-11-04
+
 - **BRMData** · 2024 · Dataset
   Bimanual mobile-manipulation HDF5 data align actions, multi-view images, joint position/velocity/effort and base velocity.
   `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
@@ -439,6 +559,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Multi-view RGB Video` · `Action` · `Robot State`
   [Homepage](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · Access: Official TFDS schema and RLDS storage reference; full download not tested
   Inclusion evidence C2: Mobile hose manipulation exposes seven-dimensional actions, three onboard camera views and 66-dimensional state. Steps are organized into episodes. The schema gives action/state dimensions without defining every component; do not infer their units. [Reviewed source](https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation) · 2026-10-30
+
+- **D5RL** · 2024 · Benchmark
+  Diverse offline reinforcement-learning trajectories for manipulation and quadruped control.
+  `Robotics / Embodied AI` · `RGB Images` · `Simulation State` · `Action` · `Reward`
+  [Code](https://github.com/d5rlbenchmark/d5rl) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official benchmark releases Franka Kitchen, WidowX and A1 data and matching executable environments for offline RL and online fine-tuning. State/image observations and control trajectories support action-conditioned dynamics. [Reviewed source](https://github.com/d5rlbenchmark/d5rl) · 2026-11-04
 
 - **DrivingDojo** · 2024 · Dataset
   A video dataset tailored to interactive driving world models, covering driving maneuvers, multi-agent interplay, open-world knowledge, and an action-instruction-following benchmark.
@@ -476,6 +602,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://mobile-aloha.github.io/) · [Code](https://github.com/MarkFzp/mobile-aloha) · Access: Official project links to demonstration datasets and replay tools
   Inclusion evidence C2: Whole-body teleoperation records mobile bimanual demonstrations and the project provides a datasets entry point. [Reviewed source](https://mobile-aloha.github.io/) · 2026-10-29
 
+- **OGBench** · 2024 · Benchmark
+  Simulation trajectories and environments for offline goal-conditioned learning.
+  `Games / Virtual Environments` · `Simulation State` · `Action` · `RGB Images`
+  [Code](https://github.com/seohongpark/ogbench) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The documented schema explicitly represents observations, actions, next_observations and terminal boundaries. Scripts reproduce the trajectories, and environment APIs expose step-wise transitions. [Reviewed source](https://github.com/seohongpark/ogbench) · 2026-11-04
+
 - **RetroAct Environment Annotations and Rollout Generator** · 2024 · Generation environment / toolkit
   Annotations and rollout-generation tools for 974 game environments used in action-conditioned world modeling; environment counts are not recorded-trajectory counts.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Simulation State` · `Camera Pose`
@@ -487,6 +619,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Video` · `Depth` · `Action` · `Robot State` · `Language`
   [Homepage](https://robocasa.ai/) · [Paper](https://arxiv.org/abs/2406.02523) · [Code](https://github.com/robocasa/robocasa) · Access: Open generation toolkit
   Inclusion evidence C2: Interactive kitchen simulation provides human demonstrations for controlled manipulation tasks; generation platform, with associated recorded demonstrations. [Reviewed source](https://arxiv.org/abs/2406.02523) · 2026-10-29
+
+- **RoboTwin** · 2024 · Generation environment / toolkit
+  Bimanual simulation tasks, demonstration collection tools and accompanying trajectories.
+  `Robotics / Embodied AI` · `RGB Video` · `Robot State` · `Action` · `Language`
+  [Code](https://github.com/RoboTwin-Platform/RoboTwin) · Access: Pre-collected trajectories and simulation tools; environment not run
+  Inclusion evidence C2: The official repository supplies pre-collected manipulation trajectories, seed-based demonstration collection and policy rollout evaluation in executable robot environments. It dates the original release to 2024-09-20. [Reviewed source](https://github.com/RoboTwin-Platform/RoboTwin) · 2026-11-04
 
 - **ALOHA / ACT Simulation Demonstrations** · 2023 · Dataset
   Official ACT bimanual simulation demonstrations for cube transfer and insertion, with scripted/human demos and recording tools.
@@ -842,6 +980,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://www.tensorflow.org/datasets/catalog/viola) · Access: Official documentation or implementation; data download not tested
   Inclusion evidence C2: 135 training and 15 test episodes align translation, rotation and gripper actions with two camera streams and robot state. [Reviewed source](https://www.tensorflow.org/datasets/catalog/viola) · 2026-10-30
 
+- **VPT Contractor Demonstrations** · 2022 · Dataset
+  Human Minecraft demonstrations with recorded keyboard/mouse actions and game state.
+  `Games / Virtual Environments` · `RGB Video` · `Action` · `Simulation State`
+  [Code](https://github.com/openai/Video-Pre-Training) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: Released demonstration segments pair compressed screen observations with JSONL actions, environment statistics and an initial checkpoint. The documentation warns that missing uploads can create gaps between segments. [Reviewed source](https://github.com/openai/Video-Pre-Training) · 2026-11-04
+
 - **BC-Z Robot Demonstrations** · 2021 · Dataset
   Teleoperated manipulation exposes residual future end-effector/gripper targets, current pose and image observations.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
@@ -859,6 +1003,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Simulation State` · `Action` · `Reward`
   [Code](https://github.com/isaac-sim/IsaacGymEnvs) · [Paper](https://arxiv.org/abs/2108.10470) · Access: Official repository and release
   Inclusion evidence C2: GPU physics buffers directly exchange state/control tensors with robot policies; downloadable simulation platform. [Reviewed source](https://arxiv.org/abs/2108.10470) · 2026-10-29
+
+- **NeoRL (Physical Control Tasks)** · 2021 · Benchmark
+  State-transition datasets from NeoRL industrial, building-energy and MuJoCo control tasks.
+  `Physics / Science` · `Simulation State` · `Action` · `Reward`
+  [Code](https://github.com/polixir/NeoRL) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C2: The official schema explicitly defines obs, next_obs, action, reward, done and trajectory boundaries. CityLearn, Industrial Benchmark and MuJoCo tasks supply physical control transitions at multiple policy quality levels. [Reviewed source](https://github.com/polixir/NeoRL) · 2026-11-04
 
 - **NYU Door Opening (VINN)** · 2021 · Dataset
   Door/cabinet opening episodes contain end-effector translation/rotation and gripper actions paired with RGB observations.
@@ -976,7 +1126,7 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="decision-making-agent-trajectories"></a>
 
-### Decision-Making & Agent Trajectories (76)
+### Decision-Making & Agent Trajectories (90)
 
 - **ACE-Data-0** · 2026 · Dataset
   A synchronized home-interaction dataset with multiview video, body, hands, objects, audio, and touch.
@@ -1008,6 +1158,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://ebim-benchmark.github.io/) · [Code](https://github.com/EBiM-Benchmark/benchmark) · Access: Developer-preview task environments; official scoring follows competition rules
   Inclusion evidence C2: README provides mobile dual-arm teleoperation task environments and launch commands. Developer preview, not a fixed released demonstration corpus. [Reviewed source](https://github.com/EBiM-Benchmark/benchmark) · 2026-10-29
 
+- **EmbodiedWorld-200K** · 2026 · Derived data / subset
+  Instruction-conditioned navigation-planning examples constructed from gameplay and camera trajectories.
+  `Games / Virtual Environments` · `RGB Video` · `Camera Pose` · `Language` · `Action`
+  [Homepage](https://huggingface.co/datasets/Xiaokunfeng2022/EmbodiedWorld-200K) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: The official card and construction toolkit identify initial observations, language instructions and ordered action/pose trajectories with evaluation splits. The pipeline derives navigation actions from six-degree-of-freedom camera motion. [Reviewed source](https://huggingface.co/datasets/Xiaokunfeng2022/EmbodiedWorld-200K) · 2026-11-04
+
 - **Evo-RL Real-World Dataset** · 2026 · Dataset
   An open real-robot offline-RL dataset for SO-101 and AgileX PiPER platforms.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State`
@@ -1038,6 +1194,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://huggingface.co/datasets/jiawei-ucas/OmniBehavior) · [Paper](https://arxiv.org/abs/2604.08362) · [Code](https://github.com/icip-cas/OmniBehavior) · Access: Full bilingual dataset available on Hugging Face
   Inclusion evidence C3: Real long-horizon cross-scenario human behavior traces are used for an explicit predictive simulation benchmark; behavioral events are not physical motor controls. [Reviewed source](https://arxiv.org/abs/2604.08362) · 2026-10-29
 
+- **Open-AoE** · 2026 · Dataset
+  Smartphone egocentric manipulation videos with per-frame hand and camera trajectories.
+  `Egocentric / Human` · `RGB Video` · `Agent Pose` · `Camera Pose` · `Language`
+  [Code](https://github.com/ant-research/Open-AoE) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: The official release specifies camera_traj.npz, per-frame bilateral MANO parameters and validity, calibrated video and temporally localized atomic actions. These form ordered human-state trajectories and support predictive modeling. [Reviewed source](https://github.com/ant-research/Open-AoE) · 2026-11-04
+
 - **RescueBench** · 2026 · Generation environment / toolkit
   An Unreal Engine open-world search-and-rescue benchmark with multi-stage tasks, progressive difficulty, and expert-trajectory collection tools.
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `RGB Video` · `Action` · `Language` · `Reward` · `Trajectories`
@@ -1055,6 +1217,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `RGB Video` · `Action` · `Scene Metadata` · `Language` · `Trajectories`
   [Code](https://github.com/woyut/UniETP) · Access: Unified environment and task-generation code available
   Inclusion evidence C2: Unified interfaces expose observations, actions and scene graphs across four simulators with grounded task generation. Not an independent recorded corpus. [Reviewed source](https://github.com/woyut/UniETP) · 2026-10-29
+
+- **EgoDex** · 2025 · Dataset
+  Egocentric manipulation videos paired with per-frame head, hand and upper-body poses.
+  `Egocentric / Human` · `RGB Video` · `Agent Pose` · `Camera Pose` · `Language`
+  [Code](https://github.com/apple-aiml-research/ml-egodex) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: Paired MP4/HDF5 files align each video frame with joint and camera transforms in an episode-fixed coordinate frame. The release includes metrics for dexterous trajectory prediction. [Reviewed source](https://github.com/apple-aiml-research/ml-egodex) · 2026-11-04
 
 - **FLAME** · 2025 · Dataset
   A large simulated demonstration benchmark for federated robot manipulation learning.
@@ -1110,6 +1278,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://droid-dataset.github.io/) · [Paper](https://arxiv.org/abs/2403.12945) · [Code](https://github.com/droid-dataset/droid) · Access: Open download
   Inclusion evidence C2: Official dataset quickstart iterates per-step robot observations; the release documents teleoperated manipulation demonstration collection. [Reviewed source](https://droid-dataset.github.io/) · 2026-10-29
 
+- **HOT3D (Full Tracking Sequences)** · 2024 · Dataset
+  Egocentric 3D hand/object tracking sequences with official loading and download tools.
+  `Egocentric / Human` · `RGB Video` · `Agent Pose` · `Object State` · `Camera Pose`
+  [Code](https://github.com/facebookresearch/hot3d) · Access: Registration provides expiring download links
+  Inclusion evidence C3: The official toolkit provides the complete VRS-based hand/object tracking sequences and distinguishes them from the curated HOT3D-Clips subset. Tracking observations and 3D states support ordered trajectory modeling. [Reviewed source](https://github.com/facebookresearch/hot3d) · 2026-11-04
+
+- **NAVSIM** · 2024 · Benchmark
+  Pseudo-simulation evaluation of driving planners using nuPlan/OpenScene trajectories.
+  `Autonomous Driving` · `RGB Images` · `Agent Pose` · `Trajectory`
+  [Code](https://github.com/autonomousvision/navsim) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: The official data specification organizes OpenScene/nuPlan observations into ordered Scene/Frame objects at 2 Hz for planning agents. NAVSIM evaluates planned future trajectories using explicit simulation-based safety and progress measures. [Reviewed source](https://github.com/autonomousvision/navsim) · 2026-11-04
+
 - **PARTNR** · 2024 · Generation environment / toolkit
   A large embodied benchmark for planning and reasoning in household human-robot collaboration, with simulation-grounded language tasks containing spatial, temporal, and heterogeneous-agent constraints.
   `Robotics / Embodied AI` · `Language` · `Action` · `Simulation State` · `Object State` · `Trajectory`
@@ -1128,6 +1308,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://umi-gripper.github.io/) · [Paper](https://arxiv.org/abs/2402.10329) · Access: Open-source project and paper
   Inclusion evidence C2: Handheld gripper demonstrations and relative-trajectory action representations support policy transfer; not directly measured robot torques. [Reviewed source](https://arxiv.org/abs/2402.10329) · 2026-10-29
 
+- **ARCTIC** · 2023 · Dataset
+  Continuous observations and 3D motion annotations of bimanual articulated-object manipulation.
+  `Egocentric / Human` · `Multi-view RGB Video` · `Agent Pose` · `Object State`
+  [Code](https://github.com/zc-alexfan/arctic) · Access: Registration through the publisher is required
+  Inclusion evidence C3: The release documents motion-captured dexterous manipulation with synchronized views and SMPL-X, MANO and articulated-object ground truth, supporting consistent motion reconstruction and ordered state trajectories. [Reviewed source](https://github.com/zc-alexfan/arctic) · 2026-11-04
+
 - **BridgeData V2** · 2023 · Dataset
   A large real-robot multitask manipulation dataset spanning diverse kitchen and tabletop scenes.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
@@ -1139,6 +1325,24 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Robot State` · `Object State`
   [Homepage](https://clvrai.github.io/furniture-bench/) · [Paper](https://arxiv.org/abs/2305.12821) · [Code](https://github.com/clvrai/furniture-bench) · Access: Official benchmark and code
   Inclusion evidence C2: Furniture assembly benchmark explicitly provides 5,000+ pre-collected demonstrations and a reproducible robot environment. [Reviewed source](https://arxiv.org/abs/2305.12821) · 2026-10-29
+
+- **Hi4D (Interaction Sequences)** · 2023 · Dataset
+  Close two-person interaction sequences with per-frame body parameters and contact correspondences.
+  `Egocentric / Human` · `Multi-view RGB Video` · `Agent Pose` · `3D Mesh`
+  [Code](https://github.com/yifeiyin04/Hi4D/blob/main/dataset.md) · Access: Publisher application and approval required
+  Inclusion evidence C3: The schema defines start/end frame IDs and per-frame SMPL pose, translation, 3D joints and contacts, aligned with multiview images. This explicitly establishes ordered interaction trajectories. [Reviewed source](https://github.com/yifeiyin04/Hi4D/blob/main/dataset.md) · 2026-11-04
+
+- **Inter-X** · 2023 · Dataset
+  Two-person interaction motions with skeleton, SMPL-X and textual annotations.
+  `Egocentric / Human` · `Agent Pose` · `Language` · `Action Labels`
+  [Code](https://github.com/liangxuy/Inter-X) · Access: Publisher form required for research access
+  Inclusion evidence C3: The released data include mocap-derived skeletal/SMPL-X motion sequences with text and interaction-order labels, plus split files and sequence visualization tools. [Reviewed source](https://github.com/liangxuy/Inter-X) · 2026-11-04
+
+- **InterHuman** · 2023 · Dataset
+  Two-person 3D interaction motion sequences with natural-language descriptions.
+  `Egocentric / Human` · `Agent Pose` · `Language`
+  [Code](https://github.com/tr3e/InterGen) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: The release contains raw SMPL motion and processed per-joint positions/rotations for interacting people, with text annotations and train/validation/test splits. Its generation tasks operate on ordered skeletal trajectories. [Reviewed source](https://github.com/tr3e/InterGen) · 2026-11-04
 
 - **JRDB-Traj** · 2023 · Benchmark
   JRDB-based egocentric crowd forecasting benchmark predicting future pedestrian positions relative to the robot from images and point clouds.
@@ -1170,6 +1374,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/abs/2310.01824) · [Code](https://github.com/StanfordVL/mini_behavior) · Access: Official environment code and demonstration collection tools available
   Inclusion evidence C2: Gridworld household tasks preserve symbolic state transitions and include starter code for data collection. [Reviewed source](https://arxiv.org/abs/2310.01824) · 2026-10-29
 
+- **OMOMO Interaction Motion Data** · 2023 · Dataset
+  Interaction sequences for object-motion-conditioned full-body human motion synthesis.
+  `Egocentric / Human` · `Agent Pose` · `Object State` · `3D Mesh`
+  [Code](https://github.com/lijiaman/omomo_release) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: The official release provides interaction motion data and sequence visualizations, with human-motion generation conditioned on object motion and geometry. Its temporal motion targets satisfy the trajectory criterion. [Reviewed source](https://github.com/lijiaman/omomo_release) · 2026-11-04
+
 - **Open X-Embodiment** · 2023 · Collection / registry
   A large cross-embodiment collection assembled by Google DeepMind and more than 30 research institutions. It unifies real robot interactions across platforms, tasks, and environments for generalist embodied learning.
   `Robotics / Embodied AI` · `RGB Video` · `Action` · `Robot State` · `Language`
@@ -1194,6 +1404,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://webarena.dev/) · [Code](https://github.com/web-arena-x/webarena) · [Paper](https://arxiv.org/abs/2307.13854) · Access: Open-source benchmark and deployment
   Inclusion evidence C2: Self-hosted functional websites define long-horizon agent actions and resulting environment changes; digital-state environment, not physical robot data. [Reviewed source](https://arxiv.org/abs/2307.13854) · 2026-10-29
 
+- **BEHAVE (Interaction Sequences)** · 2022 · Dataset
+  Multiview human-object interaction sequences with body/object fits and contact annotations.
+  `Egocentric / Human` · `RGB-D` · `Agent Pose` · `Object State` · `3D Mesh`
+  [Code](https://github.com/xiexh20/behave-dataset) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C3: Sequence folders contain time-indexed multiview RGB-D frames with matching SMPL and object registrations. These expose ordered human/object states and contacts rather than only static assets. [Reviewed source](https://github.com/xiexh20/behave-dataset) · 2026-11-04
+
 - **BEHAVIOR-1K** · 2022 · Generation environment / toolkit
   An embodied benchmark of 1,000 everyday household activities with tasks, scenes, and simulation.
   `Robotics / Embodied AI` · `RGB-D` · `Action` · `Simulation State` · `Language`
@@ -1211,6 +1427,18 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Autonomous Driving` · `Trajectories` · `Object Metadata` · `Agent Pose` · `Scene Metadata`
   [Homepage](https://levelxdata.com/exid-dataset/) · Access: Official leveLXData/exiD request page; access requires agreeing to dataset terms
   Inclusion evidence C3: Official release provides naturalistic road-user trajectories, maps and maneuver annotations for merging/on-ramp/off-ramp scenarios. [Reviewed source](https://levelxdata.com/exid-dataset/) · 2026-10-29
+
+- **GIMO** · 2022 · Dataset
+  Human motion and gaze sequences in scenes for future-body-motion prediction.
+  `Egocentric / Human` · `Agent Pose` · `Gaze` · `RGB Video`
+  [Code](https://github.com/y-zheng18/GIMO) · Access: Demo provided; full data require a signed agreement and approval
+  Inclusion evidence C3: The official release pairs contextual motion sequences and gaze with a documented future-human-motion prediction task, a demonstration, sequence visualization and a full-dataset application route. [Reviewed source](https://github.com/y-zheng18/GIMO) · 2026-11-04
+
+- **InterCap** · 2022 · Dataset
+  Synchronized 3D human/object interaction tracking sequences from multiview RGB-D.
+  `Egocentric / Human` · `RGB-D` · `Agent Pose` · `Object State` · `3D Mesh`
+  [Homepage](https://intercap.is.tue.mpg.de/) · Access: Register through the official page and follow its data license
+  Inclusion evidence C3: The official dataset describes spatially calibrated, temporally synchronized RGB-D cameras and joint tracking of whole-body SMPL-X and objects during interaction, establishing ordered human/object state trajectories. [Reviewed source](https://intercap.is.tue.mpg.de/) · 2026-11-04
 
 - **Language-Table** · 2022 · Dataset
   A language-conditioned tabletop robot dataset and environment with long-horizon free-form instructions.
@@ -1253,6 +1481,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Games / Virtual Environments` · `Text` · `RGB Video` · `Action` · `Game State`
   [Code](https://github.com/alfworld/alfworld) · [Paper](https://arxiv.org/abs/2010.03768) · Access: Open-source benchmark
   Inclusion evidence C2: TextWorld actions are aligned to executable ALFRED visual-environment goals, providing interactive state transitions. [Reviewed source](https://arxiv.org/abs/2010.03768) · 2026-10-29
+
+- **EgoBody** · 2021 · Dataset
+  Synchronized egocentric and multiview observations of human motion in interactive scenes.
+  `Egocentric / Human` · `RGB Video` · `RGB-D` · `Agent Pose` · `Gaze`
+  [Code](https://github.com/sanweiliti/EgoBody) · Access: Registration and acceptance of the data license required
+  Inclusion evidence C3: The dataset documents synchronized Kinect and egocentric frames, sequence start/end frame IDs and 3D body motion annotations. These provide ordered human-state trajectories in scenes. [Reviewed source](https://github.com/sanweiliti/EgoBody) · 2026-11-04
 
 - **nuPlan** · 2021 · Benchmark
   A large-scale real-world planning dataset and benchmark with sensor logs, maps, trajectories, and closed-loop evaluation tools for autonomous driving.
@@ -1860,13 +2094,25 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="physical-causal-reasoning"></a>
 
-### Physical & Causal Reasoning (28)
+### Physical & Causal Reasoning (33)
 
 - **CG-World** · 2026 · Dataset
   A large computer-graphics world-state dataset explicitly recording states, events, relations, and counterfactual branches.
   `Robotics / Embodied AI` · `Physics / Science` · `Synthetic Video` · `3D State` · `Action` · `Scene Metadata`
   [Paper](https://arxiv.org/abs/2607.26452) · Access: Paper entry; release status requires verification
   Inclusion evidence C4: Temporally aligned state, action, contact and branch metadata explicitly distinguish factual and counterfactual trajectories. [Reviewed source](https://arxiv.org/abs/2607.26452) · 2026-10-29
+
+- **CRONOS (Counterfactual Physical Consistency)** · 2026 · Benchmark
+  Tests counterfactual prediction consistency for collisions, falling and occlusion under controlled scene changes.
+  `Physics / Science` · `Synthetic Video` · `Object State`
+  [Homepage](https://genintel.github.io/CRONOS/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C4: The benchmark varies one scene factor at a time and supplies reference continuations for fall, collision and occlusion. Multiple physical-parameter rollouts share conditioning signals, enabling explicit outcome and counterfactual-consistency evaluation. [Reviewed source](https://genintel.github.io/CRONOS/) · 2026-11-04
+
+- **FlowBench (Counterfactual Spatial Imagination)** · 2026 · Benchmark
+  Predicts post-move spatial relations and images from an initial scene and specified object displacement.
+  `Robotics / Embodied AI` · `RGB Images` · `Depth` · `Optical Flow` · `Language`
+  [Code](https://github.com/liuyifan22/FlowBench) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C4: Each simulation sample includes a before/after pair for an explicit object move, state-derived answers and optical flow/depth/masks. The release includes data construction and evaluation procedures, making the physical counterfactual target identifiable. [Reviewed source](https://github.com/liuyifan22/FlowBench) · 2026-11-04
 
 - **GAUGE** · 2026 · Benchmark
   A measurement-grounded benchmark evaluating physical fidelity in numerical physics engines and generative video world models.
@@ -1898,6 +2144,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Paper](https://arxiv.org/abs/2608.15555) · Access: Paper entry; release status requires verification
   Inclusion evidence C1: Generated continuations are compared with simulator rollouts from the same initial frame, with per-frame poses, contacts and depth. [Reviewed source](https://arxiv.org/abs/2608.15555) · 2026-10-29
 
+- **RoboReward / RoboRewardBench** · 2026 · Derived data / subset
+  Robot rollout videos paired with task instructions and end-of-episode progress rewards.
+  `Robotics / Embodied AI` · `RGB Video` · `Language` · `Reward`
+  [Homepage](https://huggingface.co/datasets/teetone/RoboReward) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C4: Each example includes a real-robot rollout video, task instruction and terminal progress score. Temporal clipping creates partial-outcome examples; the test subset is RoboRewardBench. Inclusion concerns observed execution outcomes, not causal intervention claims. [Reviewed source](https://huggingface.co/datasets/teetone/RoboReward) · 2026-11-04
+
 - **VisTouch** · 2026 · Dataset
   A large-scale synchronized vision, force-tactile, and contact-audio dataset of robotic sliding interactions.
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Audio` · `Robot State` · `Action`
@@ -1922,6 +2174,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · Access: Official documentation or implementation; data download not tested
   Inclusion evidence C4: The OOD execution subsets provide start/end subtask images paired with success/failure outcomes: UR5-Fail 140, RoboFail 153 and RoboVQA 357 examples. Separately bundled single-image planning cases are not the qualifying temporal evidence. [Reviewed source](https://huggingface.co/datasets/paulpacaud/Guardian-FailCoT-OOD-datasets) · 2026-10-30
 
+- **IntPhys 2** · 2025 · Benchmark
+  Possible and impossible event videos test object persistence, continuity, solidity and immutability.
+  `Physics / Science` · `Synthetic Video`
+  [Code](https://github.com/facebookresearch/IntPhys2) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C4: Controlled possible/impossible event videos test violations of four physical principles, with loaders and evaluation code for prediction-based models. The released split table separates debug, main and held-out sets. [Reviewed source](https://github.com/facebookresearch/IntPhys2) · 2026-11-04
+
 - **ManipBench (Interaction and Outcome Tasks)** · 2025 · Benchmark
   Interaction portions cover inverse dynamics, temporal actions, fabric interactions, counterfactuals and simulation tasks.
   `Robotics / Embodied AI` · `RGB Video` · `QA` · `Simulation State`
@@ -1939,6 +2197,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `RGB Images` · `Language` · `Reward`
   [Homepage](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · Access: Hugging Face gated release; accepting publisher conditions is required; files not downloaded
   Inclusion evidence C4: Task instructions, start/end anchors and multi-view BEFORE/AFTER states are paired with relative progress targets. This derived state-pair resource is not a release of full action trajectories. [Reviewed source](https://huggingface.co/datasets/tanhuajie2001/Robo-Dopamine-GRM-Dataset) · 2026-10-30
+
+- **APEBench** · 2024 · Generation environment / toolkit
+  Generates temporal PDE data for autoregressive emulator evaluation on periodic 1D–3D domains.
+  `Physics / Science` · `Simulation State`
+  [Code](https://github.com/tum-pbs/apebench) · Access: Official generation toolkit; run reference solvers to create data
+  Inclusion evidence C4: The toolkit uses spectral reference simulators to generate PDE trajectories and evaluates autoregressive predictions over rollouts. Initial fields and subsequent numerical states form identifiable physical input/target pairs. [Reviewed source](https://github.com/tum-pbs/apebench) · 2026-11-04
 
 - **PokeFlex** · 2024 · Dataset
   A real-world pilot dataset for deformable-object manipulation, capturing complete 360-degree 3D mesh deformations together with robot-applied forces and torques during poking.
@@ -2032,13 +2296,19 @@ Entries are grouped by primary task and sorted by year within each group. The RE
 
 <a id="world-model-evaluation-diagnostics"></a>
 
-### World Model Evaluation & Diagnostics (40)
+### World Model Evaluation & Diagnostics (55)
 
 - **4DSynth** · 2026 · Generation environment / toolkit
   A controllable procedural 4D-world synthesis resource for dynamic embodied simulation.
   `Robotics / Embodied AI` · `RGB Video` · `Text` · `Simulation State`
   [Paper](https://arxiv.org/abs/2608.26947) · Access: Paper entry; data access requires verification
   Inclusion evidence C4: Procedural environments expose animated actors, trajectories and physics-ready state; the paper defines a generated navigation benchmark. Generator, not a downloaded dataset. [Reviewed source](https://arxiv.org/abs/2608.26947) · 2026-10-29
+
+- **Apple-π / Orchard** · 2026 · Benchmark
+  Diagnoses video-model mechanics reasoning through target-time states and full trajectory generation.
+  `Physics / Science` · `RGB Video` · `Language` · `Object State`
+  [Code](https://github.com/21yrm/Apple-PI) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The released Orchard ground truth supports target-time state prediction and frame-wise trajectory comparison against physics-derived targets. The evaluator defines repeated rollouts and state/velocity/trajectory metrics, beyond generic physical-law QA. [Reviewed source](https://github.com/21yrm/Apple-PI) · 2026-11-04
 
 - **CaliBench** · 2026 · Benchmark
   An interpretable benchmark for calibration of stochastic physical outcomes in video world models.
@@ -2051,6 +2321,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Camera Pose`
   [Paper](https://arxiv.org/abs/2608.18710) · Access: Paper entry; release status requires verification
   Inclusion evidence C5: Camera-controlled generated videos are evaluated for viewpoint consistency, motion coherence and content preservation; perceptual quality is not physical accuracy. [Reviewed source](https://arxiv.org/abs/2608.18710) · 2026-10-29
+
+- **CrashTwin** · 2026 · Benchmark
+  Evaluates spatiotemporal consistency and physical conservation in multi-agent collision rollouts.
+  `Autonomous Driving` · `RGB Video` · `Object State`
+  [Code](https://github.com/phai-lab/CrashTwin) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The official release provides collision sequences and a reconstruction/evaluation pipeline for generated rollouts, including temporal dynamics, momentum and kinetic-energy diagnostics. Admission concerns the specified world-model evaluation protocol, not visual collision classification. [Reviewed source](https://github.com/phai-lab/CrashTwin) · 2026-11-04
 
 - **DrivingGen** · 2026 · Benchmark
   A benchmark evaluating generative driving video world models through both visual quality and physical plausibility of vehicle trajectories.
@@ -2081,6 +2357,12 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   `Robotics / Embodied AI` · `Physics / Science` · `RGB Video` · `Text` · `QA`
   [Paper](https://arxiv.org/abs/2608.16859) · Access: Paper entry; release status requires verification
   Inclusion evidence C5: Dedicated world-model evaluation uses 330 cases to diagnose physical, causal and world-state evolution in generated rollouts. [Reviewed source](https://arxiv.org/abs/2608.16859) · 2026-10-29
+
+- **OPIS** · 2026 · Benchmark
+  Tests generated-rollout object presence, identity and structure against fixed input-image instances.
+  `Urban / 3D Scene` · `RGB Images` · `Segmentation` · `Language`
+  [Homepage](https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The release anchors rollout evaluation to an annotated initial object inventory, then measures presence, identity and structural persistence with visibility reasoning and static/dynamic tracks. This is a dedicated world-model memory protocol. [Reviewed source](https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset) · 2026-11-04
 
 - **PAWBench** · 2026 · Benchmark
   A benchmark for probabilistic alignment between generated and real world dynamics.
@@ -2160,11 +2442,29 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://open-gigaai.github.io/giga-world-1/) · Access: Official benchmark/data entry points; complete download not tested
   Inclusion evidence C5: Official WMBench protocol pairs teleoperation and real policy executions with simulated rollouts, measuring trajectory fidelity and closed-loop success correlation. Do not count the entire training mixture as released benchmark data. [Reviewed source](https://open-gigaai.github.io/giga-world-1/) · 2026-10-29
 
+- **WorldExam** · 2026 · Benchmark
+  Tests control adherence, spatial consistency and reactivity under camera, action and language conditioning.
+  `Physics / Science` · `RGB Images` · `Language` · `Action`
+  [Homepage](https://worldexam.github.io/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: A defined world-model protocol tests scene revisits, terrain/object/social interactions, physical reaction and goal completion under three control interfaces. Released test cases support diagnostic evaluation beyond visual appearance. [Reviewed source](https://worldexam.github.io/) · 2026-11-04
+
 - **WorldMark** · 2026 · Benchmark
   A unified benchmark suite for interactive video world models across multiple views, domains, and action sequences.
   `Games / Virtual Environments` · `RGB Video` · `Action` · `Camera Pose`
   [Homepage](https://alayalab.github.io/WorldMark/) · [Paper](https://arxiv.org/abs/2604.21686) · [Code](https://github.com/AlayaLab/WorldMark) · Access: Official prompts, action sequences, and evaluation code available
   Inclusion evidence C5: A common action vocabulary and 500 standardized cases test command following and response dynamics in interactive world models. [Reviewed source](https://arxiv.org/abs/2604.21686) · 2026-10-29
+
+- **WorldOracle** · 2026 · Benchmark
+  Compares predicted rollouts with real executions under the same initial observation and low-level actions.
+  `Robotics / Embodied AI` · `Multi-view RGB Video` · `Robot State` · `Action` · `Language`
+  [Code](https://github.com/WorldOracle-benchmark/WorldOracle) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The release documents validation/test sets and an AgiBot training set, with paired action-conditioned real executions including successes and failures. Defined metrics evaluate physical state, interaction alignment and multiview action coherence. [Reviewed source](https://github.com/WorldOracle-benchmark/WorldOracle) · 2026-11-04
+
+- **WorldReward-Bench** · 2026 · Benchmark
+  Human preference evaluation of video pairs generated from the same image and camera trajectory.
+  `Urban / 3D Scene` · `RGB Images` · `RGB Video` · `Camera Pose` · `Language`
+  [Code](https://github.com/CodeGoat24/WorldReward) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The benchmark releases paired videos sharing an initial image and commanded camera trajectory, with human verdicts on action consistency, appearance and motion quality. It specifically evaluates camera-conditioned world models. [Reviewed source](https://github.com/CodeGoat24/WorldReward) · 2026-11-04
 
 - **WRBench** · 2026 · Benchmark
   A camera-controlled generation benchmark diagnosing whether video world models maintain persistent world state during camera motion.
@@ -2184,17 +2484,59 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://huggingface.co/datasets/MLL-Lab/ENACT) · [Code](https://github.com/mll-lab-nu/ENACT) · Access: ENACT QA, HDF5, replay, and segmented datasets available
   Inclusion evidence C5: Official protocol explicitly evaluates future-state sequences from actions and inverse action sequences, with download and generation instructions. [Reviewed source](https://github.com/mll-lab-nu/ENACT) · 2026-10-29
 
+- **EWMBench** · 2025 · Benchmark
+  Evaluates scene consistency, motion correctness and task alignment in embodied world models.
+  `Robotics / Embodied AI` · `RGB Video` · `Language`
+  [Code](https://github.com/AgibotTech/EWMBench) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The benchmark explicitly evaluates embodied world models for physical plausibility and task coherence, with released ground-truth data and a multidimensional evaluation toolkit. [Reviewed source](https://github.com/AgibotTech/EWMBench) · 2026-11-04
+
 - **EXPRESS-Bench** · 2025 · Benchmark
   An embodied question-answering benchmark for memory, localization, and reasoning over continuous visual observations.
   `Robotics / Embodied AI` · `Urban / 3D Scene` · `RGB Video` · `QA` · `Language` · `Trajectories`
   [Homepage](https://hcplab-sysu.github.io/EXPRESS-Bench/) · [Code](https://github.com/HCPLab-SYSU/EXPRESS-Bench) · Access: Official project page and benchmark code available
   Inclusion evidence C3: Official release identifies 777 exploration trajectories, waypoint observations and full episodes; retain trajectory data rather than generic QA alone. [Reviewed source](https://github.com/HCPLab-SYSU/EXPRESS-Bench) · 2026-10-29
 
+- **LoopNav** · 2025 · Benchmark
+  Tests spatial memory in world models using Minecraft navigation loops and scene revisits.
+  `Games / Virtual Environments` · `RGB Video` · `Action`
+  [Code](https://github.com/Kevin-lkw/LoopNav) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: Action-annotated navigation loops return to previously seen locations via rotations, retraced paths and alternate paths. Scene Graph Consistency Score evaluates persistence of the generated scene across revisits. [Reviewed source](https://github.com/Kevin-lkw/LoopNav) · 2026-11-04
+
 - **ORAD-3D** · 2025 · Benchmark
   A multi-weather, multi-terrain 3D off-road driving dataset with world-model and trajectory-planning benchmarks.
   `Autonomous Driving` · `RGB Video` · `3D Annotations` · `Trajectories` · `GPS / IMU`
   [Homepage](https://modelscope.cn/datasets/Georgehhhh/ORAD-3D) · [Paper](https://arxiv.org/abs/2510.16500) · [Code](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) · Access: Public release on ModelScope and Baidu Cloud
   Inclusion evidence C5: The paper explicitly defines an off-road world-model evaluation track; retain that track, not static free-space detection as inclusion evidence. [Reviewed source](https://arxiv.org/abs/2510.16500) · 2026-10-29
+
+- **Physics-IQ** · 2025 · Benchmark
+  Tests physical prediction through continuations of recorded real-world events.
+  `Physics / Science` · `RGB Video`
+  [Code](https://github.com/google-deepmind/physics-iq-benchmark) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The official workflow splits physical-event recordings into conditioning and held-out continuation videos and evaluates generated physical rollouts. The repository maintains original and Verified evaluation variants. [Reviewed source](https://github.com/google-deepmind/physics-iq-benchmark) · 2026-11-04
+
+- **WM-ABench (Prediction Protocols)** · 2025 · Benchmark
+  Evaluates internal world models through state prediction, mechanistic simulation and counterfactual inference.
+  `Physics / Science` · `RGB Images` · `Synthetic Video` · `QA`
+  [Homepage](https://wm-abench.maitrix.org/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The prediction stage uses controlled simulated environments to test mechanistic simulation, transitive inference and compositional inference, including object interactions and robot actions. Inclusion is explicitly limited to this predictive scope. [Reviewed source](https://wm-abench.maitrix.org/) · 2026-11-04
+
+- **World-in-World** · 2025 · Benchmark
+  Tests visual world models in closed-loop navigation and manipulation tasks.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language`
+  [Code](https://github.com/World-In-World/world-in-world) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: A unified action API and downloadable evaluation episodes support planning, execution and replanning in closed-loop tasks. Evaluation measures world-model utility in navigation and manipulation, not only visual quality. [Reviewed source](https://github.com/World-In-World/world-in-world) · 2026-11-04
+
+- **WorldModelBench** · 2025 · Benchmark
+  Evaluates instruction following, temporal coherence and physical-law adherence in video world models.
+  `Physics / Science` · `RGB Images` · `Language`
+  [Homepage](https://worldmodelbench-team.github.io/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The benchmark explicitly tests video world models for temporal/common-sense violations and adherence to physical laws, alongside instruction following, using released multimodal prompts and a defined judging protocol. [Reviewed source](https://worldmodelbench-team.github.io/) · 2026-11-04
+
+- **WorldScore** · 2025 · Benchmark
+  Evaluates sequential world generation under camera trajectories for controllability, 3D consistency and dynamics.
+  `Urban / 3D Scene` · `RGB Images` · `Camera Pose` · `Language`
+  [Homepage](https://haoyi-duan.github.io/WorldScore/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: World generation is decomposed into sequential next-scene tasks with explicit camera trajectories. The benchmark evaluates camera adherence, geometry consistency and specified motion across generated sequences. [Reviewed source](https://haoyi-duan.github.io/WorldScore/) · 2026-11-04
 
 - **WoWBench (Released Samples)** · 2025 · Benchmark
   Initial images/instructions pair with reference videos and tracked keypoints for physical-consistency and future-trajectory evaluation.
@@ -2208,11 +2550,23 @@ Entries are grouped by primary task and sorted by year within each group. The RE
   [Homepage](https://mmworld-bench.github.io/) · [Paper](https://arxiv.org/abs/2406.08407) · [Code](https://github.com/UCSB-AI/MMWorld) · Access: Official benchmark repository and project page available
   Inclusion evidence C5: The source explicitly evaluates world-model reasoning with future-prediction and counterfactual questions; restrict inclusion evidence to those tracks. [Reviewed source](https://arxiv.org/abs/2406.08407) · 2026-10-29
 
+- **WorldSimBench** · 2024 · Benchmark
+  Evaluates world simulators with human feedback and video-to-control consistency.
+  `Robotics / Embodied AI` · `RGB Video` · `Action` · `Language`
+  [Homepage](https://iranqin.github.io/WorldSimBench.github.io/) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: The protocol explicitly assesses world simulators in gaming, driving and robot manipulation. Its manipulative evaluation measures whether predicted situation-aware videos translate into correct controls in dynamic environments. [Reviewed source](https://iranqin.github.io/WorldSimBench.github.io/) · 2026-11-04
+
 - **Perception Test** · 2023 · Benchmark
   A real-video benchmark for multimodal perception, memory, physics, and abstraction.
   `Egocentric / Human` · `Physics / Science` · `RGB Video` · `Audio` · `QA`
   [Homepage](https://github.com/deepmind/perception_test) · [Paper](https://arxiv.org/abs/2305.13786) · Access: Official benchmark
   Inclusion evidence C4: The benchmark explicitly includes predictive and counterfactual physical reasoning in designed videos; static tracking/classification tracks alone are not the inclusion basis. [Reviewed source](https://arxiv.org/abs/2305.13786) · 2026-10-29
+
+- **Systematic Visual Imagination Benchmark (SVIB)** · 2023 · Benchmark
+  Predicts the next scene image under compositional latent-state transition rules.
+  `Physics / Science` · `RGB Images` · `Simulation State` · `Segmentation`
+  [Homepage](https://systematic-visual-imagination.github.io) · Access: Official documentation provides data access instructions; download not tested
+  Inclusion evidence C5: Each episode contains an input and target image generated from compositional scene state under a defined transition rule. Train/test splits measure systematic generalization in an explicit minimal world-model prediction task. [Reviewed source](https://systematic-visual-imagination.github.io) · 2026-11-04
 
 - **XLand-MiniGrid** · 2023 · Generation environment / toolkit
   A scalable procedurally generated grid-world and task-rule system producing diverse state-action and goal-conditioned trajectories.

@@ -1,0 +1,54 @@
+{
+  "id": "ewmbench",
+  "name": "EWMBench",
+  "shortName": "EWMBench",
+  "year": 2025,
+  "summary": "评测具身世界模型的场景一致性、运动正确性与任务语义对齐。",
+  "summaryEn": "Evaluates scene consistency, motion correctness and task alignment in embodied world models.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "EWMBench authors",
+  "organizationsZh": "EWMBench 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "评测器分数不等同于真实机器人闭环成功率；参考数据和生成样例分开。",
+  "wmNoteEn": "Evaluator scores are not real-robot closed-loop success rates; reference data and generated examples are distinct.",
+  "links": {
+    "code": "https://github.com/AgibotTech/EWMBench"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://github.com/AgibotTech/EWMBench",
+    "sourceTitle": "EWMBench official release documentation",
+    "locator": "Overview; Data Downloading; gt_dataset and generated-results structure",
+    "statement": "The benchmark explicitly evaluates embodied world models for physical plausibility and task coherence, with released ground-truth data and a multidimensional evaluation toolkit.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

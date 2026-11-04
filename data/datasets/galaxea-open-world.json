@@ -1,0 +1,59 @@
+{
+  "id": "galaxea-open-world",
+  "name": "Galaxea Open-World Dataset",
+  "shortName": "Galaxea Open-World Dataset",
+  "year": 2025,
+  "summary": "R1-Lite 移动操作机器人的双臂和全身控制轨迹。",
+  "summaryEn": "Bimanual and whole-body mobile-manipulation trajectories from R1-Lite robots.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Publisher reports 500+ hours; 227 task-level archives",
+  "scaleZh": "发布方报告 500 余小时；227 个任务级归档",
+  "organizations": "Galaxea Open-World Dataset authors",
+  "organizationsZh": "Galaxea Open-World Dataset 发布团队",
+  "access": "Hugging Face login and acceptance of publisher access conditions",
+  "accessZh": "Hugging Face 登录并接受发布方访问条件",
+  "license": "CC BY-NC-SA 4.0",
+  "licenseZh": "CC BY-NC-SA 4.0",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "固定一种机器人本体；需接受数据访问条件，未实测完整下载。",
+  "wmNoteEn": "Uses one robotic embodiment; access terms apply and complete downloads were not tested.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset",
+    "sourceTitle": "Galaxea Open-World Dataset official release documentation",
+    "locator": "Dataset Structure; LeRobot Dataset Schema: Observations, Actions, Metadata Columns",
+    "statement": "The official card documents per-episode Parquet and camera MP4 files, robot observation/action vectors, timestamps and episode/frame indices in LeRobot format. This directly establishes aligned mobile-manipulation transitions.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset",
+    "description": "Official registry created 2025-08-23; the associated G0 paper is 2509.00576."
+  }
+}

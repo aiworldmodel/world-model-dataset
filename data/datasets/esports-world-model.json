@@ -1,0 +1,54 @@
+{
+  "id": "esports-world-model",
+  "name": "Esports World Model Dataset",
+  "shortName": "Esports World Model Dataset",
+  "year": 2026,
+  "summary": "多玩家电竞回放，将各玩家画面、动作、状态和事件按游戏时钟对齐。",
+  "summaryEn": "Multiplayer esports replays aligning player views, actions, states and events to the game clock.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Games / Virtual Environments"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Simulation State",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "Esports World Model Dataset authors",
+  "organizationsZh": "Esports World Model Dataset 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "CC BY-NC 4.0 plus game-asset rights notices",
+  "licenseZh": "CC BY-NC 4.0，并须遵守游戏资产权利声明",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "采用当前发布清单，不照搬含进行中扩展的论文总量；比赛时长与玩家视角时长不同。",
+  "wmNoteEn": "Use current release manifests, not paper totals including ongoing extensions; match hours and player-view hours are different quantities.",
+  "links": {
+    "code": "https://github.com/sc2musa/esports-worldmodel-datasets"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/sc2musa/esports-worldmodel-datasets",
+    "sourceTitle": "Esports World Model Dataset official release documentation",
+    "locator": "Scale; Formats: StarCraft II, Dota 2, Counter-Strike 2",
+    "statement": "The StarCraft II schema aligns step/action records with current and next observations, timestamps, frame indices and boundaries. Dota 2 and CS2 releases document replay-clock alignment, partial visibility and per-view files. Published manifests distinguish completed data from estimates.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

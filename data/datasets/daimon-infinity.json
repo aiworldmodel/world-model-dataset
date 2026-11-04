@@ -1,0 +1,56 @@
+{
+  "id": "daimon-infinity",
+  "name": "Daimon-Infinity (Released Batch)",
+  "shortName": "Daimon-Infinity (Released Batch)",
+  "year": 2026,
+  "summary": "手持及可穿戴设备采集的视觉、触觉和操作轨迹。",
+  "summaryEn": "Visual, tactile and manipulation trajectories recorded with handheld/wearable interfaces.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "RGB Video",
+    "Tactile",
+    "Robot State",
+    "Action",
+    "Language"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "Current card explicitly releases the first 1,000 hours",
+  "scaleZh": "当前数据卡明确发布首批 1,000 小时",
+  "organizations": "Daimon-Infinity (Released Batch) authors",
+  "organizationsZh": "Daimon-Infinity (Released Batch) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "CC BY-NC-SA 4.0",
+  "licenseZh": "CC BY-NC-SA 4.0",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "不把 TacClaw-Infinity 论文或未来计划中的 10,000 小时当作当前完整公开规模；占位维度需检查。",
+  "wmNoteEn": "The 10,000-hour TacClaw-Infinity paper/planned collection is not claimed as the current complete public release; inspect placeholder dimensions.",
+  "links": {
+    "homepage": "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity",
+    "sourceTitle": "Daimon-Infinity (Released Batch) official release documentation",
+    "locator": "Update 2026-04-15; Overview; Data Format; Placeholder Values",
+    "statement": "The publisher explicitly releases a 1,000-hour batch and documents synchronized episode videos, tactile streams, 114-dimensional observation.state, 111-dimensional action and metadata. Some dimensions are placeholders, so users must inspect embodiment-specific validity.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

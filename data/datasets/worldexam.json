@@ -1,0 +1,55 @@
+{
+  "id": "worldexam",
+  "name": "WorldExam",
+  "shortName": "WorldExam",
+  "year": 2026,
+  "summary": "通过相机、动作和语言条件检验世界模型控制遵循、空间一致性和交互反应。",
+  "summaryEn": "Tests control adherence, spatial consistency and reactivity under camera, action and language conditioning.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Language",
+    "Action"
+  ],
+  "structure": [
+    "Diagnostic Cases"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic"
+  ],
+  "scale": "1,474 test cases across 8 tasks",
+  "scaleZh": "1,474 个测试案例；8 类任务",
+  "organizations": "WorldExam authors",
+  "organizationsZh": "WorldExam 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "案例来自多类场景，测试提示不等于带真实控制信号的采集轨迹。",
+  "wmNoteEn": "Cases span multiple scene sources; test prompts are not equivalent to recorded trajectories with physical control signals.",
+  "links": {
+    "homepage": "https://worldexam.github.io/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://worldexam.github.io/",
+    "sourceTitle": "WorldExam official release documentation",
+    "locator": "Overview; Three control interfaces; Eight evaluation tasks",
+    "statement": "A defined world-model protocol tests scene revisits, terrain/object/social interactions, physical reaction and goal completion under three control interfaces. Released test cases support diagnostic evaluation beyond visual appearance.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

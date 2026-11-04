@@ -1,0 +1,54 @@
+{
+  "id": "arctic",
+  "name": "ARCTIC",
+  "shortName": "ARCTIC",
+  "year": 2023,
+  "summary": "双手操作可动关节物体的连续观测与三维运动标注。",
+  "summaryEn": "Continuous observations and 3D motion annotations of bimanual articulated-object manipulation.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Agent Pose",
+    "Object State"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "About 2.1M multiview images; 8 third-person and 1 egocentric view",
+  "scaleZh": "约 210 万张多视角图像；8 个第三人称视角和 1 个第一人称视角",
+  "organizations": "ARCTIC authors",
+  "organizationsZh": "ARCTIC 发布团队",
+  "access": "Registration through the publisher is required",
+  "accessZh": "需按官方流程注册获取数据",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "决策与智能体轨迹",
+  "verdictEn": "Decision-Making & Agent Trajectories",
+  "wmNote": "多视角图像数不等于独立时刻数；人体动作不是机器人控制指令。",
+  "wmNoteEn": "Multiview image counts are not counts of independent time steps; human movements are not robot control commands.",
+  "links": {
+    "code": "https://github.com/zc-alexfan/arctic"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/zc-alexfan/arctic",
+    "sourceTitle": "ARCTIC official release documentation",
+    "locator": "Why use ARCTIC; News; consistent motion reconstruction",
+    "statement": "The release documents motion-captured dexterous manipulation with synchronized views and SMPL-X, MANO and articulated-object ground truth, supporting consistent motion reconstruction and ordered state trajectories.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

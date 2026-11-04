@@ -1,0 +1,55 @@
+{
+  "id": "deform360",
+  "name": "Deform360",
+  "shortName": "Deform360",
+  "year": 2026,
+  "summary": "多视角与双手触觉操作数据，用于预测可变形物体动态。",
+  "summaryEn": "Multiview and bimanual tactile interaction data for predicting deformable-object dynamics.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Robotics / Embodied AI"
+  ],
+  "modalities": [
+    "Multi-view RGB Video",
+    "Tactile",
+    "Object State",
+    "Action"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "198 objects; 1,980 interactions; 215.7 cumulative multiview hours",
+  "scaleZh": "198 个物体；1,980 段交互；215.7 累计多视角小时",
+  "organizations": "Deform360 authors",
+  "organizationsZh": "Deform360 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "小时数按多视角累计，不代表等长的独立物理交互；几何追踪有重建误差。",
+  "wmNoteEn": "Hours accumulate across views, not independent interaction duration; geometry tracking has reconstruction error.",
+  "links": {
+    "code": "https://github.com/lhy0807/deform360"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/lhy0807/deform360",
+    "sourceTitle": "Deform360 official release documentation",
+    "locator": "Download Data; Load Aligned Data; Data Conventions",
+    "statement": "The official release pairs timestamp files with camera/tactile streams and documents synchronized observation loading, manipulation data and reconstructed particle dynamics. Its world-model tasks predict subsequent object deformation under interactions.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

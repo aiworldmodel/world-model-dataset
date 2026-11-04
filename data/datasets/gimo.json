@@ -1,0 +1,54 @@
+{
+  "id": "gimo",
+  "name": "GIMO",
+  "shortName": "GIMO",
+  "year": 2022,
+  "summary": "场景中的人体运动与眼动序列，用于预测未来身体运动。",
+  "summaryEn": "Human motion and gaze sequences in scenes for future-body-motion prediction.",
+  "primaryTask": "Decision-Making & Agent Trajectories",
+  "primaryTaskZh": "决策与智能体轨迹",
+  "secondaryTasks": [],
+  "domain": [
+    "Egocentric / Human"
+  ],
+  "modalities": [
+    "Agent Pose",
+    "Gaze",
+    "RGB Video"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Real-world"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "GIMO authors",
+  "organizationsZh": "GIMO 发布团队",
+  "access": "Demo provided; full data require a signed agreement and approval",
+  "accessZh": "提供示例；完整数据需提交签署协议并获批",
+  "license": "Publisher limits use to noncommercial research and prohibits unauthorized redistribution",
+  "licenseZh": "发布方限定非商业研究用途，禁止未授权再分发",
+  "verdict": "决策与智能体轨迹",
+  "verdictEn": "Decision-Making & Agent Trajectories",
+  "wmNote": "人体动作和眼动不是机器人控制；完整数据需按研究协议申请。",
+  "wmNoteEn": "Human motion and gaze are not robot controls; full data require an application under the research agreement.",
+  "links": {
+    "code": "https://github.com/y-zheng18/GIMO"
+  },
+  "resourceType": "dataset",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 3,
+    "source": "https://github.com/y-zheng18/GIMO",
+    "sourceTitle": "GIMO official release documentation",
+    "locator": "Dataset; Agreement; Dataset Structure & Visualization; Citation",
+    "statement": "The official release pairs contextual motion sequences and gaze with a documented future-human-motion prediction task, a demonstration, sequence visualization and a full-dataset application route.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

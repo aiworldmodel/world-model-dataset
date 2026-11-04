@@ -1,0 +1,55 @@
+{
+  "id": "worldscore",
+  "name": "WorldScore",
+  "shortName": "WorldScore",
+  "year": 2025,
+  "summary": "根据指定相机轨迹连续生成场景，评测可控性、三维一致性与动态表现。",
+  "summaryEn": "Evaluates sequential world generation under camera trajectories for controllability, 3D consistency and dynamics.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Urban / 3D Scene"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Camera Pose",
+    "Language"
+  ],
+  "structure": [
+    "Diagnostic Cases"
+  ],
+  "source": [
+    "Real-world",
+    "Synthetic"
+  ],
+  "scale": "3,000 test examples",
+  "scaleZh": "3,000 个测试样例",
+  "organizations": "WorldScore authors",
+  "organizationsZh": "WorldScore 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "相机控制和场景一致性不等于物体动力学或机器人动作响应。",
+  "wmNoteEn": "Camera control and scene consistency are not equivalent to object dynamics or robot motor response.",
+  "links": {
+    "homepage": "https://haoyi-duan.github.io/WorldScore/"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://haoyi-duan.github.io/WorldScore/",
+    "sourceTitle": "WorldScore official release documentation",
+    "locator": "Overview; Abstract; Controllability / Quality / Dynamics",
+    "statement": "World generation is decomposed into sequential next-scene tasks with explicit camera trajectories. The benchmark evaluates camera adherence, geometry consistency and specified motion across generated sequences.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}

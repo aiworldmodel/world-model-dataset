@@ -1,0 +1,58 @@
+{
+  "id": "neorl-physical",
+  "name": "NeoRL (Physical Control Tasks)",
+  "shortName": "NeoRL (Physical Control Tasks)",
+  "year": 2021,
+  "summary": "NeoRL 中工业、建筑能耗与 MuJoCo 控制任务的状态转移数据。",
+  "summaryEn": "State-transition datasets from NeoRL industrial, building-energy and MuJoCo control tasks.",
+  "primaryTask": "Action-Conditioned Dynamics",
+  "primaryTaskZh": "动作条件动力学",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "Simulation State",
+    "Action",
+    "Reward"
+  ],
+  "structure": [
+    "Temporal Sequences"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "NeoRL (Physical Control Tasks) authors",
+  "organizationsZh": "NeoRL (Physical Control Tasks) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "动作条件动力学",
+  "verdictEn": "Action-Conditioned Dynamics",
+  "wmNote": "只收物理控制任务；金融交易与销售促销任务不在本条范围内。",
+  "wmNoteEn": "Only physical control tasks are included; finance and sales-promotion tasks are outside this entry.",
+  "links": {
+    "code": "https://github.com/polixir/NeoRL"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 2,
+    "source": "https://github.com/polixir/NeoRL",
+    "sourceTitle": "NeoRL (Physical Control Tasks) official release documentation",
+    "locator": "Introduction; Usage; Dataset format",
+    "statement": "The official schema explicitly defines obs, next_obs, action, reward, done and trajectory boundaries. CityLearn, Industrial Benchmark and MuJoCo tasks supply physical control transitions at multiple policy quality levels.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": [],
+  "yearBasis": {
+    "source": "https://arxiv.org/abs/2102.00714",
+    "description": "Original benchmark preprint submitted in February 2021."
+  }
+}

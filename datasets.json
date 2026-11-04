@@ -112,6 +112,174 @@
     "aliases": []
   },
   {
+    "id": "agibot-world-2026",
+    "name": "AgiBot World 2026 (G2)",
+    "shortName": "AgiBot World 2026 (G2)",
+    "year": 2026,
+    "summary": "G2 机器人真实场景操作回合，按时间索引组织多相机视频、状态和动作。",
+    "summaryEn": "Real-world G2 manipulation episodes with time-indexed multicamera video, states and actions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "AgiBot World 2026 (G2) authors",
+    "organizationsZh": "AgiBot World 2026 (G2) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Dataset card specifies CC BY-NC-SA 4.0",
+    "licenseZh": "数据卡标注 CC BY-NC-SA 4.0",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "仅指真实 G2 数据；GenieSim 仿真数据是另一个发布，不能混算。",
+    "wmNoteEn": "Scope is the real G2 release; GenieSim simulation data are a separate release and are not included in its totals.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/agibot-world/AgiBotWorld2026",
+      "sourceTitle": "AgiBot World 2026 (G2) official release documentation",
+      "locator": "Dataset organization; Parquet features; episode/video alignment",
+      "statement": "The data card documents one complete episode per Parquet file, matching per-camera episode videos, timestamp/frame/episode indices, robot observations and action fields. This establishes an action-aligned temporal data path.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "agibot-world-beta"
+    ]
+  },
+  {
+    "id": "apple-pi",
+    "name": "Apple-π / Orchard",
+    "shortName": "Apple-π / Orchard",
+    "year": 2026,
+    "summary": "通过目标时刻状态与完整轨迹生成，诊断视频模型的力学推理。",
+    "summaryEn": "Diagnoses video-model mechanics reasoning through target-time states and full trajectory generation.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Language",
+      "Object State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Simulation"
+    ],
+    "scale": "400 test cases; 10 classical mechanics tasks",
+    "scaleZh": "400 个测试案例；10 类经典力学任务",
+    "organizations": "Apple-π / Orchard authors",
+    "organizationsZh": "Apple-π / Orchard 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "仅以 Formulation-Graphic 与 Deduction 的预测协议作为入选依据；不将普通感知子任务单独算数据集。",
+    "wmNoteEn": "Admission rests on predictive Formulation-Graphic and Deduction tracks; ordinary perception subtracks are not separate datasets.",
+    "links": {
+      "code": "https://github.com/21yrm/Apple-PI"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/21yrm/Apple-PI",
+      "sourceTitle": "Apple-π / Orchard official release documentation",
+      "locator": "News: August 2026 GT release; Benchmark subtracks; GT dataset",
+      "statement": "The released Orchard ground truth supports target-time state prediction and frame-wise trajectory comparison against physics-derived targets. The evaluator defines repeated rollouts and state/velocity/trajectory metrics, beyond generic physical-law QA.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "arc3-human-think-aloud",
+    "name": "ARC3 Human Think-Aloud",
+    "shortName": "ARC3 Human Think-Aloud",
+    "year": 2026,
+    "summary": "陌生交互游戏中的观测、动作与同步口述记录。",
+    "summaryEn": "Observations, actions and synchronized think-aloud records from unfamiliar interactive games.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Action",
+      "Audio",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation",
+      "Human Demonstration"
+    ],
+    "scale": "144 successful human trajectories; 250 agent trajectories; 25 games",
+    "scaleZh": "144 条成功的人类轨迹；250 条智能体轨迹；25 个游戏",
+    "organizations": "ARC3 Human Think-Aloud authors",
+    "organizationsZh": "ARC3 Human Think-Aloud 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Card specifies CC BY 4.0; check upstream game and agent-trace terms separately",
+    "licenseZh": "数据卡标注 CC BY 4.0；上游游戏与智能体数据条款需另核对",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "人类部分筛选成功轨迹，存在选择偏差；智能体轨迹重用公开来源，口述不等于真实内部机制。",
+    "wmNoteEn": "Human trajectories are success-selected; agent traces reuse public sources, and verbal reports do not establish internal mechanisms.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/hellohawaii/ARC3-human-think-aloud",
+      "sourceTitle": "ARC3 Human Think-Aloud official release documentation",
+      "locator": "Dataset Overview; Data Organization; actions / observed_actions / timeline",
+      "statement": "The official release pairs gameplay actions and visual observations with timestamps, audio and transcripts. Ordered interaction traces and outcome annotations expose action-conditioned game transitions rather than dialogue-only state.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "audioworldsim",
     "name": "AudioWorldSim",
     "shortName": "AudioWorldSim",
@@ -444,6 +612,224 @@
     "aliases": []
   },
   {
+    "id": "crashtwin",
+    "name": "CrashTwin",
+    "shortName": "CrashTwin",
+    "year": 2026,
+    "summary": "评测多智能体碰撞回放中的时空一致性与物理守恒。",
+    "summaryEn": "Evaluates spatiotemporal consistency and physical conservation in multi-agent collision rollouts.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Object State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "CrashTwin authors",
+    "organizationsZh": "CrashTwin 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "真实与合成来源分开；从单目视频重建的物理量存在尺度与估计误差。",
+    "wmNoteEn": "Real and synthetic sources are distinct; monocular physical reconstruction has scale and estimation errors.",
+    "links": {
+      "code": "https://github.com/phai-lab/CrashTwin"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/phai-lab/CrashTwin",
+      "sourceTitle": "CrashTwin official release documentation",
+      "locator": "Data Preparation; Data Layout; Evaluation pipeline",
+      "statement": "The official release provides collision sequences and a reconstruction/evaluation pipeline for generated rollouts, including temporal dynamics, momentum and kinetic-energy diagnostics. Admission concerns the specified world-model evaluation protocol, not visual collision classification.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "cronos-physical",
+    "name": "CRONOS (Counterfactual Physical Consistency)",
+    "shortName": "CRONOS (Counterfactual Physical Consistency)",
+    "year": 2026,
+    "summary": "通过受控场景变化评测碰撞、下落与遮挡事件的反事实预测一致性。",
+    "summaryEn": "Tests counterfactual prediction consistency for collisions, falling and occlusion under controlled scene changes.",
+    "primaryTask": "Physical & Causal Reasoning",
+    "primaryTaskZh": "物理与因果推理",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Synthetic Video",
+      "Object State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "2,025 videos",
+    "scaleZh": "2,025 段视频",
+    "organizations": "CRONOS (Counterfactual Physical Consistency) authors",
+    "organizationsZh": "CRONOS (Counterfactual Physical Consistency) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "物理与因果推理",
+    "verdictEn": "Physical & Causal Reasoning",
+    "wmNote": "视角与外观变化可保持物理参数；物体和场景干预可能改变结果；与同名 RL 基准无关。",
+    "wmNoteEn": "Viewpoint/appearance changes can preserve physical parameters; object/scene interventions may change outcomes. Unrelated to the namesake RL benchmark.",
+    "links": {
+      "homepage": "https://genintel.github.io/CRONOS/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 4,
+      "source": "https://genintel.github.io/CRONOS/",
+      "sourceTitle": "CRONOS (Counterfactual Physical Consistency) official release documentation",
+      "locator": "Physical Events; Systematic Visual Interventions; dataset and code release",
+      "statement": "The benchmark varies one scene factor at a time and supplies reference continuations for fall, collision and occlusion. Multiple physical-parameter rollouts share conditioning signals, enabling explicit outcome and counterfactual-consistency evaluation.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "daimon-infinity",
+    "name": "Daimon-Infinity (Released Batch)",
+    "shortName": "Daimon-Infinity (Released Batch)",
+    "year": 2026,
+    "summary": "手持及可穿戴设备采集的视觉、触觉和操作轨迹。",
+    "summaryEn": "Visual, tactile and manipulation trajectories recorded with handheld/wearable interfaces.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Tactile",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Current card explicitly releases the first 1,000 hours",
+    "scaleZh": "当前数据卡明确发布首批 1,000 小时",
+    "organizations": "Daimon-Infinity (Released Batch) authors",
+    "organizationsZh": "Daimon-Infinity (Released Batch) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseZh": "CC BY-NC-SA 4.0",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "不把 TacClaw-Infinity 论文或未来计划中的 10,000 小时当作当前完整公开规模；占位维度需检查。",
+    "wmNoteEn": "The 10,000-hour TacClaw-Infinity paper/planned collection is not claimed as the current complete public release; inspect placeholder dimensions.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/daimonrobotics/Daimon-Infinity",
+      "sourceTitle": "Daimon-Infinity (Released Batch) official release documentation",
+      "locator": "Update 2026-04-15; Overview; Data Format; Placeholder Values",
+      "statement": "The publisher explicitly releases a 1,000-hour batch and documents synchronized episode videos, tactile streams, 114-dimensional observation.state, 111-dimensional action and metadata. Some dimensions are placeholders, so users must inspect embodiment-specific validity.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "deform360",
+    "name": "Deform360",
+    "shortName": "Deform360",
+    "year": 2026,
+    "summary": "多视角与双手触觉操作数据，用于预测可变形物体动态。",
+    "summaryEn": "Multiview and bimanual tactile interaction data for predicting deformable-object dynamics.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Tactile",
+      "Object State",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "198 objects; 1,980 interactions; 215.7 cumulative multiview hours",
+    "scaleZh": "198 个物体；1,980 段交互；215.7 累计多视角小时",
+    "organizations": "Deform360 authors",
+    "organizationsZh": "Deform360 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "小时数按多视角累计，不代表等长的独立物理交互；几何追踪有重建误差。",
+    "wmNoteEn": "Hours accumulate across views, not independent interaction duration; geometry tracking has reconstruction error.",
+    "links": {
+      "code": "https://github.com/lhy0807/deform360"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/lhy0807/deform360",
+      "sourceTitle": "Deform360 official release documentation",
+      "locator": "Download Data; Load Aligned Data; Data Conventions",
+      "statement": "The official release pairs timestamp files with camera/tactile streams and documents synchronized observation loading, manipulation data and reconstructed particle dynamics. Its world-model tasks predict subsequent object deformation under interactions.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "densereward",
     "name": "DenseReward Dataset",
     "shortName": "DenseReward",
@@ -731,6 +1117,170 @@
     "aliases": []
   },
   {
+    "id": "embodiedworld-200k",
+    "name": "EmbodiedWorld-200K",
+    "shortName": "EmbodiedWorld-200K",
+    "year": 2026,
+    "summary": "由游戏视频和相机轨迹构建的指令条件导航规划样例。",
+    "summaryEn": "Instruction-conditioned navigation-planning examples constructed from gameplay and camera trajectories.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Camera Pose",
+      "Language",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Current card reports approximately 260K annotated scenes",
+    "scaleZh": "当前数据卡报告约 26 万个标注场景",
+    "organizations": "EmbodiedWorld-200K authors",
+    "organizationsZh": "EmbodiedWorld-200K 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Card specifies CC BY-NC 4.0; source-video rights apply separately",
+    "licenseZh": "数据卡标注 CC BY-NC 4.0；上游视频权利需另核对",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "W/A/S/D 序列由相机运动转换，不是采集到的真实按键；不可解释为机器人电机控制。",
+    "wmNoteEn": "W/A/S/D sequences are converted from camera motion, not recorded keystrokes or robot motor controls.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/Xiaokunfeng2022/EmbodiedWorld-200K"
+    },
+    "resourceType": "derived",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://huggingface.co/datasets/Xiaokunfeng2022/EmbodiedWorld-200K",
+      "sourceTitle": "EmbodiedWorld-200K official release documentation",
+      "locator": "Dataset structure; action representation; released splits",
+      "statement": "The official card and construction toolkit identify initial observations, language instructions and ordered action/pose trajectories with evaluation splits. The pipeline derives navigation actions from six-degree-of-freedom camera motion.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "espire",
+    "name": "ESPIRE (Interactive Evaluation Environment)",
+    "shortName": "ESPIRE (Interactive Evaluation Environment)",
+    "year": 2026,
+    "summary": "以定位、移动和更新观测构成执行循环的空间操作仿真评测环境。",
+    "summaryEn": "Spatial manipulation evaluation environment with localization, movement and updated observations in an execution loop.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Depth",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "ESPIRE (Interactive Evaluation Environment) authors",
+    "organizationsZh": "ESPIRE (Interactive Evaluation Environment) 发布团队",
+    "access": "Official simulation server and evaluation client; deployment required",
+    "accessZh": "官方服务端与评测客户端；需自行部署运行",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "入选依据是公开的交互控制路径，而非静态空间问答；环境未运行验证。",
+    "wmNoteEn": "Admission rests on the released interactive control path rather than static spatial QA; the environment was not executed.",
+    "links": {
+      "code": "https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py",
+      "homepage": "https://github.com/spatigen/espire"
+    },
+    "resourceType": "generator",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/spatigen/espire-eval/blob/main/src/espire_eval_common/driver.py",
+      "sourceTitle": "ESPIRE (Interactive Evaluation Environment) official release documentation",
+      "locator": "BaseDriver moving loop; execute_moving; get_obs_for_moving",
+      "statement": "The official driver obtains observations, invokes client.move_to, records execution results and refreshes observations before the next movement. This directly exposes action-conditioned transitions, resolving the prior uncertainty about whether evaluation was static only.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "esports-world-model",
+    "name": "Esports World Model Dataset",
+    "shortName": "Esports World Model Dataset",
+    "year": 2026,
+    "summary": "多玩家电竞回放，将各玩家画面、动作、状态和事件按游戏时钟对齐。",
+    "summaryEn": "Multiplayer esports replays aligning player views, actions, states and events to the game clock.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Simulation State",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "Esports World Model Dataset authors",
+    "organizationsZh": "Esports World Model Dataset 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "CC BY-NC 4.0 plus game-asset rights notices",
+    "licenseZh": "CC BY-NC 4.0，并须遵守游戏资产权利声明",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "采用当前发布清单，不照搬含进行中扩展的论文总量；比赛时长与玩家视角时长不同。",
+    "wmNoteEn": "Use current release manifests, not paper totals including ongoing extensions; match hours and player-view hours are different quantities.",
+    "links": {
+      "code": "https://github.com/sc2musa/esports-worldmodel-datasets"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/sc2musa/esports-worldmodel-datasets",
+      "sourceTitle": "Esports World Model Dataset official release documentation",
+      "locator": "Scale; Formats: StarCraft II, Dota 2, Counter-Strike 2",
+      "statement": "The StarCraft II schema aligns step/action records with current and next observations, timestamps, frame indices and boundaries. Dota 2 and CS2 releases document replay-clock alignment, partial visibility and per-view files. Published manifests distinguish completed data from estimates.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "evo-rl-data",
     "name": "Evo-RL Real-World Dataset",
     "shortName": "Evo-RL Real-World Dataset",
@@ -786,6 +1336,63 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "flowbench-csi",
+    "name": "FlowBench (Counterfactual Spatial Imagination)",
+    "shortName": "FlowBench (Counterfactual Spatial Imagination)",
+    "year": 2026,
+    "summary": "给定初始场景与物体位移，预测移动后的空间关系与结果图像。",
+    "summaryEn": "Predicts post-move spatial relations and images from an initial scene and specified object displacement.",
+    "primaryTask": "Physical & Causal Reasoning",
+    "primaryTaskZh": "物理与因果推理",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Depth",
+      "Optical Flow",
+      "Language"
+    ],
+    "structure": [
+      "State Pairs",
+      "Interventions"
+    ],
+    "source": [
+      "Simulation",
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "FlowBench (Counterfactual Spatial Imagination) authors",
+    "organizationsZh": "FlowBench (Counterfactual Spatial Imagination) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "物理与因果推理",
+    "verdictEn": "Physical & Causal Reasoning",
+    "wmNote": "位移指令不等同于电机控制；与其他同名 FlowBench 项目区分。",
+    "wmNoteEn": "Displacement instructions are not motor commands; distinguish this release from unrelated FlowBench projects.",
+    "links": {
+      "code": "https://github.com/liuyifan22/FlowBench"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 4,
+      "source": "https://github.com/liuyifan22/FlowBench",
+      "sourceTitle": "FlowBench (Counterfactual Spatial Imagination) official release documentation",
+      "locator": "Overview; Building the release; evaluating world-model outputs",
+      "statement": "Each simulation sample includes a before/after pair for an explicit object move, state-derived answers and optical flow/depth/masks. The release includes data construction and evaluation procedures, making the physical counterfactual target identifiable.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "game2world",
@@ -1588,6 +2195,60 @@
     "aliases": []
   },
   {
+    "id": "omnipiano",
+    "name": "OmniPiano",
+    "shortName": "OmniPiano",
+    "year": 2026,
+    "summary": "一至五只仿真灵巧手协同弹琴的控制任务与环境。",
+    "summaryEn": "Control tasks and environments for one to five simulated dexterous hands playing piano.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Simulation State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "OmniPiano authors",
+    "organizationsZh": "OmniPiano 发布团队",
+    "access": "Official environment/training interfaces; some score assets require separate registration",
+    "accessZh": "官方环境与训练接口；部分曲谱资产需单独注册获取",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "作为交互生成环境收录；音乐资产另有访问限制，不代表已采集的真实钢琴动作数据。",
+    "wmNoteEn": "Included as an interactive generation environment; music assets have separate access restrictions and this is not recorded real-piano motion data.",
+    "links": {
+      "code": "https://github.com/SAIL-Research-Lab/omnipiano"
+    },
+    "resourceType": "generator",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/SAIL-Research-Lab/omnipiano",
+      "sourceTitle": "OmniPiano official release documentation",
+      "locator": "Benchmark tracks; Quick start; Gymnasium step; data prerequisites",
+      "statement": "The official environment exposes reset and action-conditioned step APIs returning observations, rewards and termination, with robot safety costs and multi-agent variants. It can generate physical-control trajectories without relying on a model-only release.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "open-locomotion-skills",
     "name": "Open Locomotion Skills Dataset",
     "shortName": "OLSD",
@@ -1645,6 +2306,119 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "open-aoe",
+    "name": "Open-AoE",
+    "shortName": "Open-AoE",
+    "year": 2026,
+    "summary": "手机采集的第一人称操作视频与逐帧手部、相机轨迹。",
+    "summaryEn": "Smartphone egocentric manipulation videos with per-frame hand and camera trajectories.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Agent Pose",
+      "Camera Pose",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Publisher reports approximately 2,000 hours",
+    "scaleZh": "发布方报告约 2,000 小时",
+    "organizations": "Open-AoE authors",
+    "organizationsZh": "Open-AoE 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "MANO 手部与相机轨迹由重建估计；重定向工具不代表已有真实机器人动作。",
+    "wmNoteEn": "MANO hand and camera trajectories are reconstructed estimates; retargeting tools do not establish recorded real-robot actions.",
+    "links": {
+      "code": "https://github.com/ant-research/Open-AoE"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/ant-research/Open-AoE",
+      "sourceTitle": "Open-AoE official release documentation",
+      "locator": "Overview; From Raw Data to Model Input; data specification",
+      "statement": "The official release specifies camera_traj.npz, per-frame bilateral MANO parameters and validity, calibrated video and temporally localized atomic actions. These form ordered human-state trajectories and support predictive modeling.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "opis",
+    "name": "OPIS",
+    "shortName": "OPIS",
+    "year": 2026,
+    "summary": "以输入图像中的固定对象实例检验生成回放的对象保持、身份与结构。",
+    "summaryEn": "Tests generated-rollout object presence, identity and structure against fixed input-image instances.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Segmentation",
+      "Language"
+    ],
+    "structure": [
+      "Diagnostic Cases",
+      "Annotated Frames"
+    ],
+    "source": [
+      "Real-world",
+      "Synthetic"
+    ],
+    "scale": "500 cases; 12,672 object instances",
+    "scaleZh": "500 个案例；12,672 个对象实例",
+    "organizations": "OPIS authors",
+    "organizationsZh": "OPIS 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "输入包含静态图像，入选依据是明确的时序保持评测协议；上游素材并非独立采集。",
+    "wmNoteEn": "Inputs include still images; admission rests on the explicit temporal-persistence protocol, and upstream assets are not independently collected.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://huggingface.co/datasets/Kirito-Lab/OPIS-dataset",
+      "sourceTitle": "OPIS official release documentation",
+      "locator": "Dataset summary; Sources and construction; Evaluation artifacts",
+      "statement": "The release anchors rollout evaluation to an annotated initial object inventory, then measures presence, identity and structural persistence with visibility reasoning and static/dynamic tracks. This is a dedicated world-model memory protocol.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "bridge-data-v2"
+    ]
   },
   {
     "id": "pawbench",
@@ -2049,6 +2823,61 @@
     "aliases": []
   },
   {
+    "id": "reboot26",
+    "name": "REBOOT26 (Verified LeRobot Tasks)",
+    "shortName": "REBOOT26 (Verified LeRobot Tasks)",
+    "year": 2026,
+    "summary": "REBOOT26 官方任务集合中已核对时序元数据的机器人操作发布。",
+    "summaryEn": "Robot manipulation releases in the REBOOT26 registry with inspected temporal metadata.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Depth",
+      "Robot State",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Robot Platform"
+    ],
+    "scale": "Metadata inspected for three tasks; no collection-wide total claimed",
+    "scaleZh": "核对三个任务的元数据；不报告集合总规模",
+    "organizations": "REBOOT26 (Verified LeRobot Tasks) authors",
+    "organizationsZh": "REBOOT26 (Verified LeRobot Tasks) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Inspected cards specify Apache 2.0; verify each task individually",
+    "licenseZh": "所查数据卡标注 Apache 2.0；须按具体任务核对",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "本轮仅确认 han10e_remove、16mm-cylinder_install、M12-fastener_remove 三个任务；不为整个账号背书，不累计未经核实的总量。",
+    "wmNoteEn": "This review confirms only han10e_remove, 16mm-cylinder_install and M12-fastener_remove; it does not certify the whole account or sum unverified totals.",
+    "links": {
+      "homepage": "https://huggingface.co/REBOOT26"
+    },
+    "resourceType": "aggregate",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/REBOOT26",
+      "sourceTitle": "REBOOT26 (Verified LeRobot Tasks) official release documentation",
+      "locator": "Official dataset registry; three named releases: meta/info.json",
+      "statement": "The official registry links named LeRobot task releases. Their actual meta/info.json files define action, observation.state, camera/depth videos, timestamp and frame/episode indices. The three inspected manifests report 60, 62 and 60 episodes respectively; schema inspection replaces the previous profile-only evidence.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "rescuebench",
     "name": "RescueBench",
     "shortName": "RescueBench",
@@ -2163,6 +2992,178 @@
     "aliases": []
   },
   {
+    "id": "rmbench",
+    "name": "RMBench",
+    "shortName": "RMBench",
+    "year": 2026,
+    "summary": "面向记忆需求的机器人操作任务、演示轨迹和回放评测。",
+    "summaryEn": "Memory-demanding robot manipulation tasks with demonstrations and rollout evaluation.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "RMBench authors",
+    "organizationsZh": "RMBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "基于 RoboTwin 工具；属于独立任务协议，不能与底层平台重复累加数据规模。",
+    "wmNoteEn": "Built on RoboTwin tools; a distinct task protocol whose data totals must not be added to the base platform without overlap checks.",
+    "links": {
+      "code": "https://github.com/RoboTwin-Platform/RMBench"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/RoboTwin-Platform/RMBench",
+      "sourceTitle": "RMBench official release documentation",
+      "locator": "Download Data; collection and evaluation",
+      "statement": "The release provides task demonstrations, deterministic seed replay for collecting trajectories, and policy evaluation in the same manipulation environments. Its admission rests on action-conditioned interaction, not a generic memory label.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "robotwin"
+    ]
+  },
+  {
+    "id": "robo-valuerl",
+    "name": "Robo-ValueRL Dataset",
+    "shortName": "Robo-ValueRL Dataset",
+    "year": 2026,
+    "summary": "芯片插入和积木拆卸任务中的混合质量真实机器人轨迹。",
+    "summaryEn": "Mixed-quality real-robot trajectories for chip insertion and block disassembly.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Publisher reports 240 offline hours and 3,000+ online rollouts",
+    "scaleZh": "发布方报告 240 小时离线演示及 3,000 余条在线轨迹",
+    "organizations": "Robo-ValueRL Dataset authors",
+    "organizationsZh": "Robo-ValueRL Dataset 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "规模为数据卡报告值，未下载核对；代码中的许可说明需与数据权限分别确认。",
+    "wmNoteEn": "Scale is publisher-reported and not checked against downloaded files; verify data permissions separately from code terms.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL",
+      "sourceTitle": "Robo-ValueRL Dataset official release documentation",
+      "locator": "Dataset Description; Key Features",
+      "statement": "The official card identifies real-robot episodes containing multiview observations, robot states, action chunks and rollout segments, including failures and corrections. This supplies action-conditioned physical transitions.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://huggingface.co/datasets/X-Humanoid/Robo-ValueRL",
+      "description": "Official Hugging Face registry records creation on 2026-07-08; the card has no finalized paper citation."
+    }
+  },
+  {
+    "id": "roboarena",
+    "name": "RoboArena Rollout Snapshot (2026-07-17)",
+    "shortName": "RoboArena Rollout Snapshot (2026-07-17)",
+    "year": 2026,
+    "summary": "真实机器人策略回放，配有视频、动作与本体状态文件及任务结果。",
+    "summaryEn": "Real-robot policy rollouts with videos, action/proprioception files and task outcomes.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language",
+      "Reward"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "10,783 policy episodes; 3,883 evaluation sessions",
+    "scaleZh": "10,783 个策略回合；3,883 场评测",
+    "organizations": "RoboArena Rollout Snapshot (2026-07-17) authors",
+    "organizationsZh": "RoboArena Rollout Snapshot (2026-07-17) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Dataset card specifies MIT; verify applicability to the intended contents",
+    "licenseZh": "数据卡标注 MIT；使用时核对适用内容",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "收录的是 2026-07-17 快照；2025 年基准论文不能证明这一数据包当时已发布。",
+    "wmNoteEn": "This entry is the 2026-07-17 snapshot; the 2025 benchmark paper does not establish its earlier availability.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/RoboArena/DataDump_07-17-2026",
+      "sourceTitle": "RoboArena Rollout Snapshot (2026-07-17) official release documentation",
+      "locator": "Snapshot statistics; Data layout; session metadata",
+      "statement": "The snapshot pairs policy-episode MP4s with 10,783 NPZ proprioception/action files; session metadata provides instructions, timestamps and outcomes. The data card explicitly dates this snapshot 2026-07-17.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "robodojo",
     "name": "RoboDojo RealEval",
     "shortName": "RoboDojo",
@@ -2219,6 +3220,63 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "roboreward",
+    "name": "RoboReward / RoboRewardBench",
+    "shortName": "RoboReward / RoboRewardBench",
+    "year": 2026,
+    "summary": "机器人回放视频与任务描述、回合末进度奖励配对的数据。",
+    "summaryEn": "Robot rollout videos paired with task instructions and end-of-episode progress rewards.",
+    "primaryTask": "Physical & Causal Reasoning",
+    "primaryTaskZh": "物理与因果推理",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Language",
+      "Reward"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "54,135 examples; 2,831 test examples",
+    "scaleZh": "54,135 个样例；测试集 2,831 个",
+    "organizations": "RoboReward / RoboRewardBench authors",
+    "organizationsZh": "RoboReward / RoboRewardBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Card specifies CC BY 4.0; verify upstream data terms separately",
+    "licenseZh": "数据卡标注 CC BY 4.0；上游数据条款需另核对",
+    "verdict": "物理与因果推理",
+    "verdictEn": "Physical & Causal Reasoning",
+    "wmNote": "由 OXE、RoboArena 等派生；任务重标注与时间裁剪不构成新的独立物理干预。",
+    "wmNoteEn": "Derived from OXE and RoboArena; instruction relabeling and temporal clipping do not constitute new physical interventions.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/teetone/RoboReward"
+    },
+    "resourceType": "derived",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 4,
+      "source": "https://huggingface.co/datasets/teetone/RoboReward",
+      "sourceTitle": "RoboReward / RoboRewardBench official release documentation",
+      "locator": "Dataset description; Splits and size; Fields",
+      "statement": "Each example includes a real-robot rollout video, task instruction and terminal progress score. Temporal clipping creates partial-outcome examples; the test subset is RoboRewardBench. Inclusion concerns observed execution outcomes, not causal intervention claims.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "open-x-embodiment",
+      "roboarena"
+    ]
   },
   {
     "id": "sekai2",
@@ -2731,6 +3789,65 @@
     "aliases": []
   },
   {
+    "id": "vla-replica",
+    "name": "VLA-REPLICA SFT Trajectories",
+    "shortName": "VLA-REPLICA SFT Trajectories",
+    "year": 2026,
+    "summary": "SO 系列机械臂演示，含双相机视频和逐帧六维状态、动作。",
+    "summaryEn": "SO-arm demonstrations with two camera streams and per-frame six-dimensional states and actions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "501 episodes; 266,240 frames; 27 tasks; 30 Hz",
+    "scaleZh": "501 回合；266,240 帧；27 项任务；30 Hz",
+    "organizations": "VLA-REPLICA SFT Trajectories authors",
+    "organizationsZh": "VLA-REPLICA SFT Trajectories 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Dataset card specifies CC BY 4.0",
+    "licenseZh": "数据卡标注 CC BY 4.0",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "规模对应当前 LeRobot v3 元数据；不从模型演示推断额外数据。",
+    "wmNoteEn": "Counts refer to the inspected LeRobot v3 metadata; model demonstrations do not establish additional released data.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json",
+      "code": "https://github.com/IRVLUTD/VLAReplica"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data/raw/main/meta/info.json",
+      "sourceTitle": "VLA-REPLICA SFT Trajectories official release documentation",
+      "locator": "meta/info.json: features, paths, splits and counts",
+      "statement": "Official dataset metadata defines six-dimensional action and observation.state fields, top/wrist video streams, timestamps and frame/episode indices. These document aligned manipulation trajectories; the official VLAReplica repository names this SFT release.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://huggingface.co/datasets/HenryZhang/VLAReplica_SFT_data",
+      "description": "Official dataset registry created 2026-04-19; schema and SFT release identity verified separately."
+    }
+  },
+  {
     "id": "vlac-cut",
     "name": "VLAC-Cut Benchmark",
     "shortName": "VLAC-Cut",
@@ -2964,6 +4081,61 @@
     "aliases": []
   },
   {
+    "id": "worldexam",
+    "name": "WorldExam",
+    "shortName": "WorldExam",
+    "year": 2026,
+    "summary": "通过相机、动作和语言条件检验世界模型控制遵循、空间一致性和交互反应。",
+    "summaryEn": "Tests control adherence, spatial consistency and reactivity under camera, action and language conditioning.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Language",
+      "Action"
+    ],
+    "structure": [
+      "Diagnostic Cases"
+    ],
+    "source": [
+      "Real-world",
+      "Synthetic"
+    ],
+    "scale": "1,474 test cases across 8 tasks",
+    "scaleZh": "1,474 个测试案例；8 类任务",
+    "organizations": "WorldExam authors",
+    "organizationsZh": "WorldExam 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "案例来自多类场景，测试提示不等于带真实控制信号的采集轨迹。",
+    "wmNoteEn": "Cases span multiple scene sources; test prompts are not equivalent to recorded trajectories with physical control signals.",
+    "links": {
+      "homepage": "https://worldexam.github.io/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://worldexam.github.io/",
+      "sourceTitle": "WorldExam official release documentation",
+      "locator": "Overview; Three control interfaces; Eight evaluation tasks",
+      "statement": "A defined world-model protocol tests scene revisits, terrain/object/social interactions, physical reaction and goal completion under three control interfaces. Released test cases support diagnostic evaluation beyond visual appearance.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "worldmark",
     "name": "WorldMark",
     "shortName": "WorldMark",
@@ -3022,6 +4194,119 @@
     "aliases": []
   },
   {
+    "id": "worldoracle",
+    "name": "WorldOracle",
+    "shortName": "WorldOracle",
+    "year": 2026,
+    "summary": "将相同初始观测和低层动作下的预测回放与真实执行逐项比较。",
+    "summaryEn": "Compares predicted rollouts with real executions under the same initial observation and low-level actions.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "WorldOracle authors",
+    "organizationsZh": "WorldOracle 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "包含 AgiBot、YAM 和人手数据；训练与评测分割不能混用，与上游发布的重叠需单独检查。",
+    "wmNoteEn": "Includes AgiBot, YAM and human-hand data; preserve training/evaluation separation and check overlap with upstream releases.",
+    "links": {
+      "code": "https://github.com/WorldOracle-benchmark/WorldOracle"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/WorldOracle-benchmark/WorldOracle",
+      "sourceTitle": "WorldOracle official release documentation",
+      "locator": "News 2026-10-15/21; Overview; Data Preparation & Inference",
+      "statement": "The release documents validation/test sets and an AgiBot training set, with paired action-conditioned real executions including successes and failures. Defined metrics evaluate physical state, interaction alignment and multiview action coherence.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "agibot-world-2026"
+    ]
+  },
+  {
+    "id": "worldreward-bench",
+    "name": "WorldReward-Bench",
+    "shortName": "WorldReward-Bench",
+    "year": 2026,
+    "summary": "对相同图像和相机轨迹生成的视频对进行人类偏好评测。",
+    "summaryEn": "Human preference evaluation of video pairs generated from the same image and camera trajectory.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Images",
+      "RGB Video",
+      "Camera Pose",
+      "Language"
+    ],
+    "structure": [
+      "Diagnostic Cases",
+      "Video Sequences"
+    ],
+    "source": [
+      "Synthetic"
+    ],
+    "scale": "760 video pairs from 9 world models",
+    "scaleZh": "760 对视频；9 个世界模型",
+    "organizations": "WorldReward-Bench authors",
+    "organizationsZh": "WorldReward-Bench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "动作指相机运动，不是机器人电机控制；奖励模型本身不另算数据集。",
+    "wmNoteEn": "Actions denote camera motion, not robot motor control; the reward model itself is not a separate dataset.",
+    "links": {
+      "code": "https://github.com/CodeGoat24/WorldReward"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/CodeGoat24/WorldReward",
+      "sourceTitle": "WorldReward-Bench official release documentation",
+      "locator": "We release: WorldReward-Bench; News dated 2026-08-29",
+      "statement": "The benchmark releases paired videos sharing an initial image and commanded camera trajectory, with human verdicts on action consistency, appearance and motion quality. It specifically evaluates camera-conditioned world models.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "wrbench",
     "name": "WRBench",
     "shortName": "WRBench",
@@ -3078,6 +4363,66 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "agibot-world-beta",
+    "name": "AgiBot World Colosseo (Beta)",
+    "shortName": "AgiBot World Colosseo (Beta)",
+    "year": 2025,
+    "summary": "大规模双臂机器人操作轨迹，配有相机观测、状态与动作。",
+    "summaryEn": "Large-scale bimanual manipulation trajectories with camera observations, states and actions.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Beta reports 1,003,672 trajectories; Alpha is a 92,214-trajectory subset",
+    "scaleZh": "Beta 报告 1,003,672 条轨迹；Alpha 为其中 92,214 条子集",
+    "organizations": "AgiBot World Colosseo (Beta) authors",
+    "organizationsZh": "AgiBot World Colosseo (Beta) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Publisher states CC BY-NC-SA 4.0",
+    "licenseZh": "CC BY-NC-SA 4.0，以发布说明为准",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "Alpha 是 Beta 子集，不能重复累加；与 2026 G2 数据版本分开记录。",
+    "wmNoteEn": "Alpha is a subset of Beta and must not be added to its totals; the 2026 G2 release is recorded separately.",
+    "links": {
+      "code": "https://github.com/OpenDriveLab/Agibot-World"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/OpenDriveLab/Agibot-World",
+      "sourceTitle": "AgiBot World Colosseo (Beta) official release documentation",
+      "locator": "Released datasets; News; Visualize Datasets",
+      "statement": "The publisher identifies Beta as the full trajectory release and Alpha as its subset, and documents visualization of camera streams, robot states and actions. Beta release is dated 2025-03-01.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [
+      "agibot-world",
+      "agibot-world-alpha"
+    ],
+    "relatedResources": [
+      "agibot-world-2026"
+    ]
   },
   {
     "id": "nextbestpath",
@@ -3301,6 +4646,61 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "egodex",
+    "name": "EgoDex",
+    "shortName": "EgoDex",
+    "year": 2025,
+    "summary": "第一人称操作视频与逐帧头部、手部和上身三维位姿配对。",
+    "summaryEn": "Egocentric manipulation videos paired with per-frame head, hand and upper-body poses.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Agent Pose",
+      "Camera Pose",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "829 hours; 194 tasks; 30 Hz",
+    "scaleZh": "829 小时；194 类任务；30 Hz",
+    "organizations": "Apple research team",
+    "organizationsZh": "Apple 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Dataset under CC BY-NC-ND terms; separate code license",
+    "licenseZh": "数据采用 CC BY-NC-ND 条款；代码另有许可",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "位姿由 ARKit 估计，置信度与语言标注可能有误差；人体轨迹不等于机器人控制。",
+    "wmNoteEn": "ARKit poses and automated language annotations can contain errors; human trajectories are not robot controls.",
+    "links": {
+      "code": "https://github.com/apple-aiml-research/ml-egodex"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/apple-aiml-research/ml-egodex",
+      "sourceTitle": "EgoDex official release documentation",
+      "locator": "Dataset Structure; Code Structure / compute_metrics.py",
+      "statement": "Paired MP4/HDF5 files align each video frame with joint and camera transforms in an episode-fixed coordinate frame. The release includes metrics for dexterous trajectory prediction.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "embodiedbench",
@@ -3539,6 +4939,60 @@
     "aliases": []
   },
   {
+    "id": "ewmbench",
+    "name": "EWMBench",
+    "shortName": "EWMBench",
+    "year": 2025,
+    "summary": "评测具身世界模型的场景一致性、运动正确性与任务语义对齐。",
+    "summaryEn": "Evaluates scene consistency, motion correctness and task alignment in embodied world models.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Synthetic"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "EWMBench authors",
+    "organizationsZh": "EWMBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "评测器分数不等同于真实机器人闭环成功率；参考数据和生成样例分开。",
+    "wmNoteEn": "Evaluator scores are not real-robot closed-loop success rates; reference data and generated examples are distinct.",
+    "links": {
+      "code": "https://github.com/AgibotTech/EWMBench"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/AgibotTech/EWMBench",
+      "sourceTitle": "EWMBench official release documentation",
+      "locator": "Overview; Data Downloading; gt_dataset and generated-results structure",
+      "statement": "The benchmark explicitly evaluates embodied world models for physical plausibility and task coherence, with released ground-truth data and a multidimensional evaluation toolkit.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "express-bench",
     "name": "EXPRESS-Bench",
     "shortName": "EXPRESS-Bench",
@@ -3650,6 +5104,65 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "galaxea-open-world",
+    "name": "Galaxea Open-World Dataset",
+    "shortName": "Galaxea Open-World Dataset",
+    "year": 2025,
+    "summary": "R1-Lite 移动操作机器人的双臂和全身控制轨迹。",
+    "summaryEn": "Bimanual and whole-body mobile-manipulation trajectories from R1-Lite robots.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "Publisher reports 500+ hours; 227 task-level archives",
+    "scaleZh": "发布方报告 500 余小时；227 个任务级归档",
+    "organizations": "Galaxea Open-World Dataset authors",
+    "organizationsZh": "Galaxea Open-World Dataset 发布团队",
+    "access": "Hugging Face login and acceptance of publisher access conditions",
+    "accessZh": "Hugging Face 登录并接受发布方访问条件",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseZh": "CC BY-NC-SA 4.0",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "固定一种机器人本体；需接受数据访问条件，未实测完整下载。",
+    "wmNoteEn": "Uses one robotic embodiment; access terms apply and complete downloads were not tested.",
+    "links": {
+      "homepage": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset",
+      "sourceTitle": "Galaxea Open-World Dataset official release documentation",
+      "locator": "Dataset Structure; LeRobot Dataset Schema: Observations, Actions, Metadata Columns",
+      "statement": "The official card documents per-episode Parquet and camera MP4 files, robot observation/action vectors, timestamps and episode/frame indices in LeRobot format. This directly establishes aligned mobile-manipulation transitions.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://huggingface.co/datasets/OpenGalaxea/Galaxea-Open-World-Dataset",
+      "description": "Official registry created 2025-08-23; the associated G0 paper is 2509.00576."
+    }
   },
   {
     "id": "grandtour",
@@ -3997,6 +5510,60 @@
     "aliases": []
   },
   {
+    "id": "intphys2",
+    "name": "IntPhys 2",
+    "shortName": "IntPhys 2",
+    "year": 2025,
+    "summary": "通过可能与不可能事件检验物体持续性、连续性、固体性和不变性。",
+    "summaryEn": "Possible and impossible event videos test object persistence, continuity, solidity and immutability.",
+    "primaryTask": "Physical & Causal Reasoning",
+    "primaryTaskZh": "物理与因果推理",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Synthetic Video"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "1,012 main-set videos; 60 debug and 344 held-out videos",
+    "scaleZh": "主集 1,012 段视频；另有 60 段调试和 344 段保留集视频",
+    "organizations": "IntPhys 2 authors",
+    "organizationsZh": "IntPhys 2 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "CC BY-NC 4.0 with additional evaluation-only and no-generative-use restrictions",
+    "licenseZh": "CC BY-NC 4.0，并附仅限评测、禁止生成用途的额外限制",
+    "verdict": "物理与因果推理",
+    "verdictEn": "Physical & Causal Reasoning",
+    "wmNote": "保留集不发布完整元数据；原生任务是物理合理性评测。",
+    "wmNoteEn": "Held-out metadata are withheld; the native task evaluates physical plausibility.",
+    "links": {
+      "code": "https://github.com/facebookresearch/IntPhys2"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 4,
+      "source": "https://github.com/facebookresearch/IntPhys2",
+      "sourceTitle": "IntPhys 2 official release documentation",
+      "locator": "Benchmark description; Splits; License",
+      "statement": "Controlled possible/impossible event videos test violations of four physical principles, with loaders and evaluation code for prediction-based models. The released split table separates debug, main and held-out sets.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "intphys"
+    ]
+  },
+  {
     "id": "labutopia",
     "name": "LabUtopia",
     "shortName": "LabUtopia",
@@ -4049,6 +5616,63 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "loopnav",
+    "name": "LoopNav",
+    "shortName": "LoopNav",
+    "year": 2025,
+    "summary": "利用 Minecraft 闭环导航和重访场景检验世界模型空间记忆。",
+    "summaryEn": "Tests spatial memory in world models using Minecraft navigation loops and scene revisits.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "Publisher reports 250 navigation hours; current fixed benchmark has 720 trajectories",
+    "scaleZh": "发布方报告 250 小时导航；当前固定评测为 720 条轨迹",
+    "organizations": "LoopNav authors",
+    "organizationsZh": "LoopNav 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "2025 年原始论文与后续发布版本区分；重访一致性不等于物理真实性。",
+    "wmNoteEn": "Distinguish the 2025 original paper from subsequent release versions; revisit consistency does not establish physical realism.",
+    "links": {
+      "code": "https://github.com/Kevin-lkw/LoopNav"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/Kevin-lkw/LoopNav",
+      "sourceTitle": "LoopNav official release documentation",
+      "locator": "Dataset and benchmark; TURN / ABA / ABCA tasks",
+      "statement": "Action-annotated navigation loops return to previously seen locations via rotations, retraced paths and alternate paths. Scene Graph Consistency Score evaluates persistence of the generated scene across revisits.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2505.22976",
+      "description": "Original preprint in May 2025; current repository also describes a 2026 benchmark update."
+    }
   },
   {
     "id": "m3dgr",
@@ -4956,6 +6580,64 @@
     "aliases": []
   },
   {
+    "id": "physics-iq",
+    "name": "Physics-IQ",
+    "shortName": "Physics-IQ",
+    "year": 2025,
+    "summary": "以真实物理事件的后续视频检验生成模型的物理预测能力。",
+    "summaryEn": "Tests physical prediction through continuations of recorded real-world events.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Video"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "Physics-IQ authors",
+    "organizationsZh": "Physics-IQ 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Code: Apache 2.0; other materials: repository CC BY 4.0 notice",
+    "licenseZh": "代码 Apache 2.0；其他材料按仓库 CC BY 4.0 声明",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "Original 与 Verified 属于同一基准家族，提示和指标版本需匹配；不重复累计视频。",
+    "wmNoteEn": "Original and Verified belong to one benchmark family; match prompt and metric versions and do not double-count videos.",
+    "links": {
+      "code": "https://github.com/google-deepmind/physics-iq-benchmark"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/google-deepmind/physics-iq-benchmark",
+      "sourceTitle": "Physics-IQ official release documentation",
+      "locator": "Overview; Original / Verified workflows; License and Disclaimer",
+      "statement": "The official workflow splits physical-event recordings into conditioning and held-out continuation videos and evaluates generated physical rollouts. The repository maintains original and Verified evaluation variants.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [
+      "physics-iq-verified"
+    ],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2501.09038",
+      "description": "Original Physics-IQ preprint in January 2025; Verified is a later benchmark revision."
+    }
+  },
+  {
     "id": "dopamine-reward-grm",
     "name": "Robo-Dopamine GRM State Pairs",
     "shortName": "Robo-Dopamine GRM State Pairs",
@@ -5467,6 +7149,226 @@
     "aliases": []
   },
   {
+    "id": "wm-abench",
+    "name": "WM-ABench (Prediction Protocols)",
+    "shortName": "WM-ABench (Prediction Protocols)",
+    "year": 2025,
+    "summary": "以受控仿真中的状态预测、机械模拟和反事实推断评测内部世界模型。",
+    "summaryEn": "Evaluates internal world models through state prediction, mechanistic simulation and counterfactual inference.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Synthetic Video",
+      "QA"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "WM-ABench (Prediction Protocols) authors",
+    "organizationsZh": "WM-ABench (Prediction Protocols) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "入选范围为预测协议；不能将颜色、形状等静态感知子任务单独算作世界模型数据。",
+    "wmNoteEn": "Inclusion concerns prediction protocols; static color/shape perception subtasks do not independently qualify.",
+    "links": {
+      "homepage": "https://wm-abench.maitrix.org/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://wm-abench.maitrix.org/",
+      "sourceTitle": "WM-ABench (Prediction Protocols) official release documentation",
+      "locator": "Two-stage framework; Prediction / Mechanistic Simulation",
+      "statement": "The prediction stage uses controlled simulated environments to test mechanistic simulation, transitive inference and compositional inference, including object interactions and robot actions. Inclusion is explicitly limited to this predictive scope.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "world-in-world",
+    "name": "World-in-World",
+    "shortName": "World-in-World",
+    "year": 2025,
+    "summary": "在导航与操作任务中闭环检验视觉世界模型的规划和执行价值。",
+    "summaryEn": "Tests visual world models in closed-loop navigation and manipulation tasks.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "World-in-World authors",
+    "organizationsZh": "World-in-World 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "依赖 Habitat 场景与操作环境；2026 年新增组件不视作 2025 年已发布。",
+    "wmNoteEn": "Depends on Habitat scenes and manipulation environments; components added in 2026 are not treated as available in 2025.",
+    "links": {
+      "code": "https://github.com/World-In-World/world-in-world"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://github.com/World-In-World/world-in-world",
+      "sourceTitle": "World-in-World official release documentation",
+      "locator": "Overview; Checklist for running an evaluation; News",
+      "statement": "A unified action API and downloadable evaluation episodes support planning, execution and replanning in closed-loop tasks. Evaluation measures world-model utility in navigation and manipulation, not only visual quality.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "habitat-lab",
+      "libero"
+    ]
+  },
+  {
+    "id": "worldmodelbench",
+    "name": "WorldModelBench",
+    "shortName": "WorldModelBench",
+    "year": 2025,
+    "summary": "评测视频世界模型指令遵循、时序一致性和物理规则遵循情况。",
+    "summaryEn": "Evaluates instruction following, temporal coherence and physical-law adherence in video world models.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Language"
+    ],
+    "structure": [
+      "Diagnostic Cases"
+    ],
+    "source": [
+      "Real-world",
+      "Synthetic"
+    ],
+    "scale": "350 prompts; 7 domains and 56 subdomains",
+    "scaleZh": "350 个提示；7 个领域、56 个子领域",
+    "organizations": "WorldModelBench authors",
+    "organizationsZh": "WorldModelBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "测试提示与生成视频评测协议，不是动作对齐训练轨迹库；评判器存在误差。",
+    "wmNoteEn": "A prompt set and generated-video evaluation protocol, not an action-aligned trajectory corpus; judge errors remain possible.",
+    "links": {
+      "homepage": "https://worldmodelbench-team.github.io/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://worldmodelbench-team.github.io/",
+      "sourceTitle": "WorldModelBench official release documentation",
+      "locator": "Overview; WorldModelBench Overview; evaluation dimensions",
+      "statement": "The benchmark explicitly tests video world models for temporal/common-sense violations and adherence to physical laws, alongside instruction following, using released multimodal prompts and a defined judging protocol.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "worldscore",
+    "name": "WorldScore",
+    "shortName": "WorldScore",
+    "year": 2025,
+    "summary": "根据指定相机轨迹连续生成场景，评测可控性、三维一致性与动态表现。",
+    "summaryEn": "Evaluates sequential world generation under camera trajectories for controllability, 3D consistency and dynamics.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Urban / 3D Scene"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Camera Pose",
+      "Language"
+    ],
+    "structure": [
+      "Diagnostic Cases"
+    ],
+    "source": [
+      "Real-world",
+      "Synthetic"
+    ],
+    "scale": "3,000 test examples",
+    "scaleZh": "3,000 个测试样例",
+    "organizations": "WorldScore authors",
+    "organizationsZh": "WorldScore 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "相机控制和场景一致性不等于物体动力学或机器人动作响应。",
+    "wmNoteEn": "Camera control and scene consistency are not equivalent to object dynamics or robot motor response.",
+    "links": {
+      "homepage": "https://haoyi-duan.github.io/WorldScore/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://haoyi-duan.github.io/WorldScore/",
+      "sourceTitle": "WorldScore official release documentation",
+      "locator": "Overview; Abstract; Controllability / Quality / Dynamics",
+      "statement": "World generation is decomposed into sequential next-scene tasks with explicit camera trajectories. The benchmark evaluates camera adherence, geometry consistency and specified motion across generated sequences.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "wowbench",
     "name": "WoWBench (Released Samples)",
     "shortName": "WoWBench (Released Samples)",
@@ -5519,6 +7421,114 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "apebench",
+    "name": "APEBench",
+    "shortName": "APEBench",
+    "year": 2024,
+    "summary": "为一维至三维周期域偏微分方程生成时序数据的自回归模拟评测工具。",
+    "summaryEn": "Generates temporal PDE data for autoregressive emulator evaluation on periodic 1D–3D domains.",
+    "primaryTask": "Physical & Causal Reasoning",
+    "primaryTaskZh": "物理与因果推理",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "APEBench authors",
+    "organizationsZh": "APEBench 发布团队",
+    "access": "Official generation toolkit; run reference solvers to create data",
+    "accessZh": "官方生成工具；须自行运行参考求解器",
+    "license": "Repository specifies MIT; dependencies have separate terms",
+    "licenseZh": "仓库标注 MIT；具体依赖另有条款",
+    "verdict": "物理与因果推理",
+    "verdictEn": "Physical & Causal Reasoning",
+    "wmNote": "按方程与配置生成数据，不是单个固定数据包；误差和物理范围取决于数值求解配置。",
+    "wmNoteEn": "Data are generated per equation/configuration rather than supplied as one fixed corpus; scope and numerical error depend on solver settings.",
+    "links": {
+      "code": "https://github.com/tum-pbs/apebench"
+    },
+    "resourceType": "generator",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 4,
+      "source": "https://github.com/tum-pbs/apebench",
+      "sourceTitle": "APEBench official release documentation",
+      "locator": "Overview; Quickstart; autoregressive rollout evaluation",
+      "statement": "The toolkit uses spectral reference simulators to generate PDE trajectories and evaluates autoregressive predictions over rollouts. Initial fields and subsequent numerical states form identifiable physical input/target pairs.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
+    "id": "bench2drive",
+    "name": "Bench2Drive",
+    "shortName": "Bench2Drive",
+    "year": 2024,
+    "summary": "基于 CARLA 的驾驶轨迹与多能力闭环评测协议。",
+    "summaryEn": "CARLA driving trajectories with a multi-ability closed-loop evaluation protocol.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Simulation State",
+      "Action"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "Bench2Drive authors",
+    "organizationsZh": "Bench2Drive 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "Mini、Base、Full 和 2026 年 0.0.4 是不同分割或版本，不能直接相加。",
+    "wmNoteEn": "Mini, Base, Full and the 2026 0.0.4 release are different splits/versions and must not be summed directly.",
+    "links": {
+      "code": "https://github.com/Thinklab-SJTU/Bench2Drive"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/Thinklab-SJTU/Bench2Drive",
+      "sourceTitle": "Bench2Drive official release documentation",
+      "locator": "Dataset; Setup; Evaluation; News",
+      "statement": "The official release supplies driving clips collected by a driving agent and executable CARLA policy evaluation with defined routes, driving success, efficiency and smoothness metrics. Version and split manifests identify the released data.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "carla"
+    ]
   },
   {
     "id": "brmdata",
@@ -5635,6 +7645,65 @@
     "yearBasis": {
       "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
       "source": "https://www.tensorflow.org/datasets/catalog/conq_hose_manipulation"
+    }
+  },
+  {
+    "id": "d5rl",
+    "name": "D5RL",
+    "shortName": "D5RL",
+    "year": 2024,
+    "summary": "涵盖机械臂与四足控制的多来源离线强化学习轨迹。",
+    "summaryEn": "Diverse offline reinforcement-learning trajectories for manipulation and quadruped control.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Simulation State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "D5RL authors",
+    "organizationsZh": "D5RL 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "仿真任务包含脚本和遥操作数据；不应表述为独立真实机器人采集。",
+    "wmNoteEn": "Simulated tasks include scripted and teleoperated data; they are not an independent real-robot collection.",
+    "links": {
+      "code": "https://github.com/d5rlbenchmark/d5rl"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/d5rlbenchmark/d5rl",
+      "sourceTitle": "D5RL official release documentation",
+      "locator": "Overview; Downloading the datasets; Running the experiments",
+      "statement": "The official benchmark releases Franka Kitchen, WidowX and A1 data and matching executable environments for offline RL and online fine-tuning. State/image observations and control trajectories support action-conditioned dynamics.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2408.08441",
+      "description": "Verified arXiv record announced in August 2024."
     }
   },
   {
@@ -5881,6 +7950,61 @@
     "relatedResources": [
       "open-x-embodiment"
     ]
+  },
+  {
+    "id": "hot3d",
+    "name": "HOT3D (Full Tracking Sequences)",
+    "shortName": "HOT3D (Full Tracking Sequences)",
+    "year": 2024,
+    "summary": "第一人称三维手部与物体跟踪序列，配套官方读取和下载工具。",
+    "summaryEn": "Egocentric 3D hand/object tracking sequences with official loading and download tools.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Agent Pose",
+      "Object State",
+      "Camera Pose"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "HOT3D (Full Tracking Sequences) authors",
+    "organizationsZh": "HOT3D (Full Tracking Sequences) 发布团队",
+    "access": "Registration provides expiring download links",
+    "accessZh": "需注册领取有时效的下载链接",
+    "license": "Sequences, hand annotations and object models may have different terms",
+    "licenseZh": "序列、手部标注与物体模型可能适用不同条款",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "HOT3D-Clips 是完整数据的筛选子集；不另行相加，灰度与 RGB 视图依设备而异。",
+    "wmNoteEn": "HOT3D-Clips is a curated subset and is not added to the full-set count; grayscale and RGB views depend on device.",
+    "links": {
+      "code": "https://github.com/facebookresearch/hot3d"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/facebookresearch/hot3d",
+      "sourceTitle": "HOT3D (Full Tracking Sequences) official release documentation",
+      "locator": "Toolkit overview; Full dataset; registration and download sections",
+      "statement": "The official toolkit provides the complete VRS-based hand/object tracking sequences and distinguishes them from the curated HOT3D-Clips subset. Tracking observations and 3D states support ordered trajectory modeling.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "io-ai-tech",
@@ -6195,6 +8319,175 @@
     ]
   },
   {
+    "id": "navsim",
+    "name": "NAVSIM",
+    "shortName": "NAVSIM",
+    "year": 2024,
+    "summary": "基于 nuPlan/OpenScene 轨迹的驾驶规划伪仿真评测。",
+    "summaryEn": "Pseudo-simulation evaluation of driving planners using nuPlan/OpenScene trajectories.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Agent Pose",
+      "Trajectory"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "NAVSIM authors",
+    "organizationsZh": "NAVSIM 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "重用 nuPlan 数据，不是独立采集；伪仿真不等同于完全闭环交互。",
+    "wmNoteEn": "Reuses nuPlan data rather than constituting an independent collection; pseudo-simulation is not full closed-loop interaction.",
+    "links": {
+      "code": "https://github.com/autonomousvision/navsim"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/autonomousvision/navsim",
+      "sourceTitle": "NAVSIM official release documentation",
+      "locator": "Overview; docs/cache.md; Getting started; License and citation",
+      "statement": "The official data specification organizes OpenScene/nuPlan observations into ordered Scene/Frame objects at 2 Hz for planning agents. NAVSIM evaluates planned future trajectories using explicit simulation-based safety and progress measures.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [
+      "nuplan"
+    ]
+  },
+  {
+    "id": "ogbench",
+    "name": "OGBench",
+    "shortName": "OGBench",
+    "year": 2024,
+    "summary": "面向离线目标条件学习的仿真轨迹及配套环境。",
+    "summaryEn": "Simulation trajectories and environments for offline goal-conditioned learning.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "Simulation State",
+      "Action",
+      "RGB Images"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "OGBench authors",
+    "organizationsZh": "OGBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "原始论文发表于 2024 年；任务规模随版本变化，状态和像素任务分别提供。",
+    "wmNoteEn": "The original paper appeared in 2024; task counts vary by release, with separate state and pixel variants.",
+    "links": {
+      "code": "https://github.com/seohongpark/ogbench"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/seohongpark/ogbench",
+      "sourceTitle": "OGBench official release documentation",
+      "locator": "Dataset APIs; Reproducing Datasets",
+      "statement": "The documented schema explicitly represents observations, actions, next_observations and terminal boundaries. Scripts reproduce the trajectories, and environment APIs expose step-wise transitions.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2410.20092",
+      "description": "Original preprint in October 2024; the conference citation is ICLR 2025."
+    }
+  },
+  {
+    "id": "opendv-youtube",
+    "name": "OpenDV-YouTube",
+    "shortName": "OpenDV-YouTube",
+    "year": 2024,
+    "summary": "为驾驶视频预测发布的视频清单、处理脚本和语言标注。",
+    "summaryEn": "Video lists, processing scripts and language annotations released for driving-video prediction.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Autonomous Driving"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "OpenDV-YouTube authors",
+    "organizationsZh": "OpenDV-YouTube 发布团队",
+    "access": "Acquire using official lists/scripts; upstream video availability and rights require separate checks",
+    "accessZh": "按官方清单与脚本获取；上游视频可用性和权利需另核对",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "预测与生成式动力学",
+    "verdictEn": "Predictive & Generative Dynamics",
+    "wmNote": "仅收录 YouTube 发布部分；不把未完全发布的 OpenDV-2K 混合物或 Mini 子集另算。",
+    "wmNoteEn": "Scope is the YouTube release; the incompletely released OpenDV-2K mixture and Mini subset are not separate corpora.",
+    "links": {
+      "code": "https://github.com/OpenDriveLab/DriveAGI"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://github.com/OpenDriveLab/DriveAGI",
+      "sourceTitle": "OpenDV-YouTube official release documentation",
+      "locator": "News 2024/03/24; GenAD: OpenDV Dataset",
+      "statement": "The GenAD release explicitly supports future driving-video prediction and provides a complete video list, consecutive-frame preprocessing and language annotations. March 2024 news confirms the release of this toolkit.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [
+      "opendv-youtube-mini"
+    ],
+    "relatedResources": []
+  },
+  {
     "id": "partnr",
     "name": "PARTNR",
     "shortName": "PARTNR",
@@ -6255,6 +8548,59 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "pdegym-temporal",
+    "name": "PDEGym / Poseidon (Time-Dependent Data)",
+    "shortName": "PDEGym / Poseidon (Time-Dependent Data)",
+    "year": 2024,
+    "summary": "Poseidon 发布的流体、波动与反应扩散等时变偏微分方程轨迹集合。",
+    "summaryEn": "Time-dependent PDE trajectories released with Poseidon, including fluids, waves and reaction-diffusion systems.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Dataset / Benchmark",
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "PDEGym / Poseidon (Time-Dependent Data) authors",
+    "organizationsZh": "PDEGym / Poseidon (Time-Dependent Data) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "预测与生成式动力学",
+    "verdictEn": "Predictive & Generative Dynamics",
+    "wmNote": "排除稳态 Airfoil、Poisson 和 Helmholtz；添加 .time 包装不使静态问题成为真实时序数据。",
+    "wmNoteEn": "Excludes steady Airfoil, Poisson and Helmholtz data; a .time wrapper does not turn static problems into physical trajectories.",
+    "links": {
+      "code": "https://github.com/camlab-ethz/Poseidon"
+    },
+    "resourceType": "aggregate",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://github.com/camlab-ethz/Poseidon",
+      "sourceTitle": "PDEGym / Poseidon (Time-Dependent Data) official release documentation",
+      "locator": "Datasets: identifier mapping; BaseTimeDataset; NS-Sines data card",
+      "statement": "The official release maps named dynamic PDE datasets to download and temporal loaders. The NS-Sines card explicitly documents 20,000 trajectories with 21 uniformly sampled time steps and train/validation/test splits. The admitted collection is restricted to time-dependent systems.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "pokeflex",
@@ -6502,6 +8848,63 @@
     "aliases": []
   },
   {
+    "id": "robotwin",
+    "name": "RoboTwin",
+    "shortName": "RoboTwin",
+    "year": 2024,
+    "summary": "双臂机器人仿真任务、演示采集工具和配套轨迹数据。",
+    "summaryEn": "Bimanual simulation tasks, demonstration collection tools and accompanying trajectories.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Robot State",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "RoboTwin authors",
+    "organizationsZh": "RoboTwin 发布团队",
+    "access": "Pre-collected trajectories and simulation tools; environment not run",
+    "accessZh": "提供已采集轨迹与仿真生成工具；未运行环境",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "原始发布为 2024 年；当前 2.0 和后续更新不可视为当年的数据快照。",
+    "wmNoteEn": "Originally released in 2024; current 2.0 and later updates are not a 2024 data snapshot.",
+    "links": {
+      "code": "https://github.com/RoboTwin-Platform/RoboTwin"
+    },
+    "resourceType": "generator",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/RoboTwin-Platform/RoboTwin",
+      "sourceTitle": "RoboTwin official release documentation",
+      "locator": "News; Data Collection; XPolicyLab-format trajectories; Policy Evaluation",
+      "statement": "The official repository supplies pre-collected manipulation trajectories, seed-based demonstration collection and policy rollout evaluation in executable robot environments. It dates the original release to 2024-09-20.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [
+      "robotwin-2-0"
+    ],
+    "relatedResources": []
+  },
+  {
     "id": "taco",
     "name": "TACO",
     "shortName": "TACO",
@@ -6680,6 +9083,65 @@
     }
   },
   {
+    "id": "worldsimbench",
+    "name": "WorldSimBench",
+    "shortName": "WorldSimBench",
+    "year": 2024,
+    "summary": "结合人类反馈与视频到控制信号的一致性评测世界模拟器。",
+    "summaryEn": "Evaluates world simulators with human feedback and video-to-control consistency.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Robotics / Embodied AI"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation",
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "WorldSimBench authors",
+    "organizationsZh": "WorldSimBench 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "包含感知与操作两个评测层面；衍生反馈数据不应作为独立采集视频重复计数。",
+    "wmNoteEn": "Perceptual and manipulative evaluations are distinct; derived feedback data must not be counted as independently captured video.",
+    "links": {
+      "homepage": "https://iranqin.github.io/WorldSimBench.github.io/"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://iranqin.github.io/WorldSimBench.github.io/",
+      "sourceTitle": "WorldSimBench official release documentation",
+      "locator": "Abstract; Explicit Perceptual and Implicit Manipulative Evaluation",
+      "statement": "The protocol explicitly assesses world simulators in gaming, driving and robot manipulation. Its manipulative evaluation measures whether predicted situation-aware videos translate into correct controls in dynamic environments.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2410.18072",
+      "description": "Original preprint in October 2024; later ICML 2025 publication."
+    }
+  },
+  {
     "id": "aloha-act-sim",
     "name": "ALOHA / ACT Simulation Demonstrations",
     "shortName": "ALOHA / ACT Simulation Demonstrations",
@@ -6736,6 +9198,60 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "arctic",
+    "name": "ARCTIC",
+    "shortName": "ARCTIC",
+    "year": 2023,
+    "summary": "双手操作可动关节物体的连续观测与三维运动标注。",
+    "summaryEn": "Continuous observations and 3D motion annotations of bimanual articulated-object manipulation.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Agent Pose",
+      "Object State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "About 2.1M multiview images; 8 third-person and 1 egocentric view",
+    "scaleZh": "约 210 万张多视角图像；8 个第三人称视角和 1 个第一人称视角",
+    "organizations": "ARCTIC authors",
+    "organizationsZh": "ARCTIC 发布团队",
+    "access": "Registration through the publisher is required",
+    "accessZh": "需按官方流程注册获取数据",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "多视角图像数不等于独立时刻数；人体动作不是机器人控制指令。",
+    "wmNoteEn": "Multiview image counts are not counts of independent time steps; human movements are not robot control commands.",
+    "links": {
+      "code": "https://github.com/zc-alexfan/arctic"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/zc-alexfan/arctic",
+      "sourceTitle": "ARCTIC official release documentation",
+      "locator": "Why use ARCTIC; News; consistent motion reconstruction",
+      "statement": "The release documents motion-captured dexterous manipulation with synchronized views and SMPL-X, MANO and articulated-object ground truth, supporting consistent motion reconstruction and ordered state trajectories.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "argoverse-2",
@@ -7796,6 +10312,58 @@
     }
   },
   {
+    "id": "dynabench-physical",
+    "name": "DynaBench (Physical Systems)",
+    "shortName": "DynaBench (Physical Systems)",
+    "year": 2023,
+    "summary": "六类物理系统的时空演化数据与多步预测评测。",
+    "summaryEn": "Spatiotemporal physical-system data with multistep forecasting evaluation.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "DynaBench (Physical Systems) authors",
+    "organizationsZh": "DynaBench (Physical Systems) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "预测与生成式动力学",
+    "verdictEn": "Predictive & Generative Dynamics",
+    "wmNote": "与同名自然语言基准无关；稀疏观测和规则网格分辨率需区分。",
+    "wmNoteEn": "Unrelated to the similarly named language benchmark; distinguish sparse observations from grid resolutions.",
+    "links": {
+      "code": "https://github.com/badulion/dynabench"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://github.com/badulion/dynabench",
+      "sourceTitle": "DynaBench (Physical Systems) official release documentation",
+      "locator": "Downloading data; dataset loaders; forecasting models; Citation",
+      "statement": "Dataset loaders separate lookback observations from future rollout targets, with documented tensor shapes and 16-step rollout MSE. The benchmark contains simulated physical-system evolution and an explicit future-state prediction protocol.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "eth-agent-affordances",
     "name": "ETH Agent Affordances",
     "shortName": "ETH Agent Affordances",
@@ -8039,6 +10607,60 @@
     }
   },
   {
+    "id": "hi4d",
+    "name": "Hi4D (Interaction Sequences)",
+    "shortName": "Hi4D (Interaction Sequences)",
+    "year": 2023,
+    "summary": "近距离双人交互序列，提供逐帧身体参数与接触对应。",
+    "summaryEn": "Close two-person interaction sequences with per-frame body parameters and contact correspondences.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Multi-view RGB Video",
+      "Agent Pose",
+      "3D Mesh"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "Hi4D (Interaction Sequences) authors",
+    "organizationsZh": "Hi4D (Interaction Sequences) 发布团队",
+    "access": "Publisher application and approval required",
+    "accessZh": "需申请并获批后获取数据",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "含拟合和重建误差；原生分割评测不能直接当作未来动作预测分数。",
+    "wmNoteEn": "Fits and reconstructions contain errors; native segmentation scores are not motion-forecasting scores.",
+    "links": {
+      "code": "https://github.com/yifeiyin04/Hi4D/blob/main/dataset.md"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/yifeiyin04/Hi4D/blob/main/dataset.md",
+      "sourceTitle": "Hi4D (Interaction Sequences) official release documentation",
+      "locator": "meta.npz; images; smpl per-frame fields",
+      "statement": "The schema defines start/end frame IDs and per-frame SMPL pose, translation, 3D joints and contacts, aligned with multiview images. This explicitly establishes ordered interaction trajectories.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "homes-of-new-york",
     "name": "Homes of New York (Dobb-E)",
     "shortName": "Homes of New York (Dobb-E)",
@@ -8164,6 +10786,121 @@
     "yearBasis": {
       "description": "Documented in the TFDS source commit dated 2023-10-16; original dataset date unspecified.",
       "source": "https://github.com/tensorflow/datasets/blob/b78fc27c4f830c590c28002b1a1d07ef14e588dc/tensorflow_datasets/robotics/rtx/rtx.py"
+    }
+  },
+  {
+    "id": "inter-x",
+    "name": "Inter-X",
+    "shortName": "Inter-X",
+    "year": 2023,
+    "summary": "包含骨架、SMPL-X 和文本标注的双人交互动作数据。",
+    "summaryEn": "Two-person interaction motions with skeleton, SMPL-X and textual annotations.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Language",
+      "Action Labels"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "40 interaction categories; counts depend on the selected release split",
+    "scaleZh": "40 类交互动作；规模以所选发布分割为准",
+    "organizations": "Inter-X authors",
+    "organizationsZh": "Inter-X 发布团队",
+    "access": "Publisher form required for research access",
+    "accessZh": "需填写发布方表单申请研究用途访问",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "论文发表于 2023 年，数据发布于 2024 年；交互顺序标注不等于受控物理干预。",
+    "wmNoteEn": "The paper appeared in 2023 and data in 2024; interaction-order labels do not imply controlled physical interventions.",
+    "links": {
+      "code": "https://github.com/liangxuy/Inter-X"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/liangxuy/Inter-X",
+      "sourceTitle": "Inter-X official release documentation",
+      "locator": "News; Dataset Download; motion visualization and processing",
+      "statement": "The released data include mocap-derived skeletal/SMPL-X motion sequences with text and interaction-order labels, plus split files and sequence visualization tools.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://github.com/liangxuy/Inter-X",
+      "description": "README dates the original paper to 2023-12-27 and the dataset release to 2024-04-16."
+    }
+  },
+  {
+    "id": "interhuman",
+    "name": "InterHuman",
+    "shortName": "InterHuman",
+    "year": 2023,
+    "summary": "带自然语言描述的双人交互三维动作序列。",
+    "summaryEn": "Two-person 3D interaction motion sequences with natural-language descriptions.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Language"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "InterHuman authors",
+    "organizationsZh": "InterHuman 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "CC BY-NC-SA 4.0 with a stated redistribution prohibition; check complete terms",
+    "licenseZh": "标注 CC BY-NC-SA 4.0，另声明禁止再分发；使用前核对完整条款",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "用于动作生成和轨迹控制；不是同步机器人动作数据，许可另含再分发限制。",
+    "wmNoteEn": "Supports motion generation and trajectory control; it is not robot action data, and the publisher adds redistribution restrictions.",
+    "links": {
+      "code": "https://github.com/tr3e/InterGen"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/tr3e/InterGen",
+      "sourceTitle": "InterHuman official release documentation",
+      "locator": "InterHuman Dataset; Data Structure; motion generation tasks",
+      "statement": "The release contains raw SMPL motion and processed per-joint positions/rotations for interacting people, with text annotations and train/validation/test splits. Its generation tasks operate on ordered skeletal trajectories.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2304.05684",
+      "description": "Original InterGen/InterHuman preprint in April 2023; later IJCV 2024 publication."
     }
   },
   {
@@ -8891,6 +11628,60 @@
       "description": "Original resource citation year in the official registry; the current RLDS conversion may be later.",
       "source": "https://www.tensorflow.org/datasets/catalog/nyu_rot_dataset_converted_externally_to_rlds"
     }
+  },
+  {
+    "id": "omomo",
+    "name": "OMOMO Interaction Motion Data",
+    "shortName": "OMOMO Interaction Motion Data",
+    "year": 2023,
+    "summary": "物体运动引导全身人体动作生成的交互序列。",
+    "summaryEn": "Interaction sequences for object-motion-conditioned full-body human motion synthesis.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Object State",
+      "3D Mesh"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "OMOMO Interaction Motion Data authors",
+    "organizationsZh": "OMOMO Interaction Motion Data 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "物体轨迹作为生成条件；不代表从机器人控制输入识别真实动力学。",
+    "wmNoteEn": "Object trajectories condition motion synthesis; this does not establish robot-action-driven physical dynamics.",
+    "links": {
+      "code": "https://github.com/lijiaman/omomo_release"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/lijiaman/omomo_release",
+      "sourceTitle": "OMOMO Interaction Motion Data official release documentation",
+      "locator": "Testing: released dataset and motion-sequence visualizations; Training",
+      "statement": "The official release provides interaction motion data and sequence visualizations, with human-motion generation conditioned on object motion and geometry. Its temporal motion targets satisfy the trajectory criterion.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "open-x-embodiment",
@@ -9744,6 +12535,61 @@
     }
   },
   {
+    "id": "svib",
+    "name": "Systematic Visual Imagination Benchmark (SVIB)",
+    "shortName": "Systematic Visual Imagination Benchmark (SVIB)",
+    "year": 2023,
+    "summary": "在组合式潜在状态规则下，预测一步变换后的场景图像。",
+    "summaryEn": "Predicts the next scene image under compositional latent-state transition rules.",
+    "primaryTask": "World Model Evaluation & Diagnostics",
+    "primaryTaskZh": "世界模型评测与诊断",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "RGB Images",
+      "Simulation State",
+      "Segmentation"
+    ],
+    "structure": [
+      "State Pairs",
+      "Benchmark Splits"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "Systematic Visual Imagination Benchmark (SVIB) authors",
+    "organizationsZh": "Systematic Visual Imagination Benchmark (SVIB) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "世界模型评测与诊断",
+    "verdictEn": "World Model Evaluation & Diagnostics",
+    "wmNote": "规则包含抽象属性变换，不代表真实牛顿力学；不同打包方式是同一批数据。",
+    "wmNoteEn": "Rules include abstract attribute changes rather than real Newtonian dynamics; alternate packages contain the same data.",
+    "links": {
+      "homepage": "https://systematic-visual-imagination.github.io"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 5,
+      "source": "https://systematic-visual-imagination.github.io",
+      "sourceTitle": "Systematic Visual Imagination Benchmark (SVIB) official release documentation",
+      "locator": "Method; Benchmark tasks; Download Links",
+      "statement": "Each episode contains an input and target image generated from compositional scene state under a defined transition rule. Train/test splits measure systematic generalization in an explicit minimal world-model prediction task.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "toto",
     "name": "TOTO Scooping and Pouring",
     "shortName": "TOTO Scooping and Pouring",
@@ -10305,6 +13151,59 @@
     }
   },
   {
+    "id": "weatherbench2",
+    "name": "WeatherBench 2",
+    "shortName": "WeatherBench 2",
+    "year": 2023,
+    "summary": "面向全球天气预测的参考场、基线预报和统一评测协议。",
+    "summaryEn": "Reference fields, baseline forecasts and standardized evaluation for global weather prediction.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Weather Fields"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world",
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "WeatherBench 2 authors",
+    "organizationsZh": "WeatherBench 2 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Code: Apache 2.0; data follow each product’s terms",
+    "licenseZh": "代码为 Apache 2.0；数据按各产品条款使用",
+    "verdict": "预测与生成式动力学",
+    "verdictEn": "Predictive & Generative Dynamics",
+    "wmNote": "包含再分析与预报产品，不能当作独立采集气象观测相加；具体数据产品许可不同。",
+    "wmNoteEn": "Includes reanalysis and forecast products, not independent observational corpora; data products have different terms.",
+    "links": {
+      "code": "https://github.com/google-research/weatherbench2"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://github.com/google-research/weatherbench2",
+      "sourceTitle": "WeatherBench 2 official release documentation",
+      "locator": "Why WeatherBench; public ground-truth/baseline datasets; evaluation setup",
+      "statement": "The benchmark supplies temporally indexed reference weather fields and baseline forecasts, with an explicit protocol comparing predicted future atmospheric states at forecast lead times.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "webarena",
     "name": "WebArena",
     "shortName": "WebArena",
@@ -10532,6 +13431,61 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "behave",
+    "name": "BEHAVE (Interaction Sequences)",
+    "shortName": "BEHAVE (Interaction Sequences)",
+    "year": 2022,
+    "summary": "带人体、物体拟合与接触标注的多视角人体—物体交互序列。",
+    "summaryEn": "Multiview human-object interaction sequences with body/object fits and contact annotations.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB-D",
+      "Agent Pose",
+      "Object State",
+      "3D Mesh"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "BEHAVE (Interaction Sequences) authors",
+    "organizationsZh": "BEHAVE (Interaction Sequences) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "收录序列部分；静态物体扫描不单独计数。预测须按时间划分输入与目标。",
+    "wmNoteEn": "Scope is the sequence release; static object scans are not separately counted. Forecasting requires temporal input/target splits.",
+    "links": {
+      "code": "https://github.com/xiexh20/behave-dataset"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/xiexh20/behave-dataset",
+      "sourceTitle": "BEHAVE (Interaction Sequences) official release documentation",
+      "locator": "Dataset Structure: sequences; per-frame registrations",
+      "statement": "Sequence folders contain time-indexed multiview RGB-D frames with matching SMPL and object registrations. These expose ordered human/object states and contacts rather than only static assets.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "behavior-1k",
@@ -11017,6 +13971,60 @@
     "aliases": []
   },
   {
+    "id": "gimo",
+    "name": "GIMO",
+    "shortName": "GIMO",
+    "year": 2022,
+    "summary": "场景中的人体运动与眼动序列，用于预测未来身体运动。",
+    "summaryEn": "Human motion and gaze sequences in scenes for future-body-motion prediction.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "Agent Pose",
+      "Gaze",
+      "RGB Video"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "GIMO authors",
+    "organizationsZh": "GIMO 发布团队",
+    "access": "Demo provided; full data require a signed agreement and approval",
+    "accessZh": "提供示例；完整数据需提交签署协议并获批",
+    "license": "Publisher limits use to noncommercial research and prohibits unauthorized redistribution",
+    "licenseZh": "发布方限定非商业研究用途，禁止未授权再分发",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "人体动作和眼动不是机器人控制；完整数据需按研究协议申请。",
+    "wmNoteEn": "Human motion and gaze are not robot controls; full data require an application under the research agreement.",
+    "links": {
+      "code": "https://github.com/y-zheng18/GIMO"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/y-zheng18/GIMO",
+      "sourceTitle": "GIMO official release documentation",
+      "locator": "Dataset; Agreement; Dataset Structure & Visualization; Citation",
+      "statement": "The official release pairs contextual motion sequences and gaze with a documented future-human-motion prediction task, a demonstration, sequence visualization and a full-dataset application route.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
+  },
+  {
     "id": "hoi4d",
     "name": "HOI4D",
     "shortName": "HOI4D",
@@ -11134,6 +14142,61 @@
     "relatedResources": [
       "amass"
     ]
+  },
+  {
+    "id": "intercap",
+    "name": "InterCap",
+    "shortName": "InterCap",
+    "year": 2022,
+    "summary": "多视角 RGB-D 中人体与物体交互的同步三维跟踪序列。",
+    "summaryEn": "Synchronized 3D human/object interaction tracking sequences from multiview RGB-D.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB-D",
+      "Agent Pose",
+      "Object State",
+      "3D Mesh"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "InterCap authors",
+    "organizationsZh": "InterCap 发布团队",
+    "access": "Register through the official page and follow its data license",
+    "accessZh": "通过官方页面注册并按数据许可申请",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "采用拟合和跟踪得到状态；预测用途需另行设置历史和未来划分。",
+    "wmNoteEn": "States are fitted/tracked; predictive use requires a separate causal history/future split.",
+    "links": {
+      "homepage": "https://intercap.is.tue.mpg.de/"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://intercap.is.tue.mpg.de/",
+      "sourceTitle": "InterCap official release documentation",
+      "locator": "Abstract; Dataset; Code and Data; GCPR 2022 citation",
+      "statement": "The official dataset describes spatially calibrated, temporally synchronized RGB-D cameras and joint tracking of whole-body SMPL-X and objects during interaction, establishing ordered human/object state trajectories.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "kubric",
@@ -12800,6 +15863,64 @@
     ]
   },
   {
+    "id": "vpt-contractor",
+    "name": "VPT Contractor Demonstrations",
+    "shortName": "VPT Contractor Demonstrations",
+    "year": 2022,
+    "summary": "Minecraft 人类演示，配有实际记录的鼠标键盘动作与游戏状态。",
+    "summaryEn": "Human Minecraft demonstrations with recorded keyboard/mouse actions and game state.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Games / Virtual Environments"
+    ],
+    "modalities": [
+      "RGB Video",
+      "Action",
+      "Simulation State"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "VPT Contractor Demonstrations authors",
+    "organizationsZh": "VPT Contractor Demonstrations 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "仅指 contractor 有标签发布，不把互联网伪标注训练混合物作为完整公开数据。",
+    "wmNoteEn": "Scope is the labeled contractor release, not the full pseudo-labeled Internet training mixture.",
+    "links": {
+      "code": "https://github.com/openai/Video-Pre-Training"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/openai/Video-Pre-Training",
+      "sourceTitle": "VPT Contractor Demonstrations official release documentation",
+      "locator": "Contractor data; Data format",
+      "statement": "Released demonstration segments pair compressed screen observations with JSONL actions, environment statistics and an initial checkpoint. The documentation warns that missing uploads can create gaps between segments.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2206.11795",
+      "description": "Original VPT paper submitted in June 2022."
+    }
+  },
+  {
     "id": "aist-plus-plus",
     "name": "AIST++",
     "shortName": "AIST++",
@@ -13433,6 +16554,65 @@
     "aliases": []
   },
   {
+    "id": "egobody",
+    "name": "EgoBody",
+    "shortName": "EgoBody",
+    "year": 2021,
+    "summary": "交互场景中的第一人称与多视角同步人体动作观测。",
+    "summaryEn": "Synchronized egocentric and multiview observations of human motion in interactive scenes.",
+    "primaryTask": "Decision-Making & Agent Trajectories",
+    "primaryTaskZh": "决策与智能体轨迹",
+    "secondaryTasks": [],
+    "domain": [
+      "Egocentric / Human"
+    ],
+    "modalities": [
+      "RGB Video",
+      "RGB-D",
+      "Agent Pose",
+      "Gaze"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "125 sequences; 36 subjects; 15 indoor scenes",
+    "scaleZh": "125 段序列；36 人；15 个室内场景",
+    "organizations": "EgoBody authors",
+    "organizationsZh": "EgoBody 发布团队",
+    "access": "Registration and acceptance of the data license required",
+    "accessZh": "需注册并签署数据许可",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "决策与智能体轨迹",
+    "verdictEn": "Decision-Making & Agent Trajectories",
+    "wmNote": "原始论文为 2021 年，完整模态于 2022 年发布；自动拟合并非无误差真值。",
+    "wmNoteEn": "Original paper in 2021, full modalities released in 2022; fitted body annotations are not error-free truth.",
+    "links": {
+      "code": "https://github.com/sanweiliti/EgoBody"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 3,
+      "source": "https://github.com/sanweiliti/EgoBody",
+      "sourceTitle": "EgoBody official release documentation",
+      "locator": "Dataset Information; data_info_release.csv; frame alignment",
+      "statement": "The dataset documents synchronized Kinect and egocentric frames, sequence start/end frame IDs and 3D body motion annotations. These provide ordered human-state trajectories in scenes.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2112.07642",
+      "description": "Original preprint in December 2021; README dates full-modality release to 2022-10-20."
+    }
+  },
+  {
     "id": "berkeley-gnm-recon",
     "name": "GNM RECON Navigation",
     "shortName": "GNM RECON Navigation",
@@ -13791,6 +16971,64 @@
     "relatedResources": [
       "nethack-learning-environment"
     ]
+  },
+  {
+    "id": "neorl-physical",
+    "name": "NeoRL (Physical Control Tasks)",
+    "shortName": "NeoRL (Physical Control Tasks)",
+    "year": 2021,
+    "summary": "NeoRL 中工业、建筑能耗与 MuJoCo 控制任务的状态转移数据。",
+    "summaryEn": "State-transition datasets from NeoRL industrial, building-energy and MuJoCo control tasks.",
+    "primaryTask": "Action-Conditioned Dynamics",
+    "primaryTaskZh": "动作条件动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Simulation State",
+      "Action",
+      "Reward"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Simulation"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "NeoRL (Physical Control Tasks) authors",
+    "organizationsZh": "NeoRL (Physical Control Tasks) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "动作条件动力学",
+    "verdictEn": "Action-Conditioned Dynamics",
+    "wmNote": "只收物理控制任务；金融交易与销售促销任务不在本条范围内。",
+    "wmNoteEn": "Only physical control tasks are included; finance and sales-promotion tasks are outside this entry.",
+    "links": {
+      "code": "https://github.com/polixir/NeoRL"
+    },
+    "resourceType": "benchmark",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 2,
+      "source": "https://github.com/polixir/NeoRL",
+      "sourceTitle": "NeoRL (Physical Control Tasks) official release documentation",
+      "locator": "Introduction; Usage; Dataset format",
+      "statement": "The official schema explicitly defines obs, next_obs, action, reward, done and trajectory boundaries. CityLearn, Industrial Benchmark and MuJoCo tasks supply physical control transitions at multiple policy quality levels.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": [],
+    "yearBasis": {
+      "source": "https://arxiv.org/abs/2102.00714",
+      "description": "Original benchmark preprint submitted in February 2021."
+    }
   },
   {
     "id": "nuplan",
@@ -16196,6 +19434,58 @@
       "downloadTested": false
     },
     "aliases": []
+  },
+  {
+    "id": "sevir",
+    "name": "SEVIR (Nowcasting Sequences)",
+    "shortName": "SEVIR (Nowcasting Sequences)",
+    "year": 2020,
+    "summary": "雷达与卫星风暴观测序列，提供短临预报数据划分和处理流程。",
+    "summaryEn": "Radar/satellite storm observation sequences with a documented nowcasting pipeline and splits.",
+    "primaryTask": "Predictive & Generative Dynamics",
+    "primaryTaskZh": "预测与生成式动力学",
+    "secondaryTasks": [],
+    "domain": [
+      "Physics / Science"
+    ],
+    "modalities": [
+      "Weather Fields"
+    ],
+    "structure": [
+      "Temporal Sequences"
+    ],
+    "source": [
+      "Real-world"
+    ],
+    "scale": "See publisher release and split documentation",
+    "scaleZh": "规模与分割以发布方文档为准",
+    "organizations": "SEVIR (Nowcasting Sequences) authors",
+    "organizationsZh": "SEVIR (Nowcasting Sequences) 发布团队",
+    "access": "Official documentation provides data access instructions; download not tested",
+    "accessZh": "官方文档提供数据访问说明；未实测下载",
+    "license": "Consult publisher terms; data license not independently verified",
+    "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+    "verdict": "预测与生成式动力学",
+    "verdictEn": "Predictive & Generative Dynamics",
+    "wmNote": "仅收录未来天气预测用途；静态跨模态雷达合成任务不单独作为入选依据。",
+    "wmNoteEn": "Inclusion concerns future-weather nowcasting; static cross-modal radar synthesis is not an independent inclusion basis.",
+    "links": {
+      "code": "https://github.com/MIT-AI-Accelerator/neurips-2020-sevir"
+    },
+    "resourceType": "dataset",
+    "evidence": {
+      "status": "source-reviewed",
+      "criterion": 1,
+      "source": "https://github.com/MIT-AI-Accelerator/neurips-2020-sevir",
+      "sourceTitle": "SEVIR (Nowcasting Sequences) official release documentation",
+      "locator": "Extracting training/testing datasets; Training nowcast",
+      "statement": "Official scripts construct temporal nowcasting training and testing datasets from SEVIR storm observations, using a date-based split. The documented forecast task predicts future observed weather fields.",
+      "reviewedAt": "2026-11-04",
+      "level": "documentation",
+      "downloadTested": false
+    },
+    "aliases": [],
+    "relatedResources": []
   },
   {
     "id": "softgym",

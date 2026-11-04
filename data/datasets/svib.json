@@ -1,0 +1,55 @@
+{
+  "id": "svib",
+  "name": "Systematic Visual Imagination Benchmark (SVIB)",
+  "shortName": "Systematic Visual Imagination Benchmark (SVIB)",
+  "year": 2023,
+  "summary": "在组合式潜在状态规则下，预测一步变换后的场景图像。",
+  "summaryEn": "Predicts the next scene image under compositional latent-state transition rules.",
+  "primaryTask": "World Model Evaluation & Diagnostics",
+  "primaryTaskZh": "世界模型评测与诊断",
+  "secondaryTasks": [],
+  "domain": [
+    "Physics / Science"
+  ],
+  "modalities": [
+    "RGB Images",
+    "Simulation State",
+    "Segmentation"
+  ],
+  "structure": [
+    "State Pairs",
+    "Benchmark Splits"
+  ],
+  "source": [
+    "Simulation"
+  ],
+  "scale": "See publisher release and split documentation",
+  "scaleZh": "规模与分割以发布方文档为准",
+  "organizations": "Systematic Visual Imagination Benchmark (SVIB) authors",
+  "organizationsZh": "Systematic Visual Imagination Benchmark (SVIB) 发布团队",
+  "access": "Official documentation provides data access instructions; download not tested",
+  "accessZh": "官方文档提供数据访问说明；未实测下载",
+  "license": "Consult publisher terms; data license not independently verified",
+  "licenseZh": "请核对发布方条款；数据许可尚未独立核实",
+  "verdict": "世界模型评测与诊断",
+  "verdictEn": "World Model Evaluation & Diagnostics",
+  "wmNote": "规则包含抽象属性变换，不代表真实牛顿力学；不同打包方式是同一批数据。",
+  "wmNoteEn": "Rules include abstract attribute changes rather than real Newtonian dynamics; alternate packages contain the same data.",
+  "links": {
+    "homepage": "https://systematic-visual-imagination.github.io"
+  },
+  "resourceType": "benchmark",
+  "evidence": {
+    "status": "source-reviewed",
+    "criterion": 5,
+    "source": "https://systematic-visual-imagination.github.io",
+    "sourceTitle": "Systematic Visual Imagination Benchmark (SVIB) official release documentation",
+    "locator": "Method; Benchmark tasks; Download Links",
+    "statement": "Each episode contains an input and target image generated from compositional scene state under a defined transition rule. Train/test splits measure systematic generalization in an explicit minimal world-model prediction task.",
+    "reviewedAt": "2026-11-04",
+    "level": "documentation",
+    "downloadTested": false
+  },
+  "aliases": [],
+  "relatedResources": []
+}
